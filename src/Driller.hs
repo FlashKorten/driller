@@ -1,5 +1,5 @@
 {-# LANGUAGE OverloadedStrings, TemplateHaskell #-}
-module Driller where
+module Main where
 
 import Web.Scotty
 
@@ -158,6 +158,10 @@ getGames c ids = query c Q.gamesQuery (Only (In ids))
 getAllGames :: Connection -> IO [Game]
 getAllGames c = query_ c Q.allGamesQuery
 
+-- getGameList :: Connection -> [Param] -> [Int]
+-- getGameList c p = query c Q.gameListQuery ids
+--     where ids = snd p
+
 getRouteWithoutParameter :: ToJSON a => RoutePattern -> IO a -> ScottyM ()
 getRouteWithoutParameter url getter = get url $ liftIO getter >>= json
 
@@ -193,4 +197,9 @@ main = do
     getRouteWithParameter "/area/:id" $ getArea conn
     getRouteWithParameter "/mechanic/:id" $ getMechanic conn
     getRouteWithParameter "/game/:id" $ getGame conn
+
+    -- get "/g/" $ do
+    --   p <- params
+    --   result <- getGameList conn p
+    --   json result
 

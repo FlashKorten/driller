@@ -2,6 +2,8 @@
 module Driller.Queries where
 
 import Database.PostgreSQL.Simple (Query)
+import Data.Monoid (mappend)
+import qualified Data.Text as Text
 
 authorQuery, authorsQuery, allAuthorsQuery :: Query
 authorQuery        = "SELECT id, author FROM nn_author WHERE id = ?"
@@ -43,3 +45,9 @@ gameQuery, gamesQuery, allGamesQuery :: Query
 gameQuery          = "SELECT id, game, subtitle, num_players_min, num_players_max, gametime_start, gametime_end, id_bgg FROM nn_game WHERE id = ?"
 gamesQuery         = "SELECT d.id, d.game, d. subtitle, d.num_players_min, d.num_players_max, d.gametime_start, d.gametime_end, d.id_bgg FROM nn_game AS d JOIN nn_map_game AS m ON m.id_game = d.id WHERE m.id_game IN ?"
 allGamesQuery      = "SELECT id, game, subtitle, num_players_min, num_players_max, gametime_start, gametime_end, id_bgg FROM nn_game ORDER BY game"
+
+gameListQuery :: [Text.Text] -> Query
+gameListQuery pList = foldl mappend prefix parts
+            where prefix = "SELECT id FROM nn_game where 1=1 "
+                  parts = undefined -- map over map of (params, sqlpart)
+
