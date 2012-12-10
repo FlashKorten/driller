@@ -28,6 +28,16 @@ data Area      = Area      { getAreaId      :: Int, getAreaName      :: Text.Tex
 data Author    = Author    { getAuthorId    :: Int, getAuthorName    :: Text.Text }
   deriving Show
 
+data Game = Game { getGameId        :: Int
+                 , getGameTitle     :: Text.Text
+                 , getGameSubtitle  :: Text.Text
+                 , getNumPlayersMin :: Int
+                 , getNumPlayersMax :: Int
+                 , getGameTimeStart :: Int
+                 , getGameTimeEnd   :: Int
+                 , getBggId         :: Text.Text
+                 }
+
 
 $(deriveJSON (drop 3) ''Author)
 $(deriveJSON (drop 3) ''Genre)
@@ -38,6 +48,7 @@ $(deriveJSON (drop 3) ''Side)
 $(deriveJSON (drop 3) ''Party)
 $(deriveJSON (drop 3) ''Publisher)
 $(deriveJSON (drop 3) ''Area)
+$(deriveJSON (drop 3) ''Game)
 
 instance FromRow Author    where fromRow = Author    <$> field <*> field
 instance FromRow Genre     where fromRow = Genre     <$> field <*> field
@@ -48,6 +59,7 @@ instance FromRow Side      where fromRow = Side      <$> field <*> field
 instance FromRow Party     where fromRow = Party     <$> field <*> field
 instance FromRow Publisher where fromRow = Publisher <$> field <*> field
 instance FromRow Area      where fromRow = Area      <$> field <*> field
+instance FromRow Game      where fromRow = Game      <$> field <*> field <*> field <*> field <*> field <*> field <*> field <*> field
 instance ToRow Int         where toRow n = [toField n]
 
 connectionInfo :: ConnectInfo
@@ -137,6 +149,15 @@ getAreas c ids = query c Q.areasQuery (Only (In ids))
 getAllAreas :: Connection -> IO [Area]
 getAllAreas c = query_ c Q.allAreasQuery
 
+getGame :: Connection -> Int -> IO [Game]
+getGame c = query c Q.gameQuery
+
+getGames :: Connection -> [Int] -> IO [Game]
+getGames c ids = query c Q.gamesQuery (Only (In ids))
+
+getAllGames :: Connection -> IO [Game]
+getAllGames c = query_ c Q.allGamesQuery
+
 getRouteWithoutParameter :: ToJSON a => RoutePattern -> IO a -> ScottyM ()
 getRouteWithoutParameter url getter = get url $ liftIO getter >>= json
 
@@ -161,6 +182,7 @@ main = do
     getRouteWithoutParameter "/publishers" $ getAllPublishers conn
     getRouteWithoutParameter "/areas" $ getAllAreas conn
     getRouteWithoutParameter "/mechanics" $ getAllMechanics conn
+    getRouteWithoutParameter "/games" $ getAllGames conn
     getRouteWithParameter "/author/:id" $ getAuthor conn
     getRouteWithParameter "/genre/:id" $ getGenre conn
     getRouteWithParameter "/engine/:id" $ getEngine conn
@@ -170,4 +192,5 @@ main = do
     getRouteWithParameter "/publisher/:id" $ getPublisher conn
     getRouteWithParameter "/area/:id" $ getArea conn
     getRouteWithParameter "/mechanic/:id" $ getMechanic conn
+    getRouteWithParameter "/game/:id" $ getGame conn
 
