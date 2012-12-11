@@ -4,6 +4,7 @@ module Driller.Queries where
 import Database.PostgreSQL.Simple (Query)
 import Data.Monoid (mappend)
 import qualified Data.Text as Text
+import qualified Data.HashMap.Strict as Map
 
 authorQuery, authorsQuery, allAuthorsQuery :: Query
 authorQuery        = "SELECT id, author FROM nn_author WHERE id = ?"
@@ -46,8 +47,16 @@ gameQuery          = "SELECT id, game, subtitle, num_players_min, num_players_ma
 gamesQuery         = "SELECT d.id, d.game, d. subtitle, d.num_players_min, d.num_players_max, d.gametime_start, d.gametime_end, d.id_bgg FROM nn_game AS d JOIN nn_map_game AS m ON m.id_game = d.id WHERE m.id_game IN ?"
 allGamesQuery      = "SELECT id, game, subtitle, num_players_min, num_players_max, gametime_start, gametime_end, id_bgg FROM nn_game ORDER BY game"
 
-gameListQuery :: [Text.Text] -> Query
-gameListQuery pList = foldl mappend prefix parts
-            where prefix = "SELECT id FROM nn_game where 1=1 "
-                  parts = undefined -- map over map of (params, sqlpart)
+gameListQuery :: Map.HashMap Text.Text (Query, Query) -> [Text.Text] -> Query
+gameListQuery m pList = foldl mappend prefix parts
+             where prefix = "SELECT id FROM nn_game AS g "
+                   parts = undefined -- map over map of (params, sqlpart)
 
+gamePartList :: [(Text.Text, (Query, Query))]
+gamePartList = [ ("author", ("JOIN nn_map_author AS author ON g.id = author.id_game ", "AND author.id_author = ? "))
+               , ("publisher", ("JOIN nn_map_publisher AS publisher ON g.id = publisher.id_game ", "AND publisher.id_publisher = ? "))
+               , ("theme", ("JOIN nn_map_theme AS theme ON g.id = theme.id_game ", "AND theme.id_theme = ? "))
+               ]
+
+initMap :: Map.HashMap Text.Text (Query, Query)
+initMap = Map.fromList gamePartList
