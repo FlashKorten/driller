@@ -15,6 +15,7 @@ import Control.Monad.IO.Class (liftIO)
 import Data.Aeson.TH
 import Data.Aeson (ToJSON)
 import qualified Driller.Queries as Q
+import System.Remote.Monitoring
 
 data Genre     = Genre     { getGenreId     :: Int, getGenreName     :: Text.Text }
 data Engine    = Engine    { getEngineId    :: Int, getEngineName    :: Text.Text }
@@ -189,6 +190,7 @@ getRouteWithParameter url getter = get url $ param "id" >>= liftIO . getter >>= 
 
 main :: IO ()
 main = do
+  forkServer "localhost" 8000
   conn <- connect connectionInfo
   scotty 3000 $ do
     middleware logStdoutDev

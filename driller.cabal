@@ -20,12 +20,13 @@ executable driller
                      text ==0.11.*,
                      transformers ==0.3.*,
                      bytestring,
+                     ekg,
                      scotty,
                      aeson,
                      wai-extra,
                      postgresql-simple
 
-  ghc-options: -O2 -Wall -funbox-strict-fields
+  ghc-options: -O2 -Wall -funbox-strict-fields -with-rtsopts=-T
   if impl(ghc >= 6.8)
     ghc-options: -fwarn-tabs
 
