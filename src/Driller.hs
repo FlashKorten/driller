@@ -27,6 +27,17 @@ data Area      = Area      { getAreaId      :: Int, getAreaName      :: Text.Tex
 data Author    = Author    { getAuthorId    :: Int, getAuthorName    :: Text.Text }
   deriving Show
 
+data GameResult = GameResult { getGames :: [Game]
+                             , getGenres :: [Genre]
+                             , getThemes :: [Theme]
+                             , getMechanics :: [Mechanic]
+                             , getSides :: [Side]
+                             , getParties :: [Party]
+                             , getPublishers :: [Publisher]
+                             , getAreas :: [Area]
+                             , getAuthors :: [Author]
+}
+
 data Game = Game { getGameId        :: Int
                  , getGameTitle     :: Text.Text
                  , getGameSubtitle  :: Text.Text
@@ -48,6 +59,7 @@ $(deriveJSON (drop 3) ''Party)
 $(deriveJSON (drop 3) ''Publisher)
 $(deriveJSON (drop 3) ''Area)
 $(deriveJSON (drop 3) ''Game)
+$(deriveJSON (drop 3) ''GameResult)
 
 instance FromRow Author    where fromRow = Author    <$> field <*> field
 instance FromRow Genre     where fromRow = Genre     <$> field <*> field
@@ -59,6 +71,7 @@ instance FromRow Party     where fromRow = Party     <$> field <*> field
 instance FromRow Publisher where fromRow = Publisher <$> field <*> field
 instance FromRow Area      where fromRow = Area      <$> field <*> field
 instance FromRow Game      where fromRow = Game      <$> field <*> field <*> field <*> field <*> field <*> field <*> field <*> field
+instance FromRow Int       where fromRow = field
 instance ToRow Int         where toRow n = [toField n]
 
 connectionInfo :: ConnectInfo
@@ -67,99 +80,106 @@ connectionInfo = defaultConnectInfo { connectUser = "nemesis"
                                     , connectDatabase = "nn"
                                     }
 
-getAuthor :: Connection -> Int -> IO [Author]
-getAuthor c = query c Q.authorQuery
+fetchAuthor :: Connection -> Int -> IO [Author]
+fetchAuthor c = query c Q.authorQuery
 
-getAuthors :: Connection -> [Int] -> IO [Author]
-getAuthors c ids = query c Q.authorsQuery (Only (In ids))
+fetchAuthors :: Connection -> [Int] -> IO [Author]
+fetchAuthors c ids = query c Q.authorsQuery (Only (In ids))
 
-getAllAuthors :: Connection -> IO [Author]
-getAllAuthors c = query_ c Q.allAuthorsQuery
+fetchAllAuthors :: Connection -> IO [Author]
+fetchAllAuthors c = query_ c Q.allAuthorsQuery
 
-getGenre :: Connection -> Int -> IO [Genre]
-getGenre c = query c Q.genreQuery
+fetchGenre :: Connection -> Int -> IO [Genre]
+fetchGenre c = query c Q.genreQuery
 
-getGenres :: Connection -> [Int] -> IO [Genre]
-getGenres c ids = query c Q.genresQuery (Only (In ids))
+fetchGenres :: Connection -> [Int] -> IO [Genre]
+fetchGenres c ids = query c Q.genresQuery (Only (In ids))
 
-getAllGenres :: Connection -> IO [Genre]
-getAllGenres c = query_ c Q.allGenresQuery
+fetchAllGenres :: Connection -> IO [Genre]
+fetchAllGenres c = query_ c Q.allGenresQuery
 
-getEngine :: Connection -> Int -> IO [Engine]
-getEngine c = query c Q.engineQuery
+fetchEngine :: Connection -> Int -> IO [Engine]
+fetchEngine c = query c Q.engineQuery
 
-getEngines :: Connection -> [Int] -> IO [Engine]
-getEngines c ids = query c Q.enginesQuery (Only (In ids))
+fetchEngines :: Connection -> [Int] -> IO [Engine]
+fetchEngines c ids = query c Q.enginesQuery (Only (In ids))
 
-getAllEngines :: Connection -> IO [Engine]
-getAllEngines c = query_ c Q.allEnginesQuery
+fetchAllEngines :: Connection -> IO [Engine]
+fetchAllEngines c = query_ c Q.allEnginesQuery
 
-getTheme :: Connection -> Int -> IO [Theme]
-getTheme c = query c Q.themeQuery
+fetchTheme :: Connection -> Int -> IO [Theme]
+fetchTheme c = query c Q.themeQuery
 
-getThemes :: Connection -> [Int] -> IO [Theme]
-getThemes c ids = query c Q.themesQuery (Only (In ids))
+fetchThemes :: Connection -> [Int] -> IO [Theme]
+fetchThemes c ids = query c Q.themesQuery (Only (In ids))
 
-getAllThemes :: Connection -> IO [Theme]
-getAllThemes c = query_ c Q.allThemesQuery
+fetchAllThemes :: Connection -> IO [Theme]
+fetchAllThemes c = query_ c Q.allThemesQuery
 
-getMechanic :: Connection -> Int -> IO [Mechanic]
-getMechanic c = query c Q.mechanicQuery
+fetchMechanic :: Connection -> Int -> IO [Mechanic]
+fetchMechanic c = query c Q.mechanicQuery
 
-getMechanics :: Connection -> [Int] -> IO [Mechanic]
-getMechanics c ids = query c Q.mechanicsQuery (Only (In ids))
+fetchMechanics :: Connection -> [Int] -> IO [Mechanic]
+fetchMechanics c ids = query c Q.mechanicsQuery (Only (In ids))
 
-getAllMechanics :: Connection -> IO [Mechanic]
-getAllMechanics c = query_ c Q.allMechanicsQuery
+fetchAllMechanics :: Connection -> IO [Mechanic]
+fetchAllMechanics c = query_ c Q.allMechanicsQuery
 
-getSide :: Connection -> Int -> IO [Side]
-getSide c = query c Q.sideQuery
+fetchSide :: Connection -> Int -> IO [Side]
+fetchSide c = query c Q.sideQuery
 
-getSides :: Connection -> [Int] -> IO [Side]
-getSides c ids = query c Q.sidesQuery (Only (In ids))
+fetchSides :: Connection -> [Int] -> IO [Side]
+fetchSides c ids = query c Q.sidesQuery (Only (In ids))
 
-getAllSides :: Connection -> IO [Side]
-getAllSides c = query_ c Q.allSidesQuery
+fetchAllSides :: Connection -> IO [Side]
+fetchAllSides c = query_ c Q.allSidesQuery
 
-getParty :: Connection -> Int -> IO [Party]
-getParty c = query c Q.partyQuery
+fetchParty :: Connection -> Int -> IO [Party]
+fetchParty c = query c Q.partyQuery
 
-getParties :: Connection -> [Int] -> IO [Party]
-getParties c ids = query c Q.partiesQuery (Only (In ids))
+fetchParties :: Connection -> [Int] -> IO [Party]
+fetchParties c ids = query c Q.partiesQuery (Only (In ids))
 
-getAllParties :: Connection -> IO [Party]
-getAllParties c = query_ c Q.allPartiesQuery
+fetchAllParties :: Connection -> IO [Party]
+fetchAllParties c = query_ c Q.allPartiesQuery
 
-getPublisher :: Connection -> Int -> IO [Publisher]
-getPublisher c = query c Q.publisherQuery
+fetchPublisher :: Connection -> Int -> IO [Publisher]
+fetchPublisher c = query c Q.publisherQuery
 
-getPublishers :: Connection -> [Int] -> IO [Publisher]
-getPublishers c ids = query c Q.publishersQuery (Only (In ids))
+fetchPublishers :: Connection -> [Int] -> IO [Publisher]
+fetchPublishers c ids = query c Q.publishersQuery (Only (In ids))
 
-getAllPublishers :: Connection -> IO [Publisher]
-getAllPublishers c = query_ c Q.allPublishersQuery
+fetchAllPublishers :: Connection -> IO [Publisher]
+fetchAllPublishers c = query_ c Q.allPublishersQuery
 
-getArea :: Connection -> Int -> IO [Area]
-getArea c = query c Q.areaQuery
+fetchArea :: Connection -> Int -> IO [Area]
+fetchArea c = query c Q.areaQuery
 
-getAreas :: Connection -> [Int] -> IO [Area]
-getAreas c ids = query c Q.areasQuery (Only (In ids))
+fetchAreas :: Connection -> [Int] -> IO [Area]
+fetchAreas c ids = query c Q.areasQuery (Only (In ids))
 
-getAllAreas :: Connection -> IO [Area]
-getAllAreas c = query_ c Q.allAreasQuery
+fetchAllAreas :: Connection -> IO [Area]
+fetchAllAreas c = query_ c Q.allAreasQuery
 
-getGame :: Connection -> Int -> IO [Game]
-getGame c = query c Q.gameQuery
+fetchGame :: Connection -> Int -> IO [Game]
+fetchGame c = query c Q.gameQuery
 
-getGames :: Connection -> [Int] -> IO [Game]
-getGames c ids = query c Q.gamesQuery (Only (In ids))
+fetchGames :: Connection -> [Int] -> IO [Game]
+fetchGames c ids = query c Q.gamesQuery (Only (In ids))
 
-getAllGames :: Connection -> IO [Game]
-getAllGames c = query_ c Q.allGamesQuery
+fetchAllGames :: Connection -> IO [Game]
+fetchAllGames c = query_ c Q.allGamesQuery
 
-getGameList :: Connection -> [Param] -> IO ()
-getGameList _ p = print $ Q.gameListQuery ps
-    where ps = map fst p
+fetchGameList :: Connection -> [Param] -> IO [Int]
+fetchGameList c p = query c que values
+    where (keys, values) = unzip p
+          que = Q.gameListQuery keys
+
+fetchGameInfos :: Connection -> [Int] -> IO [GameResult]
+fetchGameInfos c p = undefined
+
+-- fetchDrilledGameResult :: Connection -> [Param] -> IO [GameResult]
+-- fetchDrilledGameResult c p = fetchGameList c p >>= fetchGameInfos c
 
 getRouteWithoutParameter :: ToJSON a => RoutePattern -> IO a -> ScottyM ()
 getRouteWithoutParameter url getter = get url $ liftIO getter >>= json
@@ -173,29 +193,29 @@ main = do
   scotty 3000 $ do
     middleware logStdoutDev
 
-    get "/" $ text "foobar"
-    getRouteWithoutParameter "/authors" $ getAllAuthors conn
-    getRouteWithoutParameter "/genres" $ getAllGenres conn
-    getRouteWithoutParameter "/engines" $ getAllEngines conn
-    getRouteWithoutParameter "/themes" $ getAllThemes conn
-    getRouteWithoutParameter "/sides" $ getAllSides conn
-    getRouteWithoutParameter "/parties" $ getAllParties conn
-    getRouteWithoutParameter "/publishers" $ getAllPublishers conn
-    getRouteWithoutParameter "/areas" $ getAllAreas conn
-    getRouteWithoutParameter "/mechanics" $ getAllMechanics conn
-    getRouteWithoutParameter "/games" $ getAllGames conn
-    getRouteWithParameter "/author/:id" $ getAuthor conn
-    getRouteWithParameter "/genre/:id" $ getGenre conn
-    getRouteWithParameter "/engine/:id" $ getEngine conn
-    getRouteWithParameter "/theme/:id" $ getTheme conn
-    getRouteWithParameter "/side/:id" $ getSide conn
-    getRouteWithParameter "/party/:id" $ getParty conn
-    getRouteWithParameter "/publisher/:id" $ getPublisher conn
-    getRouteWithParameter "/area/:id" $ getArea conn
-    getRouteWithParameter "/mechanic/:id" $ getMechanic conn
-    getRouteWithParameter "/game/:id" $ getGame conn
+    get "/"                                $ text "foobar"
+    getRouteWithoutParameter "/authors"    $ fetchAllAuthors conn
+    getRouteWithoutParameter "/genres"     $ fetchAllGenres conn
+    getRouteWithoutParameter "/engines"    $ fetchAllEngines conn
+    getRouteWithoutParameter "/themes"     $ fetchAllThemes conn
+    getRouteWithoutParameter "/sides"      $ fetchAllSides conn
+    getRouteWithoutParameter "/parties"    $ fetchAllParties conn
+    getRouteWithoutParameter "/publishers" $ fetchAllPublishers conn
+    getRouteWithoutParameter "/areas"      $ fetchAllAreas conn
+    getRouteWithoutParameter "/mechanics"  $ fetchAllMechanics conn
+    getRouteWithoutParameter "/games"      $ fetchAllGames conn
+    getRouteWithParameter "/author/:id"    $ fetchAuthor conn
+    getRouteWithParameter "/genre/:id"     $ fetchGenre conn
+    getRouteWithParameter "/engine/:id"    $ fetchEngine conn
+    getRouteWithParameter "/theme/:id"     $ fetchTheme conn
+    getRouteWithParameter "/side/:id"      $ fetchSide conn
+    getRouteWithParameter "/party/:id"     $ fetchParty conn
+    getRouteWithParameter "/publisher/:id" $ fetchPublisher conn
+    getRouteWithParameter "/area/:id"      $ fetchArea conn
+    getRouteWithParameter "/mechanic/:id"  $ fetchMechanic conn
+    getRouteWithParameter "/game/:id"      $ fetchGame conn
 
     get "/g" $ do
       p <- params
-      liftIO $ getGameList conn p
-
+      result <- liftIO $ fetchGameList conn p
+      json result

@@ -48,33 +48,33 @@ allGamesQuery      = "SELECT id, game, subtitle, num_players_min, num_players_ma
 
 gameListQuery :: [Data.Text.Lazy.Internal.Text] -> Query
 gameListQuery pList = foldl mappend prefix parts
-             where prefix = "SELECT id FROM nn_game AS g "
+             where prefix = "SELECT id FROM nn_game AS g"
                    parts = joins ++ wheres
-                   joins = Prelude.map getJoinPart pList
-                   wheres = Prelude.map getWherePart pList
+                   joins = map getJoinPart pList
+                   wheres = map getWherePart pList
 
 getJoinPart :: Data.Text.Lazy.Internal.Text -> Query
 getJoinPart p = case p of
-            "author"    -> "JOIN nn_map_author AS author ON g.id = author.id_game "
-            "publisher" -> "JOIN nn_map_publisher AS publisher ON g.id = publisher.id_game "
-            "theme"     -> "JOIN nn_map_theme AS theme ON g.id = theme.id_game "
-            "genre"     -> "JOIN nn_map_genre AS genre ON g.id = genre.id_game "
-            "mechanic"  -> "JOIN nn_map_mechanic AS mechanic ON g.id = mechanic.id_game "
-            "side"      -> "JOIN nn_map_side AS side ON g.id = side.id_game "
-            "party"     -> "JOIN nn_map_party AS party ON g.id = party.id_game "
-            "area"      -> "JOIN nn_map_area AS area ON g.id = area.id_game "
-            "engine"    -> "JOIN nn_map_engine AS engine ON g.id = engine.id_game "
+            "author"    -> " JOIN nn_map_author AS author ON g.id = author.id_game"
+            "publisher" -> " JOIN nn_map_publisher AS publisher ON g.id = publisher.id_game"
+            "theme"     -> " JOIN nn_map_theme AS theme ON g.id = theme.id_game"
+            "genre"     -> " JOIN nn_map_genre AS genre ON g.id = genre.id_game"
+            "mechanic"  -> " JOIN nn_map_mechanic AS mechanic ON g.id = mechanic.id_game"
+            "side"      -> " JOIN nn_map_side AS side ON g.id = side.id_game"
+            "party"     -> " JOIN nn_map_party AS party ON g.id = party.id_game"
+            "area"      -> " JOIN nn_map_area AS area ON g.id = area.id_game"
+            "engine"    -> " JOIN nn_map_engine AS engine ON g.id = engine.id_game"
             _           -> ""
 
 getWherePart :: Data.Text.Lazy.Internal.Text -> Query
 getWherePart p = case p of
-            "author"    -> "AND author.id_author = ? "
-            "publisher" -> "AND publisher.id_publisher = ? "
-            "theme"     -> "AND theme.id_theme = ? "
-            "genre"     -> "AND genre.id_genre = ? "
-            "mechanic"  -> "AND mechanic.id_mechanic = ? "
-            "side"      -> "AND side.id_side = ? "
-            "party"     -> "AND party.id_party = ? "
-            "area"      -> "AND area.id_area = ? "
+            "author"    -> " AND author.id_author = ?"
+            "publisher" -> " AND publisher.id_publisher = ?"
+            "theme"     -> " AND theme.id_theme = ?"
+            "genre"     -> " AND genre.id_genre = ?"
+            "mechanic"  -> " AND mechanic.id_mechanic = ?"
+            "side"      -> " AND side.id_side = ?"
+            "party"     -> " AND party.id_party = ?"
+            "area"      -> " AND area.id_area = ?"
             _           -> ""
 
