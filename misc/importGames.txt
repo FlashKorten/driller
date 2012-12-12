@@ -1,0 +1,747 @@
+"Rommel in the Desert" {
+  1940 / 1942
+  84
+  area{"Earth","Africa","North Africa"}
+  author{"Craig Besinque"}
+  engine{"Vassal"-"www.vassalengine.org/mediawiki/images/e/ef/Rommel-Desert-v7.vmod"}
+  side{"German","Axis","Allies","British","Commonwealth"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Fog of War","Blocks","Hex","Cards"}
+  theme{"WW2","Desert"}
+  party{"Axis"-"2","Allies"-"2"}
+  publisher{"Columbia Games"-"www.columbiagames.com"}
+}
+"Hammer of the Scots" {
+  1297 / 1314
+  3685
+  area{"Earth","Europe","Great Britain","Scotland"}
+  author{"Jerry Taylor"}
+  engine{"Vassal"-"www.vassalengine.org/mediawiki/images/d/d4/Hammer-Scots-v7.vmod"}
+  side{"English","Scottish","Norse"}
+  party{"English"-"2","Scottish"-"2"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Fog of War","Blocks","Area Movement","Cards","Dice"}
+  theme{"Scottish Wars of Independence"}
+  publisher{"Columbia Games"-"www.columbiagames.com"}
+}
+"War of 1812" {
+  1812 / 1814
+  1645
+  area{"Earth","North America","USA","Canada"}
+  author{"Tom Dalgliesh","Lance Gutteridge"}
+  engine{"Vassal"-"www.vassalengine.org/mediawiki/images/1/1a/WarOf1812-v8.vmod"}
+  side{"British","American","Indians"}
+  genre{"Conflict Simulation","Operational Level"}
+  party{"Axis"-"2","Allies"-"2"}
+  mechanic{"Fog of War","Blocks","Point-to-Point Movement","Dice"}
+  theme{"American Revolution","Naval"}
+  publisher{"Columbia Games"-"www.columbiagames.com"}
+}
+"EastFront" {
+  1941 / 1945
+  22143
+  area{"Earth","Europe","Russia"}
+  author{"Tom Dalgliesh","Craig Besinque"}
+  engine{"Vassal"-"www.vassalengine.org/mediawiki/images/3/37/EuroFront_II_v1.8.vmod"}
+  side{"German","Russian"}
+  party{"Axis"-"2","Allies"-"2"}
+  genre{"Conflict Simulation","Strategic Level"}
+  mechanic{"Fog of War","Blocks","Hex","Dice"}
+  theme{"WW2","East Front"}
+  publisher{"Columbia Games"-"www.columbiagames.com"}
+}
+"WestFront" {
+  1943 / 1945
+  22161
+  area{"Earth","Europe"}
+  author{"Craig Besinque"}
+  engine{"Vassal"-"www.vassalengine.org/mediawiki/images/3/37/EuroFront_II_v1.8.vmod"}
+  side{"German","Axis","Allies"}
+  party{"Axis"-"2","Allies"-"2"}
+  genre{"Conflict Simulation","Strategic Level"}
+  mechanic{"Fog of War","Blocks","Hex","Dice"}
+  theme{"WW2","West Front"}
+  publisher{"Columbia Games"-"www.columbiagames.com"}
+}
+"EuroFront" {
+  1936 / 1945
+  22160
+  area{"Earth","Europe"}
+  author{"Craig Besinque"}
+  engine{"Vassal"-"www.vassalengine.org/mediawiki/images/3/37/EuroFront_II_v1.8.vmod"}
+  side{"German","Axis","Allies"}
+  genre{"Conflict Simulation","Strategic Level"}
+  party{"Axis"-"2","Allies"-"2"}
+  mechanic{"Fog of War","Blocks","Hex","Cards"}
+  theme{"WW2"}
+  publisher{"Columbia Games"-"www.columbiagames.com"}
+}
+"Napoleon - The Waterloo Campaign, 1815" {
+  1815 / 1815
+  1662
+  area{"Earth","Europe","Northern Europe","Belgium"}
+  author{"Tom Dalgliesh","Ron Gibson","Lance Gutteridge"}
+  engine{"Vassal"-"www.vassalengine.org/mediawiki/images/e/eb/Napoleon-v3.vmod"}
+  side{"French","British","Prussian"}
+  party{"French"-"2","Allies"-"2","French"-"3","British"-"3","Prussian"-"3"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Fog of War","Blocks","Point-to-Point Movement","Dice"}
+  theme{"Napoleonic"}
+  publisher{"Columbia Games"-"www.columbiagames.com"}
+}
+"Wizard Kings" {
+  -10000 / -10000
+  692
+  area{"Fantasy World"}
+  author{"Tom Dalgliesh","Grant Dalgliesh"}
+  engine{"Vassal"-"www.vassalengine.org/mediawiki/images/0/00/WizardKings2-v5.vmod"}
+  party{"Elves"-"2","Orcs"-"2","Dwarves"-"2","Undead"-"2","Barbarian"-"2","Feudal"-"2","Amazons"-"2","Elves"-"3","Orcs"-"3","Dwarves"-"3","Undead"-"3","Barbarian"-"3","Feudal"-"3","Amazons"-"3","Elves"-"4","Orcs"-"4","Dwarves"-"4","Undead"-"4","Barbarian"-"4","Feudal"-"4","Amazons"-"4"}
+  side{"Elves","Orcs","Dwarves","Undead","Barbarian","Feudal","Amazons"}
+  genre{"Conflict Simulation"}
+  mechanic{"Blocks","Hex","Dice"}
+  theme{"Fantasy"}
+  publisher{"Columbia Games"-"www.columbiagames.com"}
+}
+"Albion 20" {
+  1805 / 1805
+  36674
+  area{"Earth","Europe","Northern Europe","Great Britain","England"}
+  author{"Alan Emrich"}
+  side{"French","English"}
+  engine{"Vassal"-"victorypointgames.com/documents/Albion20_Vassal.zip","Cyberboard"-"victorypointgames.com/documents/Albion20_Cyberboard.zip"}
+  party{"France"-"2","England"-"2"}
+  genre{"Conflict Simulation","Tactical Level"}
+  mechanic{"Counter","Hex","Cards"}
+  theme{"Napoleonic"}
+  publisher{"Victory Point Games"-"www.victorypointgames.com"}
+}
+
+"Austerlitz 20" {
+  1805 / 1805
+  43332
+  area{"Earth","Europe","Eastern Europe","Czech Republic"}
+  author{"Kim Meints"}
+  side{"French","Austrian","Russian"}
+  party{"France"-"2","Russia"-"2"}
+  engine{"Cyberboard"-"victorypointgames.com/documents/Austerlitz20_Cyberboard.zip"}
+  genre{"Conflict Simulation","Tactical Level"}
+  mechanic{"Counter","Hex","Cards"}
+  theme{"Napoleonic"}
+  publisher{"Victory Point Games"-"www.victorypointgames.com"}
+}
+
+"Borodino 20" {
+  1812 / 1812
+  38361
+  area{"Earth","Europe","Russia"}
+  party{"France"-"2","Russia"-"2"}
+  author{"Lance McMillan"}
+  side{"French","Russian"}
+  engine{"Vassal"-"victorypointgames.com/documents/Borodino20_Vassal.zip","Cyberboard"-"victorypointgames.com/documents/Borodino20_Cyberboard.zip","ZunTzu"-"victorypointgames.com/documents/Borodino20_ZunTzu.zip"}
+  genre{"Conflict Simulation","Tactical Level"}
+  mechanic{"Counter","Hex","Cards"}
+  theme{"Napoleonic"}
+  publisher{"Victory Point Games"-"www.victorypointgames.com"}
+}
+
+"Bussaco 20" {
+  1810 / 1810
+  40803
+  area{"Earth","Europe","Southern Europe","Portugal"}
+  author{"Lance McMillan"}
+  side{"French","British","Portuguese"}
+  engine{"Vassal"-"victorypointgames.com/documents/Bussaco20_Vassal.zip","Cyberboard"-"victorypointgames.com/documents/Bussaco20_Cyberboard.zip"}
+  party{"France"-"2","Britain"-"2"}
+  genre{"Conflict Simulation","Tactical Level"}
+  mechanic{"Counter","Hex","Cards"}
+  theme{"Napoleonic"}
+  publisher{"Victory Point Games"-"www.victorypointgames.com"}
+}
+
+"Jena 20" {
+  1806 / 1806
+  34747
+  area{"Earth","Europe","Nothern Europe","Germany"}
+  author{"Alan Emrich"}
+  side{"French","Prussian"}
+  party{"France"-"2","Prussia"-"2"}
+  engine{"Vassal"-"victorypointgames.com/documents/Jena20_Vassal.zip","Cyberboard"-"victorypointgames.com/documents/Jena20_Cyberboard.zip"}
+  genre{"Conflict Simulation","Tactical Level"}
+  mechanic{"Counter","Hex","Cards"}
+  theme{"Napoleonic"}
+  publisher{"Victory Point Games"-"www.victorypointgames.com"}
+}
+
+"Waterloo 20" {
+  1815 / 1815
+  34334
+  area{"Earth","Europe","Northern Europe","Belgium"}
+  author{"Joseph Miranda"}
+  side{"French","British","Prussian"}
+  engine{"Vassal"-"victorypointgames.com/documents/Loo20_Vassal.zip","Cyberboard"-"victorypointgames.com/documents/Loo20_Cyberboard.zip"}
+  party{"Napoleon"-"2","Wellington"-"2"}
+  genre{"Conflict Simulation","Tactical Level"}
+  mechanic{"Counter","Hex","Cards"}
+  theme{"Napoleonic"}
+  publisher{"Victory Point Games"-"www.victorypointgames.com"}
+}
+
+"Vittoria 20" {
+  1813 / 1813
+  42370
+  area{"Earth","Europe","Southern Europe","Spain"}
+  author{"Kim Meints"}
+  side{"French","British","Spanish","Portuguese"}
+  engine{"Cyberboard"-"victorypointgames.com/documents/Vittoria20_Cyberboard.zip"}
+  party{"France"-"2","British"-"2"}
+  genre{"Conflict Simulation","Tactical Level"}
+  mechanic{"Counter","Hex","Cards"}
+  theme{"Napoleonic"}
+  publisher{"Victory Point Games"-"www.victorypointgames.com"}
+}
+
+"Smolensk 20 - Closing the Trap in Russia" {
+  1812 / 1812
+  39815
+  area{"Earth","Europe","Eastern Europe","Russia"}
+  author{"Alan Emrich"}
+  side{"French","Russian"}
+  engine{"Vassal"-"victorypointgames.com/documents/Smolensk20_Vassal.zip","Cyberboard"-"victorypointgames.com/documents/Smolensk20_Cyberboard.zip","ZunTzu"-"victorypointgames.com/documents/Smolensk20_ZunTzu.zip"}
+  party{"France"-"2","Russia"-"2"}
+  genre{"Conflict Simulation","Tactical Level"}
+  mechanic{"Counter","Hex","Cards"}
+  theme{"Napoleonic"}
+  publisher{"Victory Point Games"-"www.victorypointgames.com"}
+}
+
+"WW2: Barbarossa to Berlin" {
+  1941 / 1945
+  3353
+  area{"Earth","Europe"}
+  author{"Ted Raicer"}
+  side{"German","Axis","Allies"}
+  party{"Axis"-"2","Allies"-"2"}
+  engine{"Vassal"-"www.vassalengine.org/mediawiki/images/c/c7/BtB_ver2-01.vmod","Cyberboard"-"www."}
+  genre{"Conflict Simulation","Strategic Level"}
+  mechanic{"Card-Driven","Point-to-Point Movement","Counter"}
+  theme{"WW2"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Successors" {
+  -323 / -305
+  26457
+  area{"Earth","Middle East"}
+  author{"Richard H. Berg","John B. Firer","Mark Simonitch"}
+  engine{"Vassal"-"www.vassalengine.org/mediawiki/images/d/dd/SuccessorsIII2_2.vmod"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card-Driven","Point-to-Point Movement","Counter"}
+  side{"Player 1","Player 2"}
+  party{"Player 1"-"2","Player 2"-"2"}
+  theme{"Alexander"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Struggle of Empires" {
+  1650 / 1930
+  9625
+  area{"Earth"}
+  author{"Martin Wallace"}
+  side{"British","Spanish","French","German","Russian"}
+  party{"British"-"2","Spanish"-"2","French"-"2","German"-"2","Russian"-"2"}
+  engine{"Vassal"-"www.vassalengine.org/mediawiki/images/a/ac/SoE_ver_1-3.vmod"}
+  genre{"Empire Building","World Domination"}
+  mechanic{"Area Movement","Counter","Dice"}
+  theme{"World Domination"}
+  publisher{"Warfrog Games"-"www.warfroggames.com"}
+}
+
+"1805, Sea of Glory" {
+  1805 / 1805
+  23685
+  area{"Earth","Europe","Northern Europe","Carribean"}
+  author{"Phil C. Fry"}
+  side{"British","Spanish","French"}
+  engine{"Cyberboard"-"www."}
+  party{"British"-"2","French"-"2"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Hex","Counter","Fog of War","Blocks"}
+  theme{"Naval"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Here I Stand" {
+  1517 / 1555
+  17392
+  area{"Earth","Europe"}
+  author{"Ed Beach"}
+  side{"Ottomans","Hapsburgs","French","English","Protestants","Papacy"}
+  party{"Ottomans"-"2","Hapsburgs"-"2","French"-"2","English"-"2","Protestants"-"2","Papacy"-"2"}
+  engine{"Cyberboard"-"www."}
+  genre{"Historical Simulation","Strategic Level"}
+  mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
+  theme{"Wars of the Reformation"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Thirty Years War" {
+  1618 / 1648
+  2748
+  area{"Earth","Europe"}
+  author{"David A. Fox","Michael Welker"}
+  side{"Protestants","Catholics"}
+  engine{"Vassal"-"www.vassalengine.org/mediawiki/images/8/80/30YW_v1_1.vmod"}
+  party{"Protestants"-"2","Catholics"-"2"}
+  genre{"Historical Simulation","Strategic Level"}
+  mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
+  theme{"30 Years War"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Wilderness Wars" {
+  1755 / 1762
+  1822
+  area{"Earth","North America","Canada","USA"}
+  author{"Volko Ruhnke"}
+  side{"British","Indians","French"}
+  engine{"Cyberboard"-"www."}
+  genre{"Historical Simulation","Operational Level"}
+  party{"British"-"2","French"-"2"}
+  mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
+  theme{"French & Indian War"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Under the Lily Banners" {
+  1643 / 1648
+  17651
+  area{"Earth","Europe","France","Germany"}
+  author{"Ben Hull"}
+  side{"Bavarian","Spanish","French"}
+  party{"French"-"2","Spanish"-"2"}
+  engine{"Cyberboard"-"www."}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Hex","Counter","Dice"}
+  theme{"30 Years War"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Glory III" {
+  1862 / 1864
+  23928
+  area{"Earth","North America","MaryLand","Virginia"}
+  author{"Richard H. Berg"}
+  side{"Union","Confederate"}
+  party{"Union"-"2","Confederate"-"2"}
+  engine{"Cyberboard"-"www."}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Hex","Counter","Dice"}
+  theme{"American Civil War"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Fast Action Battle: The Bulge" {
+  1944 / 1944
+  20133
+  area{"Earth","Europe","France","Germany"}
+  author{"Rick Young"}
+  side{"German","Allies"}
+  engine{"Cyberboard"-"www."}
+  party{"Axis"-"2","Allies"-"2"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Area Movement","Counter","Fog of War","Blocks","Dice"}
+  theme{"WW2","Battle of the Bulge"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Paths of Glory" {
+  1914 / 1919
+  91
+  area{"Earth","Europe"}
+  author{"Ted Raicer"}
+  side{"Central Powers","Allies"}
+  engine{"Cyberboard"-"www."}
+  party{"Central Powers"-"2","Allies"-"2"}
+  genre{"Conflict Simulation","Strategic Level"}
+  mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
+  theme{"WW1"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"The Great War in Europe" {
+  1915 / 1919
+  30216
+  area{"Earth","Europe","Russia","Balkans","Near East"}
+  author{"Ted Raicer"}
+  side{"Central Powers","Allies"}
+  engine{"Cyberboard"-"www."}
+  genre{"Conflict Simulation","Operational Level"}
+  party{"Central Powers"-"2","Allies"-"2"}
+  mechanic{"Hex","Counter","Dice"}
+  theme{"WW1"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Grand Illusion" {
+  1914 / 1914
+  12282
+  area{"Earth","Europe","Germany","Belgium","France"}
+  author{"Ted Raicer"}
+  side{"Central Powers","Allies","German"}
+  party{"Central Powers"-"2","Allies"-"2"}
+  engine{"Cyberboard"-"www."}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Hex","Counter","Dice"}
+  theme{"WW1"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Empire of the Sun" {
+  1942 / 1944
+  11825
+  area{"Earth","Pacific"}
+  author{"Mark Herman"}
+  party{"Axis"-"2","Allies"-"2"}
+  side{"USA","Japan","British"}
+  engine{"Cyberboard"-"www."}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Hex","Counter","Card-Driven","Dice"}
+  theme{"WW2"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Clash of Giants II" {
+  1914 / 1914
+  13709
+  area{"Earth","Europe"}
+  author{"Ted Raicer"}
+  side{"Central Powers","Allies"}
+  engine{"Cyberboard"-"www."}
+  party{"Central Powers"-"2","Allies"-"2"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Hex","Counter","Dice"}
+  theme{"WW1"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Manifest Destiny" {
+  1760 / 2000
+  12283
+  area{"Earth",""}
+  author{"Bill Crenshaw"}
+  engine{"Cyberboard"-"www."}
+  party{"Someone"-"2","Someone else"-"2"}
+  genre{"Historical Simulation","Strategic Level"}
+  mechanic{"Area Movement","Card-Driven","Wooden Cubes","Counter","Dice"}
+  theme{"Empire Building"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Clash of Monarchs" {
+  1756 / 1763
+  26447
+  area{"Earth","Europe"}
+  author{"Bob Kalinowski"}
+  side{"Prussian","British","Austrian","French","Russian","Saxon","Sweden","Holy Roman Empire"}
+  party{"Prussian"-"2","British"-"2","Austrian"-"2","French"-"2","Russian"-"2","Saxon"-"2","Sweden"-"2","Holy Roman Empire"-"2"}
+  engine{"Cyberboard"-"www."}
+  genre{"Historical Simulation","Strategic Level"}
+  mechanic{"Point-to-Point Movement","Counter","Card-Driven","Dice"}
+  theme{"7 Years War"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Unhappy King Charles" {
+  1642 / 1645
+  18748
+  area{"Earth","Europe","England"}
+  author{"Charles Vasey"}
+  side{"Royalists","Parliament"}
+  party{"Royalists"-"2","Parliament"-"2"}
+  engine{"Cyberboard"-"www."}
+  genre{"Historical Simulation","Strategic Level"}
+  mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
+  theme{"English Civil War"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"PQ-17 - Arctic Naval Operations" {
+  1941 / 1943
+  26459
+  area{"Earth","North Atlantic"}
+  author{"Chris Janiec"}
+  side{"Axis","Allies","Germans"}
+  engine{"Cyberboard"-"www."}
+  genre{"Conflict Simulation","Operational Level"}
+  party{"Axis"-"2","Allies"-"2"}
+  mechanic{"Hex","Counter","Dice","Blocks","Fog of War","Card-Driven"}
+  theme{"WW2","Naval"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Pursuit of Glory" {
+  1914 / 1918
+  23418
+  area{"Earth","Near East","Middle East"}
+  author{"Brad Stock","Brian Stock"}
+  side{"Central Powers","Allies"}
+  engine{"Cyberboard"-"www."}
+  party{"Central Powers"-"2","Allies"-"2"}
+  genre{"Conflict Simulation","Strategic Level"}
+  mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
+  theme{"WW1"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"The Napoleonic Wars" {
+  1805 / 1815
+  36399
+  area{"Earth","Europe"}
+  author{"Mark McLaughlin"}
+  party{"French"-"2","British"-"2","Austrian"-"2","Russian"-"2","Prussian"-"2"}
+  side{"French","British","Austrian","Russian","Prussian"}
+  engine{"Cyberboard"-"www."}
+  genre{"Conflict Simulation","Strategic Level"}
+  mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
+  theme{"Napoleonic"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Kutuzov" {
+  1812 / 1812
+  20077
+  area{"Earth","Russia"}
+  author{"Mark McLaughlin"}
+  side{"French","Russian"}
+  engine{"Cyberboard"-"www."}
+  party{"Napoleon"-"2","Kutuzov"-"2"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Point-to-Point Movement","Card-Driven","Counter","Dice"}
+  theme{"Napoleonic"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Wellington" {
+  1812 / 1814
+  11265
+  area{"Earth","Europe","Southern Europe","Portugal","Spain","France"}
+  author{"Mark McLaughlin"}
+  side{"French","British","Portuguese","Spanish"}
+  engine{"Cyberboard"-"www."}
+  genre{"Conflict Simulation","Operational Level"}
+  party{"Napoleon"-"2","Wellington"-"2"}
+  mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
+  theme{"Napoleonic"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"The Kaisers Pirates" {
+  1914 / 1918
+  28185
+  area{"Earth","Atlantic"}
+  author{"James M. Day"}
+  side{"Central Powers","Allies","Germany"}
+  engine{"Cyberboard"-"www."}
+  party{"Germany"-"2","Allies"-"2"}
+  genre{"Conflict Simulation"}
+  mechanic{"Cards","Card-Driven","Dice"}
+  theme{"WW1","Naval"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Men of Iron" {
+  1298 / 1367
+  14683
+  area{"Earth","Europe","Scotland","France","Flanders","Spain"}
+  author{"Richard H. Berg"}
+  side{"French","Scottish","English","Flemish"}
+  party{"French"-"2","Scottish"-"2","English"-"2","Flemish"-"2"}
+  engine{"Cyberboard"-"www."}
+  genre{"Conflict Simulation","Tactical Level"}
+  mechanic{"Hex","Counter","Dice"}
+  theme{"Warfare in the Middle Ages"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Devils Horsemen" {
+  1221 / 1260
+  11274
+  area{"Earth","Central Asia","Eastern Europe"}
+  author{"Richard H. Berg","Mark Herman"}
+  side{"Mongol","Persian","Mamluk"}
+  party{"Mongol"-"2","Other"-"2"}
+  engine{"Cyberboard"-"www."}
+  genre{"Conflict Simulation","Tactical Level"}
+  mechanic{"Hex","Counter","Dice"}
+  theme{"Cavalry"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"For the People" {
+  1861 / 1864
+  833
+  area{"Earth","North America"}
+  author{"Mark Herman"}
+  side{"Union","Confederate"}
+  engine{"Cyberboard"-"www."}
+  party{"Union"-"2","Confederate"-"2"}
+  genre{"Historical Simulation","Strategic Level"}
+  mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
+  theme{"American Civil War"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Monmouth" {
+  1778 / 1778
+  20078
+  area{"Earth","North America"}
+  author{"Mark S. Miklos"}
+  side{"British","American"}
+  party{"British"-"2","American"-"2"}
+  engine{"Cyberboard"-"www."}
+  genre{"Conflict Simulation","Tactical Level"}
+  mechanic{"Hex","Counter","Dice"}
+  theme{"American Revolution"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Saratoga" {
+  1777 / 1777
+  3413
+  area{"Earth","North America"}
+  author{"Mark S. Miklos"}
+  side{"British","American"}
+  party{"British"-"2","American"-"2"}
+  engine{"Cyberboard"-"www."}
+  genre{"Conflict Simulation","Tactical Level"}
+  mechanic{"Hex","Counter","Dice"}
+  theme{"American Revolution"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Savannah" {
+  1779 / 1779
+  17397
+  area{"Earth","North America"}
+  author{"Mark S. Miklos"}
+  side{"British","American"}
+  engine{"Cyberboard"-"www."}
+  genre{"Conflict Simulation","Tactical Level"}
+  party{"British"-"2","American"-"2"}
+  mechanic{"Hex","Counter","Dice","Cards"}
+  theme{"American Revolution"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Roads to Leningrad" {
+  1941 / 1941
+  11269
+  area{"Earth","Russia"}
+  author{"Vance von Borries"}
+  side{"German","Russian","Axis","Allies"}
+  engine{"Cyberboard"-"www."}
+  party{"Axis"-"2","Allies"-"2"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Hex","Counter","Dice"}
+  theme{"WW2","East Front"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"1914 - Twilight in the East" {
+  1914 / 1914
+  21779
+  area{"Earth","Europe","Eastern Europe","Germany","Prussia","Poland","Galicia"}
+  author{"Michael Resch"}
+  side{"Germany","Russia","Ausrtia-Hungary"}
+  engine{"Cyberboard"-"www."}
+  party{"Central Powers"-"2","Allies"-"2"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Hex","Counter","Dice"}
+  theme{"WW1","East Front"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"SPQR" {
+  -280 / -109
+  21551
+  area{"Earth","Europe","Africa","Southern Europe","Italy","Spain","Persia","Carthage"}
+  author{"Richard H. Berg","Mark Herman"}
+  side{"Roman","Carthagenean","Persian","German"}
+  engine{"Vassal"-"www.vassalengine.org/mediawiki/images/d/d8/Spqr_2_5.vmod","Cyberboard"-"www."}
+  party{"Rome"-"2","Enemies of Rome"-"2"}
+  genre{"Conflict Simulation","Tactical Level"}
+  mechanic{"Hex","Counter","Dice"}
+  theme{"Ancient Rome","Roman Civil War","Gallic War","Punic Wars"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"The Burning Blue" {
+  1940 / 1940
+  17394
+  area{"Earth","Europe","Northern Europe","England","Germany"}
+  author{"Lee Brimmicombe-Wood"}
+  side{"British","German","Axis","Allies"}
+  party{"Axis"-"2","Allies"-"2"}
+  engine{"Cyberboard"-"www."}
+  genre{"Conflict Simulation","Strategic Level"}
+  mechanic{"Card-Driven","Hex","Counter"}
+  theme{"WW2","Battle of Britain"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Prussias Glory II" {
+  1757 / 1759
+  17395
+  area{"Earth","Europe","Eastern Europe","Germany","Czech Republic"}
+  author{"Bob Kalinowski"}
+  side{"Prussian","Austrian","Hanoveran"}
+  engine{"Cyberboard"-"www."}
+  genre{"Conflict Simulation","Tactical Level"}
+  party{"Prussia"-"2","Other"-"2"}
+  mechanic{"Hex","Counter","Dice"}
+  theme{"7 Years War"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Gustav Adolf the Great - With God and Victorious Arms" {
+  1627 / 1632
+  18746
+  area{"Earth","Europe"}
+  author{"Ben Hull"}
+  side{"Swedish","Polish","Imperial","Royalist","Parliamentary"}
+  party{"Axis"-"2","Allies"-"2"}
+  engine{"Cyberboard"-"www."}
+  genre{"Conflict Simulation","Tactical Level"}
+  mechanic{"Hex","Counter","Dice"}
+  theme{"30 Years War","Musket & Pike"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"Carthage - The First Punic War" {
+  -264 / -241
+  13855
+  area{"Earth","Europe","Africa","South Europe","North Africa","Mediterranean","Carthage"}
+  author{"Richard H. Berg"}
+  side{"Roman","Carthagenean"}
+  engine{"Cyberboard"-"www."}
+  party{"Rome"-"2","Carthage"-"2"}
+  genre{"Conflict Simulation","Historical Simulation","Operational Level"}
+  mechanic{"Hex","Counter","Dice"}
+  theme{"Punic Wars","Ancient Rome","Naval"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
+"War Galley" {
+  -494 / -31
+  1894
+  area{"Earth","Europe","Africa","South Europe","North Africa","Mediterranean","Greece"}
+  author{"Richard H. Berg","Mark Herman"}
+  side{"Roman","Carthagenean","Persian","Greak"}
+  engine{"Vassal"-"www.vassalengine.org/mediawiki/images/3/37/War_galley_2_1.vmod","Cyberboard"-"www."}
+  party{"Rome"-"2","Carthage"-"2"}
+  genre{"Conflict Simulation","Historical Simulation","Tactical Level"}
+  mechanic{"Hex","Counter","Dice"}
+  theme{"Punic Wars","Ancient Rome","Naval","Peleponnesian Wars"}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+}
+
