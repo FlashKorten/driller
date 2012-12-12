@@ -20,7 +20,6 @@ executable drilldown
                      text ==0.11.*,
                      transformers ==0.3.*,
                      bytestring,
-                     unordered-containers,
                      scotty,
                      aeson,
                      wai-extra,

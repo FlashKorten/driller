@@ -12,7 +12,6 @@ import Database.PostgreSQL.Simple.ToField
 import qualified Data.Text as Text
 import Control.Applicative ((<$>), (<*>))
 import Control.Monad.IO.Class (liftIO)
-import Control.Monad (forM_)
 import Data.Aeson.TH
 import Data.Aeson (ToJSON)
 import qualified Driller.Queries as Q
@@ -158,9 +157,9 @@ getGames c ids = query c Q.gamesQuery (Only (In ids))
 getAllGames :: Connection -> IO [Game]
 getAllGames c = query_ c Q.allGamesQuery
 
--- getGameList :: Connection -> [Param] -> [Int]
--- getGameList c p = query c Q.gameListQuery ids
---     where ids = snd p
+getGameList :: Connection -> [Param] -> IO ()
+getGameList _ p = print $ Q.gameListQuery ps
+    where ps = map fst p
 
 getRouteWithoutParameter :: ToJSON a => RoutePattern -> IO a -> ScottyM ()
 getRouteWithoutParameter url getter = get url $ liftIO getter >>= json
@@ -171,8 +170,6 @@ getRouteWithParameter url getter = get url $ param "id" >>= liftIO . getter >>= 
 main :: IO ()
 main = do
   conn <- connect connectionInfo
-  authorRow <- getAuthors conn [1,3,6]
-  forM_ authorRow print
   scotty 3000 $ do
     middleware logStdoutDev
 
@@ -198,8 +195,7 @@ main = do
     getRouteWithParameter "/mechanic/:id" $ getMechanic conn
     getRouteWithParameter "/game/:id" $ getGame conn
 
-    -- get "/g/" $ do
-    --   p <- params
-    --   result <- getGameList conn p
-    --   json result
+    get "/g" $ do
+      p <- params
+      liftIO $ getGameList conn p
 

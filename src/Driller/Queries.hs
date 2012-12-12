@@ -3,8 +3,7 @@ module Driller.Queries where
 
 import Database.PostgreSQL.Simple (Query)
 import Data.Monoid (mappend)
-import qualified Data.Text as Text
-import qualified Data.HashMap.Strict as Map
+import Data.Text.Lazy.Internal
 
 authorQuery, authorsQuery, allAuthorsQuery :: Query
 authorQuery        = "SELECT id, author FROM nn_author WHERE id = ?"
@@ -47,16 +46,35 @@ gameQuery          = "SELECT id, game, subtitle, num_players_min, num_players_ma
 gamesQuery         = "SELECT d.id, d.game, d. subtitle, d.num_players_min, d.num_players_max, d.gametime_start, d.gametime_end, d.id_bgg FROM nn_game AS d JOIN nn_map_game AS m ON m.id_game = d.id WHERE m.id_game IN ?"
 allGamesQuery      = "SELECT id, game, subtitle, num_players_min, num_players_max, gametime_start, gametime_end, id_bgg FROM nn_game ORDER BY game"
 
-gameListQuery :: Map.HashMap Text.Text (Query, Query) -> [Text.Text] -> Query
-gameListQuery m pList = foldl mappend prefix parts
+gameListQuery :: [Data.Text.Lazy.Internal.Text] -> Query
+gameListQuery pList = foldl mappend prefix parts
              where prefix = "SELECT id FROM nn_game AS g "
-                   parts = undefined -- map over map of (params, sqlpart)
+                   parts = joins ++ wheres
+                   joins = Prelude.map getJoinPart pList
+                   wheres = Prelude.map getWherePart pList
 
-gamePartList :: [(Text.Text, (Query, Query))]
-gamePartList = [ ("author", ("JOIN nn_map_author AS author ON g.id = author.id_game ", "AND author.id_author = ? "))
-               , ("publisher", ("JOIN nn_map_publisher AS publisher ON g.id = publisher.id_game ", "AND publisher.id_publisher = ? "))
-               , ("theme", ("JOIN nn_map_theme AS theme ON g.id = theme.id_game ", "AND theme.id_theme = ? "))
-               ]
+getJoinPart :: Data.Text.Lazy.Internal.Text -> Query
+getJoinPart p = case p of
+            "author"    -> "JOIN nn_map_author AS author ON g.id = author.id_game "
+            "publisher" -> "JOIN nn_map_publisher AS publisher ON g.id = publisher.id_game "
+            "theme"     -> "JOIN nn_map_theme AS theme ON g.id = theme.id_game "
+            "genre"     -> "JOIN nn_map_genre AS genre ON g.id = genre.id_game "
+            "mechanic"  -> "JOIN nn_map_mechanic AS mechanic ON g.id = mechanic.id_game "
+            "side"      -> "JOIN nn_map_side AS side ON g.id = side.id_game "
+            "party"     -> "JOIN nn_map_party AS party ON g.id = party.id_game "
+            "area"      -> "JOIN nn_map_area AS area ON g.id = area.id_game "
+            "engine"    -> "JOIN nn_map_engine AS engine ON g.id = engine.id_game "
+            _           -> ""
 
-initMap :: Map.HashMap Text.Text (Query, Query)
-initMap = Map.fromList gamePartList
+getWherePart :: Data.Text.Lazy.Internal.Text -> Query
+getWherePart p = case p of
+            "author"    -> "AND author.id_author = ? "
+            "publisher" -> "AND publisher.id_publisher = ? "
+            "theme"     -> "AND theme.id_theme = ? "
+            "genre"     -> "AND genre.id_genre = ? "
+            "mechanic"  -> "AND mechanic.id_mechanic = ? "
+            "side"      -> "AND side.id_side = ? "
+            "party"     -> "AND party.id_party = ? "
+            "area"      -> "AND area.id_area = ? "
+            _           -> ""
+
