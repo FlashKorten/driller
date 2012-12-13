@@ -171,22 +171,20 @@ fetchGames c ids = query c Q.gamesQuery (Only (In ids))
 fetchAllGames :: Connection -> IO [Game]
 fetchAllGames c = query_ c Q.allGamesQuery
 
-fetchGameList :: Connection -> [Param] -> IO [Int]
-fetchGameList c p = query c que values
-    where (keys, values) = unzip p
-          que = Q.gameListQuery keys
-
-fetchGameInfos :: Connection -> [Int] -> IO GameResult
-fetchGameInfos c p = do
-    games      <- fetchGames c p
-    genres     <- fetchGenres c p
-    themes     <- fetchThemes c p
-    mechanics  <- fetchMechanics c p
-    sides      <- fetchSides c p
-    parties    <- fetchParties c p
-    publishers <- fetchPublishers c p
-    areas      <- fetchAreas c p
-    authors    <- fetchAuthors c p
+fetchDrilledGameResult :: Connection -> [Param] -> IO GameResult
+fetchDrilledGameResult c p = do
+    let (keys, values) = unzip p
+        que = Q.gameListQuery keys
+    ids        <- query c que values
+    games      <- fetchGames c ids
+    genres     <- fetchGenres c ids
+    themes     <- fetchThemes c ids
+    mechanics  <- fetchMechanics c ids
+    sides      <- fetchSides c ids
+    parties    <- fetchParties c ids
+    publishers <- fetchPublishers c ids
+    areas      <- fetchAreas c ids
+    authors    <- fetchAuthors c ids
     return GameResult { getGames      = games
                       , getGenres     = genres
                       , getThemes     = themes
@@ -197,9 +195,6 @@ fetchGameInfos c p = do
                       , getAreas      = areas
                       , getAuthors    = authors
                       }
-
-fetchDrilledGameResult :: Connection -> [Param] -> IO GameResult
-fetchDrilledGameResult c p = fetchGameList c p >>= fetchGameInfos c
 
 getRouteWithoutParameter :: ToJSON a => RoutePattern -> IO a -> ScottyM ()
 getRouteWithoutParameter url getter = get url $ liftIO getter >>= json
