@@ -50,15 +50,15 @@ data Game = Game { getGameId        :: Int
                  }
 
 
-$(deriveJSON (drop 3) ''Author)
-$(deriveJSON (drop 3) ''Genre)
-$(deriveJSON (drop 3) ''Engine)
-$(deriveJSON (drop 3) ''Theme)
-$(deriveJSON (drop 3) ''Mechanic)
-$(deriveJSON (drop 3) ''Side)
-$(deriveJSON (drop 3) ''Party)
-$(deriveJSON (drop 3) ''Publisher)
-$(deriveJSON (drop 3) ''Area)
+$(deriveJSON (drop 9) ''Author)
+$(deriveJSON (drop 8) ''Genre)
+$(deriveJSON (drop 9) ''Engine)
+$(deriveJSON (drop 8) ''Theme)
+$(deriveJSON (drop 11) ''Mechanic)
+$(deriveJSON (drop 7) ''Side)
+$(deriveJSON (drop 8) ''Party)
+$(deriveJSON (drop 12) ''Publisher)
+$(deriveJSON (drop 7) ''Area)
 $(deriveJSON (drop 3) ''Game)
 $(deriveJSON (drop 3) ''GameResult)
 
@@ -176,11 +176,30 @@ fetchGameList c p = query c que values
     where (keys, values) = unzip p
           que = Q.gameListQuery keys
 
-fetchGameInfos :: Connection -> [Int] -> IO [GameResult]
-fetchGameInfos c p = undefined
+fetchGameInfos :: Connection -> [Int] -> IO GameResult
+fetchGameInfos c p = do
+    games      <- fetchGames c p
+    genres     <- fetchGenres c p
+    themes     <- fetchThemes c p
+    mechanics  <- fetchMechanics c p
+    sides      <- fetchSides c p
+    parties    <- fetchParties c p
+    publishers <- fetchPublishers c p
+    areas      <- fetchAreas c p
+    authors    <- fetchAuthors c p
+    return GameResult { getGames      = games
+                      , getGenres     = genres
+                      , getThemes     = themes
+                      , getMechanics  = mechanics
+                      , getSides      = sides
+                      , getParties    = parties
+                      , getPublishers = publishers
+                      , getAreas      = areas
+                      , getAuthors    = authors
+                      }
 
--- fetchDrilledGameResult :: Connection -> [Param] -> IO [GameResult]
--- fetchDrilledGameResult c p = fetchGameList c p >>= fetchGameInfos c
+fetchDrilledGameResult :: Connection -> [Param] -> IO GameResult
+fetchDrilledGameResult c p = fetchGameList c p >>= fetchGameInfos c
 
 getRouteWithoutParameter :: ToJSON a => RoutePattern -> IO a -> ScottyM ()
 getRouteWithoutParameter url getter = get url $ liftIO getter >>= json
@@ -190,7 +209,7 @@ getRouteWithParameter url getter = get url $ param "id" >>= liftIO . getter >>= 
 
 main :: IO ()
 main = do
-  forkServer "localhost" 8000
+  _ <- forkServer "localhost" 8000
   conn <- connect connectionInfo
   scotty 3000 $ do
     middleware logStdoutDev
@@ -219,5 +238,5 @@ main = do
 
     get "/g" $ do
       p <- params
-      result <- liftIO $ fetchGameList conn p
+      result <- liftIO $ fetchDrilledGameResult conn p
       json result
