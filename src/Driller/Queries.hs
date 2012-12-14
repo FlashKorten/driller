@@ -4,6 +4,8 @@ module Driller.Queries where
 import Database.PostgreSQL.Simple (Query)
 import Data.Monoid (mappend)
 import Data.Text.Lazy.Internal
+import Data.List (foldl')
+import qualified Data.DList as DL
 
 authorQuery, authorsQuery, allAuthorsQuery :: Query
 authorQuery        = "SELECT id, author FROM nn_author WHERE id = ?"
@@ -47,9 +49,9 @@ gamesQuery         = "SELECT id, game, subtitle, num_players_min, num_players_ma
 allGamesQuery      = "SELECT id, game, subtitle, num_players_min, num_players_max, gametime_start, gametime_end, id_bgg FROM nn_game ORDER BY game"
 
 gameListQuery :: [Data.Text.Lazy.Internal.Text] -> Query
-gameListQuery pList = foldl mappend prefix parts
+gameListQuery pList = foldl' mappend prefix parts
              where prefix = "SELECT id FROM nn_game AS g"
-                   parts = joins ++ wheres
+                   parts = DL.toList $ DL.append (DL.fromList joins) (DL.fromList wheres)
                    joins = map getJoinPart pList
                    wheres = map getWherePart pList
 
