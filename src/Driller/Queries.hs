@@ -36,24 +36,24 @@ buildQuery Omni field = ("SELECT id, ", [ field
                                         , " ORDER BY "
                                         , field])
 
-query :: QueryType -> TL.Text -> QueryMap -> Query
-query qType label qMap = foldl' mappend prefix rest
+query :: QueryType -> Query -> Query
+query qType field = foldl' mappend prefix rest
                          where (prefix, rest) = buildQuery qType field
-                               field = qMap HM.! label
-initQueryMap :: QueryMap
-initQueryMap = HM.fromList []
 
-fieldMap :: QueryMap
-fieldMap = HM.fromList [("author", "author")
-                       ,("genre", "genre")
-                       ,("engine", "engine")
-                       ,("theme", "theme")
-                       ,("mechanic", "mechanic")
-                       ,("side", "side")
-                       ,("party", "party")
-                       ,("publisher","publisher")
-                       ,("area","area")
-                       ]
+initQueryMap :: QueryMap
+initQueryMap = HM.fromList [(read $ show f ++ show qT, query qT f) | f <- fieldList, qT <- [Mono, Poly, Omni]]
+
+fieldList :: [Query]
+fieldList = ["author"
+            ,"genre"
+            ,"engine"
+            ,"theme"
+            ,"mechanic"
+            ,"side"
+            ,"party"
+            ,"publisher"
+            ,"area"
+            ]
 
 authorQuery, authorsQuery, allAuthorsQuery :: Query
 authorQuery        = "SELECT id, author FROM nn_author WHERE id = ?"
