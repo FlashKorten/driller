@@ -161,7 +161,7 @@
 "Jena 20" {
   1806 / 1806
   34747
-  area{"Earth","Europe","Nothern Europe","Germany"}
+  area{"Earth","Europe","Northern Europe","Germany"}
   author{"Alan Emrich"}
   side{"French","Prussian"}
   party{"France"-"2","Prussia"-"2"}
