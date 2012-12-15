@@ -6,6 +6,53 @@ import Data.Monoid (mappend)
 import qualified Data.Text.Lazy.Internal as TL
 import Data.List (foldl')
 import qualified Data.DList as DL
+import qualified Data.HashMap.Strict as HM
+
+type QueryMap = HM.HashMap TL.Text Query
+data QueryType = Mono | Poly | Omni deriving Show
+
+buildQuery :: QueryType -> Query -> (Query, [Query])
+buildQuery Mono field = ("SELECT id, ", [ field
+                                        , " FROM nn_"
+                                        , field
+                                        , " WHERE id = ?"
+                                        ])
+buildQuery Poly field = ("SELECT d.id, d.", [ field
+                                            , "FROM nn_"
+                                            , field
+                                            , " AS d JOIN nn_map_"
+                                            , field
+                                            , " AS m ON m.id_"
+                                            , field
+                                            , " = d.id WHERE m.id_game IN ? GROUP BY d.id, d."
+                                            , field
+                                            , " ORDER BY d."
+                                            , field
+                                            ])
+buildQuery Omni field = ("SELECT id, ", [ field
+                                        , " FROM nn_"
+                                        , field
+                                        , " ORDER BY "
+                                        , field])
+
+query :: QueryType -> TL.Text -> QueryMap -> Query
+query qType label qMap = foldl' mappend prefix rest
+                         where (prefix, rest) = buildQuery qType field
+                               field = qMap HM.! label
+initQueryMap :: QueryMap
+initQueryMap = HM.fromList []
+
+fieldMap :: QueryMap
+fieldMap = HM.fromList [("author", "author")
+                       ,("genre", "genre")
+                       ,("engine", "engine")
+                       ,("theme", "theme")
+                       ,("mechanic", "mechanic")
+                       ,("side", "side")
+                       ,("party", "party")
+                       ,("publisher","publisher")
+                       ,("area","area")
+                       ]
 
 authorQuery, authorsQuery, allAuthorsQuery :: Query
 authorQuery        = "SELECT id, author FROM nn_author WHERE id = ?"

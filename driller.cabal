@@ -22,6 +22,7 @@ executable driller
                      bytestring,
                      dlist,
                      -- ekg,
+                     unordered-containers,
                      scotty,
                      aeson,
                      wai-extra,
