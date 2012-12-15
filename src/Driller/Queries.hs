@@ -3,7 +3,7 @@ module Driller.Queries where
 
 import Database.PostgreSQL.Simple (Query)
 import Data.Monoid (mappend)
-import Data.Text.Lazy.Internal
+import qualified Data.Text.Lazy.Internal as TL
 import Data.List (foldl')
 import qualified Data.DList as DL
 
@@ -48,14 +48,14 @@ gameQuery          = "SELECT id, game, subtitle, num_players_min, num_players_ma
 gamesQuery         = "SELECT id, game, subtitle, num_players_min, num_players_max, gametime_start, gametime_end, id_bgg FROM nn_game WHERE id IN ?"
 allGamesQuery      = "SELECT id, game, subtitle, num_players_min, num_players_max, gametime_start, gametime_end, id_bgg FROM nn_game ORDER BY game"
 
-gameListQuery :: [Data.Text.Lazy.Internal.Text] -> Query
+gameListQuery :: [TL.Text] -> Query
 gameListQuery pList = foldl' mappend prefix parts
              where prefix = "SELECT id FROM nn_game AS g"
                    parts = DL.toList $ DL.append (DL.fromList joins) (DL.fromList wheres)
                    joins = map getJoinPart pList
                    wheres = map getWherePart pList
 
-getJoinPart :: Data.Text.Lazy.Internal.Text -> Query
+getJoinPart :: TL.Text -> Query
 getJoinPart p = case p of
             "author"    -> " JOIN nn_map_author AS author ON g.id = author.id_game"
             "publisher" -> " JOIN nn_map_publisher AS publisher ON g.id = publisher.id_game"
@@ -68,7 +68,7 @@ getJoinPart p = case p of
             "engine"    -> " JOIN nn_map_engine AS engine ON g.id = engine.id_game"
             _           -> ""
 
-getWherePart :: Data.Text.Lazy.Internal.Text -> Query
+getWherePart :: TL.Text -> Query
 getWherePart p = case p of
             "author"    -> " AND author.id_author = ?"
             "publisher" -> " AND publisher.id_publisher = ?"
