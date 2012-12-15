@@ -1,3 +1,17 @@
+DROP INDEX IF EXISTS nn_session_index CASCADE;
+DROP INDEX IF EXISTS nn_genre_index CASCADE;
+DROP INDEX IF EXISTS nn_author_index CASCADE;
+DROP INDEX IF EXISTS nn_area_index CASCADE;
+DROP INDEX IF EXISTS nn_engine_index CASCADE;
+DROP INDEX IF EXISTS nn_game_index CASCADE;
+DROP INDEX IF EXISTS nn_mechanic_index CASCADE;
+DROP INDEX IF EXISTS nn_publisher_index CASCADE;
+DROP INDEX IF EXISTS nn_request_index CASCADE;
+DROP INDEX IF EXISTS nn_side_index CASCADE;
+DROP INDEX IF EXISTS nn_party_index CASCADE;
+DROP INDEX IF EXISTS nn_theme_index CASCADE;
+DROP INDEX IF EXISTS nn_user_index CASCADE;
+
 DROP TABLE IF EXISTS nn_request CASCADE;
 DROP TABLE IF EXISTS nn_genre CASCADE;
 DROP TABLE IF EXISTS nn_map_genre CASCADE;
@@ -8,7 +22,6 @@ DROP TABLE IF EXISTS nn_map_mechanic CASCADE;
 DROP TABLE IF EXISTS nn_map_publisher CASCADE;
 DROP TABLE IF EXISTS nn_map_side CASCADE;
 DROP TABLE IF EXISTS nn_map_party CASCADE;
-DROP TABLE IF EXISTS nn_map_nation CASCADE;
 DROP TABLE IF EXISTS nn_map_session CASCADE;
 DROP TABLE IF EXISTS nn_map_theme CASCADE;
 DROP TABLE IF EXISTS nn_game CASCADE;
@@ -24,7 +37,6 @@ DROP TABLE IF EXISTS nn_session CASCADE;
 DROP TABLE IF EXISTS nn_result CASCADE;
 DROP TABLE IF EXISTS nn_user CASCADE;
 
-DROP SEQUENCE IF EXISTS nn_result_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_session_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_genre_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_author_id_seq CASCADE;
@@ -41,8 +53,6 @@ DROP SEQUENCE IF EXISTS nn_user_id_seq CASCADE;
 
 CREATE SEQUENCE nn_user_id_seq;
 ALTER TABLE public.nn_user_id_seq OWNER TO nemesis;
-CREATE SEQUENCE nn_result_id_seq;
-ALTER TABLE public.nn_result_id_seq OWNER TO nemesis;
 CREATE SEQUENCE nn_session_id_seq;
 ALTER TABLE public.nn_session_id_seq OWNER TO nemesis;
 CREATE SEQUENCE nn_genre_id_seq;
@@ -77,6 +87,9 @@ CREATE TABLE nn_user (
 
 ALTER TABLE public.nn_user OWNER TO nemesis;
 
+CREATE INDEX nn_user_index ON nn_user(username ASC);
+ALTER INDEX nn_user_index OWNER TO nemesis;
+
 CREATE TABLE nn_game (
   id integer PRIMARY KEY DEFAULT nextval('nn_game_id_seq'),
   game varchar(255) NOT NULL default '',
@@ -89,6 +102,9 @@ CREATE TABLE nn_game (
 );
 
 ALTER TABLE public.nn_game OWNER TO nemesis;
+
+CREATE INDEX nn_game_index ON nn_game(game ASC);
+ALTER INDEX nn_game_index OWNER TO nemesis;
 
 CREATE TABLE nn_request (
   id integer PRIMARY KEY DEFAULT nextval('nn_request_id_seq'),
@@ -107,12 +123,18 @@ CREATE TABLE nn_request (
 
 ALTER TABLE public.nn_request OWNER TO nemesis;
 
+CREATE INDEX nn_request_index ON nn_request(requested DESC);
+ALTER INDEX nn_request_index OWNER TO nemesis;
+
 CREATE TABLE nn_author (
   id integer PRIMARY KEY DEFAULT nextval('nn_author_id_seq'),
   author varchar(255) NOT NULL default ''
 );
 
 ALTER TABLE public.nn_author OWNER TO nemesis;
+
+CREATE INDEX nn_author_index ON nn_author(author ASC);
+ALTER INDEX nn_author_index OWNER TO nemesis;
 
 CREATE TABLE nn_map_author (
   id_game integer NOT NULL REFERENCES nn_game(id),
@@ -128,6 +150,9 @@ CREATE TABLE nn_genre (
 
 ALTER TABLE public.nn_genre OWNER TO nemesis;
 
+CREATE INDEX nn_genre_index ON nn_genre(genre ASC);
+ALTER INDEX nn_genre_index OWNER TO nemesis;
+
 CREATE TABLE nn_map_genre (
   id_game integer NOT NULL REFERENCES nn_game(id),
   id_genre integer NOT NULL REFERENCES nn_genre(id)
@@ -141,6 +166,9 @@ CREATE TABLE nn_engine (
 );
 
 ALTER TABLE public.nn_engine OWNER TO nemesis;
+
+CREATE INDEX nn_engine_index ON nn_engine(engine ASC);
+ALTER INDEX nn_engine_index OWNER TO nemesis;
 
 CREATE TABLE nn_map_engine (
   id_game integer NOT NULL REFERENCES nn_game(id),
@@ -157,6 +185,9 @@ CREATE TABLE nn_theme (
 
 ALTER TABLE public.nn_theme OWNER TO nemesis;
 
+CREATE INDEX nn_theme_index ON nn_theme(theme ASC);
+ALTER INDEX nn_theme_index OWNER TO nemesis;
+
 CREATE TABLE nn_map_theme (
   id_game integer NOT NULL REFERENCES nn_game(id),
   id_theme integer NOT NULL REFERENCES nn_theme(id)
@@ -170,6 +201,9 @@ CREATE TABLE nn_mechanic (
 );
 
 ALTER TABLE public.nn_mechanic OWNER TO nemesis;
+
+CREATE INDEX nn_mechanic_index ON nn_mechanic(mechanic ASC);
+ALTER INDEX nn_mechanic_index OWNER TO nemesis;
 
 CREATE TABLE nn_map_mechanic (
   id_game integer NOT NULL REFERENCES nn_game(id),
@@ -185,6 +219,9 @@ CREATE TABLE nn_side (
 
 ALTER TABLE public.nn_side OWNER TO nemesis;
 
+CREATE INDEX nn_side_index ON nn_side(side ASC);
+ALTER INDEX nn_side_index OWNER TO nemesis;
+
 CREATE TABLE nn_map_side (
   id_game integer NOT NULL REFERENCES nn_game(id),
   id_side integer NOT NULL REFERENCES nn_side(id)
@@ -198,6 +235,9 @@ CREATE TABLE nn_party (
 );
 
 ALTER TABLE public.nn_party OWNER TO nemesis;
+
+CREATE INDEX nn_party_index ON nn_party(party ASC);
+ALTER INDEX nn_party_index OWNER TO nemesis;
 
 CREATE TABLE nn_map_party (
   id_game integer NOT NULL REFERENCES nn_game(id),
@@ -215,6 +255,9 @@ CREATE TABLE nn_publisher (
 
 ALTER TABLE public.nn_publisher OWNER TO nemesis;
 
+CREATE INDEX nn_publisher_index ON nn_publisher(publisher ASC);
+ALTER INDEX nn_publisher_index OWNER TO nemesis;
+
 CREATE TABLE nn_map_publisher (
   id_game integer NOT NULL REFERENCES nn_game(id),
   id_publisher integer NOT NULL REFERENCES nn_publisher(id)
@@ -229,6 +272,9 @@ CREATE TABLE nn_area (
 
 ALTER TABLE public.nn_area OWNER TO nemesis;
 
+CREATE INDEX nn_area_index ON nn_area(area ASC);
+ALTER INDEX nn_area_index OWNER TO nemesis;
+
 CREATE TABLE nn_map_area (
   id_game integer NOT NULL REFERENCES nn_game(id),
   id_area integer NOT NULL REFERENCES nn_area(id)
@@ -237,7 +283,7 @@ CREATE TABLE nn_map_area (
 ALTER TABLE public.nn_map_area OWNER TO nemesis;
 
 CREATE TABLE nn_result (
-  id integer PRIMARY KEY DEFAULT nextval('nn_result_id_seq'),
+  id integer PRIMARY KEY,
   result varchar(255) NOT NULL default ''
 );
 
@@ -254,6 +300,9 @@ CREATE TABLE nn_session (
 
 ALTER TABLE public.nn_session OWNER TO nemesis;
 
+CREATE INDEX nn_session_index ON nn_session(id_game DESC);
+ALTER INDEX nn_session_index OWNER TO nemesis;
+
 CREATE TABLE nn_map_session (
   id_session integer NOT NULL REFERENCES nn_session(id),
   id_user integer NOT NULL REFERENCES nn_user(id),
@@ -267,6 +316,6 @@ ALTER TABLE public.nn_map_session OWNER TO nemesis;
 
 INSERT INTO nn_user (username,realname,email)VALUES('user','Max Mustermann','email@domain.com');
 INSERT INTO nn_user (username,realname,email)VALUES('FlashKorten','Sebastian Korten','bass@core10.de');
-INSERT INTO nn_result (result)VALUES('Won');
-INSERT INTO nn_result (result)VALUES('Draw');
-INSERT INTO nn_result (result)VALUES('Lost');
+INSERT INTO nn_result (id,result)VALUES(1,'Won');
+INSERT INTO nn_result (id,result)VALUES(2,'Draw');
+INSERT INTO nn_result (id,result)VALUES(3,'Lost');
