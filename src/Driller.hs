@@ -37,6 +37,7 @@ data GameResult = GameResult { getGames :: [Game]
                              , getPublishers :: [Publisher]
                              , getAreas :: [Area]
                              , getAuthors :: [Author]
+                             , getEngines :: [Engine]
 }
 
 data Game = Game { getGameId        :: Int
@@ -171,10 +172,10 @@ fetchGames c ids = query c Q.gamesQuery (Only (In ids))
 fetchAllGames :: Connection -> IO [Game]
 fetchAllGames c = query_ c Q.allGamesQuery
 
-fetchDrilledGameResult :: Connection -> [Param] -> IO GameResult
-fetchDrilledGameResult c p = do
+fetchDrilledGameResult :: Q.JoinMap -> Connection -> [Param] -> IO GameResult
+fetchDrilledGameResult jm c p = do
     let (keys, values) = unzip p
-        que = Q.gameListQuery keys
+        que = Q.gameListQuery jm keys
     ids        <- query c que values
     games      <- fetchGames c ids
     genres     <- fetchGenres c ids
@@ -185,6 +186,7 @@ fetchDrilledGameResult c p = do
     publishers <- fetchPublishers c ids
     areas      <- fetchAreas c ids
     authors    <- fetchAuthors c ids
+    engines    <- fetchEngines c ids
     return GameResult { getGames      = games
                       , getGenres     = genres
                       , getThemes     = themes
@@ -194,6 +196,7 @@ fetchDrilledGameResult c p = do
                       , getPublishers = publishers
                       , getAreas      = areas
                       , getAuthors    = authors
+                      , getEngines    = engines
                       }
 
 getRouteWithoutParameter :: ToJSON a => RoutePattern -> IO a -> ScottyM ()
@@ -209,6 +212,7 @@ main = do
   scotty 3000 $ do
     middleware logStdoutDev
 
+    let joinMap = Q.initJoinMap
     get "/"                                $ text "foobar"
     getRouteWithoutParameter "/authors"    $ fetchAllAuthors conn
     getRouteWithoutParameter "/genres"     $ fetchAllGenres conn
@@ -233,5 +237,5 @@ main = do
 
     get "/g" $ do
       p <- params
-      result <- liftIO $ fetchDrilledGameResult conn p
+      result <- liftIO $ fetchDrilledGameResult joinMap conn p
       json result

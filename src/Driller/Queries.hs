@@ -9,6 +9,7 @@ import qualified Data.DList as DL
 import qualified Data.HashMap.Strict as HM
 
 type QueryMap = HM.HashMap TL.Text Query
+type JoinMap = HM.HashMap TL.Text (Query, Query)
 data QueryType = Mono | Poly | Omni deriving Show
 
 buildQuery :: QueryType -> Query -> (Query, [Query])
@@ -95,35 +96,21 @@ gameQuery          = "SELECT id, game, subtitle, num_players_min, num_players_ma
 gamesQuery         = "SELECT id, game, subtitle, num_players_min, num_players_max, gametime_start, gametime_end, id_bgg FROM nn_game WHERE id IN ?"
 allGamesQuery      = "SELECT id, game, subtitle, num_players_min, num_players_max, gametime_start, gametime_end, id_bgg FROM nn_game ORDER BY game"
 
-gameListQuery :: [TL.Text] -> Query
-gameListQuery pList = foldl' mappend prefix parts
+gameListQuery :: JoinMap -> [TL.Text] -> Query
+gameListQuery joinMap pList = foldl' mappend prefix parts
              where prefix = "SELECT id FROM nn_game AS g"
                    parts = DL.toList $ DL.append (DL.fromList joins) (DL.fromList wheres)
-                   joins = map getJoinPart pList
-                   wheres = map getWherePart pList
+                   (joins, wheres) = unzip $ map (joinMap HM.!) pList
 
-getJoinPart :: TL.Text -> Query
-getJoinPart p = case p of
-            "author"    -> " JOIN nn_map_author AS author ON g.id = author.id_game"
-            "publisher" -> " JOIN nn_map_publisher AS publisher ON g.id = publisher.id_game"
-            "theme"     -> " JOIN nn_map_theme AS theme ON g.id = theme.id_game"
-            "genre"     -> " JOIN nn_map_genre AS genre ON g.id = genre.id_game"
-            "mechanic"  -> " JOIN nn_map_mechanic AS mechanic ON g.id = mechanic.id_game"
-            "side"      -> " JOIN nn_map_side AS side ON g.id = side.id_game"
-            "party"     -> " JOIN nn_map_party AS party ON g.id = party.id_game"
-            "area"      -> " JOIN nn_map_area AS area ON g.id = area.id_game"
-            "engine"    -> " JOIN nn_map_engine AS engine ON g.id = engine.id_game"
-            _           -> ""
-
-getWherePart :: TL.Text -> Query
-getWherePart p = case p of
-            "author"    -> " AND author.id_author = ?"
-            "publisher" -> " AND publisher.id_publisher = ?"
-            "theme"     -> " AND theme.id_theme = ?"
-            "genre"     -> " AND genre.id_genre = ?"
-            "mechanic"  -> " AND mechanic.id_mechanic = ?"
-            "side"      -> " AND side.id_side = ?"
-            "party"     -> " AND party.id_party = ?"
-            "area"      -> " AND area.id_area = ?"
-            _           -> ""
+initJoinMap :: JoinMap
+initJoinMap = HM.fromList [("author"    , (" JOIN nn_map_author AS author ON g.id = author.id_game",          " AND author.id_author = ?"))
+                          ,("publisher" , (" JOIN nn_map_publisher AS publisher ON g.id = publisher.id_game", " AND publisher.id_publisher = ?"))
+                          ,("theme"     , (" JOIN nn_map_theme AS theme ON g.id = theme.id_game",             " AND theme.id_theme = ?"))
+                          ,("genre"     , (" JOIN nn_map_genre AS genre ON g.id = genre.id_game",             " AND genre.id_genre = ?"))
+                          ,("mechanic"  , (" JOIN nn_map_mechanic AS mechanic ON g.id = mechanic.id_game",    " AND mechanic.id_mechanic = ?"))
+                          ,("side"      , (" JOIN nn_map_side AS side ON g.id = side.id_game",                " AND side.id_side = ?"))
+                          ,("party"     , (" JOIN nn_map_party AS party ON g.id = party.id_game",             " AND party.id_party = ?"))
+                          ,("area"      , (" JOIN nn_map_area AS area ON g.id = area.id_game",                " AND area.id_area = ?"))
+                          ,("engine"    , (" JOIN nn_map_engine AS engine ON g.id = engine.id_game",          " AND engine.id_engine = ?"))
+                          ]
 
