@@ -22,12 +22,13 @@ executable driller
                      bytestring,
                      dlist,
                      -- ekg,
+                     unordered-containers,
                      scotty,
                      aeson,
                      wai-extra,
                      postgresql-simple
 
-  ghc-options: -O2 -Wall -funbox-strict-fields -with-rtsopts=-T
+  ghc-options: -O2 -Wall -funbox-strict-fields -with-rtsopts=-T -ddump-minimal-imports
   if impl(ghc >= 6.8)
     ghc-options: -fwarn-tabs
 
