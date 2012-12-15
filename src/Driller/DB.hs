@@ -1,3 +1,4 @@
+{-# LANGUAGE OverloadedStrings #-}
 module Driller.DB
     ( fetchTheme
     , fetchSide
@@ -27,6 +28,12 @@ module Driller.DB
 import Driller.Data
 import Driller.DB.Queries
 
+import qualified Data.Hashable as H
+import qualified Data.Text as T
+import qualified Data.Text.Read as TR
+import qualified Data.Text.Lazy as TL ( toStrict )
+import qualified Data.Text.Lazy.Internal as TLI (Text)
+import qualified Data.HashMap.Strict as HM ( HashMap, fromList, lookup, member )
 import Web.Scotty ( Param )
 import Database.PostgreSQL.Simple
     ( Only(Only),
@@ -133,21 +140,40 @@ fetchGames c ids = query c gamesQuery (Only (In ids))
 fetchAllGames :: Connection -> IO [Game]
 fetchAllGames c = query_ c allGamesQuery
 
+validParameter :: JoinMap -> (T.Text, Either String (Int, T.Text)) -> Bool
+validParameter _ (_, Left _)            = False
+validParameter joinMap (k, Right (i,r)) = 0 == T.length r && k `HM.member` joinMap && i > 0
+
+preprocessParameter :: (TLI.Text, TLI.Text) -> (T.Text, Either String (Int, T.Text))
+preprocessParameter (k, v) = (TL.toStrict k, TR.decimal $ TL.toStrict v)
+
+postprocessParameter :: (T.Text, Either String (Int, T.Text)) -> (T.Text, Int)
+postprocessParameter (t, Right (i,_)) = (t,i)
+postprocessParameter _ = error "This couldn't happen."
+
+fetchForResult :: (Eq k, H.Hashable k) => HM.HashMap k v -> k -> (t1 -> v -> t) -> (t1 -> t2 -> t) -> t1 -> t2 -> t
+fetchForResult parameterMap key fetchOne fetchMany c ids
+    = case HM.lookup key parameterMap of
+        Just value  -> fetchOne c value
+        Nothing     -> fetchMany c ids
+
 fetchDrilledGameResult :: JoinMap -> Connection -> [Param] -> IO GameResult
 fetchDrilledGameResult joinMap c p = do
-    let (keys, values) = unzip p
+    let filteredParameters = map postprocessParameter $ filter (validParameter joinMap) $ map preprocessParameter p
+        (keys, values)     = unzip filteredParameters
+        parameterMap       = HM.fromList filteredParameters
         que = gameListQuery joinMap keys
     ids        <- query c que values
     games      <- fetchGames c ids
-    genres     <- fetchGenres c ids
-    themes     <- fetchThemes c ids
-    mechanics  <- fetchMechanics c ids
-    sides      <- fetchSides c ids
-    parties    <- fetchParties c ids
-    publishers <- fetchPublishers c ids
-    areas      <- fetchAreas c ids
-    authors    <- fetchAuthors c ids
-    engines    <- fetchEngines c ids
+    genres     <- fetchForResult parameterMap "genre" fetchGenre fetchGenres c ids
+    themes     <- fetchForResult parameterMap "theme" fetchTheme fetchThemes c ids
+    mechanics  <- fetchForResult parameterMap "mechanic" fetchMechanic fetchMechanics c ids
+    sides      <- fetchForResult parameterMap "side" fetchSide fetchSides c ids
+    parties    <- fetchForResult parameterMap "party" fetchParty fetchParties c ids
+    publishers <- fetchForResult parameterMap "publisher" fetchPublisher fetchPublishers c ids
+    areas      <- fetchForResult parameterMap "area" fetchArea fetchAreas c ids
+    authors    <- fetchForResult parameterMap "author" fetchAuthor fetchAuthors c ids
+    engines    <- fetchForResult parameterMap "engine" fetchEngine fetchEngines c ids
     return GameResult { getGames      = games
                       , getGenres     = genres
                       , getThemes     = themes

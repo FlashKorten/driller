@@ -37,12 +37,12 @@ module Driller.DB.Queries
 
 import Database.PostgreSQL.Simple (Query)
 import Data.Monoid (mappend)
-import qualified Data.Text.Lazy.Internal as TL
+import qualified Data.Text as T
 import Data.List (foldl')
 import qualified Data.DList as DL
 import qualified Data.HashMap.Strict as HM
 
-type JoinMap = HM.HashMap TL.Text (Query, Query)
+type JoinMap = HM.HashMap T.Text (Query, Query)
 
 authorQuery, authorsQuery, allAuthorsQuery :: Query
 authorQuery        = "SELECT id, author FROM nn_author WHERE id = ?"
@@ -85,7 +85,7 @@ gameQuery          = "SELECT id, game, subtitle, num_players_min, num_players_ma
 gamesQuery         = "SELECT id, game, subtitle, num_players_min, num_players_max, gametime_start, gametime_end, id_bgg FROM nn_game WHERE id IN ?"
 allGamesQuery      = "SELECT id, game, subtitle, num_players_min, num_players_max, gametime_start, gametime_end, id_bgg FROM nn_game ORDER BY game"
 
-gameListQuery :: JoinMap -> [TL.Text] -> Query
+gameListQuery :: JoinMap -> [T.Text] -> Query
 gameListQuery joinMap pList = foldl' mappend prefix parts
              where prefix = "SELECT id FROM nn_game AS g"
                    parts = DL.toList $ DL.append (DL.fromList joins) (DL.fromList wheres)

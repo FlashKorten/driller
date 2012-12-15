@@ -21,6 +21,7 @@ executable driller
                      transformers ==0.3.*,
                      bytestring,
                      dlist,
+                     hashable,
                      -- ekg,
                      unordered-containers,
                      scotty,

@@ -8,16 +8,17 @@ import Control.Monad.IO.Class ( liftIO )
 import Data.Aeson ( ToJSON )
 -- import System.Remote.Monitoring ( forkServer )
 import Web.Scotty
-    ( ScottyM,
-      RoutePattern,
-      Parsable,
-      get,
-      text,
-      params,
-      param,
-      json,
-      scotty,
-      middleware )
+    ( ScottyM
+    , RoutePattern
+    , Parsable
+    , get
+    , text
+    , params
+    , param
+    , json
+    , scotty
+    , middleware
+    )
 
 getRouteWithoutParameter :: ToJSON a => RoutePattern -> IO a -> ScottyM ()
 getRouteWithoutParameter url getter = get url $ liftIO getter >>= json
