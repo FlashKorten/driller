@@ -1,0 +1,18 @@
+"Bulge 20 - The Ardennes Offensive" {
+  41004
+  In Bulge 20, the Allies don’t know which German strategic objective is being pursued. Allied intelligence work is required to ascertain the real German intentions so as not to overreact to the threat, because this time, the Germans can win if their staff can outthink and outmaneuver the Allies’ staff!
+  1944-12-01 / 1945-01-31
+  50.63333 / 5.56666
+  300
+  72
+  2 / 2
+  author{"Joseph Miranda"}
+  engine{"Vassal"-"http://victorypointgames.com/details.php?prodId=86","Cyberboard"-"http://victorypointgames.com/details.php?prodId=86","ZunTzu"-"http://victorypointgames.com/details.php?prodId=86"}
+  side{"Axis","Allies"}
+  genre{"Conflict Simulation","Strategic Level"}
+  mechanic{"Card Driven","Dice","Hex-and-Counter","Point-to-Point"}
+  theme{"WW2"}
+  party{"German"-"2","US"-"2","British"-"2"}
+  publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=86"}
+  series{"Command Staff"}
+}

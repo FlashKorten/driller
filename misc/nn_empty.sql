@@ -1,53 +1,53 @@
-DROP INDEX IF EXISTS nn_session_index CASCADE;
-DROP INDEX IF EXISTS nn_genre_index CASCADE;
 DROP INDEX IF EXISTS nn_author_index CASCADE;
-DROP INDEX IF EXISTS nn_area_index CASCADE;
 DROP INDEX IF EXISTS nn_engine_index CASCADE;
 DROP INDEX IF EXISTS nn_game_index CASCADE;
+DROP INDEX IF EXISTS nn_genre_index CASCADE;
 DROP INDEX IF EXISTS nn_mechanic_index CASCADE;
+DROP INDEX IF EXISTS nn_party_index CASCADE;
 DROP INDEX IF EXISTS nn_publisher_index CASCADE;
 DROP INDEX IF EXISTS nn_request_index CASCADE;
+DROP INDEX IF EXISTS nn_series_index CASCADE;
+DROP INDEX IF EXISTS nn_session_index CASCADE;
 DROP INDEX IF EXISTS nn_side_index CASCADE;
-DROP INDEX IF EXISTS nn_party_index CASCADE;
 DROP INDEX IF EXISTS nn_theme_index CASCADE;
 DROP INDEX IF EXISTS nn_user_index CASCADE;
 
-DROP TABLE IF EXISTS nn_request CASCADE;
-DROP TABLE IF EXISTS nn_genre CASCADE;
-DROP TABLE IF EXISTS nn_map_genre CASCADE;
-DROP TABLE IF EXISTS nn_map_author CASCADE;
-DROP TABLE IF EXISTS nn_map_area CASCADE;
-DROP TABLE IF EXISTS nn_map_engine CASCADE;
-DROP TABLE IF EXISTS nn_map_mechanic CASCADE;
-DROP TABLE IF EXISTS nn_map_publisher CASCADE;
-DROP TABLE IF EXISTS nn_map_side CASCADE;
-DROP TABLE IF EXISTS nn_map_party CASCADE;
-DROP TABLE IF EXISTS nn_map_session CASCADE;
-DROP TABLE IF EXISTS nn_map_theme CASCADE;
-DROP TABLE IF EXISTS nn_game CASCADE;
-DROP TABLE IF EXISTS nn_area CASCADE;
 DROP TABLE IF EXISTS nn_author CASCADE;
 DROP TABLE IF EXISTS nn_engine CASCADE;
+DROP TABLE IF EXISTS nn_game CASCADE;
+DROP TABLE IF EXISTS nn_genre CASCADE;
+DROP TABLE IF EXISTS nn_map_author CASCADE;
+DROP TABLE IF EXISTS nn_map_engine CASCADE;
+DROP TABLE IF EXISTS nn_map_genre CASCADE;
+DROP TABLE IF EXISTS nn_map_mechanic CASCADE;
+DROP TABLE IF EXISTS nn_map_party CASCADE;
+DROP TABLE IF EXISTS nn_map_publisher CASCADE;
+DROP TABLE IF EXISTS nn_map_series CASCADE;
+DROP TABLE IF EXISTS nn_map_session CASCADE;
+DROP TABLE IF EXISTS nn_map_side CASCADE;
+DROP TABLE IF EXISTS nn_map_theme CASCADE;
 DROP TABLE IF EXISTS nn_mechanic CASCADE;
-DROP TABLE IF EXISTS nn_publisher CASCADE;
-DROP TABLE IF EXISTS nn_side CASCADE;
 DROP TABLE IF EXISTS nn_party CASCADE;
-DROP TABLE IF EXISTS nn_theme CASCADE;
-DROP TABLE IF EXISTS nn_session CASCADE;
+DROP TABLE IF EXISTS nn_publisher CASCADE;
+DROP TABLE IF EXISTS nn_request CASCADE;
 DROP TABLE IF EXISTS nn_result CASCADE;
+DROP TABLE IF EXISTS nn_series CASCADE;
+DROP TABLE IF EXISTS nn_session CASCADE;
+DROP TABLE IF EXISTS nn_side CASCADE;
+DROP TABLE IF EXISTS nn_theme CASCADE;
 DROP TABLE IF EXISTS nn_user CASCADE;
 
-DROP SEQUENCE IF EXISTS nn_session_id_seq CASCADE;
-DROP SEQUENCE IF EXISTS nn_genre_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_author_id_seq CASCADE;
-DROP SEQUENCE IF EXISTS nn_area_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_engine_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_game_id_seq CASCADE;
+DROP SEQUENCE IF EXISTS nn_genre_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_mechanic_id_seq CASCADE;
+DROP SEQUENCE IF EXISTS nn_party_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_publisher_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_request_id_seq CASCADE;
+DROP SEQUENCE IF EXISTS nn_series_id_seq CASCADE;
+DROP SEQUENCE IF EXISTS nn_session_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_side_id_seq CASCADE;
-DROP SEQUENCE IF EXISTS nn_party_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_theme_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_user_id_seq CASCADE;
 
@@ -59,8 +59,8 @@ CREATE SEQUENCE nn_genre_id_seq;
 ALTER TABLE public.nn_genre_id_seq OWNER TO nemesis;
 CREATE SEQUENCE nn_author_id_seq;
 ALTER TABLE public.nn_author_id_seq OWNER TO nemesis;
-CREATE SEQUENCE nn_area_id_seq;
-ALTER TABLE public.nn_area_id_seq OWNER TO nemesis;
+CREATE SEQUENCE nn_series_id_seq;
+ALTER TABLE public.nn_series_id_seq OWNER TO nemesis;
 CREATE SEQUENCE nn_engine_id_seq;
 ALTER TABLE public.nn_engine_id_seq OWNER TO nemesis;
 CREATE SEQUENCE nn_game_id_seq;
@@ -78,11 +78,18 @@ ALTER TABLE public.nn_side_id_seq OWNER TO nemesis;
 CREATE SEQUENCE nn_theme_id_seq;
 ALTER TABLE public.nn_theme_id_seq OWNER TO nemesis;
 
+DROP TYPE IF EXISTS latitude_t;
+DROP TYPE IF EXISTS longitude_t;
+
+CREATE TYPE latitude_t AS double precision NOT NULL CHECK(value>=-90 AND value<=90);
+CREATE TYPE longitude_t AS double precision NOT NULL CHECK(value>-180 AND value<=180);
+
 CREATE TABLE nn_user (
   id integer PRIMARY KEY DEFAULT nextval('nn_user_id_seq'),
   username varchar(255) NOT NULL default '',
   realname varchar(255) NOT NULL default '',
-  email varchar(255) NOT NULL default ''
+  email varchar(255) NOT NULL default '',
+  show_email boolean NOT NULL default false
 );
 
 ALTER TABLE public.nn_user OWNER TO nemesis;
@@ -92,13 +99,18 @@ ALTER INDEX nn_user_index OWNER TO nemesis;
 
 CREATE TABLE nn_game (
   id integer PRIMARY KEY DEFAULT nextval('nn_game_id_seq'),
+  id_bgg varchar(255) NOT NULL default '',
   game varchar(255) NOT NULL default '',
   subtitle varchar(255) NOT NULL default '',
-  num_players_min integer DEFAULT 0 NOT NULL,
-  num_players_max integer DEFAULT 0 NOT NULL,
-  gametime_start integer DEFAULT 0 NOT NULL,
-  gametime_end integer DEFAULT 0 NOT NULL,
-  id_bgg varchar(255) NOT NULL default ''
+  description varchar(2000) NOT NULL default '',
+  players_min integer DEFAULT 0 NOT NULL,
+  players_max integer DEFAULT 0 NOT NULL,
+  gametime_start date DEFAULT '0001-01-01' NOT NULL,
+  gametime_end date DEFAULT '0001-01-01' NOT NULL,
+  latitude latitude_t,
+  longitude longitude_t,
+  range integer DEFAULT 0 NOT NULL,    -- range in kilometers around epicenter
+  timescale integer DEFAULT 0 NOT NULL -- hours per turn
 );
 
 ALTER TABLE public.nn_game OWNER TO nemesis;
@@ -249,8 +261,7 @@ ALTER TABLE public.nn_map_party OWNER TO nemesis;
 
 CREATE TABLE nn_publisher (
   id integer PRIMARY KEY DEFAULT nextval('nn_publisher_id_seq'),
-  publisher varchar(255) NOT NULL default '',
-  url varchar(255) NOT NULL default 'http://www.google.com'
+  publisher varchar(255) NOT NULL default ''
 );
 
 ALTER TABLE public.nn_publisher OWNER TO nemesis;
@@ -260,27 +271,28 @@ ALTER INDEX nn_publisher_index OWNER TO nemesis;
 
 CREATE TABLE nn_map_publisher (
   id_game integer NOT NULL REFERENCES nn_game(id),
+  url varchar(255) NOT NULL default 'http://www.google.com',
   id_publisher integer NOT NULL REFERENCES nn_publisher(id)
 );
 
 ALTER TABLE public.nn_map_publisher OWNER TO nemesis;
 
-CREATE TABLE nn_area (
-  id integer PRIMARY KEY DEFAULT nextval('nn_area_id_seq'),
-  area varchar(255) NOT NULL default ''
+CREATE TABLE nn_series (
+  id integer PRIMARY KEY DEFAULT nextval('nn_series_id_seq'),
+  series varchar(255) NOT NULL default ''
 );
 
-ALTER TABLE public.nn_area OWNER TO nemesis;
+ALTER TABLE public.nn_series OWNER TO nemesis;
 
-CREATE INDEX nn_area_index ON nn_area(area ASC);
-ALTER INDEX nn_area_index OWNER TO nemesis;
+CREATE INDEX nn_series_index ON nn_series(series ASC);
+ALTER INDEX nn_series_index OWNER TO nemesis;
 
-CREATE TABLE nn_map_area (
+CREATE TABLE nn_map_series (
   id_game integer NOT NULL REFERENCES nn_game(id),
-  id_area integer NOT NULL REFERENCES nn_area(id)
+  id_series integer NOT NULL REFERENCES nn_series(id)
 );
 
-ALTER TABLE public.nn_map_area OWNER TO nemesis;
+ALTER TABLE public.nn_map_series OWNER TO nemesis;
 
 CREATE TABLE nn_result (
   id integer PRIMARY KEY,
