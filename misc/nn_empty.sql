@@ -9,6 +9,7 @@ DROP INDEX IF EXISTS nn_request_index CASCADE;
 DROP INDEX IF EXISTS nn_series_index CASCADE;
 DROP INDEX IF EXISTS nn_session_index CASCADE;
 DROP INDEX IF EXISTS nn_side_index CASCADE;
+DROP INDEX IF EXISTS nn_special_index CASCADE;
 DROP INDEX IF EXISTS nn_theme_index CASCADE;
 DROP INDEX IF EXISTS nn_user_index CASCADE;
 
@@ -34,6 +35,7 @@ DROP TABLE IF EXISTS nn_result CASCADE;
 DROP TABLE IF EXISTS nn_series CASCADE;
 DROP TABLE IF EXISTS nn_session CASCADE;
 DROP TABLE IF EXISTS nn_side CASCADE;
+DROP TABLE IF EXISTS nn_special CASCADE;
 DROP TABLE IF EXISTS nn_theme CASCADE;
 DROP TABLE IF EXISTS nn_user CASCADE;
 
@@ -48,6 +50,7 @@ DROP SEQUENCE IF EXISTS nn_request_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_series_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_session_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_side_id_seq CASCADE;
+DROP SEQUENCE IF EXISTS nn_special_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_theme_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_user_id_seq CASCADE;
 
@@ -75,6 +78,8 @@ CREATE SEQUENCE nn_party_id_seq;
 ALTER TABLE public.nn_party_id_seq OWNER TO nemesis;
 CREATE SEQUENCE nn_side_id_seq;
 ALTER TABLE public.nn_side_id_seq OWNER TO nemesis;
+CREATE SEQUENCE nn_special_id_seq;
+ALTER TABLE public.nn_special_id_seq OWNER TO nemesis;
 CREATE SEQUENCE nn_theme_id_seq;
 ALTER TABLE public.nn_theme_id_seq OWNER TO nemesis;
 
@@ -241,6 +246,23 @@ CREATE TABLE nn_map_side (
 
 ALTER TABLE public.nn_map_side OWNER TO nemesis;
 
+CREATE TABLE nn_special (
+  id integer PRIMARY KEY DEFAULT nextval('nn_special_id_seq'),
+  special varchar(255) NOT NULL default ''
+);
+
+ALTER TABLE public.nn_special OWNER TO nemesis;
+
+CREATE INDEX nn_special_index ON nn_special(special ASC);
+ALTER INDEX nn_special_index OWNER TO nemesis;
+
+CREATE TABLE nn_map_special (
+  id_game integer NOT NULL REFERENCES nn_game(id),
+  id_special integer NOT NULL REFERENCES nn_side(id)
+);
+
+ALTER TABLE public.nn_map_side OWNER TO nemesis;
+
 CREATE TABLE nn_party (
   id integer PRIMARY KEY DEFAULT nextval('nn_party_id_seq'),
   party varchar(255) NOT NULL default ''
@@ -289,6 +311,7 @@ ALTER INDEX nn_series_index OWNER TO nemesis;
 
 CREATE TABLE nn_map_series (
   id_game integer NOT NULL REFERENCES nn_game(id),
+  part varchar(255) NOT NULL default '',
   id_series integer NOT NULL REFERENCES nn_series(id)
 );
 

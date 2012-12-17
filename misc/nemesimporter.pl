@@ -123,15 +123,16 @@ foreach my $key (sort(keys %game)){
   $debug && print "Game $key has ID #$id_game;\n";
   # Done inserting the game...
 
-  &insertSimpleField($key, "series");
   &insertSimpleField($key, "author");
   &insertSimpleField($key, "genre");
   &insertSimpleField($key, "theme");
   &insertSimpleField($key, "mechanic");
   &insertSimpleField($key, "side");
-  &insertFieldWithUrl($key, "publisher");
-  &insertFieldWithUrl($key, "engine");
-  &insertParty($key);
+  &insertSimpleField($key, "special");
+  &insertFieldWithAttributeInMap($key, "publisher", "url");
+  &insertFieldWithAttributeInMap($key, "engine", "url");
+  &insertFieldWithAttributeInMap($key, "series", "part");
+  &insertFieldWithAttributeInMap($key, "party", "num_players");
 }
 
 sub insertSimpleField {
@@ -165,8 +166,8 @@ sub insertSimpleField {
   }
 }
 
-sub insertFieldWithUrl {
-  my ($game_name, $label) = @_;
+sub insertFieldWithAttributeInMap {
+  my ($game_name, $label, $additionalLabel) = @_;
   unless ($game{$game_name}{$label}) {
     return;
   }
@@ -174,9 +175,9 @@ sub insertFieldWithUrl {
   my @tmpFoo = split(/","/, $game{$game_name}{$label});
   $debug && print $game{$game_name}{$label}."\n#instances of $label: ".@tmpFoo."\n";
   for (my $i = 0; $i < @tmpFoo; $i++){
-    (my $valueFoo, my $valueUrlFoo) = split(/"-"/, $tmpFoo[$i]);
+    my ($valueFoo, $additionalFoo) = split(/"-"/, $tmpFoo[$i]);
     $selectQuery = "SELECT id FROM nn_$label WHERE lower($label) = lower(?);";
-    $debug && print "Value: $valueFoo - URL: $valueUrlFoo\n";
+    $debug && print "Value: $valueFoo - additionalValue: $additionalFoo\n";
     $selectStatement = $dbh -> prepare($selectQuery);
     $selectStatement -> execute($valueFoo);
     $selectResult = $selectStatement->fetchrow_array();
@@ -190,42 +191,9 @@ sub insertFieldWithUrl {
     } else {
       $tmpFoo[$i] = $selectResult;
     }
-    $insertQuery = "INSERT INTO nn_map_$label (id_game, id_$label, url) VALUES (?,?,?);";
+    $insertQuery = "INSERT INTO nn_map_$label (id_game, id_$label, $additionalLabel) VALUES (?,?,?);";
     $insertStatement = $dbh -> prepare($insertQuery);
-    $insertStatement -> execute($id_game, $tmpFoo[$i], $valueUrlFoo);
-    $insertStatement -> finish();
-    $selectStatement -> finish();
-  }
-}
-
-sub insertParty {
-  my $game_name = shift();
-  unless ($game{$game_name}{"party"}) {
-    return;
-  }
-  my ($insertQuery, $selectResult, $selectQuery, $selectStatement, $insertStatement);
-  my @tmpFoo = split(/","/, $game{$game_name}{"party"});
-  $debug && print $game{$game_name}{"party"}."\nNo. of parties: ".@tmpFoo."\n";
-  for (my $i = 0; $i < @tmpFoo; $i++){
-    (my $party, my $num_pl) = split(/"-"/, $tmpFoo[$i]);
-    $selectQuery = "SELECT id FROM nn_party WHERE lower(party) = lower(?);";
-    $debug && print "Party: $party - Players: $num_pl\n";
-    $selectStatement = $dbh -> prepare($selectQuery);
-    $selectStatement -> execute($party);
-    $selectResult = $selectStatement->fetchrow_array();
-    if (!defined $selectResult){
-      $insertQuery = "INSERT INTO nn_party (party) VALUES (?) RETURNING id;";
-      $insertStatement = $dbh -> prepare($insertQuery);
-      $insertStatement -> execute($party);
-      my $foo_rec = $insertStatement->fetchrow_hashref();
-      $insertStatement -> finish();
-      $tmpFoo[$i] = $$foo_rec{"id"};
-    } else {
-      $tmpFoo[$i] = $selectResult;
-    }
-    $insertQuery = "INSERT INTO nn_map_party (id_game, num_players, id_party) VALUES (?,?,?);";
-    $insertStatement = $dbh -> prepare($insertQuery);
-    $insertStatement -> execute($id_game, $num_pl, $tmpFoo[$i]);
+    $insertStatement -> execute($id_game, $tmpFoo[$i], $additionalFoo);
     $insertStatement -> finish();
     $selectStatement -> finish();
   }

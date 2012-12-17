@@ -14,5 +14,25 @@
   theme{"WW2"}
   party{"German"-"2","US"-"2","British"-"2"}
   publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=86"}
-  series{"Command Staff"}
+  series{"Command Staff"-""}
+}
+
+"Memoir '44 - Nach Moskau!" {
+  12345
+  By November, Operation Typhoon is in full swing. The Wehrmacht is at the gates of Moscow. Up North, Klin has fallen and the XXXXth Panzer Korps is rumbling towards the Soviet capital. But the Russians are hanging on somehow, with "General Winter" on their side. On the 27th, the thermometer fell to -40° C. For the Germans who thought they'd be in Moscow long before now, Hell has frozen over! Tank tracks are soldered into the frozen mud, weapons are too cold to hold with bare hands, and men are dying in place. The 2nd Panzerdivision manages to reach Lobnia and Kimki, 10 miles from the Kremlin, but can't go any further. The Russians have thrown all they have, including factory workers, to protect Mother Russia. The Germans stop and go on the defensive. Initiative has changed hands...
+  1941-11-23 / 1941-12-05
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Berg"}
+  engine{"Vassal"-"http://www.vassalengine.com/modules/m44"}
+  side{"Axis","Allies"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"WW2"}
+  party{"German"-"2","Soviet"-"2"}
+  publisher{"Days of Wonder"-"http://www.daysofwonder.com"}
+  series{"Memoir '44"-"M44/12/4717"}
+  special{"Breakthrough"}
 }
