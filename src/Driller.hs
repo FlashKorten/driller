@@ -42,7 +42,7 @@ main = do
     getRouteWithoutParameter "/sides"      $ DB.fetchAllSides conn
     getRouteWithoutParameter "/parties"    $ DB.fetchAllParties conn
     getRouteWithoutParameter "/publishers" $ DB.fetchAllPublishers conn
-    getRouteWithoutParameter "/areas"      $ DB.fetchAllAreas conn
+    getRouteWithoutParameter "/series"     $ DB.fetchAllSeries conn
     getRouteWithoutParameter "/mechanics"  $ DB.fetchAllMechanics conn
     getRouteWithoutParameter "/games"      $ DB.fetchAllGames conn
     getRouteWithParameter "/author/:id"    $ DB.fetchAuthor conn
@@ -52,7 +52,7 @@ main = do
     getRouteWithParameter "/side/:id"      $ DB.fetchSide conn
     getRouteWithParameter "/party/:id"     $ DB.fetchParty conn
     getRouteWithParameter "/publisher/:id" $ DB.fetchPublisher conn
-    getRouteWithParameter "/area/:id"      $ DB.fetchArea conn
+    getRouteWithParameter "/series/:id"    $ DB.fetchSeries conn
     getRouteWithParameter "/mechanic/:id"  $ DB.fetchMechanic conn
     getRouteWithParameter "/game/:id"      $ DB.fetchGame conn
 

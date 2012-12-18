@@ -1,4 +1,4 @@
-{-# LANGUAGE OverloadedStrings, TemplateHaskell #-}
+{-# LANGUAGE FlexibleInstances, TypeSynonymInstances, OverloadedStrings, TemplateHaskell #-}
 
 module Driller.Data
     ( Theme
@@ -11,14 +11,16 @@ module Driller.Data
     , Game
     , Engine
     , Author
-    , Area
+    , Series
     ) where
 
 import qualified Data.Text as Text ( Text )
 import Data.Aeson.TH ( deriveJSON )
+import Data.Aeson
 import Database.PostgreSQL.Simple.FromRow ( FromRow(..), field )
 import Database.PostgreSQL.Simple.ToRow ( ToRow(..) )
 import Database.PostgreSQL.Simple.ToField ( ToField(toField) )
+import Database.PostgreSQL.Simple.Time ( Date )
 import Control.Applicative ( (<$>), (<*>) )
 
 data Genre     = Genre     { getGenreId     :: Int, getGenreName     :: Text.Text }
@@ -28,32 +30,55 @@ data Mechanic  = Mechanic  { getMechanicId  :: Int, getMechanicName  :: Text.Tex
 data Side      = Side      { getSideId      :: Int, getSideName      :: Text.Text }
 data Party     = Party     { getPartyId     :: Int, getPartyName     :: Text.Text }
 data Publisher = Publisher { getPublisherId :: Int, getPublisherName :: Text.Text }
-data Area      = Area      { getAreaId      :: Int, getAreaName      :: Text.Text }
+data Series    = Series    { getSeriesId    :: Int, getSeriesName    :: Text.Text }
 data Author    = Author    { getAuthorId    :: Int, getAuthorName    :: Text.Text }
   deriving Show
 
-data GameResult = GameResult { getGames :: [Game]
-                             , getGenres :: [Genre]
-                             , getThemes :: [Theme]
-                             , getMechanics :: [Mechanic]
-                             , getSides :: [Side]
-                             , getParties :: [Party]
+data GameResult = GameResult { getGames      :: [Game]
+                             , getGenres     :: [Genre]
+                             , getThemes     :: [Theme]
+                             , getMechanics  :: [Mechanic]
+                             , getSides      :: [Side]
+                             , getParties    :: [Party]
                              , getPublishers :: [Publisher]
-                             , getAreas :: [Area]
-                             , getAuthors :: [Author]
-                             , getEngines :: [Engine]
+                             , getSeries     :: [Series]
+                             , getAuthors    :: [Author]
+                             , getEngines    :: [Engine]
 }
 
 data Game = Game { getGameId        :: Int
                  , getGameTitle     :: Text.Text
                  , getGameSubtitle  :: Text.Text
-                 , getNumPlayersMin :: Int
-                 , getNumPlayersMax :: Int
-                 , getGameTimeStart :: Int
-                 , getGameTimeEnd   :: Int
+                 , getPlayersMin    :: Int
+                 , getPlayersMax    :: Int
+                 , getGametimeStart :: Date
+                 , getGametimeEnd   :: Date
                  , getBggId         :: Text.Text
                  }
 
+instance FromJSON Game where
+  parseJSON (Object o) = Game <$>
+    o .: "id" <*>
+    o .: "title" <*>
+    o .: "subtitle" <*>
+    o .: "minPlayers" <*>
+    o .: "maxPlayers" <*>
+    o .: "gametimeStart" <*>
+    o .: "gametimeEnd" <*>
+    o .: "bggid"
+
+instance ToJSON Game where
+  toJSON g = object [ "title" .= getGameTitle g
+                    , "subtitle" .= getGameSubtitle g
+                    , "minPlayers" .= getPlayersMin g
+                    , "maxPlayers" .= getPlayersMax g
+                    , "gametimeStart" .= show (getGametimeStart g)
+                    , "gametimeEnd" .= show (getGametimeEnd g)
+                    , "bggid" .= getBggId g
+                    ]
+
+instance FromJSON Date where
+  parseJSON (Object o) = undefined
 
 $(deriveJSON (drop 9) ''Author)
 $(deriveJSON (drop 8) ''Genre)
@@ -63,8 +88,7 @@ $(deriveJSON (drop 11) ''Mechanic)
 $(deriveJSON (drop 7) ''Side)
 $(deriveJSON (drop 8) ''Party)
 $(deriveJSON (drop 12) ''Publisher)
-$(deriveJSON (drop 7) ''Area)
-$(deriveJSON (drop 3) ''Game)
+$(deriveJSON (drop 9) ''Series)
 $(deriveJSON (drop 3) ''GameResult)
 
 instance FromRow Author    where fromRow = Author    <$> field <*> field
@@ -75,7 +99,7 @@ instance FromRow Mechanic  where fromRow = Mechanic  <$> field <*> field
 instance FromRow Side      where fromRow = Side      <$> field <*> field
 instance FromRow Party     where fromRow = Party     <$> field <*> field
 instance FromRow Publisher where fromRow = Publisher <$> field <*> field
-instance FromRow Area      where fromRow = Area      <$> field <*> field
+instance FromRow Series    where fromRow = Series    <$> field <*> field
 instance FromRow Game      where fromRow = Game      <$> field <*> field <*> field <*> field <*> field <*> field <*> field <*> field
 instance FromRow Int       where fromRow = field
 instance ToRow Int         where toRow n = [toField n]

@@ -18,21 +18,41 @@
 }
 
 "Memoir '44 - Nach Moskau!" {
-  12345
-  By November, Operation Typhoon is in full swing. The Wehrmacht is at the gates of Moscow. Up North, Klin has fallen and the XXXXth Panzer Korps is rumbling towards the Soviet capital. But the Russians are hanging on somehow, with "General Winter" on their side. On the 27th, the thermometer fell to -40° C. For the Germans who thought they'd be in Moscow long before now, Hell has frozen over! Tank tracks are soldered into the frozen mud, weapons are too cold to hold with bare hands, and men are dying in place. The 2nd Panzerdivision manages to reach Lobnia and Kimki, 10 miles from the Kremlin, but can't go any further. The Russians have thrown all they have, including factory workers, to protect Mother Russia. The Germans stop and go on the defensive. Initiative has changed hands...
+  10630
+  By November, Operation Typhoon is in full swing. The Wehrmacht is at the gates of Moscow. Up North, Klin has fallen and the XXXXth Panzer Korps is rumbling towards the Soviet capital. But the Russians are hanging on somehow, with "General Winter" on their side. On the 27th, the thermometer fell to -40 degrees celsius. For the Germans who thought they'd be in Moscow long before now, Hell has frozen over! Tank tracks are soldered into the frozen mud, weapons are too cold to hold with bare hands, and men are dying in place. The 2nd Panzerdivision manages to reach Lobnia and Kimki, 10 miles from the Kremlin, but can't go any further. The Russians have thrown all they have, including factory workers, to protect Mother Russia. The Germans stop and go on the defensive. Initiative has changed hands...
   1941-11-23 / 1941-12-05
   1 / 1
   250
   6
   2 / 2
-  author{"Richard Berg"}
+  author{"Richard Borg"}
   engine{"Vassal"-"http://www.vassalengine.com/modules/m44"}
   side{"Axis","Allies"}
   genre{"Conflict Simulation"}
   mechanic{"Card Driven","Dice","Hex"}
   theme{"WW2"}
   party{"German"-"2","Soviet"-"2"}
-  publisher{"Days of Wonder"-"http://www.daysofwonder.com"}
+  publisher{"Days of Wonder"-"http://www.daysofwonder.com/memoir44/en/"}
   series{"Memoir '44"-"M44/12/4717"}
   special{"Breakthrough"}
 }
+
+"Combat Commander Europe - Turnbull Turns'em" {
+  21050
+  It's D-Day, and the 82nd Airborne Division is struggling to consolidate its defenses at St. Mere-Eglise. Expecting a counter-attack from the north, 3/505 Commander Lt. Col. Benjamin Vandervoort orders D Company's 3rd Platoon - led by 1st Lt. Turner Turnbull - to block Route D-15 at Neuville-au-Plain. Shortly after arriving, Turnbull's force of 43 men spot a large column of men in feldgrau approaching down the highway, apparently escorted by soldiers wearing American paratroopers' uniform. Wary of a ruse, an American machine-gunner fires warning shots into a nearby field. The German "prioners" dive for the ditches. After fanning out in either direction in order to try and outflank the outnumbered but well-entrenched Americans, the German attack commences.
+  1944-06-06 / 1944-06-06
+  49.43 / 1.33
+  2
+  1
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven", "Hex-and-Counter"}
+  theme{"WW2"}
+  party{"German"-"2","US"-"2"}
+  publisher{"GMT-Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce026"}
+}
+

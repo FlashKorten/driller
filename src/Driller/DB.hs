@@ -10,7 +10,7 @@ module Driller.DB
     , fetchEngine
     , fetchDrilledGameResult
     , fetchAuthor
-    , fetchArea
+    , fetchSeries
     , fetchAllThemes
     , fetchAllSides
     , fetchAllPublishers
@@ -20,7 +20,7 @@ module Driller.DB
     , fetchAllGames
     , fetchAllEngines
     , fetchAllAuthors
-    , fetchAllAreas
+    , fetchAllSeries
     , connectionInfo
     , initJoinMap
     ) where
@@ -122,14 +122,14 @@ fetchPublishers c ids = query c publishersQuery (Only (In ids))
 fetchAllPublishers :: Connection -> IO [Publisher]
 fetchAllPublishers c = query_ c allPublishersQuery
 
-fetchArea :: Connection -> Int -> IO [Area]
-fetchArea c = query c areaQuery
+fetchSeries :: Connection -> Int -> IO [Series]
+fetchSeries c = query c seriesQuery
 
-fetchAreas :: Connection -> [Int] -> IO [Area]
-fetchAreas c ids = query c areasQuery (Only (In ids))
+fetchSeriess :: Connection -> [Int] -> IO [Series]
+fetchSeriess c ids = query c seriessQuery (Only (In ids))
 
-fetchAllAreas :: Connection -> IO [Area]
-fetchAllAreas c = query_ c allAreasQuery
+fetchAllSeries :: Connection -> IO [Series]
+fetchAllSeries c = query_ c allSeriesQuery
 
 fetchGame :: Connection -> Int -> IO [Game]
 fetchGame c = query c gameQuery
@@ -171,7 +171,7 @@ fetchDrilledGameResult joinMap c p = do
     sides      <- fetchForResult parameterMap "side" fetchSide fetchSides c ids
     parties    <- fetchForResult parameterMap "party" fetchParty fetchParties c ids
     publishers <- fetchForResult parameterMap "publisher" fetchPublisher fetchPublishers c ids
-    areas      <- fetchForResult parameterMap "area" fetchArea fetchAreas c ids
+    series     <- fetchForResult parameterMap "series" fetchSeries fetchSeriess c ids
     authors    <- fetchForResult parameterMap "author" fetchAuthor fetchAuthors c ids
     engines    <- fetchForResult parameterMap "engine" fetchEngine fetchEngines c ids
     return GameResult { getGames      = games
@@ -181,7 +181,7 @@ fetchDrilledGameResult joinMap c p = do
                       , getSides      = sides
                       , getParties    = parties
                       , getPublishers = publishers
-                      , getAreas      = areas
+                      , getSeries     = series
                       , getAuthors    = authors
                       , getEngines    = engines
                       }

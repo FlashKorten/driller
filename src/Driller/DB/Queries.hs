@@ -1,7 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Driller.DB.Queries
     ( JoinMap
-    , allAreasQuery
+    , allSeriesQuery
     , allAuthorsQuery
     , allEnginesQuery
     , allGamesQuery
@@ -11,8 +11,8 @@ module Driller.DB.Queries
     , allPublishersQuery
     , allSidesQuery
     , allThemesQuery
-    , areaQuery
-    , areasQuery
+    , seriesQuery
+    , seriessQuery
     , authorQuery
     , authorsQuery
     , engineQuery
@@ -76,14 +76,14 @@ publisherQuery, publishersQuery, allPublishersQuery :: Query
 publisherQuery     = "SELECT id, publisher FROM nn_publisher WHERE id = ?"
 publishersQuery    = "SELECT d.id, d.publisher FROM nn_publisher AS d JOIN nn_map_publisher AS m ON m.id_publisher = d.id WHERE m.id_game IN ? GROUP BY d.id, d.publisher ORDER BY d.publisher"
 allPublishersQuery = "SELECT id, publisher FROM nn_publisher ORDER BY publisher"
-areaQuery, areasQuery, allAreasQuery :: Query
-areaQuery          = "SELECT id, area FROM nn_area WHERE id = ?"
-areasQuery         = "SELECT d.id, d.area FROM nn_area AS d JOIN nn_map_area AS m ON m.id_area = d.id WHERE m.id_game IN ? GROUP BY d.id, d.area ORDER BY d.area"
-allAreasQuery      = "SELECT id, area FROM nn_area ORDER BY area"
+seriesQuery, seriessQuery, allSeriesQuery :: Query
+seriesQuery          = "SELECT id, series FROM nn_series WHERE id = ?"
+seriessQuery         = "SELECT d.id, d.series FROM nn_series AS d JOIN nn_map_series AS m ON m.id_series = d.id WHERE m.id_game IN ? GROUP BY d.id, d.series ORDER BY d.series"
+allSeriesQuery      = "SELECT id, series FROM nn_series ORDER BY series"
 gameQuery, gamesQuery, allGamesQuery :: Query
-gameQuery          = "SELECT id, game, subtitle, num_players_min, num_players_max, gametime_start, gametime_end, id_bgg FROM nn_game WHERE id = ?"
-gamesQuery         = "SELECT id, game, subtitle, num_players_min, num_players_max, gametime_start, gametime_end, id_bgg FROM nn_game WHERE id IN ?"
-allGamesQuery      = "SELECT id, game, subtitle, num_players_min, num_players_max, gametime_start, gametime_end, id_bgg FROM nn_game ORDER BY game"
+gameQuery          = "SELECT id, game, subtitle, players_min, players_max, gametime_start, gametime_end, id_bgg FROM nn_game WHERE id = ?"
+gamesQuery         = "SELECT id, game, subtitle, players_min, players_max, gametime_start, gametime_end, id_bgg FROM nn_game WHERE id IN ?"
+allGamesQuery      = "SELECT id, game, subtitle, players_min, players_max, gametime_start, gametime_end, id_bgg FROM nn_game ORDER BY game"
 
 gameListQuery :: JoinMap -> [T.Text] -> Query
 gameListQuery joinMap pList = foldl' mappend prefix parts
@@ -99,7 +99,7 @@ initJoinMap = HM.fromList [("author"    , (" JOIN nn_map_author AS author ON g.i
                           ,("mechanic"  , (" JOIN nn_map_mechanic AS mechanic ON g.id = mechanic.id_game",    " AND mechanic.id_mechanic = ?"))
                           ,("side"      , (" JOIN nn_map_side AS side ON g.id = side.id_game",                " AND side.id_side = ?"))
                           ,("party"     , (" JOIN nn_map_party AS party ON g.id = party.id_game",             " AND party.id_party = ?"))
-                          ,("area"      , (" JOIN nn_map_area AS area ON g.id = area.id_game",                " AND area.id_area = ?"))
+                          ,("series"    , (" JOIN nn_map_series AS series ON g.id = series.id_game",          " AND series.id_series = ?"))
                           ,("engine"    , (" JOIN nn_map_engine AS engine ON g.id = engine.id_game",          " AND engine.id_engine = ?"))
                           ]
 
