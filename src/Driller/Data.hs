@@ -8,12 +8,15 @@ module Driller.Data
     , Mechanic
     , Genre
     , GameResult(..)
+    , emptyGameResult
     , Game
     , Engine
     , Author
     , Series
+    , Answer(..)
     ) where
 
+import Driller.Error
 import qualified Data.Text as Text ( Text )
 import Data.Aeson.TH ( deriveJSON )
 import Data.Aeson
@@ -46,6 +49,19 @@ data GameResult = GameResult { getGames      :: [Game]
                              , getEngines    :: [Engine]
 }
 
+emptyGameResult :: GameResult
+emptyGameResult = GameResult { getGames      = []
+                             , getGenres     = []
+                             , getThemes     = []
+                             , getMechanics  = []
+                             , getSides      = []
+                             , getParties    = []
+                             , getPublishers = []
+                             , getSeries     = []
+                             , getAuthors    = []
+                             , getEngines    = []
+                             }
+
 data Game = Game { getGameId        :: Int
                  , getGameTitle     :: Text.Text
                  , getGameSubtitle  :: Text.Text
@@ -77,19 +93,25 @@ instance ToJSON Game where
                     , "bggid" .= getBggId g
                     ]
 
-instance FromJSON Date where
-  parseJSON (Object o) = undefined
+type Answer = Either ParameterError GameResult
 
-$(deriveJSON (drop 9) ''Author)
-$(deriveJSON (drop 8) ''Genre)
-$(deriveJSON (drop 9) ''Engine)
-$(deriveJSON (drop 8) ''Theme)
+instance ToJSON Answer where
+  toJSON (Left e)  = toJSON e
+  toJSON (Right r) = toJSON r
+
+instance FromJSON Date where
+  parseJSON (Object _) = undefined
+
+$(deriveJSON (drop 9)  ''Author)
+$(deriveJSON (drop 8)  ''Genre)
+$(deriveJSON (drop 9)  ''Engine)
+$(deriveJSON (drop 8)  ''Theme)
 $(deriveJSON (drop 11) ''Mechanic)
-$(deriveJSON (drop 7) ''Side)
-$(deriveJSON (drop 8) ''Party)
+$(deriveJSON (drop 7)  ''Side)
+$(deriveJSON (drop 8)  ''Party)
 $(deriveJSON (drop 12) ''Publisher)
-$(deriveJSON (drop 9) ''Series)
-$(deriveJSON (drop 3) ''GameResult)
+$(deriveJSON (drop 9)  ''Series)
+$(deriveJSON (drop 3)  ''GameResult)
 
 instance FromRow Author    where fromRow = Author    <$> field <*> field
 instance FromRow Genre     where fromRow = Genre     <$> field <*> field

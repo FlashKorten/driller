@@ -26,14 +26,15 @@ module Driller.DB
     ) where
 
 import Driller.Data
+import qualified Driller.Error as Error
 import Driller.DB.Queries
 
 import qualified Data.Hashable as H
-import Data.Maybe (Maybe(..), isJust, fromJust )
+import Data.Maybe ( isNothing, fromJust )
 import qualified Data.Text as T
 import qualified Data.Text.Read as TR
 import qualified Data.Text.Lazy as TL ( toStrict )
-import qualified Data.Text.Lazy.Internal as TLI (Text)
+import Data.Text.Lazy.Internal()
 import qualified Data.HashMap.Strict as HM ( HashMap, fromList, lookup, member )
 import Web.Scotty ( Param )
 import Database.PostgreSQL.Simple
@@ -147,33 +148,48 @@ fetchForResult parameterMap key fetchOne fetchMany c ids
         Just value  -> fetchOne c value
         Nothing     -> fetchMany c ids
 
-filterParameters :: [Param] -> JoinMap -> [(T.Text, Int)]
-filterParameters [] _      = []
-filterParameters ((k, v):ps) jm = if key `HM.member` jm && isJust value
-                                    then (key, fromJust value) : filterParameters ps jm
-                                    else filterParameters ps jm
-                                  where key = TL.toStrict k
-                                        value = convertValue key (TL.toStrict v)
+filterParameters :: [Param] -> JoinMap -> Either Error.ParameterError [(T.Text, Int)]
+filterParameters [] _ = Right []
+filterParameters p jm = filterParameters' p jm []
+
+filterParameters' :: [Param] -> JoinMap -> [(T.Text, Int)] -> Either Error.ParameterError [(T.Text, Int)]
+filterParameters' [] _ result        = Right result
+filterParameters' ((k, v):ps) jm tmp | not $ HM.member key jm = Left $ Error.unknownParameter key
+                                     | isNothing value        = Left $ Error.illegalValueFormat key
+                                     | otherwise              = filterParameters' ps jm ((key, fromJust value):tmp)
+                                    where key   = TL.toStrict k
+                                          value = convertValue key (TL.toStrict v)
 
 convertValue :: T.Text -> T.Text -> Maybe Int
-convertValue "latitude"  t = getFromEither (TR.signed TR.decimal t)
-convertValue "longitude" t = getFromEither (TR.signed TR.decimal t)
-convertValue _ t           = getFromEither (TR.decimal t)
+convertValue "latitude"  t = getFromParser (TR.signed TR.decimal t)
+convertValue "longitude" t = getFromParser (TR.signed TR.decimal t)
+convertValue _ t           = getFromParser (TR.decimal t)
 
-getFromEither :: Either String (Int, T.Text) -> Maybe Int
-getFromEither (Left _)       = Nothing
-getFromEither (Right (n, r))
+getFromParser :: Either String (Int, T.Text) -> Maybe Int
+getFromParser (Left _)       = Nothing
+getFromParser (Right (n, r))
            | T.length r == 0 = Just n
            | otherwise       = Nothing
 
 
-fetchDrilledGameResult :: JoinMap -> Connection -> [Param] -> IO GameResult
+fetchDrilledGameResult :: JoinMap -> Connection -> [Param] -> IO Answer
 fetchDrilledGameResult joinMap c p = do
     let filteredParameters = filterParameters p joinMap
-        (keys, values)     = unzip filteredParameters
-        parameterMap       = HM.fromList filteredParameters
+    case filteredParameters of
+        Left e          -> return $ Left e
+        Right parameter -> fetchPositiveAnswer joinMap c parameter
+
+fetchPositiveAnswer :: JoinMap -> Connection -> [(T.Text, Int)] -> IO Answer
+fetchPositiveAnswer joinMap c p = do
+    let (keys, values)     = unzip p
         que = gameListQuery joinMap keys
     ids        <- query c que values
+    if null ids
+       then return $ Right emptyGameResult
+       else prepareResult (HM.fromList p) c ids
+
+prepareResult :: HM.HashMap T.Text Int -> Connection -> [Int] -> IO Answer
+prepareResult parameterMap c ids = do
     games      <- fetchGames c ids
     genres     <- fetchForResult parameterMap "genre" fetchGenre fetchGenres c ids
     themes     <- fetchForResult parameterMap "theme" fetchTheme fetchThemes c ids
@@ -184,7 +200,7 @@ fetchDrilledGameResult joinMap c p = do
     series     <- fetchForResult parameterMap "series" fetchSeries fetchSeriess c ids
     authors    <- fetchForResult parameterMap "author" fetchAuthor fetchAuthors c ids
     engines    <- fetchForResult parameterMap "engine" fetchEngine fetchEngines c ids
-    return GameResult { getGames      = games
+    return $ Right GameResult { getGames      = games
                       , getGenres     = genres
                       , getThemes     = themes
                       , getMechanics  = mechanics

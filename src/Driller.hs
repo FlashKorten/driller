@@ -34,6 +34,10 @@ main = do
   scotty 3000 $ do
     middleware logStdoutDev
 
+    get "/g" $ do
+      p <- params
+      result <- liftIO $ DB.fetchDrilledGameResult joinMap conn p
+      json result
     get "/"                                $ text "No service at this level."
     getRouteWithoutParameter "/authors"    $ DB.fetchAllAuthors conn
     getRouteWithoutParameter "/genres"     $ DB.fetchAllGenres conn
@@ -56,7 +60,3 @@ main = do
     getRouteWithParameter "/mechanic/:id"  $ DB.fetchMechanic conn
     getRouteWithParameter "/game/:id"      $ DB.fetchGame conn
 
-    get "/g" $ do
-      p <- params
-      result <- liftIO $ DB.fetchDrilledGameResult joinMap conn p
-      json result
