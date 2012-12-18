@@ -49,7 +49,7 @@
   engine{"Vassal"-""}
   side{"Axis","Allies"}
   genre{"Conflict Simulation"}
-  mechanic{"Card Driven", "Hex-and-Counter"}
+  mechanic{"Card Driven","Hex-and-Counter"}
   theme{"WW2"}
   party{"German"-"2","US"-"2"}
   publisher{"GMT-Games"-"http://www.gmtgames.com"}

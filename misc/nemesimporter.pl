@@ -175,7 +175,7 @@ sub insertFieldWithAttributeInMap {
   my @tmpFoo = split(/","/, $game{$game_name}{$label});
   $debug && print $game{$game_name}{$label}."\n#instances of $label: ".@tmpFoo."\n";
   for (my $i = 0; $i < @tmpFoo; $i++){
-    my ($valueFoo, $additionalFoo) = split(/"-"/, $tmpFoo[$i]);
+    my ($valueFoo, $additionalFoo) = split(/"\s*-\s*"/, $tmpFoo[$i]);
     $selectQuery = "SELECT id FROM nn_$label WHERE lower($label) = lower(?);";
     $debug && print "Value: $valueFoo - additionalValue: $additionalFoo\n";
     $selectStatement = $dbh -> prepare($selectQuery);

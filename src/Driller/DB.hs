@@ -29,6 +29,7 @@ import Driller.Data
 import Driller.DB.Queries
 
 import qualified Data.Hashable as H
+import Data.Maybe (Maybe(..), isJust, fromJust )
 import qualified Data.Text as T
 import qualified Data.Text.Read as TR
 import qualified Data.Text.Lazy as TL ( toStrict )
@@ -140,26 +141,35 @@ fetchGames c ids = query c gamesQuery (Only (In ids))
 fetchAllGames :: Connection -> IO [Game]
 fetchAllGames c = query_ c allGamesQuery
 
-validParameter :: JoinMap -> (T.Text, Either String (Int, T.Text)) -> Bool
-validParameter _ (_, Left _)            = False
-validParameter joinMap (k, Right (i,r)) = 0 == T.length r && k `HM.member` joinMap && i > 0
-
-preprocessParameter :: (TLI.Text, TLI.Text) -> (T.Text, Either String (Int, T.Text))
-preprocessParameter (k, v) = (TL.toStrict k, TR.decimal $ TL.toStrict v)
-
-postprocessParameter :: (T.Text, Either String (Int, T.Text)) -> (T.Text, Int)
-postprocessParameter (t, Right (i,_)) = (t,i)
-postprocessParameter _ = error "This couldn't happen."
-
 fetchForResult :: (Eq k, H.Hashable k) => HM.HashMap k v -> k -> (t1 -> v -> t) -> (t1 -> t2 -> t) -> t1 -> t2 -> t
 fetchForResult parameterMap key fetchOne fetchMany c ids
     = case HM.lookup key parameterMap of
         Just value  -> fetchOne c value
         Nothing     -> fetchMany c ids
 
+filterParameters :: [Param] -> JoinMap -> [(T.Text, Int)]
+filterParameters [] _      = []
+filterParameters ((k, v):ps) jm = if key `HM.member` jm && isJust value
+                                    then (key, fromJust value) : filterParameters ps jm
+                                    else filterParameters ps jm
+                                  where key = TL.toStrict k
+                                        value = convertValue key (TL.toStrict v)
+
+convertValue :: T.Text -> T.Text -> Maybe Int
+convertValue "latitude"  t = getFromEither (TR.signed TR.decimal t)
+convertValue "longitude" t = getFromEither (TR.signed TR.decimal t)
+convertValue _ t           = getFromEither (TR.decimal t)
+
+getFromEither :: Either String (Int, T.Text) -> Maybe Int
+getFromEither (Left _)       = Nothing
+getFromEither (Right (n, r))
+           | T.length r == 0 = Just n
+           | otherwise       = Nothing
+
+
 fetchDrilledGameResult :: JoinMap -> Connection -> [Param] -> IO GameResult
 fetchDrilledGameResult joinMap c p = do
-    let filteredParameters = map postprocessParameter $ filter (validParameter joinMap) $ map preprocessParameter p
+    let filteredParameters = filterParameters p joinMap
         (keys, values)     = unzip filteredParameters
         parameterMap       = HM.fromList filteredParameters
         que = gameListQuery joinMap keys
