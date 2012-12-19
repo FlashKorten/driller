@@ -11,6 +11,7 @@ module Driller.Data
     , emptyGameResult
     , Game
     , Engine
+    , Leader
     , Author
     , Series
     , Answer(..)
@@ -37,6 +38,7 @@ data Side      = Side      { getSideId      :: Int, getSideName      :: Text.Tex
 data Party     = Party     { getPartyId     :: Int, getPartyName     :: Text.Text }
 data Publisher = Publisher { getPublisherId :: Int, getPublisherName :: Text.Text }
 data Series    = Series    { getSeriesId    :: Int, getSeriesName    :: Text.Text }
+data Leader    = Leader    { getLeaderId    :: Int, getLeaderName    :: Text.Text }
 data Author    = Author    { getAuthorId    :: Int, getAuthorName    :: Text.Text }
   deriving Show
 
@@ -50,6 +52,7 @@ data GameResult = GameResult { getGames      :: [Game]
                              , getSeries     :: [Series]
                              , getAuthors    :: [Author]
                              , getEngines    :: [Engine]
+                             , getLeaders    :: [Leader]
 }
 
 emptyGameResult :: GameResult
@@ -63,6 +66,7 @@ emptyGameResult = GameResult { getGames      = []
                              , getSeries     = []
                              , getAuthors    = []
                              , getEngines    = []
+                             , getLeaders    = []
                              }
 
 data Game = Game { getGameId        :: Int
@@ -116,6 +120,7 @@ $(deriveJSON (drop 7)  ''Side)
 $(deriveJSON (drop 8)  ''Party)
 $(deriveJSON (drop 12) ''Publisher)
 $(deriveJSON (drop 9)  ''Series)
+$(deriveJSON (drop 9)  ''Leader)
 $(deriveJSON (drop 3)  ''GameResult)
 
 instance FromRow Author    where fromRow = Author    <$> field <*> field
@@ -125,6 +130,7 @@ instance FromRow Theme     where fromRow = Theme     <$> field <*> field
 instance FromRow Mechanic  where fromRow = Mechanic  <$> field <*> field
 instance FromRow Side      where fromRow = Side      <$> field <*> field
 instance FromRow Party     where fromRow = Party     <$> field <*> field
+instance FromRow Leader    where fromRow = Leader    <$> field <*> field
 instance FromRow Publisher where fromRow = Publisher <$> field <*> field
 instance FromRow Series    where fromRow = Series    <$> field <*> field
 instance FromRow Game      where fromRow = Game      <$> field <*> field <*> field <*> field <*> field <*> field <*> field <*> field

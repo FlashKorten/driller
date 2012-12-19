@@ -7,6 +7,7 @@ module Driller.DB
     , fetchMechanic
     , fetchGenre
     , fetchGame
+    , fetchLeader
     , fetchEngine
     , fetchDrilledGameResult
     , fetchAuthor
@@ -18,6 +19,7 @@ module Driller.DB
     , fetchAllMechanics
     , fetchAllGenres
     , fetchAllGames
+    , fetchAllLeaders
     , fetchAllEngines
     , fetchAllAuthors
     , fetchAllSeries
@@ -142,6 +144,15 @@ fetchGames c ids = query c gamesQuery (Only (In ids))
 fetchAllGames :: Connection -> IO [Game]
 fetchAllGames c = query_ c allGamesQuery
 
+fetchLeader :: Connection -> Int -> IO [Leader]
+fetchLeader c = query c leaderQuery
+
+fetchLeaders :: Connection -> [Int] -> IO [Leader]
+fetchLeaders c ids = query c leadersQuery (Only (In ids))
+
+fetchAllLeaders :: Connection -> IO [Leader]
+fetchAllLeaders c = query_ c allLeadersQuery
+
 fetchForResult :: ParameterMap -> T.Text -> (Connection -> Int -> t) -> (Connection -> [Int] -> t) -> Connection -> [Int] -> t
 fetchForResult parameterMap key fetchOne fetchMany c ids
     = case HM.lookup key parameterMap of
@@ -200,6 +211,7 @@ prepareResult parameterMap c ids = do
     series     <- fetchForResult parameterMap "series" fetchSeries fetchSeriess c ids
     authors    <- fetchForResult parameterMap "author" fetchAuthor fetchAuthors c ids
     engines    <- fetchForResult parameterMap "engine" fetchEngine fetchEngines c ids
+    leaders    <- fetchForResult parameterMap "leader" fetchLeader fetchLeaders c ids
     return $ Right GameResult { getGames      = games
                       , getGenres     = genres
                       , getThemes     = themes
@@ -210,4 +222,5 @@ prepareResult parameterMap c ids = do
                       , getSeries     = series
                       , getAuthors    = authors
                       , getEngines    = engines
+                      , getLeaders    = leaders
                       }
