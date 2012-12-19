@@ -29,13 +29,13 @@ import Driller.Data
 import qualified Driller.Error as Error
 import Driller.DB.Queries
 
-import qualified Data.Hashable as H
+import Data.Hashable()
 import Data.Maybe ( isNothing, fromJust )
 import qualified Data.Text as T
 import qualified Data.Text.Read as TR
 import qualified Data.Text.Lazy as TL ( toStrict )
 import Data.Text.Lazy.Internal()
-import qualified Data.HashMap.Strict as HM ( HashMap, fromList, lookup, member )
+import qualified Data.HashMap.Strict as HM ( fromList, lookup, member )
 import Web.Scotty ( Param )
 import Database.PostgreSQL.Simple
     ( Only(Only),
@@ -142,17 +142,17 @@ fetchGames c ids = query c gamesQuery (Only (In ids))
 fetchAllGames :: Connection -> IO [Game]
 fetchAllGames c = query_ c allGamesQuery
 
-fetchForResult :: (Eq k, H.Hashable k) => HM.HashMap k v -> k -> (t1 -> v -> t) -> (t1 -> t2 -> t) -> t1 -> t2 -> t
+fetchForResult :: ParameterMap -> T.Text -> (Connection -> Int -> t) -> (Connection -> [Int] -> t) -> Connection -> [Int] -> t
 fetchForResult parameterMap key fetchOne fetchMany c ids
     = case HM.lookup key parameterMap of
         Just value  -> fetchOne c value
         Nothing     -> fetchMany c ids
 
-filterParameters :: [Param] -> JoinMap -> Either Error.ParameterError [(T.Text, Int)]
+filterParameters :: [Param] -> JoinMap -> Either Error.ParameterError [Parameter]
 filterParameters [] _ = Right []
 filterParameters p jm = filterParameters' p jm []
 
-filterParameters' :: [Param] -> JoinMap -> [(T.Text, Int)] -> Either Error.ParameterError [(T.Text, Int)]
+filterParameters' :: [Param] -> JoinMap -> [Parameter] -> Either Error.ParameterError [Parameter]
 filterParameters' [] _ result        = Right result
 filterParameters' ((k, v):ps) jm tmp | not $ HM.member key jm = Left $ Error.unknownParameter key
                                      | isNothing value        = Left $ Error.illegalValueFormat key
@@ -179,7 +179,7 @@ fetchDrilledGameResult joinMap c p = do
         Left e          -> return $ Left e
         Right parameter -> fetchPositiveAnswer joinMap c parameter
 
-fetchPositiveAnswer :: JoinMap -> Connection -> [(T.Text, Int)] -> IO Answer
+fetchPositiveAnswer :: JoinMap -> Connection -> [Parameter] -> IO Answer
 fetchPositiveAnswer joinMap c p = do
     let (keys, values)     = unzip p
         que = gameListQuery joinMap keys
@@ -188,7 +188,7 @@ fetchPositiveAnswer joinMap c p = do
        then return $ Right emptyGameResult
        else prepareResult (HM.fromList p) c ids
 
-prepareResult :: HM.HashMap T.Text Int -> Connection -> [Int] -> IO Answer
+prepareResult :: ParameterMap -> Connection -> [Int] -> IO Answer
 prepareResult parameterMap c ids = do
     games      <- fetchGames c ids
     genres     <- fetchForResult parameterMap "genre" fetchGenre fetchGenres c ids

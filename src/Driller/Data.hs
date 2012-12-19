@@ -14,6 +14,8 @@ module Driller.Data
     , Author
     , Series
     , Answer(..)
+    , Parameter
+    , ParameterMap
     ) where
 
 import Driller.Error
@@ -25,6 +27,7 @@ import Database.PostgreSQL.Simple.ToRow ( ToRow(..) )
 import Database.PostgreSQL.Simple.ToField ( ToField(toField) )
 import Database.PostgreSQL.Simple.Time ( Date )
 import Control.Applicative ( (<$>), (<*>) )
+import qualified Data.HashMap.Strict as HM
 
 data Genre     = Genre     { getGenreId     :: Int, getGenreName     :: Text.Text }
 data Engine    = Engine    { getEngineId    :: Int, getEngineName    :: Text.Text }
@@ -93,6 +96,8 @@ instance ToJSON Game where
                     , "bggid" .= getBggId g
                     ]
 
+type Parameter = (Text.Text, Int)
+type ParameterMap = HM.HashMap Text.Text Int
 type Answer = Either ParameterError GameResult
 
 instance ToJSON Answer where

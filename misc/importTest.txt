@@ -56,3 +56,22 @@
   series{"Combat Commander"-"cce026"}
 }
 
+"Waterloo 20 - Napoleon's Last Campaign" {
+  34334
+  It's D-Day, and the 82nd Airborne Division is struggling to consolidate its defenses at St. Mere-Eglise. Expecting a counter-attack from the north, 3/505 Commander Lt. Col. Benjamin Vandervoort orders D Company's 3rd Platoon - led by 1st Lt. Turner Turnbull - to block Route D-15 at Neuville-au-Plain. Shortly after arriving, Turnbull's force of 43 men spot a large column of men in feldgrau approaching down the highway, apparently escorted by soldiers wearing American paratroopers' uniform. Wary of a ruse, an American machine-gunner fires warning shots into a nearby field. The German "prioners" dive for the ditches. After fanning out in either direction in order to try and outflank the outnumbered but well-entrenched Americans, the German attack commences.
+  1815-06-16 / 1815-06-18
+  50.7103193 / 4.4110966
+  50
+  4
+  2 / 2
+  author{"Joseph Miranda"}
+  engine{"Vassal"-"http://victorypointgames.com/details.php?prodId=60","Cyberboard","http://victorypointgames.com/details.php?prodId=60","ZunTzu","http://victorypointgames.com/details.php?prodId=60"}
+  side{"Axis","Allies"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"Napoleonic"}
+  party{"German"-"2","US"-"2"}
+  publisher{"Victory Point Games"-"http://www.victorypointgames.com/details.php?prodId=60"}
+  series{"Napoleon 20"-"Waterloo"}
+}
+
