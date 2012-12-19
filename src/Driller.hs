@@ -38,37 +38,38 @@ main = do
       p <- params
       result <- liftIO $ DB.fetchDrilledGameResult joinMap conn p
       json result
-    get "/"                                $ text "No service at this level."
-    getRouteWithoutParameter "/authors"    $ DB.fetchAllAuthors conn
-    getRouteWithoutParameter "/genres"     $ DB.fetchAllGenres conn
-    getRouteWithoutParameter "/engines"    $ DB.fetchAllEngines conn
-    getRouteWithoutParameter "/themes"     $ DB.fetchAllThemes conn
-    getRouteWithoutParameter "/sides"      $ DB.fetchAllSides conn
-    getRouteWithoutParameter "/parties"    $ DB.fetchAllParties conn
-    getRouteWithoutParameter "/publishers" $ DB.fetchAllPublishers conn
-    getRouteWithoutParameter "/series"     $ DB.fetchAllSeries conn
-    getRouteWithoutParameter "/mechanics"  $ DB.fetchAllMechanics conn
-    getRouteWithoutParameter "/games"      $ DB.fetchAllGames conn
-    getRouteWithoutParameter "/leaders"    $ DB.fetchAllLeaders conn
-    getRouteWithParameter "/author/:id"    $ DB.fetchAuthor conn
-    getRouteWithParameter "/genre/:id"     $ DB.fetchGenre conn
-    getRouteWithParameter "/engine/:id"    $ DB.fetchEngine conn
-    getRouteWithParameter "/theme/:id"     $ DB.fetchTheme conn
-    getRouteWithParameter "/side/:id"      $ DB.fetchSide conn
-    getRouteWithParameter "/party/:id"     $ DB.fetchParty conn
-    getRouteWithParameter "/publisher/:id" $ DB.fetchPublisher conn
-    getRouteWithParameter "/series/:id"    $ DB.fetchSeries conn
-    getRouteWithParameter "/mechanic/:id"  $ DB.fetchMechanic conn
-    getRouteWithParameter "/game/:id"      $ DB.fetchGame conn
-    getRouteWithParameter "/leader/:id"    $ DB.fetchLeader conn
-
-    getRouteWithoutParameter "/latitude"    $ DB.fetchAllLatitudes conn
-    getRouteWithParameter "/latitude/:id"    $ DB.fetchLatitude conn
-    getRouteWithoutParameter "/longitude"    $ DB.fetchAllLongitudes conn
-    getRouteWithParameter "/longitude/:id"    $ DB.fetchLongitude conn
-    getRouteWithoutParameter "/yearfrom"    $ DB.fetchAllYearsFrom conn
-    getRouteWithParameter "/yearfrom/:id"    $ DB.fetchYearFrom conn
-    getRouteWithoutParameter "/yearupto"    $ DB.fetchAllYearsUpTo conn
-    getRouteWithParameter "/yearupto/:id"    $ DB.fetchYearUpTo conn
-    getRouteWithoutParameter "/range"    $ DB.fetchAllRanges conn
-    getRouteWithParameter "/range/:id"    $ DB.fetchRange conn
+    get "/"                                   $ text "No service at this level."
+    getRouteWithoutParameter "/authors"       $ DB.fetchAllAuthors conn
+    getRouteWithParameter    "/author/:id"    $ DB.fetchAuthor conn
+    getRouteWithoutParameter "/engines"       $ DB.fetchAllEngines conn
+    getRouteWithParameter    "/engine/:id"    $ DB.fetchEngine conn
+    getRouteWithoutParameter "/sides"         $ DB.fetchAllSides conn
+    getRouteWithParameter    "/side/:id"      $ DB.fetchSide conn
+    getRouteWithoutParameter "/publishers"    $ DB.fetchAllPublishers conn
+    getRouteWithParameter    "/publisher/:id" $ DB.fetchPublisher conn
+    getRouteWithoutParameter "/mechanics"     $ DB.fetchAllMechanics conn
+    getRouteWithParameter    "/mechanic/:id"  $ DB.fetchMechanic conn
+    getRouteWithoutParameter "/games"         $ DB.fetchAllGames conn
+    getRouteWithParameter    "/game/:id"      $ DB.fetchGame conn
+    getRouteWithoutParameter "/genres"        $ DB.fetchAllGenres conn
+    getRouteWithParameter    "/genre/:id"     $ DB.fetchGenre conn
+    getRouteWithoutParameter "/themes"        $ DB.fetchAllThemes conn
+    getRouteWithParameter    "/theme/:id"     $ DB.fetchTheme conn
+    getRouteWithoutParameter "/parties"       $ DB.fetchAllParties conn
+    getRouteWithParameter    "/party/:id"     $ DB.fetchParty conn
+    getRouteWithoutParameter "/series"        $ DB.fetchAllSeries conn
+    getRouteWithParameter    "/series/:id"    $ DB.fetchSeries conn
+    getRouteWithoutParameter "/leaders"       $ DB.fetchAllLeaders conn
+    getRouteWithParameter    "/leader/:id"    $ DB.fetchLeader conn
+    getRouteWithoutParameter "/latitudes"     $ DB.fetchAllLatitudes conn
+    getRouteWithParameter    "/latitude/:id"  $ DB.fetchLatitude conn
+    getRouteWithoutParameter "/longitudes"    $ DB.fetchAllLongitudes conn
+    getRouteWithParameter    "/longitude/:id" $ DB.fetchLongitude conn
+    getRouteWithoutParameter "/fromYears"     $ DB.fetchAllFromYears conn
+    getRouteWithParameter    "/fromYear/:id"  $ DB.fetchFromYear conn
+    getRouteWithoutParameter "/upToYears"     $ DB.fetchAllUpToYears conn
+    getRouteWithParameter    "/upToYear/:id"  $ DB.fetchUpToYear conn
+    getRouteWithoutParameter "/fromRanges"    $ DB.fetchAllFromRanges conn
+    getRouteWithParameter    "/fromRange/:id" $ DB.fetchFromRange conn
+    getRouteWithoutParameter "/upToRanges"    $ DB.fetchAllUpToRanges conn
+    getRouteWithParameter    "/upToRange/:id" $ DB.fetchUpToRange conn

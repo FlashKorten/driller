@@ -11,12 +11,13 @@ module Driller.DB
     , fetchAllMechanics
     , fetchAllParties
     , fetchAllPublishers
-    , fetchAllRanges
+    , fetchAllFromRanges
+    , fetchAllUpToRanges
     , fetchAllSeries
     , fetchAllSides
     , fetchAllThemes
-    , fetchAllYearsFrom
-    , fetchAllYearsUpTo
+    , fetchAllFromYears
+    , fetchAllUpToYears
     , fetchAuthor
     , fetchDrilledGameResult
     , fetchEngine
@@ -30,15 +31,17 @@ module Driller.DB
     , fetchMechanic
     , fetchParty
     , fetchPublisher
-    , fetchRange
-    , fetchRanges
+    , fetchFromRange
+    , fetchFromRanges
+    , fetchUpToRange
+    , fetchUpToRanges
     , fetchSeries
     , fetchSide
     , fetchTheme
-    , fetchYearFrom
-    , fetchYearsFrom
-    , fetchYearUpTo
-    , fetchYearsUpTo
+    , fetchFromYear
+    , fetchFromYears
+    , fetchUpToYear
+    , fetchUpToYears
     , initJoinMap
     ) where
 
@@ -186,32 +189,41 @@ fetchLongitudes c ids = query c longitudesQuery (Only (In ids))
 fetchAllLongitudes :: Connection -> IO [Longitude]
 fetchAllLongitudes c = query_ c allLongitudesQuery
 
-fetchYearFrom :: Connection -> Int -> IO [YearFrom]
-fetchYearFrom c = query c yearFromQuery
+fetchFromYear :: Connection -> Int -> IO [FromYear]
+fetchFromYear c = query c fromYearQuery
 
-fetchYearsFrom :: Connection -> [Int] -> IO [YearFrom]
-fetchYearsFrom c ids = query c yearsFromQuery (Only (In ids))
+fetchFromYears :: Connection -> [Int] -> IO [FromYear]
+fetchFromYears c ids = query c fromYearsQuery (Only (In ids))
 
-fetchAllYearsFrom :: Connection -> IO [YearFrom]
-fetchAllYearsFrom c = query_ c allYearsFromQuery
+fetchAllFromYears :: Connection -> IO [FromYear]
+fetchAllFromYears c = query_ c allFromYearsQuery
 
-fetchYearUpTo :: Connection -> Int -> IO [YearUpTo]
-fetchYearUpTo c = query c yearUpToQuery
+fetchUpToYear :: Connection -> Int -> IO [UpToYear]
+fetchUpToYear c = query c upToYearQuery
 
-fetchYearsUpTo :: Connection -> [Int] -> IO [YearUpTo]
-fetchYearsUpTo c ids = query c yearsUpToQuery (Only (In ids))
+fetchUpToYears :: Connection -> [Int] -> IO [UpToYear]
+fetchUpToYears c ids = query c upToYearsQuery (Only (In ids))
 
-fetchAllYearsUpTo :: Connection -> IO [YearUpTo]
-fetchAllYearsUpTo c = query_ c allYearsUpToQuery
+fetchAllUpToYears :: Connection -> IO [UpToYear]
+fetchAllUpToYears c = query_ c allUpToYearsQuery
 
-fetchRange :: Connection -> Int -> IO [Range]
-fetchRange c = query c rangeQuery
+fetchFromRange :: Connection -> Int -> IO [FromRange]
+fetchFromRange c = query c fromRangeQuery
 
-fetchRanges :: Connection -> [Int] -> IO [Range]
-fetchRanges c ids = query c rangesQuery (Only (In ids))
+fetchFromRanges :: Connection -> [Int] -> IO [FromRange]
+fetchFromRanges c ids = query c fromRangesQuery (Only (In ids))
 
-fetchAllRanges :: Connection -> IO [Range]
-fetchAllRanges c = query_ c allRangesQuery
+fetchAllFromRanges :: Connection -> IO [FromRange]
+fetchAllFromRanges c = query_ c allFromRangesQuery
+
+fetchUpToRange :: Connection -> Int -> IO [UpToRange]
+fetchUpToRange c = query c upToRangeQuery
+
+fetchUpToRanges :: Connection -> [Int] -> IO [UpToRange]
+fetchUpToRanges c ids = query c upToRangesQuery (Only (In ids))
+
+fetchAllUpToRanges :: Connection -> IO [UpToRange]
+fetchAllUpToRanges c = query_ c allUpToRangesQuery
 
 fetchForResult :: ParameterMap -> T.Text -> (Connection -> Int -> t) -> (Connection -> [Int] -> t) -> Connection -> [Int] -> t
 fetchForResult parameterMap key fetchOne fetchMany c ids
@@ -277,9 +289,10 @@ prepareResult parameterMap c ids = do
     leaders    <- fetchForResult parameterMap "leader" fetchLeader fetchLeaders c ids
     latitudes  <- fetchForResult parameterMap "latitude" fetchLatitude fetchLatitudes c ids
     longitudes <- fetchForResult parameterMap "longitude" fetchLongitude fetchLongitudes c ids
-    yearsFrom  <- fetchForResult parameterMap "yearfrom" fetchYearFrom fetchYearsFrom c ids
-    yearsUpTo  <- fetchForResult parameterMap "yearupto" fetchYearUpTo fetchYearsUpTo c ids
-    ranges     <- fetchForResult parameterMap "range" fetchRange fetchRanges c ids
+    fromYears  <- fetchForResult parameterMap "fromYear" fetchFromYear fetchFromYears c ids
+    upToYears  <- fetchForResult parameterMap "upToYear" fetchUpToYear fetchUpToYears c ids
+    fromRanges <- fetchForResult parameterMap "fromRange" fetchFromRange fetchFromRanges c ids
+    upToRanges <- fetchForResult parameterMap "upToRange" fetchUpToRange fetchUpToRanges c ids
     return $ Right GameResult { getGames      = games
                       , getGenres     = genres
                       , getThemes     = themes
@@ -293,7 +306,8 @@ prepareResult parameterMap c ids = do
                       , getLeaders    = leaders
                       , getLatitudes  = latitudes
                       , getLongitudes = longitudes
-                      , getYearsFrom  = yearsFrom
-                      , getYearsUpTo  = yearsUpTo
-                      , getRanges     = ranges
+                      , getFromYears  = fromYears
+                      , getUpToYears  = upToYears
+                      , getFromRanges = fromRanges
+                      , getUpToRanges = upToRanges
                       }

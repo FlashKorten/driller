@@ -17,11 +17,12 @@ module Driller.Data
     , Answer(..)
     , Parameter
     , ParameterMap
-    , YearFrom
-    , YearUpTo
+    , FromYear
+    , UpToYear
     , Latitude
     , Longitude
-    , Range
+    , FromRange
+    , UpToRange
     ) where
 
 import Driller.Error
@@ -47,11 +48,12 @@ data Leader    = Leader    { getLeaderId    :: Int, getLeaderName    :: Text.Tex
 data Author    = Author    { getAuthorId    :: Int, getAuthorName    :: Text.Text }
   deriving Show
 
-data YearFrom  = YearFrom  { getValueYearFrom  :: Int }
-data YearUpTo  = YearUpTo  { getValueYearUpTo  :: Int }
+data FromYear  = FromYear  { getValueFromYear  :: Int }
+data UpToYear  = UpToYear  { getValueUpToYear  :: Int }
 data Latitude  = Latitude  { getValueLatitude  :: Int }
 data Longitude = Longitude { getValueLongitude :: Int }
-data Range     = Range     { getValueRange     :: Int }
+data FromRange = FromRange { getValueFromRange :: Int }
+data UpToRange = UpToRange { getValueUpToRange :: Int }
 
 data GameResult = GameResult { getGames      :: [Game]
                              , getGenres     :: [Genre]
@@ -66,9 +68,10 @@ data GameResult = GameResult { getGames      :: [Game]
                              , getLeaders    :: [Leader]
                              , getLatitudes  :: [Latitude]
                              , getLongitudes :: [Longitude]
-                             , getYearsFrom  :: [YearFrom]
-                             , getYearsUpTo  :: [YearUpTo]
-                             , getRanges     :: [Range]
+                             , getFromYears  :: [FromYear]
+                             , getUpToYears  :: [UpToYear]
+                             , getFromRanges :: [FromRange]
+                             , getUpToRanges :: [UpToRange]
 }
 
 emptyGameResult :: GameResult
@@ -85,9 +88,10 @@ emptyGameResult = GameResult { getGames      = []
                              , getLeaders    = []
                              , getLatitudes  = []
                              , getLongitudes = []
-                             , getYearsFrom  = []
-                             , getYearsUpTo  = []
-                             , getRanges     = []
+                             , getFromYears  = []
+                             , getUpToYears  = []
+                             , getFromRanges = []
+                             , getUpToRanges = []
                              }
 
 data Game = Game { getGameId        :: Int
@@ -144,17 +148,19 @@ $(deriveJSON (drop 9)  ''Series)
 $(deriveJSON (drop 9)  ''Leader)
 $(deriveJSON (drop 3)  ''GameResult)
 
-$(deriveJSON (drop 8)  ''YearFrom)
-$(deriveJSON (drop 8)  ''YearUpTo)
+$(deriveJSON (drop 8)  ''FromYear)
+$(deriveJSON (drop 8)  ''UpToYear)
 $(deriveJSON (drop 8)  ''Latitude)
 $(deriveJSON (drop 8)  ''Longitude)
-$(deriveJSON (drop 8)  ''Range)
+$(deriveJSON (drop 8)  ''FromRange)
+$(deriveJSON (drop 8)  ''UpToRange)
 
-instance FromRow YearFrom  where fromRow = YearFrom  <$> field
-instance FromRow YearUpTo  where fromRow = YearUpTo  <$> field
+instance FromRow FromYear  where fromRow = FromYear  <$> field
+instance FromRow UpToYear  where fromRow = UpToYear  <$> field
 instance FromRow Latitude  where fromRow = Latitude  <$> field
 instance FromRow Longitude where fromRow = Longitude <$> field
-instance FromRow Range     where fromRow = Range     <$> field
+instance FromRow FromRange where fromRow = FromRange <$> field
+instance FromRow UpToRange where fromRow = UpToRange <$> field
 
 instance FromRow Author    where fromRow = Author    <$> field <*> field
 instance FromRow Genre     where fromRow = Genre     <$> field <*> field

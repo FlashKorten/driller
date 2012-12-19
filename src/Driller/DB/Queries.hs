@@ -11,12 +11,13 @@ module Driller.DB.Queries
     , allMechanicsQuery
     , allPartiesQuery
     , allPublishersQuery
-    , allRangesQuery
+    , allFromRangesQuery
+    , allUpToRangesQuery
     , allSeriesQuery
     , allSidesQuery
     , allThemesQuery
-    , allYearsFromQuery
-    , allYearsUpToQuery
+    , allFromYearsQuery
+    , allUpToYearsQuery
     , authorQuery
     , authorsQuery
     , engineQuery
@@ -39,18 +40,20 @@ module Driller.DB.Queries
     , partyQuery
     , publisherQuery
     , publishersQuery
-    , rangeQuery
-    , rangesQuery
+    , fromRangeQuery
+    , fromRangesQuery
+    , upToRangeQuery
+    , upToRangesQuery
     , seriesQuery
     , seriessQuery
     , sideQuery
     , sidesQuery
     , themeQuery
     , themesQuery
-    , yearFromQuery
-    , yearsFromQuery
-    , yearUpToQuery
-    , yearsUpToQuery
+    , fromYearQuery
+    , fromYearsQuery
+    , upToYearQuery
+    , upToYearsQuery
     ) where
 
 import Database.PostgreSQL.Simple (Query)
@@ -117,25 +120,30 @@ longitudeQuery     = "SELECT longitude_trunc FROM nn_game WHERE longitude_trunc 
 longitudesQuery    = "SELECT longitude_trunc FROM nn_game WHERE id IN ? GROUP BY longitude_trunc ORDER BY longitude_trunc"
 allLongitudesQuery = "SELECT longitude_trunc FROM nn_game GROUP BY longitude_trunc ORDER BY longitude_trunc"
 
-yearFromQuery, yearsFromQuery, allYearsFromQuery :: Query
-yearFromQuery      = "SELECT year_from FROM nn_game WHERE id = ?"
-yearsFromQuery     = "SELECT year_from FROM nn_game WHERE id IN ? GROUP BY year_from ORDER BY year_from"
-allYearsFromQuery  = "SELECT year_from FROM nn_game GROUP BY year_from ORDER BY year_from"
+fromYearQuery, fromYearsQuery, allFromYearsQuery :: Query
+fromYearQuery       = "SELECT min(year_from) FROM nn_game WHERE year_from >= ?"
+fromYearsQuery      = "SELECT year_from FROM nn_game WHERE id IN ? GROUP BY year_from ORDER BY year_from"
+allFromYearsQuery   = "SELECT year_from FROM nn_game GROUP BY year_from ORDER BY year_from"
 
-yearUpToQuery, yearsUpToQuery, allYearsUpToQuery :: Query
-yearUpToQuery      = "SELECT year_upto FROM nn_game WHERE id = ?"
-yearsUpToQuery     = "SELECT year_upto FROM nn_game WHERE id IN ? GROUP BY year_upto ORDER BY year_upto"
-allYearsUpToQuery  = "SELECT year_upto FROM nn_game GROUP BY year_upto ORDER BY year_upto"
+upToYearQuery, upToYearsQuery, allUpToYearsQuery :: Query
+upToYearQuery       = "SELECT max(year_upto) FROM nn_game WHERE year_upto <= ?"
+upToYearsQuery      = "SELECT year_upto FROM nn_game WHERE id IN ? GROUP BY year_upto ORDER BY year_upto"
+allUpToYearsQuery   = "SELECT year_upto FROM nn_game GROUP BY year_upto ORDER BY year_upto"
 
-rangeQuery, rangesQuery, allRangesQuery :: Query
-rangeQuery         = "SELECT range FROM nn_game WHERE id = ?"
-rangesQuery        = "SELECT range FROM nn_game WHERE id IN ? GROUP BY range ORDER BY range"
-allRangesQuery     = "SELECT range FROM nn_game GROUP BY range ORDER BY range"
+fromRangeQuery, fromRangesQuery, allFromRangesQuery :: Query
+fromRangeQuery     = "SELECT min(range) FROM nn_game WHERE range >= ?"
+fromRangesQuery    = "SELECT range FROM nn_game WHERE id IN ? GROUP BY range ORDER BY range"
+allFromRangesQuery = "SELECT range FROM nn_game GROUP BY range ORDER BY range"
+
+upToRangeQuery, upToRangesQuery, allUpToRangesQuery :: Query
+upToRangeQuery     = "SELECT max(range) FROM nn_game WHERE range <= ?"
+upToRangesQuery    = "SELECT range FROM nn_game WHERE id IN ? GROUP BY range ORDER BY range"
+allUpToRangesQuery = "SELECT range FROM nn_game GROUP BY range ORDER BY range"
 
 gameListQuery :: JoinMap -> [T.Text] -> Query
 gameListQuery joinMap pList = foldl' mappend prefix parts
              where prefix = "SELECT id FROM nn_game AS g"
-                   parts = DL.toList $ DL.append (DL.fromList joins) (DL.fromList wheres)
+                   parts = DL.toList $ DL.append (DL.fromList joins) (DL.fromList $ " WHERE 1=1":wheres)
                    (joins, wheres) = unzip $ map (joinMap HM.!) pList
 
 initJoinMap :: JoinMap
@@ -151,8 +159,9 @@ initJoinMap = HM.fromList [("author"    , (" JOIN nn_map_author AS author ON g.i
                           ,("engine"    , (" JOIN nn_map_engine AS engine ON g.id = engine.id_game",          " AND engine.id_engine = ?"))
                           ,("latitude"  , ("",                                                                " AND g.latitude_trunc = ?"))
                           ,("longitude" , ("",                                                                " AND g.longitude_trunc = ?"))
-                          ,("yearfrom"  , ("",                                                                " AND NOT g.year_upto < ?"))
-                          ,("yearupto"  , ("",                                                                " AND NOT g.year_from > ?"))
-                          ,("range"     , ("",                                                                " AND g.range = ?"))
+                          ,("fromYear"  , ("",                                                                " AND NOT g.year_upto < ?"))
+                          ,("upToYear"  , ("",                                                                " AND NOT g.year_from > ?"))
+                          ,("fromRange" , ("",                                                                " AND g.range >= ?"))
+                          ,("upToRange" , ("",                                                                " AND g.range <= ?"))
                           ]
 
