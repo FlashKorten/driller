@@ -17,27 +17,7 @@
   series{"Command Staff"-""}
 }
 
-"Memoir '44 - Nach Moskau!" {
-  10630
-  By November, Operation Typhoon is in full swing. The Wehrmacht is at the gates of Moscow. Up North, Klin has fallen and the XXXXth Panzer Korps is rumbling towards the Soviet capital. But the Russians are hanging on somehow, with "General Winter" on their side. On the 27th, the thermometer fell to -40 degrees celsius. For the Germans who thought they'd be in Moscow long before now, Hell has frozen over! Tank tracks are soldered into the frozen mud, weapons are too cold to hold with bare hands, and men are dying in place. The 2nd Panzerdivision manages to reach Lobnia and Kimki, 10 miles from the Kremlin, but can't go any further. The Russians have thrown all they have, including factory workers, to protect Mother Russia. The Germans stop and go on the defensive. Initiative has changed hands...
-  1941-11-23 / 1941-12-05
-  1 / 1
-  250
-  6
-  2 / 2
-  author{"Richard Borg"}
-  engine{"Vassal"-"http://www.vassalengine.com/modules/m44"}
-  side{"Axis","Allies","Germany","Soviet Union"}
-  genre{"Conflict Simulation"}
-  mechanic{"Card Driven","Dice","Hex"}
-  theme{"WW2"}
-  party{"German"-"2","Soviet"-"2"}
-  publisher{"Days of Wonder"-"http://www.daysofwonder.com/memoir44/en/"}
-  series{"Memoir '44"-"M44/12/4717"}
-  special{"Breakthrough"}
-}
-
-"Combat Commander Europe - Turnbull Turns'em" {
+"Combat Commander Europe Turnbull Turns'em" {
   21050
   It's D-Day, and the 82nd Airborne Division is struggling to consolidate its defenses at St. Mere-Eglise. Expecting a counter-attack from the north, 3/505 Commander Lt. Col. Benjamin Vandervoort orders D Company's 3rd Platoon - led by 1st Lt. Turner Turnbull - to block Route D-15 at Neuville-au-Plain. Shortly after arriving, Turnbull's force of 43 men spot a large column of men in feldgrau approaching down the highway, apparently escorted by soldiers wearing American paratroopers' uniform. Wary of a ruse, an American machine-gunner fires warning shots into a nearby field. The German "prioners" dive for the ditches. After fanning out in either direction in order to try and outflank the outnumbered but well-entrenched Americans, the German attack commences.
   1944-06-06 / 1944-06-06
@@ -74,5 +54,125 @@
   party{"French"-"2","Allies"-"2"}
   publisher{"Victory Point Games"-"http://www.victorypointgames.com/details.php?prodId=60"}
   series{"Napoleon 20"-"Waterloo"}
+}
+
+"Memoir '44 Nach Moskau!" {
+  10630
+  By November, Operation Typhoon is in full swing. The Wehrmacht is at the gates of Moscow. Up North, Klin has fallen and the XXXXth Panzer Korps is rumbling towards the Soviet capital. But the Russians are hanging on somehow, with "General Winter" on their side. On the 27th, the thermometer fell to -40 degrees celsius. For the Germans who thought they'd be in Moscow long before now, Hell has frozen over! Tank tracks are soldered into the frozen mud, weapons are too cold to hold with bare hands, and men are dying in place. The 2nd Panzerdivision manages to reach Lobnia and Kimki, 10 miles from the Kremlin, but can't go any further. The Russians have thrown all they have, including factory workers, to protect Mother Russia. The Germans stop and go on the defensive. Initiative has changed hands...
+  1941-11-23 / 1941-12-05
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.vassalengine.com/modules/m44"}
+  side{"Axis","Allies","Germany","Soviet Union"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"WW2"}
+  party{"German"-"2","Soviet"-"2"}
+  publisher{"Days of Wonder"-"http://www.daysofwonder.com/memoir44/en/"}
+  series{"Memoir '44"-"M44/12/4717"}
+  special{"Breakthrough"}
+}
+
+"Memoir '44 Rats in a factory" {
+  10630
+  By October 1942, Stalingrad had become a matter of personal prestige for both Stalin and Hitler, and the sole focal point of the Campaign in the East, above and beyond any strategic military consideration. In mid-October, the Luftwaffe intensified its efforts agains the remaining Red Army positions holding the west bank. Luftflotte 4 flew 2,000 sorties on 14 October and 600 tons of bombs were dropped by German Stukas. The same day, three infantry divisions and two Panzer divisions, supported by battalions of combat engineers, surrounded the three northern factories. Their attack was directed against the center of the Soviet line. The 14th Panzer pushed forward and broke through. With the Tractor Factory nearly surrounded, the intensity of the attack effectively split the soviet 62nd Army in two. Knowing that the loss of the Tractor Factory would lead to the collapse of the Soviet's right flank, General von Paulus ordered fresh troops forward to dislodge the last Soviet troops entrenched there. At the same time, the German forces in the center began to turn south toward the Red Barricades...
+  1942-10-14 / 1942-10-17
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.vassalengine.com/modules/m44"}
+  side{"Axis","Allies","Germany","Soviet Union"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"WW2"}
+  party{"German"-"2","Soviet"-"2"}
+  publisher{"Days of Wonder"-"http://www.daysofwonder.com/memoir44/en/"}
+  series{"Memoir '44"-"M44/2/5981"}
+  special{"Overlord"}
+}
+
+"Memoir '44 Sword of Stalingrad" {
+  10630
+  By the end of August 1942, Army Group South (B) reached the Volga, north of Stalingrad. In a matter of days, 4th Panzer Army, with the 29th Motorized Division in the lead, headed for the river south of the city, effectively trapping Lieutenant General Chuikov and the men and women of the 62nd Army. Stalin's order of July 27 - "Not a step back!" - was no longer just an obligation but a necessity, and its slogan "There is no land behind the Volga!" the harsh reality that now faced all of the city's inhabitants. Having witnessed firsthand on the Russian steppe the devastating effectiveness of German Blitzkrieg tactics, Chuikov turned the carpet-bombing of the city to his advantage. Anchoring his defense lines in bombed-out buildings that overlooked strategically important streets and squares, he ordered Soviet troops to "hug the enemy". Always keeping the front lines as close to the Germans as physically possible, often a mere floor or door frame away, he successfully negated much of the Germans' firepower and combined arms superiority. At such a close range, German infantry soon found themselves forced to fight on their own; or risk taking casualties from their own close air and artillery support! Key landmarks, such as the South Railway Station - which changed hands 14 times in 6 hours; and the Grain Elevator - where combat raged for weeks, became part of history. A year later, the city's defenders were collectively recognized for their courage with the gift of a ceremonial broadsword whose etching reads: "To the steel-hearted citizens of Stalingrad - the gift of King George VI - in token of the homage of the British people."
+  1942-09-14 / 1942-09-21
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.vassalengine.com/modules/m44"}
+  side{"Axis","Allies","Germany","Soviet Union"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"WW2"}
+  party{"German"-"2","Soviet"-"2"}
+  publisher{"Days of Wonder"-"http://www.daysofwonder.com/memoir44/en/"}
+  series{"Memoir '44"-"M44/1/5978"}
+  special{"Overlord"}
+}
+
+"Memoir '44 Hedgerow Hell" {
+  10630
+  After a month of heavy fighting, the Germans finally lost Hill 192 the previous night (See "Attack on Hill 192"). For the first time since June they no longer dominate the road to Saint-Lo. Should US High Command be able to deploy the 5th Corps into a large-scale armored offensive, the city will finally be within reach. But the German elite Parachute units have taken advantage of darkness to pull back onto Hill 101 in the vicinity of the Bayeux Highway near la Boulaye, as well as onto Hill 147 on Martinville's Ridge northeast of Saint-Lo. Reinforced by elements of the Panzer Lehr, they have set up a line of defense in te endless cover of fields, woods and streams. Their airpower grounded by poor weather and their tanks mired in unforgiving "bocage" country, the Allies must place the burden of the attack on the shoulders of their infantry yet again. What awaits the weary US troops will forever be known as "Hedgerow Hell"...
+  1944-07-12 / 1944-07-12
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.vassalengine.com/modules/m44"}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"WW2"}
+  party{"German"-"2","Soviet"-"2"}
+  publisher{"Days of Wonder"-"http://www.daysofwonder.com/memoir44/en/"}
+  series{"Memoir '44"-"M44/60/4659"}
+  special{"Overlord"}
+}
+
+"Command and Colors Agrigentum" {
+  10630
+  The First Punic War began when Rome decided to invade Sicily in 264. Carthage, unprepared, scrambled to raise an army under Hannibal Gisgo. By 262 Hannibal arrived with an advance force at Agrigentum, but the Roman consuls Lucius Postumius Megellus and Quintus Mamilius Vitulus made a preemptive strike and placed him under siege. Months later, Carthage dispatched a relief army of 30,000 foot, 4,500 horse and 60 elephants under Hanno the Elder. Megellus and Vitulus detached about a quarter of their army to guard Hannibal, and brought the remaining 35,000 foot and 3,000 horse onto the field. Hanno organized his army with the mercenaries in the van, his elephants in a second line and his African levies in a third. As the armies clashed the mercenaries fought fiercely at first, but eventually buckled. As they routed into the line of elephants, all hell broke loose. The elephants were caught up in the pandemonium,and began to rampage in all directions. The third Carthaginian line was thrown into confusion, but rallied to resist the advancing legions. After more hard fighting, the Punic army broke. The largest battle of the First Punic War had ended in a decisive Roman victory, but ironically Hannibal's army was able to escape. Toman losses in the battle and the siege were so heavy that Megellus and Vitulus were denied a triumph, despite their victory.
+  262-01-01 BC / 262-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.vassalengine.com/modules/m44"}
+  side{"Carthage","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Carthage"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Agrigentum"}
+  leader{"Hanno the Elder","Megellus","Vitulus"}
+}
+
+"Command and Colors Castrum Album" {
+  10630
+  Following the defeat at Iliturgi, the Carthaginians made an unsuccessful attempt against Intibili, and then withdrew to the south. Early in the spring (214) they dealt with a major Iberian uprising, crushing the rebel army and re-imposing Punic authority. Many more Roman allies would have defected if Publius Scipio had not hurried south with one legion, about 10,000 men. Scipio camped near Castrum Album, famous as the site of Hamilcar Barca's death fourteen years earlier. Hasdrubal, Mago and Hannibal infiltrated the surrounding area undetected. They brought only fast-moving light infantry and mounted troops. When Publius Scipio advanced from Castrum Album towards his brother Gnaeus' camp, he was beset by Punic skirmishers and Numidian horsemen. The light Carthaginian forces showered the slow moving Roman column with javelins, sling-stones and arrows. Whenever the Romans charged, their opponents melted away. Publius' command was in danger of annihilation, and he just barely cut his way through to the safety of his brother's camp. Over 2,000 Romans were left dead along the route of his march, and many of the survivors were wounded. It was a clear Carthaginian victory. Hasdrubal, however, was unable to exploit the superiority of his Numidians for long, as a major revolt broke out in Africa and many of his elite cavalry deserted. The campaigns of the five armies would continue until both Roman armies were destroyed and both Scipio brothers killed at the battles of Castulo and Ilorca (211).
+  214-01-01 BC / 214-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.vassalengine.com/modules/m44"}
+  side{"Carthage","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Carthage"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Hasdrubal Marca","Mago Barca","Publius Scipio"}
 }
 
