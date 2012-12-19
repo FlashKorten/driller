@@ -99,8 +99,6 @@ data Game = Game { getGameId        :: Int
                  , getGameSubtitle  :: Text.Text
                  , getPlayersMin    :: Int
                  , getPlayersMax    :: Int
-                 , getGametimeStart :: Date
-                 , getGametimeEnd   :: Date
                  , getBggId         :: Text.Text
                  }
 
@@ -111,8 +109,6 @@ instance FromJSON Game where
     o .: "subtitle" <*>
     o .: "minPlayers" <*>
     o .: "maxPlayers" <*>
-    o .: "gametimeStart" <*>
-    o .: "gametimeEnd" <*>
     o .: "bggid"
 
 instance ToJSON Game where
@@ -120,8 +116,6 @@ instance ToJSON Game where
                     , "subtitle" .= getGameSubtitle g
                     , "minPlayers" .= getPlayersMin g
                     , "maxPlayers" .= getPlayersMax g
-                    , "gametimeStart" .= show (getGametimeStart g)
-                    , "gametimeEnd" .= show (getGametimeEnd g)
                     , "bggid" .= getBggId g
                     ]
 
@@ -172,7 +166,7 @@ instance FromRow Party     where fromRow = Party     <$> field <*> field
 instance FromRow Leader    where fromRow = Leader    <$> field <*> field
 instance FromRow Publisher where fromRow = Publisher <$> field <*> field
 instance FromRow Series    where fromRow = Series    <$> field <*> field
-instance FromRow Game      where fromRow = Game      <$> field <*> field <*> field <*> field <*> field <*> field <*> field <*> field
+instance FromRow Game      where fromRow = Game      <$> field <*> field <*> field <*> field <*> field <*> field
 instance FromRow Int       where fromRow = field
 instance ToRow Int         where toRow n = [toField n]
 

@@ -106,9 +106,9 @@ leaderQuery        = "SELECT id, leader FROM nn_leader WHERE id = ?"
 leadersQuery       = "SELECT d.id, d.leader FROM nn_leader AS d JOIN nn_map_leader AS m ON m.id_leader = d.id WHERE m.id_game IN ? GROUP BY d.id, d.leader ORDER BY d.leader"
 allLeadersQuery    = "SELECT id, leader FROM nn_leader ORDER BY leader"
 gameQuery, gamesQuery, allGamesQuery :: Query
-gameQuery          = "SELECT id, game, subtitle, players_min, players_max, gametime_start, gametime_end, id_bgg FROM nn_game WHERE id = ?"
-gamesQuery         = "SELECT id, game, subtitle, players_min, players_max, gametime_start, gametime_end, id_bgg FROM nn_game WHERE id IN ?"
-allGamesQuery      = "SELECT id, game, subtitle, players_min, players_max, gametime_start, gametime_end, id_bgg FROM nn_game ORDER BY game"
+gameQuery          = "SELECT id, game, subtitle, players_min, players_max, id_bgg FROM nn_game WHERE id = ?"
+gamesQuery         = "SELECT id, game, subtitle, players_min, players_max, id_bgg FROM nn_game WHERE id IN ?"
+allGamesQuery      = "SELECT id, game, subtitle, players_min, players_max, id_bgg FROM nn_game ORDER BY game"
 
 latitudeQuery, latitudesQuery, allLatitudesQuery :: Query
 latitudeQuery      = "SELECT latitude_trunc FROM nn_game WHERE latitude_trunc = ?"
