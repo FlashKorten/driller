@@ -1,6 +1,11 @@
 DROP INDEX IF EXISTS nn_author_index CASCADE;
 DROP INDEX IF EXISTS nn_engine_index CASCADE;
-DROP INDEX IF EXISTS nn_game_index CASCADE;
+DROP INDEX IF EXISTS nn_game_game_index CASCADE;
+DROP INDEX IF EXISTS nn_game_year_from_index CASCADE;
+DROP INDEX IF EXISTS nn_game_year_upto_index CASCADE;
+DROP INDEX IF EXISTS nn_game_latitude_trunc_index CASCADE;
+DROP INDEX IF EXISTS nn_game_longitude_trunc_index CASCADE;
+DROP INDEX IF EXISTS nn_game_range_index CASCADE;
 DROP INDEX IF EXISTS nn_genre_index CASCADE;
 DROP INDEX IF EXISTS nn_mechanic_index CASCADE;
 DROP INDEX IF EXISTS nn_party_index CASCADE;
@@ -26,6 +31,7 @@ DROP TABLE IF EXISTS nn_map_party CASCADE;
 DROP TABLE IF EXISTS nn_map_leader CASCADE;
 DROP TABLE IF EXISTS nn_map_publisher CASCADE;
 DROP TABLE IF EXISTS nn_map_series CASCADE;
+DROP TABLE IF EXISTS nn_map_special CASCADE;
 DROP TABLE IF EXISTS nn_map_session CASCADE;
 DROP TABLE IF EXISTS nn_map_side CASCADE;
 DROP TABLE IF EXISTS nn_map_theme CASCADE;
@@ -124,8 +130,18 @@ CREATE TABLE nn_game (
 
 ALTER TABLE public.nn_game OWNER TO nemesis;
 
-CREATE INDEX nn_game_index ON nn_game(game ASC);
-ALTER INDEX nn_game_index OWNER TO nemesis;
+CREATE INDEX nn_game_game_index ON nn_game(game ASC);
+ALTER INDEX nn_game_game_index OWNER TO nemesis;
+CREATE INDEX nn_game_year_from_index ON nn_game(game ASC);
+ALTER INDEX nn_game_year_from_index OWNER TO nemesis;
+CREATE INDEX nn_game_year_upto_index ON nn_game(game ASC);
+ALTER INDEX nn_game_year_upto_index OWNER TO nemesis;
+CREATE INDEX nn_game_latitude_trunc_index ON nn_game(game ASC);
+ALTER INDEX nn_game_latitude_trunc_index OWNER TO nemesis;
+CREATE INDEX nn_game_longitude_trunc_index ON nn_game(game ASC);
+ALTER INDEX nn_game_longitude_trunc_index OWNER TO nemesis;
+CREATE INDEX nn_game_range_index ON nn_game(game ASC);
+ALTER INDEX nn_game_range_index OWNER TO nemesis;
 
 CREATE TABLE nn_request (
   id integer PRIMARY KEY DEFAULT nextval('nn_request_id_seq'),
@@ -265,7 +281,7 @@ CREATE TABLE nn_map_special (
   id_special integer NOT NULL REFERENCES nn_side(id)
 );
 
-ALTER TABLE public.nn_map_side OWNER TO nemesis;
+ALTER TABLE public.nn_map_special OWNER TO nemesis;
 
 CREATE TABLE nn_party (
   id integer PRIMARY KEY DEFAULT nextval('nn_party_id_seq'),
