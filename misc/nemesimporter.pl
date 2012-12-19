@@ -97,7 +97,7 @@ foreach my $key (sort(keys %game)){
   $sth_select -> execute($game{$key}{'name'});
   $result = $sth_select->fetchrow_array();
   if (!defined $result) {
-    $insert = "INSERT INTO nn_game (game, id_bgg, subtitle, description, gametime_start, gametime_start_trunc, gametime_end, gametime_end_trunc, players_min, players_max, latitude, latitude_trunc, longitude, longitude_trunc, range, timescale) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING id;";
+    $insert = "INSERT INTO nn_game (game, id_bgg, subtitle, description, gametime_start, year_from, gametime_end, year_upto, players_min, players_max, latitude, latitude_trunc, longitude, longitude_trunc, range, timescale) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING id;";
     $sth_insert = $dbh -> prepare($insert);
     $sth_insert -> execute( $game{$key}{'name'}
                           , $game{$key}{'id_bgg'}
