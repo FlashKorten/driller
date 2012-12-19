@@ -1,19 +1,22 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Driller.DB.Queries
     ( JoinMap
-    , allSeriesQuery
     , allAuthorsQuery
     , allEnginesQuery
     , allGamesQuery
     , allGenresQuery
+    , allLatitudesQuery
+    , allLeadersQuery
+    , allLongitudesQuery
     , allMechanicsQuery
     , allPartiesQuery
     , allPublishersQuery
+    , allRangesQuery
+    , allSeriesQuery
     , allSidesQuery
-    , allLeadersQuery
     , allThemesQuery
-    , seriesQuery
-    , seriessQuery
+    , allYearsFromQuery
+    , allYearsUpToQuery
     , authorQuery
     , authorsQuery
     , engineQuery
@@ -23,19 +26,31 @@ module Driller.DB.Queries
     , gamesQuery
     , genreQuery
     , genresQuery
+    , initJoinMap
+    , latitudeQuery
+    , latitudesQuery
     , leaderQuery
     , leadersQuery
-    , initJoinMap
+    , longitudeQuery
+    , longitudesQuery
     , mechanicQuery
     , mechanicsQuery
     , partiesQuery
     , partyQuery
     , publisherQuery
     , publishersQuery
+    , rangeQuery
+    , rangesQuery
+    , seriesQuery
+    , seriessQuery
     , sideQuery
     , sidesQuery
     , themeQuery
     , themesQuery
+    , yearFromQuery
+    , yearsFromQuery
+    , yearUpToQuery
+    , yearsUpToQuery
     ) where
 
 import Database.PostgreSQL.Simple (Query)
@@ -80,17 +95,42 @@ publisherQuery     = "SELECT id, publisher FROM nn_publisher WHERE id = ?"
 publishersQuery    = "SELECT d.id, d.publisher FROM nn_publisher AS d JOIN nn_map_publisher AS m ON m.id_publisher = d.id WHERE m.id_game IN ? GROUP BY d.id, d.publisher ORDER BY d.publisher"
 allPublishersQuery = "SELECT id, publisher FROM nn_publisher ORDER BY publisher"
 seriesQuery, seriessQuery, allSeriesQuery :: Query
-seriesQuery          = "SELECT id, series FROM nn_series WHERE id = ?"
-seriessQuery         = "SELECT d.id, d.series FROM nn_series AS d JOIN nn_map_series AS m ON m.id_series = d.id WHERE m.id_game IN ? GROUP BY d.id, d.series ORDER BY d.series"
-allSeriesQuery      = "SELECT id, series FROM nn_series ORDER BY series"
+seriesQuery        = "SELECT id, series FROM nn_series WHERE id = ?"
+seriessQuery       = "SELECT d.id, d.series FROM nn_series AS d JOIN nn_map_series AS m ON m.id_series = d.id WHERE m.id_game IN ? GROUP BY d.id, d.series ORDER BY d.series"
+allSeriesQuery     = "SELECT id, series FROM nn_series ORDER BY series"
 leaderQuery, leadersQuery, allLeadersQuery :: Query
-leaderQuery          = "SELECT id, leader FROM nn_leader WHERE id = ?"
-leadersQuery         = "SELECT d.id, d.leader FROM nn_leader AS d JOIN nn_map_leader AS m ON m.id_leader = d.id WHERE m.id_game IN ? GROUP BY d.id, d.leader ORDER BY d.leader"
-allLeadersQuery      = "SELECT id, leader FROM nn_leader ORDER BY leader"
+leaderQuery        = "SELECT id, leader FROM nn_leader WHERE id = ?"
+leadersQuery       = "SELECT d.id, d.leader FROM nn_leader AS d JOIN nn_map_leader AS m ON m.id_leader = d.id WHERE m.id_game IN ? GROUP BY d.id, d.leader ORDER BY d.leader"
+allLeadersQuery    = "SELECT id, leader FROM nn_leader ORDER BY leader"
 gameQuery, gamesQuery, allGamesQuery :: Query
 gameQuery          = "SELECT id, game, subtitle, players_min, players_max, gametime_start, gametime_end, id_bgg FROM nn_game WHERE id = ?"
 gamesQuery         = "SELECT id, game, subtitle, players_min, players_max, gametime_start, gametime_end, id_bgg FROM nn_game WHERE id IN ?"
 allGamesQuery      = "SELECT id, game, subtitle, players_min, players_max, gametime_start, gametime_end, id_bgg FROM nn_game ORDER BY game"
+
+latitudeQuery, latitudesQuery, allLatitudesQuery :: Query
+latitudeQuery      = "SELECT latitude_trunc FROM nn_game WHERE latitude_trunc = ?"
+latitudesQuery     = "SELECT latitude_trunc FROM nn_game WHERE id IN ? GROUP BY latitude_trunc ORDER BY latitude_trunc"
+allLatitudesQuery  = "SELECT latitude_trunc FROM nn_game GROUP BY latitude_trunc ORDER BY latitude_trunc"
+
+longitudeQuery, longitudesQuery, allLongitudesQuery :: Query
+longitudeQuery     = "SELECT longitude_trunc FROM nn_game WHERE longitude_trunc = ?"
+longitudesQuery    = "SELECT longitude_trunc FROM nn_game WHERE id IN ? GROUP BY longitude_trunc ORDER BY longitude_trunc"
+allLongitudesQuery = "SELECT longitude_trunc FROM nn_game GROUP BY longitude_trunc ORDER BY longitude_trunc"
+
+yearFromQuery, yearsFromQuery, allYearsFromQuery :: Query
+yearFromQuery      = "SELECT year_from FROM nn_game WHERE id = ?"
+yearsFromQuery     = "SELECT year_from FROM nn_game WHERE id IN ? GROUP BY year_from ORDER BY year_from"
+allYearsFromQuery  = "SELECT year_from FROM nn_game GROUP BY year_from ORDER BY year_from"
+
+yearUpToQuery, yearsUpToQuery, allYearsUpToQuery :: Query
+yearUpToQuery      = "SELECT year_upto FROM nn_game WHERE id = ?"
+yearsUpToQuery     = "SELECT year_upto FROM nn_game WHERE id IN ? GROUP BY year_upto ORDER BY year_upto"
+allYearsUpToQuery  = "SELECT year_upto FROM nn_game GROUP BY year_upto ORDER BY year_upto"
+
+rangeQuery, rangesQuery, allRangesQuery :: Query
+rangeQuery         = "SELECT range FROM nn_game WHERE id = ?"
+rangesQuery        = "SELECT range FROM nn_game WHERE id IN ? GROUP BY range ORDER BY range"
+allRangesQuery     = "SELECT range FROM nn_game GROUP BY range ORDER BY range"
 
 gameListQuery :: JoinMap -> [T.Text] -> Query
 gameListQuery joinMap pList = foldl' mappend prefix parts
@@ -111,5 +151,8 @@ initJoinMap = HM.fromList [("author"    , (" JOIN nn_map_author AS author ON g.i
                           ,("engine"    , (" JOIN nn_map_engine AS engine ON g.id = engine.id_game",          " AND engine.id_engine = ?"))
                           ,("latitude"  , ("",                                                                " AND g.latitude_trunc = ?"))
                           ,("longitude" , ("",                                                                " AND g.longitude_trunc = ?"))
+                          ,("yearfrom"  , ("",                                                                " AND NOT g.year_upto < ?"))
+                          ,("yearupto"  , ("",                                                                " AND NOT g.year_from > ?"))
+                          ,("range"     , ("",                                                                " AND g.range = ?"))
                           ]
 

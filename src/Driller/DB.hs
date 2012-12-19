@@ -1,29 +1,44 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Driller.DB
-    ( fetchTheme
-    , fetchSide
-    , fetchPublisher
-    , fetchParty
-    , fetchMechanic
-    , fetchGenre
-    , fetchGame
-    , fetchLeader
-    , fetchEngine
-    , fetchDrilledGameResult
-    , fetchAuthor
-    , fetchSeries
-    , fetchAllThemes
-    , fetchAllSides
-    , fetchAllPublishers
-    , fetchAllParties
-    , fetchAllMechanics
-    , fetchAllGenres
-    , fetchAllGames
-    , fetchAllLeaders
-    , fetchAllEngines
+    ( connectionInfo
     , fetchAllAuthors
+    , fetchAllEngines
+    , fetchAllGames
+    , fetchAllGenres
+    , fetchAllLatitudes
+    , fetchAllLeaders
+    , fetchAllLongitudes
+    , fetchAllMechanics
+    , fetchAllParties
+    , fetchAllPublishers
+    , fetchAllRanges
     , fetchAllSeries
-    , connectionInfo
+    , fetchAllSides
+    , fetchAllThemes
+    , fetchAllYearsFrom
+    , fetchAllYearsUpTo
+    , fetchAuthor
+    , fetchDrilledGameResult
+    , fetchEngine
+    , fetchGame
+    , fetchGenre
+    , fetchLatitude
+    , fetchLatitudes
+    , fetchLeader
+    , fetchLongitude
+    , fetchLongitudes
+    , fetchMechanic
+    , fetchParty
+    , fetchPublisher
+    , fetchRange
+    , fetchRanges
+    , fetchSeries
+    , fetchSide
+    , fetchTheme
+    , fetchYearFrom
+    , fetchYearsFrom
+    , fetchYearUpTo
+    , fetchYearsUpTo
     , initJoinMap
     ) where
 
@@ -153,6 +168,51 @@ fetchLeaders c ids = query c leadersQuery (Only (In ids))
 fetchAllLeaders :: Connection -> IO [Leader]
 fetchAllLeaders c = query_ c allLeadersQuery
 
+fetchLatitude :: Connection -> Int -> IO [Latitude]
+fetchLatitude c = query c latitudeQuery
+
+fetchLatitudes :: Connection -> [Int] -> IO [Latitude]
+fetchLatitudes c ids = query c latitudesQuery (Only (In ids))
+
+fetchAllLatitudes :: Connection -> IO [Latitude]
+fetchAllLatitudes c = query_ c allLatitudesQuery
+
+fetchLongitude :: Connection -> Int -> IO [Longitude]
+fetchLongitude c = query c longitudeQuery
+
+fetchLongitudes :: Connection -> [Int] -> IO [Longitude]
+fetchLongitudes c ids = query c longitudesQuery (Only (In ids))
+
+fetchAllLongitudes :: Connection -> IO [Longitude]
+fetchAllLongitudes c = query_ c allLongitudesQuery
+
+fetchYearFrom :: Connection -> Int -> IO [YearFrom]
+fetchYearFrom c = query c yearFromQuery
+
+fetchYearsFrom :: Connection -> [Int] -> IO [YearFrom]
+fetchYearsFrom c ids = query c yearsFromQuery (Only (In ids))
+
+fetchAllYearsFrom :: Connection -> IO [YearFrom]
+fetchAllYearsFrom c = query_ c allYearsFromQuery
+
+fetchYearUpTo :: Connection -> Int -> IO [YearUpTo]
+fetchYearUpTo c = query c yearUpToQuery
+
+fetchYearsUpTo :: Connection -> [Int] -> IO [YearUpTo]
+fetchYearsUpTo c ids = query c yearsUpToQuery (Only (In ids))
+
+fetchAllYearsUpTo :: Connection -> IO [YearUpTo]
+fetchAllYearsUpTo c = query_ c allYearsUpToQuery
+
+fetchRange :: Connection -> Int -> IO [Range]
+fetchRange c = query c rangeQuery
+
+fetchRanges :: Connection -> [Int] -> IO [Range]
+fetchRanges c ids = query c rangesQuery (Only (In ids))
+
+fetchAllRanges :: Connection -> IO [Range]
+fetchAllRanges c = query_ c allRangesQuery
+
 fetchForResult :: ParameterMap -> T.Text -> (Connection -> Int -> t) -> (Connection -> [Int] -> t) -> Connection -> [Int] -> t
 fetchForResult parameterMap key fetchOne fetchMany c ids
     = case HM.lookup key parameterMap of
@@ -183,8 +243,8 @@ getFromParser (Right (n, r))
            | otherwise       = Nothing
 
 withinLimits :: Int -> Int -> Int -> Maybe Int
-withinLimits min max value | value >= min && value <= max = Just value
-                           | otherwise                    = Nothing
+withinLimits lower upper value | value >= lower && value <= upper = Just value
+                               | otherwise                    = Nothing
 
 fetchDrilledGameResult :: JoinMap -> Connection -> [Param] -> IO Answer
 fetchDrilledGameResult joinMap c p = do
@@ -215,6 +275,11 @@ prepareResult parameterMap c ids = do
     authors    <- fetchForResult parameterMap "author" fetchAuthor fetchAuthors c ids
     engines    <- fetchForResult parameterMap "engine" fetchEngine fetchEngines c ids
     leaders    <- fetchForResult parameterMap "leader" fetchLeader fetchLeaders c ids
+    latitudes  <- fetchForResult parameterMap "latitude" fetchLatitude fetchLatitudes c ids
+    longitudes <- fetchForResult parameterMap "longitude" fetchLongitude fetchLongitudes c ids
+    yearsFrom  <- fetchForResult parameterMap "yearfrom" fetchYearFrom fetchYearsFrom c ids
+    yearsUpTo  <- fetchForResult parameterMap "yearupto" fetchYearUpTo fetchYearsUpTo c ids
+    ranges     <- fetchForResult parameterMap "range" fetchRange fetchRanges c ids
     return $ Right GameResult { getGames      = games
                       , getGenres     = genres
                       , getThemes     = themes
@@ -226,4 +291,9 @@ prepareResult parameterMap c ids = do
                       , getAuthors    = authors
                       , getEngines    = engines
                       , getLeaders    = leaders
+                      , getLatitudes  = latitudes
+                      , getLongitudes = longitudes
+                      , getYearsFrom  = yearsFrom
+                      , getYearsUpTo  = yearsUpTo
+                      , getRanges     = ranges
                       }

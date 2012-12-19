@@ -62,3 +62,13 @@ main = do
     getRouteWithParameter "/game/:id"      $ DB.fetchGame conn
     getRouteWithParameter "/leader/:id"    $ DB.fetchLeader conn
 
+    getRouteWithoutParameter "/latitude"    $ DB.fetchAllLatitudes conn
+    getRouteWithParameter "/latitude/:id"    $ DB.fetchLatitude conn
+    getRouteWithoutParameter "/longitude"    $ DB.fetchAllLongitudes conn
+    getRouteWithParameter "/longitude/:id"    $ DB.fetchLongitude conn
+    getRouteWithoutParameter "/yearfrom"    $ DB.fetchAllYearsFrom conn
+    getRouteWithParameter "/yearfrom/:id"    $ DB.fetchYearFrom conn
+    getRouteWithoutParameter "/yearupto"    $ DB.fetchAllYearsUpTo conn
+    getRouteWithParameter "/yearupto/:id"    $ DB.fetchYearUpTo conn
+    getRouteWithoutParameter "/range"    $ DB.fetchAllRanges conn
+    getRouteWithParameter "/range/:id"    $ DB.fetchRange conn

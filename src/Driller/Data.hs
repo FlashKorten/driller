@@ -17,6 +17,11 @@ module Driller.Data
     , Answer(..)
     , Parameter
     , ParameterMap
+    , YearFrom
+    , YearUpTo
+    , Latitude
+    , Longitude
+    , Range
     ) where
 
 import Driller.Error
@@ -42,6 +47,12 @@ data Leader    = Leader    { getLeaderId    :: Int, getLeaderName    :: Text.Tex
 data Author    = Author    { getAuthorId    :: Int, getAuthorName    :: Text.Text }
   deriving Show
 
+data YearFrom  = YearFrom  { getValueYearFrom  :: Int }
+data YearUpTo  = YearUpTo  { getValueYearUpTo  :: Int }
+data Latitude  = Latitude  { getValueLatitude  :: Int }
+data Longitude = Longitude { getValueLongitude :: Int }
+data Range     = Range     { getValueRange     :: Int }
+
 data GameResult = GameResult { getGames      :: [Game]
                              , getGenres     :: [Genre]
                              , getThemes     :: [Theme]
@@ -53,6 +64,11 @@ data GameResult = GameResult { getGames      :: [Game]
                              , getAuthors    :: [Author]
                              , getEngines    :: [Engine]
                              , getLeaders    :: [Leader]
+                             , getLatitudes  :: [Latitude]
+                             , getLongitudes :: [Longitude]
+                             , getYearsFrom  :: [YearFrom]
+                             , getYearsUpTo  :: [YearUpTo]
+                             , getRanges     :: [Range]
 }
 
 emptyGameResult :: GameResult
@@ -67,6 +83,11 @@ emptyGameResult = GameResult { getGames      = []
                              , getAuthors    = []
                              , getEngines    = []
                              , getLeaders    = []
+                             , getLatitudes  = []
+                             , getLongitudes = []
+                             , getYearsFrom  = []
+                             , getYearsUpTo  = []
+                             , getRanges     = []
                              }
 
 data Game = Game { getGameId        :: Int
@@ -123,6 +144,18 @@ $(deriveJSON (drop 9)  ''Series)
 $(deriveJSON (drop 9)  ''Leader)
 $(deriveJSON (drop 3)  ''GameResult)
 
+$(deriveJSON (drop 8)  ''YearFrom)
+$(deriveJSON (drop 8)  ''YearUpTo)
+$(deriveJSON (drop 8)  ''Latitude)
+$(deriveJSON (drop 8)  ''Longitude)
+$(deriveJSON (drop 8)  ''Range)
+
+instance FromRow YearFrom  where fromRow = YearFrom  <$> field
+instance FromRow YearUpTo  where fromRow = YearUpTo  <$> field
+instance FromRow Latitude  where fromRow = Latitude  <$> field
+instance FromRow Longitude where fromRow = Longitude <$> field
+instance FromRow Range     where fromRow = Range     <$> field
+
 instance FromRow Author    where fromRow = Author    <$> field <*> field
 instance FromRow Genre     where fromRow = Genre     <$> field <*> field
 instance FromRow Engine    where fromRow = Engine    <$> field <*> field
@@ -136,3 +169,4 @@ instance FromRow Series    where fromRow = Series    <$> field <*> field
 instance FromRow Game      where fromRow = Game      <$> field <*> field <*> field <*> field <*> field <*> field <*> field <*> field
 instance FromRow Int       where fromRow = field
 instance ToRow Int         where toRow n = [toField n]
+
