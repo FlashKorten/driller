@@ -89,12 +89,6 @@ ALTER TABLE public.nn_special_id_seq OWNER TO nemesis;
 CREATE SEQUENCE nn_theme_id_seq;
 ALTER TABLE public.nn_theme_id_seq OWNER TO nemesis;
 
-DROP TYPE IF EXISTS latitude_t;
-DROP TYPE IF EXISTS longitude_t;
-
-CREATE TYPE latitude_t AS double precision NOT NULL CHECK(value>=-90 AND value<=90);
-CREATE TYPE longitude_t AS double precision NOT NULL CHECK(value>-180 AND value<=180);
-
 CREATE TABLE nn_user (
   id integer PRIMARY KEY DEFAULT nextval('nn_user_id_seq'),
   username varchar(255) NOT NULL default '',
@@ -117,9 +111,13 @@ CREATE TABLE nn_game (
   players_min integer DEFAULT 0 NOT NULL,
   players_max integer DEFAULT 0 NOT NULL,
   gametime_start date DEFAULT '0001-01-01' NOT NULL,
+  gametime_start_trunc varchar(4),
   gametime_end date DEFAULT '0001-01-01' NOT NULL,
-  latitude latitude_t,
-  longitude longitude_t,
+  gametime_end_trunc varchar(4),
+  latitude double precision,
+  latitude_trunc integer,
+  longitude double precision,
+  longitude_trunc integer,
   range integer DEFAULT 0 NOT NULL,    -- range in kilometers around epicenter
   timescale integer DEFAULT 0 NOT NULL -- hours per turn
 );
