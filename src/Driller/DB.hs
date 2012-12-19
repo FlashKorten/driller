@@ -166,7 +166,7 @@ filterParameters p jm = filterParameters' p jm []
 filterParameters' :: [Param] -> JoinMap -> [Parameter] -> Either Error.ParameterError [Parameter]
 filterParameters' [] _ result        = Right result
 filterParameters' ((k, v):ps) jm tmp | not $ HM.member key jm = Left $ Error.unknownParameter key
-                                     | isNothing value        = Left $ Error.illegalValueFormat key
+                                     | isNothing value        = Left $ Error.illegalValue key
                                      | otherwise              = filterParameters' ps jm ((key, fromJust value):tmp)
                                     where key   = TL.toStrict k
                                           value = convertValue key (TL.toStrict v)

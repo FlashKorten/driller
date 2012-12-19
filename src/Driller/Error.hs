@@ -2,7 +2,7 @@
 module Driller.Error
     ( ParameterError()
     , unknownParameter
-    , illegalValueFormat
+    , illegalValue
     ) where
 
 import qualified Data.Text as Text ( Text, append )
@@ -15,6 +15,6 @@ unknownParameter :: Text.Text -> ParameterError
 unknownParameter parameter = ParameterError { getErrorCode = 404
                                             , getErrorMessage = Text.append "Unknown parameter: " parameter }
 
-illegalValueFormat :: Text.Text -> ParameterError
-illegalValueFormat parameter = ParameterError { getErrorCode = 405
-                                              , getErrorMessage = Text.append "Illegal value format for parameter: " parameter }
+illegalValue :: Text.Text -> ParameterError
+illegalValue parameter = ParameterError { getErrorCode = 405
+                                        , getErrorMessage = Text.append "Illegal value for parameter: " parameter }

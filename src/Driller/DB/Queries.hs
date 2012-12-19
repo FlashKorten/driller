@@ -109,5 +109,7 @@ initJoinMap = HM.fromList [("author"    , (" JOIN nn_map_author AS author ON g.i
                           ,("series"    , (" JOIN nn_map_series AS series ON g.id = series.id_game",          " AND series.id_series = ?"))
                           ,("leader"    , (" JOIN nn_map_leader AS leader ON g.id = leader.id_game",          " AND leader.id_leader = ?"))
                           ,("engine"    , (" JOIN nn_map_engine AS engine ON g.id = engine.id_game",          " AND engine.id_engine = ?"))
+                          ,("latitude"  , ("",                                                                " AND g.latitude_trunc = ?"))
+                          ,("longitude" , ("",                                                                " AND g.longitude_trunc = ?"))
                           ]
 
