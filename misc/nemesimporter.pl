@@ -14,6 +14,7 @@
 #   engine{"a"-"url"[,"b"-"url"]*}
 #   genre{"a"[,"b"]*}
 #   mechanic{"a"[,"b"]*}
+#   leader{"a"[,"b"]*}
 #   party{"a"-"n"[,"b"-"m"]*}
 #   publisher{"a"-"url"[,"b"-"url"]*}
 #   series{"a"[,"b"]*}
@@ -128,6 +129,7 @@ foreach my $key (sort(keys %game)){
   &insertSimpleField($key, "theme");
   &insertSimpleField($key, "mechanic");
   &insertSimpleField($key, "side");
+  &insertSimpleField($key, "leader");
   &insertSimpleField($key, "special");
   &insertFieldWithAttributeInMap($key, "publisher", "url");
   &insertFieldWithAttributeInMap($key, "engine", "url");

@@ -4,6 +4,7 @@ DROP INDEX IF EXISTS nn_game_index CASCADE;
 DROP INDEX IF EXISTS nn_genre_index CASCADE;
 DROP INDEX IF EXISTS nn_mechanic_index CASCADE;
 DROP INDEX IF EXISTS nn_party_index CASCADE;
+DROP INDEX IF EXISTS nn_leader_index CASCADE;
 DROP INDEX IF EXISTS nn_publisher_index CASCADE;
 DROP INDEX IF EXISTS nn_request_index CASCADE;
 DROP INDEX IF EXISTS nn_series_index CASCADE;
@@ -22,6 +23,7 @@ DROP TABLE IF EXISTS nn_map_engine CASCADE;
 DROP TABLE IF EXISTS nn_map_genre CASCADE;
 DROP TABLE IF EXISTS nn_map_mechanic CASCADE;
 DROP TABLE IF EXISTS nn_map_party CASCADE;
+DROP TABLE IF EXISTS nn_map_leader CASCADE;
 DROP TABLE IF EXISTS nn_map_publisher CASCADE;
 DROP TABLE IF EXISTS nn_map_series CASCADE;
 DROP TABLE IF EXISTS nn_map_session CASCADE;
@@ -29,6 +31,7 @@ DROP TABLE IF EXISTS nn_map_side CASCADE;
 DROP TABLE IF EXISTS nn_map_theme CASCADE;
 DROP TABLE IF EXISTS nn_mechanic CASCADE;
 DROP TABLE IF EXISTS nn_party CASCADE;
+DROP TABLE IF EXISTS nn_leader CASCADE;
 DROP TABLE IF EXISTS nn_publisher CASCADE;
 DROP TABLE IF EXISTS nn_request CASCADE;
 DROP TABLE IF EXISTS nn_result CASCADE;
@@ -45,6 +48,7 @@ DROP SEQUENCE IF EXISTS nn_game_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_genre_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_mechanic_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_party_id_seq CASCADE;
+DROP SEQUENCE IF EXISTS nn_leader_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_publisher_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_request_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS nn_series_id_seq CASCADE;
@@ -76,6 +80,8 @@ CREATE SEQUENCE nn_request_id_seq;
 ALTER TABLE public.nn_request_id_seq OWNER TO nemesis;
 CREATE SEQUENCE nn_party_id_seq;
 ALTER TABLE public.nn_party_id_seq OWNER TO nemesis;
+CREATE SEQUENCE nn_leader_id_seq;
+ALTER TABLE public.nn_leader_id_seq OWNER TO nemesis;
 CREATE SEQUENCE nn_side_id_seq;
 ALTER TABLE public.nn_side_id_seq OWNER TO nemesis;
 CREATE SEQUENCE nn_special_id_seq;
@@ -280,6 +286,23 @@ CREATE TABLE nn_map_party (
 );
 
 ALTER TABLE public.nn_map_party OWNER TO nemesis;
+
+CREATE TABLE nn_leader (
+  id integer PRIMARY KEY DEFAULT nextval('nn_leader_id_seq'),
+  leader varchar(255) NOT NULL default ''
+);
+
+ALTER TABLE public.nn_leader OWNER TO nemesis;
+
+CREATE INDEX nn_leader_index ON nn_leader(leader ASC);
+ALTER INDEX nn_leader_index OWNER TO nemesis;
+
+CREATE TABLE nn_map_leader (
+  id_game integer NOT NULL REFERENCES nn_game(id),
+  id_leader integer NOT NULL REFERENCES nn_leader(id)
+);
+
+ALTER TABLE public.nn_map_leader OWNER TO nemesis;
 
 CREATE TABLE nn_publisher (
   id integer PRIMARY KEY DEFAULT nextval('nn_publisher_id_seq'),
