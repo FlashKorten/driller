@@ -104,9 +104,9 @@ foreach my $key (sort(keys %game)){
                           , $game{$key}{'subtitle'}
                           , $game{$key}{'description'}
                           , $game{$key}{'time_01'}
-                          , (split(/-/, $game{$key}{'time_01'}))[0]
+                          , &getYearFromDate($key, 'time_01')
                           , $game{$key}{'time_02'}
-                          , (split(/-/, $game{$key}{'time_02'}))[0]
+                          , &getYearFromDate($key, 'time_02')
                           , $game{$key}{'players_min'}
                           , $game{$key}{'players_max'}
                           , $game{$key}{'latitude'}
@@ -218,9 +218,19 @@ sub trimToBrace {
   $text =~ s/(^\s*|{.*$)//g;
   return $text;
 }
-sub trimMultifields  {
+sub trimMultifields {
   my $text = shift();
   chomp $text;
   $text =~ s/(.*{"|"}.*)//g;
   return $text;
+}
+
+sub getYearFromDate {
+  my ($k, $l) = @_;
+  my $val = $game{$k}{$l};
+  my $result = (split(/-/, $val))[0];
+  if ($val =~ m/BC$/) {
+    $result *= -1;
+  }
+  return $result;
 }
