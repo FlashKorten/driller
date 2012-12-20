@@ -270,15 +270,15 @@ isPositive :: Int -> Maybe Int
 isPositive value | value > 0 = Just value
                  | otherwise = Nothing
 
-fetchDrilledGameResult :: JoinMap -> Connection -> [Param] -> IO Answer
-fetchDrilledGameResult joinMap c p = do
+fetchDrilledGameResult :: Connection -> JoinMap -> [Param] -> IO Answer
+fetchDrilledGameResult c joinMap p = do
     let filteredParameters = filterParameters p joinMap
     case filteredParameters of
         Left e          -> return $ Left e
-        Right parameter -> fetchPositiveAnswer joinMap c parameter
+        Right parameter -> fetchPositiveAnswer c joinMap parameter
 
-fetchPositiveAnswer :: JoinMap -> Connection -> [Parameter] -> IO Answer
-fetchPositiveAnswer joinMap c p = do
+fetchPositiveAnswer :: Connection -> JoinMap -> [Parameter] -> IO Answer
+fetchPositiveAnswer c joinMap p = do
     let (keys, values)     = unzip p
         que = gameListQuery joinMap keys
     ids        <- query c que values
