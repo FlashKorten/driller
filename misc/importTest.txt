@@ -176,3 +176,59 @@
   leader{"Hasdrubal Marca","Mago Barca","Publius Scipio"}
 }
 
+"Memoir '44 The Cadets of Saumur" {
+  10630
+  The Battle of France is lost; the Germans are now ready to cross the River Loire. The meager French troops standing ready and lined up to defend it are the Officer Cadets from the Cavalry School at Saumur, reinforced with a Battalion of the Infantry School at St-Maixent and hodgepodge remnants of the French army. At the first sight of the enemy, they blow the bridges. Embarking on rafts, the Germans soon attempt to cross the river on the islands at Gennes and East of Saumur. The cadets, dug-in and with no real option for retreat, resist heroically, inflicting heavy losses on the enemy. Their valiant efforts are not enough however, and by June 21, the Germans are already breaking through to the South-West. The following day, June 22, 1940, the French army capitulates: The armistice is signed at Rethondes, and takes effect on June 25.
+  1940-06-19 / 1940-06-19
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.vassalengine.com/modules/m44"}
+  side{"Axis","Allies"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"WW2"}
+  publisher{"Days of Wonder"-"http://www.daysofwonder.com/memoir44/en/"}
+  series{"Memoir '44"-"M44/70/4659"}
+  special{"Overlord"}
+}
+
+"Memoir '44 Breakthrough to Gembloux" {
+  10630
+  Adopting the Dyle Plan, the cavalry corps of Gen. Prioux moves into Belgium, ahead of Gen. Blanchard's 1st Army to confront the German invaders. Near Hannut, French scout units find themselves facing incoming fire from frontline German units. From there on, their mission is to hold back or at least delay the Germans - hoping to gain time for the slower Allied corps elements deploying along the Dyle. The two light motorized divisions (DLM) of Gen. Prioux bear the brunt of the assault, facing two formidable Panzer divisions and five supporting infantry divisions. Despite this unequal match of forces, the 2nd and 3rd DLM manage to hold the Germans back for two days, saving the Dyle Plan. On May 14, decimated but their mission accomplished, the DLMs withdraw to the rear.
+  1940-05-12 / 1940-05-13
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.vassalengine.com/modules/m44"}
+  side{"Axis","Allies"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"WW2"}
+  publisher{"Days of Wonder"-"http://www.daysofwonder.com/memoir44/en/"}
+  series{"Memoir '44"-"M44/1B/3496"}
+  special{"Breakthrough"}
+}
+
+"Memoir '44 Operation Market Garden" {
+  10630
+  The largest airborne operation of all time, Operation Market Garden was a bold attempt by Field Marshal Montgomery to drop three entire Airborne Divisions behind the enemy lines, in German-occupied Netherlands. Their tactical objective: To capture and hold all the major water crossings along a narrow 60-mile stretch of highway and into northern Germany. British XXX Corps would then rush onwards from the Dutch-Belgian border and across the Maas and Lower Rhine to outflank the Siegfried Line and choke off the Ruhr, Germany's industrial heartland. The daylight drops were initially successful, with the capture of the Waal bridge at Nijmegen, but German resistance was stronger than expected; the British 1st Airborne Division failed to secure the bridge at Arnhem. British ground advance was hampered by marshy ground. Eindhoven was eventually captured by a joint Airborne and Armor assault, but British XXX Corps failed to relieve the 1st Airborne Division. Despite the latter's valiant hold out at Arnhem bridge, the planned advance had to be abandoned and Monty wouldn't cross the Rhine until the spring of 1945.
+  1944-10-17 / 1944-10-25
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.vassalengine.com/modules/m44"}
+  side{"Axis","Allies"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"WW2"}
+  publisher{"Days of Wonder"-"http://www.daysofwonder.com/memoir44/en/"}
+  series{"Memoir '44"-"M44/2/5342"}
+  special{"Overlord"}
+}
