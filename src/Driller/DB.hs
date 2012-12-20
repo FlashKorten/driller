@@ -252,6 +252,8 @@ filterParameters' ((k, v):ps) jm tmp | not $ HM.member key jm = Left $ Error.unk
 convertValue :: T.Text -> T.Text -> Maybe Int
 convertValue "latitude"  t = getFromParser (TR.signed TR.decimal t) >>= withinLimits (negate 90) 90
 convertValue "longitude" t = getFromParser (TR.signed TR.decimal t) >>= withinLimits (negate 180) 180
+convertValue "fromRange" t = getFromParser (TR.signed TR.decimal t) >>= isPositive
+convertValue "upToRange" t = getFromParser (TR.signed TR.decimal t) >>= isPositive
 convertValue _ t           = getFromParser (TR.decimal t)
 
 getFromParser :: Either String (Int, T.Text) -> Maybe Int
@@ -263,6 +265,10 @@ getFromParser (Right (n, r))
 withinLimits :: Int -> Int -> Int -> Maybe Int
 withinLimits lower upper value | value >= lower && value <= upper = Just value
                                | otherwise                    = Nothing
+
+isPositive :: Int -> Maybe Int
+isPositive value | value > 0 = Just value
+                 | otherwise = Nothing
 
 fetchDrilledGameResult :: JoinMap -> Connection -> [Param] -> IO Answer
 fetchDrilledGameResult joinMap c p = do
