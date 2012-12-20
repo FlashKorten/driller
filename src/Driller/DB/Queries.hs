@@ -56,12 +56,12 @@ module Driller.DB.Queries
     , upToYearsQuery
     ) where
 
-import Database.PostgreSQL.Simple (Query)
-import Data.Monoid (mappend)
-import qualified Data.Text as T
-import Data.List (foldl')
-import qualified Data.DList as DL
-import qualified Data.HashMap.Strict as HM
+import Database.PostgreSQL.Simple ( Query )
+import Data.Monoid ( mappend )
+import Data.List ( foldl' )
+import qualified Data.Text as T ( Text )
+import qualified Data.DList as DL ( toList, fromList, append )
+import qualified Data.HashMap.Strict as HM ( HashMap, fromList, (!) )
 
 type JoinMap = HM.HashMap T.Text (Query, Query)
 

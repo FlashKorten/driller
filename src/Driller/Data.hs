@@ -27,16 +27,16 @@ module Driller.Data
     , FromInt
     ) where
 
-import Driller.Error
+
+import Driller.Error ( ParameterError )
 import qualified Data.Text as Text ( Text )
-import Data.Aeson.TH ( deriveJSON )
-import Data.Aeson
-import Database.PostgreSQL.Simple.FromRow ( FromRow(..), field )
+import qualified Data.HashMap.Strict as HM ( HashMap )
 import Database.PostgreSQL.Simple.ToRow ( ToRow(..) )
+import Data.Aeson.TH ( deriveJSON )
+import Data.Aeson ( Value(Object), FromJSON(..), ToJSON(..), (.=), (.:), object )
+import Database.PostgreSQL.Simple.FromRow ( FromRow(..), field )
 import Database.PostgreSQL.Simple.ToField ( ToField(toField) )
-import Database.PostgreSQL.Simple.Time ( Date )
 import Control.Applicative ( (<$>), (<*>) )
-import qualified Data.HashMap.Strict as HM
 
 data Genre     = Genre     { getGenreId     :: Int, getGenreName     :: Text.Text }
 data Engine    = Engine    { getEngineId    :: Int, getEngineName    :: Text.Text }
@@ -128,9 +128,6 @@ type Answer = Either ParameterError GameResult
 instance ToJSON Answer where
   toJSON (Left e)  = toJSON e
   toJSON (Right r) = toJSON r
-
-instance FromJSON Date where
-  parseJSON (Object _) = undefined
 
 $(deriveJSON (drop 9)  ''Author)
 $(deriveJSON (drop 8)  ''Genre)

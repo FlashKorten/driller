@@ -46,25 +46,25 @@ module Driller.DB
     ) where
 
 import Driller.Data
-import qualified Driller.Error as Error
+import qualified Driller.Error as Error ( ParameterError, unknownParameter, illegalValue )
 import Driller.DB.Queries
-
-import Data.Hashable()
+import Data.Hashable ()
 import Data.Maybe ( isNothing, fromJust )
-import qualified Data.Text as T
-import qualified Data.Text.Read as TR
+import Data.Text.Lazy.Internal ()
+import qualified Data.Text as T ( Text, length )
+import qualified Data.Text.Read as TR ( signed, decimal )
 import qualified Data.Text.Lazy as TL ( toStrict )
-import Data.Text.Lazy.Internal()
 import qualified Data.HashMap.Strict as HM ( fromList, lookup, member )
 import Web.Scotty ( Param )
 import Database.PostgreSQL.Simple
-    ( Only(Only),
-      In(In),
-      Connection,
-      ConnectInfo(connectDatabase, connectPassword, connectUser),
-      defaultConnectInfo,
-      query_,
-      query )
+    ( Only(Only)
+    , In(In)
+    , Connection
+    , ConnectInfo(connectDatabase, connectPassword, connectUser)
+    , defaultConnectInfo
+    , query_
+    , query
+    )
 
 connectionInfo :: ConnectInfo
 connectionInfo = defaultConnectInfo { connectUser = "nemesis"
