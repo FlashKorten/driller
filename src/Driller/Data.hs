@@ -23,6 +23,8 @@ module Driller.Data
     , Longitude
     , FromRange
     , UpToRange
+    , fromInt
+    , FromInt
     ) where
 
 import Driller.Error
@@ -148,6 +150,22 @@ $(deriveJSON (drop 8)  ''Latitude)
 $(deriveJSON (drop 8)  ''Longitude)
 $(deriveJSON (drop 8)  ''FromRange)
 $(deriveJSON (drop 8)  ''UpToRange)
+
+class FromInt a where
+  fromInt :: Int -> a
+
+instance FromInt FromYear where
+  fromInt i = FromYear {getValueFromYear = i}
+instance FromInt UpToYear where
+  fromInt i = UpToYear {getValueUpToYear = i}
+instance FromInt FromRange where
+  fromInt i = FromRange {getValueFromRange = i}
+instance FromInt UpToRange where
+  fromInt i = UpToRange {getValueUpToRange = i}
+instance FromInt Latitude where
+  fromInt i = Latitude {getValueLatitude = i}
+instance FromInt Longitude where
+  fromInt i = Longitude {getValueLongitude = i}
 
 instance FromRow FromYear  where fromRow = FromYear  <$> field
 instance FromRow UpToYear  where fromRow = UpToYear  <$> field

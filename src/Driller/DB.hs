@@ -231,6 +231,12 @@ fetchForResult parameterMap key fetchOne fetchMany c ids
         Just value  -> fetchOne c value
         Nothing     -> fetchMany c ids
 
+fetchSimpleValuesForResult :: (FromInt t, Monad m) => ParameterMap -> T.Text -> (Connection -> [Int] -> m [t]) -> Connection -> [Int] -> m [t]
+fetchSimpleValuesForResult parameterMap key fetchMany c ids
+    = case HM.lookup key parameterMap of
+        Just value  -> return [fromInt value]
+        Nothing     -> fetchMany c ids
+
 filterParameters :: [Param] -> JoinMap -> Either Error.ParameterError [Parameter]
 filterParameters [] _ = Right []
 filterParameters p jm = filterParameters' p jm []
@@ -287,12 +293,12 @@ prepareResult parameterMap c ids = do
     authors    <- fetchForResult parameterMap "author" fetchAuthor fetchAuthors c ids
     engines    <- fetchForResult parameterMap "engine" fetchEngine fetchEngines c ids
     leaders    <- fetchForResult parameterMap "leader" fetchLeader fetchLeaders c ids
-    latitudes  <- fetchForResult parameterMap "latitude" fetchLatitude fetchLatitudes c ids
-    longitudes <- fetchForResult parameterMap "longitude" fetchLongitude fetchLongitudes c ids
-    fromYears  <- fetchForResult parameterMap "fromYear" fetchFromYear fetchFromYears c ids
-    upToYears  <- fetchForResult parameterMap "upToYear" fetchUpToYear fetchUpToYears c ids
-    fromRanges <- fetchForResult parameterMap "fromRange" fetchFromRange fetchFromRanges c ids
-    upToRanges <- fetchForResult parameterMap "upToRange" fetchUpToRange fetchUpToRanges c ids
+    latitudes  <- fetchSimpleValuesForResult parameterMap "latitude" fetchLatitudes c ids
+    longitudes <- fetchSimpleValuesForResult parameterMap "longitude" fetchLongitudes c ids
+    fromYears  <- fetchSimpleValuesForResult parameterMap "fromYear" fetchFromYears c ids
+    upToYears  <- fetchSimpleValuesForResult parameterMap "upToYear" fetchUpToYears c ids
+    fromRanges <- fetchSimpleValuesForResult parameterMap "fromRange" fetchFromRanges c ids
+    upToRanges <- fetchSimpleValuesForResult parameterMap "upToRange" fetchUpToRanges c ids
     return $ Right GameResult { getGames      = games
                       , getGenres     = genres
                       , getThemes     = themes
