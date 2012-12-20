@@ -56,14 +56,13 @@ module Driller.DB.Queries
     , upToYearsQuery
     ) where
 
+import Driller.Data
 import Database.PostgreSQL.Simple ( Query )
 import Data.Monoid ( mappend )
 import Data.List ( foldl' )
 import qualified Data.Text as T ( Text )
 import qualified Data.DList as DL ( toList, fromList, append )
-import qualified Data.HashMap.Strict as HM ( HashMap, fromList, (!) )
-
-type JoinMap = HM.HashMap T.Text (Query, Query)
+import qualified Data.HashMap.Strict as HM ( fromList, (!) )
 
 authorQuery, authorsQuery, allAuthorsQuery :: Query
 authorQuery        = "SELECT id, author FROM nn_author WHERE id = ?"
