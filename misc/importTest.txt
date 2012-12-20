@@ -17,7 +17,7 @@
   series{"Command Staff"-""}
 }
 
-"Combat Commander Europe Turnbull Turns'em" {
+"Turnbull Turns 'em - Combat Commander Europe" {
   21050
   It's D-Day, and the 82nd Airborne Division is struggling to consolidate its defenses at St. Mere-Eglise. Expecting a counter-attack from the north, 3/505 Commander Lt. Col. Benjamin Vandervoort orders D Company's 3rd Platoon - led by 1st Lt. Turner Turnbull - to block Route D-15 at Neuville-au-Plain. Shortly after arriving, Turnbull's force of 43 men spot a large column of men in feldgrau approaching down the highway, apparently escorted by soldiers wearing American paratroopers' uniform. Wary of a ruse, an American machine-gunner fires warning shots into a nearby field. The German "prioners" dive for the ditches. After fanning out in either direction in order to try and outflank the outnumbered but well-entrenched Americans, the German attack commences.
   1944-06-06 / 1944-06-06
@@ -53,10 +53,70 @@
   theme{"Napoleonic"}
   party{"French"-"2","Allies"-"2"}
   publisher{"Victory Point Games"-"http://www.victorypointgames.com/details.php?prodId=60"}
-  series{"Napoleon 20"-"Waterloo"}
+  series{"Napoleon 20"-"#1"}
 }
 
-"Memoir '44 Nach Moskau!" {
+"Borodino 20 - Napoleon in Russia 1812" {
+  38361
+  Designer Lance McMillan marches the Napoleonic 20 game system to the very outskirts of Moscow where a brutal campaign culminates in a titanic battle between the exhausted French Grande Armée and the entrenched Russian Army whose divided and bickering leadership has led them to this fateful moment. In Borodino 20, players can recreate the historical battle and the human foibles of the commanders fighting it. In addition, they can experiment with scenarios presuming a faster Russian response to the French threat, or Napoleon heeding the advice of his “Iron Marshal,” Davout, to try a daring flanking maneuver. Featuring only modest complexity and a focused scope employing low unit density on the map (20 pieces or less) and dramatic, fast playing turns, it is the addition of ‘story-driven’ random event cards and night game turns that provide the operational pauses and “friction of war” which gives players a great feel for the parry-and-thrust of a Napoleonic grand battle as the armies close to bayonet-point to see which will break first!
+  1812-09-05 / 1812-09-07
+  50.7103193 / 4.4110966
+  50
+  4
+  2 / 2
+  author{"Lance McMillan"}
+  engine{"Vassal"-"http://victorypointgames.com/details.php?prodId=87","Cyberboard"-"http://victorypointgames.com/details.php?prodId=87","ZunTzu"-"http://victorypointgames.com/details.php?prodId=87"}
+  side{"French","Russian"}
+  genre{"Conflict Simulation"}
+  leader{"Napoleon","Kutuzov"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"Napoleonic"}
+  party{"French"-"2","Russia"-"2"}
+  publisher{"Victory Point Games"-"http://www.victorypointgames.com/details.php?prodId=87"}
+  series{"Napoleon 20"-"#4"}
+}
+
+"Albion 20 - Napoleon in England" {
+  36674
+  The Napoleonic 20 game system expands with France’s long-planned invasion of England finally launched! With only modest complexity and a focused scope employing low unit density on the map (20 pieces or less) and dramatic, fast playing turns, it is the addition of ‘story-driven’ random event cards and night game turns providing the operational pauses and “friction of war” that give players a great feel for the parry-and-thrust of a Napoleonic campaign as the armies close for battle. With his newly trained and organized Grande Armée, Napoleon masses his forces in Boulogne for the great invasion. The Franco-Spanish fleet arrives on time to seize control of the English Channel, and a hell-for-leather landing is made aimed straight at London – the Kent Campaign ensues! With special post-landing maneuvering and naval conflict abstractions, Albion 20 adds many fascinating new features to simulate this campaign. Will the Emperor finally triumph over his archrival, “Perfidious Albion?” Or will there always be an England?
+  1805-08-25 / 1805-08-28
+  50.7103193 / 4.4110966
+  50
+  4
+  2 / 2
+  author{"Alan Emrich"}
+  engine{"Vassal"-"http://victorypointgames.com/details.php?prodId=90","Cyberboard"-"http://victorypointgames.com/details.php?prodId=90","ZunTzu"-"http://victorypointgames.com/details.php?prodId=90"}
+  side{"French","British"}
+  genre{"Conflict Simulation"}
+  leader{"Napoleon","Wellington"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"Napoleonic"}
+  party{"French"-"2","British"-"2"}
+  publisher{"Victory Point Games"-"http://www.victorypointgames.com/details.php?prodId=90"}
+  series{"Napoleon 20"-"#3"}
+}
+
+"Jena 20 - Napoleon in Prussia" {
+  34747
+  Jena 20 is the second title featuring Joseph Miranda’s innovative Napoleonic 20 game system. With only modest complexity and a focused scope employing low unit density on the map (20 pieces or less) and dramatic, fast playing turns, it is the addition of ‘story-driven’ random event cards and night game turns providing the operational pauses and “friction of war” that give players a great feel for the parry-and-thrust of a Napoleonic campaign as the armies close for battle. Following France’s glorious victory against the combined Austro-Russian armies at Austerlitz the previous December, the Prussians have finally come off the fence and declared war against Napoleon. As both sides maneuver, uncertain of the location or center of gravity of the opposing army, they meet in a dramatic double battle on the fields of both Jena and Auerstadt. Can the heirs of Frederick the Great maintain their composure and cohesion long enough to teach the haughty French a lesson, or will Napoleon and his Marshals ride on to ever greater glory?
+  1806-10-12 / 1806-10-14
+  50.7103193 / 4.4110966
+  50
+  4
+  2 / 2
+  author{"Alan Emrich","Roger MacGowan","Joseph Miranda"}
+  engine{"Vassal"-"http://victorypointgames.com/details.php?prodId=74","Cyberboard"-"http://victorypointgames.com/details.php?prodId=74","ZunTzu"-"http://victorypointgames.com/details.php?prodId=74"}
+  side{"French","Prussian"}
+  genre{"Conflict Simulation"}
+  leader{"Napoleon","Hohenlohe","Brunswick"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"Napoleonic"}
+  party{"French"-"2","Prussian"-"2"}
+  publisher{"Victory Point Games"-"http://www.victorypointgames.com/details.php?prodId=74"}
+  series{"Napoleon 20"-"#2"}
+}
+
+"Nach Moskau! - Memoir '44" {
   10630
   By November, Operation Typhoon is in full swing. The Wehrmacht is at the gates of Moscow. Up North, Klin has fallen and the XXXXth Panzer Korps is rumbling towards the Soviet capital. But the Russians are hanging on somehow, with "General Winter" on their side. On the 27th, the thermometer fell to -40 degrees celsius. For the Germans who thought they'd be in Moscow long before now, Hell has frozen over! Tank tracks are soldered into the frozen mud, weapons are too cold to hold with bare hands, and men are dying in place. The 2nd Panzerdivision manages to reach Lobnia and Kimki, 10 miles from the Kremlin, but can't go any further. The Russians have thrown all they have, including factory workers, to protect Mother Russia. The Germans stop and go on the defensive. Initiative has changed hands...
   1941-11-23 / 1941-12-05
@@ -76,7 +136,7 @@
   special{"Breakthrough"}
 }
 
-"Memoir '44 Rats in a factory" {
+"Rats in a factory - Memoir '44" {
   10630
   By October 1942, Stalingrad had become a matter of personal prestige for both Stalin and Hitler, and the sole focal point of the Campaign in the East, above and beyond any strategic military consideration. In mid-October, the Luftwaffe intensified its efforts agains the remaining Red Army positions holding the west bank. Luftflotte 4 flew 2,000 sorties on 14 October and 600 tons of bombs were dropped by German Stukas. The same day, three infantry divisions and two Panzer divisions, supported by battalions of combat engineers, surrounded the three northern factories. Their attack was directed against the center of the Soviet line. The 14th Panzer pushed forward and broke through. With the Tractor Factory nearly surrounded, the intensity of the attack effectively split the soviet 62nd Army in two. Knowing that the loss of the Tractor Factory would lead to the collapse of the Soviet's right flank, General von Paulus ordered fresh troops forward to dislodge the last Soviet troops entrenched there. At the same time, the German forces in the center began to turn south toward the Red Barricades...
   1942-10-14 / 1942-10-17
@@ -96,7 +156,7 @@
   special{"Overlord"}
 }
 
-"Memoir '44 Sword of Stalingrad" {
+"Sword of Stalingrad - Memoir '44" {
   10630
   By the end of August 1942, Army Group South (B) reached the Volga, north of Stalingrad. In a matter of days, 4th Panzer Army, with the 29th Motorized Division in the lead, headed for the river south of the city, effectively trapping Lieutenant General Chuikov and the men and women of the 62nd Army. Stalin's order of July 27 - "Not a step back!" - was no longer just an obligation but a necessity, and its slogan "There is no land behind the Volga!" the harsh reality that now faced all of the city's inhabitants. Having witnessed firsthand on the Russian steppe the devastating effectiveness of German Blitzkrieg tactics, Chuikov turned the carpet-bombing of the city to his advantage. Anchoring his defense lines in bombed-out buildings that overlooked strategically important streets and squares, he ordered Soviet troops to "hug the enemy". Always keeping the front lines as close to the Germans as physically possible, often a mere floor or door frame away, he successfully negated much of the Germans' firepower and combined arms superiority. At such a close range, German infantry soon found themselves forced to fight on their own; or risk taking casualties from their own close air and artillery support! Key landmarks, such as the South Railway Station - which changed hands 14 times in 6 hours; and the Grain Elevator - where combat raged for weeks, became part of history. A year later, the city's defenders were collectively recognized for their courage with the gift of a ceremonial broadsword whose etching reads: "To the steel-hearted citizens of Stalingrad - the gift of King George VI - in token of the homage of the British people."
   1942-09-14 / 1942-09-21
@@ -116,7 +176,7 @@
   special{"Overlord"}
 }
 
-"Memoir '44 Hedgerow Hell" {
+"Hedgerow Hell - Memoir '44" {
   10630
   After a month of heavy fighting, the Germans finally lost Hill 192 the previous night (See "Attack on Hill 192"). For the first time since June they no longer dominate the road to Saint-Lo. Should US High Command be able to deploy the 5th Corps into a large-scale armored offensive, the city will finally be within reach. But the German elite Parachute units have taken advantage of darkness to pull back onto Hill 101 in the vicinity of the Bayeux Highway near la Boulaye, as well as onto Hill 147 on Martinville's Ridge northeast of Saint-Lo. Reinforced by elements of the Panzer Lehr, they have set up a line of defense in te endless cover of fields, woods and streams. Their airpower grounded by poor weather and their tanks mired in unforgiving "bocage" country, the Allies must place the burden of the attack on the shoulders of their infantry yet again. What awaits the weary US troops will forever be known as "Hedgerow Hell"...
   1944-07-12 / 1944-07-12
@@ -136,7 +196,7 @@
   special{"Overlord"}
 }
 
-"Command and Colors Agrigentum" {
+"Agrigentum - Command and Colors" {
   10630
   The First Punic War began when Rome decided to invade Sicily in 264. Carthage, unprepared, scrambled to raise an army under Hannibal Gisgo. By 262 Hannibal arrived with an advance force at Agrigentum, but the Roman consuls Lucius Postumius Megellus and Quintus Mamilius Vitulus made a preemptive strike and placed him under siege. Months later, Carthage dispatched a relief army of 30,000 foot, 4,500 horse and 60 elephants under Hanno the Elder. Megellus and Vitulus detached about a quarter of their army to guard Hannibal, and brought the remaining 35,000 foot and 3,000 horse onto the field. Hanno organized his army with the mercenaries in the van, his elephants in a second line and his African levies in a third. As the armies clashed the mercenaries fought fiercely at first, but eventually buckled. As they routed into the line of elephants, all hell broke loose. The elephants were caught up in the pandemonium,and began to rampage in all directions. The third Carthaginian line was thrown into confusion, but rallied to resist the advancing legions. After more hard fighting, the Punic army broke. The largest battle of the First Punic War had ended in a decisive Roman victory, but ironically Hannibal's army was able to escape. Toman losses in the battle and the siege were so heavy that Megellus and Vitulus were denied a triumph, despite their victory.
   262-01-01 BC / 262-12-31 BC
@@ -156,7 +216,7 @@
   leader{"Hanno the Elder","Megellus","Vitulus"}
 }
 
-"Command and Colors Castrum Album" {
+"Castrum Album - Command and Colors" {
   10630
   Following the defeat at Iliturgi, the Carthaginians made an unsuccessful attempt against Intibili, and then withdrew to the south. Early in the spring (214) they dealt with a major Iberian uprising, crushing the rebel army and re-imposing Punic authority. Many more Roman allies would have defected if Publius Scipio had not hurried south with one legion, about 10,000 men. Scipio camped near Castrum Album, famous as the site of Hamilcar Barca's death fourteen years earlier. Hasdrubal, Mago and Hannibal infiltrated the surrounding area undetected. They brought only fast-moving light infantry and mounted troops. When Publius Scipio advanced from Castrum Album towards his brother Gnaeus' camp, he was beset by Punic skirmishers and Numidian horsemen. The light Carthaginian forces showered the slow moving Roman column with javelins, sling-stones and arrows. Whenever the Romans charged, their opponents melted away. Publius' command was in danger of annihilation, and he just barely cut his way through to the safety of his brother's camp. Over 2,000 Romans were left dead along the route of his march, and many of the survivors were wounded. It was a clear Carthaginian victory. Hasdrubal, however, was unable to exploit the superiority of his Numidians for long, as a major revolt broke out in Africa and many of his elite cavalry deserted. The campaigns of the five armies would continue until both Roman armies were destroyed and both Scipio brothers killed at the battles of Castulo and Ilorca (211).
   214-01-01 BC / 214-12-31 BC
@@ -176,7 +236,7 @@
   leader{"Hasdrubal Marca","Mago Barca","Publius Scipio"}
 }
 
-"Memoir '44 The Cadets of Saumur" {
+"The Cadets of Saumur - Memoir '44" {
   10630
   The Battle of France is lost; the Germans are now ready to cross the River Loire. The meager French troops standing ready and lined up to defend it are the Officer Cadets from the Cavalry School at Saumur, reinforced with a Battalion of the Infantry School at St-Maixent and hodgepodge remnants of the French army. At the first sight of the enemy, they blow the bridges. Embarking on rafts, the Germans soon attempt to cross the river on the islands at Gennes and East of Saumur. The cadets, dug-in and with no real option for retreat, resist heroically, inflicting heavy losses on the enemy. Their valiant efforts are not enough however, and by June 21, the Germans are already breaking through to the South-West. The following day, June 22, 1940, the French army capitulates: The armistice is signed at Rethondes, and takes effect on June 25.
   1940-06-19 / 1940-06-19
@@ -195,7 +255,7 @@
   special{"Overlord"}
 }
 
-"Memoir '44 Breakthrough to Gembloux" {
+"Breakthrough to Gembloux - Memoir '44" {
   10630
   Adopting the Dyle Plan, the cavalry corps of Gen. Prioux moves into Belgium, ahead of Gen. Blanchard's 1st Army to confront the German invaders. Near Hannut, French scout units find themselves facing incoming fire from frontline German units. From there on, their mission is to hold back or at least delay the Germans - hoping to gain time for the slower Allied corps elements deploying along the Dyle. The two light motorized divisions (DLM) of Gen. Prioux bear the brunt of the assault, facing two formidable Panzer divisions and five supporting infantry divisions. Despite this unequal match of forces, the 2nd and 3rd DLM manage to hold the Germans back for two days, saving the Dyle Plan. On May 14, decimated but their mission accomplished, the DLMs withdraw to the rear.
   1940-05-12 / 1940-05-13
@@ -214,7 +274,7 @@
   special{"Breakthrough"}
 }
 
-"Memoir '44 Operation Market Garden" {
+"Operation Market Garden - Memoir '44" {
   10630
   The largest airborne operation of all time, Operation Market Garden was a bold attempt by Field Marshal Montgomery to drop three entire Airborne Divisions behind the enemy lines, in German-occupied Netherlands. Their tactical objective: To capture and hold all the major water crossings along a narrow 60-mile stretch of highway and into northern Germany. British XXX Corps would then rush onwards from the Dutch-Belgian border and across the Maas and Lower Rhine to outflank the Siegfried Line and choke off the Ruhr, Germany's industrial heartland. The daylight drops were initially successful, with the capture of the Waal bridge at Nijmegen, but German resistance was stronger than expected; the British 1st Airborne Division failed to secure the bridge at Arnhem. British ground advance was hampered by marshy ground. Eindhoven was eventually captured by a joint Airborne and Armor assault, but British XXX Corps failed to relieve the 1st Airborne Division. Despite the latter's valiant hold out at Arnhem bridge, the planned advance had to be abandoned and Monty wouldn't cross the Rhine until the spring of 1945.
   1944-10-17 / 1944-10-25
