@@ -50,12 +50,12 @@ data Leader    = Leader    { getLeaderId    :: Int, getLeaderName    :: Text.Tex
 data Author    = Author    { getAuthorId    :: Int, getAuthorName    :: Text.Text }
   deriving Show
 
-data FromYear  = FromYear  { getValueFromYear  :: Int }
-data UpToYear  = UpToYear  { getValueUpToYear  :: Int }
-data Latitude  = Latitude  { getValueLatitude  :: Int }
-data Longitude = Longitude { getValueLongitude :: Int }
-data FromRange = FromRange { getValueFromRange :: Int }
-data UpToRange = UpToRange { getValueUpToRange :: Int }
+newtype FromYear  = FromYear  { getValueFromYear  :: Int }
+newtype UpToYear  = UpToYear  { getValueUpToYear  :: Int }
+newtype Latitude  = Latitude  { getValueLatitude  :: Int }
+newtype Longitude = Longitude { getValueLongitude :: Int }
+newtype FromRange = FromRange { getValueFromRange :: Int }
+newtype UpToRange = UpToRange { getValueUpToRange :: Int }
 
 data GameResult = GameResult { getGames      :: [Game]
                              , getGenres     :: [Genre]
