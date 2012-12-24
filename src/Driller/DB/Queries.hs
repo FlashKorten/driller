@@ -139,28 +139,63 @@ upToRangeQuery     = "SELECT max(range) FROM nn_game WHERE range <= ?"
 upToRangesQuery    = "SELECT range FROM nn_game WHERE id IN ? GROUP BY range ORDER BY range"
 allUpToRangesQuery = "SELECT range FROM nn_game GROUP BY range ORDER BY range"
 
-gameListQuery :: JoinMap -> [T.Text] -> Query
+gameListQuery :: JoinMap -> [Parameter] -> Query
 gameListQuery joinMap pList = foldl' mappend prefix parts
              where prefix = "SELECT id FROM nn_game AS g"
                    parts = DL.toList $ DL.append (DL.fromList joins) (DL.fromList $ " WHERE 1=1":wheres)
-                   (joins, wheres) = unzip $ map (joinMap HM.!) pList
+                   (joins, wheres) = unzip $ map (getParameterQuery joinMap) pList
+
+getParameterQuery :: JoinMap -> Parameter -> (Query, Query)
+getParameterQuery joinMap (key, value) = (j, w)
+                                        where (j, w1, w2) = (joinMap HM.!) key
+                                              w = if value >= 0 then w1 else w2
 
 initJoinMap :: JoinMap
-initJoinMap = HM.fromList [("author"    , (" JOIN nn_map_author AS author ON g.id = author.id_game",          " AND author.id_author = ?"))
-                          ,("publisher" , (" JOIN nn_map_publisher AS publisher ON g.id = publisher.id_game", " AND publisher.id_publisher = ?"))
-                          ,("theme"     , (" JOIN nn_map_theme AS theme ON g.id = theme.id_game",             " AND theme.id_theme = ?"))
-                          ,("genre"     , (" JOIN nn_map_genre AS genre ON g.id = genre.id_game",             " AND genre.id_genre = ?"))
-                          ,("mechanic"  , (" JOIN nn_map_mechanic AS mechanic ON g.id = mechanic.id_game",    " AND mechanic.id_mechanic = ?"))
-                          ,("side"      , (" JOIN nn_map_side AS side ON g.id = side.id_game",                " AND side.id_side = ?"))
-                          ,("party"     , (" JOIN nn_map_party AS party ON g.id = party.id_game",             " AND party.id_party = ?"))
-                          ,("series"    , (" JOIN nn_map_series AS series ON g.id = series.id_game",          " AND series.id_series = ?"))
-                          ,("leader"    , (" JOIN nn_map_leader AS leader ON g.id = leader.id_game",          " AND leader.id_leader = ?"))
-                          ,("engine"    , (" JOIN nn_map_engine AS engine ON g.id = engine.id_game",          " AND engine.id_engine = ?"))
-                          ,("latitude"  , ("",                                                                " AND g.latitude_trunc = ?"))
-                          ,("longitude" , ("",                                                                " AND g.longitude_trunc = ?"))
-                          ,("fromYear"  , ("",                                                                " AND NOT g.year_upto < ?"))
-                          ,("upToYear"  , ("",                                                                " AND NOT g.year_from > ?"))
-                          ,("fromRange" , ("",                                                                " AND g.range >= ?"))
-                          ,("upToRange" , ("",                                                                " AND g.range <= ?"))
-                          ]
+initJoinMap = HM.fromList [("author"
+                            ,(" JOIN nn_map_author AS author ON g.id = author.id_game"
+                             ," AND author.id_author = ?"
+                             ," AND author.id_author != (-1 * ?)"))
+                           ,("publisher"
+                            ,(" JOIN nn_map_publisher AS publisher ON g.id = publisher.id_game"
+                             ," AND publisher.id_publisher = ?"
+                             ," AND publisher.id_publisher != (-1 * ?)"))
+                           ,("theme"
+                            ,(" JOIN nn_map_theme AS theme ON g.id = theme.id_game"
+                             ," AND theme.id_theme = ?"
+                             ," AND theme.id_theme != (-1 * ?)"))
+                           ,("genre"
+                            ,(" JOIN nn_map_genre AS genre ON g.id = genre.id_game"
+                             ," AND genre.id_genre = ?"
+                             ," AND genre.id_genre != (-1 * ?)"))
+                           ,("mechanic"
+                            ,(" JOIN nn_map_mechanic AS mechanic ON g.id = mechanic.id_game"
+                             ," AND mechanic.id_mechanic = ?"
+                             ," AND mechanic.id_mechanic != (-1 * ?)"))
+                           ,("side"
+                            ,(" JOIN nn_map_side AS side ON g.id = side.id_game"
+                             ," AND side.id_side = ?"
+                             ," AND side.id_side != (-1 * ?)"))
+                           ,("party"
+                            ,(" JOIN nn_map_party AS party ON g.id = party.id_game"
+                             ," AND party.id_party = ?"
+                             ," AND party.id_party != (-1 * ?)"))
+                           ,("series"
+                            ,(" JOIN nn_map_series AS series ON g.id = series.id_game"
+                             ," AND series.id_series = ?"
+                             ," AND series.id_series != (-1 * ?)"))
+                           ,("leader"
+                            ,(" JOIN nn_map_leader AS leader ON g.id = leader.id_game"
+                             ," AND leader.id_leader = ?"
+                             ," AND leader.id_leader != (-1 * ?)"))
+                           ,("engine"
+                            ,(" JOIN nn_map_engine AS engine ON g.id = engine.id_game"
+                             ," AND engine.id_engine = ?"
+                             ," AND engine.id_engine != (-1 * ?)"))
+                           ,("latitude"  ,("", " AND g.latitude_trunc = ?",  " AND g.latitude_trunc = ?"))
+                           ,("longitude" ,("", " AND g.longitude_trunc = ?", " AND g.longitude_trunc = ?"))
+                           ,("fromYear"  ,("", " AND NOT g.year_upto < ?",   " AND NOT g.year_upto < ?"))
+                           ,("upToYear"  ,("", " AND NOT g.year_from > ?",   " AND NOT g.year_from > ?"))
+                           ,("fromRange" ,("", " AND g.range >= ?",          " AND g.range >= ?"))
+                           ,("upToRange" ,("", " AND g.range <= ?",          " AND g.range <= ?"))
+                           ]
 

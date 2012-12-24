@@ -48,6 +48,7 @@ module Driller.DB
 import Driller.Data
 import qualified Driller.Error as Error ( ParameterError, unknownParameter, illegalValue )
 import Driller.DB.Queries
+import Control.Monad (liftM)
 import Data.Hashable ()
 import Data.Maybe ( isNothing, fromJust )
 import Data.Text.Lazy.Internal ()
@@ -225,10 +226,13 @@ fetchUpToRanges c ids = query c upToRangesQuery (Only (In ids))
 fetchAllUpToRanges :: Connection -> IO [UpToRange]
 fetchAllUpToRanges c = query_ c allUpToRangesQuery
 
-fetchForResult :: ParameterMap -> T.Text -> (Connection -> Int -> t) -> (Connection -> [Int] -> t) -> Connection -> [Int] -> t
+fetchForResult :: (Monad m, MarkExclusive b)
+               => ParameterMap -> T.Text -> (Connection -> Int -> m [b]) -> (Connection -> [Int] -> m [b]) -> Connection -> [Int] -> m [b]
 fetchForResult parameterMap key fetchOne fetchMany c ids
     = case HM.lookup key parameterMap of
-        Just value  -> fetchOne c value
+        Just value  -> if value >= 0
+                         then fetchOne c value
+                         else liftM (map markExclusive) (fetchOne c (negate 1 * value))
         Nothing     -> fetchMany c ids
 
 fetchSimpleValuesForResult :: (FromInt t, Monad m) => ParameterMap -> T.Text -> (Connection -> [Int] -> m [t]) -> Connection -> [Int] -> m [t]
@@ -250,11 +254,11 @@ filterParameters' ((k, v):ps) jm tmp | not $ HM.member key jm = Left $ Error.unk
                                           value = convertValue key (TL.toStrict v)
 
 convertValue :: T.Text -> T.Text -> Maybe Int
-convertValue "latitude"  t = getFromParser (TR.signed TR.decimal t) >>= withinLimits (negate 90) 90
-convertValue "longitude" t = getFromParser (TR.signed TR.decimal t) >>= withinLimits (negate 180) 180
-convertValue "fromRange" t = getFromParser (TR.signed TR.decimal t) >>= isPositive
-convertValue "upToRange" t = getFromParser (TR.signed TR.decimal t) >>= isPositive
-convertValue _ t           = getFromParser (TR.decimal t)
+convertValue "latitude"  t = getFromParser (TR.signed TR.decimal t) >>= filterWithinLimits (negate 90) 90
+convertValue "longitude" t = getFromParser (TR.signed TR.decimal t) >>= filterWithinLimits (negate 180) 180
+convertValue "fromRange" t = getFromParser (TR.signed TR.decimal t) >>= filterPositive
+convertValue "upToRange" t = getFromParser (TR.signed TR.decimal t) >>= filterPositive
+convertValue _ t           = getFromParser (TR.signed TR.decimal t)
 
 getFromParser :: Either String (Int, T.Text) -> Maybe Int
 getFromParser (Left _)       = Nothing
@@ -262,25 +266,24 @@ getFromParser (Right (n, r))
            | T.length r == 0 = Just n
            | otherwise       = Nothing
 
-withinLimits :: Int -> Int -> Int -> Maybe Int
-withinLimits lower upper value | value >= lower && value <= upper = Just value
-                               | otherwise                    = Nothing
+filterWithinLimits :: Int -> Int -> Int -> Maybe Int
+filterWithinLimits lower upper value | value >= lower && value <= upper = Just value
+                                     | otherwise                        = Nothing
 
-isPositive :: Int -> Maybe Int
-isPositive value | value > 0 = Just value
-                 | otherwise = Nothing
+filterPositive :: Int -> Maybe Int
+filterPositive value | value > 0 = Just value
+                     | otherwise = Nothing
 
 fetchDrilledGameResult :: Connection -> JoinMap -> [Param] -> IO Answer
-fetchDrilledGameResult c joinMap p = do
-    let filteredParameters = filterParameters p joinMap
-    case filteredParameters of
+fetchDrilledGameResult c joinMap p =
+    case filterParameters p joinMap of
         Left e          -> return $ Left e
         Right parameter -> fetchPositiveAnswer c joinMap parameter
 
 fetchPositiveAnswer :: Connection -> JoinMap -> [Parameter] -> IO Answer
 fetchPositiveAnswer c joinMap p = do
-    let (keys, values)     = unzip p
-        que = gameListQuery joinMap keys
+    let (_, values)     = unzip p
+        que = gameListQuery joinMap p
     ids        <- query c que values
     if null ids
        then return $ Right emptyGameResult

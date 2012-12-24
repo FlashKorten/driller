@@ -124,10 +124,10 @@ instance ToJSON Game where
                     , "bggid" .= getBggId g
                     ]
 
-type Parameter = (Text.Text, Int)
+type Parameter    = (Text.Text, Int)
 type ParameterMap = HM.HashMap Text.Text Int
-type Answer = Either ParameterError GameResult
-type JoinMap = HM.HashMap Text.Text (Query, Query)
+type Answer       = Either ParameterError GameResult
+type JoinMap      = HM.HashMap Text.Text (Query, Query, Query)
 
 instance ToJSON Answer where
   toJSON (Left e)  = toJSON e
