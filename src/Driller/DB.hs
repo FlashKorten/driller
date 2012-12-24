@@ -262,9 +262,8 @@ convertValue _ t           = getFromParser (TR.signed TR.decimal t)
 
 getFromParser :: Either String (Int, T.Text) -> Maybe Int
 getFromParser (Left _)       = Nothing
-getFromParser (Right (n, r))
-           | T.length r == 0 = Just n
-           | otherwise       = Nothing
+getFromParser (Right (n, r)) | T.length r == 0 = Just n
+                             | otherwise       = Nothing
 
 filterWithinLimits :: Int -> Int -> Int -> Maybe Int
 filterWithinLimits lower upper value | value >= lower && value <= upper = Just value
@@ -282,9 +281,7 @@ fetchDrilledGameResult c joinMap p =
 
 fetchPositiveAnswer :: Connection -> JoinMap -> [Parameter] -> IO Answer
 fetchPositiveAnswer c joinMap p = do
-    let (_, values)     = unzip p
-        que = gameListQuery joinMap p
-    ids        <- query c que values
+    ids <- query c (gameListQuery joinMap p) (map snd p)
     if null ids
        then return $ Right emptyGameResult
        else prepareResult (HM.fromList p) c ids
@@ -309,20 +306,20 @@ prepareResult parameterMap c ids = do
     fromRanges <- fetchSimpleValuesForResult parameterMap "fromRange" fetchFromRanges c ids
     upToRanges <- fetchSimpleValuesForResult parameterMap "upToRange" fetchUpToRanges c ids
     return $ Right GameResult { getGames      = games
-                      , getGenres     = genres
-                      , getThemes     = themes
-                      , getMechanics  = mechanics
-                      , getSides      = sides
-                      , getParties    = parties
-                      , getPublishers = publishers
-                      , getSeries     = series
-                      , getAuthors    = authors
-                      , getEngines    = engines
-                      , getLeaders    = leaders
-                      , getLatitudes  = latitudes
-                      , getLongitudes = longitudes
-                      , getFromYears  = fromYears
-                      , getUpToYears  = upToYears
-                      , getFromRanges = fromRanges
-                      , getUpToRanges = upToRanges
-                      }
+                              , getGenres     = genres
+                              , getThemes     = themes
+                              , getMechanics  = mechanics
+                              , getSides      = sides
+                              , getParties    = parties
+                              , getPublishers = publishers
+                              , getSeries     = series
+                              , getAuthors    = authors
+                              , getEngines    = engines
+                              , getLeaders    = leaders
+                              , getLatitudes  = latitudes
+                              , getLongitudes = longitudes
+                              , getFromYears  = fromYears
+                              , getUpToYears  = upToYears
+                              , getFromRanges = fromRanges
+                              , getUpToRanges = upToRanges
+                              }
