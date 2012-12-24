@@ -64,80 +64,73 @@ import Data.Text()
 import qualified Data.DList as DL ( toList, fromList, append )
 import qualified Data.HashMap.Strict as HM ( fromList, (!) )
 
-authorQuery, authorsQuery, allAuthorsQuery :: Query
-authorQuery        = "SELECT id, author FROM nn_author WHERE id = ?"
-authorsQuery       = "SELECT d.id, d.author FROM nn_author AS d JOIN nn_map_author AS m ON m.id_author = d.id WHERE m.id_game IN ? GROUP BY d.id, d.author ORDER BY d.author"
-allAuthorsQuery    = "SELECT id, author FROM nn_author ORDER BY author"
-genreQuery, genresQuery, allGenresQuery :: Query
-genreQuery         = "SELECT id, genre FROM nn_genre WHERE id = ?"
-genresQuery        = "SELECT d.id, d.genre FROM nn_genre AS d JOIN nn_map_genre AS m ON m.id_genre = d.id WHERE m.id_game IN ? GROUP BY d.id, d.genre ORDER BY d.genre"
-allGenresQuery     = "SELECT id, genre FROM nn_genre ORDER BY genre"
-engineQuery, enginesQuery, allEnginesQuery :: Query
-engineQuery        = "SELECT id, engine FROM nn_engine WHERE id = ?"
-enginesQuery       = "SELECT d.id, d.engine FROM nn_engine AS d JOIN nn_map_engine AS m ON m.id_engine = d.id WHERE m.id_game IN ? GROUP BY d.id, d.engine ORDER BY d.engine"
-allEnginesQuery    = "SELECT id, engine FROM nn_engine ORDER BY engine"
-themeQuery, themesQuery, allThemesQuery :: Query
-themeQuery         = "SELECT id, theme FROM nn_theme WHERE id = ?"
-themesQuery        = "SELECT d.id, d.theme FROM nn_theme AS d JOIN nn_map_theme AS m ON m.id_theme = d.id WHERE m.id_game IN ? GROUP BY d.id, d.theme ORDER BY d.theme"
-allThemesQuery     = "SELECT id, theme FROM nn_theme ORDER BY theme"
-mechanicQuery, mechanicsQuery, allMechanicsQuery :: Query
-mechanicQuery      = "SELECT id, mechanic FROM nn_mechanic WHERE id = ?"
-mechanicsQuery     = "SELECT d.id, d.mechanic FROM nn_mechanic AS d JOIN nn_map_mechanic AS m ON m.id_mechanic = d.id WHERE m.id_game IN ? GROUP BY d.id, d.mechanic ORDER BY d.mechanic"
-allMechanicsQuery  = "SELECT id, mechanic FROM nn_mechanic ORDER BY mechanic"
-sideQuery, sidesQuery, allSidesQuery :: Query
-sideQuery          = "SELECT id, side FROM nn_side WHERE id = ?"
-sidesQuery         = "SELECT d.id, d.side FROM nn_side AS d JOIN nn_map_side AS m ON m.id_side = d.id WHERE m.id_game IN ? GROUP BY d.id, d.side ORDER BY d.side"
-allSidesQuery      = "SELECT id, side FROM nn_side ORDER BY side"
-partyQuery, partiesQuery, allPartiesQuery :: Query
-partyQuery         = "SELECT id, party FROM nn_party WHERE id = ?"
-partiesQuery       = "SELECT d.id, d.party FROM nn_party AS d JOIN nn_map_party AS m ON m.id_party = d.id WHERE m.id_game IN ? GROUP BY d.id, d.party ORDER BY d.party"
-allPartiesQuery    = "SELECT id, party FROM nn_party ORDER BY party"
-publisherQuery, publishersQuery, allPublishersQuery :: Query
+authorQuery, genreQuery, engineQuery, themeQuery, mechanicQuery, sideQuery,
+ partyQuery, publisherQuery, seriesQuery, leaderQuery :: Query
+authorQuery        = "SELECT id, author    FROM nn_author    WHERE id = ?"
+genreQuery         = "SELECT id, genre     FROM nn_genre     WHERE id = ?"
+engineQuery        = "SELECT id, engine    FROM nn_engine    WHERE id = ?"
+themeQuery         = "SELECT id, theme     FROM nn_theme     WHERE id = ?"
+mechanicQuery      = "SELECT id, mechanic  FROM nn_mechanic  WHERE id = ?"
+sideQuery          = "SELECT id, side      FROM nn_side      WHERE id = ?"
+partyQuery         = "SELECT id, party     FROM nn_party     WHERE id = ?"
 publisherQuery     = "SELECT id, publisher FROM nn_publisher WHERE id = ?"
+seriesQuery        = "SELECT id, series    FROM nn_series    WHERE id = ?"
+leaderQuery        = "SELECT id, leader    FROM nn_leader    WHERE id = ?"
+
+authorsQuery, genresQuery, enginesQuery, themesQuery, mechanicsQuery, sidesQuery,
+ partiesQuery, publishersQuery, seriessQuery, leadersQuery :: Query
+authorsQuery       = "SELECT d.id, d.author    FROM nn_author AS d    JOIN nn_map_author AS m    ON m.id_author = d.id    WHERE m.id_game IN ? GROUP BY d.id, d.author    ORDER BY d.author"
+genresQuery        = "SELECT d.id, d.genre     FROM nn_genre AS d     JOIN nn_map_genre AS m     ON m.id_genre = d.id     WHERE m.id_game IN ? GROUP BY d.id, d.genre     ORDER BY d.genre"
+enginesQuery       = "SELECT d.id, d.engine    FROM nn_engine AS d    JOIN nn_map_engine AS m    ON m.id_engine = d.id    WHERE m.id_game IN ? GROUP BY d.id, d.engine    ORDER BY d.engine"
+themesQuery        = "SELECT d.id, d.theme     FROM nn_theme AS d     JOIN nn_map_theme AS m     ON m.id_theme = d.id     WHERE m.id_game IN ? GROUP BY d.id, d.theme     ORDER BY d.theme"
+mechanicsQuery     = "SELECT d.id, d.mechanic  FROM nn_mechanic AS d  JOIN nn_map_mechanic AS m  ON m.id_mechanic = d.id  WHERE m.id_game IN ? GROUP BY d.id, d.mechanic  ORDER BY d.mechanic"
+sidesQuery         = "SELECT d.id, d.side      FROM nn_side AS d      JOIN nn_map_side AS m      ON m.id_side = d.id      WHERE m.id_game IN ? GROUP BY d.id, d.side      ORDER BY d.side"
+partiesQuery       = "SELECT d.id, d.party     FROM nn_party AS d     JOIN nn_map_party AS m     ON m.id_party = d.id     WHERE m.id_game IN ? GROUP BY d.id, d.party     ORDER BY d.party"
 publishersQuery    = "SELECT d.id, d.publisher FROM nn_publisher AS d JOIN nn_map_publisher AS m ON m.id_publisher = d.id WHERE m.id_game IN ? GROUP BY d.id, d.publisher ORDER BY d.publisher"
+seriessQuery       = "SELECT d.id, d.series    FROM nn_series AS d    JOIN nn_map_series AS m    ON m.id_series = d.id    WHERE m.id_game IN ? GROUP BY d.id, d.series    ORDER BY d.series"
+leadersQuery       = "SELECT d.id, d.leader    FROM nn_leader AS d    JOIN nn_map_leader AS m    ON m.id_leader = d.id    WHERE m.id_game IN ? GROUP BY d.id, d.leader    ORDER BY d.leader"
+
+allAuthorsQuery, allGenresQuery, allEnginesQuery, allThemesQuery, allMechanicsQuery, allSidesQuery,
+ allPartiesQuery, allPublishersQuery, allSeriesQuery, allLeadersQuery :: Query
+allAuthorsQuery    = "SELECT id, author    FROM nn_author    ORDER BY author"
+allGenresQuery     = "SELECT id, genre     FROM nn_genre     ORDER BY genre"
+allEnginesQuery    = "SELECT id, engine    FROM nn_engine    ORDER BY engine"
+allThemesQuery     = "SELECT id, theme     FROM nn_theme     ORDER BY theme"
+allMechanicsQuery  = "SELECT id, mechanic  FROM nn_mechanic  ORDER BY mechanic"
+allSidesQuery      = "SELECT id, side      FROM nn_side      ORDER BY side"
+allPartiesQuery    = "SELECT id, party     FROM nn_party     ORDER BY party"
 allPublishersQuery = "SELECT id, publisher FROM nn_publisher ORDER BY publisher"
-seriesQuery, seriessQuery, allSeriesQuery :: Query
-seriesQuery        = "SELECT id, series FROM nn_series WHERE id = ?"
-seriessQuery       = "SELECT d.id, d.series FROM nn_series AS d JOIN nn_map_series AS m ON m.id_series = d.id WHERE m.id_game IN ? GROUP BY d.id, d.series ORDER BY d.series"
-allSeriesQuery     = "SELECT id, series FROM nn_series ORDER BY series"
-leaderQuery, leadersQuery, allLeadersQuery :: Query
-leaderQuery        = "SELECT id, leader FROM nn_leader WHERE id = ?"
-leadersQuery       = "SELECT d.id, d.leader FROM nn_leader AS d JOIN nn_map_leader AS m ON m.id_leader = d.id WHERE m.id_game IN ? GROUP BY d.id, d.leader ORDER BY d.leader"
-allLeadersQuery    = "SELECT id, leader FROM nn_leader ORDER BY leader"
+allSeriesQuery     = "SELECT id, series    FROM nn_series    ORDER BY series"
+allLeadersQuery    = "SELECT id, leader    FROM nn_leader    ORDER BY leader"
+
 gameQuery, gamesQuery, allGamesQuery :: Query
 gameQuery          = "SELECT id, game, subtitle, players_min, players_max, id_bgg FROM nn_game WHERE id = ?"
 gamesQuery         = "SELECT id, game, subtitle, players_min, players_max, id_bgg FROM nn_game WHERE id IN ?"
 allGamesQuery      = "SELECT id, game, subtitle, players_min, players_max, id_bgg FROM nn_game ORDER BY game"
 
-latitudeQuery, latitudesQuery, allLatitudesQuery :: Query
-latitudeQuery      = "SELECT latitude_trunc FROM nn_game WHERE latitude_trunc = ?"
-latitudesQuery     = "SELECT latitude_trunc FROM nn_game WHERE id IN ? GROUP BY latitude_trunc ORDER BY latitude_trunc"
-allLatitudesQuery  = "SELECT latitude_trunc FROM nn_game GROUP BY latitude_trunc ORDER BY latitude_trunc"
-
-longitudeQuery, longitudesQuery, allLongitudesQuery :: Query
+latitudeQuery, longitudeQuery, fromYearQuery, upToYearQuery, fromRangeQuery, upToRangeQuery :: Query
+latitudeQuery      = "SELECT latitude_trunc  FROM nn_game WHERE latitude_trunc = ?"
 longitudeQuery     = "SELECT longitude_trunc FROM nn_game WHERE longitude_trunc = ?"
+fromYearQuery      = "SELECT min(year_from)  FROM nn_game WHERE year_from >= ?"
+upToYearQuery      = "SELECT max(year_upto)  FROM nn_game WHERE year_upto <= ?"
+fromRangeQuery     = "SELECT min(range)      FROM nn_game WHERE range >= ?"
+upToRangeQuery     = "SELECT max(range)      FROM nn_game WHERE range <= ?"
+
+latitudesQuery, longitudesQuery, fromYearsQuery, upToYearsQuery, fromRangesQuery, upToRangesQuery :: Query
+latitudesQuery     = "SELECT latitude_trunc  FROM nn_game WHERE id IN ? GROUP BY latitude_trunc  ORDER BY latitude_trunc"
 longitudesQuery    = "SELECT longitude_trunc FROM nn_game WHERE id IN ? GROUP BY longitude_trunc ORDER BY longitude_trunc"
+fromYearsQuery     = "SELECT year_from       FROM nn_game WHERE id IN ? GROUP BY year_from       ORDER BY year_from"
+upToYearsQuery     = "SELECT year_upto       FROM nn_game WHERE id IN ? GROUP BY year_upto       ORDER BY year_upto"
+fromRangesQuery    = "SELECT range           FROM nn_game WHERE id IN ? GROUP BY range           ORDER BY range"
+upToRangesQuery    = "SELECT range           FROM nn_game WHERE id IN ? GROUP BY range           ORDER BY range"
+
+allLatitudesQuery, allLongitudesQuery, allFromYearsQuery, allUpToYearsQuery, allFromRangesQuery, allUpToRangesQuery :: Query
+allLatitudesQuery  = "SELECT latitude_trunc  FROM nn_game GROUP BY latitude_trunc  ORDER BY latitude_trunc"
 allLongitudesQuery = "SELECT longitude_trunc FROM nn_game GROUP BY longitude_trunc ORDER BY longitude_trunc"
-
-fromYearQuery, fromYearsQuery, allFromYearsQuery :: Query
-fromYearQuery       = "SELECT min(year_from) FROM nn_game WHERE year_from >= ?"
-fromYearsQuery      = "SELECT year_from FROM nn_game WHERE id IN ? GROUP BY year_from ORDER BY year_from"
-allFromYearsQuery   = "SELECT year_from FROM nn_game GROUP BY year_from ORDER BY year_from"
-
-upToYearQuery, upToYearsQuery, allUpToYearsQuery :: Query
-upToYearQuery       = "SELECT max(year_upto) FROM nn_game WHERE year_upto <= ?"
-upToYearsQuery      = "SELECT year_upto FROM nn_game WHERE id IN ? GROUP BY year_upto ORDER BY year_upto"
-allUpToYearsQuery   = "SELECT year_upto FROM nn_game GROUP BY year_upto ORDER BY year_upto"
-
-fromRangeQuery, fromRangesQuery, allFromRangesQuery :: Query
-fromRangeQuery     = "SELECT min(range) FROM nn_game WHERE range >= ?"
-fromRangesQuery    = "SELECT range FROM nn_game WHERE id IN ? GROUP BY range ORDER BY range"
-allFromRangesQuery = "SELECT range FROM nn_game GROUP BY range ORDER BY range"
-
-upToRangeQuery, upToRangesQuery, allUpToRangesQuery :: Query
-upToRangeQuery     = "SELECT max(range) FROM nn_game WHERE range <= ?"
-upToRangesQuery    = "SELECT range FROM nn_game WHERE id IN ? GROUP BY range ORDER BY range"
-allUpToRangesQuery = "SELECT range FROM nn_game GROUP BY range ORDER BY range"
+allFromYearsQuery  = "SELECT year_from       FROM nn_game GROUP BY year_from       ORDER BY year_from"
+allUpToYearsQuery  = "SELECT year_upto       FROM nn_game GROUP BY year_upto       ORDER BY year_upto"
+allFromRangesQuery = "SELECT range           FROM nn_game GROUP BY range           ORDER BY range"
+allUpToRangesQuery = "SELECT range           FROM nn_game GROUP BY range           ORDER BY range"
 
 gameListQuery :: JoinMap -> [Parameter] -> Query
 gameListQuery joinMap pList = foldl' mappend prefix parts
