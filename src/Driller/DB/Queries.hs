@@ -151,7 +151,7 @@ initJoinMap = HM.fromList [("author"
                            ,("publisher"
                             ,(" JOIN nn_map_publisher AS publisher ON g.id = publisher.id_game"
                              ," AND publisher.id_publisher = ?"
-                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_publisher WHERE id AND id_publisher = abs(?))"))
+                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_publisher WHERE id_game = g.id AND id_publisher = abs(?))"))
                            ,("theme"
                             ,(" JOIN nn_map_theme AS theme ON g.id = theme.id_game"
                              ," AND theme.id_theme = ?"
