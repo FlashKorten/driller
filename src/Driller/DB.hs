@@ -288,7 +288,7 @@ fetchPositiveAnswer c joinMap p = do
 
 prepareResult :: ParameterMap -> Connection -> [Int] -> IO Answer
 prepareResult parameterMap c ids = do
-    games      <- fetchGames c ids
+    games      <- if length ids > 50 then return [] else fetchGames c ids
     genres     <- fetchForResult parameterMap "genre"     fetchGenre     fetchGenres     c ids
     themes     <- fetchForResult parameterMap "theme"     fetchTheme     fetchThemes     c ids
     mechanics  <- fetchForResult parameterMap "mechanic"  fetchMechanic  fetchMechanics  c ids
