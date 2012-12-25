@@ -197,3 +197,5 @@ instance MarkExclusive Leader    where markExclusive a = a{ getLeaderId    = get
 instance MarkExclusive Publisher where markExclusive a = a{ getPublisherId = getPublisherId a * negate 1 }
 instance MarkExclusive Series    where markExclusive a = a{ getSeriesId    = getSeriesId a    * negate 1 }
 
+instance MarkExclusive a => MarkExclusive [a] where markExclusive = map markExclusive
+

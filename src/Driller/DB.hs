@@ -230,16 +230,16 @@ fetchForResult :: (Monad m, MarkExclusive b)
                => ParameterMap -> T.Text -> (Connection -> Int -> m [b]) -> (Connection -> [Int] -> m [b]) -> Connection -> [Int] -> m [b]
 fetchForResult parameterMap key fetchOne fetchMany c ids
     = case HM.lookup key parameterMap of
-        Just value  -> if value >= 0
-                         then fetchOne c value
-                         else liftM (map markExclusive) (fetchOne c (negate 1 * value))
-        Nothing     -> fetchMany c ids
+        Just value -> if value >= 0
+                        then fetchOne c value
+                        else liftM markExclusive (fetchOne c (negate 1 * value))
+        Nothing    -> fetchMany c ids
 
 fetchSimpleValuesForResult :: (FromInt t, Monad m) => ParameterMap -> T.Text -> (Connection -> [Int] -> m [t]) -> Connection -> [Int] -> m [t]
 fetchSimpleValuesForResult parameterMap key fetchMany c ids
     = case HM.lookup key parameterMap of
-        Just value  -> return [fromInt value]
-        Nothing     -> fetchMany c ids
+        Just value -> return [fromInt value]
+        Nothing    -> fetchMany c ids
 
 filterParameters :: [Param] -> JoinMap -> Either Error.ParameterError [Parameter]
 filterParameters [] _ = Right []
@@ -289,20 +289,20 @@ fetchPositiveAnswer c joinMap p = do
 prepareResult :: ParameterMap -> Connection -> [Int] -> IO Answer
 prepareResult parameterMap c ids = do
     games      <- fetchGames c ids
-    genres     <- fetchForResult parameterMap "genre" fetchGenre fetchGenres c ids
-    themes     <- fetchForResult parameterMap "theme" fetchTheme fetchThemes c ids
-    mechanics  <- fetchForResult parameterMap "mechanic" fetchMechanic fetchMechanics c ids
-    sides      <- fetchForResult parameterMap "side" fetchSide fetchSides c ids
-    parties    <- fetchForResult parameterMap "party" fetchParty fetchParties c ids
+    genres     <- fetchForResult parameterMap "genre"     fetchGenre     fetchGenres     c ids
+    themes     <- fetchForResult parameterMap "theme"     fetchTheme     fetchThemes     c ids
+    mechanics  <- fetchForResult parameterMap "mechanic"  fetchMechanic  fetchMechanics  c ids
+    sides      <- fetchForResult parameterMap "side"      fetchSide      fetchSides      c ids
+    parties    <- fetchForResult parameterMap "party"     fetchParty     fetchParties    c ids
     publishers <- fetchForResult parameterMap "publisher" fetchPublisher fetchPublishers c ids
-    series     <- fetchForResult parameterMap "series" fetchSeries fetchSeriess c ids
-    authors    <- fetchForResult parameterMap "author" fetchAuthor fetchAuthors c ids
-    engines    <- fetchForResult parameterMap "engine" fetchEngine fetchEngines c ids
-    leaders    <- fetchForResult parameterMap "leader" fetchLeader fetchLeaders c ids
-    latitudes  <- fetchSimpleValuesForResult parameterMap "latitude" fetchLatitudes c ids
+    series     <- fetchForResult parameterMap "series"    fetchSeries    fetchSeriess    c ids
+    authors    <- fetchForResult parameterMap "author"    fetchAuthor    fetchAuthors    c ids
+    engines    <- fetchForResult parameterMap "engine"    fetchEngine    fetchEngines    c ids
+    leaders    <- fetchForResult parameterMap "leader"    fetchLeader    fetchLeaders    c ids
+    latitudes  <- fetchSimpleValuesForResult parameterMap "latitude"  fetchLatitudes  c ids
     longitudes <- fetchSimpleValuesForResult parameterMap "longitude" fetchLongitudes c ids
-    fromYears  <- fetchSimpleValuesForResult parameterMap "fromYear" fetchFromYears c ids
-    upToYears  <- fetchSimpleValuesForResult parameterMap "upToYear" fetchUpToYears c ids
+    fromYears  <- fetchSimpleValuesForResult parameterMap "fromYear"  fetchFromYears  c ids
+    upToYears  <- fetchSimpleValuesForResult parameterMap "upToYear"  fetchUpToYears  c ids
     fromRanges <- fetchSimpleValuesForResult parameterMap "fromRange" fetchFromRanges c ids
     upToRanges <- fetchSimpleValuesForResult parameterMap "upToRange" fetchUpToRanges c ids
     return $ Right GameResult { getGames      = games
