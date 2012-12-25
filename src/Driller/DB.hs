@@ -232,7 +232,7 @@ fetchForResult parameterMap key fetchOne fetchMany c ids
     = case HM.lookup key parameterMap of
         Just value -> if value >= 0
                         then fetchOne c value
-                        else liftM markExclusive (fetchOne c (negate 1 * value))
+                        else liftM markExclusive (fetchOne c (negate value))
         Nothing    -> fetchMany c ids
 
 fetchSimpleValuesForResult :: (FromInt t, Monad m) => ParameterMap -> T.Text -> (Connection -> [Int] -> m [t]) -> Connection -> [Int] -> m [t]

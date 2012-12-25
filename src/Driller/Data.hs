@@ -186,16 +186,16 @@ instance FromRow Game      where fromRow = Game      <$> field <*> field <*> fie
 instance FromRow Int       where fromRow = field
 instance ToRow Int         where toRow n = [toField n]
 
-instance MarkExclusive Author    where markExclusive a = a{ getAuthorId    = getAuthorId a    * negate 1 }
-instance MarkExclusive Genre     where markExclusive a = a{ getGenreId     = getGenreId a     * negate 1 }
-instance MarkExclusive Engine    where markExclusive a = a{ getEngineId    = getEngineId a    * negate 1 }
-instance MarkExclusive Theme     where markExclusive a = a{ getThemeId     = getThemeId a     * negate 1 }
-instance MarkExclusive Mechanic  where markExclusive a = a{ getMechanicId  = getMechanicId a  * negate 1 }
-instance MarkExclusive Side      where markExclusive a = a{ getSideId      = getSideId a      * negate 1 }
-instance MarkExclusive Party     where markExclusive a = a{ getPartyId     = getPartyId a     * negate 1 }
-instance MarkExclusive Leader    where markExclusive a = a{ getLeaderId    = getLeaderId a    * negate 1 }
-instance MarkExclusive Publisher where markExclusive a = a{ getPublisherId = getPublisherId a * negate 1 }
-instance MarkExclusive Series    where markExclusive a = a{ getSeriesId    = getSeriesId a    * negate 1 }
+instance MarkExclusive Author    where markExclusive a = a{ getAuthorId    = negate $ getAuthorId a }
+instance MarkExclusive Genre     where markExclusive a = a{ getGenreId     = negate $ getGenreId a }
+instance MarkExclusive Engine    where markExclusive a = a{ getEngineId    = negate $ getEngineId a }
+instance MarkExclusive Theme     where markExclusive a = a{ getThemeId     = negate $ getThemeId a }
+instance MarkExclusive Mechanic  where markExclusive a = a{ getMechanicId  = negate $ getMechanicId a }
+instance MarkExclusive Side      where markExclusive a = a{ getSideId      = negate $ getSideId a }
+instance MarkExclusive Party     where markExclusive a = a{ getPartyId     = negate $ getPartyId a }
+instance MarkExclusive Leader    where markExclusive a = a{ getLeaderId    = negate $ getLeaderId a }
+instance MarkExclusive Publisher where markExclusive a = a{ getPublisherId = negate $ getPublisherId a }
+instance MarkExclusive Series    where markExclusive a = a{ getSeriesId    = negate $ getSeriesId a }
 
 instance MarkExclusive a => MarkExclusive [a] where markExclusive = map markExclusive
 
