@@ -147,43 +147,43 @@ initJoinMap :: JoinMap
 initJoinMap = HM.fromList [("author"
                             ,(" JOIN nn_map_author AS author ON g.id = author.id_game"
                              ," AND author.id_author = ?"
-                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_author WHERE id_game = g.id AND id_author = (-1 * ?))"))
+                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_author WHERE id_game = g.id AND id_author = abs(?))"))
                            ,("publisher"
                             ,(" JOIN nn_map_publisher AS publisher ON g.id = publisher.id_game"
                              ," AND publisher.id_publisher = ?"
-                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_publisher WHERE id AND id_publisher = (-1 * ?))"))
+                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_publisher WHERE id AND id_publisher = abs(?))"))
                            ,("theme"
                             ,(" JOIN nn_map_theme AS theme ON g.id = theme.id_game"
                              ," AND theme.id_theme = ?"
-                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_theme WHERE id_game = g.id AND id_theme = (-1 * ?))"))
+                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_theme WHERE id_game = g.id AND id_theme = abs(?))"))
                            ,("genre"
                             ,(" JOIN nn_map_genre AS genre ON g.id = genre.id_game"
                              ," AND genre.id_genre = ?"
-                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_genre WHERE id_game = g.id AND id_genre = (-1 * ?))"))
+                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_genre WHERE id_game = g.id AND id_genre = abs(?))"))
                            ,("mechanic"
                             ,(" JOIN nn_map_mechanic AS mechanic ON g.id = mechanic.id_game"
                              ," AND mechanic.id_mechanic = ?"
-                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_mechanic WHERE id_game = g.id AND id_mechanic = (-1 * ?))"))
+                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_mechanic WHERE id_game = g.id AND id_mechanic = abs(?))"))
                            ,("side"
                             ,(" JOIN nn_map_side AS side ON g.id = side.id_game"
                              ," AND side.id_side = ?"
-                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_side WHERE id_game = g.id AND id_side = (-1 * ?))"))
+                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_side WHERE id_game = g.id AND id_side = abs(?))"))
                            ,("party"
                             ,(" JOIN nn_map_party AS party ON g.id = party.id_game"
                              ," AND party.id_party = ?"
-                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_party WHERE id_game = g.id AND id_party = (-1 * ?))"))
+                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_party WHERE id_game = g.id AND id_party = abs(?))"))
                            ,("series"
                             ,(" JOIN nn_map_series AS series ON g.id = series.id_game"
                              ," AND series.id_series = ?"
-                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_series WHERE id_game = g.id AND id_series = (-1 * ?))"))
+                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_series WHERE id_game = g.id AND id_series = abs(?))"))
                            ,("leader"
                             ,(" JOIN nn_map_leader AS leader ON g.id = leader.id_game"
                              ," AND leader.id_leader = ?"
-                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_leader WHERE id_game = g.id AND id_leader = (-1 * ?))"))
+                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_leader WHERE id_game = g.id AND id_leader = abs(?))"))
                            ,("engine"
                             ,(" JOIN nn_map_engine AS engine ON g.id = engine.id_game"
                              ," AND engine.id_engine = ?"
-                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_engine WHERE id_game = g.id AND id_engine = (-1 * ?))"))
+                             ," AND NOT EXISTS (SELECT id_game FROM nn_map_engine WHERE id_game = g.id AND id_engine = abs(?))"))
                            ,("latitude"  ,("", " AND g.latitude_trunc = ?",  " AND g.latitude_trunc = ?"))
                            ,("longitude" ,("", " AND g.longitude_trunc = ?", " AND g.longitude_trunc = ?"))
                            ,("fromYear"  ,("", " AND NOT g.year_upto < ?",   " AND NOT g.year_upto < ?"))

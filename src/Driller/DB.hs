@@ -276,8 +276,8 @@ filterPositive value | value > 0 = Just value
 fetchDrilledGameResult :: Connection -> JoinMap -> [Param] -> IO Answer
 fetchDrilledGameResult c joinMap p =
     case filterParameters p joinMap of
-        Left e          -> return $ Left e
-        Right parameter -> fetchPositiveAnswer c joinMap parameter
+        Left e      -> return $ Left e
+        Right pList -> fetchPositiveAnswer c joinMap pList
 
 fetchPositiveAnswer :: Connection -> JoinMap -> [Parameter] -> IO Answer
 fetchPositiveAnswer c joinMap p = do
