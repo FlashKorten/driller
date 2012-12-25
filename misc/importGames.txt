@@ -1591,3 +1591,41 @@
   publisher{"GMT Games"-"www.gmtgames.com"}
 }
 
+"Combat Commander CCP A - Grassy Knoll" {
+  28181
+  <p>Mindanao Island, Philippines, 7 May 1945&mdash;After capturing Libby Airfield with the aid of Filipino guerrillas, the US 24th Infantry Division found the assault toward Davao becoming exceedingly slow and ponderous. Exacerbating the issue was the preponderance of hemp fields in the area, now very much overgrown with disuse. Traversing these unkempt fields was slow going at best. Japanese forces of the 100th Division, however, found these numerous plantations extremely useful for hiding defensive strongpoints. Guerrillas continued to aid the Americans in their push toward Davao, and in one particularly nasty firefight on the 7th of May actually proved decisive in overcoming a Japanese bunker that was covering a major trail break through the area.</p>
+  1945-05-07 / 1945-05-07
+  7.190708 / 125.455341
+  2
+  1
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Japan"-"2","US"-"2"}
+  publisher{"GMT-Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"Pacific A","Combat Commander Pacific"-"A"}
+}
+
+"Combat Commander CCP B - Ambush at Mogaung" {
+  28181
+  <p>Northern Burma, 28 June 1944&mdash;Over the course of three weeks in June, Michael "Mad Mike" Calvert's 77th (Chindit) Brigade took Mogaung in support of the US advance down the Hukawng Valley. They suffered 50% casualties. Fearing they would be ordered to join in the siege of Myitkyina, Calvert shut down his radios and began marching towards Stilwell's Army HQ in Kamaing. Along the way, scouts were surprised to discover a ragged - and apparently lost - column of Japanese troops advancing down a jungle path. Calvert ordered his weary survivors into ambush formations around a small village where their road and the enemy trail intersected.</p>
+  1944-06-28 / 1944-06-28
+  25.31113196 / 96.86851501
+  2
+  1
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Japan"-"2","US"-"2"}
+  publisher{"GMT-Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"Pacific B","Combat Commander Pacific"-"B"}
+}
+
