@@ -92,12 +92,12 @@ foreach my $key (sort(keys %game)){
   } else {
     $game{$key}{'subtitle'} = "";
   }
-  $query = "SELECT id FROM nn_game WHERE lower(game) = lower(?);";
+  $query = "SELECT id FROM dr_game WHERE lower(game) = lower(?);";
   $sth_select = $dbh -> prepare($query);
   $sth_select -> execute($game{$key}{'name'});
   $result = $sth_select->fetchrow_array();
   if (!defined $result) {
-    $insert = "INSERT INTO nn_game (game, id_bgg, subtitle, description, gametime_start, year_from, gametime_end, year_upto, players_min, players_max, latitude, latitude_trunc, longitude, longitude_trunc, range, timescale) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING id;";
+    $insert = "INSERT INTO dr_game (game, id_bgg, subtitle, description, gametime_start, year_from, gametime_end, year_upto, players_min, players_max, latitude, latitude_trunc, longitude, longitude_trunc, range, timescale) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING id;";
     $sth_insert = $dbh -> prepare($insert);
     $sth_insert -> execute( $game{$key}{'name'}
                           , $game{$key}{'id_bgg'}
@@ -150,12 +150,12 @@ sub insertSimpleField {
   my @tmpFoo = split(/","/, $game{$game_name}{$label});
   $debug && print "#instances of $label: ".@tmpFoo."\n";
   for (my $i = 0; $i < @tmpFoo; $i++){
-    $selectQuery = "SELECT id FROM nn_$label WHERE lower($label) = lower(?);";
+    $selectQuery = "SELECT id FROM dr_$label WHERE lower($label) = lower(?);";
     $selectStatement = $dbh -> prepare($selectQuery);
     $selectStatement -> execute($tmpFoo[$i]);
     $selectResult = $selectStatement->fetchrow_array();
     if (!defined $selectResult){
-      $insertQuery = "INSERT INTO nn_$label ($label) VALUES (?) RETURNING id;";
+      $insertQuery = "INSERT INTO dr_$label ($label) VALUES (?) RETURNING id;";
       $insertStatement = $dbh -> prepare($insertQuery);
       $insertStatement -> execute($tmpFoo[$i]);
       my $foo_rec = $insertStatement->fetchrow_hashref();
@@ -164,7 +164,7 @@ sub insertSimpleField {
     } else {
       $tmpFoo[$i] = $selectResult;
     }
-    $insertQuery = "INSERT INTO nn_map_$label (id_game, id_$label) VALUES (?,?);";
+    $insertQuery = "INSERT INTO dr_map_$label (id_game, id_$label) VALUES (?,?);";
     $insertStatement = $dbh -> prepare($insertQuery);
     $insertStatement -> execute($id_game, $tmpFoo[$i]);
     $insertStatement -> finish();
@@ -182,13 +182,13 @@ sub insertFieldWithAttributeInMap {
   $debug && print $game{$game_name}{$label}."\n#instances of $label: ".@tmpFoo."\n";
   for (my $i = 0; $i < @tmpFoo; $i++){
     my ($valueFoo, $additionalFoo) = split(/"\s*-\s*"/, $tmpFoo[$i]);
-    $selectQuery = "SELECT id FROM nn_$label WHERE lower($label) = lower(?);";
+    $selectQuery = "SELECT id FROM dr_$label WHERE lower($label) = lower(?);";
     $debug && print "Value: $valueFoo - additionalValue: $additionalFoo\n";
     $selectStatement = $dbh -> prepare($selectQuery);
     $selectStatement -> execute($valueFoo);
     $selectResult = $selectStatement->fetchrow_array();
     if (!defined $selectResult){
-      $insertQuery = "INSERT INTO nn_$label ($label) VALUES (?) RETURNING id;";
+      $insertQuery = "INSERT INTO dr_$label ($label) VALUES (?) RETURNING id;";
       $insertStatement = $dbh -> prepare($insertQuery);
       $insertStatement -> execute($valueFoo);
       my $foo_rec = $insertStatement->fetchrow_hashref();
@@ -197,7 +197,7 @@ sub insertFieldWithAttributeInMap {
     } else {
       $tmpFoo[$i] = $selectResult;
     }
-    $insertQuery = "INSERT INTO nn_map_$label (id_game, id_$label, $additionalLabel) VALUES (?,?,?);";
+    $insertQuery = "INSERT INTO dr_map_$label (id_game, id_$label, $additionalLabel) VALUES (?,?,?);";
     $insertStatement = $dbh -> prepare($insertQuery);
     $insertStatement -> execute($id_game, $tmpFoo[$i], $additionalFoo);
     $insertStatement -> finish();
