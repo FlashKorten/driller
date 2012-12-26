@@ -98,7 +98,7 @@ convertValue "latitude"  t = getFromParser (TR.signed TR.decimal t) >>= filterWi
 convertValue "longitude" t = getFromParser (TR.signed TR.decimal t) >>= filterWithinLimits (negate 180) 180
 convertValue "fromRange" t = getFromParser (TR.signed TR.decimal t) >>= filterPositive
 convertValue "upToRange" t = getFromParser (TR.signed TR.decimal t) >>= filterPositive
-convertValue _ t           = getFromParser (TR.signed TR.decimal t)
+convertValue _ t           = getFromParser (TR.decimal t)
 
 getFromParser :: Either String (Int, T.Text) -> Maybe Int
 getFromParser (Left _)       = Nothing
