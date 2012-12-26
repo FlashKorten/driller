@@ -27,11 +27,11 @@ use warnings;
 use strict;
 
 # --------------------------------------------------------------------------
-my $db = 'nn';
+my $db = 'dr';
 my $host = 'localhost';
 my $port= '5432';
-my $user = 'nemesis';
-my $password = 'nemesis';
+my $user = 'driller';
+my $password = 'driller';
 my $driver = "DBI:Pg:database=$db;host=$host;port=$port";
 my $dbh = DBI->connect($driver,$user,$password) or die $DBI::errstr;
 # --------------------------------------------------------------------------

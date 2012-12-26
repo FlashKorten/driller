@@ -64,9 +64,9 @@ import Database.PostgreSQL.Simple
     )
 
 connectionInfo :: ConnectInfo
-connectionInfo = defaultConnectInfo { connectUser = "nemesis"
-                                    , connectPassword = "nemesis"
-                                    , connectDatabase = "nn"
+connectionInfo = defaultConnectInfo { connectUser     = "driller"
+                                    , connectPassword = "driller"
+                                    , connectDatabase = "dr"
                                     }
 
 fetchForResult :: ParameterMap -> T.Text -> (Connection -> Int -> t) -> (Connection -> [Int] -> t) -> Connection -> [Int] -> t
