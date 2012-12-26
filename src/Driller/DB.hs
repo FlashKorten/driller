@@ -48,8 +48,8 @@ module Driller.DB
 import Driller.Data
 import qualified Driller.Error as Error ( ParameterError, unknownParameter, illegalValue )
 import Driller.DB.Wrapper
-import Driller.DB.Queries (gameListQuery, initJoinMap)
-import Control.Monad (liftM)
+import Driller.DB.Queries ( initJoinMap )
+import Control.Monad ( liftM )
 import Data.Hashable ()
 import Data.Maybe ( isNothing, fromJust )
 import Data.Text.Lazy.Internal ()
@@ -62,7 +62,6 @@ import Database.PostgreSQL.Simple
     ( Connection
     , ConnectInfo(connectDatabase, connectPassword, connectUser)
     , defaultConnectInfo
-    , query
     )
 
 connectionInfo :: ConnectInfo
@@ -126,7 +125,7 @@ fetchDrilledGameResult c joinMap p =
 
 fetchPositiveAnswer :: Connection -> JoinMap -> [Parameter] -> IO Answer
 fetchPositiveAnswer c joinMap p = do
-    ids <- query c (gameListQuery joinMap p) (map snd p)
+    ids <- fetchGameIds c joinMap p
     if null ids
        then return $ Right emptyGameResult
        else prepareResult (HM.fromList p) c ids

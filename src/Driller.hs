@@ -1,7 +1,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Main where
 
-
 import qualified Driller.DB as DB
 import Network.Wai.Middleware.RequestLogger ( logStdoutDev )
 import Database.PostgreSQL.Simple ( connect )
@@ -33,7 +32,7 @@ main = do
   conn <- connect DB.connectionInfo
   let joinMap = DB.initJoinMap
   scotty 3000 $ do
-    -- middleware logStdoutDev
+    middleware logStdoutDev
 
     get "/g" $ do
       p <- params

@@ -1,21 +1,22 @@
 module Driller.DB.Wrapper
-    ( fetchAuthor, fetchAuthors, fetchAllAuthors
-    , fetchGenre, fetchGenres, fetchAllGenres
-    , fetchEngine, fetchEngines, fetchAllEngines
-    , fetchTheme, fetchThemes, fetchAllThemes
-    , fetchMechanic, fetchMechanics, fetchAllMechanics
-    , fetchSide, fetchSides, fetchAllSides
-    , fetchParty, fetchParties, fetchAllParties
+    ( fetchAuthor,    fetchAuthors,    fetchAllAuthors
+    , fetchGenre,     fetchGenres,     fetchAllGenres
+    , fetchEngine,    fetchEngines,    fetchAllEngines
+    , fetchTheme,     fetchThemes,     fetchAllThemes
+    , fetchMechanic,  fetchMechanics,  fetchAllMechanics
+    , fetchSide,      fetchSides,      fetchAllSides
+    , fetchParty,     fetchParties,    fetchAllParties
     , fetchPublisher, fetchPublishers, fetchAllPublishers
-    , fetchSeries, fetchSeriess, fetchAllSeries
-    , fetchGame, fetchGames, fetchAllGames
-    , fetchLeader, fetchLeaders, fetchAllLeaders
-    , fetchLatitude, fetchLatitudes, fetchAllLatitudes
+    , fetchSeries,    fetchSeriess,    fetchAllSeries
+    , fetchGame,      fetchGames,      fetchAllGames
+    , fetchLeader,    fetchLeaders,    fetchAllLeaders
+    , fetchLatitude,  fetchLatitudes,  fetchAllLatitudes
     , fetchLongitude, fetchLongitudes, fetchAllLongitudes
-    , fetchFromYear, fetchFromYears, fetchAllFromYears
-    , fetchUpToYear, fetchUpToYears, fetchAllUpToYears
+    , fetchFromYear,  fetchFromYears,  fetchAllFromYears
+    , fetchUpToYear,  fetchUpToYears,  fetchAllUpToYears
     , fetchFromRange, fetchFromRanges, fetchAllFromRanges
     , fetchUpToRange, fetchUpToRanges, fetchAllUpToRanges
+    , fetchGameIds
     ) where
 
 import Driller.Data
@@ -181,3 +182,5 @@ fetchUpToRanges c ids = query c upToRangesQuery (Only (In ids))
 fetchAllUpToRanges :: Connection -> IO [UpToRange]
 fetchAllUpToRanges c = query_ c allUpToRangesQuery
 
+fetchGameIds :: Connection -> JoinMap -> [Parameter] -> IO [Int]
+fetchGameIds c joinMap p = query c (gameListQuery joinMap p) (map snd p)
