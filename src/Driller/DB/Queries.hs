@@ -139,41 +139,64 @@ gameListQuery joinMap pList = foldl' mappend prefix parts
                    (joins, wheres) = unzip $ map (joinMap HM.!) pList
 
 initJoinMap :: JoinMap
-initJoinMap = HM.fromList [("author"
-                            ,(" JOIN nn_map_author AS author ON g.id = author.id_game"
-                             ," AND author.id_author = ?"))
-                           ,("publisher"
-                            ,(" JOIN nn_map_publisher AS publisher ON g.id = publisher.id_game"
-                             ," AND publisher.id_publisher = ?"))
-                           ,("theme"
-                            ,(" JOIN nn_map_theme AS theme ON g.id = theme.id_game"
-                             ," AND theme.id_theme = ?"))
-                           ,("genre"
-                            ,(" JOIN nn_map_genre AS genre ON g.id = genre.id_game"
-                             ," AND genre.id_genre = ?"))
-                           ,("mechanic"
-                            ,(" JOIN nn_map_mechanic AS mechanic ON g.id = mechanic.id_game"
-                             ," AND mechanic.id_mechanic = ?"))
-                           ,("side"
-                            ,(" JOIN nn_map_side AS side ON g.id = side.id_game"
-                             ," AND side.id_side = ?"))
-                           ,("party"
-                            ,(" JOIN nn_map_party AS party ON g.id = party.id_game"
-                             ," AND party.id_party = ?"))
-                           ,("series"
-                            ,(" JOIN nn_map_series AS series ON g.id = series.id_game"
-                             ," AND series.id_series = ?"))
-                           ,("leader"
-                            ,(" JOIN nn_map_leader AS leader ON g.id = leader.id_game"
-                             ," AND leader.id_leader = ?"))
-                           ,("engine"
-                            ,(" JOIN nn_map_engine AS engine ON g.id = engine.id_game"
-                             ," AND engine.id_engine = ?"))
-                           ,("latitude"  ,("", " AND g.latitude_trunc = ?"))
-                           ,("longitude" ,("", " AND g.longitude_trunc = ?"))
-                           ,("fromYear"  ,("", " AND NOT g.year_upto < ?"))
-                           ,("upToYear"  ,("", " AND NOT g.year_from > ?"))
-                           ,("fromRange" ,("", " AND g.range >= ?"))
-                           ,("upToRange" ,("", " AND g.range <= ?"))
-                           ]
+initJoinMap = HM.fromList $ prepareList parameterList joinList whereList
 
+prepareList :: [Text] -> [Query] -> [Query] -> [(Text, (Query, Query))]
+prepareList (p:ps) (j:js) (w:ws) = (p, (j, w)) : prepareList ps js ws
+prepareList _ _ _                = []
+
+parameterList :: [Text]
+parameterList = [ "author"
+                , "publisher"
+                , "theme"
+                , "genre"
+                , "mechanic"
+                , "side"
+                , "party"
+                , "series"
+                , "leader"
+                , "engine"
+                , "latitude"
+                , "longitude"
+                , "fromYear"
+                , "upToYear"
+                , "fromRange"
+                , "upToRange"
+                ]
+
+joinList, whereList :: [Query]
+joinList = [ " JOIN nn_map_author    AS author    ON g.id = author.id_game"
+           , " JOIN nn_map_publisher AS publisher ON g.id = publisher.id_game"
+           , " JOIN nn_map_theme     AS theme     ON g.id = theme.id_game"
+           , " JOIN nn_map_genre     AS genre     ON g.id = genre.id_game"
+           , " JOIN nn_map_mechanic  AS mechanic  ON g.id = mechanic.id_game"
+           , " JOIN nn_map_side      AS side      ON g.id = side.id_game"
+           , " JOIN nn_map_party     AS party     ON g.id = party.id_game"
+           , " JOIN nn_map_series    AS series    ON g.id = series.id_game"
+           , " JOIN nn_map_leader    AS leader    ON g.id = leader.id_game"
+           , " JOIN nn_map_engine    AS engine    ON g.id = engine.id_game"
+           , ""
+           , ""
+           , ""
+           , ""
+           , ""
+           , ""
+           ]
+
+whereList = [ " AND author.id_author       = ?"
+            , " AND publisher.id_publisher = ?"
+            , " AND theme.id_theme         = ?"
+            , " AND genre.id_genre         = ?"
+            , " AND mechanic.id_mechanic   = ?"
+            , " AND side.id_side           = ?"
+            , " AND party.id_party         = ?"
+            , " AND series.id_series       = ?"
+            , " AND leader.id_leader       = ?"
+            , " AND engine.id_engine       = ?"
+            , " AND g.latitude_trunc       = ?"
+            , " AND g.longitude_trunc      = ?"
+            , " AND NOT g.year_upto        < ?"
+            , " AND NOT g.year_from        > ?"
+            , " AND g.range               >= ?"
+            , " AND g.range               <= ?"
+            ]
