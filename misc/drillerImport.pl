@@ -36,7 +36,7 @@ my $driver = "DBI:Pg:database=$db;host=$host;port=$port";
 my $dbh = DBI->connect($driver,$user,$password) or die $DBI::errstr;
 # --------------------------------------------------------------------------
 
-die "USAGE: nemesimporter.pl IMPORTFILE\n" unless(@ARGV == 1);
+die "USAGE: drillerImport.pl IMPORTFILE\n" unless(@ARGV == 1);
 
 # --------------------------------------------------------------------------
 
