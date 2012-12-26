@@ -32,7 +32,7 @@ main = do
   conn <- connect DB.connectionInfo
   let joinMap = DB.initJoinMap
   scotty 3000 $ do
-    middleware logStdoutDev
+    -- middleware logStdoutDev
 
     get "/g" $ do
       p <- params

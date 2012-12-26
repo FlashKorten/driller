@@ -49,7 +49,6 @@ import Driller.Data
 import qualified Driller.Error as Error ( ParameterError, unknownParameter, illegalValue )
 import Driller.DB.Wrapper
 import Driller.DB.Queries ( initJoinMap )
-import Control.Monad ( liftM )
 import Data.Hashable ()
 import Data.Maybe ( isNothing, fromJust )
 import Data.Text.Lazy.Internal ()
@@ -70,13 +69,10 @@ connectionInfo = defaultConnectInfo { connectUser = "nemesis"
                                     , connectDatabase = "nn"
                                     }
 
-fetchForResult :: (Monad m, MarkExclusive b)
-               => ParameterMap -> T.Text -> (Connection -> Int -> m [b]) -> (Connection -> [Int] -> m [b]) -> Connection -> [Int] -> m [b]
+fetchForResult :: ParameterMap -> T.Text -> (Connection -> Int -> t) -> (Connection -> [Int] -> t) -> Connection -> [Int] -> t
 fetchForResult parameterMap key fetchOne fetchMany c ids
     = case HM.lookup key parameterMap of
-        Just value -> if value >= 0
-                        then fetchOne c value
-                        else liftM markExclusive (fetchOne c (negate value))
+        Just value -> fetchOne c value
         Nothing    -> fetchMany c ids
 
 fetchSimpleValuesForResult :: (FromInt t, Monad m) => ParameterMap -> T.Text -> (Connection -> [Int] -> m [t]) -> Connection -> [Int] -> m [t]
