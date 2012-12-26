@@ -31,7 +31,7 @@ main = do
   -- _ <- forkServer "localhost" 8000
   conn <- connect DB.connectionInfo
   let joinMap = DB.initJoinMap
-  scotty 3000 $ do
+  scotty 3003 $ do
     middleware logStdoutDev
 
     get "/g" $ do
