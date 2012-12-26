@@ -32,7 +32,7 @@
   mechanic{"Card Driven","Hex-and-Counter"}
   theme{"WW2"}
   party{"Germany"-"2","US"-"2"}
-  publisher{"GMT-Games"-"http://www.gmtgames.com"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
   series{"Combat Commander"-"cce026"}
 }
 
@@ -1606,7 +1606,7 @@
   mechanic{"Card Driven","Hex-and-Counter"}
   theme{"WW2"}
   party{"Japan"-"2","US"-"2"}
-  publisher{"GMT-Games"-"http://www.gmtgames.com"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
   series{"Combat Commander"-"Pacific A","Combat Commander Pacific"-"A"}
 }
 
@@ -1625,7 +1625,7 @@
   mechanic{"Card Driven","Hex-and-Counter"}
   theme{"WW2"}
   party{"Japan"-"2","US"-"2"}
-  publisher{"GMT-Games"-"http://www.gmtgames.com"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
   series{"Combat Commander"-"Pacific B","Combat Commander Pacific"-"B"}
 }
 
