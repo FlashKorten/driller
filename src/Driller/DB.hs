@@ -65,9 +65,9 @@ import Database.PostgreSQL.Simple
     )
 
 connectionInfo :: ConnectInfo
-connectionInfo = defaultConnectInfo { connectUser = "nemesis"
-                                    , connectPassword = "nemesis"
-                                    , connectDatabase = "nn"
+connectionInfo = defaultConnectInfo { connectUser     = "driller"
+                                    , connectPassword = "driller"
+                                    , connectDatabase = "dr"
                                     }
 
 fetchForResult :: (Monad m, MarkExclusive b)
