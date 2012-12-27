@@ -56,7 +56,7 @@ module Driller.DB.Queries
     , upToYearsQuery
     ) where
 
-import Driller.Data ( JoinMap )
+import Driller.Data ( JoinMap, Parameter )
 import Database.PostgreSQL.Simple ( Query )
 import Data.Monoid ( mappend )
 import Data.List ( foldl' )
@@ -132,18 +132,23 @@ allUpToYearsQuery  = "SELECT year_upto       FROM dr_game GROUP BY year_upto    
 allFromRangesQuery = "SELECT range           FROM dr_game GROUP BY range           ORDER BY range"
 allUpToRangesQuery = "SELECT range           FROM dr_game GROUP BY range           ORDER BY range"
 
-gameListQuery :: JoinMap -> [Text] -> Query
+gameListQuery :: JoinMap -> [Parameter] -> Query
 gameListQuery joinMap pList = foldl' mappend prefix parts
              where prefix = "SELECT id FROM dr_game AS g"
                    parts = DL.toList $ DL.append (DL.fromList joins) (DL.fromList $ " WHERE 1=1":wheres)
-                   (joins, wheres) = unzip $ map (joinMap HM.!) pList
+                   (joins, wheres) = unzip $ map (getParameterQuery joinMap) pList
+
+getParameterQuery :: JoinMap -> Parameter -> (Query, Query)
+getParameterQuery joinMap (key, value) = (j, w)
+                                        where (j, w1, w2) = (joinMap HM.!) key
+                                              w = if value >= 0 then w1 else w2
 
 initJoinMap :: JoinMap
-initJoinMap = HM.fromList $ prepareList parameterList joinList whereList
+initJoinMap = HM.fromList $ prepareList parameterList joinList whereIncludeList whereExcludeList
 
-prepareList :: [Text] -> [Query] -> [Query] -> [(Text, (Query, Query))]
-prepareList (p:ps) (j:js) (w:ws) = (p, (j, w)) : prepareList ps js ws
-prepareList _ _ _                = []
+prepareList :: [Text] -> [Query] -> [Query] -> [Query] -> [(Text, (Query, Query, Query))]
+prepareList (p:ps) (j:js) (wi:wis) (we:wes) = (p, (j, wi, we)) : prepareList ps js wis wes
+prepareList _ _ _ _                         = []
 
 parameterList :: [Text]
 parameterList = [ "author"
@@ -164,7 +169,7 @@ parameterList = [ "author"
                 , "upToRange"
                 ]
 
-joinList, whereList :: [Query]
+joinList, whereIncludeList, whereExcludeList :: [Query]
 joinList = [ " JOIN dr_map_author    AS author    ON g.id = author.id_game"
            , " JOIN dr_map_publisher AS publisher ON g.id = publisher.id_game"
            , " JOIN dr_map_theme     AS theme     ON g.id = theme.id_game"
@@ -183,20 +188,38 @@ joinList = [ " JOIN dr_map_author    AS author    ON g.id = author.id_game"
            , ""
            ]
 
-whereList = [ " AND author.id_author       = ?"
-            , " AND publisher.id_publisher = ?"
-            , " AND theme.id_theme         = ?"
-            , " AND genre.id_genre         = ?"
-            , " AND mechanic.id_mechanic   = ?"
-            , " AND side.id_side           = ?"
-            , " AND party.id_party         = ?"
-            , " AND series.id_series       = ?"
-            , " AND leader.id_leader       = ?"
-            , " AND engine.id_engine       = ?"
-            , " AND g.latitude_trunc       = ?"
-            , " AND g.longitude_trunc      = ?"
-            , " AND NOT g.year_upto        < ?"
-            , " AND NOT g.year_from        > ?"
-            , " AND g.range               >= ?"
-            , " AND g.range               <= ?"
-            ]
+whereIncludeList = [ " AND author.id_author       = ?"
+                   , " AND publisher.id_publisher = ?"
+                   , " AND theme.id_theme         = ?"
+                   , " AND genre.id_genre         = ?"
+                   , " AND mechanic.id_mechanic   = ?"
+                   , " AND side.id_side           = ?"
+                   , " AND party.id_party         = ?"
+                   , " AND series.id_series       = ?"
+                   , " AND leader.id_leader       = ?"
+                   , " AND engine.id_engine       = ?"
+                   , " AND g.latitude_trunc       = ?"
+                   , " AND g.longitude_trunc      = ?"
+                   , " AND NOT g.year_upto        < ?"
+                   , " AND NOT g.year_from        > ?"
+                   , " AND g.range               >= ?"
+                   , " AND g.range               <= ?"
+                   ]
+
+whereExcludeList = [ " AND NOT EXISTS (SELECT id_game FROM dr_map_author    WHERE id_game = g.id AND id_author    = (-1 * ?))"
+                   , " AND NOT EXISTS (SELECT id_game FROM dr_map_publisher WHERE id_game = g.id AND id_publisher = (-1 * ?))"
+                   , " AND NOT EXISTS (SELECT id_game FROM dr_map_theme     WHERE id_game = g.id AND id_theme     = (-1 * ?))"
+                   , " AND NOT EXISTS (SELECT id_game FROM dr_map_genre     WHERE id_game = g.id AND id_genre     = (-1 * ?))"
+                   , " AND NOT EXISTS (SELECT id_game FROM dr_map_mechanic  WHERE id_game = g.id AND id_mechanic  = (-1 * ?))"
+                   , " AND NOT EXISTS (SELECT id_game FROM dr_map_side      WHERE id_game = g.id AND id_side      = (-1 * ?))"
+                   , " AND NOT EXISTS (SELECT id_game FROM dr_map_party     WHERE id_game = g.id AND id_party     = (-1 * ?))"
+                   , " AND NOT EXISTS (SELECT id_game FROM dr_map_series    WHERE id_game = g.id AND id_series    = (-1 * ?))"
+                   , " AND NOT EXISTS (SELECT id_game FROM dr_map_leader    WHERE id_game = g.id AND id_leader    = (-1 * ?))"
+                   , " AND NOT EXISTS (SELECT id_game FROM dr_map_engine    WHERE id_game = g.id AND id_engine    = (-1 * ?))"
+                   , " AND g.latitude_trunc       = ?"
+                   , " AND g.longitude_trunc      = ?"
+                   , " AND NOT g.year_upto        < ?"
+                   , " AND NOT g.year_from        > ?"
+                   , " AND g.range               >= ?"
+                   , " AND g.range               <= ?"
+                   ]

@@ -183,5 +183,4 @@ fetchAllUpToRanges :: Connection -> IO [UpToRange]
 fetchAllUpToRanges c = query_ c allUpToRangesQuery
 
 fetchGameIds :: Connection -> JoinMap -> [Parameter] -> IO [Int]
-fetchGameIds c joinMap p = query c (gameListQuery joinMap keys) values
-                            where (keys, values) = unzip p
+fetchGameIds c joinMap p = query c (gameListQuery joinMap p) (map snd p)
