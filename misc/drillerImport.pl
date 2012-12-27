@@ -83,6 +83,8 @@ my $query;
 my $sth_select;
 my $insert;
 my $sth_insert;
+my $update;
+my $sth_update;
 
 foreach my $key (sort(keys %game)){
   # Insert the game:
@@ -95,9 +97,32 @@ foreach my $key (sort(keys %game)){
   $query = "SELECT id_game FROM dr_game_data WHERE lower(title) = lower(?);";
   $sth_select = $dbh -> prepare($query);
   $sth_select -> execute($game{$key}{'name'});
-  $result = $sth_select->fetchrow_array();
-  if (!defined $result) {
-    $insert = "INSERT INTO dr_game (year_from, year_upto, players_min, players_max, latitude_trunc, longitude_trunc, range, timescale) VALUES (?,?,?,?,?,?,?,?) RETURNING id;";
+  $result = $sth_select->fetchrow_hashref();
+  if (defined $result) {
+    $id_game = $$result{"id_game"};
+    print "---------------------------------\n";
+    print "Updating existing entry for: $key\n";
+    print "---------------------------------\n";
+    $update = "UPDATE dr_game SET "
+           .= "year_from = ?, year_upto = ?, "
+           .= "players_min = ?, players_max = ?, "
+           .= "latitude_trunc = ?, longitude_trunc = ?, "
+           .= "range = ?, timescale = ? WHERE id = ?;";
+    $sth_update = $dbh -> prepare($update);
+    $sth_update -> execute( &getYearFromDate($key, 'time_01')
+                          , &getYearFromDate($key, 'time_02')
+                          , $game{$key}{'players_min'}
+                          , $game{$key}{'players_max'}
+                          , (split(/\./, $game{$key}{'latitude'}))[0]
+                          , (split(/\./, $game{$key}{'longitude'}))[0]
+                          , $game{$key}{'range'}
+                          , $game{$key}{'timescale'}
+                          , $id_game);
+    &clean_up_dependent_tables($dbh, $id_game);
+  } else {
+    $insert = "INSERT INTO dr_game "
+           .= "(year_from, year_upto, players_min, players_max, latitude_trunc, longitude_trunc, range, timescale) "
+           .= "VALUES (?,?,?,?,?,?,?,?) RETURNING id;";
     $sth_insert = $dbh -> prepare($insert);
     $sth_insert -> execute( &getYearFromDate($key, 'time_01')
                           , &getYearFromDate($key, 'time_02')
@@ -107,28 +132,24 @@ foreach my $key (sort(keys %game)){
                           , (split(/\./, $game{$key}{'longitude'}))[0]
                           , $game{$key}{'range'}
                           , $game{$key}{'timescale'});
-    my $foo_rec = $sth_insert->fetchrow_hashref();
+    $result = $sth_insert->fetchrow_hashref();
     $sth_insert -> finish();
-    $id_game = $$foo_rec{"id"};
-    $insert = "INSERT INTO dr_game_data (id_game, id_bgg, title, subtitle, description, gametime_start, gametime_end, latitude, longitude) VALUES (?,?,?,?,?,?,?,?,?);";
-    $sth_insert = $dbh -> prepare($insert);
-    $sth_insert -> execute( $id_game
-                          , $game{$key}{'id_bgg'}
-                          , $game{$key}{'name'}
-                          , $game{$key}{'subtitle'}
-                          , $game{$key}{'description'}
-                          , $game{$key}{'time_01'}
-                          , $game{$key}{'time_02'}
-                          , $game{$key}{'latitude'}
-                          , $game{$key}{'longitude'});
-    $sth_insert -> finish();
-  } else {
-          print "---------------------------------\n";
-          print "Entry: $key exists already...\n";
-          print "Please remove the entry manually before reimporting it.\n";
-          print "---------------------------------\n";
-          next;
+    $id_game = $$result{"id"};
   }
+  $insert = "INSERT INTO dr_game_data "
+         .= "(id_game, id_bgg, title, subtitle, description, gametime_start, gametime_end, latitude, longitude) "
+         .= "VALUES (?,?,?,?,?,?,?,?,?);";
+  $sth_insert = $dbh -> prepare($insert);
+  $sth_insert -> execute( $id_game
+                        , $game{$key}{'id_bgg'}
+                        , $game{$key}{'name'}
+                        , $game{$key}{'subtitle'}
+                        , $game{$key}{'description'}
+                        , $game{$key}{'time_01'}
+                        , $game{$key}{'time_02'}
+                        , $game{$key}{'latitude'}
+                        , $game{$key}{'longitude'});
+  $sth_insert -> finish();
   $debug && print "Game $key has ID #$id_game;\n";
   # Done inserting the game...
 
@@ -207,6 +228,29 @@ sub insertFieldWithAttributeInMap {
     $insertStatement -> finish();
     $selectStatement -> finish();
   }
+}
+
+sub clean_up_dependent_tables {
+  my ($handle, $id) = @_;
+  &clean_up_table($dbh, $id_game, "dr_game_data");
+  &clean_up_table($dbh, $id_game, "dr_map_author");
+  &clean_up_table($dbh, $id_game, "dr_map_genre");
+  &clean_up_table($dbh, $id_game, "dr_map_theme");
+  &clean_up_table($dbh, $id_game, "dr_map_mechanic");
+  &clean_up_table($dbh, $id_game, "dr_map_side");
+  &clean_up_table($dbh, $id_game, "dr_map_leader");
+  &clean_up_table($dbh, $id_game, "dr_map_special");
+  &clean_up_table($dbh, $id_game, "dr_map_publisher");
+  &clean_up_table($dbh, $id_game, "dr_map_engine");
+  &clean_up_table($dbh, $id_game, "dr_map_series");
+  &clean_up_table($dbh, $id_game, "dr_map_party");
+}
+
+sub clean_up_table {
+  my ($handle, $id, $tablename) = @_;
+  my $sth = $handle -> prepare("DELETE FROM " . $tablename . " WHERE id_game = ?;");
+  $sth -> execute($id);
+  $sth -> finish();
 }
 
 sub trim {
