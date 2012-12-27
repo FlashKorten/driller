@@ -92,32 +92,36 @@ foreach my $key (sort(keys %game)){
   } else {
     $game{$key}{'subtitle'} = "";
   }
-  $query = "SELECT id FROM dr_game WHERE lower(game) = lower(?);";
+  $query = "SELECT id_game FROM dr_game_data WHERE lower(title) = lower(?);";
   $sth_select = $dbh -> prepare($query);
   $sth_select -> execute($game{$key}{'name'});
   $result = $sth_select->fetchrow_array();
   if (!defined $result) {
-    $insert = "INSERT INTO dr_game (game, id_bgg, subtitle, description, gametime_start, year_from, gametime_end, year_upto, players_min, players_max, latitude, latitude_trunc, longitude, longitude_trunc, range, timescale) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) RETURNING id;";
+    $insert = "INSERT INTO dr_game (year_from, year_upto, players_min, players_max, latitude_trunc, longitude_trunc, range, timescale) VALUES (?,?,?,?,?,?,?,?) RETURNING id;";
     $sth_insert = $dbh -> prepare($insert);
-    $sth_insert -> execute( $game{$key}{'name'}
-                          , $game{$key}{'id_bgg'}
-                          , $game{$key}{'subtitle'}
-                          , $game{$key}{'description'}
-                          , $game{$key}{'time_01'}
-                          , &getYearFromDate($key, 'time_01')
-                          , $game{$key}{'time_02'}
+    $sth_insert -> execute( &getYearFromDate($key, 'time_01')
                           , &getYearFromDate($key, 'time_02')
                           , $game{$key}{'players_min'}
                           , $game{$key}{'players_max'}
-                          , $game{$key}{'latitude'}
                           , (split(/\./, $game{$key}{'latitude'}))[0]
-                          , $game{$key}{'longitude'}
                           , (split(/\./, $game{$key}{'longitude'}))[0]
                           , $game{$key}{'range'}
                           , $game{$key}{'timescale'});
     my $foo_rec = $sth_insert->fetchrow_hashref();
     $sth_insert -> finish();
     $id_game = $$foo_rec{"id"};
+    $insert = "INSERT INTO dr_game_data (id_game, id_bgg, title, subtitle, description, gametime_start, gametime_end, latitude, longitude) VALUES (?,?,?,?,?,?,?,?,?);";
+    $sth_insert = $dbh -> prepare($insert);
+    $sth_insert -> execute( $id_game
+                          , $game{$key}{'id_bgg'}
+                          , $game{$key}{'name'}
+                          , $game{$key}{'subtitle'}
+                          , $game{$key}{'description'}
+                          , $game{$key}{'time_01'}
+                          , $game{$key}{'time_02'}
+                          , $game{$key}{'latitude'}
+                          , $game{$key}{'longitude'});
+    $sth_insert -> finish();
   } else {
           print "---------------------------------\n";
           print "Entry: $key exists already...\n";
