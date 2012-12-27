@@ -1667,3 +1667,521 @@
   series{"Combat Commander"-"Pacific D","Combat Commander Pacific"-"D"}
 }
 
+"Iliturgi - Command and Colors" {
+  10630
+  <p>Following the decisive victory of the Scipio brothers at Dertosa (215), Carthage sent out 13,500 reinforcements for Hasdrubal Barca under his brother Mago. Hasdrubal reorganized his command of 18,000 men into three small armies, one under his command, one led by Mago and the third under Hannibal, son of Bomilcar. Once the Romans had retired north of the Ebro River for the winter, the Carthaginians struck back in late autumn (215) and besieged Iliturgi, a Roman garrisoned city. Each Punic commander set up a separate camp around the city. The citizens of Iliturgi and their Roman garrison soon suffered from hunger, as they had been caught unprepared. Gnaeus and Publius Scipio marched to the scene with two legions, about 18,000 troops, to lift the siege. Upon arriving, the Scipios decided to assault Hasdrubal's camp first, as it was the largest and the key to breaking the siege. As the assault on Hasdrubal's camp climaxed, the armies of Mago and Hamilcar arrived and the fighting spread out and intensified. Ultimately, the Romans emerged victorious, overrunning the camp and breaking the siege. However, the casualties were probably about equal on both sides. Since Rome was hard-pressed by Hannibal in Italy, the Carthaginians could more easily replace their losses, and benefited from such battles of attrition. On the other hand, Carthage needed a decisive victory before reinforcements could be sent to Hannibal in Italy. The campaigns of these five armies continued for another four years.</p>
+  215-01-01 BC / 215-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Carthage","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Carthage"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Hasdrubal Marca","Mago Barca","Publius Scipio","Gnaeus Scipio"}
+}
+
+
+"Cissa - Command and Colors" {
+  10630
+  <p>As the Second Punic War began (218 BC), Hannibal first conquered northern Spain. Before heading to Italy, he left his brother Hasdrubal with about 15,000 men in southern Spain and Hanno with 11,000 men in the north. The consul Publius Scipio had been assigned an army of 24,000 with which to invade Spain and defeat Hannibal. However, when Scipio arrived in Massilia, he was shocked to discover Hannibal's army was headed to the Alps. Publius returned to defend Italy, but he sent his army on to Spain under his elder brother Gnaeus. The Romans were not expected so late in the year, and quickly overran northern Spain and then advanced on Hanno's camp at Cissa. Hanno had been reinforced with a few thousand Illergete warriors under Indibilis. Although still heavily outnumbered, Hanno decided to occupy a strong position on high ground rather than retreat to join Hasdrubal. Gnaeus Scipio did not hesitate and charged his army up the heights in a frontal assault. The fighting was brutal, but the outnumbered Carthaginians were eventually driven off the heights in flight. Reportedly, Carthage lost 6,000 killed and 2,000 captured, including both Hanno and Indibilis. Despite suffering heavy losses, the Romans had the victory. The Romans had established a foothold in Spain. Indibilis was later released, an act of clemency Gnaeus Scipio soon came to regret. Publius finally arrived a year later, bringing a third legion of 8,000 reinforcements. Each of the Scipio brothers could now command his own army in Spain.</p>
+  218-01-01 BC / 218-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Carthage","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Carthage"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Hanno","Gnaeus Scipio"}
+}
+
+
+"Caralis - Command and Colors" {
+  10630
+  <p>Sardinia had been a Carthaginian province for centuries until the turmoil of the Truceless War (241-238) allowed Rome to opportunistically seize the island. This incident fed the hatred of Hamilcar Barca and his sons for Rome. While Hannibal was crossing the Alps to invade Italy, the agent Hanno slipped onto the island to foment a tribal rebellion. After Hannibal's great victory at Cannae, Hanno instigated an island-wide uprising under King Hampsicora and sent messengers to Carthage for support to capture the weakly garrisoned island. An expedition under Hasdrubal the Bald was delayed by a storm. While Hasdrubal was re-fitting his fleet, the Romans scraped up a reinforcing legion under the septuagenarian noble Titus Manlius Torquatus, who was already on the island when Hasdrubal finally arrived. The two armies met near Caralis. Hasdrubal, with about 20,000 men and 20 elephants, posted his Sards on one wing and his African and Balearic expeditionary forces on the other. Torquatus grounded his fleet and pressed his sailors into service to swell his ranks to 22,000 foot and 1200 horse. The fighting was fierce and prolonged. Eventually, the Sard wing collapsed and Hanno's African wing, which had been fighting well, was taken in the flank and also routed. Reports said 12,000 Sardinians and Carthaginians were slain and about 3700 men, including Hasdrubal and Hanno, were taken captive. Hampsicora commited suicide when he learned that his son Hostus had been killed in the fighting. Sardinia would remain in Roman hands.</p>
+  215-01-01 BC / 215-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Carthage","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Carthage"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Hasdrubal the Bald","Titus Manlius Torquatus"}
+}
+
+"Himeras River - Command and Colors" {
+  10630
+  <p>Western Sicily had been a Carthaginian province for centuries, until Rome captured it in the First Punic War. Hannibal sent an agent, Epicydes, to Syracuse to lead a rebellion agains Rome in 214. Rome responded by sending M. Claudius Marcellus against the city. Marcellus succeeded in taking Syracuse but the Sicilian campaign was not yet over. Epicydes rallied the remnants of the Carthaginian and Greek armies at Agrigentum and Hanno arrived from Africa with a new army, including 3000 Numidian cavalry. Hannibal also sent one of his crack cavalry commanders, the Liby-Phoenician Muttines, who was soon dashing all over Sicily with the Numidians. The three Punic commanders built their army up to 20,000 foot and 3500 horse, but Hanno, jealous of Muttines' success, ordered him to not march with the army. Marcellus marched against them with about 24,000 foot and 2000 horse. At this point, 10 Numidian deserters rode to the Roman camp and informed Marcellus that their countrymen were furious at the insult to Muttines and intended to take no part in the battle. Hoping the news was true, but expecting a trap, Marcellus led his legions out to face the Punic army. As the Libyan and Greek infantry advanced into the fray, it became apparent that the Numidians were holding back. Marcellus ordered the Roman horse to turn the exposed Punic flank. When the Numidians did not respond, the Punic infantry became demoralized and broke. Marcellus had the victory.</p>
+  211-01-01 BC / 211-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Carthage","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Carthage"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Hanno","Epicydes","Marcellus"}
+}
+
+"Umbria - Command and Colors" {
+  10630
+  <p>Even as one Roman army under Flaminius was being butchered by Hannibal's troops at Lake Trasimenus in 217 BC, his colleague Gnaeus Servilius Geminus was racing to reinforce his fellow consul. Servilius Geminus hoped to trap Hannibal between the two Roman armies. And since speed was of the essence, he sent the propraetor Gaius Centenius ahead with all his mounted forces. This body numbered 4,000 horsemen - 600 Romans, 1,800 Italians and 1,600 allied Cenomani Gauls. Hannibal's scouts spotted the approaching column, and he dispatched his marshal Maharbal with about 4,000 light infantry and 3,000 cavalry to intercept the Roman troopers. Somewhere in Umbria, Maharbal chose an advantageous site for an ambush and posted his light foot troops in concealed positions. Centenius approached with great haste and little caution. The Carthaginians lauched a missile barrage, and followed with a sudden cavalry charge. Half the Roman force was slain in the initial onslaught, and the remainder were driven back to a barren hill. Maharbal quickly surrounded the fugitives and forced their surrender. The Carthaginian victory was complete.</p><p>Without cavalry, Servilius Geminus' army was crippled, and Hannibal's Punic marauders were free to pillage Italy without interference. In Rome, the elder statesman Quintus Fabius Maximus was elected as Dictator, to begin his policy of delay and avoidance of battle - "Fabian Tactics."</p>
+  217-01-01 BC / 217-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Carthage","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Carthage"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Maharbal","Gaius Centenius"}
+}
+
+"Agathocles' Tower - Command and Colors" {
+  10630
+  <p>When Scipio Africanus invaded Africa in 204 BC, Carthage was caught without a field army. Carthage entrusted its immediate defense to Hanno, son of Hamilcar. Hanno raised 4,000 cavalry - about 1,000 civic noble heavy cavalry, 1,000 Libyan cavalry and 2,000 Numidian mercenaries - and established a base at Salaeca. Scipio had 25,000 foot but brought only a little over 2,000 horsemen across the sea. Six hundred were Romans and the remainder allied Italian horsemen. While in Sicily, Scipio had summoned 300 noble cavalry from the Greek cities. Cleverly, he offered them the option of declining to join his army if they turned over their fine mounts, arms and armor and in this way Scipio re-equipped 300 of his elite Italian extraordinaire. The Numidian prince Masinissa joined Scipio, but with only 200 horsemen.</p><p>Even though Scipio was outnumbered, he decided to lure Hanno into an ambush. He posted his Roman and Italian horse behind a ridge overlooked by a watchtower built by the earlier Greek invader, Agathocles. Masinissa demonstrated in front of the Punic camp, and lured them out. Scipio and his deputy Laelius then charged over the ridge and surprised the Punic horsemen. Many were slain in the initial onslaught, though a few managed to turn and fight. When Hanno was taken prisoner, his command broke and fled. Scipio had won his first dramatic victory in Africa.</p>
+  204-01-01 BC / 204-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Carthage","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Carthage"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Hanno, son of Hamilcar","Scipio Africanus"}
+}
+
+"Cirta - Command and Colors" {
+  10630
+  <p>Following his victory at Agathocles' Tower, Scipio Africanus was penned in when Hasdrubal Gisgo and Syphax arrived with two large armies. Unable to face them in open battle, Scipio destroyed these armies with a treacherous night attack after feigning peace talks. A few months later, Scipio defeated these commanders once again at Great Plains. After the victory, Scipio dispatched his deputy Laelius, along with the Masinissa, to pursue Syphax.</p><p>Laelius was given most of the Roman cavalry and velites, along with a few cohorts of legionnaires, a total of 1,800 horse and 6,000 foot. Another 1,800 Numidians, mostly Massyles, had rallied to Masinissa. For fifteen days Laelius pushed across the desert in pursuit. Meanwhile, Syphax had fallen back to his capitol Cirta, to raise an army for a last stand. He managed to put 8,000 foot and nearly 5,000 horsemen in the field, but this army was raw and untrained. The infantry included some Roman-style cohorts, organized by the Roman centurion Statorious, who had joined Syphax in 213. When Laelius arrived outside Cirta, Masinissa charged impetuously. Syphax initially had the best of the fight, but as the Roman cavalry and infantry came up, the tide began to turn. Syphax rode to the forefront to rally his faltering troops, but his horse was killed and he was thrown and captured. Leaderless, the Numidian army broke. Masinissa brought Syphax in chains to Cirta, and the city surrendered.</p>
+  203-01-01 BC / 203-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Numidia","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Numidia"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"King Syphax","Laelius","Masinissa"}
+}
+
+"Lake Trasimenus - Command and Colors" {
+  10630
+  <p></p>
+  217-01-01 BC / 217-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Carthage","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Carthage"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Hannibal Barca","Flaminius"}
+  special{"Epic"}
+}
+
+"Clusius - Command and Colors" {
+  10630
+  <p>The Cisalpine Gauls (those living south of the Alps) had sacked Rome in 390 BC and fought intermittently with Rome for the next 150 years. After a series of defeates early in the 3rd century BC, the Gauls remained quiet for 50 years. But when the Romans began settling on captured Gallic lands in 232, this roused the barbarians to prepare another invasion. This time, the Cisalpine Gauls were joined by their kinsmen from across the Alps, the fierce Gaesatae under Kings Aneroestes and Concolitanus. in 225 BC, a force of 70,000 Gauls descended on Etruria and overran the country, looting and pillaging. When they reached Clusium, a city only three days' journey from Rome, a Roman army (led by a praetor whose name is lost to history) appeared on their heels, forcing them to turn back and confront it. The two armies camped for the night in close proximity. The Gauls kept their campfires burning but withdrew their infantry, leaving only their cavalry behind. The horsemen had orders to retire when the enemy approached, leading the Romans toward Faesulae, where their infantry would attack from ambush. At daybreak, the Romans, seeing the cavalry alone and thinking the Gauls had taken to flight, followed the cavalry with all speed. On their approach, the Gauls sprang from ambush and attacked them. A stubborn conflict took place, but finally the numbers and courage of the Gauls prevailed. The surviving Romans retreated to a hill, while the Gauls set up a loose blockade. These fugitives would all have been lost but the consul Aemilius Paullus arrived with a relief army that night. The Gallic kings chose to retreat with their booty rather than fight another battle. They broke camp before daybreak and retreated along the seacost through Etruria.</p>
+  225-01-01 BC / 225-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Gallic","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Gallic"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Aneroestes","Concolitanus","Unknown"}
+  special{"Epic"}
+}
+
+"Raphia - Command and Colors" {
+  10630
+  <p>The Wars of the Successors led to the establishment of three Hellenistic Kingdoms: the Antigonids (Macedon), the Prolemies (Egypt), and the Seleucids (from Asia Minor to India). The Seleucid Empire began to fragment, losing Judea and most of its eastern provinces and parts of Asia Minor. Antiochus III became ruler at the age of 18 in 223 BC, and immediately began restoring his empire. In 217 he retook Judea and marched on Egypt with 62,000 foot, 6,000 horse and 103 elephants. Ptolemy IV, with a much smaller army, enrolled native Egyptians into his Greek phalanx to bring his numbers up to 70,000 infantry, 6,000 cavalry and 73 elephants. The two armies met at Raphia on the Egyptian frontier. Both armies deployed with their phalanx in the center and cavalry on the wings. Antiochus began the battle by charging forward with his right wing cavalry and breaking Ptolemy's left. The young Antiochus impetuously pursued the fleeing cavalry before him. Meanwhile, the Egyptian right swung forward into action and defeated its counterpart. With both wings wheeling in opposite directions, Ptolemy ordered his center to attack. Surprisingly, the Egyptian phalanx got the best of the veteran Seleucids and Antiochus' entire army broke and fled. Antiochus withdrew and Ptolemy recovered Judea. Despite this defeat, Antiochus went on to re-conquer his lost provinces and restore the great Seleucid Empire. Ptolemy, on the other hand, soon faced a major rebellion led by the Egyptian soldiers he had trained for the phalanx.</p>
+  217-01-01 BC / 217-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Ptolemaic","Seleucid"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Ptolemaic"-"2","Seleucid"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Prolemy","Antiochus"}
+  special{"Epic"}
+}
+
+"Cannae - Command and Colors" {
+  10630
+  <p>Finally aware of the true threat posed by Hannibal, the Romans assembled a truly large army, perhaps up to 80,000 strong, lead by two consuls and two pro-consuls. When both consuls were present, Roman tradition was for them to alternate overall command from one day to the next. Unfortunately, on the day of battle, the incompetent consul Varrus held command and determined to attack Hannibal, who had posted his army in a location that negated the Roman advantage in numbers - bluffs on one flank and the Aufidus river on the other. Undeterred, Varrus simply packed his legions one behind the other into the constricted area and launched the mass headlong at the Carthaginian center. They advanced into yet another trap.</p><p>Hannibal had deployed his excellent cavalry and heavy infantry on the wings, leaving his medium infantry and Celt levies in the center. The Roman advance did indeed push the Carthaginian center back and inflected losses, but in the meantime the Carthaginian cavalry had routed the Roman cavalry on both flanks and closed in on the rear of the Roman army while the heavy infantry advanced on both Roman flanks. Surrounded and unable to maneuver, the Roman soldiers were slaughtered by the thousands and the army was destroyed. Cannae was Rome's greatest military defeat and Hannibal's greatest victory.</p>
+  216-01-01 BC / 216-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Carthage","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Carthage"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Hasdrubal Marca","Varrus"}
+  special{"Epic"}
+}
+
+"Bagradas - Command and Colors" {
+  10630
+  <p>The Romans are on the verge of defeating Carthage and ending the First Punic War. Regulus and a veteran Roman army landed in Africa, and, though woefully short of cavalry, defeated several Carthaginian forces. Desperate, the Carthaginians turned to an otherwise unemployed Greek general named Xanthippus, who knew how to train and command an army, as well as how to put the Carthaginian advantages in mounted troops into use. The Carthaginian army marched into Bagradas Valley and Regulus, confident of yet another victory, offered battle. It was to prove a costly mistake for him. The Carthaginian cavalry and elephants routed the Roman cavalry and then turned on the flanks and rear of the Roman army, now fully engaged with the Carthaginian infantry. The Roman army disintegrated. Those who survived told of the horror of being overrun by elephants and cavalry. This Carthaginian victory prolonged the war. It took several years before any Roman army would stand and fight against elephants. The larger lesson - proper employment of a combined arms army over a largely infantry army resulting in victory - was lost on the Romans. They had to re-learn it at the Trebbia, Lake Trasimenus, and Cannae.</p>
+  253-01-01 BC / 253-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Carthage","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Carthage"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Xanthippus","Regulus"}
+  special{"Epic"}
+}
+
+"Beneventum - Command and Colors" {
+  10630
+  <p>After the battle of Asculum, Pyrrhus left Italy for a three-year campaign in Sicily. Although he defeated the Carthaginians in every battle, he could not drive them off the island. Pyrrhus decided to return to Italy. Years of attrition and a naval defeat on his way back to Italy had greatly weakened his army. However, upon his return, his reputation brought thousands of new recruits out to join him. With 20,000 infantry, 3,000 cavalry and 20 elephants, Pyrrhus once again marched on Rome. Consul Manius Curius Dentatus gathered his army of about 20,000 foot and 2,000 horse and set up camp near Beneventum to await the Epirote army. Pyrrhus decided on a surprise night attack, but some of his detachments got lost. It was morning before he could organize his scattered forces near the Roman camp. Dentatus led his forces out and drove back Pyrrhus' vanguard. As the Roman attack continued it was in turn driven back by Pyrrhus' skillful use of his elephants. However, a second Roman assault stampeded the elephants into the Pyrrhus' phalanx. Dentatus struck while the phalanx was disordered and broke it, winning the battle. Pyrrhus withdrew from the field with what was left of his army and returned to Epirus, never to return to Italy. Beneventum was the final pivotal battle in the Roman Republic's bid for control of the entire Italian peninsula, and the first great victory of the legion over the phalanx.</p>
+  275-01-01 BC / 275-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Epirote","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Epirote"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Pyrrhus","Consul Decius","Consul Sulpicius"}
+  special{"Epic"}
+}
+
+"Paraitacene - Command and Colors" {
+  10630
+  <p>By 318 BC the Successors had formed two competing alliances: the "Royalists" who claimed to fight to maintain the empire for Alexander's infant sons, and a rival coalition that sought to claim their own independent kingdoms. The opposing Successor armies in Asia - one commanded by Antigonus, the other by Eumenes - met in battle at Paraitacene in 371 BC. Antigonus was by now the most powerful of the Diadochi, controlling most of Anatolia and the eastern satrapies. Eumenes had the backing of Alexander's heirs and a large war chest, though the fact that he was a Greek and not a Macedonian was a major handicap. Antigonus fielded 28,000 infantry and 11,000 horse. Eumenes' force of 35,000 foot and 6,000 horse included the veteran Silver Shields, who had fought with distinction in all of Alexander's campaigns. The battle opened with Antigonus' light horse attacking Eumenes' right. This attack was wrecked by Eumenes' heavy cavalry. Meanwhile in the center, the Silver Shields drove back Antigonus' phalanx. Antigonus' army was on the ropes when he pulled off a stroke that evened the score. He charged through a gap and was successful in routing Eumenes' left flank. Both sides at this point were exhausted and returned to their camps. Antigonus claimed victory, but realistically the battle was a draw and a final resolution would not be reached until the armies met at Gabiene, a year later.</p>
+  317-01-01 BC / 317-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Eumenes","Antigonus"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Eumenes"-"2","Antigonus"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Eumenes","Antigonus"}
+  special{"Epic"}
+}
+
+"Hydaspes - Command and Colors" {
+  10630
+  <p>Having gained control over all of the known civilized world, Alexander ventured into India in 326 BC. He met resistance from Porus at the River Hydaspes. Porus' large corps of 200 elephants thwarted all of Alexander's attempts to cross the river. Learning that a large force was moving to reinforce Porus, Alexander decisively divided his army and secretly crossed up-river with the majority of the Macedonian troops, leaving a large detachment in place to deceive the Indians. Upon receiving the startling news that Alexander had crossed the Hydaspes, Porus hurriedly turned his army to meet him in battle. Porus sent his chariots forward but these were quickly destroyed. Alexander then sent his cavalry to attack Porus' rigt wing and gained the flank of the Indian army, while his heavy infantry advanced to attack the elephants and bowmen. The elephants charged the phalanx and did great execution among the elite Macedonian infantry. Only the timely intervention of the light troops prevented a greater loss. Porus, wounded six times, was captured and the remainder of his army routed. Porus so impressed Alexander with his bravery that he was allowed to retain his kingdom as a Macedonian vassal. The power of the elephants was not lost upon the Macedonian generals who fought at Hydaspes. They would go to great pains to obtain elephants of their own during the Wars of the Successors.</p>
+  326-01-01 BC / 326-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Macedonia","India"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Macedonia"-"2","India"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Alexander","Porus"}
+  special{"Epic"}
+}
+
+"Gaugamela - Command and Colors" {
+  10630
+  <p>Rather that pursue Darius after the victory at Issus (333), Alexander turned south to neutralize the Persian fleet. In a two-year campaign he captured Type and Gaza and conquered Egypt. In 331, Alexander marched into Mesopotamia, intent on attacking Babylon. Darius had raised another army, strong in cavalry but lacking in good infantry. The two armies met on the plain of Gaugamela. Darius posted cavalry on the right and the left and occupied the center with his Greek mercenaries, guard cavalry, elephants, and chariots. Alexander placed the Thessalian horse on the left, gave Craterus the phalanx in the center, and placed himself in person with the Companions on the right. The Persian line extended well beyond both flanks of the Macedonian formation. To counter, Alexander moved diagonally as he advanced, refusing his left. Darius ordered his mounted troops forward. The Macedonian right managed to hold their attackers just long enough for Alexander to charge with his Companions and heavy infantry straight for Darius. As he has at Issus, Darius turned and fled the field but the battle was not yet over. The Macedonian left was still hard pressed by the Persian cavalry. Alexander wheeled about and charged with the Companions into the Persian cavalry, forcing them back. Soon the entire Persian army was in retreat. Gaugamela is one of the truly decisive battles of history and marked the beginning of Alexander's great empire. This battle is also considered the classic example of penetration tactics.</p>
+  331-01-01 BC / 331-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Macedonia","Persia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Macedonia"-"2","Persia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Alexander","Darius III"}
+  special{"Epic"}
+}
+
+"Crimissos River - Command and Colors" {
+  10630
+  <p>The Carthaginians learned from earlier defeats in Sicily that they had to field reliable, trained heavy infantry of their own. They formed the Sacred Band, a force of about 2500 excellently trained Carthaginians, as good or better than anything the Greeks of Syracusans could field. The Sacred Band formed part of a large army under Hasdrubal, advancing eastward to subjugate Sicily. Opposing him with a much smaller army was the able tactician Timoleon. Ever aggressive, Timoleon anxiously awaited an opportunity to strike the Carthaginians a hard blow on his terms. He got that chance when, on a foggy morning, Hasdrubal carelessly ordered his army to cross the Crimissos River without bothering to send out scouts (who would have reported that Timoleon's army was arrayed on the bluffs just beyond the river). Waiting until about half of the Carthaginian army had crossed, Timoleon unleashed his excellent heavy infantry phalanx against the surprised Carthaginians. Most who survived fled, but the Sacred Band stood their ground and were annihilated by superior numbers, (aided by a sudden rainstorm that slowed Carthaginian reinforcements crossing the river). Seeing the disaster unfolding across the river, the remainder of Hasdrubal's army broke and fled. The loss of so many citizen soldiers had a horrific effect on Carthage. The Sacred Band was reformed, but only once was it ever dispatched from Africa again, and then only for a very short campaign. Carthage would try to make do with mercenary troops as much as possible on Sicily, which had large repercussions at the end of the First Punic War.</p>
+  341-01-01 BC / 341-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Carthage","Syracuse"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Carthage"-"2","Syracuse"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Hasdrubal","Timoleon"}
+  special{"Epic"}
+}
+
+"Plataea - Command and Colors" {
+  10630
+  <p>The Persian emperor Xerxes I led a massive invasion of Greece to avenge the defeat of his father's forces at Marathon. After annihilating the 300 Spartans at Thermopylae, Xerxes burned Athens, then Macedon, Thessaly, and Boeotia submitted. However, following the loss of the Persian fleet at Salamis, Xerxes withdrew to Asia and left Mardonius with most of the Persian land forces to continue the subjugation of Greece. Amid much bickering, an allied Greek army was formed under the Spartan Pausanias, and moved to oppose the Persians. The Greeks were always careful to stay in terrain that negated the Persian cavalry, so the Persian cavalry turned to raiding... poisoning the Greek's water supply and destroying a large Greek baggage train. Short of water and food, Pausanias ordered a night withdrawal, but only the allies in the center did so. The Spartan right and Athenian left stood until first light. Seeing this confusion, Mardonius ordered a general advance, although Artabazus, in command of the reserve, suspected a trick and held back. Mardonis attacked the entire Greek line, with an onslaught that was particularly fierce on the Athenian wing. On the right, the Spartans held back until Pausanias obtained just the right "omens" from a sacrifice and then ordered them to charge. It was a desperate infantry battle but the better tactics and weapons of the Greeks finally turned the tide, killing Mardonius along the way. Artabazus managed an orderly retreat back to Asia Minor (he was rewarded with a hereditary satrapy), but the victory at Plataea meant the Persian threat to Greece was effectively ended.</p>
+  479-01-01 BC / 479-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Greece","Persia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Greece"-"2","Persia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Pausanias","Mardonius"}
+  special{"Epic"}
+}
+
+"Marathon - Command and Colors" {
+  10630
+  <p>King Darius I of Persia sent an expedition against Athens in reprisal for the burning of Sardes in 498 BC during the failed Ionian Revolt. The Persian fleet under the joint command of Datis and Artaphernes landed near Marathon bay, which offered a perfect battleground for their troops. The Athenians marched out to face the enemy in the field, with 1000 allied soldiers from Plataea supplementing the Athenian force of 9000. The Persians outnumbered the Greek, but to counter the disparity, Callimachus extended the Greek line to match the enemy, thinning the center while keeping both wings at full strength. The Persian army, with its best troops in the center, was taken by surprise when the Athenians attacked. Historians suggest that the some of the Persian cavalry was in the process of embarking back onto the ships when the attack started (it appears that the Greeks had waited for days before actually lining up for battle). In the battle the Persian center got the best of the weak Greek center and broke through, but this success was more than countered by the defeat of their two wings. The victorious Athenians then swung inwards and the Persian force was routed back to their ships. Concerned that the defeated Persians might still sail around to threaten Athens. Callimachus marched the Greek army back to Athens in "record time." (which is the true "Marathon race.") When the Persian ships reached Athens, they found an army waiting for them on Phaleron beach. Greece was safe, for now.</p>
+  490-01-01 BC / 490-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Greece","Persia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Greece"-"2","Persia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Callimachus","Datis"}
+  special{"Epic"}
+}
+
+"Zama - Command and Colors" {
+  10630
+  <p>Carthage is on the verge of defeat. Spain has been lost, Scipio has landed in Africa and beaten a large, but inexperienced, Carthaginian army at the Battle of the Great Plains. Masinissa has taken his vaunted Numidian light horse over to the Roman side. Hannibal is recalled from Italy, and hurriedly builds an army around the veterans he has brought with him. He creates a corps of war elephants and fields more infantry than does Scipio, but his arm of decision, his cavalry, is far weaker and less capable.</p><p>When the armies meet on the plains of Zama, Hannibal knows his cavalry on the flanks will be beaten, but stakes all on crushing the Roman center with his elephants and infantry before the victorious Roman and Numidian cavalry return from pursuing the Carthaginian horse. Scipio, knowing he is outnumbered, masses his legions in the center and fully intends for Masinissa and the cavalry to complete the encirclement and win the battle.</p><p>As the battle gets underway, both plans are working. The Carthaginian cavalry is driven quickly from the field while the Romans are pressed to keep their lines intact against the elephants and Carthaginian infantry. The flexible legions prove their worth as reserve lines move quickly to secure flanks or bolster the center. In te end Scipio's plan prevails. The Roman and Numidian cavalry return, the Carthaginian army is surrounded, and the valiant infantry is destroyed.</p><p>Scipio had perfected a better tactical system, and that system won at Zama over the legendary Hannibal. The rigid, but powerful phalanx, dominant for so long, had been beaten by the flexibility of Scipio's legions combined with cavalry. The baton of military supremacy had passed to Rome.</p>
+  202-01-01 BC / 202-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Carthage","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Carthage"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Hannibal Barca","Scipio Africanus"}
+  special{"Epic"}
+}
+
+"Ilipa - Command and Colors" {
+  10630
+  <p>Hasdrubal's departure to join Hannibal in Italy left only two Carthaginian armies in Spain under mediocre commanders (Hasdrubal - yes another one, and Mago). Scipio made steady progress against them, securing territory and prompting many Spanish tribes to come over to the Roman side. Forced to give battle or give up Spain, their most valuable province, the Carthaginian armies united and took up position on the plains outside of Ilipa.</p><p>For three days both armies deployed with their heavy infantry in the center and light troops on each wing. Scipio assumed that the Carthaginians would continue to deploy in this manner and he was correct. On the fourth day, Hasdrubal again deployed his army with the heavies in the center. Scipio this day sent light troops and cavalry to attack the Carthaginian camp and only after the Roman light screen retired did Hasdrubal see the Romans deployed with legionary infantry in both wings and Spanish troops plus lights in the center. The Roman cavalry and legions advanced and began to destroy both Carthaginian light wings. Hasdrubal was unable to send his heavies to support the wings for fear he would open a hole in the center that the Romans would pour through.</p><p>Both Carthaginian wings disintegrated and it looked grim for the heavies in the center until a providential thunderstorm allowed some of them to escape. The combined Carthaginian army was destroyed as a fighting force, and Spain now belonged to Rome. Scipio later crossed into Africa where his victories at The Great Plains and Zama would earn him the title "Africanus".</p>
+  206-01-01 BC / 206-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Carthage","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Carthage"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Hasdrubal Barca","Scipio Africanus"}
+  special{"Epic"}
+}
+
+"Arausio - Command and Colors" {
+  10630
+  <p>Following the Punic Wars, Rome set out to consolidate the territories it had captured beyond the Alps. At the same time, a major migration by the Cimbri, Teutons, and Ambrones, under the Kings Boiorix and Teutobod, was moving south, reportedly with over 200,00 men (more likely the fighters numbered about 50,000). Two Roman armies were sent to stop this migration with nearly 80,000 legionnaires. However, bitter differences between the Consul Gnaeus Mallius Maximus and the Proconsul Quintus Servillius Caepio prevented the two Roman armies from cooperating, with devastating results. The Roman forces were camped by the Rhone River, near Arausio (modern Orange). However, the armies did not camp together. Caepio made his camp closer to the enemy (seeking to rob Maximus of the victory) and his dispositions are shown on the battlefield (Maximus and his army have made camp off map). The sight of two Roman armies made Boiorix cautios, and he entered into negotiations with Maximus. Caepio, motivated by hatred and envy of Maximus, foolishly launched a hasty attack on the barbarians. Caepio's army was annihilated in this piecemeal assault. With a boost in confidence from this easy victory, the barbarians proceeded to advance, pin Maximus' army against the river, and destroy it also. In terms of human lives lost, Arausio was among the most lethal battles in world history, and Rome's worst defeat since Cannae. The terrible defeat had one beneficial result for Rome. It gave Gaius Marius the opportunity to come to the fore and radically reform the organization and recruitment of Rome's legions.</p>
+  105-01-01 BC / 105-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Germanic","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Germanic"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"King Boiorix","King Teutobod","Quintus Servillius Caepio"}
+  special{"Epic"}
+}
+
+"Dertosa - Command and Colors" {
+  10630
+  <p>After Cannae, Rome struggled to rebuild its armies, but needed time. In Spain, Hannibal's brother Hasdrubal commanded an army large enough to possibly let Carthage win the war - if it united with Hannibal's victorious veterans. Standing in his way, however, were the legions of two capable (at last) consuls, the brothers Gnaeus and Publius Scipio. Both knew of the tactics used at Cannae, but felt the only way to counter encirclement was to quickly break the Carthaginian center. When the battle commenced, the Roman legions fiercely attacked the Carthaginian center, but, unlike Cannae, there was enough Roman cavalry to hold their flanks. Lacking cavalry superiority (and his brother's tactical genius), Hasdrubal was unable to surround the Romans before they broke through his center. His cavalry joined the retreat, leaving the splendid heavy infantry to its fate. Rome was granted the time it needed to live and fight another day. Eight years later, Hasdrubal finally was able to march to Italy, but lost both his army and his life at the Metaurus.</p>
+  215-01-01 BC / 215-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Carthage","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Carthage"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Hasdrubal Barca","Gnaeus Scipio","Publius Scipio"}
+  special{"Epic"}
+}
+
+"CnC-A 0611 - Hysiae" {
+  10630
+  <p>During the 7th century Pheidon seized the throne from the reigning aristocracy of Argos and gradually reunited the independent cities of the Argive. This energetic leader increased the power of Argos and instituted reforms for the citizens and its military. Seeking to further increase his power, Pheidon removed the Elean superintendents of the Olympian Games and he himself presided. The Eleans looked to Sparta for assistance, but when Sparta marched against Pheidon, the Argive Hoplite Army defeated the Spartans at battle of Hysiae. The Spartans were quick to learn from their defeat and would soon train their own Hoplite Army.</p>
+  669-01-01 BC / 669-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Argive","Sparta"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Argive"-"2","Sparta"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Pheidon","Unknown"}
+}
+
+"CnC-A 0612 - Thyreatis (Battle of 300 Champions)" {
+  10630
+  <p>Sparta and Argos were quarreling over Thyreatis, a territory which was occupied by Sparta, but belonged to Argos. The Argives marched out to recover their land, but instead of engaging in battle, the two armies agreed that rather than commit full armies, 300 of the best men from each side would fight it out to determine a victor. After a bloody contest, only three men remained, two Argives and one Spartan. The Argives claimed victory because of their numerical superiority and returned to their army. The Spartan also claimed victory, since their man was the last on the battlefield. The Argives sent their entire Hoplite army forward to settle the argument. An equally determined Spartan army met them. After heavy losses on both sides, the Spartans emerged victorious.</p>
+  545-01-01 BC / 545-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Argive","Sparta"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Argive"-"2","Sparta"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Unknown"}
+}
+
