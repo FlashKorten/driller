@@ -104,10 +104,10 @@ foreach my $key (sort(keys %game)){
     print "Updating existing entry for: $key\n";
     print "---------------------------------\n";
     $update = "UPDATE dr_game SET "
-           .= "year_from = ?, year_upto = ?, "
-           .= "players_min = ?, players_max = ?, "
-           .= "latitude_trunc = ?, longitude_trunc = ?, "
-           .= "range = ?, timescale = ? WHERE id = ?;";
+            . "year_from = ?, year_upto = ?, "
+            . "players_min = ?, players_max = ?, "
+            . "latitude_trunc = ?, longitude_trunc = ?, "
+            . "range = ?, timescale = ? WHERE id = ?;";
     $sth_update = $dbh -> prepare($update);
     $sth_update -> execute( &getYearFromDate($key, 'time_01')
                           , &getYearFromDate($key, 'time_02')
@@ -121,8 +121,8 @@ foreach my $key (sort(keys %game)){
     &clean_up_dependent_tables($dbh, $id_game);
   } else {
     $insert = "INSERT INTO dr_game "
-           .= "(year_from, year_upto, players_min, players_max, latitude_trunc, longitude_trunc, range, timescale) "
-           .= "VALUES (?,?,?,?,?,?,?,?) RETURNING id;";
+            . "(year_from, year_upto, players_min, players_max, latitude_trunc, longitude_trunc, range, timescale) "
+            . "VALUES (?,?,?,?,?,?,?,?) RETURNING id;";
     $sth_insert = $dbh -> prepare($insert);
     $sth_insert -> execute( &getYearFromDate($key, 'time_01')
                           , &getYearFromDate($key, 'time_02')
@@ -137,8 +137,8 @@ foreach my $key (sort(keys %game)){
     $id_game = $$result{"id"};
   }
   $insert = "INSERT INTO dr_game_data "
-         .= "(id_game, id_bgg, title, subtitle, description, gametime_start, gametime_end, latitude, longitude) "
-         .= "VALUES (?,?,?,?,?,?,?,?,?);";
+          . "(id_game, id_bgg, title, subtitle, description, gametime_start, gametime_end, latitude, longitude) "
+          . "VALUES (?,?,?,?,?,?,?,?,?);";
   $sth_insert = $dbh -> prepare($insert);
   $sth_insert -> execute( $id_game
                         , $game{$key}{'id_bgg'}
