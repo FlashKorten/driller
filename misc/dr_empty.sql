@@ -138,13 +138,13 @@ CREATE INDEX dr_game_timescale_index ON dr_game(timescale ASC);
 ALTER INDEX dr_game_timescale_index OWNER TO driller;
 
 CREATE TABLE dr_game_data (
-  id_game integer NOT NULL REFERENCES dr_game(id),
+  id_game integer PRIMARY KEY REFERENCES dr_game(id),
   id_bgg varchar(255) NOT NULL default '',
   title varchar(255) NOT NULL default '',
   subtitle varchar(255) NOT NULL default '',
   description varchar(2000) NOT NULL default '',
-  gametime_start date DEFAULT '0001-01-01' NOT NULL,
-  gametime_end date DEFAULT '0001-01-01' NOT NULL,
+  gametime_start date,
+  gametime_end date,
   latitude double precision,
   longitude double precision
 );
