@@ -104,9 +104,9 @@ allSeriesQuery     = "SELECT id, series    FROM dr_series    ORDER BY series"
 allLeadersQuery    = "SELECT id, leader    FROM dr_leader    ORDER BY leader"
 
 gameQuery, gamesQuery, allGamesQuery :: Query
-gameQuery          = "SELECT id, game, subtitle, players_min, players_max, id_bgg FROM dr_game WHERE id = ?"
-gamesQuery         = "SELECT id, game, subtitle, players_min, players_max, id_bgg FROM dr_game WHERE id IN ?"
-allGamesQuery      = "SELECT id, game, subtitle, players_min, players_max, id_bgg FROM dr_game ORDER BY game"
+gameQuery          = "SELECT id, title, subtitle, players_min, players_max, id_bgg FROM dr_game, dr_game_data WHERE id_game = id AND id = ?"
+gamesQuery         = "SELECT id, title, subtitle, players_min, players_max, id_bgg FROM dr_game, dr_game_data WHERE id_game = id AND id IN ?"
+allGamesQuery      = "SELECT id, title, subtitle, players_min, players_max, id_bgg FROM dr_game, dr_game_data WHERE id_game = id ORDER BY title"
 
 latitudeQuery, longitudeQuery, fromYearQuery, upToYearQuery, fromRangeQuery, upToRangeQuery :: Query
 latitudeQuery      = "SELECT latitude_trunc  FROM dr_game WHERE latitude_trunc = ?"

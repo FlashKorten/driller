@@ -1,6 +1,7 @@
 DROP INDEX IF EXISTS dr_author_index CASCADE;
 DROP INDEX IF EXISTS dr_engine_index CASCADE;
 DROP INDEX IF EXISTS dr_game_game_index CASCADE;
+DROP INDEX IF EXISTS dr_game_data_title_index CASCADE;
 DROP INDEX IF EXISTS dr_game_year_from_index CASCADE;
 DROP INDEX IF EXISTS dr_game_year_upto_index CASCADE;
 DROP INDEX IF EXISTS dr_game_latitude_trunc_index CASCADE;
@@ -21,6 +22,7 @@ DROP INDEX IF EXISTS dr_user_index CASCADE;
 
 DROP TABLE IF EXISTS dr_author CASCADE;
 DROP TABLE IF EXISTS dr_engine CASCADE;
+DROP TABLE IF EXISTS dr_game_data CASCADE;
 DROP TABLE IF EXISTS dr_game CASCADE;
 DROP TABLE IF EXISTS dr_genre CASCADE;
 DROP TABLE IF EXISTS dr_map_author CASCADE;
@@ -110,19 +112,11 @@ ALTER INDEX dr_user_index OWNER TO driller;
 
 CREATE TABLE dr_game (
   id integer PRIMARY KEY DEFAULT nextval('dr_game_id_seq'),
-  id_bgg varchar(255) NOT NULL default '',
-  game varchar(255) NOT NULL default '',
-  subtitle varchar(255) NOT NULL default '',
-  description varchar(2000) NOT NULL default '',
   players_min integer DEFAULT 0 NOT NULL,
   players_max integer DEFAULT 0 NOT NULL,
-  gametime_start date DEFAULT '0001-01-01' NOT NULL,
   year_from integer,
-  gametime_end date DEFAULT '0001-01-01' NOT NULL,
   year_upto integer,
-  latitude double precision,
   latitude_trunc integer,
-  longitude double precision,
   longitude_trunc integer,
   range integer DEFAULT 0 NOT NULL,    -- range in kilometers around epicenter
   timescale integer DEFAULT 0 NOT NULL -- hours per turn
@@ -130,18 +124,35 @@ CREATE TABLE dr_game (
 
 ALTER TABLE public.dr_game OWNER TO driller;
 
-CREATE INDEX dr_game_game_index ON dr_game(game ASC);
-ALTER INDEX dr_game_game_index OWNER TO driller;
-CREATE INDEX dr_game_year_from_index ON dr_game(game ASC);
+CREATE INDEX dr_game_year_from_index ON dr_game(year_from ASC);
 ALTER INDEX dr_game_year_from_index OWNER TO driller;
-CREATE INDEX dr_game_year_upto_index ON dr_game(game ASC);
+CREATE INDEX dr_game_year_upto_index ON dr_game(year_upto ASC);
 ALTER INDEX dr_game_year_upto_index OWNER TO driller;
-CREATE INDEX dr_game_latitude_trunc_index ON dr_game(game ASC);
+CREATE INDEX dr_game_latitude_trunc_index ON dr_game(latitude_trunc ASC);
 ALTER INDEX dr_game_latitude_trunc_index OWNER TO driller;
-CREATE INDEX dr_game_longitude_trunc_index ON dr_game(game ASC);
+CREATE INDEX dr_game_longitude_trunc_index ON dr_game(longitude_trunc ASC);
 ALTER INDEX dr_game_longitude_trunc_index OWNER TO driller;
-CREATE INDEX dr_game_range_index ON dr_game(game ASC);
+CREATE INDEX dr_game_range_index ON dr_game(range ASC);
 ALTER INDEX dr_game_range_index OWNER TO driller;
+CREATE INDEX dr_game_timescale_index ON dr_game(timescale ASC);
+ALTER INDEX dr_game_timescale_index OWNER TO driller;
+
+CREATE TABLE dr_game_data (
+  id_game integer NOT NULL REFERENCES dr_game(id),
+  id_bgg varchar(255) NOT NULL default '',
+  title varchar(255) NOT NULL default '',
+  subtitle varchar(255) NOT NULL default '',
+  description varchar(2000) NOT NULL default '',
+  gametime_start date DEFAULT '0001-01-01' NOT NULL,
+  gametime_end date DEFAULT '0001-01-01' NOT NULL,
+  latitude double precision,
+  longitude double precision
+);
+
+ALTER TABLE public.dr_game OWNER TO driller;
+
+CREATE INDEX dr_game_data_title_index ON dr_game_data(title ASC);
+ALTER INDEX dr_game_data_title_index OWNER TO driller;
 
 CREATE TABLE dr_request (
   id integer PRIMARY KEY DEFAULT nextval('dr_request_id_seq'),

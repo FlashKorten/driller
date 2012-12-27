@@ -32,7 +32,7 @@
   mechanic{"Card Driven","Hex-and-Counter"}
   theme{"WW2"}
   party{"Germany"-"2","US"-"2"}
-  publisher{"GMT-Games"-"http://www.gmtgames.com"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
   series{"Combat Commander"-"cce026"}
 }
 
@@ -1606,7 +1606,7 @@
   mechanic{"Card Driven","Hex-and-Counter"}
   theme{"WW2"}
   party{"Japan"-"2","US"-"2"}
-  publisher{"GMT-Games"-"http://www.gmtgames.com"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
   series{"Combat Commander"-"Pacific A","Combat Commander Pacific"-"A"}
 }
 
@@ -1625,7 +1625,45 @@
   mechanic{"Card Driven","Hex-and-Counter"}
   theme{"WW2"}
   party{"Japan"-"2","US"-"2"}
-  publisher{"GMT-Games"-"http://www.gmtgames.com"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
   series{"Combat Commander"-"Pacific B","Combat Commander Pacific"-"B"}
+}
+
+"Combat Commander CCP C - Ichiki Attacks" {
+  28181
+  <p>Ilu River, Guadalcanal, 21 August 1942&mdash;Japanese HQ dispatched the Ichiki Detachment from Truk to displace what was mistakenly thought of as a minor US presence on Guadalcanal. During what is known as the Battle of Tenaru River, by 0030, Colonel Ichiki had maneuvered his force into position and ordered some covering fire across the river. Since minor patrols with small enemy parties were a nightly occurence, the fire did not raise significant alarm among the defenders. At 0200 Ichiki ordered 2nd company of the Japanese II/28th Regiment to charge across the sandbar of the Ilu River (known as Alligator Creek to the US Marines). The goal was to push past the defensive perimeter and on to Henderson Field. Facing them were the US Marines of G Company of the II/1st Regiment and two platoons of the 1st Special Weapons Battalion. The shrieking attackers came across the river without cease, but the defenders held their nerve and their ground.</p>
+  1942-08-21 / 1942-08-21
+  1 / 1
+  2
+  1
+  2 / 2
+  author{"Chad Jensen","John Foley"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Japan"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"Pacific C","Combat Commander Pacific"-"C"}
+}
+
+"Combat Commander CCP D - Operation Cherry Blossom" {
+  28181
+  <p>Empress Augusta Bay, Bouganville Island, Papua New Guinea, 1 November 1943&mdash;On this date the US 3rd Marine Division landed at Cape Torokina. Naval forces assisting the Marines included 4 cruisers and 8 destroyers. Empress Augusta Bay had been chosen because it was within range of allied land-based fighter bases and because the Japanese 17th Army was concentrated at other sites around the island. The stretch of beach near Cape Torokina was only "lightly" defended by little more than a company of well-camouflaged Japanese infantry&mdash;including a 75mm gun dug-in on the cape that wreaked havoc amongst the landing craft on their long approach to the beach in heavy seas.</p>
+  1943-11-01 / 1943-11-01
+  1 / 1
+  2
+  1
+  2 / 2
+  author{"Chad Jensen","Kai Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Japan"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"Pacific D","Combat Commander Pacific"-"D"}
 }
 
