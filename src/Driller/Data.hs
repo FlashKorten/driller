@@ -80,24 +80,7 @@ data GameResult = GameResult { getGames      :: [Game]
 }
 
 emptyGameResult :: GameResult
-emptyGameResult = GameResult { getGames      = []
-                             , getGenres     = []
-                             , getThemes     = []
-                             , getMechanics  = []
-                             , getSides      = []
-                             , getParties    = []
-                             , getPublishers = []
-                             , getSeries     = []
-                             , getAuthors    = []
-                             , getEngines    = []
-                             , getLeaders    = []
-                             , getLatitudes  = []
-                             , getLongitudes = []
-                             , getFromYears  = []
-                             , getUpToYears  = []
-                             , getFromRanges = []
-                             , getUpToRanges = []
-                             }
+emptyGameResult = GameResult [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
 
 data Game = Game { getGameId        :: Int
                  , getGameTitle     :: Text.Text
@@ -155,15 +138,12 @@ $(deriveJSON (drop 8)  ''UpToRange)
 class FromInt a where
   fromInt :: Int -> a
 
-class MarkExclusive a where
-  markExclusive :: a -> a
-
-instance FromInt FromYear  where fromInt i = FromYear  { getValueFromYear  = i }
-instance FromInt UpToYear  where fromInt i = UpToYear  { getValueUpToYear  = i }
-instance FromInt FromRange where fromInt i = FromRange { getValueFromRange = i }
-instance FromInt UpToRange where fromInt i = UpToRange { getValueUpToRange = i }
-instance FromInt Latitude  where fromInt i = Latitude  { getValueLatitude  = i }
-instance FromInt Longitude where fromInt i = Longitude { getValueLongitude = i }
+instance FromInt FromYear  where fromInt = FromYear
+instance FromInt UpToYear  where fromInt = UpToYear
+instance FromInt FromRange where fromInt = FromRange
+instance FromInt UpToRange where fromInt = UpToRange
+instance FromInt Latitude  where fromInt = Latitude
+instance FromInt Longitude where fromInt = Longitude
 
 instance FromRow FromYear  where fromRow = FromYear  <$> field
 instance FromRow UpToYear  where fromRow = UpToYear  <$> field
@@ -185,6 +165,9 @@ instance FromRow Series    where fromRow = Series    <$> field <*> field
 instance FromRow Game      where fromRow = Game      <$> field <*> field <*> field <*> field <*> field <*> field
 instance FromRow Int       where fromRow = field
 instance ToRow Int         where toRow n = [toField n]
+
+class MarkExclusive a where
+  markExclusive :: a -> a
 
 instance MarkExclusive Author    where markExclusive a = a{ getAuthorId    = negate $ getAuthorId a }
 instance MarkExclusive Genre     where markExclusive a = a{ getGenreId     = negate $ getGenreId a }
