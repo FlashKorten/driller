@@ -78,24 +78,7 @@ data GameResult = GameResult { getGames      :: [Game]
 }
 
 emptyGameResult :: GameResult
-emptyGameResult = GameResult { getGames      = []
-                             , getGenres     = []
-                             , getThemes     = []
-                             , getMechanics  = []
-                             , getSides      = []
-                             , getParties    = []
-                             , getPublishers = []
-                             , getSeries     = []
-                             , getAuthors    = []
-                             , getEngines    = []
-                             , getLeaders    = []
-                             , getLatitudes  = []
-                             , getLongitudes = []
-                             , getFromYears  = []
-                             , getUpToYears  = []
-                             , getFromRanges = []
-                             , getUpToRanges = []
-                             }
+emptyGameResult = GameResult [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
 
 data Game = Game { getGameId        :: Int
                  , getGameTitle     :: Text.Text
@@ -153,12 +136,12 @@ $(deriveJSON (drop 8)  ''UpToRange)
 class FromInt a where
   fromInt :: Int -> a
 
-instance FromInt FromYear  where fromInt i = FromYear  { getValueFromYear  = i }
-instance FromInt UpToYear  where fromInt i = UpToYear  { getValueUpToYear  = i }
-instance FromInt FromRange where fromInt i = FromRange { getValueFromRange = i }
-instance FromInt UpToRange where fromInt i = UpToRange { getValueUpToRange = i }
-instance FromInt Latitude  where fromInt i = Latitude  { getValueLatitude  = i }
-instance FromInt Longitude where fromInt i = Longitude { getValueLongitude = i }
+instance FromInt FromYear  where fromInt = FromYear
+instance FromInt UpToYear  where fromInt = UpToYear
+instance FromInt FromRange where fromInt = FromRange
+instance FromInt UpToRange where fromInt = UpToRange
+instance FromInt Latitude  where fromInt = Latitude
+instance FromInt Longitude where fromInt = Longitude
 
 instance FromRow FromYear  where fromRow = FromYear  <$> field
 instance FromRow UpToYear  where fromRow = UpToYear  <$> field
