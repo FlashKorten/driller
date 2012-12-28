@@ -17,25 +17,6 @@
   series{"Command Staff"-""}
 }
 
-"Combat Commander CCE026 - Turnbull Turns 'em" {
-  21050
-  <p>It's D-Day, and the 82nd Airborne Division is struggling to consolidate its defenses at St. Mere-Eglise. Expecting a counter-attack from the north, 3/505 Commander Lt. Col. Benjamin Vandervoort orders D Company's 3rd Platoon - led by 1st Lt. Turner Turnbull - to block Route D-15 at Neuville-au-Plain. Shortly after arriving, Turnbull's force of 43 men spot a large column of men in feldgrau approaching down the highway, apparently escorted by soldiers wearing American paratroopers' uniform. Wary of a ruse, an American machine-gunner fires warning shots into a nearby field. The German "prioners" dive for the ditches. After fanning out in either direction in order to try and outflank the outnumbered but well-entrenched Americans, the German attack commences.</p>
-  1944-06-06 / 1944-06-06
-  49.43 / 1.33
-  2
-  1
-  2 / 2
-  author{"Chad Jensen"}
-  engine{"Vassal"-""}
-  side{"Axis","Allies","Germany","US"}
-  genre{"Conflict Simulation"}
-  mechanic{"Card Driven","Hex-and-Counter"}
-  theme{"WW2"}
-  party{"Germany"-"2","US"-"2"}
-  publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Combat Commander"-"cce026"}
-}
-
 "Waterloo 20 - Napoleon's Last Campaign" {
   34334
   <p>Waterloo 20 is a game based on the Waterloo campaign, 16-18 June 1815. One player commands the French army, taking the role of Napoleon. The other player, knows as the Allied Player, takes the Anti-French side. He assumes both the roles of Wellington for the Anglo-Dutch forces, and Blucher for the Prussian forces.</p>
@@ -1591,82 +1572,6 @@
   publisher{"GMT Games"-"www.gmtgames.com"}
 }
 
-"Combat Commander CCP A - Grassy Knoll" {
-  28181
-  <p>Mindanao Island, Philippines, 7 May 1945&mdash;After capturing Libby Airfield with the aid of Filipino guerrillas, the US 24th Infantry Division found the assault toward Davao becoming exceedingly slow and ponderous. Exacerbating the issue was the preponderance of hemp fields in the area, now very much overgrown with disuse. Traversing these unkempt fields was slow going at best. Japanese forces of the 100th Division, however, found these numerous plantations extremely useful for hiding defensive strongpoints. Guerrillas continued to aid the Americans in their push toward Davao, and in one particularly nasty firefight on the 7th of May actually proved decisive in overcoming a Japanese bunker that was covering a major trail break through the area.</p>
-  1945-05-07 / 1945-05-07
-  7.190708 / 125.455341
-  2
-  1
-  2 / 2
-  author{"Chad Jensen"}
-  engine{"Vassal"-""}
-  side{"Axis","Allies","Germany","US"}
-  genre{"Conflict Simulation"}
-  mechanic{"Card Driven","Hex-and-Counter"}
-  theme{"WW2"}
-  party{"Japan"-"2","US"-"2"}
-  publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Combat Commander"-"Pacific A","Combat Commander Pacific"-"A"}
-}
-
-"Combat Commander CCP B - Ambush at Mogaung" {
-  28181
-  <p>Northern Burma, 28 June 1944&mdash;Over the course of three weeks in June, Michael "Mad Mike" Calvert's 77th (Chindit) Brigade took Mogaung in support of the US advance down the Hukawng Valley. They suffered 50% casualties. Fearing they would be ordered to join in the siege of Myitkyina, Calvert shut down his radios and began marching towards Stilwell's Army HQ in Kamaing. Along the way, scouts were surprised to discover a ragged - and apparently lost - column of Japanese troops advancing down a jungle path. Calvert ordered his weary survivors into ambush formations around a small village where their road and the enemy trail intersected.</p>
-  1944-06-28 / 1944-06-28
-  25.31113196 / 96.86851501
-  2
-  1
-  2 / 2
-  author{"Chad Jensen"}
-  engine{"Vassal"-""}
-  side{"Axis","Allies","Germany","US"}
-  genre{"Conflict Simulation"}
-  mechanic{"Card Driven","Hex-and-Counter"}
-  theme{"WW2"}
-  party{"Japan"-"2","US"-"2"}
-  publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Combat Commander"-"Pacific B","Combat Commander Pacific"-"B"}
-}
-
-"Combat Commander CCP C - Ichiki Attacks" {
-  28181
-  <p>Ilu River, Guadalcanal, 21 August 1942&mdash;Japanese HQ dispatched the Ichiki Detachment from Truk to displace what was mistakenly thought of as a minor US presence on Guadalcanal. During what is known as the Battle of Tenaru River, by 0030, Colonel Ichiki had maneuvered his force into position and ordered some covering fire across the river. Since minor patrols with small enemy parties were a nightly occurence, the fire did not raise significant alarm among the defenders. At 0200 Ichiki ordered 2nd company of the Japanese II/28th Regiment to charge across the sandbar of the Ilu River (known as Alligator Creek to the US Marines). The goal was to push past the defensive perimeter and on to Henderson Field. Facing them were the US Marines of G Company of the II/1st Regiment and two platoons of the 1st Special Weapons Battalion. The shrieking attackers came across the river without cease, but the defenders held their nerve and their ground.</p>
-  1942-08-21 / 1942-08-21
-  1 / 1
-  2
-  1
-  2 / 2
-  author{"Chad Jensen","John Foley"}
-  engine{"Vassal"-""}
-  side{"Axis","Allies","Germany","US"}
-  genre{"Conflict Simulation"}
-  mechanic{"Card Driven","Hex-and-Counter"}
-  theme{"WW2"}
-  party{"Japan"-"2","US"-"2"}
-  publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Combat Commander"-"Pacific C","Combat Commander Pacific"-"C"}
-}
-
-"Combat Commander CCP D - Operation Cherry Blossom" {
-  28181
-  <p>Empress Augusta Bay, Bouganville Island, Papua New Guinea, 1 November 1943&mdash;On this date the US 3rd Marine Division landed at Cape Torokina. Naval forces assisting the Marines included 4 cruisers and 8 destroyers. Empress Augusta Bay had been chosen because it was within range of allied land-based fighter bases and because the Japanese 17th Army was concentrated at other sites around the island. The stretch of beach near Cape Torokina was only "lightly" defended by little more than a company of well-camouflaged Japanese infantry&mdash;including a 75mm gun dug-in on the cape that wreaked havoc amongst the landing craft on their long approach to the beach in heavy seas.</p>
-  1943-11-01 / 1943-11-01
-  1 / 1
-  2
-  1
-  2 / 2
-  author{"Chad Jensen","Kai Jensen"}
-  engine{"Vassal"-""}
-  side{"Axis","Allies","Germany","US"}
-  genre{"Conflict Simulation"}
-  mechanic{"Card Driven","Hex-and-Counter"}
-  theme{"WW2"}
-  party{"Japan"-"2","US"-"2"}
-  publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Combat Commander"-"Pacific D","Combat Commander Pacific"-"D"}
-}
-
 "Iliturgi - Command and Colors" {
   10630
   <p>Following the decisive victory of the Scipio brothers at Dertosa (215), Carthage sent out 13,500 reinforcements for Hasdrubal Barca under his brother Mago. Hasdrubal reorganized his command of 18,000 men into three small armies, one under his command, one led by Mago and the third under Hannibal, son of Bomilcar. Once the Romans had retired north of the Ebro River for the winter, the Carthaginians struck back in late autumn (215) and besieged Iliturgi, a Roman garrisoned city. Each Punic commander set up a separate camp around the city. The citizens of Iliturgi and their Roman garrison soon suffered from hunger, as they had been caught unprepared. Gnaeus and Publius Scipio marched to the scene with two legions, about 18,000 troops, to lift the siege. Upon arriving, the Scipios decided to assault Hasdrubal's camp first, as it was the largest and the key to breaking the siege. As the assault on Hasdrubal's camp climaxed, the armies of Mago and Hamilcar arrived and the fighting spread out and intensified. Ultimately, the Romans emerged victorious, overrunning the camp and breaking the siege. However, the casualties were probably about equal on both sides. Since Rome was hard-pressed by Hannibal in Italy, the Carthaginians could more easily replace their losses, and benefited from such battles of attrition. On the other hand, Carthage needed a decisive victory before reinforcements could be sent to Hannibal in Italy. The campaigns of these five armies continued for another four years.</p>
@@ -2779,10 +2684,48 @@
   series{"Combat Commander"-"cce006"}
 }
 
-"CC-E 0001 - " {
+"CC-E 0007 - Bessarabian Nights" {
   21050
-  <p></p>
-  1940-01-01 / 1940-01-01
+  <p>Bessarabia&mdash;By mid April of 1944, the southern front in Russia had seen Soviet troops on the offensive for four consecutive months. Zhukov's plan to attack beyond the Dneister River as far as Chernovtsy was approved by Stavka, with Russian troops finally reaching the Carpathian Mountains and cutting off German forces in Poland from the Axis armies in Southern Russia that were now backing up into Romania.</p><p>As constant harassment by partisan bands threatened both supply and communications to the forward German echelons, more and more rear-area troops were needed to quell these local upstarts.</p>
+  1940-04-01 / 1944-04-30
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Russia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Russia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce007"}
+}
+
+"CC-E 0008 - Breakout Dance" {
+  21050
+  <p>Velikiye-Luki, Russia&mdash;As the Kalinin Front - led by several Soviet Shock Armies - drove westward they were able to completely encircle the German 277th Infantry Regiment at Velikiye-Luki. Outside relief for this surrounded force was not to be had, however, so orders were given for its units to effect a breakout.</p><p>The Soviet 129th Rifle Regiment held the line to the southwest on the road to Nevel. This force appeared to be the weakest, so it was in this sector that many attempts to exfiltrate were made. One such night-time attempt involved Lieutenant Schrader's platoon of 32 men, who had been hiding in brush-covered slit trenches throughout the day.</p>
+  1943-01-01 / 1943-01-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Russia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Russia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce008"}
+}
+
+"CC-E 0009 - Rush to Contact" {
+  21050
+  <p>Outskirts of Hitdorf, Germany&mdash;After crossing the Rhine, leading elements of Company A, 1st Battalion, 504th Parachute Regiment found themselves met by elements of the 62nd Volksgrenadier Division on the road to Hitdorf.</p><p>Both sides reported contact and immediately called for reinforcements.</p>
+  1945-04-06 / 1945-04-06
   1 / 1
   250
   6
@@ -2795,6 +2738,646 @@
   theme{"WW2"}
   party{"Germany"-"2","US"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Combat Commander"-"cce001"}
+  series{"Combat Commander"-"cce009"}
+}
+
+"CC-E 0010 - Commando School" {
+  21050
+  <p>Novorossiysk, Russia&mdash;To aid in the success of the Soviet amphibious operation launched against Kleist's Army Group A near Novorossiysk, a Black Sea Fleet commando detachment landed a few miles further down along the Black Sea coast.</p><p>In order to protect the beachhead's flank, the commandos hurriedly push into the town of Stanichka and holed up in a local university overlooking a manmade lake. Elements of the German 73rd Infantry Division quickly counterattacked in an attempt to roll up the flank and drive the invaders back into the sea.</p>
+  1943-02-04 / 1943-02-04
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Russia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Russia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce010"}
+}
+
+"CC-E 0011 - Hold the Line" {
+  21050
+  <p>St. Jean de Daye, France&mdash;July 7 saw a brief battle in which German forces were forcibly evicted from their hilltop defenses near the Vire River. The small American force that won the day - elements of the 743rd Tank Battalion, including an immobilized M4 Sherman - was then tasked to hold the hills until reinforcements could arrive to relieve them. Sergeant White ordered his infantry to dig in atop the dominant hill as Sgt. Buehler prepped his shaken tank crew.</p><p>It is now just before dawn, July 8, and the dim morning glow is punctuated by a flare igniting over Hill 104. The expected German counterattack has arrived; the US reinforcements have not.</p>
+  1944-07-08 / 1944-07-08
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce011"}
+}
+
+"CC-E 0012 - Misty Mountain" {
+  21050
+  <p>Monte Castello, Italy&mdash;Brazil declared war on the European Axis in August of 1942. Organized like the US forces and equipped with the latest American weaponry, the Brazilian 1st Expeditionary Division finally arrived in Italy in the Summer of '44. After helping to crack the Gothic Line in the Fall, elements of General de Moraes' division crossed the Reno Valley and assaulted Monte Castillo on November 29, only to be bloodily repulsed.</p><p>Now, two weeks later, another attempt to take the heights overlooking Highway 64 is underway. A heavy fog shrouds the mountain as elements of the Syseno Battalion are given orders to advance - unfortunately, an untimely artillery bombardment on the next hill over alerts the defenders of the impending attack...</p>
+  1944-12-12 / 1944-12-12
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce012"}
+}
+
+"CC-E 0013 - Tussle at Maleme" {
+  21050
+  <p>Near Maleme Airfield, Crete&mdash;Captain Van Etten's parachutists had been in many chaotic skirmishes with Allied forces in and around Maleme Airfield since the airborne landing on Crete the previous morning. His forces were wearing thin, he decided to temporarily reassemble in the high ground to the south.</p><p>As it happened, elements of the 5th New Zealand Brigade had decided to cross those very same hills in an attempt to withdraw southeast of the airfield for a future counterattack. Van Etten's depleted company attacked and surrounded a platoon of withdrawing New Zealanders belonging to the 22nd Battalion unaware that more were fast approaching.</p>
+  1941-05-21 / 1941-05-21
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","ANZAC"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","ANZAC"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce013"}
+}
+
+"CC-E 0014 - At the Crossroads" {
+  21050
+  <p>Sochaczew, Poland&mdash;On 9 September, the Polish Poznan Army, encircled by the rapid German advance, attempted to force a crossing of the Bzura River to the southeast. This attack inadvertently allowed time for the Polish Pomorze Army - also trapped in the pocket - to regroup further east near the Kampinos Forest. Many attempts were made by elements of the Pomozore Army to affect a withdrawal from the pocket east towards Warsaw; by the middle of the month, however, only two divisions had made the escape.</p><p>On September 15, one such skirmish saw a company of Polish regulars attempt a breakout along an infrequently-used farm road.</p>
+  1939-09-15 / 1939-09-15
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Poland"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Poland"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce014"}
+}
+
+"CC-E 0015 - Armata Romana" {
+  21050
+  <p>Bessarabia&mdash;After forcing a crossing of the River Prut at Falciu earlier in the week, the Rumanian Army was on the move across Bessarabia.</p><p>In the afternoon of July 7, elements of the Rumanian 6th Infantry Division attempted to clear one of many Russian-held villages on the road to Moghilev. Due to the need for a rapid advance, the Rumanian columns were lackluster in their scouting efforts. In this case, the town defenders were members of the "elite" 74th Rifle Division which had just received a smattering of conscripted replacementes to bolster the body count.</p>
+  1941-07-07 / 1941-07-07
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Rumania","Russia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Rumania"-"2","Russia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce015"}
+}
+
+"CC-E 0016 - The Blitzkrieg Checked" {
+  21050
+  <p>Gembloux, France&mdash;As French forces fought the Germans to a near standstill in and around Gembloux, infantry forces belonging to the attacking 3rd Panzer Division were tasked with taking a nearby sunken road.</p><p>Led by the determined Captain Grudler, a battered company of the Moroccan RTM fiercly defended the road - called the Chemin Creux, or "Hollow Road" - for many hours and, in the end, to the very last man.</p>
+  1940-05-15 / 1940-05-15
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","France"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","France"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce016"}
+}
+
+"CC-E 0017 - Little Stalingrad" {
+  21050
+  <p>Ortona, Italy&mdash;On December 21, house to house fighting began in earnest in the Adriatic seaport of Ortona. It was during the next seven days that the Canadian 1st Infantry Division literally rewrote the book on close-quarters city fighting techniques. More than one thousand Canadians had lost their lives by the time the German defenders withdrew from the city on the 28th.</p><p>Here we have a typical situation amongst the densely packed buildings of this otherwise idyllic town, where elements of Germany's 1st Parachute Division fight to hold ground against the relentless advance of a company of Seaforth Highlanders.</p>
+  1943-12-24 / 1943-12-24
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Canada"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Canada"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce017"}
+}
+
+"CC-E 0018 - Bridge Hunt" {
+  21050
+  <p>Nisava River, Yugoslavia&mdash;A day after the attack on Yugoslavia commenced, von Kleist's 1st Panzer Group found many of the bridges across the Nisava River to be blown or in flames, holding up his vital armored forces. The German 23rd Infantry Regiment was thus one of several battle groups sent forth ahead of the armored spearhead in order to secure bridges over the otherwise unfordable river obstacle.</p><p>One German detachment found such a bridge - apparently unguarded - near the town of Bela Pelanka. Its supporting tanks set to refuel, the infantry casually advanced across empty fields to secure the crossing. A sudden burst of machine-gun fire from the low hills opposite the river, however, indicated to the grenadiers that this bridge may be heavily defended after all...</p>
+  1941-04-07 / 1941-04-07
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Yugoslavia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Yugoslavia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce018"}
+}
+
+"CC-E 0019 - Metaxas Season" {
+  21050
+  <p>Kilkis, Greece&mdash;The Metaxas Line was a 90-mile chain of fortifications built by the Greeks in the 1930s along their border with Bulgaria. In the spring of 1941, it fell to the German XVIII Corps to assault the Metaxas Line at the outset of hostilities against Greece and Yugoslavia. The defenses were too tough to affect a worthwhile breakthrough for the bulk of the attacking armies so - as with the Maginot Line in France a year earlier - it was eventually just outflanked through southern Yugoslavia.</p><p>Here we have elements of the 5th Mountain Division assaulting yet another fortified position held by garrison troops of the 2nd Greek Army.</p>
+  1941-04-07 / 1941-04-07
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Greece"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Greece"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce019"}
+}
+
+"CC-E 0020 - A March in December" {
+  21050
+  <p>Tolvajärvi, Finland&mdash;As two battalions of Belyayev's 139th Rifle Division skirted the north end of Lake Hirvasjäri in an attempt to outflank the Finnish defenders of Tolvajärvi, one company was sent forward along a forest path to the southwest. As discipline within this group slackened and they began singing patriotic marching songs - likely brought on by the extra vodka rations issued just that morning - nearby elements of Task Force Pajari were alerted to their imminent arrival and set up an ambush for the unsuspecting Soviet force.</p>
+  1939-12-12 / 1939-12-12
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Allies","Finland","Russia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Finland"-"2","Russia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce020"}
+}
+
+"CC-E 0021 - Saint Agatha" {
+  21050
+  <p>Northern Siciliy&mdash;While elements of the 15th and 30th Infantry Regiments of the US 9th Division seized a key hill along San Fratello Line, Lt. Col. Lyle Bernard led a reinforced Battalion in an amphibious landing at Sant' Agata, a few miles behind San Fratello. This assault force quickly blocked the coastal highway - unfortunately the Germans had already selected that night to withdraw from the area.</p><p>Taking advantage of the constricting terrain and armed with a plethora of mines, General Hube deftly withdrew XIV Panzer Corps toward Messina. As the American forces pursued, however, they came upon innumerable blocking forces - both German and Italian - at every twist and turn of the narrow roads cutting through the rough Sicilian countryside.</p>
+  1943-08-08 / 1943-08-08
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Italy","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Italy"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce021"}
+}
+
+"CC-E 0022 - A Veritable Bloodbath" {
+  21050
+  <p>South of Goch, Holland&mdash;Operation Veritable - Montgomery's push to the Rhine - was encountering fanatic German resistance for every square mile of Holland. Having just about secured the town of Goch, the 1st Gordon Highlanders were ordered to continue the advance south and east. The next obstacle for Company A turned out to be the hamlet of Thomashof: a gathering of stone buildings and farmland interlaced with wire fences. The German defenders enjoyed both wide fields of fire and the element of surprise as the "Spandaus" - the British nickname fot the German MG42 machine gun - opened up...</p>
+  1945-02-17 / 1945-02-17
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Great Britain"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Great Britain"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce022"}
+}
+
+"CC-E 0023 - No-Man's Land" {
+  21050
+  <p>Southern Desert, Egypt&mdash;Unaware of the preparations being made by Rommel's Afrika Korps for an attack later in the month, life in the Italian trenches along the Alam Halfa Line was hot, dusty and boring, and punctuated by timely British artillery attacks every two hours around the clock.</p><p>On the morning of the 11th of August it was discovered that, during the previous night, a British sniper team had apparently infiltrated to an abandoned truck in no-man's land. One unlucky Italian sentry had already suffered the ultimate fate so an 81mm mortar was called forward to deal with the intruders.</p>
+  1942-08-11 / 1942-08-11
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Italy","Great Britain"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Italy"-"2","Great Britain"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce023"}
+}
+
+"CC-E 0024 - Six Hills" {
+  21050
+  <p>Tug Argan Pass, Somaliland&mdash;On August 11, Italian General de Simone's assaults on three of the six hills overlooking Tug Argan Pass had been less than spectacular. Only one hill was taken before the attacks were called off for the night. Eager to reach the coast and the important British port at Berbera, a heavy bombardment was ordered for the morning of the 12th before the assaults were to recommence.</p><p>Elements of the 15th Punjab Regiment were defending one such height when the Italian guns openend up, signalling the start of the day's hostilities.</p>
+  1940-08-12 / 1940-08-12
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Italy","India"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Italy"-"2","India"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce024"}
+}
+
+"CC-E 0025 - Fields of Fire" {
+  21050
+  <p>The Ghost Front, Lanzerath, Germany&mdash;Regimental Order No. 54 was given to the 1st Company, 9th Regiment of the 3rd Fallschirmjäger Division: The unit was instructed to clear Lanzerath and other villages in and around the Losheim Gap of enemy resistance. This was to prepare the way for Joachim Peiper's 1st SS Panzer Division, recently outfitted with 30 King Tigers, to storm through the front without delay.</p><p>As US soldiers were needed to defend this lightly held area, an Intelligence &amp; Recon platoon of 18 men - trained to be the "eyes and ears" of a division - belonging to the American 394th Regiment, 99th Division, was placed on the front line near the small hamlet of Lanzerath which overlooked Losheim further east. Their orders were to observe the area and provide warning of enemy action.</p><p>From the woods looking down a gently sloping snow-covered field leading down to Lanzerath, these men had improved their positions with overlapping logs, creating a solid defensive bunker with good fields of fire.</p><p>As a German column was seen marching through Lanzerath, a young girl ran out of a house and approached a German officer. Speaking excitedly while pointing in the I&amp;R platoon's general direction, the German commander barked an order and the troops dive for the ditches lining the road. Lt. Bouck yelled to "Open fire!" and the Battle of the Bulge began for this handful of men.</p>
+  1944-12-16 / 1944-12-16
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce025"}
+}
+
+"CC-E 0025b - Fields of Blood" {
+  21050
+  <p>The Ghost Front, Lanzerath, Germany&mdash;After a pause to tend to the wounded, the German paratroopers launched another attack on the American positions along the woodline above Lanzerath. Lieutenant Bouck again called for artilley support and was again denied due to more pressing concerns elsewhere. When he asked what he should do without artillery support the reply was succinct: "hold at all costs". Shortly thereafter, an enemy fire attack pierced the radio,destroying it.</p><p>Despite the morning's intense fighting, only one American soldier had been wounded, having been hit in the face by a rifle grenade that luckily failed to explode as it fell to the ground.</p><p>As the afternoon attacks across the open fields continued, the lack of sleep from the previous night and dwindling ammunition supplies began to take its toll on the vastly outnumbered American defenders. In the end they held out for 18 hours before being outflanked - effectively crippling a good portion of the 3rd Fallschirmjäger's manpower while allowing critical time for the US Army to reposition itself in order to meed the Germans' main thrust.</p><p>Because of their actions during that first morning of what would later be called "The Battle of the Bulge" this group of brave men became the most decorated platoon of WWII.</p>
+  1944-12-16 / 1944-12-16
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce025b"}
+}
+
+"CC-E 0026 - Turnbull Turns 'em" {
+  21050
+  <p>Neuville-au-Plain, France&mdash;It's D-Day, and the 82nd Airborne Division is struggling to consolidate its defenses at St. Mere-Eglise. Expecting a counter-attack from the north, 3/505 Commander Lt. Col. Benjamin Vandervoort orders D Company's 3rd Platoon - led by 1st Lt. Turner Turnbull - to block Route D-15 at Neuville-au-Plain. Shortly after arriving, Turnbull's force of 43 men spot a large column of men in feldgrau approaching down the highway, apparently escorted by soldiers wearing American paratroopers' uniform. Wary of a ruse, an American machine-gunner fires warning shots into a nearby field. The German "prioners" dive for the ditches.</p><p>After fanning out in either direction in order to try and outflank the outnumbered but well-entrenched Americans, the German attack commences.</p>
+  1944-06-06 / 1944-06-06
+  49.43 / 1.33
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce026"}
+}
+
+"CC-E 0027 - Carentan Causeway" {
+  21050
+  <p>North of Carentan, France&mdash;Shortly after D-Day, American forces arriving at Omaha and Utah beaches were separated by the Douve River, the city of Carentan, and a determined force of German defenders. Lt. Col. Robert Cole's 3/502 PIR (101st Airborne), supported by artillery and mortar fire, was tasked with assaulting Carentan from the north across a narrow causeway over marshy ground along the river. As the Americans approached the outskirts of Carentan, German Fallschirmjäger opened up with machine guns and rifle fire from positions in nearby hedgerows and farmhouses.</p>
+  1944-06-10 / 1944-06-10
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce027"}
+}
+
+"CC-E 0028 - No Ingouf Aroung" {
+  21050
+  <p>M.Ingouf's Farm North of Carentan, France&mdash;Against heavy machine-gun, mortar and artillery fire, the bloody remnants of Lt. Col. Robert Cole's 3/502 PIR (101st Airborne) charged across open ground and established themselves around an abandoned farmhouse near the Madeleine Canal. Reinforced by elements of Lt. Col. Patrick Cassidy's 2/502 PIR during a lull in the fighting, they braced themselves for a counterattack by the German 6th Fallschirmjäger Regiment. American mortar ammo was gone, the radio link to divisional artillery support jammed. As the paratroopers caught their breath, the rising clatter of machine-gun and small arms fire from down among the hedgerows heralded the German attack.</p>
+  1944-06-10 / 1944-06-10
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce028"}
+}
+
+"CC-E 0029 - Operation Repulse" {
+  21050
+  <p>Bastogne, Belgium&mdash;The isolated 101st Airborne seemed to be surviving on courage alone. By Christmas, they were running low on food, medicine, fuel and heavy ammunition. A plan was devised to re-supply them from the air. Fifty gliders towed by C47 cargo planes took off from France and headed for Bastogne. Not knowing which side controlled the landing zones, the brave glider pilots cast off their tow lines, flew through intense anti-aircraft fire, and landed with their volatile cargo. German and American troops poured out of their foxholes to capture the gliders and their contents.</p>
+  1944-12-27 / 1944-12-27
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce029"}
+}
+
+"CC-E 0030 - Red Skies at Night" {
+  21050
+  <p>Veliki Bukrin Bridgehead, Russia&mdash;On the night of September 24-25, the Russian 5th Airborne Brigade air assaulted into the Burkin Bend to establish a bridgehead on the west bank of the Dnieper River. The jump was less than successful as the troopers were widely scattered across the bend - landing on three previously unnoticed German divisions, including 10th Panzergrenadier.</p><p>As day breaks, elements of the 5th Airborne are moving to their initial objectives. Meanwhile units of the 41st Infantry Regiment are tasked with eliminating the dispersed paratroopers.</p>
+  1943-09-25 / 1943-09-25
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Russia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Russia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce030"}
+}
+
+"CC-P A - Grassy Knoll" {
+  28181
+  <p>Mindanao Island, Philippines&mdash;After capturing Libby Airfield with the aid of Filipino guerrillas, the US 24th Infantry Division found the assault toward Davao becoming exceedingly slow and ponderous. Exacerbating the issue was the preponderance of hemp fields in the area, now very much overgrown with disuse. Traversing these unkempt fields was slow going at best. Japanese forces of the 100th Division, however, found these numerous plantations extremely useful for hiding defensive strongpoints. Guerrillas continued to aid the Americans in their push toward Davao, and in one particularly nasty firefight on the 7th of May actually proved decisive in overcoming a Japanese bunker that was covering a major trail break through the area.</p>
+  1945-05-07 / 1945-05-07
+  7.190708 / 125.455341
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Japan","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Japan"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"ccp-a"}
+}
+
+"CC-P B - Ambush at Mogaung" {
+  28181
+  <p>Northern Burma&mdash;Over the couse of three weeks in June, Michael "Mad Mike" Calvert's 77th (Chindit) Bridage took Mogaung in support of the US advance doen the Hudawng Valley. The suffered 50% casualties. Fearing they would be ordered to join in the siege of Myitkyina, Calvert shut down his radios and began marching towards Stilwell's Army HQ in Kamaing. Along the way, scouts were surprised to discover a ragged - and apparently lost - column of Japanese troops advancing down a jungle path. Calvert ordered his weary survivors into ambush formations around a small village where their road and the enemy trail intersected.</p>
+  1944-07-28 / 1944-07-28
+  25.31113196 / 96.86851501
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Japan","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Japan"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"ccp-b"}
+}
+
+"CC-P C - Ichiki Attacks" {
+  28181
+  <p>Ilu River, Guadalcanal&mdash;Japanese HQ dispatched the Ichiki Detachment from Truk to displace what was mistakenly thought of as a minor US presence on Guadalcanal. During what is known as the Battle of Tenaru River, by 0030, Colonel Ichiki had maneuvered his force into position and ordered some covering fire across the river. Since minor patrols with small enemy parties were a nightly occurrence, the fire did not raise significant alarm among the defenders. At 0200 Ichiki ordered 2nd company of the Japanese II/28th Regiment to charge across the sandbar of the Ilu River (known as Alligator Creek to the US Marines). The goal was to push past the defensive perimeter and on to Henderson Field. Facing them were the US Marines of G Company of the II/1st Regiment and two platoons of the 1st Special Weapons Battalion. The shrieking attackers came across the river without cease, but the defenders held their nerve and their ground.</p>
+  1942-08-21 / 1942-08-21
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Japan","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Japan"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"ccp-c"}
+}
+
+"CC-P D - Operation Cherry Blossom" {
+  28181
+  <p>Empress Augusta Bay, Bougainville Island, Papua New Guinea&mdash;On this date the US 3rd Marine Division landed at Cape Torokina. Naval forces assisting the Marines included 4 cruisers and 8 destroyers. Empress Augusta Bay had been chosen because it was within range of allied land-based fighter bases and because the Japanese 17th Army was concentrated at other sites around the island. The stretch of beach near Cape Torokina was only "lightly" defended by little more than a company of well-camouflaged Japanese infantry - including a 75mm gun dug-in on the cape that wreaked havoc amongst the landing craft on their long approach to the beach in heavy seas.</p>
+  1943-11-01 / 1943-11-01
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Japan","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Japan"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"ccp-d"}
+}
+
+"CC-P E - West Tank Barrier" {
+  28181
+  <p>Butaritari, Gilbert Islands&mdash;The Gilbert Islands became one of the first stepping stones in the large scale movement by the US to take back Japanese-held territory. A Japanese seaplane base guarded by a citadel of defenses was the key target on Butaritari, a part of the Makin Atol. The 27th Infantry Division Task Force was divided into Regimental Combat Teams with a landing plan to surround the defenders. On D-Day, elements of the 1-165 RCT pushed east with little opposition through flat swampy terrain toward the West Tank Barrier to meet up with the 2-165 forces heading west. In the early afternoon, C Company faced the toughest opposition by the Japanese Construction Force.</p>
+  1943-11-20 / 1943-11-20
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Japan","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Japan"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"ccp-e"}
+}
+
+"CC-P F - Stalemate" {
+  28181
+  <p>Peleliu, Palau&mdash;The Japanese unveiled a new defensive approach on Peleliu using well-entrenched positions, extensive caves, and natural barriers across the island. This was developed by Colonel Nakagawa, commander of the 2nd Infantry Regiment of the 14th Infantry Division. Prior to the invasion of this strategic island, the defenders withheld all fire to mask their positions from US naval bombardment. This tactic continued on D-Day itself, allowing the three regiments (1st, 5th and 7th) of the 1st Marine Division to reach the beaches under very light fire. But progress inland was slow and with a terrible cost in lives. By the 20th, the 1/1st Marines had reached the base of Hill 154, a barren wall of coral infested with hidden defenders and protected from the overlook knows as Suicide Ridge. Captain Everett Pope led C Company up that wall, fighting valiantly and managing to overtake the position. During the night, the Japanese assaulted the Marines on the hill repeatedly. In between charges, the Marines countered by tossing rocks (to sound like grenade landings) as well as some actual grenades from their dwindling supply. When the Marines finally ran out of ammunition, Captain Pope rallied the few remaining Marines around himself to all fight back the repeated charges with little more than their bare hands.</p>
+  1944-09-20 / 1944-09-20
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Japan","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Japan"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"ccp-f"}
+}
+"CC-P G - Bitter Creek" {
+  28181
+  <p>Eora Creek, New Guinea&mdash;After nearly succeeding in pushing the Australians back upon Port Moresby, the Japanese had neither supply chain nor time enough to hold their gains along the Kokoda Trail and so reverted to the defensive. In a series of grim battles, the 25th Brigade (Australian 6th Infantry Division) began to retake ground, securing Templeton's Corner, and were relieved by the 16th Brigade. Elements of the 144th Infantry Regiment (Japanese South Seas Force) fell back upon excellent defensive terrain at the miserable village of Eora, where the Kokoda Trail passed through the gorge formed by the Eora Creek. Elements of the 16th Brigade advanced forward looking to find the strong points, pin them and bypass them. The bitter fighting lasted two days before the Japanese secretly retired from their positions and fell back to Oivi.</p>
+  1942-10-22 / 1942-10-22
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Japan","Australia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Japan"-"2","Australia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"ccp-g"}
+}
+"CC-P H - Dog Plus Eight" {
+  28181
+  <p>Hill 382, Iwo Jima&mdash;Eight days after the initial landing on the island and four days after the American flag had been raised on Mount Suribachi, the 3rd Marine Division found itself dug in on the barren stone plateau north of the airfields. The Marines outnumbered the Japanese defenders by at least three to one, but the Japanese avoided the immense firepower of the American forces by going underground.</p><p>General Tadamishi Kuribayashi concentrated his remaining forces in the central and northern sections of the island. Their miles of interlocking caves, pillboxes and concrete blockhouses would prove to be one of the most impenetrable defenses the Marines would encounter in the Pacific.</p><p>Repulsed in their attack on the three hills overlooking Motoyama Airfield No. 2 the previous day, the 23rd Marine Regiment had regrouped for another assault on the morning of February 27th. The advance was immediately held up by determined resistance from numerous Japanese caves and bunkers. A second artillery barrage was called in at midday and small gains were made in the afternoon of 100-150 yards along the entire front.</p><p>By late afternoon, elements of the 3rd Battalion, 23rd Marines were engaged in fierce close combat near the crest of Hill 382, fighting for possession of the radar station at the hill's summit.</p>
+  1945-02-27 / 1945-02-27
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Japan","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Japan"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"ccp-h"}
+}
+"CC-P I - Totsugeki!" {
+  28181
+  <p>Edson's Ridge, Guadalcanal&mdash;In the second major attempt at dislodging the enemy position, the Japanese maneuvered deep in the jungle to the south of the American perimeter expecting that it would be less defended. General Kawaguchi employed a complicated plan using battalions from the 124th and 4th Infantry. The terrain rendered a multi-pronged plan almost impossible to execute, however, but with sheer willpower, some of his force managed a devastating attack. During what is known as the Battle of Edson's of "Bloody" Ridge, at 2230 7th company of the Japanese II/4th Regiment launched the first of many attacks along the eastern flanks of the ridge directly at B Company of the 1st Parachute Battalion. A successful attack could dislodge or overtake Lt. Colonel Edson's command post and put the defense of Henderson Field in grave jeopardy. Amazingly, Edson orchestrated one of the greatest nighttime defenses and was awarded the Medal of Honor.</p>
+  1942-09-13 / 1942-09-13
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Japan","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Japan"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"ccp-i"}
+}
+"CC-P J - The Deadly Trees" {
+  28181
+  <p>Saddle Ridge, Guadalcanal&mdash;After the failure of the September attacks, Japanese HQ sent as many ground forces as could be spared to build up for another multipronged attack. During what is known as the Battle of Henderson Field, between 0300 and 0500 elements of the Japanese III/4th Regiment (part of Force Oka to the west of Henderson Field) attacked the US Marines of F Company of II/7th Regiment on the eastern slopes of a saddle-shaped ridge. The attack was massed all along Colonel Hanneken's front, but in particular the Japanese delivered deadly fire from the trees onto the heights of the ridge, eliminating many of the defenders, despite the heroism of Sergeant Mitchell Paige (who was firing weapons from both hands). Although the attackers eventually took the crest of the ridge, in a surprise move, Paige was part of an unlikely counterattack unit made of communications specialists, messmen, bandsmen, a cook and a few other riflemen. They retook the ridge decisively. Fot his singular efforts, he was awarded the Medal of Honor. This fight was part of one of the last major attempts by the Japanese to take the airfield, which ended in failure.</p>
+  1942-10-26 / 1942-10-26
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Japan","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Japan"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"ccp-j"}
+}
+"CC-P K - Burning Buna" {
+  28181
+  <p>New Strip at Buna, New Guinea&mdash;Combined Australian and American forces surrounded the desperate Japanese defenders at Buna during December 1942. After an opening barrage starting at 0530, various companies of 2/9th Battalion (Australian 16th Brigade) crossed the start line promptly at 0700 to assault the brilliantly hidden defenses of the New Strip and Cape Endaiadere by III/229th Infantry Regiment of the Japanese Buna Garrison. While most of the assaulting companies had armor support C Company did not, and they quickly fell into a bitter hornet's nest as they attempted to advance along the edge of the New Strip to protect B Company's flank.</p>
+  1942-12-18 / 1942-12-18
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Japan","Australia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Japan"-"2","Australia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"ccp-k"}
+}
+"CC-P L - Slopes of Hell" {
+  28181
+  <p>Kokoda Trail, Owen Stanley Mountains, New Guinea&mdash;The 2/16th Battalion (Australian 21st Brigade) had fallen back from Templeton's Crossing and finally reached the positions of the battered 2/14th Battalion, which in turn dropped back to the mountain village of Myola. Meanwhile, the Koiwai Battalion (Japanese 41st Infantry Regiment) began a flanking maneuver up the steepy sloped terrain in the afternoon and fell suddenly upon the Australians as they were huddled at their cooking fires. The twilight combat lasted until corrents of cold rain swept in.</p><p>Aftermanth: Overnight, the 2/16th secretly withdrew back toward Myola.</p>
+  1942-09-04 / 1942-09-04
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Japan","Australia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Japan"-"2","Australia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"ccp-l"}
 }
 
