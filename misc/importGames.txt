@@ -2185,3 +2185,616 @@
   leader{"Unknown"}
 }
 
+"CnC-A 0613 - Sepeia" {
+  10630
+  <p>Cleomenes I of Sparta, inspired by the words of the oracle at Delphi that he would take Argos, marched into Argive territory. It was here that the Argive army took up a defensive position. The Argive generals wanted to be forewarned of any Spartan attack, so they instructed their herald to listen to orders issued by the Spartan herald and then to repeat them to the Argive camp. Cleomenes realized what was happening and ordered his army to ignore the next meal call and charge the enemy instead. The Argives were taken by surprise and those who were not killed in the assault fled to the Sacred Grove. The Spartan army then marched to Argos. but a female poet named Fetesilla rallied the women and children to defend the city walls. After an initial attack the Spartans withdrew, as there was no honor in defeating women.</p>
+  494-01-01 BC / 494-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Argive","Sparta"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Argive"-"2","Sparta"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Unknown","Cleomenes I of Sparta"}
+}
+
+"CnC-A 0614 - Thermopylae (Middle Gate)" {
+  10630
+  <p>King Xerxes desired to punish the Athenians for his father's defeat at Marathon and their support for Ionian revolts. He planned a second invasion of Greece in 480 BC and amassed a huge army to extend the Persian Empire into Europe. Several Greek city-states gathered around Athens and Sparta, and decided to slow the Persian advance at the narrow pass of Thermopylae. The Oracle at Delphi had announced that Sparta would either be destroyed or lose a King. Leonidas, one of the two Kings, chose the latter, leading 300 Spartansand other Greeks to one of History's most famous last stands. Xerxes waited four days for the small Greek force to leave. Then, for two and a half days he unleashed his army, wave after wave, against the Greek Hoplites who stood firm. The Persians did not prevail until Ephialtes betrayed the Greeks by revealing a goat path that led behind their lines. Dismissing the rest of the army, Leonidas fought to the death with his Spartans. Their epitaph reads: "Go tell the Spartans, stranger passing by, that here obedient to their laws we lie". While a tactical victory, the heavy losses and the delay, inflicted by just a few hundred Greeks, was a significant blow to the Persian morale. In September, the Greeks defeated the Persians at the naval battle of Salamis and Xerxes, fearful of being trapped in Europe, returned to Asia with part of his army.</p>
+  480-01-01 BC / 480-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Persia","Sparta"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Persia"-"2","Sparta"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Xerxes","Leonidas"}
+}
+
+"CnC-A 0615 - Thermopylae (Grand Overview)" {
+  10630
+  <p>King Xerxes desired to punish the Athenians for his father's defeat at Marathon and their support for Ionian revolts. He planned a second invasion of Greece in 480 BC and amassed a huge army to extend the Persian Empire into Europe. Several Greek city-states gathered around Athens and Sparta, and decided to slow the Persian advance at the narrow pass of Thermopylae. The Oracle at Delphi had announced that Sparta would either be destroyed or lose a King. Leonidas, one of the two Kings, chose the latter, leading 300 Spartans and other Greeks to one of History's most famous last stands. Xerxes waited four days for the small Greek force to leave. Then, for two and a half days he unleashed his army, wave after wave, against the Greek Hoplites who stood firm. The Persians did not prevail until Ephialtes betrayed the Greeks by revealing a goat path that led behind their lines. Dismissing the rest of the army, Leonidas fought to the death with his Spartans. Their epitaph reads: "Go tell the Spartans, stranger passing by, that here obedient to their lays we lie". While a tactical victory, the heavy losses and the delay, inflicted by just a few hundred Greeks, was a significant blow to the Persian morale. In September, the Greeks defeated the Persians at the naval battle of Salamis and Xerxes, fearful of being trapped in Europe, returned to Asia with part of his army.</p>
+  480-01-01 BC / 480-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Persia","Sparta"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Persia"-"2","Sparta"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Xerxes","Leonidas"}
+}
+
+"CnC-A 0616 - Plataea" {
+  10630
+  <p>The Persian emperor Xerxes I led a massive invasion of Greece to avenge the defeat of his father's forces at Marathon. After annihilating the 300 Spartans at Thermopylae, Xerxes captured and burned Athens. Macedon, Thessaly and Boeotia submitted to Xerxes. However, following the loss of the Persian fleet at Salamis (480), Xerxes withdrew to Asia and left Mardonius with half of the Persian land forces to continue the subjugation of Greece. Amid much bickering, an allied Greek army was formed under the Spartan Pausanias, and moved to oppose the Persians. The Greeks were always careful to stay in terrain that negated the Persian cavalry. The Persian cavalry attacked anyway, but their commander Masistias was killed. Ceasing direct combat, the Persian cavalry began raiding effectively, poisoning the Greek's water supply and destroying a large Greek baggage train. Short of water and food, Pausanias ordered a night withdrawal, but only the allies in the center did so. The Spartan right and Athenian left were both still standing fast at first light. Mardonius ordered an advance to exploit his perceived advantage, and attacked the Athenian units on the Greek left wing. It was a fierce onslaught that prevented the Athenians from moving to assist the Spartans who were being pressed hard on the right. Holding back until the omens were right, the Spartans were finally ordered to charge, routing all before them and killing Mardonius. The sight of Persians retreating unnerved Artabazus'forces and they also fled the field. The victory at Plataea meant the Persian threat to Greece was effectively ended.</p>
+  479-01-01 BC / 479-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Persia","Greece"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Persia"-"2","Greek"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Mardonius","Pausanias"}
+}
+
+"CnC-A 0617 - Mycale" {
+  10630
+  <p>In the spring of 479 BC, various Ionian cities began a revolt against their Persian rulers, and soon were forced to turn to the Greek mainland for help. A meeting was called in Athens, and a Greek fleet of 110 ships set sail from Delos under the command of the Spartan King Leotychides. The Persians, no longer confident after the crushing naval defeat at Salamis, dismissed their Phoenician naval contingent and moved the remainder of the fleet to Mycale, where they joined forces with the army that Xerxes had led back to Asia. The Greeks expected a naval battle, but when they approached the Persian camp, they found the ships beached and the Persian army in combat formation. The Athenians, under Xanthippus, landed on the beach and during their advance found a herald's scepter. Believing it was a divine sign that the Greeks had been victorious at Plataea, they charged forward without the Spartans. The Spartans had landed at another site and were still marching around the flank through the hills. The Persians repelled the Athenian assaults for a time, but eventually the Athenians manage to burst through to the Persian camp. The battle continued with no side certain of victory until the arrival of the Spartans, and the desertion of the Ionian Greeks, who joined in the attack on the Persians. The Persian army turned and fled to the mountains. Mycale ended the Persian Wars and the Greek cities in Asia were accepted into a league with Athens.</p>
+  479-01-01 BC / 479-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Persia","Greece"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Persia"-"2","Greece"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Tigranes","Leotychides"}
+}
+
+"CnC-A 0618 - Tanagra" {
+  10630
+  <p>The First Peleponnesian War (460-445 BC) broke out due to Megara's defection from the Spartan alliance, and Spartan envy and fear over the growth of the Athenian Empire. Nicomedes marched an army into Boeotia in 457 BC to intervene in a dispute between the Dorians and Phocians. He forced the Phocians to accept terms, but while he was in Doris an Athenian Fleet moved into position to block his return across the Corinthian Gulf. Athens, then sent out an army to meet the Spartans, and the two forces meet outside Tanagra. The Athenians brought a large contingent of Hoplites supplemented by a number of allies. The total number given by Thucydides is 14,000 plus a small contingent of Thessalian cavalry. The allied Spartan army consisted of 1,500 Spartans and 10,000 allied soldiers. According to Thucydides, the Thessalian cavalry joined the Spartan side during the battle, and the Spartans and their allies wore down and broke the Athenians. Both armies suffered heavy losses, but the Spartans won the battle and opened the way back home. This was the first major land battle of the war and began a pattern of Spartan dominance on land.</p>
+  457-01-01 BC / 457-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Athens","Sparta"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Athens"-"2","Sparta"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Myronides","Nicomedes"}
+}
+
+"CnC-A 0619 - Olpae" {
+  10630
+  <p>During the Second, or Great, Peleponnesian War (431 - 404 BC) the Athenians recognized their inferiority to Sparta in land warfare, and chose to fight with proxy forces and at sea. Nevertheless, there were many small battles, and the clash at Olpae is representative. In 426, the Spartan general Eurylochus was operating in western Greece with a small force of Hoplites. He convinced the Ambraciots to invade Amphilokia, and their forces joined him at Olpae. in response, the Amphilokians called on their allies and the nearby Athenian fleet under Demosthenes. Demosthenes only had a small force, but was chosen to be the strategos, or commander, of the allied army. Eurylochus deployed with his Peleponnesians on the left and Ambraciots on the right. Demosthenes countered with his Messenians on the right, Arcanians in the center and Amphilokians on the left. Seeing that his army was badly outnumbered, Demosthenes extended his left wing with light troops and posted a picket force in hiding to ambush the Spartan right. When the lines clashed, Demosthenes sprung his ambush and routed the Peleponnesians, killing Eurylochus. Meanwhile, the Ambraciots also routed the Athenian left, but Demosthenes was able to keep his victorious wing in good order and attacked these troops, completing his victory. This victory recharged Demoshtenes' career, but gained little for Athens.</p>
+  426-01-01 BC / 426-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Athens","Sparta"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Athens"-"2","Sparta"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Demosthenes","Eurylchus"}
+}
+
+"CnC-A 0620 - Sphacteria" {
+  10630
+  <p>After the Battle of Pylos, a force of Spartan soldiers was isolated on the island of Sphacteria. Demosthenes,commanding the force at Pylos, initially planned to starve the Spartans out, but it became clear over time that the Spartans would be able to hold out. He requested reinforcements from Athens. Cleon, with an Athenian expeditionary force, landed and moved inland, harassing the Spartans with missile fire whenever they attempted to advance to battle. The frustrated Spartans withdrew to the northern end of the island, where they waited behind their fortifications.A stalemate took place for some time, until an Athenian force burst into the Spartan rear using a route along the island's shore that had been left unguarded because of its roughness. The Spartans abandoned their defenses after Epitadas, their commander, was killed. Styphon, now in command, ordered his surrounded men to throw down their shields and surrender. The mystique of Spartan invincibility was shattered.</p>
+  425-01-01 BC / 425-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Athens","Sparta"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Athens"-"2","Sparta"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Demosthenes","Epitades"}
+}
+
+"CnC-A 0621 - Delium" {
+  10630
+  <p></p>
+  424-01-01 BC / 424-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Athens","Boeotia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Athens"-"2","Boeotia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Hippocrates","Pagondas"}
+}
+
+"CnC-A 0622 - Amphipolis" {
+  10630
+  <p>In 424 BC, the Spartan general Brasidas led an army toward Thrace to threaten the only accessible part of the Athenian Empire. He reached Thrace and offered generous terms to the people of Amphipolis, who surrendered without a fight. In 423 BC, Athens and Sparta signed a truce, hoping to exchange Amphipolis for the Spartan hostages of Sphacteria, but Brasidas, against the wishes of the Spartan regime, continued to support the rebellion in the area. Athens ended the truce and sent Cleon with an army to recover Amphipolis. Brasidas would not emerge from the city for battle. Frustrated by the apparent Spartan timidity, Cleon began to move his troops back to Eion. Brasidas waited till the Athenian left wing marched past the South Gate, and with his best men charged out of the city, while Clearidas, his subordinate, emerged from the Thracian Gate with the rest of the Spartan army. The Athenians on the left wing fled to Eion, while those on the right fought bravely against Clearidas. Cleon was killed during the battle, and Brasidas mortally wounded. Athens agreed to stop the war and signed the Peace of Nicias in 421 BC. Sparta recovered their hostages and Athens the towns captured by Brasidas. Both sides would have time to prepare for the final phase of the war.</p>
+  422-01-01 BC / 422-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Athens","Sparta"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Athens"-"2","Sparta"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Cleon","Brasidas"}
+}
+
+"CnC-A 0623 - Mantinea" {
+  10630
+  <p>Ironically, the greates Hoplite battle of the Peleponnesian War was fought during the Peace of Nicias (421 - 415). Athens was able to forge an anti-Spartan coalition. King Agis II of Sparta marched out to seek a decisive battle. The Spartan army numbered about 12,000 Hoplites, while the Argive coalition had 11,000. At first, the Argive army avoided combat, but when Agis emerged from a forest, he was surprised to find the Argive army drawn up close by for battle. Agis hastily deployed, placing about 1,000 Spartans on the right, in support of his 3,000 Tegeans. He commanded 5,000 Spartans in the center, surrounded by his personal bodyguard of 300 hippeis. On the left were the 600 skiritae (Spartan rangers) and 2,000 freed helots. The coalition countered with 3,500 Mantineans and allies on their right. In the center were the elite "Argive 1,000" and 5,000 regular Argives. Their left was held by Laches with Athenian cavalry and allies. As the battle began, Agis gave orders to fill the gap in his line, but there was no time and the Argive right wing quickly enveloped and routed the Spartan left. Meanwhile, Agis led a furious assault in the center shattering the Argive phalanx. The Athenian left collapsed. Agis kept his army under control, wheeled, and assaulted the Mantineans to complete his victory. The anti-Spartan alliance was crushed and Sparta would enter the final phase of the Peleponnesian War in a position of strength.</p>
+  418-01-01 BC / 418-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Argos","Sparta"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Argos"-"2","Sparta"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Laches","King Agis II"}
+}
+
+"CnC-A 0624 - Anapus River" {
+  10630
+  <p>In 415 BC Athens and Sparta were still under the Peace of Nicias, when the Sicilian city of Segesta requested help from Athens in their war against Selinus. Some Athenians saw this as an opportunity to take over all of Sicily,Syracuse, and even Carthage. Against his wishes, Nicias was elected general to lead the Sicilian Expedition. The Athenians used a double agent to trick the Syracusan army into marching to Catana, and when they took the bait, landed unopposed south of the Anapus River. There they took up a strong defensive position. When the Syracusans returned and found the Athenians waiting, they made camp for the night, intending to fight the next day. The Athenians, in a surprise move, attacked at dawn across the river. The unprepared Syracusan soldiers formed up as best they could in the short time before the Athenian force made contact. The Athenians used the river to guard their left as they advanced, and placed their light troops on the wings to fight off the Syracusan cavalry. Despite the greater depth of the Syracusan phalanx, the superior discipline and experience of the Athenians carried the day. However, they could not undertake an aggressive pursuit and score a decisive victory due to the lack of cavalry. It was a tactical victory without a strategic result. The Athenians sailed back to Catana for the winter, while the Syracusans prepared fot a siege and sent to Corinth and Sparta for help.</p>
+  415-01-01 BC / 415-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Athens","Syracuse"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Athens"-"2","Syracuse"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Nicias","Hermocrates"}
+}
+
+"CnC-A 0625 - Phyle" {
+  10630
+  <p>Following Athens' defeat in the Peleponnesian War, the victorious Spartans imposed an oligarchic government on the city which became known as the Thirty Tyrants. Late in 404, Thrasybulus, leading a force of Athenian exiles, gathered at Phyle near Mount Parnes. The Thirty Tyrants, to keep watch on the exiles and prevent them from raiding the countryside, dispatched a Spartan force from Athens. The Spartan force was not expecting any trouble and set up camp. However, Thrasybulus, whose force of exiles had grown in numbers, attacked the Spartan camp. The attack caught the Spartan force in the midst of waking up and a total rout ensued. The defeated Spartans fled back to Athens and the victorious exiles returned to Phyle.</p>
+  404-01-01 BC / 404-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Athenian Exiles","Sparta"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Athenian Exiles"-"2","Sparta"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Thrasybulus","Callibus"}
+}
+
+"CnC-A 0626 - Munychia" {
+  10630
+  <p>Thrasybulus and the Athenian exiles marched from Phyle to the port city of Piraeus. The next day, oligarchic forces under the command of Critias, one of the Thirty Tyrants, marched out to meet them. Thrasybulus had taken a defensive position on Mount Munychia, but when Critias men advanced towards the hill, the Athenian exiles charged down the hill and broke the oligarchic line of the Thirty before the Spartans could come forward. After the defeat, a new government was elected and the Thirty Tyrants fled to Eleusis.</p>
+  404-01-01 BC / 404-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Athenian Exiles","Sparta"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Athenian Exiles"-"2","Sparta"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Thrasybulus","Critias"}
+}
+
+"CnC-A 0627 - Piraeus" {
+  10630
+  <p>After the Thirty were deposed, the new government, although more moderate, was not ready to compromise with the Athenian exiles, who now held the Athenian port of Piraeus. The new government sent emissaries to Sparta, and Sparta sent Pausanias at the head of an army to resolve the situation. When Pausanias ordered the exiles to disperse, they refused. The following day, an Athenian exile force of light troops attacked the Spartans. Pausanias responded and ordered his cavalry and light troops forward with his Spartan Hoplites in support. The Athenian lights held for a time, giving Thrasybulus the opportunity to bring forward his Hoplites. The Spartan Hoplites engaged them and the exiles were defeated. After winning the battle, Pausanias suggested the government in Athens and the exiles talk. In time, the new government arranged a settlement between the oligarchs and the exiles that reunified Athens.</p>
+  403-01-01 BC / 403-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Athenian Exiles","Sparta"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Athenian Exiles"-"2","Sparta"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Thrasybulus","Pausanius"}
+}
+
+"CnC-A 0628 - River Centrites" {
+  10630
+  <p>After the battle of Cunaxa, the Ten Thousand chose Cheirisophus and Xenophon as leaders. Xenophon led an organized retreat through Carducia and Armenia toward the Black Sea, constantly harassed first by Persian armies and then by local tribes. Using part of his men, Xenophon created a small cavalry force and a body of archers to meed the tactics of the enemy. He reported the whole expedition in his Anabasis. Approaching the River Centrites, Xenophon found that the satrap of Armenia had occupied the far bank. The situation was desparate, but the next morning a better ford higher up the river was found, and to it the Spartans marched. The Carducians followed closely in pursuit. Cheirisophus began to cross, while Xenophon, made a feint to move back to the lower ford. The Armenians responded to the feint, which allowed Cheirisophus to gain a foothold on the other shore. Xenophon retraced his steps and made preparations to follow. The Carducians, saw their opportunity and began to attack the Greeks before they could cross. When most of the troops were over, Xenophon turned and charged the Carducians and they were dispersed. Then, before they could recover, he retired Trapezus, on the Black Sea. A few years later, Alexander would read the Anabasis and follow Xenophon's advice: Persia belongs to the man who has the courage to attack it...</p>
+  401-01-01 BC / 401-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Armenian","Carducian","Sparta"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Armenian/Carducian"-"2","Sparta"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Unknown","Xenophon"}
+}
+
+"CnC-A 0629 - Nemea" {
+  10630
+  <p>After the Theban victory at the battle of Haliartus, Athens, Thebes, Corinth and Argos joined together in an anti-Spartan alliance. Aristodemus was sent north to challenge the alliance and the two armies met neat the dry riverbed of Nemea. The Spartan army fielded about 18,000 Hoplites and lined up with the Spartans on the right and their Peleponnesian allies on the left. The coalition forces were made up of about the same number of Hoplites with the Athenians opposite the Spartans, while the Boeotians were on the right of the coalition line. As the lines advanced, both lines shifted to the right and when the two met each line extended past the opponents left flank, which meant that both right flanks overlapped the enemy line and were victorious. The Spartans, instead of pursuing the Athenians, quickly turned to the center and defeated the other coalition forces one by one.</p>
+  394-01-01 BC / 394-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Greece","Sparta"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Greece"-"2","Sparta"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Unknown","Aristodemus"}
+}
+
+"CnC-A 0630 - Coronea" {
+  10630
+  <p>After the battle of Nemea, Agelilaus was moving south into Boeotia with an army of helots and veterans of the Ten Thousand, reinforced by some Spartan regiments and other allies. The coalition forces lined up to oppose him at Coronea. As at Nemea, both right wings were victorious, with the Thebans on the right breaking through, while the rest of the coalition forces fled to Mount Helicon. Agesilaus, assumed the battle was over when news came that the Thebans were at the baggage train, ransacking the loot taken from Asia. He immediately wheeled his Spartan forces around and headed for the Thebans. The Thebans, seeing that their allies had fled, formed up and attempted to break through the Spartans and join the rest of their army. What followed was one of the worst blood baths in the history of Hoplite battles. In the end, only a few Thebans made it to Mount Helicon.</p>
+  394-01-01 BC / 394-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Greece","Sparta"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Greece"-"2","Sparta"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Unknown","Agelilaus"}
+}
+
+"CnC-A 0631 - Lechaeum" {
+  10630
+  <p>The Spartan commander at Lechaeum, honoring the tradition of the Amyclaeans in his army to return to their city of Amyclae to celebrate a religious festival, marched an escort force of Hoplites and cavalry past Corinth. After successfully leading his force well past the city of Corinth, the Spartan commander ordered his Hoplites to return to Lechaeum, while the cavalry continued on with the Amyclaeans. Iphicrates, who commanded the light troops in Corinth, seeing that the Spartan Hoplite force was unprotected by light infantry or cavalry, decided to attack the Spartans as they marched past the city. The Spartan commander ordered some of his men to charge the Athenians, but the slow heavily-armed Hoplites could not make contact. When the Spartans turned to return to their lines, the Athenian lights fell upon them again flinging spears, and inflicting casualties. This process was repeated several times, with similar results. Unable to drive off the Athenians, the Spartans were forced back to the hills which proved to be a bitter blow to Spartan pride.</p>
+  391-01-01 BC / 391-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Athens","Sparta"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Athens"-"2","Sparta"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Iphicrates","Unknown"}
+}
+
+"CnC-A 0632 - Tegyra" {
+  10630
+  <p>In 379 BC, an insurrection ejected the Spartan garrison at Thebes, and the city set about reestablishing its control over the Boeotian League. After several years, the Thebans succeeded in driving Spartan garrisons out of every city in Boeotia, except Orchomenus. In 375 BC, Pelpidas set out with the Sacred Band and a small force of cavalry to seize Orchomenus. However, learning that a sizable force had been dispatched from Sparta to reinforce the garrison there, Pelopidas retreated. Before the Thebans could reach safety, they encountered the Spartan reinforcements. The Spartan fielded over 1,000 men; the Thebans, only 300. Plutarch reports that one Theban soldier, upon seeing the enemy force, said to Pelopidas "We are fallen into our enemies' hands", to which he replied "And why not they into ours?" Pelopidas then ordered the Theban cavalry to charge, while the infantry formed up into a dense formation. When the two forces came together, the compact Theban formation broke through the Spartan line and then turned to attack the Spartans to either side. The Spartan force broke and fled. The Theban victory had little immediate military significance. However, it marked the first occasion on which a Spartan formation had been defeated by a force of equal of lesser size in a set battle.</p>
+  375-01-01 BC / 375-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Thebes","Sparta"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Thebes"-"2","Sparta"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Pelopidas","Gorgoleon"}
+}
+
+"CnC-A 0633 - Leuctra" {
+  10630
+  <p>Sparta's victory over Athens in the Peleponnesian War (431 - 404) cemented the reputation of her hoplites as the premier infantry force in the world. However, Spartan arrogance following this victory led to the outbreak of hostilities with their former ally, Thebes. In 371 King Cleombrotos of Sparta marched against Thebes. When he reached Leuctra he found the Thegan army barred his way. The Spartans deployed in a long line with their allies on the left. Greek commanders traditionally placed their best troops on the right, and this wing usually led the attack. The brilliant Theban commander, Epaminondas, devised an innovative plan to mass his best men on the left in a 50-man deep phalanx. He intended to use this mass to break through the famed Spartan phalanx. Both sides sent their cavalry out and the Spartan horse were quickly defeated. Seeing his cavalry fail, Cleombrotos ordered his infantry to advance. Simultaneously, Epaminondas' massed left advanced against the Spartan right, while the rest of his army was ordered to hold back, in an oblique order. The Spartans were attempting to change formation to deal with the situation when the Sacred Band charged and hit them in mid-maneuver. Cleombrotos was killed and the massive weight of the Theban phalanx broke the Spartan line. Never before had Sparta experienced such a significant defeat, and Leuctra ended the era of Spartan military invincibility.</p>
+  371-01-01 BC / 371-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Thebes","Sparta"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Thebes"-"2","Sparta"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Epaminondas","Cleombrotos"}
+}
+
+"CnC-A 0634 - Mantinea" {
+  10630
+  <p>Thebes' shocking victory at Leuctra in 371 had ended the Spartan hegemony over Greece. Epimondas then organized the Arcadian League of cities in the Peleponnesus, in order to counter-balance Sparta and ensure Theban supremacy. A division in the Arcadian league led Mantinea to ally with Sparta. Sparta's hereditary enemy, Athens, even joined in the alliance against Thebes. Epaminondas invaded in 362 to reassert Theban dominance. In a plain near Mantinea he encountered the enemy force of 20,000 foot and 2,000 horse with the Mantineans on the right, Spartans in the center, and Athenians on the left. Epaminondas' force of 30,000 foot and 3,000 horse was deployed with massive depth on his left, the same tactic he had used successfully at Leuctra. The Thebans closed in on the Mantinean wing and then grounded arms as if not to battle this day. Once the Mantineans relaxed their guard, Epaminondas suddenly ordered the attack. The onslaught broke the Mantinean right flank, leading to the defeat of the entire Spartan army. Disastrously for Thebes, Epaminondas was killed in the closing moments of the battle. Sparta had been humbled again, but without her brilliant leader, Thebes was unable to maintain her hegemony over Greece. The ultimate result was a weakening of Greece that paved the way for the Macedonian conquest.</p>
+  362-01-01 BC / 362-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Thebes","Sparta"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Thebes"-"2","Sparta"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Epimondas","Agesilaus"}
+}
+
+"CnC-A 0635 - Chaeronea" {
+  10630
+  <p>Philip II gained the throne of Macedon in 359 BC and re-organized his army into a combined arms force. He then set on a long diplomatic and military campaign to dominate the Greek city-states. In 338, Athens and Thebes allied and took up a position at Chaeronea. Philip soon arrived to accept the challenge. Both armies numbered about 30,000 men. The Athenians were on the left under Chares, allies held the center, the Thebans stood on the right under Theagenes and the Sacred Band held the extreme right. Philip commanded the Macedonian right wing, placed his heavy phalanx in the center, and allies and mercenaries on the left with his son Alexander and the Companion Cavalry. Philip began the battle by withdrawing his right wing, provoking an advance by the Athenians. The Thebans advanced next and began to make headway, but Alexander led a furious cavalry charge and surrounded the Sacred Band. Meanwhile Philip ended his feigned retreat and assaulted the Athenians, who quickly broke. Once the Sacred Band had been eliminated, Alexander rolled up the Theban flank completing the Macedonian victory. Following this battle, nearly all the Greek cities (save Sparta) were forced to join the League of Corinth and accept Macedonian hegemony.</p>
+  338-01-01 BC / 338-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Macedon","Greece"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Macedon"-"2","Greece"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Philip II","Chares","Theagenes"}
+}
+
+"CnC-A 0636 - Megalopolis" {
+  10630
+  <p>Sparta had stood on the sidelines while Athens and Thebes battled Macedon at Chaeronea. As the Macedonian army plunged ever deeper into Asia, King Agis III sensed an opportunity to regain the hegemony of Greece for Sparta. Agis began secret negotiations with the Persians and obtained funding for a rebellion. in 331 the Macedonian army was stretched thin - Alexander was advancing into Mesopotamia, Antigonus was fighting an insurrection in Phrygia and Antipater, the strategos of Europe, was quelling a revolt in Thrace. Agis chose this opportune moment to attack Megalopolis, but Antipater quickly subdued the Thracians and headed south to face the upstart Spartans. Agis commanded 20,000 foot and 2,000 cavalry while Antipater had about 30,000 men. Agis's numerical inferiority convinced Agis to lift the siege and maneuver to a constricted battlefield. When the two armies clashed, Agis's Spartans broke through the Macedonian line at first, and his mercenaries drove back their opponents. Antipater brought up his reserves and stabilized his line. There was fierce fighting around the Spartan king and when Agis was slain, his army collapsed. The power of Sparta was broken for a century, and Alexander's home base was secure as he headed further east.</p>
+  331-01-01 BC / 331-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Macedon","Sparta"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Macedon"-"2","Sparta"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"Castrum Album"}
+  leader{"Antipater","Agis III"}
+}
+
+"CC-E 0001 - Fat Lipki" {
+  21050
+  <p>As tanks of the 1st Moscow Motor Rifle Division clashed with the 18th Panzer Division's armored spearhead north of Lipki, infantry elements from both divisions were tasked with securing their reflective southern flanks.</p><p>One such encounter between these flanking forces occurred in a heavily-wooded hamlet south of town, where several Platoon-sized groups met while trying to secure an important crossroads.</p>
+  1941-07-03 / 1941-07-03
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Russia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Russia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce001"}
+}
+
+"CC-E 0002 - Hedgerows &amp; Hand Grenades" {
+  21050
+  <p>Bocage Country, Normandy, France&mdash;</p><p>A few weeks after the D-Day landings, General Bradley was keen to choose a suitable place for a swift, decisive breakout with a minimum of casualties in order to get his armored forces into more tank-friendly terrain. The key ground to the south of US First Army, however, was the town of St. Lo along the Vire River - which could only be had via a tough slugging match through moors, marshes, and a patchwork of tiny fields surrounded by dense hedgerows.</p><p>One such skirmish occurred amongst the latter terrain on the outskirts of Pont-Hebert, just a few miles from the vital St. Lo - Countances road.</p>
+  1944-07-01 / 1944-07-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce002"}
+}
+
+"CC-E 0003 - Bonfire of the NKVD" {
+  21050
+  <p>Outside Brest-Litovsk&mdash;A Soviet forward CP belonging to the retreating 133rd Infantry Regiment is to be abandoned by noon, but not before all communications equipment is smashed and documents burned - including detailed plans of much of the frontier fortifications in and around Brest-Litovsk several miles to the east.</p><p>A battered company of Russian militia must halt the German juggernaut long enough to affect a withdrawal to the relative safety of the Brest-Litovsk citadel.</p>
+  1941-06-24 / 1941-06-24
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Russia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Russia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce003"}
+}
+
+"CC-E 0004 - Closed for Renovation" {
+  21050
+  <p>Humaine, Belgium&mdash;After days of fierce combat and heavy bombardment, the town of Humaine was surrounded by forces of the US 2nd Armored Division. Most of the German defenders surrendered after some hard fighting.</p><p>Remnants of the 9th Panzer Division occupying a chateau on the north end of town refused to give up, however, and it fell to CCR to root out these stubborn troops.</p>
+  1944-12-27 / 1944-12-27
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce004"}
+}
+
+"CC-E 0005 - Cold Front" {
+  21050
+  <p>Staritsa, Russia&mdash;When winter hit Eastern Europe with its full fury in late 1941, the German 26th Infantry was just one of many Axis Divisions halted more by the extreme weather than by the stubborn Russian defense.</p><p>In the final weeks of 1941, the 31st Soviet Army - part of the Kalinin Front under General Yushkevich - received a large influx of Siberian troops. Clad in quilted jackets and fur hats and inured to the cold, they led many small-unit actions up and down the frozen front. One such attack took place near Staritsa, Northwest of Moscow, as German troops of Infantry Regiment 18 were fighting to stay warm in their trenches.</p>
+  1941-12-30 / 1941-12-30
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Russia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Russia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce005"}
+}
+
+"CC-E 0006 - Paralyzed from the West down" {
+  21050
+  <p>St. Mere-Eglise, France&mdash;In the evening of D-Day, the German 1058th Grenadier Regiment counterattacked St. Mere-Eglise and recaptured the edge of town. Elements of the US 505th Parachute Regiment were ordered to repulse this enemy force the following morning.</p><p>At dawn on June 7, an American Lieutenant by the name of Waverly Wray scouted ahead and came across several German soldiers around a radio, whom he promptly shot dead. Wray high-tailed it back to his company to begin the assault, unaware that he had just killed the eight officers in charge of the Grenadier Regiment's 1st Battalion.</p>
+  1944-06-07 / 1944-06-07
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce006"}
+}
+
+"CC-E 0001 - " {
+  21050
+  <p></p>
+  1940-01-01 / 1940-01-01
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce001"}
+}
+
