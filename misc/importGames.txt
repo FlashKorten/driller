@@ -3272,6 +3272,7 @@
   publisher{"GMT Games"-"http://www.gmtgames.com"}
   series{"Combat Commander"-"ccp-f"}
 }
+
 "CC-P G - Bitter Creek" {
   28181
   <p>Eora Creek, New Guinea&mdash;After nearly succeeding in pushing the Australians back upon Port Moresby, the Japanese had neither supply chain nor time enough to hold their gains along the Kokoda Trail and so reverted to the defensive. In a series of grim battles, the 25th Brigade (Australian 6th Infantry Division) began to retake ground, securing Templeton's Corner, and were relieved by the 16th Brigade. Elements of the 144th Infantry Regiment (Japanese South Seas Force) fell back upon excellent defensive terrain at the miserable village of Eora, where the Kokoda Trail passed through the gorge formed by the Eora Creek. Elements of the 16th Brigade advanced forward looking to find the strong points, pin them and bypass them. The bitter fighting lasted two days before the Japanese secretly retired from their positions and fell back to Oivi.</p>
@@ -3290,6 +3291,7 @@
   publisher{"GMT Games"-"http://www.gmtgames.com"}
   series{"Combat Commander"-"ccp-g"}
 }
+
 "CC-P H - Dog Plus Eight" {
   28181
   <p>Hill 382, Iwo Jima&mdash;Eight days after the initial landing on the island and four days after the American flag had been raised on Mount Suribachi, the 3rd Marine Division found itself dug in on the barren stone plateau north of the airfields. The Marines outnumbered the Japanese defenders by at least three to one, but the Japanese avoided the immense firepower of the American forces by going underground.</p><p>General Tadamishi Kuribayashi concentrated his remaining forces in the central and northern sections of the island. Their miles of interlocking caves, pillboxes and concrete blockhouses would prove to be one of the most impenetrable defenses the Marines would encounter in the Pacific.</p><p>Repulsed in their attack on the three hills overlooking Motoyama Airfield No. 2 the previous day, the 23rd Marine Regiment had regrouped for another assault on the morning of February 27th. The advance was immediately held up by determined resistance from numerous Japanese caves and bunkers. A second artillery barrage was called in at midday and small gains were made in the afternoon of 100-150 yards along the entire front.</p><p>By late afternoon, elements of the 3rd Battalion, 23rd Marines were engaged in fierce close combat near the crest of Hill 382, fighting for possession of the radar station at the hill's summit.</p>
@@ -3308,6 +3310,7 @@
   publisher{"GMT Games"-"http://www.gmtgames.com"}
   series{"Combat Commander"-"ccp-h"}
 }
+
 "CC-P I - Totsugeki!" {
   28181
   <p>Edson's Ridge, Guadalcanal&mdash;In the second major attempt at dislodging the enemy position, the Japanese maneuvered deep in the jungle to the south of the American perimeter expecting that it would be less defended. General Kawaguchi employed a complicated plan using battalions from the 124th and 4th Infantry. The terrain rendered a multi-pronged plan almost impossible to execute, however, but with sheer willpower, some of his force managed a devastating attack. During what is known as the Battle of Edson's of "Bloody" Ridge, at 2230 7th company of the Japanese II/4th Regiment launched the first of many attacks along the eastern flanks of the ridge directly at B Company of the 1st Parachute Battalion. A successful attack could dislodge or overtake Lt. Colonel Edson's command post and put the defense of Henderson Field in grave jeopardy. Amazingly, Edson orchestrated one of the greatest nighttime defenses and was awarded the Medal of Honor.</p>
@@ -3326,6 +3329,7 @@
   publisher{"GMT Games"-"http://www.gmtgames.com"}
   series{"Combat Commander"-"ccp-i"}
 }
+
 "CC-P J - The Deadly Trees" {
   28181
   <p>Saddle Ridge, Guadalcanal&mdash;After the failure of the September attacks, Japanese HQ sent as many ground forces as could be spared to build up for another multipronged attack. During what is known as the Battle of Henderson Field, between 0300 and 0500 elements of the Japanese III/4th Regiment (part of Force Oka to the west of Henderson Field) attacked the US Marines of F Company of II/7th Regiment on the eastern slopes of a saddle-shaped ridge. The attack was massed all along Colonel Hanneken's front, but in particular the Japanese delivered deadly fire from the trees onto the heights of the ridge, eliminating many of the defenders, despite the heroism of Sergeant Mitchell Paige (who was firing weapons from both hands). Although the attackers eventually took the crest of the ridge, in a surprise move, Paige was part of an unlikely counterattack unit made of communications specialists, messmen, bandsmen, a cook and a few other riflemen. They retook the ridge decisively. Fot his singular efforts, he was awarded the Medal of Honor. This fight was part of one of the last major attempts by the Japanese to take the airfield, which ended in failure.</p>
@@ -3344,6 +3348,7 @@
   publisher{"GMT Games"-"http://www.gmtgames.com"}
   series{"Combat Commander"-"ccp-j"}
 }
+
 "CC-P K - Burning Buna" {
   28181
   <p>New Strip at Buna, New Guinea&mdash;Combined Australian and American forces surrounded the desperate Japanese defenders at Buna during December 1942. After an opening barrage starting at 0530, various companies of 2/9th Battalion (Australian 16th Brigade) crossed the start line promptly at 0700 to assault the brilliantly hidden defenses of the New Strip and Cape Endaiadere by III/229th Infantry Regiment of the Japanese Buna Garrison. While most of the assaulting companies had armor support C Company did not, and they quickly fell into a bitter hornet's nest as they attempted to advance along the edge of the New Strip to protect B Company's flank.</p>
@@ -3362,6 +3367,7 @@
   publisher{"GMT Games"-"http://www.gmtgames.com"}
   series{"Combat Commander"-"ccp-k"}
 }
+
 "CC-P L - Slopes of Hell" {
   28181
   <p>Kokoda Trail, Owen Stanley Mountains, New Guinea&mdash;The 2/16th Battalion (Australian 21st Brigade) had fallen back from Templeton's Crossing and finally reached the positions of the battered 2/14th Battalion, which in turn dropped back to the mountain village of Myola. Meanwhile, the Koiwai Battalion (Japanese 41st Infantry Regiment) began a flanking maneuver up the steepy sloped terrain in the afternoon and fell suddenly upon the Australians as they were huddled at their cooking fires. The twilight combat lasted until corrents of cold rain swept in.</p><p>Aftermanth: Overnight, the 2/16th secretly withdrew back toward Myola.</p>
@@ -3379,5 +3385,632 @@
   party{"Japan"-"2","Australia"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
   series{"Combat Commander"-"ccp-l"}
+}
+
+"CC-E 0031 - Blizzard Baptism" {
+  21050
+  <p>Flamierge, Belgium&mdash;The US 17th Airborne Division was new to the European Theater of Operations, having just arrived in the Reims area in France on the 25th of December. The division was attached to General Patton's 3rd Army. One of its initial assignments was to take down the town of Flamierge lying northwest of Bastogne.</p><p>When the 513th Parachute Infantry Regiment finally jumped off for its assault on the town, a near blizzard set in...</p>
+  1945-01-04 / 1945-01-04
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce031"}
+}
+"CC-E 0032 - Look Mom, No Tanks!" {
+  21050
+  <p>Belgium&mdash;After being isolated for 7 days - out of fuel and low on ammunition - Peiper was finally given permission to breakout from his beleaguered position at La Gleize. Leaving a rear guard to demolish the remaining tanks and vehicles (numbering nearly 100), Peiper and some 800 survivors set off in the dead of night to find a way back to friendly lines. Marching in single file they crossed the Ambleve River and up into the rugged hills above Trois Ponts. Somewhere out in the dark, the newly arrived 456th PFAB of the 82nd Airborne division was blocking their path.</p>
+  1944-12-24 / 1944-12-24
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce032"}
+}
+
+"CC-E 0033 - We Go!" {
+  21050
+  <p>St. Mere-Eglise, France&mdash;In the early hours of June 6, the paratroopers of the 101st and 82nd Airborne divisions leapt into the night over Normandy to clear the path for the invading Allied forces who were at that time steaming across the English Channel. Through the chaos of enemy fire, the pilots did the best they could to put the troopers over their planned drop zones, but many of them were dropped far from their planned sites, with little idea of where they were.</p><p>The 506th PIR landed on the outskirts of St. Mere-Eglise. They quickly organized as best they could and began clearing the way to Utah Beach.</p>
+  1944-06-06 / 1944-06-06
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce033"}
+}
+
+"CC-E 0034 - Encircled at Hill 30" {
+  21050
+  <p>Hill 30, Caponnet, France&mdash;Elements of the 2nd Bn, 508th PIR under Lt. Col. Thomas Shanley were one of the few groups of troopers that landed west of the Merdenet River. In constant enemy contact and short of supplies, Shanley decided to withdraw to the originally planned battalion assembly point at Hill 30 and defend the position.</p><p>The German 1057th Regiment of the 91st Luftlande Division was ordered to counterattack towards Utah Beach and eliminate any paratroopers they found west of the Merderet. They found the 508th at Hill 30.</p>
+  1944-06-08 / 1944-06-08
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce034"}
+}
+
+"CC-E 0035 - Spartakovka Salient" {
+  21050
+  <p>Spartakovka, Russia&mdash;The Germans were advancing headlong toward Stalingrad. Elements of the Soviet 62nd Army were in disarray from the speed at which the German 6th Army was advancing. The German VIII Fliegerkorps had laid waste to much of the suburbs and command &amp; control areas. Against this backdrop of confusion, Panzergrenadiers of the 16th Panzer Division launched their attack at first light to reach the Volga. Defending the area near the town of Spartakovka was a mixed force of militia - rear area units along with hastily arrived reinforcements. Their task was simple: Stop the Germans from reaching the Volga river...</p>
+  1942-08-23 / 1942-08-23
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Russia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Russia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce035"}
+}
+
+"CC-E 0036 - Sea Devils" {
+  21050
+  <p>Minina Suburb, Stalingrad, Russia&mdash;During the night of September 17, Lt. Andrey Khozyaynov of the 92nd Marine Infantry Brigade was ordered to reinforce elements of the 35 Guards Infantry Division defending the Grain Elevator. This key position anchored the Soviet defenses soiuth of the Tsaritsa river bed. As morning broke, the 276th Infantry Regiment, 94th Saxon Infantry Division was tasked with eliminating the stubborn defenders of the Grain Elevator.</p>
+  1942-09-18 / 1942-09-18
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Russia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Russia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce036"}
+}
+
+"CC-E 0037 - Dom 31" {
+  21050
+  <p>Behind the Barrikady, Stalingrad&mdash;Since October 24 Ivan Ilyich Svidrov - a 19-year-old Sergeant in 650th Rifle Regiment - and his squad of determined soldiers had beaten back repeated morning attacks against the concrete and iron house they were sworn to defend with their lives; a house with the address "Dom 31". Dom 31 held a highly strategic location: it guarded the rear entrance of the Barrikady factory and anchored the left flank of Colonel Lyudnikov's 138th Rifle Division. The importance of this location was further impressed upon Sgt. Svidrov when Col. Lyudnikov himself paid the squad a visit on the evening of the 26th. On the 27th the first attack didn't commence until noon, but was repeated throughout the day with growing ferocity.</p>
+  1942-10-27 / 1942-10-27
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Russia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Russia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce037"}
+}
+
+"CC-E 0038 - Not One Step Back!" {
+  21050
+  <p>Dolgyi Gully, Stalingrad, Russia&mdash;Elements of the German 295th Infantry Division had infiltrated the northern flank of the 13th Guards Rifle Division along Krutoy Gully and reached the Volga River.</p><p>A detachment was sent to secure a wooden bridge spanning a neighboring ravine. Unbeknownst to them, Russian units were just then utilizing the very same bridge in order to move a field gun towards the battle still raging in Krutoy Gully. Their advance temporarily halted - and with Stalin's infamous Order No. 227 in effect espousing Soviet soldiers to not take a single step backwards - the Russians prepared to hold the gully without falling back into Stalingrad proper to the south.</p>
+  1942-10-01 / 1942-10-01
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Russia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Russia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce038"}
+}
+
+"CC-E 0039 - Fortresses of Blood and Iron" {
+  21050
+  <p>Near Krutoy Gully, Stalingrad, Russia&mdash;As dawn broke on the first day of October the 295th Infantry Division attacked Rodimtsev's 13th Guards Rifle Division from the front and flank. The 3rd Battalion, 39th Infantry Regiment bore the brunt of the frontal attack. The German assault led by the 517th Infantry Regiment initially gained ground and forced the 39th back. in an effort to stop the German advance the 39th savagely counter-attacked to reclaim their lost positions.</p>
+  1942-10-01 / 1942-10-01
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Russia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Russia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce039"}
+}
+
+"CC-E 0040 - Into the Breach" {
+  21050
+  <p>Barridady Gun Factory, Stalingrad, Russia&mdash;'Fortress Stalingrad' was living up to its name. On this day, elements of the German 305. Infanterie-Division continued their assault into the ruins of the factory's workshops. The fighting was up close and personal:</p><p>"Walz's commander, Leutnant Hermann Hennes, helped him into a bomb crater and did his best to bind the nasty wound. When Hennes stood up, he saw enemy soldiers moving towards them, so he grabbed his rifle and lined up a shot. Lying on his back in the crater, Walz looked up at his commander, expecting him to be the first to fire. A shot rang out and Leutnant Hennes' helmet flew off his head: a Soviet sniper had nailed him from the side... For an eternal second, Hennes stared down at Walz, disbelief etched on his face, then he toppled backwards into the bottom of the crater - dead."</p><p>&mdash;excerpt from the book Island of Fire by Jason D. Mark</p>
+  1942-10-17 / 1942-10-17
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Russia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Russia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce040"}
+}
+
+"CC-E 0041 - The Comissar House" {
+  21050
+  <p>Near the Volga, Stalingrad, Russia&mdash;During the last major attack by the German 6th Army to capture Stalingrad, a formidable structure known as the Commissar House (Kommissarhaus) was targeted as one of the key points near the Volga River. With the temperature at minus 25 degrees on the morning of the 13th, Pionier-Bataillon 45 - attached to SturmKompanie 44 - attacked the structure. Facing them, the remnants of Russian 650th Rifle Regiment stiffened their resolve to deny this fortress to the Germans. The fighting was vicious: the Germans eventually forced their way in but the Russians never surrendered control of the house - they were prepared to fight without ammunition to the last man.</p>
+  1942-11-13 / 1942-11-13
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Russia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Russia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce041"}
+}
+
+"CC-E 0042 - Rumanian Defiance" {
+  21050
+  <p>Obliskaya Airfield, Russia&mdash;During the opening stages of Operation Uranus, Major Gheorghe Rasconescu led the 1Bn, 15th Dorobanti Infantry Regiment to the relative safety of the Chir River at Obliskaya on November 25th, successfully retreating in the face of overwhelming Soviet armored thrusts. There they set up a defensive perimeter at a nearby airfield. The Soviet 8th Cavalry Corps was tasked with clearing the north bank of Chir River. Major Rasconescu and his battalion fought off Soviet attacks for seven days, determined to not let the vital airfield fall into enemy hands.</p>
+  1942-11-29 / 1942-11-29
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Rumania","Russia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Rumania"-"2","Russia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce042"}
+}
+
+
+"CC-E 0043 - Lyudnikov's Island" {
+  21050
+  <p>Barrikady Fuel Tanks, Stalingrad, Russia&mdash;For six weeks the Germans had surrounded Lyudnikov's 138th Rifle Division, separating it from the rest of the front line. As the Germans attempted to crush Lyudnikov's "island" by pushing it against the Volga River, Soviet resistance stiffened near the fuel cells area. Each side relentlessly probed for weakness in the other's line. The Soviets found, then exploited one, and reconnected the 138th to the rest of the front line.</p>
+  1942-12-22 / 1942-12-22
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Russia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Russia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce043"}
+}
+
+"CC-E 0044 - Stalingrad of the North" {
+  21050
+  <p>Velikiye Luki, Russia&mdash;The Soviet Kalinin Front offensive at the beginning of winter 1942 successfully cut off and encircled the key transportation hub of Velikiye Luki. The German 277th Infantry Tegt. under orders from Hitler to hold at all costs resolutely defended the city. Under constant pressure from units of the 3rd Shock Army, the battered remnants of the defenders were forced back to the Citadel - a key defensive position in the western half of town. As 1943 arrived, the end drew nearer for the 277th.</p><p>In a last ditch effort to relieve the town, elements of the 5th Gebirgsjäger (Mountain) Infantry Regt. assaulted the Soviet 113th Rifle Regt., attempting to break through to the Citadel.</p>
+  1943-01-14 / 1943-01-14
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Russia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Russia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce044"}
+}
+
+"CC-E 0045 - Stand and Die" {
+  21050
+  <p>Mamayev Kurgan, Stalingrad, Russia&mdash;The fighting over the ground of the Mamayev Kurgan hill mass, a prominent terrain feature of the central city area of Stalingrad, was among the most bitter of the fall and winter of 1942. This is a large hilly area extending up from the Volga River through the center of the city towards the west, commanding a critical position across the entire city. Today, it holds a deeply moving memorial for the Russian people.</p>
+  1942-09-27 / 1942-09-27
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Russia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Russia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce045"}
+}
+
+"CC-E 0046 - Pegasus Bridge" {
+  21050
+  <p>Benouville, France&mdash;At 0016 hours, three Airspeed Horsa gliders, flowsn with outstanding skill by pilots of the Glider Pilot Regiment, landed troops from the 2nd Battalion, Oxfordshire and Buckingham Light Infantry within 50 yards of the Caen Canal Bridge at Benouville in Normandy, France. The bold and audacious coup de main attack on the bridge was a complete success and, after a brief 15 minute fight, this vital bridge was in Allied hands.</p><p>Determined counterattacks by elements of the 736th Grenadier Regiment, 716th Infantry Division were launched throughout the early morning hours to retake the bridge.</p>
+  1944-06-06 / 1944-06-06
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Great Britain"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Great Britain"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce046"}
+}
+
+"CC-E 0047a - Taking the Point (Historical)" {
+  21050
+  <p>Pointe-du-Hoc, France&mdash;The US Rangers drew the most difficult single mission for the morning of the invasion of Nazi-occupied France: Neutralize the Battery of guns on Pointe du Hoc. The Rangers had to scale 100-foot cliffs on the seaward side of the point to take out the battery of six 155mm guns to ensure a safer passage for the rest of the invasion forces on Utah and Omaha beaches. After a hellish ride across the channel and nearly landing at the wrong point, the Rangers disembarked from the Higgins boats to attempt what many thought was a suicide mission.</p>
+  1944-06-06 / 1944-06-06
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce047a"}
+}
+
+"CC-E 0047b - Taking the Point (Planned)" {
+  21050
+  <p>Pointe-du-Hoc, France&mdash;The plan called for three of the companies of 2nd Ranger Battalion to land east and west of the point at 0630 hours, instantly following a half-hour bombardment from the battleships Arkansas and Texas. Delta on the West with Echo and Foxtrot on the East, the rest of the Battalion was in reserve. The Rangers were armed with M-1 rifles, Thompson submachine guns, grenades and pistols. Would this audacious plan silence the expected six 155mm guns on Pointe du Hoc? Would the timing of the bombardment and the landing work perfectly? Now you can find out.</p>
+  1944-06-06 / 1944-06-06
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce047b"}
+}
+
+"CC-E 0048 - Widerstandsnest 61" {
+  21050
+  <p>Omaha Beach, Fox Green Sector, Normandy&mdash;Pinned on the beach under relentless fire from German Widerstandsnests (resistance points) hidden in the overlooking bluffs, US soldiers hunkered down behind the meager protection of the beach's loose stone shingle. But in one sector the Germans were in plain sight - WN 61 protected an 88mm gun emplaced at beach level and fixed to fire west along the length of the beach. In front of the dreaded gun, the infantry of F Company, 16th Regiment witnessed its deadly effectiveness against incoming invasion craft. With his officers killed, Sgt. Frank Strojny led survivors of his company and a lost boat team of E Company, 116th Regiment in a daring assault against the heavily fortified but thinly manned position. It was the first WN to fall.</p>
+  1944-06-06 / 1944-06-06
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce048"}
+}
+
+"CC-E 0049 - Mazed and Confuzed" {
+  21050
+  <p>Omaha Beach, Normandy&mdash;Upon landing under heavy fire at the west end of Omaha Beach at 0630 hours, a boat team of Rangers of C Company, 2nd Battalion scaled cliffs to become the first US soldiers on the high ground. Assigned a mission to the west, Captain Ralph Goranson instead turned east to attack the German strong point delivering deadly fire onto the beach - a decision that ultimately saved hundreds of lives. Joined by a stray boat team from B Company, 116th Infantry, the rangers entered into a maze of German communication trenches manned primarily by interior troops of the 716th division. This action pulled German troops from Widerstandsnests 73 and 72 into running firefights all morning.</p>
+  1944-06-06 / 1944-06-06
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce049"}
+}
+
+"CC-E 0050 - This Man was Good" {
+  21050
+  <p>Overlooking Omaha Beach, Normandy&mdash;After knocking out a key German Widerstandsnest on the east end of Omaha Beach, US forces from L Company, 16th Infantry led by Lt. Jimmie Monteith, gained a toe-hold on the high ground. As Monteith and his men advanced through the hedgerows to secure the beachhead's eastern flank, they ran into the only major German counterattack of the day. Veteran elements of 916 Regiment/352nd Division, supported by conscripts of the 716th Division, converged on L Company from all flanks with orders to fight their way through the Americans and retake the coastal position. Lt. Monteith's leadership under fire earned him the Congressional Medal of Honor, awarded posthumously. General Eisenhower himself was heard to say: "This man was good."</p>
+  1944-06-06 / 1944-06-06
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce050"}
+}
+
+"CC-E 0051 - The Uneasy Wait" {
+  21050
+  <p>La Breche, Sword Beach, France&mdash;The European invasion was coming, everyone knew it, but where? Little did the grenadiers of Hauptman Kuhtz's 10th Company, 736th Grenadier Regiment know that their position in Widerstandsnest 20, codenamed "Cod", was the center of the British 3rd Infantry Division's assault sector on Sword Beach. The men of A and B companies of the 2nd East Yorkshire Regiment landed along the French coastline at 0725 hours much to the surprise of the men of WN20. Despite their surprise the grenadiers of the 736th put up a determined resistance (knocking out several British tanks and slowing the advance inland) before being overwhelmed by the invasion forces.</p>
+  1944-06-06 / 1944-06-06
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Great Britain"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Great Britain"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce051"}
+}
+
+"CC-E 0052 - The New Highlanders" {
+  21050
+  <p>Authie, Normandy&mdash;After landing at Juno and dashing for its objective of Carpiquet Airfield, 3rd Canadian Division met the counterattack of 12th SS "Hitlerjugend" Panzer Division northwest of Caen. Aided by observation from a nearby abbey tower, the SS caught the advancing Alied Armor in the flank between the outskirt villages of Buron and Authie. North Nova Scotia Highland infantry of Captain Hank Fraser's C Company with machinegunners of the Ottawa Cameron Highlanders had made Authie but had outrun artillery support. Fraser sent his carriers rearward as the first wave of 18-year-old Panzergrenadiers came on to throw the Canadians back into the sea. The vicious close-quarters fight that ensued amid smoke and German shellfire inaugurated a bitter rivalry between the two divisions.</p>
+  1944-06-07 / 1944-06-07
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce052"}
+}
+
+"CC-E 0053 - Deeds Not Words" {
+  21050
+  <p>Utah Beach Vicinity, Normandy&mdash;Fire from the 210mm guns of the Crisbecq Coastal Artillery Battery, commanded by Lw. Walter Ohmsen, constantly harassed and prohibited the unloading of supplies and reinforcements on Utah Beach. On June 7 the 1Bn, 22nd Infantry was tasked with neutralizing the guns. However, the assault faltered when Lt. Ohmsen called fire from the 150mm guns of the nearby Azeville Battery on his own position to drive off the attack. The 1Bn renewed the assault on D-Day plus 2. Led by C Company, organized into special assault groups, the 1Bn very nearly succeeded in eliminating the Crisbecq guns but once again the infantrymen were thwarted by artillery fire from Azeville and a timely counterattack by elements of the 919th Grenadier Regiment.</p>
+  1944-06-08 / 1944-06-08
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce053"}
+}
+
+"CC-E 0054 - East by Northwest" {
+  21050
+  <p>Chateau Sainte-Genevieve, Brittany&mdash;Hours before OVERLORD, coded transmissions alerted resistance cells across France - the Forces Francaises de l'Interieur (FFI) - to assemble and hinder the expected movement of German forces toward Normandy. In Brittany, airdropped French commandos joined a major FFI bivouac near Saint-Marcel and began sabotaging rail lines to block Axis reinforcement eastward. British airdrops supplying the FFI camp eventually attracted German attention, and on 18 June local garrison forces massed to flush the partisans out. French SAS Lt. Nicholas Marienne, commanding a sector of the perimeter, found himself in the path of Axis Osttruppen advancing on a chateau they had mistaken for the bivouac's headquarters.</p>
+  1944-06-18 / 1944-06-18
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","France"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","France"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce054"}
+}
+
+"CC-E 0055 - Graveyard of the North Shores" {
+  21050
+  <p>Carpiquet, Normandy&mdash;In Operation Windsor, 3rd Canadian Division once again set out to take Carpiquet Airfield, still in the hands of their bitter foe, the 12th SS "Hitlerjugend". After a heavy rolling bombardment, the North Shore (New Brunswick) Regiment moved out across a mile of high-standing wheat toward the village adjoining the airfield. Zeroed in on the flat approaches, German shells tore through the Canadians, but die-hard remnants reached the ruined ville to wrest it from the small but well-prepared force of Hitler Youth.</p>
+  1944-07-04 / 1944-07-04
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Canada"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Canada"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce055"}
+}
+
+"CC-E 0056 - 29, Let's Go!" {
+  21050
+  <p>Outside St. Lo, Normandy&mdash;On 11 July, XIX Corps was ordered to attack southward towards St. Lo as part of a First Army offensive to push the German Seventh Army out of Normandy. The 29th Division was ordered to attack and seize key terrain east of St. Lo. As part of the division's attack plan, General Gerhardt ordered the 116th Infantry to conduct the main attack. Lead companies of 2nd Battalion (supported by the combat battalions of the 121st Engineers and 747th Tank) were trained in the division's new hedgerow tactics.</p>
+  1944-07-11 / 1944-07-18
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce056"}
+}
+
+"CC-E 0057 - Bingham Must Hold" {
+  21050
+  <p>La Madeleine, France&mdash;The afternoon of 15 July, the US 116th Infantry Regt. launched an attack along the Martinville Ridge east of St. Lo. As nightfall approached, the 116th was ordered to halt and consolidate its gains for the day. By the time Maj. Bingham's 2nd Bn. received the order, over half of it had advanced one half mile beyond the support of the 1st and 3rd battalions. Maj. Bingham's 2nd Bn. sat astride the St. Lo - Bayeux highway just east of the village of La Madeleine and was ordered to hold position. During that night, elements of the 9th Fallschirmjäger Regt. quickly cut off Bingham's men. Bingham and his battalion remained isolated for two days, suffering under intense artillery barrages and sporadic small arms fire. On 18 July a renewed assault by 3rd Bn., 116th Inf. managed to break through to the 2nd Bn. The combined 2nd and 3rd Battalions were to launch an immediate attack on St. Lo but, before they could do so, elements of the 9th Fallschirmjäger Regt. with artillery support launched its own assault against the Americans.</p>
+  1944-07-17 / 1944-07-17
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce057"}
+}
+
+"CC-E 0058 - Compagnie Scamaroni" {
+  21050
+  <p>Caen&mdash;The German defense of Caen was tenacious, demanding great effort from the British and Canadian forces. Operation Atlantic (part of the Operation Goodwood offensive), opened with the attack of the Canadian 8th Brigade into Giberville and Colombelles, held by conscripts of the Luftwaffe 16th Division supported by a battle group of the 21st Panzer Division. There were delays in the advance into Colombelles and it was proposed that a platoon from the Royal Regina Rifles assisted by members of Compagnie Scamaroni (a very notable FFI unit) should infiltrate and cross the River Orne at Vaucelles to secure a vital bridging site.</p>
+  1944-07-18 / 1944-07-18
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Canada"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Canada"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce058"}
+}
+
+"CC-E 0059 - Cheux'd Up" {
+  21050
+  <p>Cheux, Normandy&mdash;The Allied failure to capture Caen on D-Day allowed the Germans to rush reinforcements to the area. In an effort to isolate and pressure the defenses around Caen, Field Marshal Montgomery devised and launched Operation Epsom, spear-headed by the British 43rd and the Scottish 15th Infantry Divisions. At dawn on June 26th men of the 2nd Bn (Scottish 15th Division - as yet not tested in battle) approached the objective - the village of Cheux - which was heavily shrouded in mist and defended by the men of the 12th SS Pionier Bn (rear-echelon troops of the 12th SS Panzer Division). The Highlanders advanced on Cheux following a walking barrage from the 15th Division's artillery. The barrage enabled the Highlanders to penetrate the main line of resistance. Once in the enemy rear it seemed that Cheux would be easily cleared. However, the Highlanders were not prepared for the unexpected stiff resistance. Let by Lt. Bruno Asmus and Lt. Lorenz, the SS HQ and SS Supply troops defended vigorously, forcing the Highlanders to clear Cheux house by house often in hand-to-hand combat.</p>
+  1944-06-26 / 1944-06-26
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Scotland"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Scotland"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce059"}
+}
+
+"CC-E 0060 - Old Hickory Resolute" {
+  21050
+  <p>Hill 314, East of Mortain, France&mdash;The German High Command launched Operation Luttich on the night of 6/7 August aimed at the US 30th Infantry Division occupying the village of Mortain. The initial onslaught was partially successful in penetrating the American lines and the 2nd Bn, 120th Infantry Regiment was surrounded and cut off east of Mortain. The men of E Company commanded by Lt. Ralph Kerley occupied Hill 314 on the right flank of US position. Elements of the 2nd SS Panzer and 17th SS Panzer Grenadier Divisions repeatedly attacked the 2nd Bn positions day and night. Each assault was helped driven off by the accurate on call artillery fire from the 230th FA Bn directed by E Company's FO, Lt. Robert Weiss. On the night of 8 August elements of the 17th SS Panzer Grenadier Division renewed their assault on Hill 314 successfully penetrating E Company's position. Lt. Kerley rallied his troops and drove off the grenadiers with small arms fire and Lt. Weiss' relentless artillery missions.</p>
+  1944-08-08 / 1944-08-08
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce060"}
+}
+
+"CC-E 0061 - Surrender is out of the Question" {
+  21050
+  <p>Hill 262, The Falaise Pocket&mdash;After the Allied breakout forced by Operation Cobra, the German army was caught between two pincer movements with most of the Seventh Army trapped in the rapidly closing "Falaise Pocket." The retreating army desperately sought to escape along its last remaining route, the Chambois-Vimoutiers road, which passed before Hill 262. The 1st Polish Armoured Division attached to the 1st Canadian Army was ordered to take the hill (which had previously been invested by the Germans with strong defensive positions) to somehow "close the door." On August 19th, the Polish forces created a devastating ambush on the escaping German forces in the valley below. In desperation, elements of the 2nd SS Panzer Division mounted a night assault on the 20th advancing in waves, with the firce support of Tiger tanks. The famous defense led by Polish Major Stefanowicz was inspired - all ammunition was to be used and he uttered the phrase: "Surrender is out of the question!" An attached Canadian artillery observation officer, Captain Sevigny, designed the pre-registered fire for the defense.</p>
+  1944-08-20 / 1944-08-20
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","Poland"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Poland"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce061"}
+}
+
+"CC-E 0031 - " {
+  21050
+  <p></p>
+  1940-08-12 / 1940-08-12
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Chad Jensen"}
+  engine{"Vassal"-""}
+  side{"Axis","Allies","Germany","US"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Hex-and-Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","US"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Combat Commander"-"cce031"}
 }
 
