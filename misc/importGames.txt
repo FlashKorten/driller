@@ -2066,7 +2066,7 @@
   theme{"Ancient"}
   party{"Argive"-"2","Sparta"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0611"}
   leader{"Pheidon","Unknown"}
 }
 
@@ -2086,7 +2086,7 @@
   theme{"Ancient"}
   party{"Argive"-"2","Sparta"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0612"}
   leader{"Unknown"}
 }
 
@@ -2106,7 +2106,7 @@
   theme{"Ancient"}
   party{"Argive"-"2","Sparta"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0613"}
   leader{"Unknown","Cleomenes I of Sparta"}
 }
 
@@ -2126,7 +2126,7 @@
   theme{"Ancient"}
   party{"Persia"-"2","Sparta"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0614"}
   leader{"Xerxes","Leonidas"}
 }
 
@@ -2146,7 +2146,7 @@
   theme{"Ancient"}
   party{"Persia"-"2","Sparta"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0615"}
   leader{"Xerxes","Leonidas"}
 }
 
@@ -2166,7 +2166,7 @@
   theme{"Ancient"}
   party{"Persia"-"2","Greek"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0616"}
   leader{"Mardonius","Pausanias"}
 }
 
@@ -2186,7 +2186,7 @@
   theme{"Ancient"}
   party{"Persia"-"2","Greece"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0617"}
   leader{"Tigranes","Leotychides"}
 }
 
@@ -2206,7 +2206,7 @@
   theme{"Ancient"}
   party{"Athens"-"2","Sparta"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0618"}
   leader{"Myronides","Nicomedes"}
 }
 
@@ -2226,7 +2226,7 @@
   theme{"Ancient"}
   party{"Athens"-"2","Sparta"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0619"}
   leader{"Demosthenes","Eurylchus"}
 }
 
@@ -2246,7 +2246,7 @@
   theme{"Ancient"}
   party{"Athens"-"2","Sparta"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0620"}
   leader{"Demosthenes","Epitades"}
 }
 
@@ -2266,7 +2266,7 @@
   theme{"Ancient"}
   party{"Athens"-"2","Boeotia"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0621"}
   leader{"Hippocrates","Pagondas"}
 }
 
@@ -2286,7 +2286,7 @@
   theme{"Ancient"}
   party{"Athens"-"2","Sparta"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0622"}
   leader{"Cleon","Brasidas"}
 }
 
@@ -2306,7 +2306,7 @@
   theme{"Ancient"}
   party{"Argos"-"2","Sparta"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0623"}
   leader{"Laches","King Agis II"}
 }
 
@@ -2326,7 +2326,7 @@
   theme{"Ancient"}
   party{"Athens"-"2","Syracuse"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0624"}
   leader{"Nicias","Hermocrates"}
 }
 
@@ -2346,7 +2346,7 @@
   theme{"Ancient"}
   party{"Athenian Exiles"-"2","Sparta"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0625"}
   leader{"Thrasybulus","Callibus"}
 }
 
@@ -2366,7 +2366,7 @@
   theme{"Ancient"}
   party{"Athenian Exiles"-"2","Sparta"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0626"}
   leader{"Thrasybulus","Critias"}
 }
 
@@ -2386,7 +2386,7 @@
   theme{"Ancient"}
   party{"Athenian Exiles"-"2","Sparta"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0627"}
   leader{"Thrasybulus","Pausanius"}
 }
 
@@ -2406,7 +2406,7 @@
   theme{"Ancient"}
   party{"Armenian/Carducian"-"2","Sparta"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0628"}
   leader{"Unknown","Xenophon"}
 }
 
@@ -2426,7 +2426,7 @@
   theme{"Ancient"}
   party{"Greece"-"2","Sparta"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0629"}
   leader{"Unknown","Aristodemus"}
 }
 
@@ -2446,7 +2446,7 @@
   theme{"Ancient"}
   party{"Greece"-"2","Sparta"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0630"}
   leader{"Unknown","Agelilaus"}
 }
 
@@ -2466,7 +2466,7 @@
   theme{"Ancient"}
   party{"Athens"-"2","Sparta"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0631"}
   leader{"Iphicrates","Unknown"}
 }
 
@@ -2486,7 +2486,7 @@
   theme{"Ancient"}
   party{"Thebes"-"2","Sparta"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0632"}
   leader{"Pelopidas","Gorgoleon"}
 }
 
@@ -2506,7 +2506,7 @@
   theme{"Ancient"}
   party{"Thebes"-"2","Sparta"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0633"}
   leader{"Epaminondas","Cleombrotos"}
 }
 
@@ -2526,7 +2526,7 @@
   theme{"Ancient"}
   party{"Thebes"-"2","Sparta"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0634"}
   leader{"Epimondas","Agesilaus"}
 }
 
@@ -2546,7 +2546,7 @@
   theme{"Ancient"}
   party{"Macedon"-"2","Greece"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0635"}
   leader{"Philip II","Chares","Theagenes"}
 }
 
@@ -2566,7 +2566,7 @@
   theme{"Ancient"}
   party{"Macedon"-"2","Sparta"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
-  series{"Command and Colors"-"Castrum Album"}
+  series{"Command and Colors"-"ancients0636"}
   leader{"Antipater","Agis III"}
 }
 
@@ -4012,5 +4012,465 @@
   party{"Germany"-"2","US"-"2"}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
   series{"Combat Commander"-"cce031"}
+}
+
+"CnC-A 0208 - Clusium" {
+  10630
+  <p>The Cisalpine Gauls (those living south of the Alps) had sacked Rome in 390 BC and fought intermittently with Rome for the next 150 years. After a series of defeates early in the Third century BC, the Gauls remained quiet for 50 years. Then in 232 the Romans began settling on captured Gallic lands. This roused the barbarians to prepare another invasion. This time, the Cisalpine Gauls were joined by their kinsmen from across the Alps, the fierce Gaesatae under their Kings Aneroestes and Concolitanus. In 225 BC a force of 70,000 Gauls descended on Etruria and overran the country looting and pillaging. When they reached Clusium, a city only three days' journey from Rome, a Roman army led by a praetor appeared on their heels forcing them to turn back and confront it. The two armies camped for the night in close proximity.</p><p>The Gauls kept their campfires burning, but withdrew their infantry, leaving only their cavalry behind. The horsemen had orders that when the enemy approached, they were to retire toward Faesulae and their infantry, which lay in ambush. At daybreak, the Romans, seeing the cavalry alone and thinking the Gauls had taken to flight, followed the cavalry with all speed. On their approach the Gauls sprang from ambush and attacked them. A stubborn conflict took place, but finally the numbers and courage of the Gauls prevailed. The surviving Romans retreated to a hill, while the Gauls set up a loose blockade. These fugitives would all have been lost, but the consul Aemilius Paullus arrived with a relief army that night. The Gallic kings chose to retreat with their booty rather than fight another battle. They broke camp before daybreak and retreated along the seacoast through Etruria</p>
+  225-01-01 BC / 225-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Gallia","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Gallia"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0208"}
+  leader{"Aneorestes","Concolitanus","Unknown"}
+}
+
+"CnC-A 0209 - Telamon" {
+  10630
+  <p>After their victory at Clusium, over 60,000 Gauls under Kings Aneorestes and Concolitanus retreated northwards, pursued by Aemilius Papus with about 30,000 troops. It looked like the Gauls would escape with their booty. Then fortune smiled on Rome. The consul Atilius Regulus was returning from suppressing a rebellion in Sardinia with his army of 25,000 men. He landed at Pisae and was moving south along the same coastal road that the Gauls had chosen for their retreat. Upon learning from his scouts that a Gallic army was approaching, Regulus ordered his legions into fighting order while he advanced at full speed with his cavalry and light infantry to occupy a key hill before the enemy arrived. The Gauls at once sent their own cavalry, chariots, and some light-armed troops to dispute the possession of the hill. When Papus arrived from the south, he also sent his cavalry to the hill, and advanced with his legions. At first the battle was confined to the hill and both armies watched the fighting unfold. Regulus fell, but the Roman cavalry, after a stubborn struggle, gained the hill. Meanwhile, Aenorestes and Concolitanus formed two battle lines back-to-back as the Roman infantry converged on the Gauls from north and south. There was a dreadful din as the whole Gallic army shouted war cries and the Roman light infantry hurled javelins. The Gallic host rushed wildly on their enemy in a rage, but the Roman maniples held their ground. Finally, the Roman cavalry charged down the hill and the Gallic infantry were cut to pieces.</p>
+  225-01-01 BC / 225-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Gallia","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Gallia"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0209"}
+  leader{"Aneorestes","Concolitanus","Atilius Regulus","Aemilius Papus"}
+}
+
+"CnC-A 0210 - Clastidium" {
+  10630
+  <p>Not content with the slaughter of the Gauls at Telamon, the Romans launched a series of punitive expeditions into Cisalpine Gaul over the next three years. In 222 a combined Roman army under the consuls Marcus Claudius Marcellus and Gnaeus Cornelius Scipio, was besieging the Gallic town of Acerrae. The Gallic King Britomartus responded by laying siege to Roman-allied Clastidium with an army of 10,000 men. While Scipio pressed the siege of Acerrae with the legions, Marcellus set off with all the Roman cavalry (less than 4,000) and the pick of the light equipped velites to rescue Clastidium. Marcellus was a veteran of the First Punic War and already distinguished for his bravery and prowess.</p><p>Without halting day or night, Marcellus surprised the Gauls at Clastidium. Faced with a Roman force far sooner than expected, the barbarians were forced to lift the siege and march out to meet the oncoming Romans. Though not yet in good order, the Gauls immediately charged in their customary manner with great violence and dreadful threats. King Britomartus rode out in front of his troops, Marcellus led his cavalry forward, extending his wings into a thin line. When he was not far from then enemy, he turned to charge. Meanwhile Britomartus saw Marcellus, and rode far out in front of the rest to challenge him. Marcellus rushed upon the king and slew him with three quick blows. With their king dead the Gallic forces were cut down or put to flight in short order. Never before in Roman history had their cavalry inflected such a defeat against a larger force both dismounted and mounted. Marcellus was awarded the spolia optima for slaying an enemy king in single combat. Both Marcellus and Gnaeus Scipio would soon be facing Hannibal and the Carthaginians.</p>
+  222-01-01 BC / 222-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Gallia","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Gallia"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0210"}
+  leader{"King Britomartus","Marcus Claudius Marcellus"}
+}
+
+"CnC-A 0211 - Arausio" {
+  10630
+  <p>Following the Punic Wars, Rome set out to consolidate the territories it had captured beyond the Alps. At the same time a major migration by the Cimbri, Teutons and Ambrones under the Kings Boiorix and Teutobod was moving south, reportedly with over 200,000 men (a great exaggeration, more likely the fighters numbered about 50,000). Two Roman armies were went to stop this migration with nearly 80,000 legionnaires. However, bitter differences between the Consul Gnaeus Mallius Maximus and the Proconsul Quintus Servillius Caepio prevented the two Roman armies from cooperating, with devastating results.</p><p>The Roman forces were camped by the Rhone River, near Arausio (modern Orange). However, the armies did not camp together. Caepio pitched his tents closer to the enemy, and his dispositions are shown on the battlefield (Maximus and his army have made camp off map). The sight of two Roman armies made Boiorix cautious, and he entered into negotiations with Maximus. Caepio, motivated by hatred and envy of Maximus, foolishly launched an attack on the barbarians. Caepio's army was annihilated due to the hasty nature of this piecemeal assault. With a boost in confidence from this easy victory, the barbarians proceeded to advance, pin Maximus' army against the river, and destroy it also. In terms of human lives lost, Arausio was among the most lethal battles in world history, and Rome's worst defeat since Cannae. The terrible defeat had one beneficial result for Rome. It gave Gaius Marius the opportunity to come to the fore and radically reform the organization and recruitment of Rome's legions.</p>
+  105-01-01 BC / 105-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Gallia","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Gallia"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0211"}
+  leader{"King Boiorix","King Teutobod","Quintus Servillius Caepio"}
+}
+
+"CnC-A 0212 - Scirthaea" {
+  10630
+  <p>The fircest slave revolt outbreak, before Spartacus, was known as the Second Sicilian Slave War (104 - 100 BC). Publius Licinius Nerva, governor of Sicily, in accordance with a Senatorial order that no citizen of an allied state could be kept as a slave in a Roman province, set free a number of Sicilian slaves. However, he ceased the emancipations after raising expectations, creating major unrest. Athenion led a slave rebellion in the west, resulting in the Battle of Lilybaeum. Meanwhile, other slaves also revolted and elected Salvius as their king. In order to prevent internecine slave fighting, Athenion deferred to Salvius' authority and became his general. Their combined armies were said to number 20,000 foot and 2,000 horse. Salvius defeated the forces of Nerva and the rebellion spread throughout all of Sicily.</p><p>The Roman Senate dispatched the Praetor Lucius Lucullus to Sicily with 1,600 reinforcements and he incorporated the remnants of Nerva's army into his own. Salvius and Lucullus met near Scirthaea. During the battle, Athenion achieved miracles with the rebel cavalry until he was wounded and left for dead. The Romans then won the battle and massacred most of the slaves rather than take prisoners. For partisan political reasons, Lucullus did not exploit his victory to hunt down the last of the slave rebels, but left a simmering rebellion to his successor C. Servilius, who proved to be incompetent. Thus the rebellion continued until 100 BC.</p>
+  103-01-01 BC / 103-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Slaves","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Slaves"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0212"}
+  leader{"Salvius","Lucullus"}
+}
+
+"CnC-A 0213 - Aquae Sextiae" {
+  10630
+  <p>Following the disaster at Arausio in 105 BC, Rome elected Marius as Consul to deal with the emergency. He was granted a reprieve as the Teutones and Ambrones decided to invade Spain rather than Italy, and spent the years 104 - 103 reorganizing the Roman army. Then in 102 BC, the Germanic tribes once again moved toward Rome. They reportedly numbered over 110,000 men, but half that number is a more likely estimate. Marius crossed the Alps with an army of over 40,000 legionnaires and Ligurian auxiliaries and set up camp near the coastal route being followed by the Teutone and Ambrone tribes under their King Teutobodus. Marius allowed the two tribes to pass and then followed them until they came to Aquae Sextiae. He occupied the high ground in view of the enemy, after posting an ambush force under Marcellus. Hostilities began almost immediately. The tribes charged up the hill, but the terrain was n the Roman favor and they forced back the barbarians. At this time Marcellus' ambush force appeared, and charged into the enemy rear. The entire horde broke and fled. Tens of thousands of the barbarians were slain, and many captured, including Teutobodus. Hundreds of the Germanic women committed mass suicide rather than become slaves of Rome.</p>
+  102-01-01 BC / 102-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Germany","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Germany"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0213"}
+  leader{"Teutobodus","Marius"}
+}
+
+"CnC-A 0214 - Vercellae" {
+  10630
+  <p>Following his victory over the Teutons and Ambrones at the Battle of Aquae Sextiae, Gaius Marius moved east to join Quintus Lutatius Catulus against the Cimbri in the Po valley of northern Italy. Beorix, the Cimbri king, had been waiting for his allies, the Teutones, to join him. However, when Marius brought the Teuton kings out in chains, he rashly decided to fight alone.</p><p>The two armies drew up for battle on a level plain. The fighting opened with the Cimbric cavalry moving to attack Marius' left. In the center, a huge mass of infantry headed straight for the center and Catulus' legions. Marius' well-trained veteran legions foiled the Cimbric cavalry charge and then joined Catulus' legions in the center that were taking the brunt of the Cimbri attack. Meanwhile, Marius' lieutenant Lucius Cornelius Sulla was winning his battle on the right wing. The legions of Marius and Catulus in the center ultimately forced the Cimbric infantry to fall back, and the retreat turned into a rout as they fled back to their camp. Thousands of Cimbri were taken prisoner while many more were slain, including Beorix. As a result, the tribes from the north ceased to pose a threat to Roman expansion. Disputes over the credit for this great victory sowed the seeds of the later Civil War between Marius and Sulla.</p>
+  101-01-01 BC / 101-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Germany","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Germany"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0214"}
+  leader{"Beorix","Marius"}
+}
+
+"CnC-A 0215 - Mount Vesuvius" {
+  10630
+  <p>The greatest slave revolt against Rome was led by a gladiator named Spartacus. The was a Thracian slave, trained as a gladiator by his owner, Lentulus Batiatus, at a gladiator school near Capua. Spartacus escaped from the school with 78 fellow gladiators. After some successful skirmishes with local guards, his force set about raiding the countryside, freeing more slaves to join their ranks. Spartacus set up a base on the defensible slopes of Mount Vesuvius. Remembering the earlier Slave Wars in Sicily, the Senate in Rome took this outbreak seriously. They dispatched Praetors Claudius Glaber and Publius Varinius with 3,000 men to suppress the uprising. Glaber and Varinius blockaded Spartacus at his base on Mount Vesuvius, intending to starve out the slaves since their camp was only accessible by a narrow and difficult passage. The wily Spartacus did not intend to be starved into submission, so he devised a daring plan. He ordered ladders to be made from the vines that grew on Vesuvius. Spartacus and most of his followers quietly descended the vine ladders, undetected by the Romans. Soon, a picked force of the slaves rushed the Roman camp from the mountain. Once the Romans were fully occupied by this attack, Spartacus and his force struck unexpectedly. Attacked from both sides, the Roman camp fell in short order. This victory over regular Roman forces allowed Spartacus to expand his operations and recruit a massive slave army.</p>
+  73-01-01 BC / 73-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Slaves","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Slaves"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0215"}
+  leader{"Spartacus","Claudius Glaber","Publius Varinius"}
+}
+
+"CnC-A 0216 - Mount Garganus" {
+  10630
+  <p>Spartacus was an able strategist, and he knew that his rag-tag army could not expect to defy Rome indefinitely. Spartacus planned to escape from Roman territory over the Alps, and headed north through Apulia. He divided his ever-growing army and placed his lieutenant, Crixus, a Gaul, in charge of a force of 30,000 German and Gallic slaves, while he maintained personal command of the remaining 40,000 fighters. Crixus was over-confident after their many victories and allowed Spartacus to march far ahead while he allowed his men to continue their raiding and plundering. The consul Lucius Gellius Publicola came upon them suddenly and forced a battle. Crixus hastily formed his available men into a line of battl, but Publicola's legionnaires cut them to pieces. Crixus was killed, along with two-thirds of his men. The survivors scattered and many probably re-joined Spartacus' main column.</p>
+  72-01-01 BC / 72-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Slaves","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Slaves"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0216"}
+  leader{"Crixus","Gellius"}
+}
+
+"CnC-A 0217 - Picenum" {
+  10630
+  <p>Following the defeat of his lieutenant Crixus, Spartacus continued north for the Alps, passing through Picenum. Two Roman armies moved against him. From the south, the consul Lucius Gellius Publicola pursued with his army, fresh from his victory at Mount Garganus. To the north, his fellow consul Glaeus Cornelius Lentulus Clodianus moved to block Spartacus' path. The Roman plan was initially successful. Spartacus was cornered, and the two Roman armies advanced to within sight of each other. Unfortunately, the Roman commanders, disdainful of Spartacus' abilities, became too clever for their own good. They left an inviting gap between the two Roman armies, as if in error, to invite Spartacus to attack between both armies. Spartacus had other ideas. He split his army, leaving a small force to keep Lentulus busy, while he led the main attack against Gellius. Outnumbered, this Roman army was defeated. Spartacus then turned his troops against Lentulus. The second army was also smashed. The Roman leaders escaped capture, but large numbers of prisoners and much equipment fell into the hands of the slave army. Spartacus sacrificed 300 Roman captives to avenge Crixus, and then resumed his march to the Alps and freedom.</p>
+  72-01-01 BC / 72-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Slaves","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Slaves"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0217"}
+  leader{"Spartacus","Lucius Gellius Publicola","Gnaeus Cornelius Lentulus Clodianus"}
+}
+
+"CnC-A 0218 - Mummius' Defeat" {
+  10630
+  <p>In the autumn of 72 BC, Marcus Licinius Crassus was chosen by the Senate to lead the war against Spartacus' slave army. Crassus, a leading politician, was also rumored to be the richest man in Rome. How all this would translate into military success was anybody's guess, but many noble volunteers flocked to join his army of six legions. Meanwhile, the victorious slave army was marching southward again. Spartacus proposed a negotiated settlement, but Crassus refused to consider it. Next, Crassus assigned two of the legions to his deputy, Mummius, and gave him the task of harassing the flank of the slave army. Mummius was to slow down the slave army while the main force under Crassus waited on the border of Picenum, expecting Spartacus would come back that way. Unfortunately, Mummius wanted to maximize his own glory and foolishly attacked, even though outnumbered. His detachment was routed, and many of his legionnaires survived only by abandoning their arms and fleeing. Crassus subjected the remnants of Mummius' legions to decimate, a harsh punishment not used in many years. One man in each squad of ten was chosen by lot and executed before the whole army. The legionnaires learned to fear Crassus more than they feared Spartacus.</p>
+  72-01-01 BC / 72-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Slaves","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Slaves"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0218"}
+  leader{"Spartacus","Mummius"}
+}
+
+"CnC-A 0219 - Bruttium" {
+  10630
+  <p>Spartacus retreated through Lucania into Bruttium and toward the sea. He encamped at Rhegium where he attempted to gain passage to Sicily with the help of some Cilician pirate ships. Sparctacus judged he could open a new front against Rome by starting another slave rebellion in Sicily. Unfortunately, the trecherous pirates deceived Spartacus. After coming to terms with him and receiving payment, they simply sailed away. When Crassus came upon Spartacus at Rhegium, he decided to exploit the engineering skills of his legions. The Roman army built a wall and ditch across the isthmus, some 30 kilometers in length. Spartacus was walled in, but he did not attempt to break out until his provisions began to fail. After two strenuous efforts to break free, his main force still remained trapped. Waiting and watching for a weak spot, the opportunity came one snowy night. The Slave army crossed the ditch and breached the wall to gain its freedom, but casualties were still very heavy, and only about a third of Spartacus's men were able to escape. Crassus hurried after them in pursuit.</p>
+  71-01-01 BC / 71-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Slaves","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Slaves"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0219"}
+  leader{"Spartacus","Crassus"}
+}
+
+"CnC-A 0220 - Camalatrum" {
+  10630
+  <p>After Spartacus escaped the Roman siege in Bruttium, the Gallic section of his slave army moved separately under the command of Cannicus and Castus. Marcus Licinius Crassus was now in a race, not only with the enemy, but also with his rival, Gnaeus Pompey. The Senate had recalled Pompey and his army from Spain to reinforce Crassus. However, Crassus felt he had nearly won this war, and now wanted to complete it before Pompey could arrive and steal any of his glory. Desperate to annihilate the slaves before Pompey's arrival, Crassus saw a possible move. He dispatched Quintus Marcius Rufus to make a flank march and gain the rear of the Gallic detachment of the slave army. Two Gallic women spotted Marcius' flanking force and raised the alarm. Marcius' smaller command was in great danger until Crassus, after a forced march, engaged the Gauls in battle from the front. The two Roman forces would have overwhelmed the Gauls, had not Spartacus come to their rescue with the rest of the slave army, allowing them to escape. Crassus scored an incomplete victory, and Spartacus continued his retreat.</p>
+  71-01-01 BC / 71-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Slaves","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Slaves"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0220"}
+  leader{"Spartacus","Crassus"}
+}
+
+"CnC-A 0221 - Silarus" {
+  10630
+  <p>Spartacus found his army trapped between the armies of Marcus Licinius Crassus to his front and Gnaeus Pompey, approaching from the rear. Crassus had started construction of his camp when a skirmish between the two armies escalated into a full battle. Crassus's troops formed more quickly, and launched an effective attack before Spartacus could deploy all of his troops. Spartacus, seeing that his army was in jeopardy, killed his warhorse in front of the troops he had formed, a clear sign of defiance that could only mean one thing - he would fight to the death. As it became clear that his army was being defeated, Spartacus attempted to cut his way through the Roman troops to kill Crassus in one last desperate attempt to save the day. Spartacus was cut down by an arrow. in the end, thousands of men lay dead near the River Silarus, with Spartacus simply one body amongst many. Over 6,000 slave soldiers were captured, and Crassus had them all crucified along the Appian Way, from Capua to Rome. Crassus had defeated Spartacus, but Pompey managed to mop up a few thousand slave fugitives, and took credit for ending the rebellion.</p>
+  71-01-01 BC / 71-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Slaves","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Slaves"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0221"}
+  leader{"Spartacus","Crassus"}
+}
+
+"CnC-A 0222 - River Sabis" {
+  10630
+  <p>Gaius Julius Caesar formed a political alliance with Gnaeus Pompey and Licinius Crassus that became known as the "First Triumvirate." Caesar obtained the governorship of Gaul as a proconsul, and immediately set about expanding his province from the Mediterranean coast inland. In 58 BC, after many Belgic tribes had surrendered to Caesar, he marched north against the Nervii, the most powerful of these tribes. Joined by other lesser tribes, including the Atrebates and Viromandui, the Nervii horde massed on the north side of the river Sabis. Poor scouting by the Romans only detected some cavalry acting as a decoy, while the Nervii king Boduognatus concealed his main body in the woods, not far from the main camp. Only when the Romans had dispersed from their tactical formation and started to build their camp did the Belgic tribesmen charge from the woods. The surprise was complete. Caesar was caught off guard, but in true form, he set about immediately to rally his troops. The Romans quickly reformed - a testimony to his personal magnetism and to their training. This hurriedly assembled line held until the two legions that were marching with the baggage could come forward. These reinforcements, along with the famous Tenth Legion's bold actions, and the vigor of his deputy Labienus, enabled the Romans to annihilate the Nervii army.</p>
+  57-01-01 BC / 57-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Belgium","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Belgium"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0222"}
+  leader{"Boduognatus","Julius Caesar"}
+}
+
+"CnC-A 0223 - Sotium" {
+  10630
+  <p>Following two years of successful campaigning, Caesar believed he had pacified southern and western Gaul and left for Illyria. Sensing an opportunity, the Veneti and neighboring tribes on the Atlantic coast rebelled. These coastal tribes had their own navy, so when Caesar returned, he had a Roman fleet built to subdue them. The Roman fleet won a decisive victory at Morbihan Bay. Meanwhile, to defeat the rebellion on land, Caesar detailed Publius Crassus (son of the great Marcus Licinius Crassus) to Aquitania to subdue the Sotiates, so that they could not aid the Veneti. Adiatuanos, the King of the Sotiates, levied a large army, particularly strong in cavalry. When Crassus was marching through their territory, he was attacked while still in column of march. Adiatuanos first attacked with his cavalry. When they were repulsed, his concealed foot soldiers fell on the Roman column. Only after a fierce struggle did the Sotiates break and flee back to the town of Sotium. Crassus besieged the town and Adiatuanos and the inhabitants soon capitulated.</p>
+  56-01-01 BC / 56-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Gaul","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Gaul"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0223"}
+  leader{"Adiatuanos","Publius Crassus"}
+}
+
+"CnC-A 0224 - Invasion Britain" {
+  10630
+  <p>With most of Gaul under his control, Caesar saw a need to pacify the nearby British coast, lest this island serve as a sanctuary and base for anti-Roman Gauls. Caesar sailed to Britain late in the campaign season with only two legions. The intended landing sight, above the cliffs of Dover, was lined with warriors, which forced Caesar to sail further north. The British cavalry and chariots kept pace with the fleet, however, and when the ships landed between Walmer and Deal, the Britons were waiting. The heavily laden Roman troops could only land by jumping into the sea and wading ashore.</p><p>Wild melees ensued all along the beach and only after a number of cohorts gained dry land, following the lead of the Tenth Legion, did they form up and charge. This attack finally drove the Britons from the beach. Without cavalry, because his cavalry transports never arrived, Caesar was not able to turn the retreat into a rout.</p><p>News spread of the Roman victory and tribal chiefs appeared before Caesar to offer submission. Unfortunately, a violent storm shatterred the unprotected Roman fleet, and Caesar was forced to return to Gaul before he could exploit the fruits of this first invasion.</p>
+  55-01-01 BC / 55-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Britain","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Britain"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0224"}
+  leader{"Unknown","Julius Caesar"}
+}
+
+"CnC-A 0225 - River Stour" {
+  10630
+  <p>In 54 BC, Caesar launched a second invasion of Britain which was better planned and far more formidable than the first one. The invasion force consisted of five legions, auxiliaries, and 2000 cavalry, transported on 800 vessels. The Britons, awed by the size of the fleet, returned inland. This time the landing (near Sandwich) was unopposed.</p><p>As Caesar moved inland, he encountered a delaying force of Briton charioteers and cavalry in front of the River Stour. The Romans found it difficult to come to grips with the elusive Britons at first, but in time they drove them back. The Roman cavalry played a key role in bringing the British chariots to battle.</p><p>Post Battle: After retreating across the Stour, the tribal forces joined the rest of the Britons at an oppidum near Bigbury. Caesar promptly crossed the Stour, stormed, and captured, this fortified position.</p>
+  54-01-01 BC / 54-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Britain","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Britain"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0225"}
+  leader{"Unknown","Julius Caesar"}
+}
+
+"CnC-A 0226 - Foraging Party" {
+  10630
+  <p>When Caesar resumed his march inland, the Britons united under their newly appointed leader, Cassivellaunus. He ordered his troops to avoid pitched battles with the legions. Instead, they were to just harry the flanks of the legions and to attrit the Roman cavalry by drawing them into skirmishes, only to retire after a brief fight. Caesar was impressed with the mobility and open order fighting capability of the tribesman. He countered by increasing the size of his foraging parties and emphasizing the need for the legionnaires to support the cavalry.</p><p>The next Roman foraging party was almost 20,000 strong, with three legions and all the cavalry. Caesar assigned the legate Gaius Trebonius to lead this detachment. Aware of the large amount of Roman infantry in the column, Cassivellaunus still broke his own rules and attacked - confident that his forces could strike and retire before the legions could close to battle. Trebonius ordered a counter attack and the Roman cavalry, closely supported by the legions, broke out of the attempted encirclement. The Roman cavalry then charged home and routed the Britons. The defeat broke the British alliance of tribes and gave Caesar temporary control of this part of the island.</p>
+  54-01-01 BC / 54-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Britain","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Britain"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0226"}
+  leader{"Cassivellaunus","Gaius Trebonius"}
+}
+
+"CnC-A 0227 - Teutoburger Wald - Part I, Ambush" {
+  10630
+  <p>Julius Caesar had established Rome's northeast boundary as the Rhine River a half century earlier. But the Emperor Caesar Augustus decided to extend imperial control all the way to the Elbe. A task that seemed easy on a map in Rome proved far more difficult to the commanders in the field. Yet, despite difficulties, Rome's conrol was extended to the Elbe. The warlike Germanic tribesmen, temporarily subdued, lacked only an inspirational leader to spark an uprising. Arminius was the man.</p><p>As a young German noble of the Cherusci tribe, Arminius had been placed under Roman tutelage, a common practice. He served in the Roman amy as a commander of auxiliaries. This only served to fuel his hate, but he bided his time and learned their tactical methods. His opportunity to strike arose when Publius Quintilius Varus was leading three legions on a march through Germany. Arminius knew it would be difficult for the Germans to defeat a well-led Roman force in the open, so he devised a plan to lure Varus' legions toward Kalkriese Hill, where he would launch his ambush. The Germans constructed a camouflaged sod wall to improve the already ideal ambush site. The seemingly loyal Arminius accompanied Varus' march column until one night he and his German auxiliaries disappeared. A good tactician would have sensed trouble, but Varus arrogantly elected to march on without adequate reconnaissance. At dawn the next day, as the Romans undertook to march through the area on a narrow track between woods and swamp, the Germans attacked from the woods. In a scene eerily reminiscent of Lake Trasimenus, the Romans were pinned where they could not properly deploy. Roman counterattacks proved ineffectual and all the Roman infantry could do was endure the constant assaults. As night fell, Varus' survivors constructed a fortified camp.</p>
+  0009-01-01 / 0009-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Germany","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Germany"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0227"}
+  leader{"Arminius","Varus"}
+}
+
+"CnC-A 0228 - Teutoburger Wald - Part II, Fortified Camp" {
+  10630
+  <p>Throughout the first day of battle, German attacks had harassed the disjointed Roman column as they struggled along. That night Varus' men constructed a fortified camp knowing that Arminius would not dare assault a well-manned prepared position. The Romans were still in dire straits. Lacking provisions, they had but two choices - remain and starve, or face the prospect of death fighting their way out. Varus chose to fight.</p><p>On the second day, even though the Germans no longer had the element of surprise, the constricted terrain still put the Romans at a severe disadvantage. By day's end, 13,000 Romans and auxiliaries lay dead in the Teutoburger wilderness when the column broke out of the dense forest. Once again the Roman soldiers built their camp. The 7000 or so survivors must have known that it would be their last. Varus, it is written, knew the end was near and took his life. Numonius Vala rallied the remnants of the cavalry and attempted a breakout the next morning. The Germans were waiting, and all were slaughtered. The Roman foot soldiers that remained fought on, and a handful of reduced cohorts managed to slip through the German lines. Over 15,000 Romans had fallen, and the news of the disaster profoundly affected Caesar Augustus, who cried for days on end, "Varus, where are my legions?" A series of expeditions would be launched to recover the three lost legionary eagles. The three destroyed legions, the 17th, 18th, and 19th, were never rebuilt, and remained forever disgraced.</p>
+  0009-01-01 / 0009-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Germany","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Germany"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0228"}
+  leader{"Arminius","Vala"}
+}
+
+"CnC-A 0229 - Angrivarii Rampart" {
+  10630
+  <p>Following the catastrophe at the Teutoburger Wald, Augustus dispatched a series of punitive expeditions into Germany. In 14 AD, Tiberius became emperor and assigned his adopted son Germanicus Julius Caesar to the German province. In AD 16, Arminius decided the time had come to destroy another Roman army.</p><p>He deployed his Germanic army to ambush Germanicus at a point in a plain between a forest and a deep, broad stream. His infantry waited behind an old boundary rampart while he deployed his cavalry in the woods, waiting to charge out onto the Roman rear. Germanicus was a far better tactician than Varus. He scouted well and did not fall for the trap, sending auxiliary infantry into the forest to occupy the German cavalry while his legions attacked the ramparts.</p><p>The first Roman attempt at the ramparts was repulsed, so Germanicus orderd forward his engines and light troops to soften up the Germanic position. The second attack broke through the rampart and the Germans behind the ramparts fled. The battle then shifted to the woods where the fighting went on until dusk. Arminius withdrew in the darkness and the Roman cavalry pursuit was indecisive. Germanicus had won a tactical victory with little strategic impact. Arminius had survived with a depleted but intact army to continue the fight. In the following year, the Emperor Tiberius decided to abandon Germany and fix the limit of the Roman Empire at the Rhine. Roman expansion was at an end, and the Germanic tribes remained free, with dramatic implications for the future of Europe.</p>
+  0016-01-01 / 0016-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Germany","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Germany"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0229"}
+  leader{"Arminius","Germanicus"}
+}
+
+"CnC-A 0230 - Cefn Carnedd" {
+  10630
+  <p>The Roman conquest of Britain had been underway for four years when a new Roman commander, Publius Ostorius Scapula, was assigned to the province in 47 AD. He faced an on-going insurgency, led by Caratacus, chieftain of the Cautuvellauni tribe. In 51 AD, Caratacus took up a good defensive position with his tribesmen on high ground with the Severn River to his front. Most of the hills were steep, and he constructed rough stone ramparts where the hill slope was not as great, making it difficult for the Romans to close with his forces. At first, Scapula did not want to attack the strong defensive position. Only the eagerness of his men - and the prospect to finally bring Caratacus to battle after chasing him for so long - changed his mind. Scapula ordered a frontal attack.</p><p>The Romans crossed the stream with little difficulty, but suffered heavy casualties from the rain of enemy missiles. Once across, the legionaries swarmed over the stone ramparts and up the steep hills. At close quarters, the Romans' superior weapons and tactics took a heavy toll on the tribesmen, and their resistance collapsed. Caratacus escaped, but the battle of Cefn Carnedd was the final battle in his resistance to Roman rule.</p>
+  0051-01-01 / 0051-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Britain","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Britain"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0230"}
+  leader{"Caratacus","Publius Ostorius Scapula"}
 }
 
