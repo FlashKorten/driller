@@ -60,7 +60,8 @@ newtype Longitude = Longitude { getValueLongitude :: Int }
 newtype FromRange = FromRange { getValueFromRange :: Int }
 newtype UpToRange = UpToRange { getValueUpToRange :: Int }
 
-data GameResult = GameResult { getGames      :: [Game]
+data GameResult = GameResult { getNoResults  :: Int
+                             , getGames      :: [Game]
                              , getGenres     :: [Genre]
                              , getThemes     :: [Theme]
                              , getMechanics  :: [Mechanic]
@@ -80,7 +81,7 @@ data GameResult = GameResult { getGames      :: [Game]
 }
 
 emptyGameResult :: GameResult
-emptyGameResult = GameResult [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
+emptyGameResult = GameResult 0 [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
 
 data Game = Game { getGameId        :: Int
                  , getGameTitle     :: Text.Text

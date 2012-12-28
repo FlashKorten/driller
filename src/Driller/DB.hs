@@ -132,7 +132,8 @@ fetchPositiveAnswer c joinMap p = do
 
 prepareResult :: ParameterMap -> Connection -> [Int] -> IO Answer
 prepareResult parameterMap c ids = do
-    games      <- if length ids > 50 then return [] else fetchGames c ids
+    let numberOfResults = length ids
+    games      <- if numberOfResults > 50 then return [] else fetchGames c ids
     genres     <- fetchForResult parameterMap "genre"     fetchGenre     fetchGenres     c ids
     themes     <- fetchForResult parameterMap "theme"     fetchTheme     fetchThemes     c ids
     mechanics  <- fetchForResult parameterMap "mechanic"  fetchMechanic  fetchMechanics  c ids
@@ -149,7 +150,8 @@ prepareResult parameterMap c ids = do
     upToYears  <- fetchSimpleValuesForResult parameterMap "upToYear"  fetchUpToYears  c ids
     fromRanges <- fetchSimpleValuesForResult parameterMap "fromRange" fetchFromRanges c ids
     upToRanges <- fetchSimpleValuesForResult parameterMap "upToRange" fetchUpToRanges c ids
-    return $ Right GameResult { getGames      = games
+    return $ Right GameResult { getNoResults  = numberOfResults
+                              , getGames      = games
                               , getGenres     = genres
                               , getThemes     = themes
                               , getMechanics  = mechanics
