@@ -1,5 +1,6 @@
 dist
 cabal-dev
+tags
 *.swp
 *.o
 *.hi
