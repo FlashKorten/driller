@@ -4474,3 +4474,1435 @@
   leader{"Caratacus","Publius Ostorius Scapula"}
 }
 
+"CnC-A 0308 - Colline Gate" {
+  10630
+  <p>Lucius Cornelius Sulla became the leader of the "optimates" faction in the civil war with the "populares" led by Gaius Marius. Sulla seized Rome in 88 BC and reorganized the government to his liking. However, when Sulla marched east to campaign against Mithridates of Pontus, Marius regained control of the capitol. Many of Sulla's supporters were hunted down and killed. Although Marius died soon after, his son and other "populares" leaders maintained control of Rome. Meanwhile, Sulla defeated Mithridates and outmanruvered a Marian army in Pontus, returning to Italy in 82 BC to restore his position and punish the Marians. Sulla quickly defeated the Marian forces in Etruria and then marched to take control of Rome in November</p><p>The remnants of the Marian forces, after their losses in Etruria, joined up with the Samnite army under Pontius Telesinus. The combined army advanced on Rome, and encamped near the Colline Gate on the northwest wall of Rome. Sulla took up a position just outside the gate and deployed. The ensuing battle was a desperate struggle, with both sides believing they were fighting to save Rome. Sulla's legions were pushed hard on his left flank, and his men literally fought with their backs against the city walls. However, Crassus' forces, fighting on Sulla's right, managed to turn the opposition's flank and drive them back. Riding his white horse, Sulla arrived on the left and rallied the flank. Still, it was not until the early hours of the next morning that the Samnites and the Marian forces were broken. In the aftermath, Sulla's enemies in Rome were rooted out and eliminated, leaving him with absolute power as dictator.</p>
+  0082-01-01 BC / 0082-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Samnite","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Samnite"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0308"}
+  leader{"Pontius","Sulla"}
+}
+
+"CnC-A 0309 - Baetis River" {
+  10630
+  <p>Quintus Sertorius was a Roman noble who gained a reputation as a skillful military commander in the wars with the Cimbri and Teutones, and then in the Social War. Sertorius supported Marius "populares" and opposed Sullas' "optimates" during the first Roman civil war, 88 - 81 BC. After being driven from Italy by Sulla and then expelled from Spain by Sulla's lieutenants, Sertorius conducted a successful campaign in Mauritania, creating a well-trained army in the process. At this time, Lusitanian emissaries approached Sertorius to beg him to lead them in a rebellion against Sulla's harsh rule in Spain. After winning a naval battle against Aurelius Cotta, Sertorius landed in southern Spain with a small force of Roman infantry and Moorish cavalry that was quickly joined by Lusitanian tribal levies of horse and foot.</p><p>The Sullan governor of Hither Spain, Lucius Fufidius, gathered his forces and moved to cut Sertorius off at the Baetis River. Although Fufifius commanded a larger army that also included Roman legionnaires, Sertorius outmaneuvered him with his more mobile irregular force. Sertorius won a great victory. Fufidius retired and thousands more flocked to join Sertorius after his stunning victory.</p>
+  0080-01-01 BC / 0080-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Sertorian","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Sertorian"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0309"}
+  leader{"Quintus Sertorius","Lucius Fufifius"}
+}
+
+"CnC-A 0310 - Lauron" {
+  10630
+  <p>Quintus Sertorius defeated a series of Roman generals and nearly all of Spain joined his rebellion. He solidified his support through a just administration of the provinces and gained the loyalty of most of the Spanish tribes. Sertorius came to be known as the "second Hannibal" due to his military genius and the fact that he also had lost one eye. Marcus Perpenna arrived from Italy to reinforce Sertorius with a small army and a large number of outlawed "populares" nobles. Sertorius then established a government in exile, creating a "senate" of 300 of the outlawed Roman nobles. Rome was forced to send her best general, the arrogant and ambitious Gnaeus Pompey, to Spain to suppress the uprising.</p><p>Sertorius laid siege to the Roman allied city of Lauron and Pompey marched to relieve it. A nearby hill appeared to be important and both armies raced to capture the key position. Although Sertorius' forces succeeded, Pompey thought that he had trapped the enemy between the city and his army. Pompey, disdainful of Sertorius and his army, sent a message to the citizens of Lauron, for them to come to the city walls and watch the destruction of Sertorius. Pompey, however, was so intent on his move to trap Sertorius that he failed to observe a hidden force of 6000 Sertorian soldiers. These troops burst from cover and attacked the rear of Pompey's army. At the same time, Sertorius' cavalry charged home. Pompey was forced to retire in disorder, and could only watch as Lauron was captured and burned to the ground.</p>
+  0076-01-01 BC / 0076-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Britain","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Britain"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0311"}
+  leader{""}
+}
+
+"CnC-A 0311 - Valentia" {
+  10630
+  <p>In the campaigns fought in Spain following the battle of Lauron, Quintus Sertorius proved to be a superior general to Gnaeus pompey. However, Pompey recognized that even if he couldn't defeat Sertorius, he could defeat his lieutenants.</p><p>Pompey had begun another campaign against the rebel towns. Sertorius detailed two of his subordinate Roman exiles, Gaius Herennius and Marcus Perpenna, to march to Valentia, and keep Pompey occupied while he dealt with some tribes that had defected. Pompey advanced against the combined forces and forced a battle. Unfortunately for Sertorius, Herennius and Perpenna could not agree on the overall command and fought as separate forces. Pompey attacked Herennius' legions first while Perpenna (nursing both pride and ambition) did nothing to assist. However, before Pompey could turn on the other wing, Perpenna withdrew with his forces. Over 10,000 rebels were slain. Pompey had his first major victory in Spain.</p>
+  0075-01-01 BC / 0075-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Sertorian","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Sertorian"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0311"}
+  leader{"Gaius Herennius","Marcus Perpenna","Pompey"}
+}
+
+"CnC-A 0312 - Sucro" {
+  10630
+  <p>Gnaeus Pompey had regained his confidence after his victory at Valentia, and now moved quickly to engage Quintus Sertorius before Quintus Caecilius Metellus could arrive with his reinforcing army and share in the honor of victory. Sertorius was equally eager to fight before Metellus' arrival would tip the odds in Pompey's favor. As the battle commenced, Sertorius at first deployed opposite Afranius, holding him in check until he received word that his left (under the vain, but mediocre Perpenna) was giving way before Pompey's onslaught. Sertorius then drove Afranius back and wheeled to the assistance of his left wing. Pompey's forces, advancing in apparent victory, were struck in the flank and swept off the field in disorder. Pompey only managed to escape by abandoning his horse and sneaking away on foot. During the night, his badly beaten army was bolstered by Metellus' arrival. The opposing armies deployed again for battle the next day, but Sertorius, seeing numbers were now against him, withdrew his weakened but victorious army to his mountain strongholds to fight another day.</p><p>Sertorius remained undefeated. He negotiated alliances with the Cilician pirates, Mithridates VI of Pontus, and Spartacus in Italy, creating a serious crisis for Rome. However, all of Sertorius' successes were undone by the petty jealousy of Perpenna and a small group of Roman exiles, who assassinated the great general at a banquet. Once Sertorius had been killed in 72 BC, Pompey would next race back to Italy to join with Crassus in the final campaign against Spartacus.</p>
+  0075-01-01 BC / 0075-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Sertorian","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Sertorian"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0312"}
+  leader{"Quintus Sertorius","Pompey"}
+}
+
+"CnC-A 0313 - Bibracte" {
+  10630
+  <p>Gaius Julius Caesar, an ambitious Roman noble, had entered into a political alliance with Gnaeus Pompey and Marcus Licinius Crassus, which became known as the "First Triumvirate." Caesar used these connections to obtain an appointment as proconsul for Gaul. As Caesar arrived to govern his province, the Helvetii were migrating from what is now Switzerland into Gaul to find new lands.</p><p>Caesar surprised and defeated one detachment of the Helvetii. He then doggedly followed but avoided conflict with the main body, as he was badly outnumbered by the barbarians and needed to find an advantageous position for a decisive battle. After a fortnight, Roman supplies were running short and Caesar fell back toward Bibracte to replenish. The Helvetii followed and formed for battle against the Romans.</p><p>Caesar withdrew and formed his six legions on a nearby range of hills - his four veteran legions in front, and his two newly raised legions in the rear. The Helvetii charged forward and were met by a shower of pila. The Romans then counter charged downhill with swords drawn. The disorganized barbarians started to fall back when allied Boii and Tulingi tribesmen marched forward and gave the retiring Helvetii the heart to continue. Caesar again led his legions forward against the combined tribes, and they fled in disorder back to their camp. During the night Caesar attacked the enemy camp and completed the rout. The next day, envoys from the tribes offered to surrender and Caesar ordered them to return to their own lands, knowing that if their former country were left unpopulated hostile Germanic tribes would fill the vacuum.</p>
+  0058-01-01 BC / 0058-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Helvetii","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Helvetii"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0313"}
+  leader{"Unknown","Julius Caesar"}
+}
+
+"CnC-A 0314 - Plain of Alsace" {
+  10630
+  <p>Ariovistus was the chief of the Germanic Suebi tribe. He led his tribesmen across the Rhine into Gaul at the invitation of some warring Gallic tribes. Once in Gaul, Ariovistus called on his German allies, the Harudes, Marcomanni, Triboci, Vangiones, Nemetes, and Sedusii to join his army. More Germans poured across the Rhine every day. Caesar, aware of the mounting threat to the Roman province, advanced at top speed to the plain of Alsace within a few miles of Ariovistus' army.</p><p>At first, Ariovistus refused to fight, for diviners had foreseen that he was not destined to win before the new moon. Caesar, forced the issue by deploying his legions near the enemy camp, a challenge that the Germans could not ignore. Ariovistus was compelled to come out and line up for battle. The German left wing looked weaker and it was here that Caesar launched his main attack with his favorite X Legion leading his right wing. The Germans also favored their right and began to press back the Roman left. Then Publius Crassus (son of the Crassus of the First Triumvirate) charged forward with the cavalry to relieve the harassed Roman wing. This caused the pendulum to swing in favor of the Roman forces and soon the Germanic horde was in flight back across the Rhine.</p>
+  0058-01-01 BC / 0058-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Germany","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Germany"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0314"}
+  leader{"Ariovistus","Julius Caesar"}
+}
+
+"CnC-A 0315 - Gergovia" {
+  10630
+  <p>Julius Caesar had conquered Gaul in just six years of campaigning (58 - 53 BC). However, in 52 BC most of the tribes of Gaul rose in a general revolt. Vercingetorix, a chieftain of the Averni, became overall commander of the rebel forces. Vercingetorix adopted an effective strategy of defending fortified towns in conjunction with scorched earth tactics to deny the Romans supplies. In response, Caesar assaulted and captured Avaricum. Next he marched against the Gallic army at Gergovia, Vercingetorix' hometown. Gergovia was situated on a particular steep, high mountain, making it a difficult position to attack. Caesar wanted to bring Vercingetorix into an open battle and stop the Gallic raids, so he set up c large camp for his six legions and built a small force to make a feint away from the town, drawing off many of Vercingetorix' troops, Caesar ordered his legions and allied troops to climb the hill and attack the enemy camps in front of the city. The Romans overcame the stone wall at the base of the hill and moved forward to capture the enemy camps. The Gallic reinforcements hurried to the scene and drove the Roman troops back in fierce fighting. The barbarian advance was only checked by the 10th Legion that was held in reserve. The Romans reported the loss of 46 centurions and 700 troops of all nationalities killed, and another 6,000 wounded. Gergovia was the only major battle that Caesar lost during his conquest of Gaul. The following day, Caesar attempted to offer battle again but could not induce Vercingetorix to descent from his hilltop position. Having failed to achieve his objective, Caesar withdrew.</p>
+  0052-01-01 BC / 0052-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Gallic","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Gallic"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0315"}
+  leader{"Vercingetorix","Julius Caesar"}
+}
+
+"CnC-A 0316 - Ilerda" {
+  10630
+  <p>After driving Gnaeus Pompey from Italy, Julius Caesar moved against Pompey's forces in Spain. Caesar had sent Gaius Fabius ahead to secure the passes over the Pyrenees and at the Sicoris River. Fabius succeeded, and his opponent, Pompey's lieutenant Afranius, was forced to retire southward.</p><p>Caesar followed Afranius and camped about a half mile from his enemy and the town of Ilerda. Between the enemy camp and town there was a hillock, which appeared to Caesar as the best strategic position in the area. However, Afranius saw what Caesar intended and managed to gain the hill first, leaving Caesar's army in an awkward position. To relieve this situation, Caesar led his legion forward, but after some initial success they pressed their attack too far. The enemy effectively showered them with missiles from higher ground. Caesar's veterans were in a difficult position. They were taking unnecessary losses where they stood, but would take as many losses withdrawing. Caesar ordered forward his cavalry, which relived the pressure and gave his legions the opportunity to withdraw. The battle ended in a stalemate as both sides pulled back.</p><p>A three-month campaign followed, in which Caesar masterfully outmaneuvered Afranius, forcing the Pompeian army of seven veteran legions in Spain to surrender without fighting another major battle.</p>
+  0049-01-01 BC / 0049-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Pompeian","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Pompeian"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0316"}
+  leader{"Afranius","Julius Caesar"}
+}
+
+"CnC-A 0317 - Utica I, Delaying Action" {
+  10630
+  <p>The First Triumvirate of Crassus, Pompey and Julius Caesar collapsed soon after Crassus was defeated and killed by the Parthians at Carrhae in 53 BC. With Crassus gone, the rivalry between Pompey and Caesar steadily grew until civil war erupted in 49 BC. After "crossing the Rubicon" with his troops, and violating Roman law, Caesar drove Pompey out of Italy in a lightning campaign. He then marched on Spain to confront "an army without a leader" - the Pompeian army there. Meanwhile, Caesar sent his general, Gaius Curio, with an army consisting mostly of newly raised legions to attack the Pompeian forces under Attius Varus in Africa. Varus was in camp below the walls of Utica. Curio marched to engage him there. While Curio was fortifying his camp, news arrived that a large force of horse and foot was approaching. This army had been sent by King Juba's general Saburra. Curio immediately sent his cavalry to delay the approaching enemy. Juba's Numidian forces were taken by surprise, as they were not expecting an attack. The Numidian cavalry was quickly put to flight and many infantry were killed before they too routed. What started as a mere delaying action escalated into a victory that surprised even Curio.</p>
+  0049-01-01 BC / 0049-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Numidian","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Numidian"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0317"}
+  leader{"Saburra","Curio's Lieutenant"}
+}
+
+"CnC-A 0318 - Utica II, The Valley" {
+  10630
+  <p>Caesar had sent his general, Gaius Curio, to attack Pompey's lieutenant, Attius Varus, in Africa. Varus was in camp below the walls of Utica. When a relief army sent by King Juba of Numidia arrived to reinforce Varus, Curio had launched a delaying attack with his cavalry. The Numidians were routed and fled.</p><p>On the day after Curio's victory over the Numidians, both Curio and Varus marched out of camp and deployed for battle. There was a valley between the two armies and both sides waited to see who would make the first move.</p><p>Suddenly Varus' cavalry, along with some light troops, moved into and down the valley. This was perhaps a show of bravery, but Curio advanced his cavalry to end the show and Varus' cavalry was sent reeling. Curio then led the infantry forward and Varus' lights were cut down. All this was more than enough for Varus' troops, who turned and ran back to camp. Many were killed in the stampede.</p>
+  0049-01-01 BC / 0049-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Pompeian","Caesarian"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Pompeian"-"2","Caesarian"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0318"}
+  leader{"Attius Varus","Curio"}
+}
+
+"CnC-A 0319 - Bagradas River" {
+  10630
+  <p>King Juba of Numidia continued to support the Pompeians even after Varus' defeat at Utica. Curio led his Caesarian army after Varus, catching up with him at the Bagradas River. Curio attacked and routed the demoralized Pompeian army, and Varus was wounded. Curio learned that Juba had sent another Numidian force as reinforcements and sent his cavalry on a night raid against the enemy's camp along the Bagradas River that accomplished little except to alert the Numidians to the Romans' presence.</p><p>Thinking the Numidian force was none too large, since Juba was not present, Curio decided to attack this force as well. Juba had been detained by a border dispute and Saburra was in command. Saburra, stung by his loss earlier at Utica, was not going to be caught unawares again. He placed his entire force under arms. At the same time his force was increased to army size by the arrival of Spanish and Gallic cavalry sent by Juba. Unknown to Curio, Saburra now commanded the bulk of an entire Numidian army. Foolishly, Curio launched an attack on this much larger Numidian force. Curio's main weakness was his lack of cavarly - the same weakness that had resulted in disaster to another Roman army in the same area much earlier (the Roman army of Regulus, largely destroyed by the Carthaginians in 253 BC). Though Curio's infantry fought well, their advance simple made it easier for the Numidian cavalry to surround the Romans. In desperation, Curio ordered his men to move toward a small hill but Saburra's forces got to the hill first. It was a slaughter, and Curio committed suicide rather than surrender. Africa would remain a Pompeian stronghold.</p>
+  0049-01-01 BC / 0049-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Numidian","Caesarian"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Numidian"-"2","Caesarian"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0319"}
+  leader{"Saburra","Curio"}
+}
+
+"CnC-A 0320 - Brindisi Raid" {
+  10630
+  <p>While Julius Caesar was campaigning in Spain, Gnaeus Pompey was building a new army in Greece. After returning to Italy, Caesar made a risky January crossing of the Adriatic with a portion of his army, resolving to defeat his rival and end the civil war. The combined effects of bad weather and superior Pompeian naval forces prevented the remainder of Caesar's army, under Marc Antony, from making the crossing.</p><p>Pompey knew at this time his larger army was no match against Caesar's veterans, and Caesar would not hesitate to attack once he had his entire army concentrated. Pompey needed time to train up his troops. He formulated a daring plan to delay the remainder of Caesar's army in Italy from crossing. In February, Pompey dispatched his admiral, Libo, on a raid across the Adriatic. Libo commanded a large force of marines and fifty warships. His target was the seaport town of Brindisi and the ships gathered there. His mission - to destroy the Roman transport fleet. Libo landed his marines outside of Brindisi. Utilizing surprise, they overpowered the city guards and sank and burned several ships. However, Antony's troops, who were still waiting in the embarkation camps to cross the Adriatic, quickly formed and advanced toward Brindisi. Libo's marines were defeated by Antony's legions before they could destroy enough shipping to truly delay Antony's army from crossing. In the final analysis, Pompey's bold plan was a total failure. He had sacrificed many of his best-trained troops in the raid, but Antony was still able to cross the Adriatic and join Caesar for the battle at Dyrrhachium and the epic victory an Pharsalus.</p>
+  0048-01-01 BC / 0048-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Pompeian","Caesarian"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Pompeian"-"2","Caesarian"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0320"}
+  leader{"Libo","Antony"}
+}
+
+"CnC-A 0321 - Dyrrhachium" {
+  10630
+  <p>Julius Caesar crossed the Adriatic with seven depleted legions in order to confront Gnaeus Pompey's main army and bring the civil war to an end. Antony, with the remaining five legions, was delayed. Caesar followed Pompey to Asparagium and boldly offered battle but Pompey refused, in spite of numerical superiority, because his troops were much inferior in training to Caesar's veterans. meanwhile, Antony, blown far off course, had crossed the Adriatic and landed in Pompey's rear. Pompey, presented with the opportunity to destroy his opponents in detail, was obsessed instead about being trapped between them. Caesar moved quickly to join Antony and simultaneously threaten Dyrrhachium, Pompey's logistical base. Pompey marched to defend it, but Caesar joined Antony and occupied Dyrrhachium first. Caesar audaciously began blockading Pompey's  larger army against the sea by constructing a line of forts. Pompey retaliated with his own line of counter-fortifications.</p><p>Pompey's larger army began running short of supplies and (more importantly) water. He was left with no choice but to attack or surrender. He finally decided to break Caesar's line at the southern end of the fortifications, where Caesar's ramparts were not quite complete. Pompey's plan was excellent, as he landed a contingent of marines and light troops from the sea and at the same time stormed across the river with several of his best legions toward Caesar's weak point in his line. The defenders held for some time against this combined force, but finally they were pushed back. Antony's arrival stopped the advance, but Pompey's troops threw back Caesar's vastly outnumbered veterans as they counterattaked to retake their lines. Pompey built a new camp near the shore that secured access for his large cavalry arm to the grazing lands to the south. Caesar, desperately short of supplies himself, was forced to withdraw. His army moved into Thessaly, pillaging as they went, and regaining strength. Pompey warily pursued his rival.</p><p>Caesar consoled his troops afterward, telling them it was not lack of fighting prowess, but rather fate and circumstance that defeated them. His army's morale remained high, and they were most eager to avenge their defeat. Pompey's troops and the host of Senators accompanying the army began to see themselves as more than a match for Caesar and his veterans. It was this fatal overconfidence that compelled them to advance and do battle later at Pharsalus.</p>
+  0048-01-01 BC / 0048-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Pompeian","Caesarian"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Pompeian"-"2","Caesarian"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0321"}
+  leader{"Pompey","Julius Caesar"}
+}
+
+"CnC-A 0322 - Pharsalus" {
+  10630
+  <p>After Dyrrhachium, Julius Caesar pulled back to regroup his army. Gnaeus Pompey failed to follow up his victory and pursued slowly. After a winter of maneuvering through Thessaly, Pompey encamped at the foot of the mountains near Pharsalus and was persuaded by the senators in his camp to settle the issue with Caesar once and for all. Pompey had a numerically superior but inexperienced force. Caesar's army was much smaller, but still composed of crack, veteran legions. Pompey's plan took into account his strength in cavalry and called out for it to out-flank Caesar's right. Caesar saw what Pompey planned and formed a line of legionary veterans in reserve to counter any out-flanking maneuver.</p><p>As the fighting began, Pompey's cavalry charge rolled over Caesar's horse. However, when confronted by Caesar's reserve, this mounted force was thrown back in turn by legionaries using their pila as spears. The Caesarian legionaries who routed the Pompeian cavalry now turned their attention to the exposed left flank of the Pompeian infantry line, pushing back some of Pompey's better legions stationed there. Caesar's legions in the center and on the left now began moving forward. Pompey's foot units were ordered to hold their ground. Normal battlefield tactics would find both sides advancing to the attack but Pompey's troops did not advance, hoping Caesar's infantry would tire themselves out in a long charge. Instead, Caesar's more experienced legions just halted within a few yards of Pompey's line, reforming and then make a headlong attack. With his cavalry defeated, his left flank turned and the center and right hard pressed, Pompey fled back to camp, leaving his army to disintegrate. Most of the survivors surrendered to Caesar the next day.</p><p>Pompey fled to Egypt, where he was assassinated by Ptolemy XIII. Caesar was now clearly ascendant, but mopping up the remaining Pompeians would still require much hard fighting in the east, Africa, and Spain.</p>
+  0048-01-01 BC / 0048-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Pompeian","Caesarian"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Pompeian"-"2","Caesarian"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0322"}
+  leader{"Pompey","Julius Caesar"}
+}
+
+"CnC-A 0323 - Zela" {
+  10630
+  <p>Following his decisive victory at Pharsalus, Julius Caesar pursued Gnaeus Pompey to Egypt. Pompey was assassinated, effectively ending the civil war in the Eastern Mediterraneann but Caesar became involved in factional fighting in Alexandria in support of Cleopatra. Meanwhile, Pharnaces, King of Pontus, began harassing the Romans in Anatolia, so Caesar sent Domitius Calvinus with a small army to hold him at bay. While Caesar was finishing up with his Egyptian campaign, Pharnaces thrashed Domitius at Nicopolis.</p><p>In response, Caesar hurried to Anatolia with his VI legion and took command of the remnants of Domitius' army. As Caesar was starting to build his camp near Pharnaces, he was amazed when the Pontic forces began forming for battle just in front of his camp. Thinking it was a mere show of force on Pharnaces' part, Caesar's men kept working on their camp. But the Pontic army began advancing on the Roman position. When it became apparent that the enemy actually intended to do battle, the Romans had little time to assemble. Then the Pontic scythed chariots charged forward, adding to the confusion in the Roman ranks. The chariots were eventually driven back by missile fire. As the main lines came into contact, the VI legion on the right pushed the Pontic forces back in hard fighting. Elsewhere along the line, victory came more slowly, but in the end almost all of Pharnaces' army was captured or killed.</p><p>The report of the battle Caesar sent back to Rome was famously brief: "Veni, vidi, vici" (I came, I saw, I conquered.)</p>
+  0047-01-01 BC / 0047-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Pontic","Caesarian"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Pontic"-"2","Caesarian"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0323"}
+  leader{"Pharnaces","Julius Caesar"}
+}
+
+"CnC-A 0324 - Ruspina" {
+  10630
+  <p>Following his victory over Pharnaces at Zela, Julius Caesar returned to Rome where a crisis was brewing - the surviving veterans had grown very war-weary and were refusing orders to deploy overseas yet again. Caesar's personal appeal sparked a renewal of loyalty to their magnetic leader, and the crisis was averted. Opposition awaited in North Africa. Pompeian forces under Porcius Cato Minor and Metellus Scipio had fled to Africa and joined forces with Attius Varus and King Juba. Caesar directed his next campaign against these Pompeian and allied Numidian forces. Once Caesar had transported his entire army to Africa, he set off with a sizeable force on a foraging expedition. They had gone a few miles when a much larger enemy force of Numidian cavalry and light troops deployed for battle to his front. The Numidians were commanded by Titus Labienus, formerly Caesar's deputy in Gaul and his opponent at Dyrrhachium and Pharsalus.</p><p>The enemy formation and tactics were quite novel to Caesar. The Numidian cavalry was interspersed with light infantry and would rush forward to throw their javelins. When the Romans charged, the enemy would retire. Meanwhile, the exposed Roman flanks were pelted by other enemy units. As the battle progressed, because of their numbers, the Numidian cavalry had almost surrounded Caesar's troops. Caesar countered by forming his line back to back and gradually retired toward his camp. At this point in the battle, the Numidians grew stronger yet when Marcus Petreius arrived with elite cavalry and more Numidian infantry. True to his nature, Caesar encouraged his utterly exhausted troops to make one last effort to drive the enemy back. The Roman attack succeeded, allowing them to withdraw. Caesar had lost nearly a third of his detachment and gained a healthy respect for his adversaries.</p>
+  0046-01-01 BC / 0046-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Numidian","Caesarian"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Numidian"-"2","Caesarian"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0324"}
+  leader{"Titus Labienus","Julius Caesar"}
+}
+
+"CnC-A 0325 - Thapsus" {
+  10630
+  <p>Following his set-back at Ruspina, Julius Caesar spent some time regrouping before making a surprise night march of 16 miles and camping near the Pompeian-held coastal town of Thapsus. Caesar immediately placed Thapsus under siege. Though numerically superior, Metellus Scipio, the Pompeian commander in the area, originally had no intention of risking a direct battle with the formidable Caesar. However, Caesar had forced the issue with his threat to Thapsus. If Scipio allowed a key city to fall without a fight, then key allies woiuld defect to Caesar. Scipio reluctantly brought his 40,000 man army up to relieve the city.</p><p>Scipio occupied a defensive position and drew up his line wit elephants (provided by King Juba) on the wings. Caesar opposed the pachyderms with light archers and slingers, while taking personal command of his right wing. As the battle began, volleys of missiles sent the elephants reeling. At nearly the same time, Caesar's infantry, eager for battle, attacked without orders. Many of the elephants stampeded into the center of Caesar's line, where the 5th legion Alaudae (the Larks) was advancing. The 5th was a Gallic legion, recruited in Transalpine Gaul. The Larks bravely stood firm against the elephants, and later adopted the elephant as their legionary symbol. Caesar's horse countered a Numidian cavalry charge and forced them to flee. After the failed charge, the Pompeian line crumbled and the rout was on. Pompeian resistance in Africa had been crushed, but the civil war was not quite over. There remained one more Pompeian bastion - Spain.</p>
+  0046-01-01 BC / 0046-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Pompeian","Caesarian"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Pompeian"-"2","Caesarian"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0325"}
+  leader{"Scipio","Julius Caesar"}
+}
+
+"CnC-A 0326 - Munda" {
+  10630
+  <p>Following Julius Caesar's victory at Thapsus, the remnants of the Pompeian army under Titus Labienus fled to Spain. Here, the garrison legions had revolted in favor of Gnaeus Pompey, the eldest son of Pompey the Great. Pompey gathered a large but largely inexperienced army of thirteen legions. Caesar traveled to Spain to put a final end to Pompeian resistance. He brought three of his crack veteran legions, the 5th, 6th and 10th, but most of his army was also composed of newer recruits. The initial campaign was marked by extreme brutality by both sides, but no decisive battles were fought until Caesar brought Gnaeus Pompey to bay near Munda.</p><p>Pompey deployed in a strong hill top position so Caesar was faced with an uphill battle. Rather than maneuver for advantage, Caesar uncharacteristically ordered a frontal assault on the strong enemy position. Caesar's cavalry and light troops attacked both enemy wings but gained no advantage. Some of the hardest fighting in Caesar's life unfolded as the two armies slogged it out. The Pompeians fought with true desperation, for many of those soldiers had been pardoned by Caesar, and then deserted back to Pompey. For them there would be no second chances. Finally, Caesar's 10th legion on the right managed to push the opposing forces back. Pompey, under the council of Labienus, ordered troops to move from his right to the threatened left flank. Caesar's cavalry on the left saw the move and made a mighty charge that pushed back the Pompeian right wing. The faltering of both wings eventually caused the raw legions in Pompey's center to bolt back toward the town. About 30,000 Pompeians died - most slaughtered in the rout. Gnaeus Pompey died with them, and also Titus Labienus, Caesar's trusted aide who became his bitter opponent. Caesar had won the battle, but later said "he had fought many times for victory, but at Munda he fought for his life."</p><p>With his victory at Munda, Caesar finally brought the civil war to an end. Caesar returned to Rome and became "Dictator for Life." Peace did not last long as Caesar only ruled until March 15, 44 BC when he was assassinated.</p>
+  0045-01-01 BC / 0045-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Pompeian","Caesarian"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Pompeian"-"2","Caesarian"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0326"}
+  leader{"Gnaeus Pompey","Julius Caesar"}
+}
+
+"CnC-A 0408 - Tigranocerta" {
+  10630
+  <p>Mithridates VI of Pontus challenged Rome for control of Asia Minor and Greece while the Romans were distracted in the Italian War. Although Rome defeated Mithridates in the First and Second Mithridatic Wars, he was allowed to maintain his kingdom in Pontus. A Third Mithridatic War began in 73 BC, and Mithridates suffered a major defeat at Cabira the following year. Mithridates fled to the court of his son-in-law, King Tigranes the Great of Armenia, who refused a Roman demand to surrender him. The Roman Proconsul, Lucius Licinius Lucullus, invaded Armenia with two Roman legions, defeating a small cavalry force and investing the capital city of Tigranocerta. Meanwhile, Tigranes raised a large force of Armenians and allies in Taurus.</p><p>As Tigranes' army approached to lift the siege, Lucullus split his force, leaving enough strengh to maintain the siege and deploying the rest of his army along a deep river to block the advancing Armenians. Tigranes deployed opposite the Romans, confident of an easy victory, but argued with Mithridates about the plan of action. Lucullus led a column out of sight of the Armenian army, crossed at a bend in the river, and gained Tigranes' right flank. Seeing the opportunity, Lucullus personally led the Roman charge down the hill against a force composed of both light horse and cataphracts. Tigranes tried to adjust his battle line but it was too late. The cavalry was either destroyed or driven off and the Armenian baggage train captured. The city of Tigranocerta fell to the Romans, but Tigranes and Mithridates fled with the rest of the army and continued to resist.</p>
+  0069-01-01 BC / 0069-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Armenia","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Armenia"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0408"}
+  leader{"King Tigranes the Great","Lucius Licinius Lucullus"}
+}
+
+"CnC-A 0409 - " {
+  10630
+  <p>Along with Pompey and Julius Caesar, Marcus Licinius Crassus formed the secret "Triumvirate" which all but controlled Rome. Reputedly the richest man in Rome, Crassus lacked any great military achievement to compare with Caesar's conquest of Gaul and Pompey's many exploits. An ambitious man, Crassus saw the conquest of the Parthian Empire as his opportunity to match or surpass his colleagues in glory. Crassus arrived in Syria with seven legions and 4000 cavarly and marched directly through the desert towards the parthian heartland. Shortly after crossing the Euphrates, his army was surprised near Carrhae by the Parthian general Surena and a cavalry force made up of horse archers and cataphracts. Crassus formed his men into an open square, but Surena made no effort to close, content to harass the Romans with a hail of arrows.</p><p>Crassus and his officers believed they had only to hold out until the horse archers expended the small number of shafts they could carry with them. However, Surena had brought along a camel train with a huge re-supply of arrows. Crassus sent his son Publius forward with the Roman cavalry to pin down the horse archers but the Parthians fell back. Publius rashly pursued too far and Surena annihilated his force. Publius' head was carried back to the Romans upon a spear to taunt his father. This broke the spirit of Crassus and the Roman soldiers, throats cracking with thirst, were overwhelmed. Crassus withdrew with a mere 500 survivors westward when the Parthians retired for the night. During negotiations following the fight, Crassus was treacherously captured. Surena had heard that the Roman commander thirsted for wealth, so he had Crassus executed by pouring molten gold down his throat. most of the legionary eagles were captured by the Parthians, a disgrace that would rankle the Romans for years to come.</p>
+  0053-01-01 BC / 0053-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Parthia","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Parthia"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0409"}
+  leader{"General Surena","Marcus Licinius Crassus"}
+}
+
+"CnC-A 0410 - Philippi I" {
+  10630
+  <p>Caesar's assassination plunged the Roman world into chaos and civil war. On one side was the Second Triumvirate of Mark Antony, Aemilius Lepidus, and Octavian, Caesar's nephew, which aimed to avenge Caesar's murder. Opposing them were the assassins Marcus Brutus and Gaius Cassius, who sought to re-establish the Republic. The Republicans levied a large army in the east and set up camp near Philippi in Macedonia. With ample supplies, the fortified Republican position between two hills and a marsh seemed impregnable. When Mark Antony and Octavian arrived with their large veteran army, they camped a short distance from the Republicans' fortified position. Beset with supply problems, Antony constructed a causeway through the marsh and only then attacked. Capturing the high ground forced Cassius to weaken his front. Brutus marched out to take Antony in the flank, and Octavian in turn marched forward to engage Brutus' forces. Brutus' Republican legions defeated Octavian's forces and captured his camp. Meanwhile, Cassius lost his camp to Antony's outflanking force. Falsely believing Brutus had also been defeated, Cassius committed suicide. The battle ended with both sides overextended and each returned to their original lines to wait for another day to decide who would win.</p>
+  0042-01-01 BC / 0042-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Republican","Triumvirate"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Republican"-"2","Triumvirate"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0410"}
+  leader{"Cassius","Brutus","Antony","Octavian"}
+}
+
+"CnC-A 0411 - Philippi II" {
+  10630
+  <p>After the first battle of Philippi, a fleet bringing supplies to Antony and Octavian's army was destroyed and supplies for the Triumvirate legions began running out. Brutus was content to watch the army of Antony and Octavian starve. However, the Republican legionnaires wanted to fight and Brutus tried and failed to convince his troops to wait. Brutus, a poorer general than Cassius, gave in when his men became restless and lined up for battle.</p><p>Brutus, commanding the right wing of his army, drove the enemy's left under Antony back, with the help of the more numerous Republican cavalry. The Republican center and left wing had to extend to avoid being outflanked. Octavian attacked and the Republican center quickly gave ground and eventually broke. The victorious Octavian then turned and took Brutus in the flank. Brutus fled and later killed himself. The Triumvirs had won this round of the civil war, but would later turn against each other.</p>
+  0042-01-01 BC / 0042-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Republican","Triumvirate"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Republican"-"2","Triumvirate"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0411"}
+  leader{"Brutus","Antony","Octavian"}
+}
+
+"CnC-A 0412 - Cilician Gates" {
+  10630
+  <p>After his victory at Philippi, Mark Antony was intent on waging war against the Parthians and avenging the defeat at Carrhae. Antony sent Publius Ventidius Baussus ahead to pave the way. Ventidius was one of the most successful Roman generals who fought the Parthians. His use of ranged weapon troops and terrain to combat the Parthian cavalry gave him several victories.</p><p>Ventidius marched into Syria and encountered Quintus Labienus, a renegade Republican officer who had served under Brutus and then joined the Parthians. Ventidius gave chase, tracking Labienus down at the Cilician Gates, the main pass through the Taurus Mountains that separated Cilicia from Anatolia. Ventidius made camp on the heights while Labienus, expecting Parthian reinforcements, camped a short distance from the away. The Parthian cavalry under Pacorus soon arrived. Utterly fearless of the Romans, the Parthian horsemen did not wait to join Labienus but instead directly charged the heights. The Roman force, well supplied with missile troops and benefitted from the terrain, repulsed the attack and drove off the Parthians. The surviving Parthians fled to the Labienus' camp. Labienus avoided the fight and managed to escape again after dark. The way was now clear for Antony to invade Mesopotamia.</p>
+  0039-01-01 BC / 0039-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Parthia","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Parthia"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0412"}
+  leader{"Pacorus","Publius Ventidius Baussus"}
+}
+
+"CnC-A 0413 - Antony's Siege Train" {
+  10630
+  <p>Fresh from his dalliance with Cleopatra, Antony set out to conquer the Parthian empire, following a battle plan he discussed years before with Caesar. Avoiding Crassus' mistake of striking directly through Mesopotamia, Antony took his massive army north through Armenia. Always impetuous, Antony refused to wait for his baggage wagons and siege equipment and marched with his main army to Phraaspa, the Royal City of Media, leaving Oppius Statianus in charge of the siege train with a fairly large security force. When king Phraates heard about Antony's folly, he led a strong force of cavalry to attack the wagon train. Phraates' cavalry quickly surrounded the wagons, killed the guards, and destroyed the equipment. Antony could not capture Phraaspa without his siege equipment. Despite winning a few minor skirmishes, Antony was forced to withdraw from Media in the winter, suffering extremely heavy losses to both Parthian attacks and the harsh weather.</p>
+  0036-01-01 BC / 0036-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Parthia","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Parthia"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0413"}
+  leader{"Phraates IV","Oppius Statianus"}
+}
+
+"CnC-A 0414 - Medway" {
+  10630
+  <p>In 43 AD, Aulus Plautius led an expedition of four legions to Britain. His army advanced with only minor skirmishing as far as Rutupiae on the coast of Kent. Late in the season, Roman scouts finally found the enemy camped on the northern bank of the River Medway. Togodumnus and Caratacus, the commanders of the Briton tribes, believed the river would halt the Roman advance. They were taken by surprise when a force of specially trained auxiliaries (described as "Celtic" in one account) swam the river and attacked the British charioteers. The Britons, while preoccupied with the auxiliaries, were again surprised when Legion II Augusta, under Vespasian suddenly crossed the river (probably using a pontoon bridge) and established a second bridgehead. The remaining legions began crossing to reinforce Legion II Augusta.</p><p>During the night, the Britons turned all their strength on the legions, knowing they were the bigger threat. The Briton assault penetrated the Roman lines, putting the bridgehead in great danger. Just then, Hosidius Geta led a legion that had just crossed the river in daring counter attack. Geta's force broke through the enemy's line and saved the bridgehead (which earned him a "triumph," very unusual for someone not a consul). The defeated Britans disengaged and withdrew back to the Thames.</p>
+  0043-01-01 / 0043-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Briton","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Briton"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0414"}
+  leader{"Togodumnus","Caratacus","Aulus Plautius"}
+}
+
+"CnC-A 0415 - Boudica's Revols, Watling Street" {
+  10630
+  <p>While many of the tribes of Britain resisted Rome until they were conquered and crushed, a few tribes, like the Iceni, formed pacts with the Romans to remain semi-independent. The Iceni client-king Prasutagus died while the Roman govenor, Gaius Suetonius Paulinus, was campaigning in what is now northern Wales. In Suetonius' absence, the procurator, Catus Decianus, took advantage of these event to seize lands, recall loans, and generally revoke all the advantages the clients had obtained from Claudius. When Prasutagus' widow, Boudica, complained, she was flogged and her young daughters raped in front of her. Instead of suppressing dissent these barbarous acts fanned the fires of revolt. The Iceni, Trinovantes, and others rose up, sacking the legion colony of Camulodunum, defeating several small Roman forces, burning Londinium and Verulamium (St. Albans), and killing as many as 70,000 people.</p><p>Suetonius summoned reinforcements from all over Britain until he was strong enough to fight on a carefully selected defensive position offering a narrow front that would minimize the enemy numbers. Flushed with success, Boudica's Celtic host may have numbered as many as 50,000 fighting men, followed by their families and baggage wagons loaded with plunder. She deployed these wagons at the rear of her army. The men would fight all the harder knowing that their families were watching and would be in grave danger if the Romans triumphed. The Britons lauched a massive frontal attack. Suetonius held his forces in place. As the charging Britons neared the Roman line, they were staggered and stopped by a storm of pila. Only then did the Romans attack the confused Britons, driving them back onto their wagons and cutting them down by the thousands. Boudica managed to escape, but later committed suicide rather than be captured. The exact location of the battle is uncertain, but most commonly held to have taken place at what the Anglo-Saxons called "Watling Street," hence the anachronistic name.</p>
+  0061-01-01 / 0061-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Briton","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Briton"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0415"}
+  leader{"Boudica","Gaius Suetonius Paulinus"}
+}
+
+"CnC-A 0416 - First Battle of Bedriacum" {
+  10630
+  <p>The "year of four emperors" (68-69 AD) began when Nero, the last member of the Julio-Claudian dynasty, committed suicide to avoid execution. Servius Sulpicius Galba, governor of Hispania, was proclaimed emperor, but did not last long, for Marcus Salvius Otho, with the support of the Praetorian Guard, murdered Galba and became the second emperor. Meanwhile, the governor of Germany, Aulus Vitellius, also claimed the throne and marched on Rome with his veteran legions and a strong force of Batavian auxiliaries. Otho left Rome with the Praetorian Guard, nearly three loyal legions and a force of gladiators to meet the challenge.</p><p>After making camp near Brixellum, Otho decided to call his brother Titianus from Rome and act as his field commander for the upcoming battle. Gaius Suetonius Paulinus, who had defeated Boudica some eight years prior, advised Titianus to wait for reinforcements, but Titianus ignored the advice and led the army out to fight at once. The two Roman armies met at Bedriacum, near Cremona, and heavy fighting took place as legionary eagles were captured and recaptured. Otho's army eventually gave way when the large force of Batavian auxiliaries took them in the flank. The Othonian troops fled back to their camp and the next day took an oath of allegiance to Vitellius, while Otho committed suicide. Vitellius now became the third of the four emperors in this fateful year, but his reign would not last till the end of the year. Titus Flavius Vespasian, with the support of the eastern and Danubian legions, seized the throne and finally established stabel rule.</p>
+  0069-01-01 / 0069-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Vitellian","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Vitellian"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0416"}
+  leader{"Aulus Vitellius","Titianus"}
+}
+
+"CnC-A 0417 - Mons Graupius" {
+  10630
+  <p>After years of campaigns in northern Britain, Gnaeus Julius Agricola subdued all the tribes except the fierce Caledonians. Agricola maneuvered to bring the Caledonians to open battle. Determined to restore the security of his Highland home, the Caledonian chief, Calgacus, gathered a strong force of about 30,000 and awaited the Romans at Mons Graupius. Calgacus occupied the high ground with his main force and posted a line of chariots on level ground to threir front. The Roman army was of roughly equal size. Agricola deployed his auxiliary infantry and cavalry in the main battle line and held his legions in reserve.</p><p>The battle opened with Agricola's cavalry charge against the barbarian chariots while the infantry moved forward and engaged in an exchange of missiles with the enemy. When the charioteers began to give ground, the Roman auxiliary infantry closed to hand-to-hand combat, which drove the enemy line back. A desperate attempt to outflank the Roman line was turned back by another cavalry charge. The outcome was considered remarkable because solely auxiliary forces had achieved the victory. Following the battle, Agricola proclaimed that all tribes in Britain had been conquered.</p>
+  0084-01-01 / 0084-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Briton","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Briton"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0417"}
+  leader{"Calgacus","Gnaeus Julius Agricola"}
+}
+
+"CnC-A 0418 - Issus" {
+  10630
+  <p>The Roman Empire lacked an accepted institutional system of succession whenever an emperor died. This typically led to multiple claimants to the throne and civil war. So, when the erratic and eccentric emperor Commodus was murdered in 193 AD, it ushered in just such a period, sometimes called the "Year of the Five Emperors." Pertinax was proclaimed emperor but, after a reign of only 83 days, he was murdered by his own Praetorian guards. The Praetorians auctioned the throne off to a rich senator, Julianius Didianus. Meanwhile three field commanders claimed the throne - Septimus Severus in Pannonia, Pescennius Niger in Syria, and Clodius Albinus in Britain. Septimus Severus reached Rome first with his veteran legions, executed Didianus, and punished the treacherous Praetorian guards. Before marching to face Niger in the east, Severus convinced Albinus that he could be his co-ruler and heir.</p><p>Severus met Niger's forces in Syria, near the River Issus in 194 AD. Having a numerical advantage, Serverus attacked frontally while sending the bulk of his cavalry around a large wood on his left to outflank the enemy's battle line. The initial frontal assault failed to break Niger's line but Severus' cavarly, after overpowering Niger's cavalry on the left, broke through onto the enemy infantry. Niger's army was now trapped between Serverus' two forces and it was destroyed. Niger was killed while attempting to escape to Parthia. Severus would still have to face Albinus to consolidate his rule.</p>
+  0194-01-01 / 0194-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Niger","Severus"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Niger"-"2","Severus"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0418"}
+  leader{"Pescennius Niger","Septimus Severus"}
+}
+
+"CnC-A 0419 - Lugdunum" {
+  10630
+  <p>The civil war that began with the "year of the five emperors" continued. Septimus Severus, after defeating Pescennius Niger at Issus (194), now turned on his other rival, Clodius Albinus, governor of Britain. Albinus took his legions east and added the forces of Novius Rufus, governor of Hispania. He set up camp near Lugdunum, in Gaul. Albinus attempted to invade Italy through the Alpine passes, but Severus prevented the move by garrisoning the passes. Albinus returned to Lugdunum. Serverus followed with an army of about the same size as Albinus.</p><p>The details of the battle are somewhat vague, but it was a long and bloody fight. It seems that Severus' left was disordered when it encountered rough ground and the troops sent to support them were driven back. On Severus's right the Albinus troops broke and were pursued back to their camp, which was taken and looted. In the center, the tide shifted many times. Finally the battle swung decisively in Severus's favor as his cavalry advantage proved itself. Albinus attempted to escape but was caught and beheaded. Severus went on to rule as emperor for nearly two decades.</p>
+  0197-01-01 / 0197-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Albinus","Severus"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Albinus"-"2","Severus"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0419"}
+  leader{"Clodius Albinus","Septimus Severus"}
+}
+
+"CnC-A 0420 - Nisibis" {
+  10630
+  <p>For centuries, Rome and Parthia contended for dominance in the Middle East. Nisibit 217 AD was a three-day battle with the Romans led by their new emperor Marcus Opellius Macrinus against the Great King of Parthia, Artabanus IV. On the first day, the battle began when conflict arose among the soldiers for possession of a watering place. Macrinus deployed his Romans in their typical formation, infantry in the center and cavalry at the wings. The formation also had gaps in the line to allow the light infantry to skirmish forward and withdraw to safety when necessary. The Parthian army was strong in cavalry and horse archers, and at sunrise the cavalry and cataphract camels attempted to close with the Roman line. But, when the Roman light infantry evaded, they strew the ground with caltrops (spiked balls) and the pursuers found themselves in a difficult situation. After several such assaults and night drawing near, both armies retired to their camps. The second day was a repeat of the first day, with skirmishing from morning to night but again no clear advantage to either side. On day three, the Parthian army attempted to use their greater numbers to surround the Romans. The Romans succeeded in extending their line using the light cavalry and light troops to protect their flanks. By the end of the third day, both armies had suffered severely and were exhausted. Under these circumstances, Macrinus opened negotiations with Artabanus and bought peace with some territorial concessions.</p>
+  0217-01-01 / 0217-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Parhia","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Parhia"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0420"}
+  leader{"Artabanus IV","Marcus Opellius Macrinus"}
+}
+
+"CnC-A 0421 - Hormuz" {
+  10630
+  <p>Around 220 AD Ardashir I, a Persian vassal, considered the state of the Parthian Empire. Ardashir knew about dissensions in the Parthian royal house and reasoned that the losses which Artabanus had sustained in his battles with the Romans and against his brother Vologases had weakened Parthian military power. He decided the time was right to declare the independence of Persia. Artabanus did not take any immediate steps to respond, which allowed Ardashir's rebellion to spread. Then Artabanus sent a provincial governor of Khuzestan to deal with the Persian, but Ardashir defeated this expedition. Finally, Artabanus himself led the remnants of the royal Parthian army into Persia. This invasion resulted in three battles. The final and decisive battle took place in the plain of Hormuz, between the Rivers Bebahan and Shuster. The Parthian cavalry army faced a balanced Persian army of cavalry and infantry. Artabanus was slain in the battle and his army completely defeated. With Artabanus' death, the Parthian Arsacid dynasty ended after ruling for 473 years. Ardashir's victory established a new Persian dynasty, the Sassanids, who would rule for another four centuries.</p>
+  0226-01-01 / 0226-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Parthia","Persia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Parthia"-"2","Persia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0421"}
+  leader{"Artabanus IV","Ardashir I"}
+}
+
+"CnC-A 0422 - Carthage" {
+  10630
+  <p>In 235 AD, the Roman army in Germany mutinied and murdered the last Severan emperor, Alexander Severus, after a reign of fourteen years. This led to another succession crisis and civil war. The legions in Germany acclaimed a professional soldier, Maximus Thrax, as the new emperor. Maximus' harsh rule alienated the Senate and populace of Rome. Then in 238 AD, the aged governor of the province of Africa, Gordanius I, was acclaimed co-emperor with his son, Gordanius II, by rebel forces. The Roman Senate quickly switched its allegiance to Gordanius. The father and son hastily raised an army in Africa. Capelianus, the governor of Numidia, remained loyal to Emperor Maximus. He was in command of the only legion in the region at this time, the III Augusta. The two armies met near Carthage with Gordianus II leading his army of untrained troops against Capelianus' veteran Legion III Augusta and other units. During the battle Gordianus II was killed and his army soundly defeated. Gordianus I committed suicide upon learning of his son's death. Maximus benefited only briefly from his lieutenant's victory, as the rebellion of the Roman senate continued. The Praetorian guards assassinated Maximus, and the grandson of Gordanius I was chosed by the Senate as the new emperor. Gordianus III would rule for seven years.</p>
+  0238-01-01 / 0238-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Capelianus","Gordanius"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Capelianus"-"2","Gordanius"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0422"}
+  leader{"Capelianus","Gordanius II"}
+}
+
+"CnC-A 0423 - Abrittus" {
+  10630
+  <p>After repeated incursions into Moesia and Dacia by the Goths under Cniva, the Roman Emperor Gaius Messius Quintus Decius (often called "Trajan Decius") moved to confront the barbarian invaders. Accompanied by his son Herennius Etruscus and his general Trebonianus Gallus, Decius led a major military expedition into the lower Danube, where he forced Cniva with his main army to abandon the siege of Nicopolis. Decius and the Romans pursued Cniva through difficult terrain and after a series of forced marches caught Cniva near Abrittus. The Battle of Abrittus is also known as the Battle of Forum Terebronii.</p><p>Cniva had divided his forces prior to the battle, and even though the Romans easily defeated the enemy front line, when they pursued the retreating enemy into the swamps, Cniva's concealed forces attacked. Cniva's tactical maneuver proved to be very successful and the Romans were surprised and slaughtered. Decius' son Herennius was killed early in the battle, but the emperor proclaimed that "the death of one soldier is not a great loss to the republic" and continued fighting. Decius himself was slain soon thereafter, gaining the distinction of being the first Roman emperor killed in battle against a foreign enemy.</p><p>After the battle, Trebonianus Gallus was acclaimed the new emperor. With his army shattered, Gallus was forced to allow Cniva to leave his spoils and promised to pay tribute in order to keep the Goths from invading the empire again.</p>
+  0251-01-01 / 0251-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Goths","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Goths"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0423"}
+  leader{"Cniva","Decius"}
+}
+
+"CnC-A 0424 - Edessa" {
+  10630
+  <p>The battle of Edessa was another round in the on-going Roman-Persian Wars. In 258, Shapur I, King of Sassanid Persia invaded Roman territory, overrunning Armenia and continuing into Syria. In order to stop his repleated plundering, in 259, Emperor Valerian led a Roman army (including the Praetorian Guard) into Syria. After some initial success in restoring the lost provinces, he met the main Persian army near Edessa, in Mesopotamia, commanded by King Shapur I.</p><p>The Roman army was strong in legionary infantry, while the Persian force had superior cavalry. However, the Persian army also fielded a number of war elephants. Shapur initiated the battle with a charge by his lumbering pachyderms into the center of the Roman line. Confusion and panic followed, for the Roman's techniques to counter these beasts had long been forgotten. A massive Persian cavalry charge then forced the Romans to withdraw. Valerian and most of the army were surrounded and ultimately captured. The way was now clear for Shapur and his Persian host to sweep back through Syria and into Asia Minor.</p>
+  0259-01-01 / 0259-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Persia","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Persia"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0424"}
+  leader{"King Shapur I","Emperor Valerian"}
+}
+
+"CnC-A 0425 - Naissus" {
+  10630
+  <p>The Goths, a Germanic people, were migrating southward and crossed the Roman frontier in the province of Pannonia. The emperor Gallienus, fresh from his victory over another Germanic tribe, the Alemanni, managed to check the Goth's advance early in the year, but he could not expel the Goths, and they sacked several wealthy towns, that summer. Then Gallienus was murdered while on campaign against a pretender. The new emperor, Claudius II, led a second expedition against the Goths in the autumn of 268 AD with a more mobile army. His cavalry was commanded by the general Aurelian, who would later become the emperor.</p><p>As both armies deployed for battle, the advance guard of the Goths was cut to pieces by the Roman light cavalry, which withdrew to the flanks as the Goths, who had the advantage in numbers, charged the Roman center. The Roman infantry held against the charge, with the help of Aurelian's cavalry leadership. The Romans then advanced and drove what was left of the enemy's center back to their wagon laager. After being repulsed several times, the Romans set up a siege. Eventually, the Goths surrendered and thousands were taken prisoner. The defeat at Naissus broke the war power of the Goths and secured Rome's Danubian frontier for decades to come.</p>
+  0268-01-01 / 0268-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Goths","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Goths"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0425"}
+  leader{"Unknown","Claudius II"}
+}
+
+"CnC-A 0426 - Placentia" {
+  10630
+  <p>Aurelian became emperor in 270, and is remembered as one of the "soldier-emperors" who restored the empire after its near collapse. During his five-year reign, Aurelian re-united the empire after two-thirds of the provinces had broken away from central control. But first, Aurelian had to repulse a number of barbarian invasions. The most serious threat was posed by the Alemanni, a Germanic tribe that had made frequent incursions into Roman territory. In 271 AD, after Aurelian had moved several of the western legions east to fight the Vandals and Goths, the Alemanni broke through the frontier forces and invaded Italia. The Alemanni horde first sacked the city of Placentia in northern Italia. Emperor Aurelian, who was in Pannonia (near present day Hungary) with an army to control the Vandals, had to move quickly back to Italia. The Alemanni learned of Aurelian's approach and set an ambush for the Roman Emperor. They achieved complete surprise and defeated the Romans. The Alemanni continued their advance toward the capital, which produced great fear and panic in Rome.</p>
+  0271-01-01 / 0271-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Alemanni","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Alemanni"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0426"}
+  leader{"Unknown","Emperor Aurelian"}
+}
+
+"CnC-A 0427 - Fano" {
+  10630
+  <p>After his serious defeat at the Battle of Placentia at the hands of the Alemanni, Emperor Aurelian rallied and re-grouped his troops and started in pursuit. The Alemanni were moving towards Rome, producing great fear in the city. Rome had grown beyond the old city walls and much of the city was completely exposed to enemy attack. Aurelian finally caught up to the rear of the Germanic horde and forced a fight near Fano. The Alemanni turned to fight just before crossing the Metaurus River which was their undoing. Pinned against the river, the Alemanni were unable to maneuver or give any ground. When the main Alemanni line broke, many of the tribal warriors were drowned as they attempted to retreat. The shattered remnants of the Alemanni now headed north, away from Rome, with Aurelian in hot pursuit.</p>
+  0271-01-01 / 0271-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Alemanni","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Alemanni"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0427"}
+  leader{"Unknown","Emperor Aurelian"}
+}
+
+"CnC-A 0428 - Pavia" {
+  10630
+  <p>After the victory at Fano, Emperor Aurelian sent his troops in pursuit of the defeated Alemanni horde, which was racing back to its homeland. Aurelian had the mountain passes blocked and then proceeded to destroy almost the entire Alemanni army. Little is known about the tactical makeup of the battle, other than that the Alemanni were trying to get away and were almost completely wiped out. The victory ended the invasion and the Roman people granted Aurelian the title Germanicus Maximus. But the near success of the Alemanni made Aurelian realize that Rome needed better defenses. This new, much larger set of walls encompassed all of the seven hills and became known as the "Aurelian Walls," some of which can still be seen today.</p>
+  0271-01-01 / 0271-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Alemanni","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Alemanni"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0428"}
+  leader{"Unknown","Emperor Aurelian"}
+}
+
+"CnC-A 0429 - Immae" {
+  10630
+  <p>The Palmyrene Empire (260-273) consisted of the (former) eastern Roman provinces of Syria, Palestine, and large parts of Asia Minor. This breakaway kingdom was ruled by the famous Queen Zenobia and had won many victories over the Sassanids, while repelling the Romans at the same time. Queen Zenobia believed that she and her general Zabadas could take Egypt while the Romans were busy with the Germanic tribes of the north. In 272, Emperor Aurelian, fresh from his dramatic victory over the Alemanni, marched east to end the threat from Zenobia and restore the eastern provinces. After overrunning Syria, Aurelian met the main Palmyrene army at Immae, a short distance east of the city of Antioch.</p><p>The Battle of Immae began with a Palmyrene cataphract cavalry charge led by Zabadas. After a short struggle, the lighter Roman cavalry formation fell back into a marshy area. Here, as planned, the Roman infantry was waiting the now tired, disorganized cataphract cavalry, who routed and fled. Zenobia and her infantry made a stand on a series of hills until the Romans advanced and cut them apart. The queen and her general retreated to Antioch. After some additional campaigning, Aurelian captured and sacked Palmyra, bringing an end to Zenobia's empire and restoring the rule of Rome in the East.</p>
+  0272-01-01 / 0272-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Palmyrene","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Palmyrene"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0429"}
+  leader{"Zenobia","Zabadas","Emperor Aurelian"}
+}
+
+"CnC-A 0430 - Milvian Bridge" {
+  10630
+  <p>While emperor Diocletian's "Tetrarchy" system of shared power maintained calm for 20 years, eventually rivalries took over again. In 306 Maxentius proclaimed himself emperor, setting off another confused civil war. He gained great power when F.V. Septimus marched an army against him which defected before battle. In 312, Constantine decided to resolve the dispute with Maxentius (his brother-in-law!) for control of the Western Roman Empire. With an army drawn from his western provinces of Britain, Gaul, and the Rhine, Constantince invaded Italy. He defeated Maxentius at Taurinorum, and expected Maxentius to hold out in Rome (as he had successfully done several times before) but instead he made a stand less than ten miles from Rome, in front of the Milvian Bridge crossing the Tiber River.</p><p>Maxentius' deployment was faulty, as his huge army was much too close to the Tiber River to allow room to maneuver. Although out-numbered, Constantine's army attacked first and succeeded in pushing Maxentius's forces back toward the river, with Constantine personally leading his Gallic cavalry forward. Seeing that the battle was going badly, Maxentius ordered his army to retreat and seek safety behind Rome's strong walls, but the planned withdrawal degenerated into a rout as the retreating troops bunched up at the Milvian Bridge. Even Maxentius could not cross at the bridge and drowned. Constantine marched into Rome after the victory and was declared the sole Western Roman Augustus. Constantine later claimed a dream told him he would succeed "under this sign" (which various sources call the cross or the Chi-Rho sign) and this victory aided the rise of Christianity as Rome's state religion.</p>
+  0312-01-01 / 0312-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Constantine","Maxentius"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Constantine"-"2","Maxentius"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0430"}
+  leader{"Constantine I ","Maxentius"}
+}
+
+"CnC-A 0431 - Cibalae" {
+  10630
+  <p>In the years after Milvian Bridge, Constantine gradually consolidated his military superiority. Licinius emerged as Constantine's chief rival. After defeating Daia, Licinius gained control over the entire eastern half of the Roman Empire. Relations between the Constantine and Licinius gradually deteriorated. Upon learning that Licinius was conspiring against him, Constantine marched east and the two armies met about 200 miles within the territory of Licinius, near Cibalae in Pannonia. Licinius's army took up a position of the edge of a plain, intending to attack Constantine as he emerged from a narrow passage through hilly country and swamps. Constantine, however, covered his deployment with light cavalry and gained maneuvering space. The battle lasted from dawn to dusk. It ended when Licinius's left wing gave way and his army withdrew under the cover of darkness. Licinius was forced to flee to Sirmium.</p><p>After losing a second battle to Constantine, Licinius conceded his Balkan provinces to Constantine in exchange for a cessation of hostilities. In a second civil war with Licinius (323-324), Constantine finally re-united the Roman Empire under the rule of one man for the first time in over three decades.</p>
+  0314-01-01 / 0314-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Licinius","Constantine"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Licinius"-"2","Constantine"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0431"}
+  leader{"Licinius","Constantine"}
+}
+
+"CnC-A 0110 - Marathon" {
+  10630
+  <p>King Darius I of Persia sent an expedition against Athens in reprisal for the burning of Sardes in 498 BC during the failed Ionian Revolt. The Persian fleet unter the joint command of Datis and Artaphernes landed near Marathon bay, which offered a perfect battleground for their troops. The Athenians marched out to face the enemy in the field, with 1000 allied soldiers from Plataea supplementing the Athenian force of 9000. The Persians outnumbered the Greeks, but to counter the disparity, Callimachus extended the Greek line to match the enemy, thinning the center while keeping both wings at full strength. The Persian army, with its best troops in the center, was taken by surprise when the Athenians attacked. Historians suggest that some of the Persian cavalry was in the process of embarking back onto the ships when the attack started. In the battle the Persian center got the best of the weak Greek center and broke through, but this success was more than countered by the defeat of their two wings. The victorious Athenians then swung inwards and the Persian force was routed back to their ships. Concerned that the defeated Persians might still sail around to threated Athens, Pheidippides ran the 26 miles back to Athens with the news of the victory, running the first Marathon race. Greece was safe, for now.</p>
+  0490-01-01 BC / 0490-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Greek","Persia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Greek"-"2","Persia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0110"}
+  leader{"Callimachus","Datis"}
+}
+
+"CnC-A 0111 - Himera" {
+  10630
+  <p>Phoenicia and Greece both colonized the western Mediterranean. Carthage unified the Punic cities into an empire, while the Syracuse rose to become the leading Greek city under its first Tyrant, Gelon. With Theron of Akragas, Gelon took control of Himera and drove out the former ruler, Terillus, in 483. King Hamilcar of Carthage, an ally and friend of Terillus, led an army to Sicily in 480 BC to restore him to power. Hamilcar established two camps to the west and southwest of Himera. As the armies skirmished outside the city, Gelon's raiders captured a message providing the date of arrival of a body of Greek cavarly reinforcing Hamilcar's army. A treacherous plan was hatched to substitute Gelon's own cavalry for these reinforcements. At dawn on the specified day, Gelon's horsemen entered the Punic sea-camp without raising any suspicion. They suddenly attacked, raising havoc and killing Hamilcar. Meanwhile the rest of Gelon's army launched a surprise attack against both camps. Most of the forces in the sea-camp were slaughtered but a successful counter-attack at the hill camp prevented the total destruction of the Carthaginian army. A peace treaty was signed between Syracuse and Carthage, which held for seven decades. Since Hamilcar's expedition coincided with the Xerxes' invasion, it was believed to be part of a coordinated assault on the Greek world.</p>
+  0480-01-01 BC / 0480-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Carthagian","Syracusan"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Carthagian"-"2","Syracusan"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0111"}
+  leader{"Hamilcar Gisgo","Gelon"}
+}
+
+"CnC-A 0112 - Plataea" {
+  10630
+  <p>The Persian emperor Xerxes I led a massive invasion of Greece to avenge the defeat of his father's forces at Marathon. After annihilating the 300 Spartans at Thermopylae, Xerxes captured and burned Athens, Macedon, Thessaly and Boeotia submitted to Xerxes. However, following the loss of the Persian fleet at Salamis (480), Xerxes withdrew to Asia and left Mardonius with most of the Persian land forces to continue the subjugation of Greece. Amid much bickering, an allied Greek army was formed under the Spartan Pausanias, and moved to oppose the Persians. The Greeks were always careful to stay in terrain that negated the Persian cavalry. The Persian cavalry attacked anyway, but their commander Masistias was killed. Ceasing direct combat, the Persian cavalry began raiding effectively, poisoning the Greek's water supply and destroying a large Greek baggage train. Short of water and food, Pausanias ordered a night withdrawal, but only the allies in the center did so. The Spartan right and Athenian left stood until first light. Seeing this confusion Mardonius ordered a general advance, and attacked the Athenians units on the Greek left wing. It was a fierce onslaught that prevented the Athenians from moving to assist the Spartans who were being pressed hard on the right. Holding back until the omens were right, the Spartans were finally ordered to charge, routing all before them and killing Mardonius. The sight of Persians retreating unnerved Artabazus' forces and they also fled the field. The victory at Plataea meant the Persian threat to Greece was effectively ended.</p>
+  0479-01-01 BC / 0479-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Greek","Persia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Greek"-"2","Persia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0112"}
+  leader{"Pausanius","Mardonius"}
+}
+
+"CnC-A 0113 - Leuctra" {
+  10630
+  <p>Sparta's victory over Athens in the Peloponnesian War (431 - 404) cemented the reputation of her hoplites as the premier infantry force in the world. However, Spartan arrogance following this victory led to the outbreak of hostilities with her former ally, Thebes. In 371 King Cleombrotos of Sparta marched against Thebes. When he reached Leuctra he found the Theban army barred his way. The Spartans deployed in a long line with their allies on the left. Greek commanders traditionally placed their best troops on the right, and this wing usually led the attack. The brilliant Theban commander, Epaminondas,devised an innovative plan to mass his best men on the left in a 50-man deep phalanx. He intended to meet Spartan shock with super shock. Both sides sent their cavalry out and the Spartan horse were quickly defeated. Seeing his cavalry fail, Cleombrotos ordered his infantry to advance. Simultaneously, Epaminondas' massed left advanced against the Spartan right, while the rest of his army was ordered to hold back, in an oblique order. The Spartans were attempting to change formation to deal with the situation when the Sacred Band charged and hit them in mid-maneuver. Cleombrotos was killed and the massive weight of the Theban phalanx broke the Spartan line. Never before had Sparta experienced such a defeat, and Leuctra shattered the myth of Spartan military invincibility.</p>
+  0371-01-01 BC / 0371-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Theban","Spartan"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Theban"-"2","Spartan"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0113"}
+  leader{"Epaminondas","Cleombrotos"}
+}
+
+"CnC-A 0114 - Mantinea" {
+  10630
+  <p>Thebes' shocking victory at Leuctra (371) had ended the Spartan hegemony over Greece. Epaminondas then organized the Arcadian League of cities in the Peloponnesus, in order to counter-balance Sparta and ensure Theban supremacy. A division in the Arcadian league led Mantinea to ally with Sparta. Sparta's hereditary enemy, Athens, even joined in the alliance against Thebes. Epaminondas invaded in 362 to reassert Theban dominance. In a plain near Mantinea he encountered the enemy force fo 20,000 foot and 2,000 horse with the Mantineans on the right, Spartans in the center, and Athenians on the left. Epaminondas' force of 30,000 foot and 3,000 horse was deployed with massive depth on his left, the same tactic he had used successfully at Leuctra. The Thebans closed in on the Mantinean wing and then grounded arms as if not to battle this day. Once the Mantineans relaxed their guard, Epaminondas suddenly ordered the attack. The onslaught broke the Mantinean right flank, leading to the defeat of the entire Spartan army. Disastrously for Thebes, Epaminondas was killed in the closing moments of the battle. Sparta had been humbled again, but without her brilliant leader, Thebes was unable to maintain her hegemony over Greece. The ultimate result was a weakening of Greece that paved the way for the Macedonian conquest.</p>
+  0362-01-01 BC / 0362-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Theban","Spartan"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Theban"-"2","Spartan"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0114"}
+  leader{"Epaminondas","Agesilaus"}
+}
+
+"CnC-A 0115 - Crocus Plain" {
+  10630
+  <p>In 359 BC, Philip became king of Macedon. As a youth he had been a hostage in Thebes, where he observed the innovations of Epaminondas. Applying these lessons, Philip created a combined arms force of a maneuverable phalanx, cavalry and light troops. He re-armed his phalanx with 17-foot pikes instead of the usual 9-foot spears. Philip aggressively expanded Macedonian control which brought him into conflict with the Athenians. In 352, Philip turned southwest into Thessaly. The Greek Phocian army under Onomarchus arrived at Crocus Plain with 20,000 foot and 500 horse to stop him. Onomarchus deployed with his back to the Pagasaean Gulf. Philip with the same number of foot and 3,000 horse, attacked. Onomarchus' army fought with surprising resilience holding off the Macedonian phalanx until flanked by Philip's cavalry. The Phocian lines began to withdraw and then broke and fled to the sea where many tried to swim out to the Athenian fleet that had just arrived. Onomarchus died fighting, and Macedon now dominated all of Thessaly. Philip had demonstrated the superiority of a combined arms force against a traditional Greek hoplite army. The irresistible Macedonian expansion into Greek would continue.</p>
+  0352-01-01 BC / 0352-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Macedonian","Phocian"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Macedonian"-"2","Phocian"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0115"}
+  leader{"Philip II","Onomarchus"}
+}
+
+"CnC-A 0116 - Granicus" {
+  10630
+  <p>Alexander succeeded his father in 336 BC, and after securing control of Macedon and the other Greek states, he marched east to challenge the Persian Empire. He crossed the Hellespont into Asia with about 32,000 infantry and 5,100 cavalry. Darius III, emperor of Persia, did not act in time to prevent the crossing and ordered his Satraps (governors) and generals to assemble their forces near the Granicus River. The Persian cavalry were deployed along the bank and the infantry some distance to the rear. Alexander placed his heavy infantry in the center and light infantry and cavalry on the wings. Parmenio commanded the defensive left and Alexander the overloaded right. The initial Macedonian attack across the river was repulsed. Alexander then led the Companion cavalry in a ferocious assault on the Persian leaders who were now grouped closely together. Mithridates, Darius' nephew, struch the Macedonian king with a javelin, but Alexander slew him with a sword stroke. Phoesaces then managed to deliver a blow that split Alexander's helmet. As Alexander struck Rhoesaces down, Spithradates came from behind and raised his scimitar to finish off the Macedonian king. However, Alexander's bodyguard Cleitus struck the Persian noble with such power that he severed his arm. The death of these three leaders was too much for the Persian cavalry and they broke and fled. So did the Persian foot. Only the Greek mercenaries held their ground. When they asked for quarters, none was given, and they were butchered almost to the man. Asia Minor was now ripe for Macedonian conquest.</p>
+  0334-01-01 BC / 0334-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Macedonian","Persia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Macedonian"-"2","Persia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0116"}
+  leader{"Alexander","Mithridates","Phoesaces","Spithridates"}
+}
+
+"CnC-A 0117 - Issus" {
+  10630
+  <p>After the battle of Granicus River, Darius assembled a new army near Babylon while Alexander overran Asia Minor. Darius advanced into Syria to await the Macedonian invader. However, when Alexander's advance was delayed due to his illness, Darius maneuvered his forces around behind the Macedonian army and overran his supply base. Alexander turned to meet Darius at the Pinarus River. Darius' army was deployed defensively behind the river, with light-armed units on the hills on his left, Greek mercenaries in the center and the majority of his cavalry on his right under Narbazanes. Alexander took command of the Companion Cavalry on the right, deployed his phalanx in the center and sent the Thessalian cavalry under Parmenio to the left flank to hold out against the massed Persian horse. Alexander's advance was slow at first, but when he realized the Persian units in the hills were no threat, he ordered the charge toward the Greek mercenaries. The Macedonian phalanx initially had a tough time against Darius' Greek mercenaries, but Alexander broke through with his Companions and took the mercenaries in the flank. The Persian center rapidly collapsed and Darius fled the field. A fierce, evenly matched cavalry battle near the shore turned into a Persian rout when the horsemen saw Darius take flight. Persia had lost two armies, and Alexander now had access into the heart of the empire.</p>
+  0333-01-01 BC / 0333-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Macedonian","Persia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Macedonian"-"2","Persia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0117"}
+  leader{"Alexander","Darius III"}
+}
+
+"CnC-A 0118 - Gaugamela" {
+  10630
+  <p>Rather than pursue Darius after the victory at Issus (333), Alexander turned south to neutralize the Persian fleet. In a two-year campaign he captured Tyre and Gaza, and conquered Egypt. In 331, Alexander marched into Mesopotamia, intent on attacking Babylon. Darius had raised another army, strong in cavalry but lacking in good infantry. The two armies met on the plain of Gaugamela. Darius posted cavalry on the right and the left, and occupied the center with his Greek mercenaries, guard cavarly, elephants and chariots. Alexander placed the Thessalian horse on the left, while taking charge of the phalanx in the center and the Companions on the right in person. The Persian line extended well beyond both flanks of the Macedonian formation. To counter, Alexander moved diagonally as he advanced, refusing his left. Darius ordered his mounted troops forward. The Macedonian right managed to hold their attackers just long enough for Alexander to charge with his Companions and heavy infantry straight for Darius. Again, Darius turned and fled the field, but the battle was not quite over. The Macedonian left was still hard pressed by the Persian cavalry. Alexander wheeled about and charged with the Companions into the Persians, forcing them back. Soon the entire Persian army was in retreat. Gaugamela is one of the truly decisive battles of history, and marked the beginning of Alexander's great empire. This battle is also considered the classic example of pentration tactics.</p>
+  0333-01-01 BC / 0333-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Macedonian","Persia"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Macedonian"-"2","Persia"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0118"}
+  leader{"Alexander","Darius III"}
+}
+
+"CnC-A 0119 - Jaxartes River" {
+  10630
+  <p>By 329 BC Alexander had completed the subjugation of the eastern Persian satraps, and his army was building a new city, Alexandria Eschate, on the banks of the Jaxartes, to guard his north-eastern frontier. A Scythian force under their chief, Satraces, arrived on the opposite bank. The Scythian force was mostly horse-archers who were about to launch a major raid. Alexander decided to attack and defeat the barbarians to dissuade them from future raids. Alexander set up catapults to deal with the horse-archers during their potentially difficult river crossing. When the catapults opened fire, a number of Scythian horsemen were immediately struck down. The horse-archers cautiously backed away from the river. Alexander's troops quickly crossed en masse. Once safely across, he sent out a few units of horse and foot as bait. When the Scythians, as expected, had surrounded the Macedonian detachment, Alexander sent in the rest of his horse and light infantry to block their retreat so they could not avoid Alexander's heavy foot units. After some brief hand-to-hand fighting, Satraces was killed and the Scythians broke and fled. Although the bulk of the Scythian army escaped, they knew that the Macedonians could beat their tactics. Alexander had succeeded in forcing a victory against the swift steppe horse-archers where Cyrus the Great and Darius I had failed.</p>
+  0328-01-01 BC / 0328-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Macedonian","Scythian"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Macedonian"-"2","Scythian"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0119"}
+  leader{"Alexander","Satraces"}
+}
+
+"CnC-A 0120 - Hydaspes" {
+  10630
+  <p>Having gained control over all of the known civilized world, Alexander ventured into India in 326 BC. He met resistance from Porus at the River Hydaspes. Porus' large corps of 200 elephants thwarted all of Alexander's attempts to cross the river. Learning that a lare force was moving to reinforce Porus, Alexander decisively divided his army, and secretly crossed up-river with the majority of the Macedonian troops. Craterus remained in place with a large detachment to deceive the Indians. Upon receiving the startling news that Alexande had crossed the Hydaspes, Porus hurriedly turned his army to meet him in battle. Porus sent his chariots forward but these were quickly destroyed. Alexander then sent his cavalry to attack Porus' right wing and gained the flank of the Indian army, while his heavy infantry advanced to attack the elephants and bowmen. The elephants charged the phalanx and did great execution among the elite Macedonian infantry. Only the timely intervention of the light troops prevented greater loss. Porus, wounded six times, was captured and the remainder of his army routed. Porus so impressed Alexander with his bravery that he was allowed to retain his kingdom as a Macedonian vassal. The power of the elephants was not lost upon the Macedonian generals who fought at Hydaspes. They would go to great pains to obtain elephants of their own during the Wars of the Successors.</p>
+  0326-01-01 BC / 0326-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Macedonian","Indian"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Macedonian"-"2","Indian"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0120"}
+  leader{"Alexander","Porus"}
+}
+
+"CnC-A 0121 - Hellespont" {
+  10630
+  <p>Alexander's death in 323 BC threw his empire into a state of political and military turmoil, with his generals and governors claiming independent kingdoms as his "Successors" (the Diadochia). Perdiccas inherited the main Macedonian army and the title 'regent of the Asiatic Empire.' A coalition of other successors formed against him. An army under Craterus was sent to Asia to confront Perdiccas and his allies. Perdiccas sent Eumenes and Neoptolemus with an army to the Hellespont to prevent Craterus from crossing into Asia. Neoptolemus, jealous of Eumenes, deserted with a few hundred horse and joined forces with Craterus. After crossing, when Craterus and Eumenes met, each had around 20,000 infantry but Craterus' phalanx of veteran Macedonians was superior. Eumenes relied on his more numerous cavalry. Both sides stationed their phalanx in the center and cavalry on the wings. Craterus, commanding the right wing, charged at the onset. He was slain, and his cavalry scattered. On the other wing, Neoptolemus confronted Eumenes, and in single combat, Neoptolemus was killed. Craterus' infantry, by now surrounded and leaderless, surrendered. Eumenes invited the defeated Macedonians to join him. They agreed, but took off by night to rejoin Antipater, the regent of Greece and Macedonia. The Battle of the Hellespont removed two contenders, but the War of the Successors would go on for another 40 years.</p>
+  0323-01-01 BC / 0323-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Craterus' Successor Army","Eumenes' Successor Army"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Craterus' Successor Army"-"2","Eumenes' Successor Army"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0121"}
+  leader{"Craterus","Eumenes"}
+}
+
+"CnC-A 0122 - Paraitacene" {
+  10630
+  <p>By 318 BC the Successors had formed two competing alliances: the 'Royalists' who claimed to fight to maintain the empire for Alexander's infant sons, and a rival coalition that sought to claim their own independent kingdoms. The opposing Successor Armies in Asia -- one commanded by Antigonus, the other by Eumenes -- met in battle at Paraitacene in 317 BC. Antigonus was by now the most powerful of the Diadochi, controlling most of Anatolia and the eastern satrapies. Eumenes had the backing of Alexander's heirs and a large war chest, though the fact that he was a Greek and not a Macedonian was a major handicap. Antigonus fielded 28,000 infantry and 11,000 horse. Eumenes' force of 35,000 foot and 6,000 horse included the veteran Silver Shields who had fought with distinction in all of Alexander's campaigns. The battle opened with Antigonus' light horse attacking Eumenes right. This attack was wrecked by Eumenes' heavy cavalry. Meanwhile in the center, the Silver Shields drove back Antigonus' phalanx. Antigonus' army was on the ropes when he pulled off a stroke that evened the score. He charged through a gap and was successful in routing Eumenes' left flank. Both sides at this point were exhausted and returned to their camps. Antigonus claimed victory but realistically the battle was a draw and a final resolution would be at Gabiene, a year later.</p>
+  0317-01-01 BC / 0317-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Antigonus' Successor Army","Eumenes' Successor Army"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Antigonus' Successor Army"-"2","Eumenes' Successor Army"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0122"}
+  leader{"Antigonus","Eumenes"}
+}
+
+"CnC-A 0123 - Gabiene" {
+  10630
+  <p>After Paraitacene in 317, Eumenes was desperately trying to keep the united Empire of Alexander alive for his heirs. The following year, Antigonus emerged early from winter quarters and force marched across the desert to catch Eumenes off guard. Eumenes detected the move and the two armies closed on a salt plain near Gabiene. Antigonus' force had 22,000 infantry, 9,000 horse and 65 elephants. Eumenes' army was down to 17,000 infantry, 6,000 cavalry and 114 elephants. Both sides deployed in a classic Alexandrian set up. The battle opened with the skirmishers and elephants engaging in a confused melee. Antigonus' cavalry charged home against Eumenes' left wing cavalry, routing it. In the center Eumenes' Silver Shields prevailed again in an infantry attack that forced back the Antigonid phalanx. Meanwhile, Antigonus' cavalry force was pressing in on both flanks and also captured Eumenes' baggage train (camp). It had been another close battle but Antigonus had prevailed. Antigonus negotiated with the Silver Shields to exchange their commander for their captured baggage, and Eumenes was betrayed and put to death. Antigonus was now the undisputed leader of the Asian satrapies, and would soon make a bid to reclaim all of the Empire of Alexander for himself.</p>
+  0316-01-01 BC / 0316-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Antigonus' Successor Army","Eumenes' Successor Army"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Antigonus' Successor Army"-"2","Eumenes' Successor Army"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0123"}
+  leader{"Antigonus","Eumenes"}
+}
+
+"CnC-A 0124 - Ipsus" {
+  10630
+  <p>By 309 BC, all of Alexander's heirs had been executed. The Successors ended the pretense of fighting for the restauration of the empire, and proclaimed themselves kings. With the most powerful army of all the contenders, Antigonus made a bid to reunify the empire under his dominion in 302 BC. The other four Diadochi kings had formed an alliance to stop him. The allies met Antigonus' army near Ipsus. The armies were evenly matched in foot, with the allies superior in horse and greatly superior in elephants. As the battle began, Antigonus' cavalry charged against one of Seleucus' cavalry wings, routing it. Unfortunately, the Antigonid cavalry pursued too far, and then could not re-enter the battle because they were blocked by Seleucid elephants. This left Antigonus' phalanx unsupported as the allied phalanx charged forward. Overwhelmed, Antigonus was killed and his phalanx broken. The remaining horse and some of the foot escaped, along with a young general who would make his presence felt later -- Pyrrhus. With three kings and three future kings present, this had truly been "the Battle of the Kings." The 81-year old Antigonus had never before lost a battle. His defeat and death brought an end to the first phase of the Successor Wars and dashed any hope that the empire would be reunified.</p>
+  0301-01-01 BC / 0301-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Antigonus' Successor Army","Seleucus' Successor Army"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Antigonus' Successor Army"-"2","Seleucus' Successor Army"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0124"}
+  leader{"Antigonus","Seleucus","Lysimachus"}
+}
+
+"CnC-A 0125 - Heraclea" {
+  10630
+  <p>As a youth, Pyrrhus of Epirus served as a lieutenant under the Diadochi, including Demetrius and Ptolemy. In 297 BC he regained his ancestral kingdom, and went on to seize the throne of Macedon. By 284 he was driven out of Macedon, and looking for new adventures. When Rome threatened expansion in southern Italy, Pyrrhus accepted an invitation from Tarentum to lead their fight in 281 BC. His campaign started badly when his invasion army of 25,000 foot, 3,000 horse and 20 elephants was scattered in its sea crossing, and he discovered a "wait and see" attitude among his erstwhile Greek allies in Italy. Pyrrhus needed a quick victory to change their attitude. Laevinus moved south to deal with the Epirote invader with a Roman army of two legions and allies -- about 25,000 men. Both armies met near the river Siris. Pyrrhus could not prevent the Romans from crossing. In the early stage of the battle the Romans were getting the best of it, when Pyrrhus played his trump card and sent forward the elephants. No Roman soldier had seen one before and they were too much for the foot and cavalry alike. The Roman rout was on. There is little doubt the elephants were the key to Pyrrhus' victory, but it had been a bloody and hard-fought battle -- 7,000 Romans and 4,000 Greeks were left on the field. The victory swelled Pyrrhus' ranks with new allies, but Rome was far from beaten.</p>
+  0280-01-01 BC / 0280-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Epirote","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Epirote"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0125"}
+  leader{"Pyrrhus","Consular Valerius Laevinus"}
+}
+
+"CnC-A 0126 - Asculum" {
+  10630
+  <p>Pyrrhus of Epirus nearly doubled the size of his army after the victory at Heraclea wih Greeks, Samnites and Lucanians flocking to his standard. After absorbing the new recruits, Pyrrhus set off towards Rome. His advance was stopped at Asculum by the two Roman Consuls Decius and Sulpicius, and their army of four legions and allies. Both sides had around 40,000 men, but Pyrrhus had the advantage in cavarly and, of course, his elephants. After a day of skirmishing in rough terrain, the two armies lined up at daybreak on level ground. What followed was a straight-forward Legion versus Phalanx battle. During the battle Pyrrhus failed to envelope the Roman flanks. After a hard fight in the center, the Romans were driven back once again by his elephants. Pyrrhus, at the forefront of the fighting, was wounded, preventing him from exploiting his victory. Over 6,000 Romans had been slain, but Pyrrhus had lost 3,500 of his men, mostly irreplaceable veterans and many of his officers. Pyrrhus reportedly exclaimed after the battle "One more such victory and I shall be lost!" giving rise to the term "Pyrrhic Victory." The path to Rome was still guarded by other armies, and the Romans refused to negotiate a peace treaty. Discouraged, Pyrrhus accepted an offer from Syracuse to lead the Sicilian Greeks in their war with Carthage in 278 BC.</p>
+  0279-01-01 BC / 0279-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Epirote","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Epirote"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0126"}
+  leader{"Pyrrhus","Consul Decius","Consul Suplicius"}
+}
+
+"CnC-A 0127 - Beneventum" {
+  10630
+  <p>After the battle of Asculum, Pyrrhus left Italy for a three-year campaign in Sicily. Although he defeated the Carthaginians in every battle, he could not drive them off the island. Pyrrhus decided to return to Italy. Years of attrition and a naval defeat on his way back to Italy had greatly weakened his army. However, upon his return, his reputation brought thousands of new recruits out to join him. With 20,000 infantry, 3,000 cavalry and 20 elephants, Pyrrhus once again marched on Rome. Consul Manius Curius Dentatus gathered his army of about 20,000 foot and 2,000 horse and set up camp near Beneventum to await the Epiote army. Pyrrhus decided on a surprise night attack, but some of his detachments got lost. It was morning before he could organize his scattered forces near the Roman camp. Dentatus led his forces out and drove back Pyrrhus' vanguard. As the Roman attack continued it was in turn driven back by Pyrrhus' skillful use of his elephants. However, a second Roman assault stampeded the elephants into the Macedonian phalanx. Dentatus struck while the phalanx was disordered and broke it, winning the battle. Pyrrhus withdrew from the field with what was left of his army and returned to Epirus, never to return to Italy. Beneventum was the final pivotal battle in the Roman Republic's bid for control of the entire Italian peninsula, and the first great victory of the legion over the phalanx.</p>
+  0275-01-01 BC / 0275-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Epirote","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Epirote"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0127"}
+  leader{"Pyrrhus","Consul Manius Curius Dentatus"}
+}
+
+"CnC-A 0128 - Raphia" {
+  10630
+  <p>The Wars of the Successors led to the establishment of three Hellenistic Kingdoms: the Antigonids (Macedon), the Ptolemies (Egypt) and the Seleucids (from Asia Minor to India). The Seleucid Empire began to fragment, losing Judea and most of its eastern provinces and parts of Asia Minor. Antiochus III became ruler at the age of eighteen in 223 BC, and immediately began restoring his empire. In 217 he retook Judea and marched on Egypt with 62,000 foot, 6,000 horse and 103 elephants. Ptolemy IV, with a much smaller army, enrolled native Egyptians into his Greek phalanx, to bring his numbers up to 70,000 infantry, 6,000 cavalry and 73 elephants. The two armies met at Raphia on the Egyptian frontier. Both armies deployed with their phalanx in the center and cavalry on the wings. Antiochus began the battle by charging forward with his right wing cavalry and breaking Ptolemy's left. The young Antiochus impetuously pursued the fleeing cavalry before him. Meanwhile, the Egyptian right swung forward into action and defeated its counterpart. With both wings wheeling in opposite directions, Ptolemy ordered his center to attack. Surprisingly, the Egyptian phalanx got the best of the veteran Seleucids and Antiochus' entire army broke and fled. Antiochus withdrew, and Ptolemy recovered Judea. Despite this defeat, Antiochus went on to re-conquer his lost provinces and restore the great Seleucid Empire. Ptolemy, on the other hand, soon faced a major rebellion led by the Egyptian soldiers he had trained for the phalanx.</p>
+  0217-01-01 BC / 0217-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Ptolemaic","Seleucid"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Ptolemaic"-"2","Seleucid"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0128"}
+  leader{"Ptolemy","Antiochus"}
+}
+
+"CnC-A 0129 - Cynoscephalae" {
+  10630
+  <p>Victory in the Second Punic War (218 - 201 BC) established Rome as the dominant power in the Western Mediterranean. Since Philip V of Macedon had allied with Hannibal during that war, Rome had a score to settle. Rome used complaints from Rhodes and Pergamum about Macedonian aggression as a pretext to invade. The Senate sent Flaminius with two legions and some Greek allies for a showdown with Philip in 197 BC. This bould be the first contest between the Roman legion and a true Macedonian phalanx (Pyrrhus' phalanx had been composed of Epirotes, and Hannibal's of many nationalities). The two armies were nearly identical in size, with around 23,000 infantry and 2,000 cavalry each. The battle would be won by the superior tactical system, not weight of numbers. Still, the hilly Greek terrain at Cynoscephalae did favor the legion. The two armies were marching on opposite sides of a ridgeline and met unexpectedly in the early morning mist. A skirmish began between light troops, and Philip decided to commit his entire army. Philip took command of the right wing and successfully attacked the Roman left. Flaminius seized the initiative and launched an attack spearheaded by elephants on the left flank phalanx, breaking it before it was fully deployed. Each army's right wing was now victorious. An unknown Roman tribune, 'seeing what ought to be done' detached some maniples from the Roman right to strike the flank of the victorious Macedonaian right wing phalanx. Philip's phalanx was shattered in a textbook example of flexibility versus rigidity. philip's hopes to unite the Greeks under Macedonian hegemony ended with his defeat.</p>
+  0197-01-01 BC / 0197-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Macedonian","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Macedonian"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0129"}
+  leader{"Philip V","Consul Lucius Quinticus Flaminius"}
+}
+
+"CnC-A 0130 - Magnesia" {
+  10630
+  <p>Following his defeat at Raphia, Antiochus III campaigned continuously to restore his empire. He re-conquered Asia Minor, Armenia, Parthia and Bactria. Next, he avenged Raphia with a decisive victory over the Ptolemaic Egyptians at Panion in 199 BC. By these victories he earned the title 'the Great'. Meanwhile, Macedon's defeat at Cynoscephalae in 197 BC left a power vacuum in Greece. Antiochus, seeing an opportunity, invaded Greece, but Rome quickly drove him back. A Roman consular army under Lucius Cornelius Scipio pursued Antiochus to Asia Minor. Antiochus accepted the Roman challenge near Magnesia. Antiochus fielded a large army featuring his Greco-Macedonian phalanx, Galatian warriors, cataphracts, chariots and elephants. The Romans had two legions supported by Greek and Pergamene allies under their king Eumenes II. Though the Seleucid Army was larger, the Roman legionnaires, veterans of the war with Hannibal, were far more effective soldiers. The action started on the Roman right when Eumenes launched a combined skirmisher and cavalry force against the Seleucid chariots. The Legions then moved forward against the Seleucid phalanx. Seeing his army giving away, Antiochus charged forward with his heavy cavalry in an attempt to turn the tide. He broke through the Roman right, but was forced back by the Roman elephants before he could flank the Legions. Then the Seleucid elephants in the center stampeded, Antiochus' phalanx collapsed, and his entire army routed. Antiochus managed to escape and later make peace with Rome by yielding Asia Minor and paying a large indemnity. However, the defeat led to the rebellion of his eastern provinces, and Antiochus' life's work was undone. Rome emerged as the dominant Mediterranean power.</p>
+  0190-01-01 BC / 0190-12-31 BC
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Richard Borg"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Seleucid","Rome"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card Driven","Dice","Hex"}
+  theme{"Ancient"}
+  party{"Seleucid"-"2","Rome"-"2"}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
+  series{"Command and Colors"-"ancients0130"}
+  leader{"Antiochus III","Consul Lucius Cornelius Scipio"}
+}
+
+"Panzerblitz, Hill of Death 01 - First Crack" {
+  26745
+  <p>On June 27th 1944, the 2/Argyle and Sutherland Highlanders of the 227th Brigade seized the small bridge over the Odon River at the town of Tourmauville. The bridgehead was reinforced into the nivht and in the morning after a short exchange with 2 Mark IVs of the 12th SS Panzer Regiment, the 23rd Hussars attempted to seize the vital high ground of Hill 112. C and B companies of the 23rd Hussars, supported by the 8th Rifle Brigade, swung around to the north and attacked down the north-south road. The British force encountered elements of the 12th SS Panzer Regiment, supported by Flak guns of the I/53 Flak battery. The Hussars seized the orchard at the top of the hill. The Germans quickly planned a counter attack with Mark IVs and Panthers. Finally, after 12 bloody hours of fighting, the British secured the only significant features on the hill. Through highly secret Ultra decrypts, Lieutenant General O'Connor and Field Marshal Montgomery learned of the release of the II SS Panzer corps to this area, and decided to withdraw the exposed elements of the 11th Armoured Division, withdrawing their forces from the heights of Hill 112 back to the Bridgehead at Tourmauville. Thus began weeks of bloody fighting around the Hill of Death.</p>
+  1944-07-27 / 1944-07-27
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Darren Emge"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Germany","Great Britain"}
+  genre{"Conflict Simulation"}
+  mechanic{"Hex","Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Great Britain"-"2"}
+  publisher{"Multi-Man Publishing"-"http://www.multimanpublishing.com"}
+  series{"Panzerblitz"-"HoD01"}
+}
+
+"Panzerblitz, Hill of Death 02 - Launch of Jupiter" {
+  26745
+  <p>On the morning of July 10th, the 130th Brigade, supported by the 9th Royal Tank Regiment (RTR), jumped off at 05:30. The objectives for 5th Dorsets this morning were the towns of Les Dauns and Eterville, along with the ruins at Chateau de Fontaine. After quickly securing the farm complexes at Les Dauns, the British encountered stiff resistance from the 2/22 SS in the horseshoe wood and the ruins of Chateau de Fontaine. Here in the West Countrymen had their first taste of the bitter task of digging out a well-trained and entrenched enemy yard by yard. Meanwhile on the left flank, the 4th Dorsets were charged with taking Eterville, where 1/22 SS was dug in the town, its surrounding orchards, and the ridge overlooking the town. The Dorsets quickly entered the village, but fighting broke down to bloody, house-to-house fighting. The highly volatile battle caught the attention of the commander of the 5th Coy 12th SS Panzer Division, who violated his company boundaries and charged into the maelstrom, adding further chaos to an already tenuous situation. At 07:45 a message at HQ was received that Dorsets had entered Eterville and taken the town. In reality, Dorsets would spend the rest of the day and into the night trying to wrest control of the town from the SS.</p>
+  1944-07-10 / 1944-07-10
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Darren Emge"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Germany","Great Britain"}
+  genre{"Conflict Simulation"}
+  mechanic{"Hex","Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Great Britain"-"2"}
+  publisher{"Multi-Man Publishing"-"http://www.multimanpublishing.com"}
+  series{"Panzerblitz"-"HoD02"}
+}
+
+"Panzerblitz, Hill of Death 03 - End of Jupiter" {
+  26745
+  <p>Late on July 10th, it was realized that the battle to break through to the Orne River was seriously in question. In fact, the battle for the vital Hill 112 was turning into a stalemate. Maj. General Thomas decided that a fresh attack would be required to wrest control of the vital summit and the observation points looking south into the German areas. The intense fighting to the northeast had sapped most of the British reserves, leaving only the 5th Duke of Cornwall's Light Infantry (DCLI), which was snatching much needed rest in the outskirts of Fontaine-Etoupefour. It was decided that the gains outweighed the risk and the 5th DCLI formes up behind the positions held by 4th Somerset Light Infantry along the Caen-Evracy road. The 5th DCLI was supported by the 7th RTR, who arrived late. The 5th DCLI jumped off across the open ground to clear the remainder of the hill as the 7th RTR arrived. Elements of the 19th SS were dug in down slope and supported by miscellaneous Panzers. The battle raged up until dark, with artillery from both sides actively affecting the advantage on several occasions. The hill was secured and several heavy counterattacks were fended off into the night.</p>
+  1944-01-01 / 1944-12-31
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Darren Emge"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Germany","Great Britain"}
+  genre{"Conflict Simulation"}
+  mechanic{"Hex","Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Great Britain"-"2"}
+  publisher{"Multi-Man Publishing"-"http://www.multimanpublishing.com"}
+  series{"Panzerblitz"-"HoD03"}
+}
+
+"Panzerblitz, Hill of Death 04 - Take the Hill" {
+  26745
+  <p>The main thrust on July 10th 1944 was toward the summit of Hill 112. While the 130th Brigade secured the left flank, the 129th Brigade, supported by 7th RTR, was to advance on a broad front and secure the summit. The plan was for the 4th Somerset to advance over the summit. The 4th Wiltshire (Wilts) would swing around to the left, while the 5th Wilts swung around to the right. Things went badly from the beginning when shells from their own artillery landed among the assault troops of the 4th Wilts. Even without this stroke of bad luck, the 129th Brigade still had to advance over relatively open terrain through waist-high corn. The infantry and armour advanced in tandem. The German AT guns responded and knocked out several Tanks and Carriers. German armor quickly added to the number of British vehicles knocked out. The British forces pushed on with classic British determination, and the assault troops of the 129th closed on the German positions. The German Grenadiers opened up and began inflicting casualties on the British infantry. The defense of the Hill was declared a "Schwerpunkt" and the Germans committed their reserves - the dreaded Nebelwerfers of the 8th Werfer Brigade begin to rain death and destruction. Through all this, the British advanced slowly, yard by bloody yard, but things were about to get worse. Tigers! Elements of the 102nd Heavy Tank Brigade were advancing from the southeast. Only the thin skinned Achilles and 17 lbr AT guns of the 86th Antitank Regiment could hope to challenge this new threat. After several hours of heavy fighting, the 129th Brigade reached their goal along the Caen-Evracy road and began to dig in.</p>
+  1944-07-10 / 1944-07-10
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Darren Emge"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Germany","Great Britain"}
+  genre{"Conflict Simulation"}
+  mechanic{"Hex","Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Great Britain"-"2"}
+  publisher{"Multi-Man Publishing"-"http://www.multimanpublishing.com"}
+  series{"Panzerblitz"-"HoD04"}
+}
+
+"Panzerblitz, Hill of Death 05 - Overlooking Maltot" {
+  26745
+  <p>While its sister brigade advanced on the summit of Hill 112, the 130th Brigade jumped off on July 10th at 08:00 to secure the left flank. Intelligence reported the town of Maltot to be lightly defended, so the plan was simple. The 7th Hampshires, with elements of the 9th RTR, would advance down into the valley, pass through Maltot, and dig in on the southern ridge overlooking the town. Observation Post variants of the Churchill, along with forward observers in Carriers, would be able to quickly call in artillery support if needed, to crack the line. The advance went well until the British closed on the town, then shot and shell rang out from the village and from German AT guns on Hill 112. Compounding the situation, a platoon of Tigers from the 102nd Heavy Tank Regiment had advanced almost simultaneously to support the defenders of Maltot. The 7th Hampshires bypassedthe town defenders and thrust toward their objective, the southern heights. The 7th battalion HQ and reserve companies followed up closely with the intent of mopping up Maltot, but the Germans were not going to give up one of the few dominating features on the eastern flank of the hill. Units of the 12th SS Hitlerjugend were dispatched along the River Orne to support the eastern flank. Meanwhile the 10th SS reconnaissance, were rushed in from their marshalling areas to help stem the British tide. The German high command, seeing the situation becoming tenuous, committed elements of the 8th Werfer Brigade to bloody the British. After hours of fighting on both the hill and in and around Maltot, both sides found themselves in a stalemate. Fighting for the town of Maltot would continue over the next several weeks, with the lines ebbing and flowing along the valley floor.</p>
+  1944-07-10 / 1944-07-10
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Darren Emge"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Germany","Great Britain"}
+  genre{"Conflict Simulation"}
+  mechanic{"Hex","Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Great Britain"-"2"}
+  publisher{"Multi-Man Publishing"-"http://www.multimanpublishing.com"}
+  series{"Panzerblitz"-"HoD05"}
+}
+
+"Panzerblitz, Hill of Death 06 - Twilight at Maltot" {
+  26745
+  <p>Twelve days after the initial assault, the vital village of Maltot lies in ruins. On 22nd July, 1944, the German 272nd Infantry Division, which had arrived on foot from the Pas de Calais, was assigned the defense. The 129th Brigade would attempt to secure the village. In the vanguard were the 4th and 5th Wiltshire (Wilts), supported by the reinforced 9th Royal Tank Regiment (RTR). Operation EXPRESS, as it was known, was simply an assault from the northeast down the length of the valley. The assault kicked off at 17:30 hours, with the British advancing in line across the valley. The 4th Wilts would advance around the southern edge of Maltot, while the 5th Wilts would encircle from the north. Typhoons on station overhead could be called in to deal with any particular tough nuts. Initial progress was slow but steady, with the British securing a foothold. The Germans would still not easily give up the town, and elements of the 10th SS were sent north to reinforce the defenders, and if necessary, retake the town. Heavy panzers of the 101st were sent to support the defenders but were driven off by the rocket firing typhoons. As twilight fell on Maltot, control was still in doubt and the British command committed the 151st Royal Artillery Corps flame throwing Crocodiles to help dig out the stubborn defenders. The British fought hard into the night, finally securing the town at around 22:00. The next few hours were spent mopping up the prisoners.</p>
+  1944-07-22 / 1944-07-22
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Darren Emge"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Germany","Great Britain"}
+  genre{"Conflict Simulation"}
+  mechanic{"Hex","Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Great Britain"-"2"}
+  publisher{"Multi-Man Publishing"-"http://www.multimanpublishing.com"}
+  series{"Panzerblitz"-"HoD06"}
+}
+
+"Panzerblitz, Hill of Death 07 - No Happy Rest" {
+  26745
+  <p>Clearing the crossroads at le Bon Repos was given to the 2nd Glasgow Highlanders. At 21:30 hours on July 15th 1944 they jumped off. Assisted by Monty's moonlight, the attack would advance down the slopes of Hill 112 from the northeast. The Highlanders were heavily supported by Churchills of the 107th Royal Armored Corps (RAC), 'Funnies' and Crocodiles of the 79th Armored Division, as well as machine guns and mortars of the 8th Middlesex. British forces were unsure of where the German defenders were holed up so the Churchills fired High Explosive rounds into likely defensive positions. The Highlanders cleared Esquay at around 2300 hours. At this point the Germans, believing this to be a major thrust towards Hill 113, sent the 21st Panzer Grenadiers, supported by Mark IVs of the 10th SS Panzer regiment, to blunt the perceived British offensive. The British 6 lbr AT guns went head to head with the Panzers of the 10th SS at point blank range. The British were forced to withdraw to their original starting positions on the slope of Hill 112.</p>
+  1944-07-15 / 1944-07-15
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Darren Emge"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Germany","Great Britain"}
+  genre{"Conflict Simulation"}
+  mechanic{"Hex","Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Great Britain"-"2"}
+  publisher{"Multi-Man Publishing"-"http://www.multimanpublishing.com"}
+  series{"Panzerblitz"-"HoD07"}
+}
+
+"Panzerblitz, Hill of Death 08 - Pierced and Bloodied" {
+  26745
+  <p>On July 10, 1944, the 9th Cameronians were assigned the defense of Eterville and with it the security of the left flank. Panzer Grenadiers of the 10th SS had quickly followed the withdrawing elements of the Dorsets from the town of Maltot. In the dark of night, the Grenadiers managed to work their way into the orchards around Eterville through gaps between A and B companies of the 9th Cameronians. Having penetrated into the Cameronians positions, the Grenadiers ran amok, nearly capturing the Battalion headquarters and the command staff. The left flank was now a serious concern and the Brigade Headquarters dispatched the closest reserves, C Company of the Glasgow Highlanders, to fill the gap and secure Eterville. The Highlanders fought the enemy with PIAT guns and Bayonets, finally dislodging the Germans. The 10th SS withdrew after suffering heavy casualties. However the 10th had inflicted severe losses on the British as well. For the Highlanders this was the second such blood letting in less than a month.</p>
+  1944-07-10 / 1944-07-10
+  1 / 1
+  250
+  6
+  2 / 2
+  author{"Darren Emge"}
+  engine{"Vassal"-"http://www.google.com"}
+  side{"Germany","Great Britain"}
+  genre{"Conflict Simulation"}
+  mechanic{"Hex","Counter"}
+  theme{"WW2"}
+  party{"Germany"-"2","Great Britain"-"2"}
+  publisher{"Multi-Man Publishing"-"http://www.multimanpublishing.com"}
+  series{"Panzerblitz"-"HoD08"}
+}
+
