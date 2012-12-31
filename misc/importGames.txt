@@ -582,7 +582,7 @@
   }
 }
 
-10630 {
+14105 {
   title{"Command and Colors Ancients"}
   description{<p></p>}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
@@ -1686,7 +1686,7 @@
 }
 
 26745 {
-  title{"Panzerblitz, Hill of Death"}
+  title{"Panzerblitz - Hill of Death"}
   description{<p>In the words of a Senior German Officer “He who holds Hill 112, holds Normandy”.</p><p>Join the epic battle for this key feature and the control of Normandy. Take command of Infantry and Armor to control key terrain features on Hill 112 and the surrounding countryside. This epic battle waged for over 4 weeks with the hill and surrounding objectives changing hands several times. Can you take and hold this vital piece of high ground the key to Normandy?</p>}
   publisher{"Multi-Man Publishing"-"http://www.multimanpublishing.com"}
   engine{"Vassal"-"http://www.vassalengine.org/mediawiki/images/9/9e/PanzerBlitz-HoD_v0.3.vmod"}
