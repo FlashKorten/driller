@@ -197,6 +197,37 @@ foreach my $key (sort(keys %game)){
   # Done inserting the game...
 }
 
+my $sth_select_game_ids = $dbh -> prepare(
+    "SELECT id "
+  . "FROM dr_game;");
+
+my $sth_update_gametime_start = $dbh -> prepare(
+    "UPDATE dr_game SET gametime_start = ("
+    . "SELECT min(gametime_start) "
+    . "FROM dr_scenario_data AS d, dr_scenario AS s "
+    . "WHERE d.id_scenario = s.id and s.id_game = ?) "
+  . "WHERE id = ?;");
+
+my $sth_update_gametime_end = $dbh -> prepare(
+    "UPDATE dr_game SET gametime_end = ("
+    . "SELECT max(gametime_end) "
+    . "FROM dr_scenario_data AS d, dr_scenario AS s "
+    . "WHERE d.id_scenario = s.id and s.id_game = ?) "
+  . "WHERE id = ?;");
+
+my $id;
+
+$sth_select_game_ids->execute();
+$sth_select_game_ids->bind_columns(\$id);
+
+while($sth_select_game_ids->fetch()) {
+  $sth_update_gametime_start->execute($id, $id);
+  $sth_update_gametime_end->execute($id, $id);
+}
+
+$sth_update_gametime_start->finish();
+$sth_update_gametime_end->finish();
+
 sub insert_simple_field {
   my ($id_game, $label, $value, $mapped_to) = @_;
   unless ($value) {
