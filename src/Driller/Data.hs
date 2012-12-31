@@ -23,6 +23,7 @@ module Driller.Data
     , Longitude
     , FromRange
     , UpToRange
+    , Scenario
     , fromInt
     , FromInt
     , JoinMap
@@ -72,6 +73,7 @@ data GameResult = GameResult { getNoResults  :: Int
                              , getAuthors    :: [Author]
                              , getEngines    :: [Engine]
                              , getLeaders    :: [Leader]
+                             , getScenarios  :: [Scenario]
                              , getLatitudes  :: [Latitude]
                              , getLongitudes :: [Longitude]
                              , getFromYears  :: [FromYear]
@@ -81,32 +83,30 @@ data GameResult = GameResult { getNoResults  :: Int
 }
 
 emptyGameResult :: GameResult
-emptyGameResult = GameResult 0 [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
+emptyGameResult = GameResult 0 [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
 
 data Game = Game { getGameId        :: Int
                  , getGameTitle     :: Text.Text
                  , getGameSubtitle  :: Text.Text
-                 , getPlayersMin    :: Int
-                 , getPlayersMax    :: Int
-                 , getBggId         :: Text.Text
                  }
 
 instance FromJSON Game where
   parseJSON (Object o) = Game <$>
     o .: "id" <*>
     o .: "title" <*>
-    o .: "subtitle" <*>
-    o .: "minPlayers" <*>
-    o .: "maxPlayers" <*>
-    o .: "bggid"
+    o .: "subtitle"
 
 instance ToJSON Game where
-  toJSON g = object [ "title" .= getGameTitle g
+  toJSON g = object [ "id" .= getGameId g
+                    , "title" .= getGameTitle g
                     , "subtitle" .= getGameSubtitle g
-                    , "minPlayers" .= getPlayersMin g
-                    , "maxPlayers" .= getPlayersMax g
-                    , "bggid" .= getBggId g
                     ]
+
+data Scenario = Scenario { getScenarioTitle :: Text.Text
+                         , getScenarioSubtitle :: Text.Text
+                         , getScenarioFromYear :: Int
+                         , getScenarioUpToYear :: Int
+                         }
 
 type Parameter    = (Text.Text, Int)
 type ParameterMap = HM.HashMap Text.Text Int
@@ -135,6 +135,7 @@ $(deriveJSON (drop 8)  ''Latitude)
 $(deriveJSON (drop 8)  ''Longitude)
 $(deriveJSON (drop 8)  ''FromRange)
 $(deriveJSON (drop 8)  ''UpToRange)
+$(deriveJSON (drop 11)  ''Scenario)
 
 class FromInt a where
   fromInt :: Int -> a
@@ -163,7 +164,8 @@ instance FromRow Party     where fromRow = Party     <$> field <*> field
 instance FromRow Leader    where fromRow = Leader    <$> field <*> field
 instance FromRow Publisher where fromRow = Publisher <$> field <*> field
 instance FromRow Series    where fromRow = Series    <$> field <*> field
-instance FromRow Game      where fromRow = Game      <$> field <*> field <*> field <*> field <*> field <*> field
+instance FromRow Game      where fromRow = Game      <$> field <*> field <*> field
+instance FromRow Scenario  where fromRow = Scenario  <$> field <*> field <*> field <*> field
 instance FromRow Int       where fromRow = field
 instance ToRow Int         where toRow n = [toField n]
 
@@ -180,6 +182,7 @@ instance MarkExclusive Party     where markExclusive a = a{ getPartyId     = neg
 instance MarkExclusive Leader    where markExclusive a = a{ getLeaderId    = negate $ getLeaderId a }
 instance MarkExclusive Publisher where markExclusive a = a{ getPublisherId = negate $ getPublisherId a }
 instance MarkExclusive Series    where markExclusive a = a{ getSeriesId    = negate $ getSeriesId a }
+instance MarkExclusive Game      where markExclusive a = a{ getGameId      = negate $ getGameId a }
 
 instance MarkExclusive a => MarkExclusive [a] where markExclusive = map markExclusive
 

@@ -125,7 +125,7 @@ fetchDrilledGameResult c joinMap p =
 
 fetchPositiveAnswer :: Connection -> JoinMap -> [Parameter] -> IO Answer
 fetchPositiveAnswer c joinMap p = do
-    ids <- fetchGameIds c joinMap p
+    ids <- fetchScenarioIds c joinMap p
     if null ids
        then return $ Right emptyGameResult
        else prepareResult (HM.fromList p) c ids
@@ -133,7 +133,8 @@ fetchPositiveAnswer c joinMap p = do
 prepareResult :: ParameterMap -> Connection -> [Int] -> IO Answer
 prepareResult parameterMap c ids = do
     let numberOfResults = length ids
-    games      <- if numberOfResults > 50 then return [] else fetchGames c ids
+    scenarios  <- if numberOfResults > 50 then return [] else fetchScenarios c ids
+    games      <- fetchForResult parameterMap "game"      fetchGame      fetchGames      c ids
     genres     <- fetchForResult parameterMap "genre"     fetchGenre     fetchGenres     c ids
     themes     <- fetchForResult parameterMap "theme"     fetchTheme     fetchThemes     c ids
     mechanics  <- fetchForResult parameterMap "mechanic"  fetchMechanic  fetchMechanics  c ids
@@ -162,6 +163,7 @@ prepareResult parameterMap c ids = do
                               , getAuthors    = authors
                               , getEngines    = engines
                               , getLeaders    = leaders
+                              , getScenarios  = scenarios
                               , getLatitudes  = latitudes
                               , getLongitudes = longitudes
                               , getFromYears  = fromYears

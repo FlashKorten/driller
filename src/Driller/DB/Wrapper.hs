@@ -16,7 +16,7 @@ module Driller.DB.Wrapper
     , fetchUpToYear,  fetchUpToYears,  fetchAllUpToYears
     , fetchFromRange, fetchFromRanges, fetchAllFromRanges
     , fetchUpToRange, fetchUpToRanges, fetchAllUpToRanges
-    , fetchGameIds
+    , fetchScenarios, fetchScenarioIds
     ) where
 
 import Driller.Data
@@ -182,5 +182,8 @@ fetchUpToRanges c ids = query c upToRangesQuery (Only (In ids))
 fetchAllUpToRanges :: Connection -> IO [UpToRange]
 fetchAllUpToRanges c = query_ c allUpToRangesQuery
 
-fetchGameIds :: Connection -> JoinMap -> [Parameter] -> IO [Int]
-fetchGameIds c joinMap p = query c (gameListQuery joinMap p) (map snd p)
+fetchScenarios :: Connection -> [Int] -> IO [Scenario]
+fetchScenarios c ids = query c scenariosQuery (Only (In ids))
+
+fetchScenarioIds :: Connection -> JoinMap -> [Parameter] -> IO [Int]
+fetchScenarioIds c joinMap p = query c (scenarioListQuery joinMap p) (map snd p)
