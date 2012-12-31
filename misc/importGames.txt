@@ -7,7 +7,7 @@
   mechanic{"Dice","Hex","Counter"}
   theme{"WW2"}
   series{"Battlesson"-"#2"}
-  scenario{"The Drive on Metz - Patton in France"}
+  scenario{"The Drive on Metz - Patton in France"}{
     dates{1944-09-07 / 1944-09-14}
     position{1 / 1}
     range{22}
@@ -29,7 +29,7 @@
   mechanic{"Dice","Hex","Counter"}
   theme{"WW2"}
   series{"Battlesson"-"#7"}
-  scenario{"Battle for Moscow - Operation Typhoon"}
+  scenario{"Battle for Moscow - Operation Typhoon"}{
     dates{1941-10-01 / 1941-12-31}
     position{1 / 1}
     range{-1}
@@ -51,7 +51,7 @@
   mechanic{"Dice","Hex","Counter"}
   theme{"WW2"}
   series{"Battlesson"-"#3"}
-  scenario{"Assault on Sevastopol - Von Manstein in the Crimea"}
+  scenario{"Assault on Sevastopol - Von Manstein in the Crimea"}{
     dates{1942-01-01 / 1942-12-31}
     position{1 / 1}
     range{18}
@@ -73,7 +73,7 @@
   mechanic{"Dice","Hex","Counter"}
   theme{"WW2","Market Garden"}
   series{"Paul Koenig's"-"Market Garden","Historic Gaming"-"#9"}
-  scenario{"Market Garden: Eindhoven - Eindhoven Bridge"}
+  scenario{"Market Garden: Eindhoven - Eindhoven Bridge"}{
     dates{1944-09-17 / 1944-09-19}
     position{1 / 1}
     range{9}
@@ -95,7 +95,7 @@
   mechanic{"Dice","Hex","Counter"}
   theme{"WW2","Market Garden"}
   series{"Paul Koenig's"-"Market Garden","Historic Gaming"-"#10"}
-  scenario{"Market Garden: Nijmegen - Nijmegen Bridge"}
+  scenario{"Market Garden: Nijmegen - Nijmegen Bridge"}{
     dates{1944-09-17 / 1944-09-19}
     position{1 / 1}
     range{8}
@@ -117,7 +117,7 @@
   mechanic{"Dice","Hex","Counter"}
   theme{"WW2","Market Garden"}
   series{"Paul Koenig's"-"Market Garden","Historic Gaming"-"#8"}
-  scenario{"Market Garden: Arnhem - Arnhem Bridge"}
+  scenario{"Market Garden: Arnhem - Arnhem Bridge"}{
     dates{1944-09-17 / 1944-09-19}
     position{1 / 1}
     range{8}
@@ -139,7 +139,7 @@
   mechanic{"Dice","Hex","Counter"}
   theme{"WW2","D-Day"}
   series{"Paul Koenig's"-"D-Day","Battlesson"-"#5"}
-  scenario{"D-Day: Juno - The Canadian Beach"}
+  scenario{"D-Day: Juno - The Canadian Beach"}{
     dates{1944-06-06 / 1944-06-08}
     position{1 / 1}
     range{7}
@@ -161,7 +161,7 @@
   mechanic{"Dice","Hex","Counter"}
   theme{"WW2","D-Day"}
   series{"Paul Koenig's"-"D-Day","Historic Gaming"-"#4"}
-  scenario{"Sword"}
+  scenario{"Sword"}{
     dates{1944-06-06 / 1944-06-08}
     position{1 / 1}
     range{7}
@@ -172,7 +172,7 @@
     author{"Koenig, Paul"}
     description{<p>Bernard Law Montgomery led the Allied landings on the beaches closest to Germany, with the ambitious goal of moving inland and reaching the vital city of Caen within a day or two (dubbed “Operation Neptune”). But the German 716th Division, supported by elements of the 21st Panzer Division, slowed the British advance down during these critical first few days and ultimately kept ‘Monty’ out of Caen until, after Allied offensives in June, July, and August, they cleared the area once and for all.</p>}
   }
-  scenario{"Gold"}
+  scenario{"Gold"}{
     dates{1944-06-06 / 1944-06-08}
     position{1 / 1}
     range{7}
@@ -194,7 +194,7 @@
   mechanic{"Dice","Hex","Counter"}
   theme{"WW2","D-Day"}
   series{"Paul Koenig's"-"D-Day","Historic Gaming"-"#3"}
-  scenario{"Utah"}
+  scenario{"Utah"}{
     dates{1944-06-06 / 1944-06-08}
     position{1 / 1}
     range{7}
@@ -205,7 +205,7 @@
     author{"Koenig, Paul"}
     description{<p>On the two western beachheads, the Americans faced problems galore and some of the worst terrain encountered by the Allies. It seemed that Murphy’s Law was in full effect: “Everything that can go wrong will go wrong – and at the worst possible moment.” Yet despite widely scattered air drops, confusion and stiff German resistance, an American victory was won and the beaches secured. However, the cost in lives of this close-fought campaign will see it always remembered as “Bloody Omaha.”</p>}
   }
-  scenario{"Omaha"}
+  scenario{"Omaha"}{
     dates{1944-06-06 / 1944-06-08}
     position{1 / 1}
     range{7}
@@ -227,7 +227,7 @@
   mechanic{"Card-Driven","Dice","Hex","Counter","Point-to-Point"}
   theme{"WW2"}
   series{"Command Staff"-"#1"}
-  scenario{"Bulge 20 - The Ardennes Offensive"}
+  scenario{"Bulge 20 - The Ardennes Offensive"}{
     dates{1944-12-01 / 1945-01-31}
     position{50.63333 / 5.56666}
     range{300}
@@ -249,7 +249,7 @@
   mechanic{"Cards","Hex","Counter"}
   theme{"Napoleonic"}
   series{"Napoleon 20"-"#4 Expansion"}
-  scenario{"Berezina 20 - Closing the Trap in Russia"}
+  scenario{"Berezina 20 - Closing the Trap in Russia"}{
     dates{1812-11-25 / 1812-11-29}
     position{1 / 1}
     range{9}
@@ -272,7 +272,7 @@
   mechanic{"Cards","Hex","Counter"}
   theme{"Napoleonic"}
   series{"Napoleon 20"-"#17"}
-  scenario{"Danube 20 - The Battles of Aspern-Essling and Wagram"}
+  scenario{"Danube 20 - The Battles of Aspern-Essling and Wagram"}{
     dates{1815-06-16 / 1815-06-18}
     position{1 / 1}
     range{13}
@@ -295,7 +295,7 @@
   mechanic{"Cards","Hex","Counter"}
   theme{"Napoleonic"}
   series{"Napoleon 20"-"#11 Expansion","Germany 20"-"#3 Expansion"}
-  scenario{"Dennewitz 20 - Napoleons Final Campaign"}
+  scenario{"Dennewitz 20 - Napoleons Final Campaign"}{
     dates{1813-09-04 / 1813-09-09}
     position{1 / 1}
     range{8}
@@ -318,7 +318,7 @@
   mechanic{"Cards","Hex","Counter"}
   theme{"Napoleonic"}
   series{"Napoleon 20"-"#9","Germany 20"-"#1"}
-  scenario{"Dresden 20 - Napoleon in Germany"}
+  scenario{"Dresden 20 - Napoleon in Germany"}{
     dates{1813-08-25 / 1813-08-28}
     position{1 / 1}
     range{12}
@@ -341,7 +341,7 @@
   mechanic{"Cards","Hex","Counter"}
   theme{"Napoleonic"}
   series{"Napoleon 20"-"#15 Expansion","Germany 20"-"#6 Expansion"}
-  scenario{"G&ouml;rlitz 20 - Napoleons Final Campaign"}
+  scenario{"G&ouml;rlitz 20 - Napoleons Final Campaign"}{
     dates{1813-09-03 / 1813-09-06}
     position{1 / 1}
     range{9}
@@ -364,7 +364,7 @@
   mechanic{"Cards","Hex","Counter"}
   theme{"Napoleonic"}
   series{"Napoleon 20"-"#11","Germany 20"-"#3"}
-  scenario{"Grossbeeren 20 - Oudinot vs. Bernadotte"}
+  scenario{"Grossbeeren 20 - Oudinot vs. Bernadotte"}{
     dates{1813-08-21 / 1813-08-23}
     position{1 / 1}
     range{9}
@@ -387,7 +387,7 @@
   mechanic{"Cards","Hex","Counter"}
   theme{"Napoleonic"}
   series{"Napoleon 20"-"#10","Germany 20"-"#2"}
-  scenario{"Katzbach 20 - Napoleon in Germany"}
+  scenario{"Katzbach 20 - Napoleon in Germany"}{
     dates{1813-08-25 / 1813-08-27}
     position{1 / 1}
     range{9}
@@ -409,7 +409,7 @@
   mechanic{"Cards","Hex","Counter"}
   theme{"Napoleonic"}
   series{"Napoleon 20"-"#9 Expansion","Germany 20"-"#1 Expansion"}
-  scenario{"Kulm 20 - Napoleon in Germany"}
+  scenario{"Kulm 20 - Napoleon in Germany"}{
     dates{1813-08-29 / 1813-08-30}
     position{1 / 1}
     range{11}
@@ -432,7 +432,7 @@
   mechanic{"Cards","Hex","Counter"}
   theme{"Napoleonic"}
   series{"Napoleon 20"-"#16","Germany 20"-"#7"}
-  scenario{"Leipzig 20 - The Battle of Nations"}
+  scenario{"Leipzig 20 - The Battle of Nations"}{
     dates{1813-10-14 / 1813-10-19}
     position{1 / 1}
     range{13}
@@ -455,7 +455,7 @@
   mechanic{"Cards","Hex","Counter"}
   theme{"Napoleonic"}
   series{"Napoleon 20"-"#7"}
-  scenario{"Gzhatsk 20"}
+  scenario{"Gzhatsk 20"}{
     dates{1812-09-02 / 1812-09-04}
     position{1 / 1}
     range{10}
@@ -478,7 +478,7 @@
   mechanic{"Cards","Hex","Counter"}
   theme{"Napoleonic"}
   series{"Napoleon 20"-"#1"}
-  scenario{"Waterloo 20 - Napoleon's Last Campaign"}
+  scenario{"Waterloo 20 - Napoleon's Last Campaign"}{
     dates{1815-06-16 / 1815-06-18}
     position{50.7103193 / 4.4110966}
     range{10}
@@ -501,7 +501,7 @@
   mechanic{"Cards","Hex","Counter"}
   theme{"Napoleonic"}
   series{"Napoleon 20"-"#4"}
-  scenario{"Borodino 20 - Napoleon in Russia 1812"}
+  scenario{"Borodino 20 - Napoleon in Russia 1812"}{
     dates{1812-09-05 / 1812-09-07}
     position{50.7103193 / 4.4110966}
     range{10}
@@ -524,7 +524,7 @@
   mechanic{"Cards","Hex","Counter"}
   theme{"Napoleonic"}
   series{"Napoleon 20"-"#3"}
-  scenario{"Albion 20 - Napoleon in England"}
+  scenario{"Albion 20 - Napoleon in England"}{
     dates{1805-08-25 / 1805-08-28}
     position{50.7103193 / 4.4110966}
     range{11}
@@ -547,7 +547,7 @@
   mechanic{"Cards","Hex","Counter"}
   theme{"Napoleonic"}
   series{"Napoleon 20"-"#2"}
-  scenario{"Jena 20 - Napoleon in Prussia"}
+  scenario{"Jena 20 - Napoleon in Prussia"}{
     dates{1806-10-12 / 1806-10-14}
     position{50.7103193 / 4.4110966}
     range{12}
@@ -569,7 +569,7 @@
   genre{"Conflict Simulation"}
   mechanic{"Card-Driven","Dice","Hex"}
   theme{"WW2"}
-  scenario{"Memoir '44"}
+  scenario{"Memoir '44"}{
     dates{1939-09-01 / 1945-05-01}
     position{1 / 1}
     range{250}
@@ -591,7 +591,7 @@
   mechanic{"Card-Driven","Dice","Hex"}
   theme{"Ancient"}
   series{"Command and Colors"-"Ancients"}
-  scenario{"Command and Colors Ancients"}
+  scenario{"Command and Colors Ancients"}{
     dates{700-01-01 BC / 500-12-31}
     position{1 / 1}
     range{250}
@@ -610,7 +610,7 @@
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Fog of War","Blocks","Hex","Cards"}
   theme{"WW2","Desert"}
-  scenario{"Rommel in the Desert"}
+  scenario{"Rommel in the Desert"}{
     dates{1940-09-01 / 1942-12-31}
     position{1 / 1}
     range{800}
@@ -632,7 +632,7 @@
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Fog of War","Blocks","Area Movement","Cards","Dice"}
   theme{"Scottish Wars of Independence"}
-  scenario{"Hammer of the Scots"}
+  scenario{"Hammer of the Scots"}{
     dates{1297-01-01 / 1314-12-31}
     position{1 / 1}
     range{1000}
@@ -653,7 +653,7 @@
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Fog of War","Blocks","Point-to-Point Movement","Dice"}
   theme{"American Revolution","Naval"}
-  scenario{"War of 1812"}
+  scenario{"War of 1812"}{
     dates{1812-06-18 / 1814-12-24}
     position{1 / 1}
     range{1400}
@@ -675,7 +675,7 @@
   mechanic{"Fog of War","Blocks","Hex","Dice"}
   theme{"WW2","East Front"}
   series{"Eurofront"-"EastFront"}
-  scenario{"EastFront"}
+  scenario{"EastFront"}{
     dates{1941-01-01 / 1945-12-31}
     position{1 / 1}
     range{2500}
@@ -697,7 +697,7 @@
   mechanic{"Fog of War","Blocks","Hex","Dice"}
   theme{"WW2","West Front"}
   series{"Eurofront"-"WestFront"}
-  scenario{"WestFront"}
+  scenario{"WestFront"}{
     dates{1943-01-01 / 1945-12-31}
     position{1 / 1}
     range{2200}
@@ -719,7 +719,7 @@
   mechanic{"Fog of War","Blocks","Hex","Cards"}
   theme{"WW2"}
   series{"Eurofront"-"EuroFront"}
-  scenario{"EuroFront"}
+  scenario{"EuroFront"}{
     dates{1939-09-01 / 1945-05-31}
     position{1 / 1}
     range{4000}
@@ -740,7 +740,7 @@
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Fog of War","Blocks","Point-to-Point Movement","Dice","Secret Deployment"}
   theme{"Napoleonic"}
-  scenario{"Napoleon - The Waterloo Campaign, 1815"}
+  scenario{"Napoleon - The Waterloo Campaign, 1815"}{
     dates{1815-01-01 / 1815-12-31}
     position{1 / 1}
     range{300}
@@ -763,7 +763,7 @@
   mechanic{"Counter","Hex","Cards"}
   theme{"Napoleonic"}
   series{"Napoleon 20"-"#8"}
-  scenario{"Austerlitz 20"}
+  scenario{"Austerlitz 20"}{
     dates{1805-12-01 / 1805-12-03}
     position{1 / 1}
     range{11}
@@ -786,7 +786,7 @@
   mechanic{"Counter","Hex","Cards"}
   theme{"Napoleonic"}
   series{"Napoleon 20"-"#5"}
-  scenario{"Bussaco 20"}
+  scenario{"Bussaco 20"}{
     dates{1810-09-26 / 1810-09-28}
     position{1 / 1}
     range{8}
@@ -809,7 +809,7 @@
   mechanic{"Counter","Hex","Cards"}
   theme{"Napoleonic"}
   series{"Napoleon 20"-"#6"}
-  scenario{"Vittoria 20"}
+  scenario{"Vittoria 20"}{
     dates{1813-06-21 / 1813-06-22}
     position{1 / 1}
     range{9}
@@ -832,7 +832,7 @@
   mechanic{"Counter","Hex","Cards"}
   theme{"Napoleonic"}
   series{"Napoleon 20"-"#4 Expansion"}
-  scenario{"Smolensk 20 - Closing the Trap in Russia"}
+  scenario{"Smolensk 20 - Closing the Trap in Russia"}{
     dates{1812-08-16 / 1812-08-19}
     position{1 / 1}
     range{12}
@@ -854,7 +854,7 @@
   genre{"Conflict Simulation","Strategic Level"}
   mechanic{"Card-Driven","Point-to-Point Movement","Counter"}
   theme{"WW2"}
-  scenario{"WW2: Barbarossa to Berlin"}
+  scenario{"WW2: Barbarossa to Berlin"}{
     dates{1941-06-22 / 1945-05-31}
     position{1 / 1}
     range{300}
@@ -875,7 +875,7 @@
   genre{"Conflict Simulation"}
   mechanic{"Card-Driven","Point-to-Point Movement","Counter"}
   theme{"Alexander"}
-  scenario{"Successors"}
+  scenario{"Successors"}{
     dates{323-01-01 BC / 305-12-31 BC}
     position{1 / 1}
     range{300}
@@ -894,7 +894,7 @@
   genre{"Empire Building","World Domination"}
   mechanic{"Area Movement","Counter","Dice"}
   theme{"World Domination"}
-  scenario{"Struggle of Empires"}
+  scenario{"Struggle of Empires"}{
     dates{1650-01-01 / 1930-12-31}
     position{1 / 1}
     range{300}
@@ -915,7 +915,7 @@
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Fog of War","Blocks"}
   theme{"Naval"}
-  scenario{"1805, Sea of Glory"}
+  scenario{"1805, Sea of Glory"}{
     dates{1805-01-01 / 1805-12-31}
     position{1 / 1}
     range{300}
@@ -936,7 +936,7 @@
   genre{"Historical Simulation","Strategic Level"}
   mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
   theme{"Wars of the Reformation"}
-  scenario{"Here I Stand"}
+  scenario{"Here I Stand"}{
     dates{1517-01-01 / 1555-12-31}
     position{1 / 1}
     range{300}
@@ -957,7 +957,7 @@
   genre{"Historical Simulation","Strategic Level"}
   mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
   theme{"30 Years War"}
-  scenario{"Thirty Years War - Europe in Agony"}
+  scenario{"Thirty Years War - Europe in Agony"}{
     dates{1618-01-01 / 1648-12-31}
     position{1 / 1}
     range{300}
@@ -978,7 +978,7 @@
   genre{"Historical Simulation","Operational Level"}
   mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
   theme{"French & Indian War"}
-  scenario{"Wilderness Wars"}
+  scenario{"Wilderness Wars"}{
     dates{1755-01-01 / 1762-12-31}
     position{1 / 1}
     range{300}
@@ -999,7 +999,7 @@
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"30 Years War"}
-  scenario{"Under the Lily Banners"}
+  scenario{"Under the Lily Banners"}{
     dates{1643-01-01 / 1648-12-31}
     position{1 / 1}
     range{300}
@@ -1020,7 +1020,7 @@
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"American Civil War"}
-  scenario{"Glory III"}
+  scenario{"Glory III"}{
     dates{1862-01-01 / 1864-12-31}
     position{1 / 1}
     range{300}
@@ -1041,7 +1041,7 @@
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Area Movement","Counter","Fog of War","Blocks","Dice"}
   theme{"WW2","Battle of the Bulge"}
-  scenario{"Fast Action Battle: The Bulge"}
+  scenario{"Fast Action Battle: The Bulge"}{
     dates{1944-01-01 / 1944-12-31}
     position{1 / 1}
     range{300}
@@ -1062,7 +1062,7 @@
   genre{"Conflict Simulation","Strategic Level"}
   mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
   theme{"WW1"}
-  scenario{"Paths of Glory"}
+  scenario{"Paths of Glory"}{
     dates{1914-01-01 / 1919-12-31}
     position{1 / 1}
     range{300}
@@ -1083,7 +1083,7 @@
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"WW1"}
-  scenario{"The Great War in Europe"}
+  scenario{"The Great War in Europe"}{
     dates{1915-01-01 / 1919-12-31}
     position{1 / 1}
     range{300}
@@ -1104,7 +1104,7 @@
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"WW1"}
-  scenario{"Grand Illusion"}
+  scenario{"Grand Illusion"}{
     dates{1914-01-01 / 1914-12-31}
     position{1 / 1}
     range{300}
@@ -1125,7 +1125,7 @@
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Card-Driven","Dice"}
   theme{"WW2"}
-  scenario{"Empire of the Sun"}
+  scenario{"Empire of the Sun"}{
     dates{1942-01-01 / 1944-12-31}
     position{1 / 1}
     range{300}
@@ -1146,7 +1146,7 @@
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"WW1"}
-  scenario{"Clash of Giants II"}
+  scenario{"Clash of Giants II"}{
     dates{1914-01-01 / 1914-12-31}
     position{1 / 1}
     range{300}
@@ -1167,7 +1167,7 @@
   genre{"Historical Simulation","Strategic Level"}
   mechanic{"Area Movement","Card-Driven","Wooden Cubes","Counter","Dice"}
   theme{"Empire Building"}
-  scenario{"Manifest Destiny"}
+  scenario{"Manifest Destiny"}{
     dates{1760-01-01 / 2000-12-31}
     position{1 / 1}
     range{300}
@@ -1187,7 +1187,7 @@
   genre{"Historical Simulation","Strategic Level"}
   mechanic{"Point-to-Point Movement","Counter","Card-Driven","Dice"}
   theme{"7 Years War"}
-  scenario{"Clash of Monarchs"}
+  scenario{"Clash of Monarchs"}{
     dates{1756-01-01 / 1763-12-31}
     position{1 / 1}
     range{300}
@@ -1208,7 +1208,7 @@
   genre{"Historical Simulation","Strategic Level"}
   mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
   theme{"English Civil War"}
-  scenario{"Unhappy King Charles"}
+  scenario{"Unhappy King Charles"}{
     dates{1642-01-01 / 1645-12-31}
     position{1 / 1}
     range{300}
@@ -1229,7 +1229,7 @@
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice","Blocks","Fog of War","Card-Driven"}
   theme{"WW2","Naval"}
-  scenario{"PQ-17 - Arctic Naval Operations"}
+  scenario{"PQ-17 - Arctic Naval Operations"}{
     dates{1941-01-01 / 1943-12-31}
     position{1 / 1}
     range{300}
@@ -1250,7 +1250,7 @@
   genre{"Conflict Simulation","Strategic Level"}
   mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
   theme{"WW1"}
-  scenario{"Pursuit of Glory"}
+  scenario{"Pursuit of Glory"}{
     dates{1914-01-01 / 1918-12-31}
     position{1 / 1}
     range{300}
@@ -1271,7 +1271,7 @@
   genre{"Conflict Simulation","Strategic Level"}
   mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
   theme{"Napoleonic"}
-  scenario{"The Napoleonic Wars"}
+  scenario{"The Napoleonic Wars"}{
     dates{1805-01-01 / 1815-12-31}
     position{1 / 1}
     range{300}
@@ -1292,7 +1292,7 @@
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Point-to-Point Movement","Card-Driven","Counter","Dice"}
   theme{"Napoleonic"}
-  scenario{"Kutuzov"}
+  scenario{"Kutuzov"}{
     dates{1812-01-01 / 1812-12-31}
     position{1 / 1}
     range{300}
@@ -1313,7 +1313,7 @@
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
   theme{"Napoleonic"}
-  scenario{"Wellington"}
+  scenario{"Wellington"}{
     dates{1812-01-01 / 1814-12-31}
     position{1 / 1}
     range{300}
@@ -1334,7 +1334,7 @@
   genre{"Conflict Simulation"}
   mechanic{"Cards","Card-Driven","Dice"}
   theme{"WW1","Naval"}
-  scenario{"The Kaisers Pirates"}
+  scenario{"The Kaisers Pirates"}{
     dates{1914-01-01 / 1918-12-31}
     position{1 / 1}
     range{300}
@@ -1355,7 +1355,7 @@
   genre{"Conflict Simulation","Tactical Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"Warfare in the Middle Ages"}
-  scenario{"Men of Iron"}
+  scenario{"Men of Iron"}{
     dates{1298-01-01 / 1367-12-31}
     position{1 / 1}
     range{300}
@@ -1376,7 +1376,7 @@
   genre{"Conflict Simulation","Tactical Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"Cavalry"}
-  scenario{"Devils Horsemen"}
+  scenario{"Devils Horsemen"}{
     dates{1221-01-01 / 1260-12-31}
     position{1 / 1}
     range{300}
@@ -1397,7 +1397,7 @@
   genre{"Historical Simulation","Strategic Level"}
   mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
   theme{"American Civil War"}
-  scenario{"For the People"}
+  scenario{"For the People"}{
     dates{1861-01-01 / 1864-12-31}
     position{1 / 1}
     range{300}
@@ -1418,7 +1418,7 @@
   genre{"Conflict Simulation","Tactical Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"American Revolution"}
-  scenario{"Monmouth"}
+  scenario{"Monmouth"}{
     dates{1778-01-01 / 1778-12-31}
     position{1 / 1}
     range{300}
@@ -1439,7 +1439,7 @@
   genre{"Conflict Simulation","Tactical Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"American Revolution"}
-  scenario{"Saratoga"}
+  scenario{"Saratoga"}{
     dates{1777-01-01 / 1777-12-31}
     position{1 / 1}
     range{300}
@@ -1460,7 +1460,7 @@
   genre{"Conflict Simulation","Tactical Level"}
   mechanic{"Hex","Counter","Dice","Cards"}
   theme{"American Revolution"}
-  scenario{"Savannah"}
+  scenario{"Savannah"}{
     dates{1779-01-01 / 1779-12-31}
     position{1 / 1}
     range{300}
@@ -1481,7 +1481,7 @@
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"WW2","East Front"}
-  scenario{"Roads to Leningrad"}
+  scenario{"Roads to Leningrad"}{
     dates{1941-01-01 / 1941-12-31}
     position{1 / 1}
     range{300}
@@ -1502,7 +1502,7 @@
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"WW1","East Front"}
-  scenario{"1914 - Twilight in the East"}
+  scenario{"1914 - Twilight in the East"}{
     dates{1914-01-01 / 1914-12-31}
     position{1 / 1}
     range{300}
@@ -1523,7 +1523,7 @@
   genre{"Conflict Simulation","Tactical Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"Ancient Rome","Roman Civil War","Gallic War","Punic Wars"}
-  scenario{"SPQR"}
+  scenario{"SPQR"}{
     dates{280-01-01 BC / 109-12-31 BC}
     position{1 / 1}
     range{300}
@@ -1544,7 +1544,7 @@
   genre{"Conflict Simulation","Strategic Level"}
   mechanic{"Card-Driven","Hex","Counter"}
   theme{"WW2","Battle of Britain"}
-  scenario{"The Burning Blue"}
+  scenario{"The Burning Blue"}{
     dates{1940-01-01 / 1940-12-31}
     position{1 / 1}
     range{300}
@@ -1565,7 +1565,7 @@
   genre{"Conflict Simulation","Tactical Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"7 Years War"}
-  scenario{"Prussias Glory II"}
+  scenario{"Prussias Glory II"}{
     dates{1757-01-01 / 1759-12-31}
     position{1 / 1}
     range{300}
@@ -1586,7 +1586,7 @@
   genre{"Conflict Simulation","Tactical Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"30 Years War","Musket & Pike"}
-  scenario{"Gustav Adolf the Great - With God and Victorious Arms"}
+  scenario{"Gustav Adolf the Great - With God and Victorious Arms"}{
     dates{1627-01-01 / 1632-12-31}
     position{1 / 1}
     range{300}
@@ -1607,7 +1607,7 @@
   genre{"Conflict Simulation","Historical Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"Punic Wars","Ancient Rome","Naval"}
-  scenario{"Carthage - The First Punic War"}
+  scenario{"Carthage - The First Punic War"}{
     dates{264-01-01 BC / 241-12-31 BC}
     position{1 / 1}
     range{300}
@@ -1628,7 +1628,7 @@
   genre{"Conflict Simulation","Historical Simulation","Tactical Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"Punic Wars","Ancient Rome","Naval","Peleponnesian Wars"}
-  scenario{"War Galley"}
+  scenario{"War Galley"}{
     dates{494-01-01 BC / 31-12-31 BC}
     position{1 / 1}
     range{300}
@@ -1650,7 +1650,7 @@
   mechanic{"Card-Driven","Hex","Counter"}
   theme{"WW2"}
   series{"Combat Commander"-"Europe"}
-  scenario{"Combat Commander Europe"}
+  scenario{"Combat Commander Europe"}{
     dates{1939-09-01 / 1945-05-01}
     position{1 / 1}
     range{250}
@@ -1672,16 +1672,137 @@
   mechanic{"Card-Driven","Hex","Counter"}
   theme{"WW2"}
   series{"Combat Commander"-"Pacific"}
-  scenario{"Combat Commander Pacific"}
-    dates{1941-01-01 / 1945-05-01}
+  scenario{"CCP A - Grassy Knoll"}{
+    description{<p>Mindanao Island, Philippines&mdash;After capturing Libby Airfield with the aid of Filipino guerrillas, the US 24th Infantry Division found the assault toward Davao becoming exceedingly slow and ponderous. Exacerbating the issue was the preponderance of hemp fields in the area, now very much overgrown with disuse. Traversing these unkempt fields was slow going at best. Japanese forces of the 100th Division, however, found these numerous plantations extremely useful for hiding defensive strongpoints. Guerrillas continued to aid the Americans in their push toward Davao, and in one particularly nasty firefight on the 7th of May actually proved decisive in overcoming a Japanese bunker that was covering a major trail break through the area.</p>}
+    dates{1945-05-07 / 1945-05-07}
+    position{7.190708 / 125.455341}
+    range{250}
+    timescale{6}
+    players{2 / 2}
+    author{"Chad Jensen"}
+    side{"Axis","Allies","Japan","US"}
+    party{"Japan"-"2","US"-"2"}
+  }
+  scenario{"CCP B - Ambush at Mogaung"}{
+    description{<p>Northern Burma&mdash;Over the couse of three weeks in June, Michael "Mad Mike" Calvert's 77th (Chindit) Bridage took Mogaung in support of the US advance doen the Hudawng Valley. The suffered 50% casualties. Fearing they would be ordered to join in the siege of Myitkyina, Calvert shut down his radios and began marching towards Stilwell's Army HQ in Kamaing. Along the way, scouts were surprised to discover a ragged - and apparently lost - column of Japanese troops advancing down a jungle path. Calvert ordered his weary survivors into ambush formations around a small village where their road and the enemy trail intersected.</p>}
+    dates{1944-07-28 / 1944-07-28}
+    position{25.31113196 / 96.86851501}
+    range{250}
+    timescale{6}
+    players{2 / 2}
+    author{"Chad Jensen"}
+    side{"Axis","Allies","Japan","US"}
+    party{"Japan"-"2","US"-"2"}
+  }
+  scenario{"CCP C - Ichiki Attacks"}{
+    description{<p>Ilu River, Guadalcanal&mdash;Japanese HQ dispatched the Ichiki Detachment from Truk to displace what was mistakenly thought of as a minor US presence on Guadalcanal. During what is known as the Battle of Tenaru River, by 0030, Colonel Ichiki had maneuvered his force into position and ordered some covering fire across the river. Since minor patrols with small enemy parties were a nightly occurrence, the fire did not raise significant alarm among the defenders. At 0200 Ichiki ordered 2nd company of the Japanese II/28th Regiment to charge across the sandbar of the Ilu River (known as Alligator Creek to the US Marines). The goal was to push past the defensive perimeter and on to Henderson Field. Facing them were the US Marines of G Company of the II/1st Regiment and two platoons of the 1st Special Weapons Battalion. The shrieking attackers came across the river without cease, but the defenders held their nerve and their ground.</p>}
+    dates{1942-08-21 / 1942-08-21}
     position{1 / 1}
     range{250}
     timescale{6}
     players{2 / 2}
-    side{"Axis","Allies"}
-    party{"Axis"-"2","Allies"-"2"}
-    author{"Jensen, Chad"}
-    description{<p></p>}
+    author{"Chad Jensen"}
+    side{"Axis","Allies","Japan","US"}
+    party{"Japan"-"2","US"-"2"}
+  }
+  scenario{"CCP D - Operation Cherry Blossom"}{
+    description{<p>Empress Augusta Bay, Bougainville Island, Papua New Guinea&mdash;On this date the US 3rd Marine Division landed at Cape Torokina. Naval forces assisting the Marines included 4 cruisers and 8 destroyers. Empress Augusta Bay had been chosen because it was within range of allied land-based fighter bases and because the Japanese 17th Army was concentrated at other sites around the island. The stretch of beach near Cape Torokina was only "lightly" defended by little more than a company of well-camouflaged Japanese infantry - including a 75mm gun dug-in on the cape that wreaked havoc amongst the landing craft on their long approach to the beach in heavy seas.</p>}
+    dates{1943-11-01 / 1943-11-01}
+    position{1 / 1}
+    range{250}
+    timescale{6}
+    players{2 / 2}
+    author{"Chad Jensen"}
+    side{"Axis","Allies","Japan","US"}
+    party{"Japan"-"2","US"-"2"}
+  }
+  scenario{"CCP E - West Tank Barrier"}{
+    description{<p>Butaritari, Gilbert Islands&mdash;The Gilbert Islands became one of the first stepping stones in the large scale movement by the US to take back Japanese-held territory. A Japanese seaplane base guarded by a citadel of defenses was the key target on Butaritari, a part of the Makin Atol. The 27th Infantry Division Task Force was divided into Regimental Combat Teams with a landing plan to surround the defenders. On D-Day, elements of the 1-165 RCT pushed east with little opposition through flat swampy terrain toward the West Tank Barrier to meet up with the 2-165 forces heading west. In the early afternoon, C Company faced the toughest opposition by the Japanese Construction Force.</p>}
+    dates{1943-11-20 / 1943-11-20}
+    position{1 / 1}
+    range{250}
+    timescale{6}
+    players{2 / 2}
+    author{"Chad Jensen"}
+    side{"Axis","Allies","Japan","US"}
+    party{"Japan"-"2","US"-"2"}
+  }
+  scenario{"CCP F - Stalemate"}{
+    description{<p>Peleliu, Palau&mdash;The Japanese unveiled a new defensive approach on Peleliu using well-entrenched positions, extensive caves, and natural barriers across the island. This was developed by Colonel Nakagawa, commander of the 2nd Infantry Regiment of the 14th Infantry Division. Prior to the invasion of this strategic island, the defenders withheld all fire to mask their positions from US naval bombardment. This tactic continued on D-Day itself, allowing the three regiments (1st, 5th and 7th) of the 1st Marine Division to reach the beaches under very light fire. But progress inland was slow and with a terrible cost in lives. By the 20th, the 1/1st Marines had reached the base of Hill 154, a barren wall of coral infested with hidden defenders and protected from the overlook knows as Suicide Ridge. Captain Everett Pope led C Company up that wall, fighting valiantly and managing to overtake the position. During the night, the Japanese assaulted the Marines on the hill repeatedly. In between charges, the Marines countered by tossing rocks (to sound like grenade landings) as well as some actual grenades from their dwindling supply. When the Marines finally ran out of ammunition, Captain Pope rallied the few remaining Marines around himself to all fight back the repeated charges with little more than their bare hands.</p>}
+    dates{1944-09-20 / 1944-09-20}
+    position{1 / 1}
+    range{250}
+    timescale{6}
+    players{2 / 2}
+    author{"Chad Jensen"}
+    side{"Axis","Allies","Japan","US"}
+    party{"Japan"-"2","US"-"2"}
+  }
+  scenario{"CCP G - Bitter Creek"}{
+    description{<p>Eora Creek, New Guinea&mdash;After nearly succeeding in pushing the Australians back upon Port Moresby, the Japanese had neither supply chain nor time enough to hold their gains along the Kokoda Trail and so reverted to the defensive. In a series of grim battles, the 25th Brigade (Australian 6th Infantry Division) began to retake ground, securing Templeton's Corner, and were relieved by the 16th Brigade. Elements of the 144th Infantry Regiment (Japanese South Seas Force) fell back upon excellent defensive terrain at the miserable village of Eora, where the Kokoda Trail passed through the gorge formed by the Eora Creek. Elements of the 16th Brigade advanced forward looking to find the strong points, pin them and bypass them. The bitter fighting lasted two days before the Japanese secretly retired from their positions and fell back to Oivi.</p>}
+    dates{1942-10-22 / 1942-10-22}
+    position{1 / 1}
+    range{250}
+    timescale{6}
+    players{2 / 2}
+    author{"Chad Jensen"}
+    side{"Axis","Allies","Japan","Australia"}
+    party{"Japan"-"2","Australia"-"2"}
+  }
+  scenario{"CCP H - Dog Plus Eight"}{
+    description{<p>Hill 382, Iwo Jima&mdash;Eight days after the initial landing on the island and four days after the American flag had been raised on Mount Suribachi, the 3rd Marine Division found itself dug in on the barren stone plateau north of the airfields. The Marines outnumbered the Japanese defenders by at least three to one, but the Japanese avoided the immense firepower of the American forces by going underground.</p><p>General Tadamishi Kuribayashi concentrated his remaining forces in the central and northern sections of the island. Their miles of interlocking caves, pillboxes and concrete blockhouses would prove to be one of the most impenetrable defenses the Marines would encounter in the Pacific.</p><p>Repulsed in their attack on the three hills overlooking Motoyama Airfield No. 2 the previous day, the 23rd Marine Regiment had regrouped for another assault on the morning of February 27th. The advance was immediately held up by determined resistance from numerous Japanese caves and bunkers. A second artillery barrage was called in at midday and small gains were made in the afternoon of 100-150 yards along the entire front.</p><p>By late afternoon, elements of the 3rd Battalion, 23rd Marines were engaged in fierce close combat near the crest of Hill 382, fighting for possession of the radar station at the hill's summit.</p>}
+    dates{1945-02-27 / 1945-02-27}
+    position{1 / 1}
+    range{250}
+    timescale{6}
+    players{2 / 2}
+    author{"Chad Jensen"}
+    side{"Axis","Allies","Japan","US"}
+    party{"Japan"-"2","US"-"2"}
+  }
+  scenario{"CCP I - Totsugeki!"}{
+    description{<p>Edson's Ridge, Guadalcanal&mdash;In the second major attempt at dislodging the enemy position, the Japanese maneuvered deep in the jungle to the south of the American perimeter expecting that it would be less defended. General Kawaguchi employed a complicated plan using battalions from the 124th and 4th Infantry. The terrain rendered a multi-pronged plan almost impossible to execute, however, but with sheer willpower, some of his force managed a devastating attack. During what is known as the Battle of Edson's of "Bloody" Ridge, at 2230 7th company of the Japanese II/4th Regiment launched the first of many attacks along the eastern flanks of the ridge directly at B Company of the 1st Parachute Battalion. A successful attack could dislodge or overtake Lt. Colonel Edson's command post and put the defense of Henderson Field in grave jeopardy. Amazingly, Edson orchestrated one of the greatest nighttime defenses and was awarded the Medal of Honor.</p>}
+    dates{1942-09-13 / 1942-09-13}
+    position{1 / 1}
+    range{250}
+    timescale{6}
+    players{2 / 2}
+    author{"Chad Jensen"}
+    side{"Axis","Allies","Japan","US"}
+    party{"Japan"-"2","US"-"2"}
+  }
+  scenario{"CCP J - The Deadly Trees"}{
+    description{<p>Saddle Ridge, Guadalcanal&mdash;After the failure of the September attacks, Japanese HQ sent as many ground forces as could be spared to build up for another multipronged attack. During what is known as the Battle of Henderson Field, between 0300 and 0500 elements of the Japanese III/4th Regiment (part of Force Oka to the west of Henderson Field) attacked the US Marines of F Company of II/7th Regiment on the eastern slopes of a saddle-shaped ridge. The attack was massed all along Colonel Hanneken's front, but in particular the Japanese delivered deadly fire from the trees onto the heights of the ridge, eliminating many of the defenders, despite the heroism of Sergeant Mitchell Paige (who was firing weapons from both hands). Although the attackers eventually took the crest of the ridge, in a surprise move, Paige was part of an unlikely counterattack unit made of communications specialists, messmen, bandsmen, a cook and a few other riflemen. They retook the ridge decisively. Fot his singular efforts, he was awarded the Medal of Honor. This fight was part of one of the last major attempts by the Japanese to take the airfield, which ended in failure.</p>}
+    dates{1942-10-26 / 1942-10-26}
+    position{1 / 1}
+    range{250}
+    timescale{6}
+    players{2 / 2}
+    author{"Chad Jensen"}
+    side{"Axis","Allies","Japan","US"}
+    party{"Japan"-"2","US"-"2"}
+  }
+  scenario{"CCP K - Burning Buna"}{
+    description{<p>New Strip at Buna, New Guinea&mdash;Combined Australian and American forces surrounded the desperate Japanese defenders at Buna during December 1942. After an opening barrage starting at 0530, various companies of 2/9th Battalion (Australian 16th Brigade) crossed the start line promptly at 0700 to assault the brilliantly hidden defenses of the New Strip and Cape Endaiadere by III/229th Infantry Regiment of the Japanese Buna Garrison. While most of the assaulting companies had armor support C Company did not, and they quickly fell into a bitter hornet's nest as they attempted to advance along the edge of the New Strip to protect B Company's flank.</p>}
+    dates{1942-12-18 / 1942-12-18}
+    position{1 / 1}
+    range{250}
+    timescale{6}
+    players{2 / 2}
+    author{"Chad Jensen"}
+    side{"Axis","Allies","Japan","Australia"}
+    party{"Japan"-"2","Australia"-"2"}
+  }
+  scenario{"CCP L - Slopes of Hell"}{
+    description{<p>Kokoda Trail, Owen Stanley Mountains, New Guinea&mdash;The 2/16th Battalion (Australian 21st Brigade) had fallen back from Templeton's Crossing and finally reached the positions of the battered 2/14th Battalion, which in turn dropped back to the mountain village of Myola. Meanwhile, the Koiwai Battalion (Japanese 41st Infantry Regiment) began a flanking maneuver up the steepy sloped terrain in the afternoon and fell suddenly upon the Australians as they were huddled at their cooking fires. The twilight combat lasted until corrents of cold rain swept in.</p><p>Aftermanth: Overnight, the 2/16th secretly withdrew back toward Myola.</p>}
+    dates{1942-09-04 / 1942-09-04}
+    position{1 / 1}
+    range{250}
+    timescale{6}
+    players{2 / 2}
+    author{"Chad Jensen"}
+    side{"Axis","Allies","Japan","Australia"}
+    party{"Japan"-"2","Australia"-"2"}
   }
 }
 
@@ -1694,7 +1815,7 @@
   mechanic{"Hex","Counter"}
   theme{"WW2"}
   series{"Panzerblitz"-"Hill of Death"}
-  scenario{"01 - First Crack"}
+  scenario{"01 - First Crack"}{
     description{<p>On June 27th 1944, the 2/Argyle and Sutherland Highlanders of the 227th Brigade seized the small bridge over the Odon River at the town of Tourmauville. The bridgehead was reinforced into the nivht and in the morning after a short exchange with 2 Mark IVs of the 12th SS Panzer Regiment, the 23rd Hussars attempted to seize the vital high ground of Hill 112. C and B companies of the 23rd Hussars, supported by the 8th Rifle Brigade, swung around to the north and attacked down the north-south road. The British force encountered elements of the 12th SS Panzer Regiment, supported by Flak guns of the I/53 Flak battery. The Hussars seized the orchard at the top of the hill. The Germans quickly planned a counter attack with Mark IVs and Panthers. Finally, after 12 bloody hours of fighting, the British secured the only significant features on the hill. Through highly secret Ultra decrypts, Lieutenant General O'Connor and Field Marshal Montgomery learned of the release of the II SS Panzer corps to this area, and decided to withdraw the exposed elements of the 11th Armoured Division, withdrawing their forces from the heights of Hill 112 back to the Bridgehead at Tourmauville. Thus began weeks of bloody fighting around the Hill of Death.</p>}
     dates{1944-07-27 / 1944-07-27}
     position{49.127529 / -0.462456}
@@ -1705,7 +1826,7 @@
     side{"Germany","Great Britain"}
     party{"Germany"-"2","Great Britain"-"2"}
   }
-  scenario{"02 - Launch of Jupiter"}
+  scenario{"02 - Launch of Jupiter"}{
     description{<p>On the morning of July 10th, the 130th Brigade, supported by the 9th Royal Tank Regiment (RTR), jumped off at 05:30. The objectives for 5th Dorsets this morning were the towns of Les Dauns and Eterville, along with the ruins at Chateau de Fontaine. After quickly securing the farm complexes at Les Dauns, the British encountered stiff resistance from the 2/22 SS in the horseshoe wood and the ruins of Chateau de Fontaine. Here in the West Countrymen had their first taste of the bitter task of digging out a well-trained and entrenched enemy yard by yard. Meanwhile on the left flank, the 4th Dorsets were charged with taking Eterville, where 1/22 SS was dug in the town, its surrounding orchards, and the ridge overlooking the town. The Dorsets quickly entered the village, but fighting broke down to bloody, house-to-house fighting. The highly volatile battle caught the attention of the commander of the 5th Coy 12th SS Panzer Division, who violated his company boundaries and charged into the maelstrom, adding further chaos to an already tenuous situation. At 07:45 a message at HQ was received that Dorsets had entered Eterville and taken the town. In reality, Dorsets would spend the rest of the day and into the night trying to wrest control of the town from the SS.</p>}
     dates{1944-07-10 / 1944-07-10}
     position{49.127529 / -0.462456}
@@ -1716,7 +1837,7 @@
     side{"Germany","Great Britain"}
     party{"Germany"-"2","Great Britain"-"2"}
   }
-  scenario{"03 - End of Jupiter"}
+  scenario{"03 - End of Jupiter"}{
     description{<p>Late on July 10th, it was realized that the battle to break through to the Orne River was seriously in question. In fact, the battle for the vital Hill 112 was turning into a stalemate. Maj. General Thomas decided that a fresh attack would be required to wrest control of the vital summit and the observation points looking south into the German areas. The intense fighting to the northeast had sapped most of the British reserves, leaving only the 5th Duke of Cornwall's Light Infantry (DCLI), which was snatching much needed rest in the outskirts of Fontaine-Etoupefour. It was decided that the gains outweighed the risk and the 5th DCLI formes up behind the positions held by 4th Somerset Light Infantry along the Caen-Evracy road. The 5th DCLI was supported by the 7th RTR, who arrived late. The 5th DCLI jumped off across the open ground to clear the remainder of the hill as the 7th RTR arrived. Elements of the 19th SS were dug in down slope and supported by miscellaneous Panzers. The battle raged up until dark, with artillery from both sides actively affecting the advantage on several occasions. The hill was secured and several heavy counterattacks were fended off into the night.</p>}
     dates{1944-01-01 / 1944-12-31}
     position{49.127529 / -0.462456}
@@ -1727,7 +1848,7 @@
     side{"Germany","Great Britain"}
     party{"Germany"-"2","Great Britain"-"2"}
   }
-  scenario{"04 - Take the Hill"}
+  scenario{"04 - Take the Hill"}{
     description{<p>The main thrust on July 10th 1944 was toward the summit of Hill 112. While the 130th Brigade secured the left flank, the 129th Brigade, supported by 7th RTR, was to advance on a broad front and secure the summit. The plan was for the 4th Somerset to advance over the summit. The 4th Wiltshire (Wilts) would swing around to the left, while the 5th Wilts swung around to the right. Things went badly from the beginning when shells from their own artillery landed among the assault troops of the 4th Wilts. Even without this stroke of bad luck, the 129th Brigade still had to advance over relatively open terrain through waist-high corn. The infantry and armour advanced in tandem. The German AT guns responded and knocked out several Tanks and Carriers. German armor quickly added to the number of British vehicles knocked out. The British forces pushed on with classic British determination, and the assault troops of the 129th closed on the German positions. The German Grenadiers opened up and began inflicting casualties on the British infantry. The defense of the Hill was declared a "Schwerpunkt" and the Germans committed their reserves - the dreaded Nebelwerfers of the 8th Werfer Brigade begin to rain death and destruction. Through all this, the British advanced slowly, yard by bloody yard, but things were about to get worse. Tigers! Elements of the 102nd Heavy Tank Brigade were advancing from the southeast. Only the thin skinned Achilles and 17 lbr AT guns of the 86th Antitank Regiment could hope to challenge this new threat. After several hours of heavy fighting, the 129th Brigade reached their goal along the Caen-Evracy road and began to dig in.</p>}
     dates{1944-07-10 / 1944-07-10}
     position{49.127529 / -0.462456}
@@ -1738,7 +1859,7 @@
     side{"Germany","Great Britain"}
     party{"Germany"-"2","Great Britain"-"2"}
   }
-  scenario{"05 - Overlooking Maltot"}
+  scenario{"05 - Overlooking Maltot"}{
     description{<p>While its sister brigade advanced on the summit of Hill 112, the 130th Brigade jumped off on July 10th at 08:00 to secure the left flank. Intelligence reported the town of Maltot to be lightly defended, so the plan was simple. The 7th Hampshires, with elements of the 9th RTR, would advance down into the valley, pass through Maltot, and dig in on the southern ridge overlooking the town. Observation Post variants of the Churchill, along with forward observers in Carriers, would be able to quickly call in artillery support if needed, to crack the line. The advance went well until the British closed on the town, then shot and shell rang out from the village and from German AT guns on Hill 112. Compounding the situation, a platoon of Tigers from the 102nd Heavy Tank Regiment had advanced almost simultaneously to support the defenders of Maltot. The 7th Hampshires bypassedthe town defenders and thrust toward their objective, the southern heights. The 7th battalion HQ and reserve companies followed up closely with the intent of mopping up Maltot, but the Germans were not going to give up one of the few dominating features on the eastern flank of the hill. Units of the 12th SS Hitlerjugend were dispatched along the River Orne to support the eastern flank. Meanwhile the 10th SS reconnaissance, were rushed in from their marshalling areas to help stem the British tide. The German high command, seeing the situation becoming tenuous, committed elements of the 8th Werfer Brigade to bloody the British. After hours of fighting on both the hill and in and around Maltot, both sides found themselves in a stalemate. Fighting for the town of Maltot would continue over the next several weeks, with the lines ebbing and flowing along the valley floor.</p>}
     dates{1944-07-10 / 1944-07-10}
     position{49.127529 / -0.462456}
@@ -1749,7 +1870,7 @@
     side{"Germany","Great Britain"}
     party{"Germany"-"2","Great Britain"-"2"}
   }
-  scenario{"06 - Twilight at Maltot"}
+  scenario{"06 - Twilight at Maltot"}{
     description{<p>Twelve days after the initial assault, the vital village of Maltot lies in ruins. On 22nd July, 1944, the German 272nd Infantry Division, which had arrived on foot from the Pas de Calais, was assigned the defense. The 129th Brigade would attempt to secure the village. In the vanguard were the 4th and 5th Wiltshire (Wilts), supported by the reinforced 9th Royal Tank Regiment (RTR). Operation EXPRESS, as it was known, was simply an assault from the northeast down the length of the valley. The assault kicked off at 17:30 hours, with the British advancing in line across the valley. The 4th Wilts would advance around the southern edge of Maltot, while the 5th Wilts would encircle from the north. Typhoons on station overhead could be called in to deal with any particular tough nuts. Initial progress was slow but steady, with the British securing a foothold. The Germans would still not easily give up the town, and elements of the 10th SS were sent north to reinforce the defenders, and if necessary, retake the town. Heavy panzers of the 101st were sent to support the defenders but were driven off by the rocket firing typhoons. As twilight fell on Maltot, control was still in doubt and the British command committed the 151st Royal Artillery Corps flame throwing Crocodiles to help dig out the stubborn defenders. The British fought hard into the night, finally securing the town at around 22:00. The next few hours were spent mopping up the prisoners.</p>}
     dates{1944-07-22 / 1944-07-22}
     position{49.127529 / -0.462456}
@@ -1760,7 +1881,7 @@
     side{"Germany","Great Britain"}
     party{"Germany"-"2","Great Britain"-"2"}
   }
-  scenario{"07 - No Happy Rest"}
+  scenario{"07 - No Happy Rest"}{
     description{<p>Clearing the crossroads at le Bon Repos was given to the 2nd Glasgow Highlanders. At 21:30 hours on July 15th 1944 they jumped off. Assisted by Monty's moonlight, the attack would advance down the slopes of Hill 112 from the northeast. The Highlanders were heavily supported by Churchills of the 107th Royal Armored Corps (RAC), 'Funnies' and Crocodiles of the 79th Armored Division, as well as machine guns and mortars of the 8th Middlesex. British forces were unsure of where the German defenders were holed up so the Churchills fired High Explosive rounds into likely defensive positions. The Highlanders cleared Esquay at around 2300 hours. At this point the Germans, believing this to be a major thrust towards Hill 113, sent the 21st Panzer Grenadiers, supported by Mark IVs of the 10th SS Panzer regiment, to blunt the perceived British offensive. The British 6 lbr AT guns went head to head with the Panzers of the 10th SS at point blank range. The British were forced to withdraw to their original starting positions on the slope of Hill 112.</p>}
     dates{1944-07-15 / 1944-07-15}
     position{49.127529 / -0.462456}
@@ -1771,7 +1892,7 @@
     side{"Germany","Great Britain"}
     party{"Germany"-"2","Great Britain"-"2"}
   }
-  scenario{"08 - Pierced and Bloodied"}
+  scenario{"08 - Pierced and Bloodied"}{
     description{<p>On July 10, 1944, the 9th Cameronians were assigned the defense of Eterville and with it the security of the left flank. Panzer Grenadiers of the 10th SS had quickly followed the withdrawing elements of the Dorsets from the town of Maltot. In the dark of night, the Grenadiers managed to work their way into the orchards around Eterville through gaps between A and B companies of the 9th Cameronians. Having penetrated into the Cameronians positions, the Grenadiers ran amok, nearly capturing the Battalion headquarters and the command staff. The left flank was now a serious concern and the Brigade Headquarters dispatched the closest reserves, C Company of the Glasgow Highlanders, to fill the gap and secure Eterville. The Highlanders fought the enemy with PIAT guns and Bayonets, finally dislodging the Germans. The 10th SS withdrew after suffering heavy casualties. However the 10th had inflicted severe losses on the British as well. For the Highlanders this was the second such blood letting in less than a month.</p>}
     dates{1944-07-10 / 1944-07-10}
     position{49.127529 / -0.462456}

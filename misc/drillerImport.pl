@@ -348,10 +348,11 @@ sub trim_to_brace {
   $text =~ s/(^\s*|{.*$)//g;
   return $text;
 }
+
 sub trim_named_field {
   my $text = shift();
   chomp $text;
-  $text =~ s/(.*{"?|"?}.*)//g;
+  $text =~ s/(^[^{]+{"?|"?}.*$)//g;
   return $text;
 }
 
