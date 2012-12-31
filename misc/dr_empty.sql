@@ -12,13 +12,10 @@ DROP INDEX IF EXISTS dr_mechanic_index CASCADE;
 DROP INDEX IF EXISTS dr_party_index CASCADE;
 DROP INDEX IF EXISTS dr_leader_index CASCADE;
 DROP INDEX IF EXISTS dr_publisher_index CASCADE;
-DROP INDEX IF EXISTS dr_request_index CASCADE;
 DROP INDEX IF EXISTS dr_series_index CASCADE;
-DROP INDEX IF EXISTS dr_session_index CASCADE;
 DROP INDEX IF EXISTS dr_side_index CASCADE;
 DROP INDEX IF EXISTS dr_special_index CASCADE;
 DROP INDEX IF EXISTS dr_theme_index CASCADE;
-DROP INDEX IF EXISTS dr_user_index CASCADE;
 
 DROP TABLE IF EXISTS dr_author CASCADE;
 DROP TABLE IF EXISTS dr_engine CASCADE;
@@ -34,21 +31,16 @@ DROP TABLE IF EXISTS dr_map_leader CASCADE;
 DROP TABLE IF EXISTS dr_map_publisher CASCADE;
 DROP TABLE IF EXISTS dr_map_series CASCADE;
 DROP TABLE IF EXISTS dr_map_special CASCADE;
-DROP TABLE IF EXISTS dr_map_session CASCADE;
 DROP TABLE IF EXISTS dr_map_side CASCADE;
 DROP TABLE IF EXISTS dr_map_theme CASCADE;
 DROP TABLE IF EXISTS dr_mechanic CASCADE;
 DROP TABLE IF EXISTS dr_party CASCADE;
 DROP TABLE IF EXISTS dr_leader CASCADE;
 DROP TABLE IF EXISTS dr_publisher CASCADE;
-DROP TABLE IF EXISTS dr_request CASCADE;
-DROP TABLE IF EXISTS dr_result CASCADE;
 DROP TABLE IF EXISTS dr_series CASCADE;
-DROP TABLE IF EXISTS dr_session CASCADE;
 DROP TABLE IF EXISTS dr_side CASCADE;
 DROP TABLE IF EXISTS dr_special CASCADE;
 DROP TABLE IF EXISTS dr_theme CASCADE;
-DROP TABLE IF EXISTS dr_user CASCADE;
 
 DROP SEQUENCE IF EXISTS dr_author_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS dr_engine_id_seq CASCADE;
@@ -58,18 +50,11 @@ DROP SEQUENCE IF EXISTS dr_mechanic_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS dr_party_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS dr_leader_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS dr_publisher_id_seq CASCADE;
-DROP SEQUENCE IF EXISTS dr_request_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS dr_series_id_seq CASCADE;
-DROP SEQUENCE IF EXISTS dr_session_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS dr_side_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS dr_special_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS dr_theme_id_seq CASCADE;
-DROP SEQUENCE IF EXISTS dr_user_id_seq CASCADE;
 
-CREATE SEQUENCE dr_user_id_seq;
-ALTER TABLE public.dr_user_id_seq OWNER TO driller;
-CREATE SEQUENCE dr_session_id_seq;
-ALTER TABLE public.dr_session_id_seq OWNER TO driller;
 CREATE SEQUENCE dr_genre_id_seq;
 ALTER TABLE public.dr_genre_id_seq OWNER TO driller;
 CREATE SEQUENCE dr_author_id_seq;
@@ -84,8 +69,6 @@ CREATE SEQUENCE dr_mechanic_id_seq;
 ALTER TABLE public.dr_mechanic_id_seq OWNER TO driller;
 CREATE SEQUENCE dr_publisher_id_seq;
 ALTER TABLE public.dr_publisher_id_seq OWNER TO driller;
-CREATE SEQUENCE dr_request_id_seq;
-ALTER TABLE public.dr_request_id_seq OWNER TO driller;
 CREATE SEQUENCE dr_party_id_seq;
 ALTER TABLE public.dr_party_id_seq OWNER TO driller;
 CREATE SEQUENCE dr_leader_id_seq;
@@ -96,19 +79,6 @@ CREATE SEQUENCE dr_special_id_seq;
 ALTER TABLE public.dr_special_id_seq OWNER TO driller;
 CREATE SEQUENCE dr_theme_id_seq;
 ALTER TABLE public.dr_theme_id_seq OWNER TO driller;
-
-CREATE TABLE dr_user (
-  id integer PRIMARY KEY DEFAULT nextval('dr_user_id_seq'),
-  username varchar(255) NOT NULL default '',
-  realname varchar(255) NOT NULL default '',
-  email varchar(255) NOT NULL default '',
-  show_email boolean NOT NULL default false
-);
-
-ALTER TABLE public.dr_user OWNER TO driller;
-
-CREATE INDEX dr_user_index ON dr_user(username ASC);
-ALTER INDEX dr_user_index OWNER TO driller;
 
 CREATE TABLE dr_game (
   id integer PRIMARY KEY DEFAULT nextval('dr_game_id_seq'),
@@ -153,26 +123,6 @@ ALTER TABLE public.dr_game OWNER TO driller;
 
 CREATE INDEX dr_game_data_title_index ON dr_game_data(title ASC);
 ALTER INDEX dr_game_data_title_index OWNER TO driller;
-
-CREATE TABLE dr_request (
-  id integer PRIMARY KEY DEFAULT nextval('dr_request_id_seq'),
-  id_user integer NOT NULL REFERENCES dr_user(id),
-  id_game integer NOT NULL REFERENCES dr_game(id),
-  id_side integer NOT NULL,
-  id_engine integer NOT NULL,
-  level_min integer NOT NULL,
-  level_max integer NOT NULL,
-  freq_min integer NOT NULL,
-  freq_max integer NOT NULL,
-  active boolean NOT NULL default true,
-  requested timestamp with time zone NOT NULL default now(),
-  commentary varchar(255) NOT NULL default ''
-);
-
-ALTER TABLE public.dr_request OWNER TO driller;
-
-CREATE INDEX dr_request_index ON dr_request(requested DESC);
-ALTER INDEX dr_request_index OWNER TO driller;
 
 CREATE TABLE dr_author (
   id integer PRIMARY KEY DEFAULT nextval('dr_author_id_seq'),
@@ -364,41 +314,3 @@ CREATE TABLE dr_map_series (
 );
 
 ALTER TABLE public.dr_map_series OWNER TO driller;
-
-CREATE TABLE dr_result (
-  id integer PRIMARY KEY,
-  result varchar(255) NOT NULL default ''
-);
-
-ALTER TABLE public.dr_result OWNER TO driller;
-
-CREATE TABLE dr_session (
-  id integer PRIMARY KEY DEFAULT nextval('dr_session_id_seq'),
-  id_game integer NOT NULL REFERENCES dr_game(id),
-  title varchar(255) NOT NULL default '',
-  report text NOT NULL default '',
-  confirmed boolean NOT NULL DEFAULT false,
-  played timestamp with time zone NOT NULL default now()
-);
-
-ALTER TABLE public.dr_session OWNER TO driller;
-
-CREATE INDEX dr_session_index ON dr_session(id_game DESC);
-ALTER INDEX dr_session_index OWNER TO driller;
-
-CREATE TABLE dr_map_session (
-  id_session integer NOT NULL REFERENCES dr_session(id),
-  id_user integer NOT NULL REFERENCES dr_user(id),
-  id_party integer NOT NULL REFERENCES dr_party(id),
-  id_result integer NOT NULL REFERENCES dr_result(id),
-  confirmed boolean NOT NULL DEFAULT false,
-  commentary varchar(255) NOT NULL default ''
-);
-
-ALTER TABLE public.dr_map_session OWNER TO driller;
-
-INSERT INTO dr_user (username,realname,email)VALUES('user','Max Mustermann','email@domain.com');
-INSERT INTO dr_user (username,realname,email)VALUES('FlashKorten','Sebastian Korten','bass@core10.de');
-INSERT INTO dr_result (id,result)VALUES(1,'Won');
-INSERT INTO dr_result (id,result)VALUES(2,'Draw');
-INSERT INTO dr_result (id,result)VALUES(3,'Lost');
