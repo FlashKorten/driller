@@ -1687,23 +1687,99 @@
 
 26745 {
   title{"Panzerblitz, Hill of Death"}
-  description{<p></p>}
+  description{<p>In the words of a Senior German Officer “He who holds Hill 112, holds Normandy”.</p><p>Join the epic battle for this key feature and the control of Normandy. Take command of Infantry and Armor to control key terrain features on Hill 112 and the surrounding countryside. This epic battle waged for over 4 weeks with the hill and surrounding objectives changing hands several times. Can you take and hold this vital piece of high ground the key to Normandy?</p>}
   publisher{"Multi-Man Publishing"-"http://www.multimanpublishing.com"}
-  engine{"Vassal"-"http://www.google.com"}
+  engine{"Vassal"-"http://www.vassalengine.org/mediawiki/images/9/9e/PanzerBlitz-HoD_v0.3.vmod"}
   genre{"Conflict Simulation"}
   mechanic{"Hex","Counter"}
   theme{"WW2"}
   series{"Panzerblitz"-"Hill of Death"}
-  scenario{"Panzerblitz, Hill of Death"}
-    dates{1944-07-01 / 1944-07-31}
-    position{1 / 1}
-    range{250}
+  scenario{"01 - First Crack"}
+    description{<p>On June 27th 1944, the 2/Argyle and Sutherland Highlanders of the 227th Brigade seized the small bridge over the Odon River at the town of Tourmauville. The bridgehead was reinforced into the nivht and in the morning after a short exchange with 2 Mark IVs of the 12th SS Panzer Regiment, the 23rd Hussars attempted to seize the vital high ground of Hill 112. C and B companies of the 23rd Hussars, supported by the 8th Rifle Brigade, swung around to the north and attacked down the north-south road. The British force encountered elements of the 12th SS Panzer Regiment, supported by Flak guns of the I/53 Flak battery. The Hussars seized the orchard at the top of the hill. The Germans quickly planned a counter attack with Mark IVs and Panthers. Finally, after 12 bloody hours of fighting, the British secured the only significant features on the hill. Through highly secret Ultra decrypts, Lieutenant General O'Connor and Field Marshal Montgomery learned of the release of the II SS Panzer corps to this area, and decided to withdraw the exposed elements of the 11th Armoured Division, withdrawing their forces from the heights of Hill 112 back to the Bridgehead at Tourmauville. Thus began weeks of bloody fighting around the Hill of Death.</p>}
+    dates{1944-07-27 / 1944-07-27}
+    position{49.127529 / -0.462456}
+    range{6}
     timescale{6}
     players{2 / 2}
+    author{"Darren Emge"}
     side{"Germany","Great Britain"}
     party{"Germany"-"2","Great Britain"-"2"}
-    author{"Emge, Darren"}
-    description{<p></p>}
+  }
+  scenario{"02 - Launch of Jupiter"}
+    description{<p>On the morning of July 10th, the 130th Brigade, supported by the 9th Royal Tank Regiment (RTR), jumped off at 05:30. The objectives for 5th Dorsets this morning were the towns of Les Dauns and Eterville, along with the ruins at Chateau de Fontaine. After quickly securing the farm complexes at Les Dauns, the British encountered stiff resistance from the 2/22 SS in the horseshoe wood and the ruins of Chateau de Fontaine. Here in the West Countrymen had their first taste of the bitter task of digging out a well-trained and entrenched enemy yard by yard. Meanwhile on the left flank, the 4th Dorsets were charged with taking Eterville, where 1/22 SS was dug in the town, its surrounding orchards, and the ridge overlooking the town. The Dorsets quickly entered the village, but fighting broke down to bloody, house-to-house fighting. The highly volatile battle caught the attention of the commander of the 5th Coy 12th SS Panzer Division, who violated his company boundaries and charged into the maelstrom, adding further chaos to an already tenuous situation. At 07:45 a message at HQ was received that Dorsets had entered Eterville and taken the town. In reality, Dorsets would spend the rest of the day and into the night trying to wrest control of the town from the SS.</p>}
+    dates{1944-07-10 / 1944-07-10}
+    position{49.127529 / -0.462456}
+    range{6}
+    timescale{6}
+    players{2 / 2}
+    author{"Darren Emge"}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+  }
+  scenario{"03 - End of Jupiter"}
+    description{<p>Late on July 10th, it was realized that the battle to break through to the Orne River was seriously in question. In fact, the battle for the vital Hill 112 was turning into a stalemate. Maj. General Thomas decided that a fresh attack would be required to wrest control of the vital summit and the observation points looking south into the German areas. The intense fighting to the northeast had sapped most of the British reserves, leaving only the 5th Duke of Cornwall's Light Infantry (DCLI), which was snatching much needed rest in the outskirts of Fontaine-Etoupefour. It was decided that the gains outweighed the risk and the 5th DCLI formes up behind the positions held by 4th Somerset Light Infantry along the Caen-Evracy road. The 5th DCLI was supported by the 7th RTR, who arrived late. The 5th DCLI jumped off across the open ground to clear the remainder of the hill as the 7th RTR arrived. Elements of the 19th SS were dug in down slope and supported by miscellaneous Panzers. The battle raged up until dark, with artillery from both sides actively affecting the advantage on several occasions. The hill was secured and several heavy counterattacks were fended off into the night.</p>}
+    dates{1944-01-01 / 1944-12-31}
+    position{49.127529 / -0.462456}
+    range{6}
+    timescale{6}
+    players{2 / 2}
+    author{"Darren Emge"}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+  }
+  scenario{"04 - Take the Hill"}
+    description{<p>The main thrust on July 10th 1944 was toward the summit of Hill 112. While the 130th Brigade secured the left flank, the 129th Brigade, supported by 7th RTR, was to advance on a broad front and secure the summit. The plan was for the 4th Somerset to advance over the summit. The 4th Wiltshire (Wilts) would swing around to the left, while the 5th Wilts swung around to the right. Things went badly from the beginning when shells from their own artillery landed among the assault troops of the 4th Wilts. Even without this stroke of bad luck, the 129th Brigade still had to advance over relatively open terrain through waist-high corn. The infantry and armour advanced in tandem. The German AT guns responded and knocked out several Tanks and Carriers. German armor quickly added to the number of British vehicles knocked out. The British forces pushed on with classic British determination, and the assault troops of the 129th closed on the German positions. The German Grenadiers opened up and began inflicting casualties on the British infantry. The defense of the Hill was declared a "Schwerpunkt" and the Germans committed their reserves - the dreaded Nebelwerfers of the 8th Werfer Brigade begin to rain death and destruction. Through all this, the British advanced slowly, yard by bloody yard, but things were about to get worse. Tigers! Elements of the 102nd Heavy Tank Brigade were advancing from the southeast. Only the thin skinned Achilles and 17 lbr AT guns of the 86th Antitank Regiment could hope to challenge this new threat. After several hours of heavy fighting, the 129th Brigade reached their goal along the Caen-Evracy road and began to dig in.</p>}
+    dates{1944-07-10 / 1944-07-10}
+    position{49.127529 / -0.462456}
+    range{6}
+    timescale{6}
+    players{2 / 2}
+    author{"Darren Emge"}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+  }
+  scenario{"05 - Overlooking Maltot"}
+    description{<p>While its sister brigade advanced on the summit of Hill 112, the 130th Brigade jumped off on July 10th at 08:00 to secure the left flank. Intelligence reported the town of Maltot to be lightly defended, so the plan was simple. The 7th Hampshires, with elements of the 9th RTR, would advance down into the valley, pass through Maltot, and dig in on the southern ridge overlooking the town. Observation Post variants of the Churchill, along with forward observers in Carriers, would be able to quickly call in artillery support if needed, to crack the line. The advance went well until the British closed on the town, then shot and shell rang out from the village and from German AT guns on Hill 112. Compounding the situation, a platoon of Tigers from the 102nd Heavy Tank Regiment had advanced almost simultaneously to support the defenders of Maltot. The 7th Hampshires bypassedthe town defenders and thrust toward their objective, the southern heights. The 7th battalion HQ and reserve companies followed up closely with the intent of mopping up Maltot, but the Germans were not going to give up one of the few dominating features on the eastern flank of the hill. Units of the 12th SS Hitlerjugend were dispatched along the River Orne to support the eastern flank. Meanwhile the 10th SS reconnaissance, were rushed in from their marshalling areas to help stem the British tide. The German high command, seeing the situation becoming tenuous, committed elements of the 8th Werfer Brigade to bloody the British. After hours of fighting on both the hill and in and around Maltot, both sides found themselves in a stalemate. Fighting for the town of Maltot would continue over the next several weeks, with the lines ebbing and flowing along the valley floor.</p>}
+    dates{1944-07-10 / 1944-07-10}
+    position{49.127529 / -0.462456}
+    range{6}
+    timescale{6}
+    players{2 / 2}
+    author{"Darren Emge"}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+  }
+  scenario{"06 - Twilight at Maltot"}
+    description{<p>Twelve days after the initial assault, the vital village of Maltot lies in ruins. On 22nd July, 1944, the German 272nd Infantry Division, which had arrived on foot from the Pas de Calais, was assigned the defense. The 129th Brigade would attempt to secure the village. In the vanguard were the 4th and 5th Wiltshire (Wilts), supported by the reinforced 9th Royal Tank Regiment (RTR). Operation EXPRESS, as it was known, was simply an assault from the northeast down the length of the valley. The assault kicked off at 17:30 hours, with the British advancing in line across the valley. The 4th Wilts would advance around the southern edge of Maltot, while the 5th Wilts would encircle from the north. Typhoons on station overhead could be called in to deal with any particular tough nuts. Initial progress was slow but steady, with the British securing a foothold. The Germans would still not easily give up the town, and elements of the 10th SS were sent north to reinforce the defenders, and if necessary, retake the town. Heavy panzers of the 101st were sent to support the defenders but were driven off by the rocket firing typhoons. As twilight fell on Maltot, control was still in doubt and the British command committed the 151st Royal Artillery Corps flame throwing Crocodiles to help dig out the stubborn defenders. The British fought hard into the night, finally securing the town at around 22:00. The next few hours were spent mopping up the prisoners.</p>}
+    dates{1944-07-22 / 1944-07-22}
+    position{49.127529 / -0.462456}
+    range{6}
+    timescale{6}
+    players{2 / 2}
+    author{"Darren Emge"}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+  }
+  scenario{"07 - No Happy Rest"}
+    description{<p>Clearing the crossroads at le Bon Repos was given to the 2nd Glasgow Highlanders. At 21:30 hours on July 15th 1944 they jumped off. Assisted by Monty's moonlight, the attack would advance down the slopes of Hill 112 from the northeast. The Highlanders were heavily supported by Churchills of the 107th Royal Armored Corps (RAC), 'Funnies' and Crocodiles of the 79th Armored Division, as well as machine guns and mortars of the 8th Middlesex. British forces were unsure of where the German defenders were holed up so the Churchills fired High Explosive rounds into likely defensive positions. The Highlanders cleared Esquay at around 2300 hours. At this point the Germans, believing this to be a major thrust towards Hill 113, sent the 21st Panzer Grenadiers, supported by Mark IVs of the 10th SS Panzer regiment, to blunt the perceived British offensive. The British 6 lbr AT guns went head to head with the Panzers of the 10th SS at point blank range. The British were forced to withdraw to their original starting positions on the slope of Hill 112.</p>}
+    dates{1944-07-15 / 1944-07-15}
+    position{49.127529 / -0.462456}
+    range{6}
+    timescale{6}
+    players{2 / 2}
+    author{"Darren Emge"}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+  }
+  scenario{"08 - Pierced and Bloodied"}
+    description{<p>On July 10, 1944, the 9th Cameronians were assigned the defense of Eterville and with it the security of the left flank. Panzer Grenadiers of the 10th SS had quickly followed the withdrawing elements of the Dorsets from the town of Maltot. In the dark of night, the Grenadiers managed to work their way into the orchards around Eterville through gaps between A and B companies of the 9th Cameronians. Having penetrated into the Cameronians positions, the Grenadiers ran amok, nearly capturing the Battalion headquarters and the command staff. The left flank was now a serious concern and the Brigade Headquarters dispatched the closest reserves, C Company of the Glasgow Highlanders, to fill the gap and secure Eterville. The Highlanders fought the enemy with PIAT guns and Bayonets, finally dislodging the Germans. The 10th SS withdrew after suffering heavy casualties. However the 10th had inflicted severe losses on the British as well. For the Highlanders this was the second such blood letting in less than a month.</p>}
+    dates{1944-07-10 / 1944-07-10}
+    position{49.127529 / -0.462456}
+    range{6}
+    timescale{6}
+    players{2 / 2}
+    author{"Darren Emge"}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
   }
 }
-
