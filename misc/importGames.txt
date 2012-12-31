@@ -1,1453 +1,1709 @@
-"The Drive on Metz - Patton in France" {
-  33030
-  <p>The Drive on Metz is a two-player game recreating General George S. Patton’s attempt to seize the key city of Metz and get across the Moselle River before the retreating Germans could form an effective defense. The American forces, comprised of three divisions of the 20th Corps, had just completed an epic pursuit across France after the Allied breakout from the Normandy beachhead. The exhausted Allied forces were at the end of their supply line and had barely enough resources left for one last push.</p><p>If they had been able to get across the Moselle River, they would have compromised the entire German Westwall defenses. This would have enabled Patton to make an attempt at crossing the Rhine before the end of 1944 and might have ended the war months earlier.</p><p>The defending German forces, four divisions of the 82nd Corps of the German 1st Army, were a combination of hastily collected and organized units, including fresh units from the German interior and remnants of units that Patton had been pursuing across France.</p><p>The battle, which began on 7 September 1944 and lasted for about a week, was a singular opportunity that could have gone either way. Historically, the Germans won, but just barely.</p>
-  1944-09-07 / 1944-09-14
-  1 / 1
-  22
-  24
-  2 / 2
-  author{"Dunnigan, James","Emrich, Alan"}
-  engine{"Vassal"-"http://victorypointgames.com/documents/DOM_Vassal.zip","Cyberboard"-"http://victorypointgames.com/documents/DOM_Cyberboard.zip"}
-  side{"Axis","Allies","Germany","US"}
-  genre{"Conflict Simulation"}
-  mechanic{"Dice","Hex","Counter"}
-  theme{"WW2"}
-  party{"Germany"-"2","US"-"2"}
+33030 {
+  title{"The Drive on Metz - Patton in France"}
+  description{<p>The Drive on Metz is a two-player game recreating General George S. Patton’s attempt to seize the key city of Metz and get across the Moselle River before the retreating Germans could form an effective defense. The American forces, comprised of three divisions of the 20th Corps, had just completed an epic pursuit across France after the Allied breakout from the Normandy beachhead. The exhausted Allied forces were at the end of their supply line and had barely enough resources left for one last push.</p><p>If they had been able to get across the Moselle River, they would have compromised the entire German Westwall defenses. This would have enabled Patton to make an attempt at crossing the Rhine before the end of 1944 and might have ended the war months earlier.</p><p>The defending German forces, four divisions of the 82nd Corps of the German 1st Army, were a combination of hastily collected and organized units, including fresh units from the German interior and remnants of units that Patton had been pursuing across France.</p><p>The battle, which began on 7 September 1944 and lasted for about a week, was a singular opportunity that could have gone either way. Historically, the Germans won, but just barely.</p>}
   publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=61"}
+  engine{"Vassal"-"http://victorypointgames.com/documents/DOM_Vassal.zip","Cyberboard"-"http://victorypointgames.com/documents/DOM_Cyberboard.zip"}
+  genre{"Conflict Simulation"}
+  mechanic{"Dice","Hex","Counter"}
+  theme{"WW2"}
   series{"Battlesson"-"#2"}
+  scenario{"The Drive on Metz - Patton in France"}
+    dates{1944-09-07 / 1944-09-14}
+    position{1 / 1}
+    range{22}
+    timescale{24}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","US"}
+    party{"Germany"-"2","US"-"2"}
+    author{"Dunnigan, James","Emrich, Alan"}
+    description{<p>The Drive on Metz is a two-player game recreating General George S. Patton’s attempt to seize the key city of Metz and get across the Moselle River before the retreating Germans could form an effective defense. The American forces, comprised of three divisions of the 20th Corps, had just completed an epic pursuit across France after the Allied breakout from the Normandy beachhead. The exhausted Allied forces were at the end of their supply line and had barely enough resources left for one last push.</p><p>If they had been able to get across the Moselle River, they would have compromised the entire German Westwall defenses. This would have enabled Patton to make an attempt at crossing the Rhine before the end of 1944 and might have ended the war months earlier.</p><p>The defending German forces, four divisions of the 82nd Corps of the German 1st Army, were a combination of hastily collected and organized units, including fresh units from the German interior and remnants of units that Patton had been pursuing across France.</p><p>The battle, which began on 7 September 1944 and lasted for about a week, was a singular opportunity that could have gone either way. Historically, the Germans won, but just barely.</p>}
+  }
 }
 
-"Battle for Moscow - Operation Typhoon" {
-  49276
-  <p>In September of 1941, the German High Command decided to launch a final, decisive offensive to crown their invasion of Russia, capture Moscow, and break the Red Army once and for all. Codenamed Operation Typhoon, German tanks and infantry pressed relentlessly forward until they could see the very spires of the Kremlin. As Russia’s communist government was burning secret papers and evacuating Lenin’s corpse eastward out of their ancient capital, Moscow was hanging in the balance. By 5 December, the Germans were halted along the entire front – exhausted and demoralized, having barely failed to capture their objective as the winter freeze grew ever colder.</p><p>Battle for Moscow is another in the popular series of classic introductory wargames from Victory Point Games offering new players something extra: a BattlessonTM. Relive this dramatic campaign on the Eastern Front of World War 2 while learning more about the fascinating hobby of wargaming, where you hold command as history holds its breath.</p>
-  1941-10-01 / 1941-12-31
-  1 / 1
-  -1
-  240
-  2 / 2
-  author{"Chadwick, Frank","Emrich, Alan","McMillan, Lance"}
-  engine{"Vassal"-"http://victorypointgames.com/documents/B4M_Vassal.zip","Cyberboard"-"http://victorypointgames.com/documents/B4M_Cyberboard.zip","ZunTzu"-"http://victorypointgames.com/documents/B4M_ZunTzu.zip"}
-  side{"Axis","Allies","Germany","Russia"}
-  genre{"Conflict Simulation"}
-  mechanic{"Dice","Hex","Counter"}
-  theme{"WW2"}
-  party{"Germany"-"2","Russia"-"2"}
+49276 {
+  title{"Battle for Moscow - Operation Typhoon"}
+  description{<p>In September of 1941, the German High Command decided to launch a final, decisive offensive to crown their invasion of Russia, capture Moscow, and break the Red Army once and for all. Codenamed Operation Typhoon, German tanks and infantry pressed relentlessly forward until they could see the very spires of the Kremlin. As Russia’s communist government was burning secret papers and evacuating Lenin’s corpse eastward out of their ancient capital, Moscow was hanging in the balance. By 5 December, the Germans were halted along the entire front – exhausted and demoralized, having barely failed to capture their objective as the winter freeze grew ever colder.</p><p>Battle for Moscow is another in the popular series of classic introductory wargames from Victory Point Games offering new players something extra: a BattlessonTM. Relive this dramatic campaign on the Eastern Front of World War 2 while learning more about the fascinating hobby of wargaming, where you hold command as history holds its breath.</p>}
   publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=103"}
-  series{"Battlesson"-"#7"}
-}
-
-"Assault on Sevastopol - Von Manstein in the Crimea" {
-  34890
-  <p>Assault on Sevastopol is a two-player game recreating Erich von Manstein’s attempt to clear the Crimean peninsula and seize the key port city of Sevastopol as a prelude to Germany’s 1942 summer offensive in Ukraine – the roads to which would lead to the fateful battle of Stalingrad. The Germans are attempting to clear this enemy bastion on the Black Sea and free up their forces for the great offensive to the north. The Russians are desperately trying to hold out as long as possible, falling back on great defensive terrain and strong fortified positions, hoping to delay the German invaders and extract as high a price as possible from them for the capture of Sevastopol.</p><p>But the Germans has prepared for this campaign. With complete air superiority, the Luftwaffe (German Air Force) relentlessly attacks from the skies, while special super-heavy siege artillery was slowly and carefully brought in and assembled expressly for this operation. It’s a hard-fought matter of time, distance, and attrition as you recreate the Assault on Sevastopol.</p>
-  1942-01-01 / 1942-12-31
-  1 / 1
-  18
-  72
-  2 / 2
-  author{"McGrath, Adrian"}
-  engine{"Vassal"-"http://victorypointgames.com/documents/AOS_Vassal.zip","Cyberboard"-"http://victorypointgames.com/documents/AOS_Cyberboard.zip"}
-  side{"Axis","Allies","Rumania","Germany","Russia"}
+  engine{"Vassal"-"http://victorypointgames.com/documents/B4M_Vassal.zip","Cyberboard"-"http://victorypointgames.com/documents/B4M_Cyberboard.zip","ZunTzu"-"http://victorypointgames.com/documents/B4M_ZunTzu.zip"}
   genre{"Conflict Simulation"}
   mechanic{"Dice","Hex","Counter"}
   theme{"WW2"}
-  party{"Germany"-"2","Russia"-"2"}
+  series{"Battlesson"-"#7"}
+  scenario{"Battle for Moscow - Operation Typhoon"}
+    dates{1941-10-01 / 1941-12-31}
+    position{1 / 1}
+    range{-1}
+    timescale{240}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","Russia"}
+    party{"Germany"-"2","Russia"-"2"}
+    author{"Chadwick, Frank","Emrich, Alan","McMillan, Lance"}
+    description{<p>In September of 1941, the German High Command decided to launch a final, decisive offensive to crown their invasion of Russia, capture Moscow, and break the Red Army once and for all. Codenamed Operation Typhoon, German tanks and infantry pressed relentlessly forward until they could see the very spires of the Kremlin. As Russia’s communist government was burning secret papers and evacuating Lenin’s corpse eastward out of their ancient capital, Moscow was hanging in the balance. By 5 December, the Germans were halted along the entire front – exhausted and demoralized, having barely failed to capture their objective as the winter freeze grew ever colder.</p><p>Battle for Moscow is another in the popular series of classic introductory wargames from Victory Point Games offering new players something extra: a BattlessonTM. Relive this dramatic campaign on the Eastern Front of World War 2 while learning more about the fascinating hobby of wargaming, where you hold command as history holds its breath.</p>}
+  }
+}
+
+34890 {
+  title{"Assault on Sevastopol - Von Manstein in the Crimea"}
+  description{<p>Assault on Sevastopol is a two-player game recreating Erich von Manstein’s attempt to clear the Crimean peninsula and seize the key port city of Sevastopol as a prelude to Germany’s 1942 summer offensive in Ukraine – the roads to which would lead to the fateful battle of Stalingrad. The Germans are attempting to clear this enemy bastion on the Black Sea and free up their forces for the great offensive to the north. The Russians are desperately trying to hold out as long as possible, falling back on great defensive terrain and strong fortified positions, hoping to delay the German invaders and extract as high a price as possible from them for the capture of Sevastopol.</p><p>But the Germans has prepared for this campaign. With complete air superiority, the Luftwaffe (German Air Force) relentlessly attacks from the skies, while special super-heavy siege artillery was slowly and carefully brought in and assembled expressly for this operation. It’s a hard-fought matter of time, distance, and attrition as you recreate the Assault on Sevastopol.</p>}
   publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=88"}
+  engine{"Vassal"-"http://victorypointgames.com/documents/AOS_Vassal.zip","Cyberboard"-"http://victorypointgames.com/documents/AOS_Cyberboard.zip"}
+  genre{"Conflict Simulation"}
+  mechanic{"Dice","Hex","Counter"}
+  theme{"WW2"}
   series{"Battlesson"-"#3"}
+  scenario{"Assault on Sevastopol - Von Manstein in the Crimea"}
+    dates{1942-01-01 / 1942-12-31}
+    position{1 / 1}
+    range{18}
+    timescale{72}
+    players{2 / 2}
+    side{"Axis","Allies","Rumania","Germany","Russia"}
+    party{"Germany"-"2","Russia"-"2"}
+    author{"McGrath, Adrian"}
+    description{<p>Assault on Sevastopol is a two-player game recreating Erich von Manstein’s attempt to clear the Crimean peninsula and seize the key port city of Sevastopol as a prelude to Germany’s 1942 summer offensive in Ukraine – the roads to which would lead to the fateful battle of Stalingrad. The Germans are attempting to clear this enemy bastion on the Black Sea and free up their forces for the great offensive to the north. The Russians are desperately trying to hold out as long as possible, falling back on great defensive terrain and strong fortified positions, hoping to delay the German invaders and extract as high a price as possible from them for the capture of Sevastopol.</p><p>But the Germans has prepared for this campaign. With complete air superiority, the Luftwaffe (German Air Force) relentlessly attacks from the skies, while special super-heavy siege artillery was slowly and carefully brought in and assembled expressly for this operation. It’s a hard-fought matter of time, distance, and attrition as you recreate the Assault on Sevastopol.</p>}
+  }
 }
 
-"Market Garden: Eindhoven - Eindhoven Bridge" {
-  109827
-  <p>Paul Koenig’s Market Garden is a series of small-format, competitive introductory-level wargames covering the critical first three days of Operation Market-Garden, where the Allies attempted to seize a series of bridges in Holland and end WWII before Christmas. Each game in the series covers a separate bridge: Arnhem, Nijmegen, and Eindhoven.</p><p>As a player, you must command your German or Allied forces so as to capture key objectives on the board while keeping your casualties down (and your opponent’s casualties up).</p><p>Eindhoven Bridge is the second game in the Market Garden series, covering the events happening at this vital fiver crossing from September 17th-19th, 1944. Each player commands their German or American forces so as to capture key objectives on the board while keeping your casualties down (and your opponent’s casualties up).</p><p>With plenty of decision making and Optional Rules to extend gameplay and realism, the very collapse of Germany is at stake as you make your stand and bring your enemies down at Eindhoven Bridge!</p>
-  1944-09-17 / 1944-09-19
-  1 / 1
-  9
-  5
-  2 / 2
-  author{"Koenig, Paul"}
-  engine{"Vassal"-"http://victorypointgames.com/documents/PKMG_Eindhoven_Vassal.zip","ZunTzu"-"http://victorypointgames.com/documents/PKMG-Eindhoven_ZunTzu.zip"}
-  side{"Axis","Allies","Germany","US"}
-  genre{"Conflict Simulation"}
-  mechanic{"Dice","Hex","Counter"}
-  theme{"WW2","Market Garden"}
-  party{"Germany"-"2","US"-"2"}
+109827 {
+  title{"Market Garden: Eindhoven - Eindhoven Bridge"}
+  description{<p>Paul Koenig’s Market Garden is a series of small-format, competitive introductory-level wargames covering the critical first three days of Operation Market-Garden, where the Allies attempted to seize a series of bridges in Holland and end WWII before Christmas. Each game in the series covers a separate bridge: Arnhem, Nijmegen, and Eindhoven.</p><p>As a player, you must command your German or Allied forces so as to capture key objectives on the board while keeping your casualties down (and your opponent’s casualties up).</p><p>Eindhoven Bridge is the second game in the Market Garden series, covering the events happening at this vital fiver crossing from September 17th-19th, 1944. Each player commands their German or American forces so as to capture key objectives on the board while keeping your casualties down (and your opponent’s casualties up).</p><p>With plenty of decision making and Optional Rules to extend gameplay and realism, the very collapse of Germany is at stake as you make your stand and bring your enemies down at Eindhoven Bridge!</p>}
   publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=199"}
+  engine{"Vassal"-"http://victorypointgames.com/documents/PKMG_Eindhoven_Vassal.zip","ZunTzu"-"http://victorypointgames.com/documents/PKMG-Eindhoven_ZunTzu.zip"}
+  genre{"Conflict Simulation"}
+  mechanic{"Dice","Hex","Counter"}
+  theme{"WW2","Market Garden"}
   series{"Paul Koenig's"-"Market Garden","Historic Gaming"-"#9"}
+  scenario{"Market Garden: Eindhoven - Eindhoven Bridge"}
+    dates{1944-09-17 / 1944-09-19}
+    position{1 / 1}
+    range{9}
+    timescale{5}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","US"}
+    party{"Germany"-"2","US"-"2"}
+    author{"Koenig, Paul"}
+    description{<p>Paul Koenig’s Market Garden is a series of small-format, competitive introductory-level wargames covering the critical first three days of Operation Market-Garden, where the Allies attempted to seize a series of bridges in Holland and end WWII before Christmas. Each game in the series covers a separate bridge: Arnhem, Nijmegen, and Eindhoven.</p><p>As a player, you must command your German or Allied forces so as to capture key objectives on the board while keeping your casualties down (and your opponent’s casualties up).</p><p>Eindhoven Bridge is the second game in the Market Garden series, covering the events happening at this vital fiver crossing from September 17th-19th, 1944. Each player commands their German or American forces so as to capture key objectives on the board while keeping your casualties down (and your opponent’s casualties up).</p><p>With plenty of decision making and Optional Rules to extend gameplay and realism, the very collapse of Germany is at stake as you make your stand and bring your enemies down at Eindhoven Bridge!</p>}
+  }
 }
 
-"Market Garden: Nijmegen - Nijmegen Bridge" {
-  129668
-  <p>Paul Koenig’s Market-Garden is a series of small-format, competitive introductory-level wargames covering the critical first three days of Operation Market-Garden, where the Allies attempted to seize a series of bridges in Holland and end WWII before Christmas. Each game in the series covers a separate bridge: Arnhem, Eindhoven, and Nijmegen. As a player, you must command your German or Allied forces so as to capture key objectives on the board while keeping your casualties down (and your opponent’s casualties up).</p><p>Nijmegen Bridge is the third and final game in the Market-Garden series, covering the events happening at this vital river crossing from September 17th-19th, 1944. The central Nijmegen sector of the attack crossed an arm of the Rhine that could not be bridged easily. If the US 82nd Airborne failed to capture the Nijmegen crossing, the advance of XXX Corps would be checked and Operation Market-Garden would fail.</p><p>With plenty of decision making and Optional Rules to extend gameplay and realism, the Allied advance into Germany hangs in the balance at Nijmegen Bridge!</p>
-  1944-09-17 / 1944-09-19
-  1 / 1
-  8
-  5
-  2 / 2
-  author{"Koenig, Paul"}
-  engine{"Vassal"-"http://victorypointgames.com/documents/PKMG_Nijmegen_Vassal.zip"}
-  side{"Axis","Allies","Germany","Britain"}
-  genre{"Conflict Simulation"}
-  mechanic{"Dice","Hex","Counter"}
-  theme{"WW2","Market Garden"}
-  party{"Germany"-"2","Britain"-"2"}
+129668 {
+  title{"Market Garden: Nijmegen - Nijmegen Bridge"}
+  description{<p>Paul Koenig’s Market-Garden is a series of small-format, competitive introductory-level wargames covering the critical first three days of Operation Market-Garden, where the Allies attempted to seize a series of bridges in Holland and end WWII before Christmas. Each game in the series covers a separate bridge: Arnhem, Eindhoven, and Nijmegen. As a player, you must command your German or Allied forces so as to capture key objectives on the board while keeping your casualties down (and your opponent’s casualties up).</p><p>Nijmegen Bridge is the third and final game in the Market-Garden series, covering the events happening at this vital river crossing from September 17th-19th, 1944. The central Nijmegen sector of the attack crossed an arm of the Rhine that could not be bridged easily. If the US 82nd Airborne failed to capture the Nijmegen crossing, the advance of XXX Corps would be checked and Operation Market-Garden would fail.</p><p>With plenty of decision making and Optional Rules to extend gameplay and realism, the Allied advance into Germany hangs in the balance at Nijmegen Bridge!</p>}
   publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=217"}
-  series{"Paul Koenig's"-"Market Garden","Historic Gaming"-"#10"}
-}
-
-"Market Garden: Arnhem - Arnhem Bridge" {
-  109827
-  <p>Paul Koenig’s Market Garden is a series of small-format, competitive introductory-level wargames covering the critical first three days of Operation Market-Garden, where the Allies attempted to seize a series of bridges in Holland and end WWII before Christmas. Each game in the series covers a separate bridge: Arnhem, Nijmegen, and Eindhoven.</p><p>As a player, you must command your German or Allied forces so as to capture key objectives on the board while keeping your casualties down (and your opponent’s casualties up).</p><p>Based upon the design of Paul Koenig's D-Day Series, Arnhem Bridge is the first to be released in the Market Garden series, covering all the events that happened there from September 17th-19th, 1944. Including a set of Optional Rules, make a stand against your enemies at Arnhem Bridge!</p>
-  1944-09-17 / 1944-09-19
-  1 / 1
-  8
-  5
-  2 / 2
-  author{"Koenig, Paul"}
-  engine{"Vassal"-"http://victorypointgames.com/documents/PKMG_Arnhem_Vassal.zip","ZunTzu"-"http://victorypointgames.com/documents/PKMG-Arnhem_ZunTzu.zip"}
-  side{"Axis","Allies","Germany","Britain"}
+  engine{"Vassal"-"http://victorypointgames.com/documents/PKMG_Nijmegen_Vassal.zip"}
   genre{"Conflict Simulation"}
   mechanic{"Dice","Hex","Counter"}
   theme{"WW2","Market Garden"}
-  party{"Germany"-"2","Britain"-"2"}
+  series{"Paul Koenig's"-"Market Garden","Historic Gaming"-"#10"}
+  scenario{"Market Garden: Nijmegen - Nijmegen Bridge"}
+    dates{1944-09-17 / 1944-09-19}
+    position{1 / 1}
+    range{8}
+    timescale{5}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","Britain"}
+    party{"Germany"-"2","Britain"-"2"}
+    author{"Koenig, Paul"}
+    description{<p>Paul Koenig’s Market-Garden is a series of small-format, competitive introductory-level wargames covering the critical first three days of Operation Market-Garden, where the Allies attempted to seize a series of bridges in Holland and end WWII before Christmas. Each game in the series covers a separate bridge: Arnhem, Eindhoven, and Nijmegen. As a player, you must command your German or Allied forces so as to capture key objectives on the board while keeping your casualties down (and your opponent’s casualties up).</p><p>Nijmegen Bridge is the third and final game in the Market-Garden series, covering the events happening at this vital river crossing from September 17th-19th, 1944. The central Nijmegen sector of the attack crossed an arm of the Rhine that could not be bridged easily. If the US 82nd Airborne failed to capture the Nijmegen crossing, the advance of XXX Corps would be checked and Operation Market-Garden would fail.</p><p>With plenty of decision making and Optional Rules to extend gameplay and realism, the Allied advance into Germany hangs in the balance at Nijmegen Bridge!</p>}
+  }
+}
+
+109827 {
+  title{"Market Garden: Arnhem - Arnhem Bridge"}
+  description{<p>Paul Koenig’s Market Garden is a series of small-format, competitive introductory-level wargames covering the critical first three days of Operation Market-Garden, where the Allies attempted to seize a series of bridges in Holland and end WWII before Christmas. Each game in the series covers a separate bridge: Arnhem, Nijmegen, and Eindhoven.</p><p>As a player, you must command your German or Allied forces so as to capture key objectives on the board while keeping your casualties down (and your opponent’s casualties up).</p><p>Based upon the design of Paul Koenig's D-Day Series, Arnhem Bridge is the first to be released in the Market Garden series, covering all the events that happened there from September 17th-19th, 1944. Including a set of Optional Rules, make a stand against your enemies at Arnhem Bridge!</p>}
   publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=181"}
+  engine{"Vassal"-"http://victorypointgames.com/documents/PKMG_Arnhem_Vassal.zip","ZunTzu"-"http://victorypointgames.com/documents/PKMG-Arnhem_ZunTzu.zip"}
+  genre{"Conflict Simulation"}
+  mechanic{"Dice","Hex","Counter"}
+  theme{"WW2","Market Garden"}
   series{"Paul Koenig's"-"Market Garden","Historic Gaming"-"#8"}
+  scenario{"Market Garden: Arnhem - Arnhem Bridge"}
+    dates{1944-09-17 / 1944-09-19}
+    position{1 / 1}
+    range{8}
+    timescale{5}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","Britain"}
+    party{"Germany"-"2","Britain"-"2"}
+    author{"Koenig, Paul"}
+    description{<p>Paul Koenig’s Market Garden is a series of small-format, competitive introductory-level wargames covering the critical first three days of Operation Market-Garden, where the Allies attempted to seize a series of bridges in Holland and end WWII before Christmas. Each game in the series covers a separate bridge: Arnhem, Nijmegen, and Eindhoven.</p><p>As a player, you must command your German or Allied forces so as to capture key objectives on the board while keeping your casualties down (and your opponent’s casualties up).</p><p>Based upon the design of Paul Koenig's D-Day Series, Arnhem Bridge is the first to be released in the Market Garden series, covering all the events that happened there from September 17th-19th, 1944. Including a set of Optional Rules, make a stand against your enemies at Arnhem Bridge!</p>}
+  }
 }
 
-"D-Day: Juno - The Canadian Beach" {
-  37724
-  <p>Juno: The Canadian Beach is the first game in Paul Koenig’s D-Day series of five titles covering the first three nail-biting days (June 6 – 9, 1944) of Allied landings in France to liberate Europe during World War 2. Using fluid and dynamic systems for integrating the fierce combat and rapid movements of the companies and battalions contesting the beaches, cliffs, swamps and bocage bordering the rough North Sea coast, players will find the easy rules to offer rich puzzles and surprising opportunities on the cross-map march to victory.</p><p>Can the Canadian 3rd Division find sufficient air, naval, and artillery support to clear Juno Beach and advance inland through the bocage country to the south and link up with the British beaches to the east? Or will the German defenders of the 716th Division react in time, bringing up their anti-tank assets to stop the Canadians on the beaches as they did at Dieppe two years earlier? The German commander, Erwin Rommel, planned to stop the invasion on the beaches… and it nearly happened!</p>
-  1944-06-06 / 1944-06-08
-  1 / 1
-  7
-  5
-  2 / 2
-  author{"Koenig, Paul"}
-  engine{"Cyberboard"-"http://victorypointgames.com/documents/PKDD-C_Cyberboard.zip","ZunTzu"-"http://victorypointgames.com/documents/PKDD-C_ZunTzu.zip"}
-  side{"Axis","Allies","Germany","Canada"}
-  genre{"Conflict Simulation"}
-  mechanic{"Dice","Hex","Counter"}
-  theme{"WW2","D-Day"}
-  party{"Germany"-"2","Canada"-"2"}
+37724 {
+  title{"D-Day: Juno - The Canadian Beach"}
+  description{<p>Juno: The Canadian Beach is the first game in Paul Koenig’s D-Day series of five titles covering the first three nail-biting days (June 6 – 9, 1944) of Allied landings in France to liberate Europe during World War 2. Using fluid and dynamic systems for integrating the fierce combat and rapid movements of the companies and battalions contesting the beaches, cliffs, swamps and bocage bordering the rough North Sea coast, players will find the easy rules to offer rich puzzles and surprising opportunities on the cross-map march to victory.</p><p>Can the Canadian 3rd Division find sufficient air, naval, and artillery support to clear Juno Beach and advance inland through the bocage country to the south and link up with the British beaches to the east? Or will the German defenders of the 716th Division react in time, bringing up their anti-tank assets to stop the Canadians on the beaches as they did at Dieppe two years earlier? The German commander, Erwin Rommel, planned to stop the invasion on the beaches… and it nearly happened!</p>}
   publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=68"}
+  engine{"Cyberboard"-"http://victorypointgames.com/documents/PKDD-C_Cyberboard.zip","ZunTzu"-"http://victorypointgames.com/documents/PKDD-C_ZunTzu.zip"}
+  genre{"Conflict Simulation"}
+  mechanic{"Dice","Hex","Counter"}
+  theme{"WW2","D-Day"}
   series{"Paul Koenig's"-"D-Day","Battlesson"-"#5"}
+  scenario{"D-Day: Juno - The Canadian Beach"}
+    dates{1944-06-06 / 1944-06-08}
+    position{1 / 1}
+    range{7}
+    timescale{5}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","Canada"}
+    party{"Germany"-"2","Canada"-"2"}
+    author{"Koenig, Paul"}
+    description{<p>Juno: The Canadian Beach is the first game in Paul Koenig’s D-Day series of five titles covering the first three nail-biting days (June 6 – 9, 1944) of Allied landings in France to liberate Europe during World War 2. Using fluid and dynamic systems for integrating the fierce combat and rapid movements of the companies and battalions contesting the beaches, cliffs, swamps and bocage bordering the rough North Sea coast, players will find the easy rules to offer rich puzzles and surprising opportunities on the cross-map march to victory.</p><p>Can the Canadian 3rd Division find sufficient air, naval, and artillery support to clear Juno Beach and advance inland through the bocage country to the south and link up with the British beaches to the east? Or will the German defenders of the 716th Division react in time, bringing up their anti-tank assets to stop the Canadians on the beaches as they did at Dieppe two years earlier? The German commander, Erwin Rommel, planned to stop the invasion on the beaches… and it nearly happened!</p>}
+  }
 }
 
-"D-Day: Sword and Gold - The British Beaches" {
-  40185
-  <p>Sword and Gold: The British Beaches are the fourth and fifth games in Paul Koenig’s D-Day series of five titles covering the first three nail-biting days (June 6 – 8, 1944) of Allied landings in France to liberate Europe during World War 2. Using fluid and dynamic systems for integrating the fierce combat and rapid movements of the companies and battalions contesting the beaches, cliffs, swamps and bocage bordering the rough North Sea coast, players will find the easy rules to offer rich puzzles and surprising opportunities on the cross-map march to victory.</p><p>Bernard Law Montgomery led the Allied landings on the beaches closest to Germany, with the ambitious goal of moving inland and reaching the vital city of Caen within a day or two (dubbed “Operation Neptune”). But the German 716th Division, supported by elements of the 21st Panzer Division, slowed the British advance down during these critical first few days and ultimately kept ‘Monty’ out of Caen until, after Allied offensives in June, July, and August, they cleared the area once and for all.</p>
-  1944-06-06 / 1944-06-08
-  1 / 1
-  7
-  5
-  2 / 2
-  author{"Koenig, Paul"}
-  engine{"Cyberboard"-"http://victorypointgames.com/documents/PKDD_BR_Cyberboard.zip"}
-  side{"Axis","Allies","Germany","Britain"}
-  genre{"Conflict Simulation"}
-  mechanic{"Dice","Hex","Counter"}
-  theme{"WW2","D-Day"}
-  party{"Germany"-"2","Britain"-"2"}
+40185 {
+  title{"D-Day: Sword and Gold - The British Beaches"}
+  description{<p>Sword and Gold: The British Beaches are the fourth and fifth games in Paul Koenig’s D-Day series of five titles covering the first three nail-biting days (June 6 – 8, 1944) of Allied landings in France to liberate Europe during World War 2. Using fluid and dynamic systems for integrating the fierce combat and rapid movements of the companies and battalions contesting the beaches, cliffs, swamps and bocage bordering the rough North Sea coast, players will find the easy rules to offer rich puzzles and surprising opportunities on the cross-map march to victory.</p>}
   publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=69"}
-  series{"Paul Koenig's"-"D-Day","Historic Gaming"-"#4"}
-}
-
-"D-Day: Utah and Omaha - The American Beaches" {
-  38881
-  <p>Utah and Omaha: The American Beaches are the second and third games in Paul Koenig’s D-Day series of five titles covering the first three nail-biting days (June 6 – 8, 1944) of Allied landings in France to liberate Europe during World War 2. Using fluid and dynamic systems for integrating the fierce combat and rapid movements of the companies and battalions contesting the beaches, cliffs, swamps and bocage bordering the rough North Sea coast, players will find the easy rules to offer rich puzzles and surprising opportunities on the cross-map march to victory.</p><p>On the two western beachheads, the Americans faced problems galore and some of the worst terrain encountered by the Allies. It seemed that Murphy’s Law was in full effect: “Everything that can go wrong will go wrong – and at the worst possible moment.” Yet despite widely scattered air drops, confusion and stiff German resistance, an American victory was won and the beaches secured. However, the cost in lives of this close-fought campaign will see it always remembered as “Bloody Omaha.”</p>
-  1944-06-06 / 1944-06-08
-  1 / 1
-  7
-  5
-  2 / 2
-  author{"Koenig, Paul"}
-  engine{"Cyberboard"-"http://victorypointgames.com/documents/PKDD-A_Cyberboard.zip","ZunTzu"-"http://victorypointgames.com/documents/PKDD-A_ZunTzu.zip"}
-  side{"Axis","Allies","Germany","US"}
+  engine{"Cyberboard"-"http://victorypointgames.com/documents/PKDD_BR_Cyberboard.zip"}
   genre{"Conflict Simulation"}
   mechanic{"Dice","Hex","Counter"}
   theme{"WW2","D-Day"}
-  party{"Germany"-"2","US"-"2"}
-  publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=70"}
-  series{"Paul Koenig's"-"D-Day","Historic Gaming"-"#3"}
+  series{"Paul Koenig's"-"D-Day","Historic Gaming"-"#4"}
+  scenario{"Sword"}
+    dates{1944-06-06 / 1944-06-08}
+    position{1 / 1}
+    range{7}
+    timescale{5}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","Britain"}
+    party{"Germany"-"2","Britain"-"2"}
+    author{"Koenig, Paul"}
+    description{<p>Bernard Law Montgomery led the Allied landings on the beaches closest to Germany, with the ambitious goal of moving inland and reaching the vital city of Caen within a day or two (dubbed “Operation Neptune”). But the German 716th Division, supported by elements of the 21st Panzer Division, slowed the British advance down during these critical first few days and ultimately kept ‘Monty’ out of Caen until, after Allied offensives in June, July, and August, they cleared the area once and for all.</p>}
+  }
+  scenario{"Gold"}
+    dates{1944-06-06 / 1944-06-08}
+    position{1 / 1}
+    range{7}
+    timescale{5}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","Britain"}
+    party{"Germany"-"2","Britain"-"2"}
+    author{"Koenig, Paul"}
+    description{<p>Bernard Law Montgomery led the Allied landings on the beaches closest to Germany, with the ambitious goal of moving inland and reaching the vital city of Caen within a day or two (dubbed “Operation Neptune”). But the German 716th Division, supported by elements of the 21st Panzer Division, slowed the British advance down during these critical first few days and ultimately kept ‘Monty’ out of Caen until, after Allied offensives in June, July, and August, they cleared the area once and for all.</p>}
+  }
 }
 
-"Bulge 20 - The Ardennes Offensive" {
-  41004
-  <p>In Bulge 20, the Allies don’t know which German strategic objective is being pursued. Allied intelligence work is required to ascertain the real German intentions so as not to overreact to the threat, because this time, the Germans can win if their staff can outthink and outmaneuver the Allies’ staff!</p>
-  1944-12-01 / 1945-01-31
-  50.63333 / 5.56666
-  300
-  72
-  2 / 2
-  author{"Miranda, Joseph"}
+38881 {
+  title{"D-Day: Utah and Omaha - The American Beaches"}
+  description{<p>Utah and Omaha: The American Beaches are the second and third games in Paul Koenig’s D-Day series of five titles covering the first three nail-biting days (June 6 – 8, 1944) of Allied landings in France to liberate Europe during World War 2. Using fluid and dynamic systems for integrating the fierce combat and rapid movements of the companies and battalions contesting the beaches, cliffs, swamps and bocage bordering the rough North Sea coast, players will find the easy rules to offer rich puzzles and surprising opportunities on the cross-map march to victory.</p>}
+  publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=70"}
+  engine{"Cyberboard"-"http://victorypointgames.com/documents/PKDD-A_Cyberboard.zip","ZunTzu"-"http://victorypointgames.com/documents/PKDD-A_ZunTzu.zip"}
+  genre{"Conflict Simulation"}
+  mechanic{"Dice","Hex","Counter"}
+  theme{"WW2","D-Day"}
+  series{"Paul Koenig's"-"D-Day","Historic Gaming"-"#3"}
+  scenario{"Utah"}
+    dates{1944-06-06 / 1944-06-08}
+    position{1 / 1}
+    range{7}
+    timescale{5}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","US"}
+    party{"Germany"-"2","US"-"2"}
+    author{"Koenig, Paul"}
+    description{<p>On the two western beachheads, the Americans faced problems galore and some of the worst terrain encountered by the Allies. It seemed that Murphy’s Law was in full effect: “Everything that can go wrong will go wrong – and at the worst possible moment.” Yet despite widely scattered air drops, confusion and stiff German resistance, an American victory was won and the beaches secured. However, the cost in lives of this close-fought campaign will see it always remembered as “Bloody Omaha.”</p>}
+  }
+  scenario{"Omaha"}
+    dates{1944-06-06 / 1944-06-08}
+    position{1 / 1}
+    range{7}
+    timescale{5}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","US"}
+    party{"Germany"-"2","US"-"2"}
+    author{"Koenig, Paul"}
+    description{<p>On the two western beachheads, the Americans faced problems galore and some of the worst terrain encountered by the Allies. It seemed that Murphy’s Law was in full effect: “Everything that can go wrong will go wrong – and at the worst possible moment.” Yet despite widely scattered air drops, confusion and stiff German resistance, an American victory was won and the beaches secured. However, the cost in lives of this close-fought campaign will see it always remembered as “Bloody Omaha.”</p>}
+  }
+}
+
+41004 {
+  title{"Bulge 20 - The Ardennes Offensive"}
+  description{<p>In Bulge 20, the Allies don’t know which German strategic objective is being pursued. Allied intelligence work is required to ascertain the real German intentions so as not to overreact to the threat, because this time, the Germans can win if their staff can outthink and outmaneuver the Allies’ staff!</p>}
+  publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=86"}
   engine{"Vassal"-"http://victorypointgames.com/details.php?prodId=86","Cyberboard"-"http://victorypointgames.com/details.php?prodId=86","ZunTzu"-"http://victorypointgames.com/details.php?prodId=86"}
-  side{"Axis","Allies","Germany","US","Britain"}
   genre{"Conflict Simulation","Strategic Level"}
   mechanic{"Card-Driven","Dice","Hex","Counter","Point-to-Point"}
   theme{"WW2"}
-  party{"Germany"-"2","US/Great Britain"-"2"}
-  publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=86"}
   series{"Command Staff"-"#1"}
+  scenario{"Bulge 20 - The Ardennes Offensive"}
+    dates{1944-12-01 / 1945-01-31}
+    position{50.63333 / 5.56666}
+    range{300}
+    timescale{72}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","US","Britain"}
+    party{"Germany"-"2","US/Great Britain"-"2"}
+    author{"Miranda, Joseph"}
+    description{<p>In Bulge 20, the Allies don’t know which German strategic objective is being pursued. Allied intelligence work is required to ascertain the real German intentions so as not to overreact to the threat, because this time, the Germans can win if their staff can outthink and outmaneuver the Allies’ staff!</p>}
+  }
 }
 
-"Berezina 20 - Closing the Trap in Russia" {
-  103702
-  <p>Berezina 20 examines Napoleon's Russian campaign in 1812. When the Tsar refused to negotiate terms, the French Army retreated back to Poland in the dead of winter, forced to cross the Berezina River with the Russians in close pursuit. One player commands the French army of Napoleon, while the other leads the Russian armies under Kutusov, Tchichagov, and Wittgenstein.</p>
-  1812-11-25 / 1812-11-29
-  1 / 1
-  9
-  4
-  2 / 2
-  author{"Meints, Kim"}
-  engine{"Vassal"-"http://victorypointgames.com/documents/Berezina_Vassal.zip"}
-  side{"France","Russia"}
-  genre{"Conflict Simulation"}
-  leader{"Napoleon Bonaparte","General Kutuzov","Tchichagov","Wittgenstein"}
-  mechanic{"Cards","Hex","Counter"}
-  theme{"Napoleonic"}
-  party{"France"-"2","Russia"-"2"}
+103702 {
+  title{"Berezina 20 - Closing the Trap in Russia"}
+  description{<p>Berezina 20 examines Napoleon's Russian campaign in 1812. When the Tsar refused to negotiate terms, the French Army retreated back to Poland in the dead of winter, forced to cross the Berezina River with the Russians in close pursuit. One player commands the French army of Napoleon, while the other leads the Russian armies under Kutusov, Tchichagov, and Wittgenstein.</p>}
   publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=178"}
+  engine{"Vassal"-"http://victorypointgames.com/documents/Berezina_Vassal.zip"}
+  genre{"Conflict Simulation"}
+  mechanic{"Cards","Hex","Counter"}
+  theme{"Napoleonic"}
   series{"Napoleon 20"-"#4 Expansion"}
+  scenario{"Berezina 20 - Closing the Trap in Russia"}
+    dates{1812-11-25 / 1812-11-29}
+    position{1 / 1}
+    range{9}
+    timescale{4}
+    players{2 / 2}
+    side{"France","Russia"}
+    leader{"Napoleon Bonaparte","General Kutuzov","Tchichagov","Wittgenstein"}
+    party{"France"-"2","Russia"-"2"}
+    author{"Meints, Kim"}
+    description{<p>Berezina 20 examines Napoleon's Russian campaign in 1812. When the Tsar refused to negotiate terms, the French Army retreated back to Poland in the dead of winter, forced to cross the Berezina River with the Russians in close pursuit. One player commands the French army of Napoleon, while the other leads the Russian armies under Kutusov, Tchichagov, and Wittgenstein.</p>}
+  }
 }
 
-"Danube 20 - The Battles of Aspern-Essling and Wagram" {
-  128252
-  <p>When the capture of Vienna failed to bring the Austrians to the bargaining table, Napoleon sought more direct means of ending the War of the Fifth Coalition. His first attempt was a nearly impromptu effort to force a crossing of the Danube, then in full spring flood, with the handful of forces that were immediately available. Almost predictably, the resulting battle of Aspern-Essling resulted in a crushing French defeat. Stung by the setback, Napoleon then spent the next month and a half preparing for another assault at the same site, this time concentrating all available troops to ensure his success.</p><p>In the ensuing battle of Wagram, the second largest engagement of the Napoleonic era, Napoleon managed to defeat the Austrians but failed to achieve the decisive result he'd hoped for, forcing him to acknowledge that his foes were "no longer the enemy of old."</p>
-  1815-06-16 / 1815-06-18
-  1 / 1
-  13
-  4
-  2 / 2
-  author{"Meints, Kim"}
-  engine{"Vassal"-"http://victorypointgames.com/documents/Danube20_Vassal.zip"}
-  side{"France","Austria"}
-  genre{"Conflict Simulation"}
-  leader{"Napoleon Bonaparte","Archduke Charles"}
-  mechanic{"Cards","Hex","Counter"}
-  theme{"Napoleonic"}
-  party{"France"-"2","Austria"-"2"}
+128252 {
+  title{"Danube 20 - The Battles of Aspern-Essling and Wagram"}
+  description{<p>When the capture of Vienna failed to bring the Austrians to the bargaining table, Napoleon sought more direct means of ending the War of the Fifth Coalition. His first attempt was a nearly impromptu effort to force a crossing of the Danube, then in full spring flood, with the handful of forces that were immediately available. Almost predictably, the resulting battle of Aspern-Essling resulted in a crushing French defeat. Stung by the setback, Napoleon then spent the next month and a half preparing for another assault at the same site, this time concentrating all available troops to ensure his success.</p><p>In the ensuing battle of Wagram, the second largest engagement of the Napoleonic era, Napoleon managed to defeat the Austrians but failed to achieve the decisive result he'd hoped for, forcing him to acknowledge that his foes were "no longer the enemy of old."</p>}
   publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=214"}
+  engine{"Vassal"-"http://victorypointgames.com/documents/Danube20_Vassal.zip"}
+  genre{"Conflict Simulation"}
+  mechanic{"Cards","Hex","Counter"}
+  theme{"Napoleonic"}
   series{"Napoleon 20"-"#17"}
+  scenario{"Danube 20 - The Battles of Aspern-Essling and Wagram"}
+    dates{1815-06-16 / 1815-06-18}
+    position{1 / 1}
+    range{13}
+    timescale{4}
+    players{2 / 2}
+    side{"France","Austria"}
+    leader{"Napoleon Bonaparte","Archduke Charles"}
+    party{"France"-"2","Austria"-"2"}
+    author{"Meints, Kim"}
+    description{<p>When the capture of Vienna failed to bring the Austrians to the bargaining table, Napoleon sought more direct means of ending the War of the Fifth Coalition. His first attempt was a nearly impromptu effort to force a crossing of the Danube, then in full spring flood, with the handful of forces that were immediately available. Almost predictably, the resulting battle of Aspern-Essling resulted in a crushing French defeat. Stung by the setback, Napoleon then spent the next month and a half preparing for another assault at the same site, this time concentrating all available troops to ensure his success.</p><p>In the ensuing battle of Wagram, the second largest engagement of the Napoleonic era, Napoleon managed to defeat the Austrians but failed to achieve the decisive result he'd hoped for, forcing him to acknowledge that his foes were "no longer the enemy of old."</p>}
+  }
 }
 
-"Dennewitz 20 - Napoleons Final Campaign" {
-  89627
-  <p>Dennewitz 20 is based upon the battle that occurred during Napoleon‟s final campaign in Germany, on 4-6 September, 1813. One player commands the Coalition forces under the Swedish Crown Prince Carl Johan (aka Jean-Baptiste Bernadotte), while the other player commands the French army under the command of Marshall Michel Ney.</p>
-  1813-09-04 / 1813-09-09
-  1 / 1
-  8
-  3
-  2 / 2
-  author{"McMillan, Lance"}
-  engine{"Vassal"-"http://victorypointgames.com/documents/Dennewitz20_Vassal.zip"}
-  side{"France","Russia","Prussia","Sweden","Anglo-Prussia"}
-  genre{"Conflict Simulation"}
-  leader{"Marshall Michel Ney","Jean-Baptiste Bernadotte"}
-  mechanic{"Cards","Hex","Counter"}
-  theme{"Napoleonic"}
-  party{"France"-"2","Coalition"-"2"}
+89627 {
+  title{"Dennewitz 20 - Napoleons Final Campaign"}
+  description{<p>Dennewitz 20 is based upon the battle that occurred during Napoleon‟s final campaign in Germany, on 4-6 September, 1813. One player commands the Coalition forces under the Swedish Crown Prince Carl Johan (aka Jean-Baptiste Bernadotte), while the other player commands the French army under the command of Marshall Michel Ney.</p>}
   publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=144"}
+  engine{"Vassal"-"http://victorypointgames.com/documents/Dennewitz20_Vassal.zip"}
+  genre{"Conflict Simulation"}
+  mechanic{"Cards","Hex","Counter"}
+  theme{"Napoleonic"}
   series{"Napoleon 20"-"#11 Expansion","Germany 20"-"#3 Expansion"}
+  scenario{"Dennewitz 20 - Napoleons Final Campaign"}
+    dates{1813-09-04 / 1813-09-09}
+    position{1 / 1}
+    range{8}
+    timescale{3}
+    players{2 / 2}
+    side{"France","Russia","Prussia","Sweden","Anglo-Prussia"}
+    leader{"Marshall Michel Ney","Jean-Baptiste Bernadotte"}
+    party{"France"-"2","Coalition"-"2"}
+    author{"McMillan, Lance"}
+    description{<p>Dennewitz 20 is based upon the battle that occurred during Napoleon‟s final campaign in Germany, on 4-6 September, 1813. One player commands the Coalition forces under the Swedish Crown Prince Carl Johan (aka Jean-Baptiste Bernadotte), while the other player commands the French army under the command of Marshall Michel Ney.</p>}
+  }
 }
 
-"Dresden 20 - Napoleon in Germany" {
-  60280
-  <p>Dresden 20 is based on the major battle that occurred during Napoleon’s final campaign in Germany, from 25-28 August, 1813. One player commands the Coalition forces under the Austrian Field Marshall Carl von Schwarzenberg, who is attempting to capture the French forward supply depot at Dresden, while the other player commands the French army under the Emperor Napoleon.</p>
-  1813-08-25 / 1813-08-28
-  1 / 1
-  12
-  4
-  2 / 2
-  author{"McMillan, Lance"}
-  engine{"Vassal"-"http://victorypointgames.com/documents/Dresden20_VASSAL.zip"}
-  side{"France","Russia","Austria","Prussia"}
-  genre{"Conflict Simulation"}
-  leader{"Napoleon Bonaparte","Carl von Schwarzenberg"}
-  mechanic{"Cards","Hex","Counter"}
-  theme{"Napoleonic"}
-  party{"France"-"2","Coalition"-"2"}
+60280 {
+  title{"Dresden 20 - Napoleon in Germany"}
+  description{<p>Dresden 20 is based on the major battle that occurred during Napoleon’s final campaign in Germany, from 25-28 August, 1813. One player commands the Coalition forces under the Austrian Field Marshall Carl von Schwarzenberg, who is attempting to capture the French forward supply depot at Dresden, while the other player commands the French army under the Emperor Napoleon.</p>}
   publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=113"}
+  engine{"Vassal"-"http://victorypointgames.com/documents/Dresden20_VASSAL.zip"}
+  genre{"Conflict Simulation"}
+  mechanic{"Cards","Hex","Counter"}
+  theme{"Napoleonic"}
   series{"Napoleon 20"-"#9","Germany 20"-"#1"}
+  scenario{"Dresden 20 - Napoleon in Germany"}
+    dates{1813-08-25 / 1813-08-28}
+    position{1 / 1}
+    range{12}
+    timescale{4}
+    players{2 / 2}
+    side{"France","Russia","Austria","Prussia"}
+    leader{"Napoleon Bonaparte","Carl von Schwarzenberg"}
+    party{"France"-"2","Coalition"-"2"}
+    author{"McMillan, Lance"}
+    description{<p>Dresden 20 is based on the major battle that occurred during Napoleon’s final campaign in Germany, from 25-28 August, 1813. One player commands the Coalition forces under the Austrian Field Marshall Carl von Schwarzenberg, who is attempting to capture the French forward supply depot at Dresden, while the other player commands the French army under the Emperor Napoleon.</p>}
+  }
 }
 
-"G&ouml;rlitz 20 - Napoleons Final Campaign" {
-  100168
-  <p>G&ouml;rlitz 20 is based on a battle that almost occurred during Napoleon‟s final campaign in Germany, on 3-6 September 1813. One player commands the Coalition forces under the Prussian Marshall Gebhard von Blücher, while the other commands the French army under the command of Marshall Étienne Jacques MacDonald (which may be reinforced by elements of Napoleon‟s Grande Armée). Although this game can be played as a stand-alone game, G&ouml;rlitz 20 is also featured as part of the Germany 20 series to link into a Campaign Game.</p>
-  1813-09-03 / 1813-09-06
-  1 / 1
-  9
-  3
-  2 / 2
-  author{"McMillan, Lance"}
-  engine{"Vassal"-"http://victorypointgames.com/documents/Gorlitz20_Vassal.zip"}
-  side{"France","Russia","Prussia"}
-  genre{"Conflict Simulation"}
-  leader{"Marshall Etienne Jaques MacDonald","Marshall Gebhard von Bl&uuml;cher"}
-  mechanic{"Cards","Hex","Counter"}
-  theme{"Napoleonic"}
-  party{"France"-"2","Coalition"-"2"}
+100168 {
+  title{"G&ouml;rlitz 20 - Napoleons Final Campaign"}
+  description{<p>G&ouml;rlitz 20 is based on a battle that almost occurred during Napoleon‟s final campaign in Germany, on 3-6 September 1813. One player commands the Coalition forces under the Prussian Marshall Gebhard von Blücher, while the other commands the French army under the command of Marshall Étienne Jacques MacDonald (which may be reinforced by elements of Napoleon‟s Grande Armée). Although this game can be played as a stand-alone game, G&ouml;rlitz 20 is also featured as part of the Germany 20 series to link into a Campaign Game.</p>}
   publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=174"}
+  engine{"Vassal"-"http://victorypointgames.com/documents/Gorlitz20_Vassal.zip"}
+  genre{"Conflict Simulation"}
+  mechanic{"Cards","Hex","Counter"}
+  theme{"Napoleonic"}
   series{"Napoleon 20"-"#15 Expansion","Germany 20"-"#6 Expansion"}
+  scenario{"G&ouml;rlitz 20 - Napoleons Final Campaign"}
+    dates{1813-09-03 / 1813-09-06}
+    position{1 / 1}
+    range{9}
+    timescale{3}
+    players{2 / 2}
+    side{"France","Russia","Prussia"}
+    leader{"Marshall Etienne Jaques MacDonald","Marshall Gebhard von Bl&uuml;cher"}
+    party{"France"-"2","Coalition"-"2"}
+    author{"McMillan, Lance"}
+    description{<p>G&ouml;rlitz 20 is based on a battle that almost occurred during Napoleon‟s final campaign in Germany, on 3-6 September 1813. One player commands the Coalition forces under the Prussian Marshall Gebhard von Blücher, while the other commands the French army under the command of Marshall Étienne Jacques MacDonald (which may be reinforced by elements of Napoleon‟s Grande Armée). Although this game can be played as a stand-alone game, G&ouml;rlitz 20 is also featured as part of the Germany 20 series to link into a Campaign Game.</p>}
+  }
 }
 
-"Grossbeeren 20 - Oudinot vs. Bernadotte" {
-  85023
-  <p>Grossbeeren 20 is based on a battle occurring during Napoleon’s final campaign in Germany, on 21-24 August, 1813. One player commands the Coalition forces under the Swedish Crown Prince Carl Johan (aka Jean-Baptiste Bernadotte), while the other player commands the French army under the command of Marshall Nicolas Oudinot.</p>
-  1813-08-21 / 1813-08-23
-  1 / 1
-  9
-  3
-  2 / 2
-  author{"McMillan, Lance"}
-  engine{"Vassal"-"http://victorypointgames.com/documents/Grossbeeren20_Vassal.zip","ZunTzu"-"http://victorypointgames.com/documents/Gross20_ZunTzu.zip"}
-  side{"France","Russian","Prussian","Sweden","Anglo-Prussia"}
-  genre{"Conflict Simulation"}
-  leader{"Jean-Baptiste Bernadotte","Marshall Nicolas Oudinot"}
-  mechanic{"Cards","Hex","Counter"}
-  theme{"Napoleonic"}
-  party{"France"-"2","Coalition"-"2"}
+85023 {
+  title{"Grossbeeren 20 - Oudinot vs. Bernadotte"}
+  description{<p>Grossbeeren 20 is based on a battle occurring during Napoleon’s final campaign in Germany, on 21-24 August, 1813. One player commands the Coalition forces under the Swedish Crown Prince Carl Johan (aka Jean-Baptiste Bernadotte), while the other player commands the French army under the command of Marshall Nicolas Oudinot.</p>}
   publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=131"}
+  engine{"Vassal"-"http://victorypointgames.com/documents/Grossbeeren20_Vassal.zip","ZunTzu"-"http://victorypointgames.com/documents/Gross20_ZunTzu.zip"}
+  genre{"Conflict Simulation"}
+  mechanic{"Cards","Hex","Counter"}
+  theme{"Napoleonic"}
   series{"Napoleon 20"-"#11","Germany 20"-"#3"}
+  scenario{"Grossbeeren 20 - Oudinot vs. Bernadotte"}
+    dates{1813-08-21 / 1813-08-23}
+    position{1 / 1}
+    range{9}
+    timescale{3}
+    players{2 / 2}
+    side{"France","Russian","Prussian","Sweden","Anglo-Prussia"}
+    leader{"Jean-Baptiste Bernadotte","Marshall Nicolas Oudinot"}
+    party{"France"-"2","Coalition"-"2"}
+    author{"McMillan, Lance"}
+    description{<p>Grossbeeren 20 is based on a battle occurring during Napoleon’s final campaign in Germany, on 21-24 August, 1813. One player commands the Coalition forces under the Swedish Crown Prince Carl Johan (aka Jean-Baptiste Bernadotte), while the other player commands the French army under the command of Marshall Nicolas Oudinot.</p>}
+  }
 }
 
-"Katzbach 20 - Napoleon in Germany" {
-  63551
-  <p>Katzbach 20 recreates a battle that occurred during Napoleon’s final campaign in Germany on 26 August, 1813. One player commands the Coalition forces under the Prussian Field Marshall Gebhard von Blücher, while the other player commands the French army under Marshall Etienne MacDonald.</p>
-  1813-08-25 / 1813-08-27
-  1 / 1
-  9
-  4
-  2 / 2
-  author{"McMillan, Lance"}
-  engine{"Vassal"-"http://victorypointgames.com/documents/Katzbach20_Vassal.zip"}
-  side{"France","Russia","Prussia","Austria"}
-  genre{"Conflict Simulation"}
-  leader{"Gebhard von Bl&uuml;cher","Marshall Etienne MacDonald"}
-  mechanic{"Cards","Hex","Counter"}
-  theme{"Napoleonic"}
-  party{"France"-"2","Coalition"-"2"}
+63551 {
+  title{"Katzbach 20 - Napoleon in Germany"}
+  description{<p>Katzbach 20 recreates a battle that occurred during Napoleon’s final campaign in Germany on 26 August, 1813. One player commands the Coalition forces under the Prussian Field Marshall Gebhard von Blücher, while the other player commands the French army under Marshall Etienne MacDonald.</p>}
   publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=114"}
+  engine{"Vassal"-"http://victorypointgames.com/documents/Katzbach20_Vassal.zip"}
+  genre{"Conflict Simulation"}
+  mechanic{"Cards","Hex","Counter"}
+  theme{"Napoleonic"}
   series{"Napoleon 20"-"#10","Germany 20"-"#2"}
+  scenario{"Katzbach 20 - Napoleon in Germany"}
+    dates{1813-08-25 / 1813-08-27}
+    position{1 / 1}
+    range{9}
+    timescale{4}
+    players{2 / 2}
+    side{"France","Russia","Prussia","Austria"}
+    leader{"Gebhard von Bl&uuml;cher","Marshall Etienne MacDonald"}
+    party{"France"-"2","Coalition"-"2"}
+    author{"McMillan, Lance"}
+    description{<p>Katzbach 20 recreates a battle that occurred during Napoleon’s final campaign in Germany on 26 August, 1813. One player commands the Coalition forces under the Prussian Field Marshall Gebhard von Blücher, while the other player commands the French army under Marshall Etienne MacDonald.</p>}
+  }
 }
 
-"Kulm 20 - Napoleon in Germany" {
-  76243
-  <p>Kulm 20 is based on the battle that occurred during Napoleon’s final campaign in Germany, on 29-30 August, 1813. One player commands the Coalition forces under the Austrian Field Marshall Karl Schwarzenberg, while the other player commands the French army, nominally under the command of the Emperor Napoleon.</p>
-  1813-08-29 / 1813-08-30
-  1 / 1
-  11
-  4
-  2 / 2
-  author{"McMillan, Lance"}
-  side{"France","Russia","Prussia","Austria"}
-  genre{"Conflict Simulation"}
-  leader{"Napoleon Bonaparte","Karl Schwarzenberg"}
-  mechanic{"Cards","Hex","Counter"}
-  theme{"Napoleonic"}
-  party{"France"-"2","Coalition"-"2"}
+76243 {
+  title{"Kulm 20 - Napoleon in Germany"}
+  description{<p>Kulm 20 is based on the battle that occurred during Napoleon’s final campaign in Germany, on 29-30 August, 1813. One player commands the Coalition forces under the Austrian Field Marshall Karl Schwarzenberg, while the other player commands the French army, nominally under the command of the Emperor Napoleon.</p>}
   publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=124"}
+  genre{"Conflict Simulation"}
+  mechanic{"Cards","Hex","Counter"}
+  theme{"Napoleonic"}
   series{"Napoleon 20"-"#9 Expansion","Germany 20"-"#1 Expansion"}
+  scenario{"Kulm 20 - Napoleon in Germany"}
+    dates{1813-08-29 / 1813-08-30}
+    position{1 / 1}
+    range{11}
+    timescale{4}
+    players{2 / 2}
+    side{"France","Russia","Prussia","Austria"}
+    leader{"Napoleon Bonaparte","Karl Schwarzenberg"}
+    party{"France"-"2","Coalition"-"2"}
+    author{"McMillan, Lance"}
+    description{<p>Kulm 20 is based on the battle that occurred during Napoleon’s final campaign in Germany, on 29-30 August, 1813. One player commands the Coalition forces under the Austrian Field Marshall Karl Schwarzenberg, while the other player commands the French army, nominally under the command of the Emperor Napoleon.</p>}
+  }
 }
 
-"Leipzig 20 - The Battle of Nations" {
-  112995
-  <p>Leipzig 20 is based on a huge battle occurring during Napoleon’s final campaign in Germany, on 14-19 October, 1813. One player commands the various Coalition armies (under Schwarzenberg, Bennigsen, Bernadotte and Blücher) while the other player commands the French army under Emperor Napoleon.</p>
-  1813-10-14 / 1813-10-19
-  1 / 1
-  13
-  4
-  2 / 2
-  author{"McMillan, Lance"}
-  engine{"Vassal"-"http://victorypointgames.com/documents/Leipzig20_Vassal.zip"}
-  side{"France","Austria","Bavaria","Russia","Prussia","Sweden","Anglo-Prussia"}
-  genre{"Conflict Simulation"}
-  leader{"Napoleon Bonaparte","Karl Schwarzenberg","Jean-Baptiste Bernadotte","Bennigsen","Gebhard von Bl&uuml;cher"}
-  mechanic{"Cards","Hex","Counter"}
-  theme{"Napoleonic"}
-  party{"France"-"2","Coalition"-"2"}
+112995 {
+  title{"Leipzig 20 - The Battle of Nations"}
+  description{<p>Leipzig 20 is based on a huge battle occurring during Napoleon’s final campaign in Germany, on 14-19 October, 1813. One player commands the various Coalition armies (under Schwarzenberg, Bennigsen, Bernadotte and Blücher) while the other player commands the French army under Emperor Napoleon.</p>}
   publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=192"}
+  engine{"Vassal"-"http://victorypointgames.com/documents/Leipzig20_Vassal.zip"}
+  genre{"Conflict Simulation"}
+  mechanic{"Cards","Hex","Counter"}
+  theme{"Napoleonic"}
   series{"Napoleon 20"-"#16","Germany 20"-"#7"}
+  scenario{"Leipzig 20 - The Battle of Nations"}
+    dates{1813-10-14 / 1813-10-19}
+    position{1 / 1}
+    range{13}
+    timescale{4}
+    players{2 / 2}
+    side{"France","Austria","Bavaria","Russia","Prussia","Sweden","Anglo-Prussia"}
+    leader{"Napoleon Bonaparte","Karl Schwarzenberg","Jean-Baptiste Bernadotte","Bennigsen","Gebhard von Bl&uuml;cher"}
+    party{"France"-"2","Coalition"-"2"}
+    author{"McMillan, Lance"}
+    description{<p>Leipzig 20 is based on a huge battle occurring during Napoleon’s final campaign in Germany, on 14-19 October, 1813. One player commands the various Coalition armies (under Schwarzenberg, Bennigsen, Bernadotte and Blücher) while the other player commands the French army under Emperor Napoleon.</p>}
+  }
 }
 
-"Gzhatsk 20" {
-  107682
-  <p>Gzhatsk 20 is a hypothetical battle that should have occurred in early September 1812 (in lieu of the Battle of Borodino) during Napoleon’s Russian campaign. One player commands the French army of Napoleon, while the other leads the Anti- French forces consisting of the Russian armies that are making a desperate stand before the Gates of Moscow in an attempt to turn back the invaders.</p>
-  1812-09-02 / 1812-09-04
-  1 / 1
-  10
-  4
-  2 / 2
-  author{"McMillan, Lance"}
-  engine{"Vassal"-"http://victorypointgames.com/documents/Gzhatsk_20_Vassal.zip","Cyberboard"-"http://victorypointgames.com/documents/Gzhatsk20_Cyberboard.zip","ZunTzu"-"http://victorypointgames.com/documents/Gzhatsk20_ZunTzu.zip"}
-  side{"France","Russia"}
-  genre{"Conflict Simulation"}
-  leader{"Napoleon Bonaparte"}
-  mechanic{"Cards","Hex","Counter"}
-  theme{"Napoleonic"}
-  party{"France"-"2","Russia"-"2"}
+107682 {
+  title{"Gzhatsk 20"}
+  description{<p>Gzhatsk 20 is a hypothetical battle that should have occurred in early September 1812 (in lieu of the Battle of Borodino) during Napoleon’s Russian campaign. One player commands the French army of Napoleon, while the other leads the Anti- French forces consisting of the Russian armies that are making a desperate stand before the Gates of Moscow in an attempt to turn back the invaders.</p>}
   publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=101"}
+  engine{"Vassal"-"http://victorypointgames.com/documents/Gzhatsk_20_Vassal.zip","Cyberboard"-"http://victorypointgames.com/documents/Gzhatsk20_Cyberboard.zip","ZunTzu"-"http://victorypointgames.com/documents/Gzhatsk20_ZunTzu.zip"}
+  genre{"Conflict Simulation"}
+  mechanic{"Cards","Hex","Counter"}
+  theme{"Napoleonic"}
   series{"Napoleon 20"-"#7"}
+  scenario{"Gzhatsk 20"}
+    dates{1812-09-02 / 1812-09-04}
+    position{1 / 1}
+    range{10}
+    timescale{4}
+    players{2 / 2}
+    side{"France","Russia"}
+    leader{"Napoleon Bonaparte"}
+    party{"France"-"2","Russia"-"2"}
+    author{"McMillan, Lance"}
+    description{<p>Gzhatsk 20 is a hypothetical battle that should have occurred in early September 1812 (in lieu of the Battle of Borodino) during Napoleon’s Russian campaign. One player commands the French army of Napoleon, while the other leads the Anti- French forces consisting of the Russian armies that are making a desperate stand before the Gates of Moscow in an attempt to turn back the invaders.</p>}
+  }
 }
 
-"Waterloo 20 - Napoleon's Last Campaign" {
-  34334
-  <p>Waterloo 20 is a game based on the Waterloo campaign, 16-18 June 1815. One player commands the French army, taking the role of Napoleon. The other player, knows as the Allied Player, takes the Anti- French side. He assumes both the roles of Wellington for the Anglo-Dutch (i.e., red) forces, and Blucher for the Prussian forces (i.e., black), respectively.</p>
-  1815-06-16 / 1815-06-18
-  50.7103193 / 4.4110966
-  10
-  4
-  2 / 2
-  author{"Miranda, Joseph"}
-  engine{"Vassal"-"http://victorypointgames.com/documents/Waterloo20_2nded_Vassal.zip","Cyberboard"-"http://victorypointgames.com/documents/Loo20_Cyberboard.zip","ZunTzu"-"http://victorypointgames.com/documents/Waterloo20_2nded_ZunTzu.zip"}
-  side{"France","Prussia","Anglo-Dutch"}
-  genre{"Conflict Simulation"}
-  leader{"Napoleon Bonaparte","Wellington","Gebhard von Bl&uuml;cher"}
-  mechanic{"Cards","Hex","Counter"}
-  theme{"Napoleonic"}
-  party{"France"-"2","Anti-French"-"2"}
+34334 {
+  title{"Waterloo 20 - Napoleon's Last Campaign"}
+  description{<p>Waterloo 20 is a game based on the Waterloo campaign, 16-18 June 1815. One player commands the French army, taking the role of Napoleon. The other player, knows as the Allied Player, takes the Anti- French side. He assumes both the roles of Wellington for the Anglo-Dutch (i.e., red) forces, and Blucher for the Prussian forces (i.e., black), respectively.</p>}
   publisher{"Victory Point Games"-"http://www.victorypointgames.com/details.php?prodId=60"}
+  engine{"Vassal"-"http://victorypointgames.com/documents/Waterloo20_2nded_Vassal.zip","Cyberboard"-"http://victorypointgames.com/documents/Loo20_Cyberboard.zip","ZunTzu"-"http://victorypointgames.com/documents/Waterloo20_2nded_ZunTzu.zip"}
+  genre{"Conflict Simulation"}
+  mechanic{"Cards","Hex","Counter"}
+  theme{"Napoleonic"}
   series{"Napoleon 20"-"#1"}
+  scenario{"Waterloo 20 - Napoleon's Last Campaign"}
+    dates{1815-06-16 / 1815-06-18}
+    position{50.7103193 / 4.4110966}
+    range{10}
+    timescale{4}
+    players{2 / 2}
+    side{"France","Prussia","Anglo-Dutch"}
+    leader{"Napoleon Bonaparte","Wellington","Gebhard von Bl&uuml;cher"}
+    party{"France"-"2","Anti-French"-"2"}
+    author{"Miranda, Joseph"}
+    description{<p>Waterloo 20 is a game based on the Waterloo campaign, 16-18 June 1815. One player commands the French army, taking the role of Napoleon. The other player, knows as the Allied Player, takes the Anti- French side. He assumes both the roles of Wellington for the Anglo-Dutch (i.e., red) forces, and Blucher for the Prussian forces (i.e., black), respectively.</p>}
+  }
 }
 
-"Borodino 20 - Napoleon in Russia 1812" {
-  38361
-  <p>Borodino 20 is based on the climactic battle that occurred on 5-7 September 1812 during Napoleon’s Russian campaign. One player commands the French army of Napoleon, while the other leads the Anti- French forces consisting of the Russian armies under General Kutuzov who is making a final stand before the French reach Moscow.</p>
-  1812-09-05 / 1812-09-07
-  50.7103193 / 4.4110966
-  10
-  4
-  2 / 2
-  author{"McMillan, Lance"}
-  engine{"Vassal"-"http://victorypointgames.com/documents/Borodino20_Vassal.zip","Cyberboard"-"http://victorypointgames.com/documents/Borodino20_Cyberboard.zip","ZunTzu"-"http://victorypointgames.com/documents/Borodino20_ZunTzu.zip"}
-  side{"France","Russia"}
-  genre{"Conflict Simulation"}
-  leader{"Napoleon Bonaparte","Kutuzov"}
-  mechanic{"Cards","Hex","Counter"}
-  theme{"Napoleonic"}
-  party{"France"-"2","Russia"-"2"}
+38361 {
+  title{"Borodino 20 - Napoleon in Russia 1812"}
+  description{<p>Borodino 20 is based on the climactic battle that occurred on 5-7 September 1812 during Napoleon’s Russian campaign. One player commands the French army of Napoleon, while the other leads the Anti- French forces consisting of the Russian armies under General Kutuzov who is making a final stand before the French reach Moscow.</p>}
   publisher{"Victory Point Games"-"http://www.victorypointgames.com/details.php?prodId=87"}
+  engine{"Vassal"-"http://victorypointgames.com/documents/Borodino20_Vassal.zip","Cyberboard"-"http://victorypointgames.com/documents/Borodino20_Cyberboard.zip","ZunTzu"-"http://victorypointgames.com/documents/Borodino20_ZunTzu.zip"}
+  genre{"Conflict Simulation"}
+  mechanic{"Cards","Hex","Counter"}
+  theme{"Napoleonic"}
   series{"Napoleon 20"-"#4"}
+  scenario{"Borodino 20 - Napoleon in Russia 1812"}
+    dates{1812-09-05 / 1812-09-07}
+    position{50.7103193 / 4.4110966}
+    range{10}
+    timescale{4}
+    players{2 / 2}
+    side{"France","Russia"}
+    leader{"Napoleon Bonaparte","Kutuzov"}
+    party{"France"-"2","Russia"-"2"}
+    author{"McMillan, Lance"}
+    description{<p>Borodino 20 is based on the climactic battle that occurred on 5-7 September 1812 during Napoleon’s Russian campaign. One player commands the French army of Napoleon, while the other leads the Anti- French forces consisting of the Russian armies under General Kutuzov who is making a final stand before the French reach Moscow.</p>}
+  }
 }
 
-"Albion 20 - Napoleon in England" {
-  36674
-  <p>Albion 20 is based on the planned French invasion of England in the summer of 1805. This scenario assumes that the Franco-Spanish fleet left Spain on schedule to make it to the English Channel and help sealift the Grande Armee across (with the Royal Navy somewhere behind them). One player commands the French army of Napoleon, while the other leads the Anti-French forces of the British armies under the Duke of York.</p>
-  1805-08-25 / 1805-08-28
-  50.7103193 / 4.4110966
-  11
-  4
-  2 / 2
-  author{"Emrich, Alan"}
-  engine{"Vassal"-"http://victorypointgames.com/documents/Albion20_Vassal.zip","Cyberboard"-"http://victorypointgames.com/documents/Albion20_Cyberboard.zip","ZunTzu"-"http://victorypointgames.com/documents/Albion_20_ZunTzu.zip"}
-  side{"France","Britain"}
-  genre{"Conflict Simulation"}
-  leader{"Napoleon Bonaparte","Wellington"}
-  mechanic{"Cards","Hex","Counter"}
-  theme{"Napoleonic"}
-  party{"France"-"2","Britain"-"2"}
+36674 {
+  title{"Albion 20 - Napoleon in England"}
+  description{<p>Albion 20 is based on the planned French invasion of England in the summer of 1805. This scenario assumes that the Franco-Spanish fleet left Spain on schedule to make it to the English Channel and help sealift the Grande Armee across (with the Royal Navy somewhere behind them). One player commands the French army of Napoleon, while the other leads the Anti-French forces of the British armies under the Duke of York.</p>}
   publisher{"Victory Point Games"-"http://www.victorypointgames.com/details.php?prodId=90"}
-  series{"Napoleon 20"-"#3"}
-}
-
-"Jena 20 - Napoleon in Prussia" {
-  34747
-  <p>Jena 20 is based on the Prussian campaign, 12-14 October 1806. One player commands the French army of Napoleon, while the other leads the Prussian (Anti-French) forces of the Prussian armies under Hohenlohe and Brunswick.</p>
-  1806-10-12 / 1806-10-14
-  50.7103193 / 4.4110966
-  12
-  4
-  2 / 2
-  author{"Emrich, Alan"}
-  engine{"Vassal"-"http://victorypointgames.com/documents/Jena20_Vassal.zip","Cyberboard"-"http://victorypointgames.com/documents/Jena20_Cyberboard.zip","ZunTzu"-"http://victorypointgames.com/documents/Jena20_ZunTzu.zip"}
-  side{"France","Prussia"}
+  engine{"Vassal"-"http://victorypointgames.com/documents/Albion20_Vassal.zip","Cyberboard"-"http://victorypointgames.com/documents/Albion20_Cyberboard.zip","ZunTzu"-"http://victorypointgames.com/documents/Albion_20_ZunTzu.zip"}
   genre{"Conflict Simulation"}
-  leader{"Napoleon Bonaparte","Hohenlohe","Brunswick"}
   mechanic{"Cards","Hex","Counter"}
   theme{"Napoleonic"}
-  party{"France"-"2","Prussia"-"2"}
-  publisher{"Victory Point Games"-"http://www.victorypointgames.com/details.php?prodId=74"}
-  series{"Napoleon 20"-"#2"}
+  series{"Napoleon 20"-"#3"}
+  scenario{"Albion 20 - Napoleon in England"}
+    dates{1805-08-25 / 1805-08-28}
+    position{50.7103193 / 4.4110966}
+    range{11}
+    timescale{4}
+    players{2 / 2}
+    side{"France","Britain"}
+    leader{"Napoleon Bonaparte","Wellington"}
+    party{"France"-"2","Britain"-"2"}
+    author{"Emrich, Alan"}
+    description{<p>Albion 20 is based on the planned French invasion of England in the summer of 1805. This scenario assumes that the Franco-Spanish fleet left Spain on schedule to make it to the English Channel and help sealift the Grande Armee across (with the Royal Navy somewhere behind them). One player commands the French army of Napoleon, while the other leads the Anti-French forces of the British armies under the Duke of York.</p>}
+  }
 }
 
-"Memoir '44" {
-  10630
-  <p>Memoir '44 is a unique historical game where players command a horde of little plastic Army men facing-off in dozens of WWII battles on an oversize hex game board.</p><p>Each battle scenario mimics the historical terrain, troop placements and objectives of each army. Deploying forces through a variety of Command cards, the smart commander uses the unique skills of his units - infantry, paratroopers, tanks, artillery, commandos and resistance fighters - to its greatest strength.</p><p>Easy to learn and fast-paced, Memoir '44 requires strategic card play, timely dice rolling and an aggressive, yet flexible battle plan to achieve victory!</p>
-  1939-09-01 / 1945-05-01
-  1 / 1
-  250
-  6
-  2 / 2
-  author{"Borg, Richard"}
+34747 {
+  title{"Jena 20 - Napoleon in Prussia"}
+  description{<p>Jena 20 is based on the Prussian campaign, 12-14 October 1806. One player commands the French army of Napoleon, while the other leads the Prussian (Anti-French) forces of the Prussian armies under Hohenlohe and Brunswick.</p>}
+  publisher{"Victory Point Games"-"http://www.victorypointgames.com/details.php?prodId=74"}
+  engine{"Vassal"-"http://victorypointgames.com/documents/Jena20_Vassal.zip","Cyberboard"-"http://victorypointgames.com/documents/Jena20_Cyberboard.zip","ZunTzu"-"http://victorypointgames.com/documents/Jena20_ZunTzu.zip"}
+  genre{"Conflict Simulation"}
+  mechanic{"Cards","Hex","Counter"}
+  theme{"Napoleonic"}
+  series{"Napoleon 20"-"#2"}
+  scenario{"Jena 20 - Napoleon in Prussia"}
+    dates{1806-10-12 / 1806-10-14}
+    position{50.7103193 / 4.4110966}
+    range{12}
+    timescale{4}
+    players{2 / 2}
+    side{"France","Prussia"}
+    leader{"Napoleon Bonaparte","Hohenlohe","Brunswick"}
+    party{"France"-"2","Prussia"-"2"}
+    author{"Emrich, Alan"}
+    description{<p>Jena 20 is based on the Prussian campaign, 12-14 October 1806. One player commands the French army of Napoleon, while the other leads the Prussian (Anti-French) forces of the Prussian armies under Hohenlohe and Brunswick.</p>}
+  }
+}
+
+10630 {
+  title{"Memoir '44"}
+  description{<p>Memoir '44 is a unique historical game where players command a horde of little plastic Army men facing-off in dozens of WWII battles on an oversize hex game board.</p><p>Each battle scenario mimics the historical terrain, troop placements and objectives of each army. Deploying forces through a variety of Command cards, the smart commander uses the unique skills of his units - infantry, paratroopers, tanks, artillery, commandos and resistance fighters - to its greatest strength.</p><p>Easy to learn and fast-paced, Memoir '44 requires strategic card play, timely dice rolling and an aggressive, yet flexible battle plan to achieve victory!</p>}
+  publisher{"Days of Wonder"-"http://www.daysofwonder.com/memoir44/en/"}
   engine{"Vassal"-"http://www.vassalengine.com/modules/m44"}
-  side{"Axis","Allies"}
   genre{"Conflict Simulation"}
   mechanic{"Card-Driven","Dice","Hex"}
   theme{"WW2"}
-  party{"Axis"-"2","Allies"-"2"}
-  publisher{"Days of Wonder"-"http://www.daysofwonder.com/memoir44/en/"}
+  scenario{"Memoir '44"}
+    dates{1939-09-01 / 1945-05-01}
+    position{1 / 1}
+    range{250}
+    timescale{6}
+    players{2 / 2}
+    side{"Axis","Allies"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Borg, Richard"}
+    description{<p>Memoir '44 is a unique historical game where players command a horde of little plastic Army men facing-off in dozens of WWII battles on an oversize hex game board.</p><p>Each battle scenario mimics the historical terrain, troop placements and objectives of each army. Deploying forces through a variety of Command cards, the smart commander uses the unique skills of his units - infantry, paratroopers, tanks, artillery, commandos and resistance fighters - to its greatest strength.</p><p>Easy to learn and fast-paced, Memoir '44 requires strategic card play, timely dice rolling and an aggressive, yet flexible battle plan to achieve victory!</p>}
+  }
 }
 
-"Command and Colors Ancients" {
-  10630
-  <p></p>
-  700-01-01 BC / 500-12-31
-  1 / 1
-  250
-  6
-  2 / 2
-  author{"Borg, Richard"}
+10630 {
+  title{"Command and Colors Ancients"}
+  description{<p></p>}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
   engine{"Vassal"-"http://www.vassalengine.com/modules/m44"}
   genre{"Conflict Simulation"}
   mechanic{"Card-Driven","Dice","Hex"}
   theme{"Ancient"}
-  publisher{"GMT Games"-"http://www.gmtgames.com"}
   series{"Command and Colors"-"Ancients"}
+  scenario{"Command and Colors Ancients"}
+    dates{700-01-01 BC / 500-12-31}
+    position{1 / 1}
+    range{250}
+    timescale{6}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    description{<p></p>}
+  }
 }
 
-"Rommel in the Desert" {
-  84
-  <p>Rommel in the Desert is a game of strategy for two players based on the North African Campaign of World War II. One player commands the Allied (British and Commonwealth) forces, and the other commands the Axis (German and Italian) forces.</p><p>Game Scenarios provided include: the 1941 and 1942 Campaigns, the 1940 "Italian" Campaign, and several shorter scenarios. The 1941 and 1942 campaigns can also be combined into the full “campaign game”.</p><p>The game is played in alternating Player Turns, with monthly Buildup interludes (for Reinforcements, Resupply, etc.).</p><p>The object of the game is to hold Tobruk and its environs, or preserve a superior army if this area remains contested. Capturing the enemy Base wins the game immediately.</p>
-  1940-09-01 / 1942-12-31
-  1 / 1
-  800
-  120
-  2 / 2
-  author{"Besinque, Craig"}
+84 {
+  title{"Rommel in the Desert"}
+  description{<p>Rommel in the Desert is a game of strategy for two players based on the North African Campaign of World War II. One player commands the Allied (British and Commonwealth) forces, and the other commands the Axis (German and Italian) forces.</p><p>Game Scenarios provided include: the 1941 and 1942 Campaigns, the 1940 "Italian" Campaign, and several shorter scenarios. The 1941 and 1942 campaigns can also be combined into the full “campaign game”.</p><p>The game is played in alternating Player Turns, with monthly Buildup interludes (for Reinforcements, Resupply, etc.).</p><p>The object of the game is to hold Tobruk and its environs, or preserve a superior army if this area remains contested. Capturing the enemy Base wins the game immediately.</p>}
+  publisher{"Columbia Games"-"www.columbiagames.com"}
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/e/ef/Rommel-Desert-v7.vmod"}
-  side{"Germany","Axis","Allies","Great Britain","Commonwealth"}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Fog of War","Blocks","Hex","Cards"}
   theme{"WW2","Desert"}
-  party{"Axis"-"2","Allies"-"2"}
-  publisher{"Columbia Games"-"www.columbiagames.com"}
-  leader{"Rommel","Montgomery"}
+  scenario{"Rommel in the Desert"}
+    dates{1940-09-01 / 1942-12-31}
+    position{1 / 1}
+    range{800}
+    timescale{120}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Great Britain","Commonwealth"}
+    party{"Axis"-"2","Allies"-"2"}
+    leader{"Rommel","Montgomery"}
+    author{"Besinque, Craig"}
+    description{<p>Rommel in the Desert is a game of strategy for two players based on the North African Campaign of World War II. One player commands the Allied (British and Commonwealth) forces, and the other commands the Axis (German and Italian) forces.</p><p>Game Scenarios provided include: the 1941 and 1942 Campaigns, the 1940 "Italian" Campaign, and several shorter scenarios. The 1941 and 1942 campaigns can also be combined into the full “campaign game”.</p><p>The game is played in alternating Player Turns, with monthly Buildup interludes (for Reinforcements, Resupply, etc.).</p><p>The object of the game is to hold Tobruk and its environs, or preserve a superior army if this area remains contested. Capturing the enemy Base wins the game immediately.</p>}
+  }
 }
 
-"Hammer of the Scots" {
-  3685
-  <p>Hammer of the Scots is a game of the Scottish Wars of Independence. One player plays the Scots, the other, the English. The object is to control a majority of nobles when a game ends.</p><p>There are two scenarios, Braveheart (1297–1305) and The Bruce (1306–1314). Each can be played as a separate game.</p><p>There is also a Campaign game that extends over both periods.</p>
-  1297-01-01 / 1314-12-31
-  1 / 1
-  1000
-  144
-  2 / 2
-  author{"Taylor, Jerry"}
+3685 {
+  title{"Hammer of the Scots"}
+  description{<p>Hammer of the Scots is a game of the Scottish Wars of Independence. One player plays the Scots, the other, the English. The object is to control a majority of nobles when a game ends.</p><p>There are two scenarios, Braveheart (1297–1305) and The Bruce (1306–1314). Each can be played as a separate game.</p><p>There is also a Campaign game that extends over both periods.</p>}
+  publisher{"Columbia Games"-"www.columbiagames.com"}
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/d/d4/Hammer-Scots-v7.vmod"}
-  side{"England","Scotland","Norse"}
-  party{"England"-"2","Scotland"-"2"}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Fog of War","Blocks","Area Movement","Cards","Dice"}
   theme{"Scottish Wars of Independence"}
-  publisher{"Columbia Games"-"www.columbiagames.com"}
+  scenario{"Hammer of the Scots"}
+    dates{1297-01-01 / 1314-12-31}
+    position{1 / 1}
+    range{1000}
+    timescale{144}
+    players{2 / 2}
+    side{"England","Scotland","Norse"}
+    party{"England"-"2","Scotland"-"2"}
+    author{"Taylor, Jerry"}
+    description{<p>Hammer of the Scots is a game of the Scottish Wars of Independence. One player plays the Scots, the other, the English. The object is to control a majority of nobles when a game ends.</p><p>There are two scenarios, Braveheart (1297–1305) and The Bruce (1306–1314). Each can be played as a separate game.</p><p>There is also a Campaign game that extends over both periods.</p>}
+  }
 }
 
-"War of 1812" {
-  1645
-  <p>On Christmas Eve 1814, American and British diplomats signed the Treaty of Gent. This brought an end to a thirty month struggle known as the War of 1812, the result of which has been disputed ever since.</p>
-  1812-06-18 / 1814-12-24
-  1 / 1
-  1400
-  860
-  2 / 2
-  author{"Dalgliesh, Tom","Gutteridge, Lance"}
+1645 {
+  title{"War of 1812"}
+  description{<p>On Christmas Eve 1814, American and British diplomats signed the Treaty of Gent. This brought an end to a thirty month struggle known as the War of 1812, the result of which has been disputed ever since.</p>}
+  publisher{"Columbia Games"-"www.columbiagames.com"}
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/1/1a/WarOf1812-v8.vmod"}
-  side{"Britain","US","Indians"}
   genre{"Conflict Simulation","Operational Level"}
-  party{"Britain"-"2","US"-"2"}
   mechanic{"Fog of War","Blocks","Point-to-Point Movement","Dice"}
   theme{"American Revolution","Naval"}
-  publisher{"Columbia Games"-"www.columbiagames.com"}
+  scenario{"War of 1812"}
+    dates{1812-06-18 / 1814-12-24}
+    position{1 / 1}
+    range{1400}
+    timescale{860}
+    players{2 / 2}
+    side{"Britain","US","Indians"}
+    party{"Britain"-"2","US"-"2"}
+    author{"Dalgliesh, Tom","Gutteridge, Lance"}
+    description{<p>On Christmas Eve 1814, American and British diplomats signed the Treaty of Gent. This brought an end to a thirty month struggle known as the War of 1812, the result of which has been disputed ever since.</p>}
+  }
 }
 
-"EastFront" {
-  22143
-  <p>EastFront simulates the largest military campaign in history: the "Eastern Front" in World War II, 1941-45. One player commands the Axis forces, the other commands the Soviets.</p>
-  1941-01-01 / 1945-12-31
-  1 / 1
-  2500
-  360
-  2 / 2
-  author{"Dalgliesh, Tom","Besinque, Craig"}
+22143 {
+  title{"EastFront"}
+  description{<p>EastFront simulates the largest military campaign in history: the "Eastern Front" in World War II, 1941-45. One player commands the Axis forces, the other commands the Soviets.</p>}
+  publisher{"Columbia Games"-"www.columbiagames.com"}
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/3/37/EuroFront_II_v1.8.vmod"}
-  side{"Germany","Hungary","Bulgaria","Italy","Rumania","Axis","Russia"}
-  party{"Axis"-"2","Russia"-"2"}
   genre{"Conflict Simulation","Strategic Level"}
   mechanic{"Fog of War","Blocks","Hex","Dice"}
   theme{"WW2","East Front"}
-  publisher{"Columbia Games"-"www.columbiagames.com"}
   series{"Eurofront"-"EastFront"}
+  scenario{"EastFront"}
+    dates{1941-01-01 / 1945-12-31}
+    position{1 / 1}
+    range{2500}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany","Hungary","Bulgaria","Italy","Rumania","Axis","Russia"}
+    party{"Axis"-"2","Russia"-"2"}
+    author{"Dalgliesh, Tom","Besinque, Craig"}
+    description{<p>EastFront simulates the largest military campaign in history: the "Eastern Front" in World War II, 1941-45. One player commands the Axis forces, the other commands the Soviets.</p>}
+  }
 }
 
-"WestFront" {
-  22161
-  <p>WestFront simulates the "Western Front" campaign in World War II, 1943-45, beginning with the invasion of Sicily. One player commands the Axis forces, the other commands the Allies.</p>
-  1943-01-01 / 1945-12-31
-  1 / 1
-  2200
-  360
-  2 / 2
-  author{"Besinque, Craig"}
+22161 {
+  title{"WestFront"}
+  description{<p>WestFront simulates the "Western Front" campaign in World War II, 1943-45, beginning with the invasion of Sicily. One player commands the Axis forces, the other commands the Allies.</p>}
+  publisher{"Columbia Games"-"www.columbiagames.com"}
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/3/37/EuroFront_II_v1.8.vmod"}
-  side{"Germany","Axis","Allies","Italy","Spain","Portugal","Britain","Commonwealth"}
-  party{"Axis"-"2","Allies"-"2"}
   genre{"Conflict Simulation","Strategic Level"}
   mechanic{"Fog of War","Blocks","Hex","Dice"}
   theme{"WW2","West Front"}
-  publisher{"Columbia Games"-"www.columbiagames.com"}
   series{"Eurofront"-"WestFront"}
+  scenario{"WestFront"}
+    dates{1943-01-01 / 1945-12-31}
+    position{1 / 1}
+    range{2200}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Italy","Spain","Portugal","Britain","Commonwealth"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Besinque, Craig"}
+    description{<p>WestFront simulates the "Western Front" campaign in World War II, 1943-45, beginning with the invasion of Sicily. One player commands the Axis forces, the other commands the Allies.</p>}
+  }
 }
 
-"EuroFront" {
-  22160
-  <p>World War II was the defining event of the 20th century. When Adolf Hitler gained dictatorial power over Germany in 1933, his ambition went beyond the political control and economic exploitation of previous conquerors. He envisioned the extermination or enslavement of his victims, based on a ruthless ideology of racist totalitarianism.</p><p>Hitler concealed his true aims behind a cloak of conventional nationalism for as long as possible, gaining a series of bloodless conquests by threat and duplicity.</p><p>Finally Britain, his main geopolitical opponent, lost patience, took courage, and drew the line at Poland. A 6-year struggle for the survival of democracy, freedom and basic human decency ensued, costing 100 million lives. It was a close-run thing.</p><p>Untold thousands of acts of bravery, resolution and sacrifice had telling effects in battle. Others had none. Technical advances had a profound impact (we know now that code-breaking played a key role).</p><p>But in the end, it is very possible that the issue was decided by strategy.</p>
-  1939-09-01 / 1945-05-31
-  1 / 1
-  4000
-  360
-  2 / 2
-  author{"Besinque, Craig"}
+22160 {
+  title{"EuroFront"}
+  description{<p>World War II was the defining event of the 20th century. When Adolf Hitler gained dictatorial power over Germany in 1933, his ambition went beyond the political control and economic exploitation of previous conquerors. He envisioned the extermination or enslavement of his victims, based on a ruthless ideology of racist totalitarianism.</p><p>Hitler concealed his true aims behind a cloak of conventional nationalism for as long as possible, gaining a series of bloodless conquests by threat and duplicity.</p><p>Finally Britain, his main geopolitical opponent, lost patience, took courage, and drew the line at Poland. A 6-year struggle for the survival of democracy, freedom and basic human decency ensued, costing 100 million lives. It was a close-run thing.</p><p>Untold thousands of acts of bravery, resolution and sacrifice had telling effects in battle. Others had none. Technical advances had a profound impact (we know now that code-breaking played a key role).</p><p>But in the end, it is very possible that the issue was decided by strategy.</p>}
+  publisher{"Columbia Games"-"www.columbiagames.com"}
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/3/37/EuroFront_II_v1.8.vmod"}
-  side{"Germany","Soviet Union","France","Poland","Hungary","Yugoslavia","Belgium","Denmark","Spain","Finland","Norway","Turkey","Iraq","Eire","Britain","US","Italy","Rumania","Bulgaria","Greece","Holland","Vichy","Portugal","Sweden","Switzerland","Syria","Persia","Axis","Allies","Soviet"}
   genre{"Conflict Simulation","Strategic Level"}
-  party{"Axis"-"2","Allies"-"2"}
   mechanic{"Fog of War","Blocks","Hex","Cards"}
   theme{"WW2"}
-  publisher{"Columbia Games"-"www.columbiagames.com"}
   series{"Eurofront"-"EuroFront"}
+  scenario{"EuroFront"}
+    dates{1939-09-01 / 1945-05-31}
+    position{1 / 1}
+    range{4000}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany","Soviet Union","France","Poland","Hungary","Yugoslavia","Belgium","Denmark","Spain","Finland","Norway","Turkey","Iraq","Eire","Britain","US","Italy","Rumania","Bulgaria","Greece","Holland","Vichy","Portugal","Sweden","Switzerland","Syria","Persia","Axis","Allies","Soviet"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Besinque, Craig"}
+    description{<p>World War II was the defining event of the 20th century. When Adolf Hitler gained dictatorial power over Germany in 1933, his ambition went beyond the political control and economic exploitation of previous conquerors. He envisioned the extermination or enslavement of his victims, based on a ruthless ideology of racist totalitarianism.</p><p>Hitler concealed his true aims behind a cloak of conventional nationalism for as long as possible, gaining a series of bloodless conquests by threat and duplicity.</p><p>Finally Britain, his main geopolitical opponent, lost patience, took courage, and drew the line at Poland. A 6-year struggle for the survival of democracy, freedom and basic human decency ensued, costing 100 million lives. It was a close-run thing.</p><p>Untold thousands of acts of bravery, resolution and sacrifice had telling effects in battle. Others had none. Technical advances had a profound impact (we know now that code-breaking played a key role).</p><p>But in the end, it is very possible that the issue was decided by strategy.</p>}
+  }
 }
 
-"Napoleon - The Waterloo Campaign, 1815" {
-  1662
-  <p>On June 18, 1815, one of the most decisive battles in military history was fought in Belgian fields twenty miles southeast of Brussels. Within a short 100 days, Napoléon, former emperor of France, had returned from exile on the island of Elba, again seized power, quickly assembled an army, and marched to defeat the dispersed British and Prussian armies now preparing to invade France.</p><p>Napoléon invaded Belgium on June15th, defeated the Prussians at the Battle of Ligny on the 16th and after a day of pursuit, faced the British and Dutch army commanded by Wellington. Aided by superb defensive tactics and the timely arrival of Prussian reinforcements, Wellington defeated the French in the great Battle of Waterloo, ending forever the military ambitions of the great Napoléon.</p>
-  1815-01-01 / 1815-12-31
-  1 / 1
-  300
-  4
-  2 / 2
-  author{"Dalgliesh, Tom","Gibson, Ron","Gutteridge, Lance"}
+1662 {
+  title{"Napoleon - The Waterloo Campaign, 1815"}
+  description{<p>On June 18, 1815, one of the most decisive battles in military history was fought in Belgian fields twenty miles southeast of Brussels. Within a short 100 days, Napoléon, former emperor of France, had returned from exile on the island of Elba, again seized power, quickly assembled an army, and marched to defeat the dispersed British and Prussian armies now preparing to invade France.</p><p>Napoléon invaded Belgium on June15th, defeated the Prussians at the Battle of Ligny on the 16th and after a day of pursuit, faced the British and Dutch army commanded by Wellington. Aided by superb defensive tactics and the timely arrival of Prussian reinforcements, Wellington defeated the French in the great Battle of Waterloo, ending forever the military ambitions of the great Napoléon.</p>}
+  publisher{"Columbia Games"-"www.columbiagames.com"}
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/e/eb/Napoleon-v3.vmod"}
-  side{"France","Britain","Prussia","Netherlands"}
-  party{"France"-"2","Allies"-"2","France"-"3","Britain"-"3","Prussia"-"3"}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Fog of War","Blocks","Point-to-Point Movement","Dice","Secret Deployment"}
   theme{"Napoleonic"}
-  publisher{"Columbia Games"-"www.columbiagames.com"}
-  leader{"Napoleon Bonaparte","Wellington","Bl&uuml;cher"}
+  scenario{"Napoleon - The Waterloo Campaign, 1815"}
+    dates{1815-01-01 / 1815-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{4}
+    players{2 / 2}
+    side{"France","Britain","Prussia","Netherlands"}
+    party{"France"-"2","Allies"-"2","France"-"3","Britain"-"3","Prussia"-"3"}
+    leader{"Napoleon Bonaparte","Wellington","Bl&uuml;cher"}
+    author{"Dalgliesh, Tom","Gibson, Ron","Gutteridge, Lance"}
+    description{<p>On June 18, 1815, one of the most decisive battles in military history was fought in Belgian fields twenty miles southeast of Brussels. Within a short 100 days, Napoléon, former emperor of France, had returned from exile on the island of Elba, again seized power, quickly assembled an army, and marched to defeat the dispersed British and Prussian armies now preparing to invade France.</p><p>Napoléon invaded Belgium on June15th, defeated the Prussians at the Battle of Ligny on the 16th and after a day of pursuit, faced the British and Dutch army commanded by Wellington. Aided by superb defensive tactics and the timely arrival of Prussian reinforcements, Wellington defeated the French in the great Battle of Waterloo, ending forever the military ambitions of the great Napoléon.</p>}
+  }
 }
 
-"Austerlitz 20" {
-  43332
-  <p>In Austerlitz 20, players recreate the battle of 2 December 1805 during Napoleon’s campaign in Austrian Moravia after the French capture of Vienna. One player commands the French army under the Emperor Napoleon Bonaparte while the other leads the Anti-French (i.e., Allied) forces consisting of the combined Austro-Russian Army lead by Gen. Kutuzov, Tsar Alexander I and Emperor Francis I.</p>
-  1805-12-01 / 1805-12-03
-  1 / 1
-  11
-  3
-  2 / 2
-  author{"Meints, Kim"}
-  side{"France","Austria","Russia"}
-  party{"France"-"2","Anti-French"-"2"}
+43332 {
+  title{"Austerlitz 20"}
+  description{<p>In Austerlitz 20, players recreate the battle of 2 December 1805 during Napoleon’s campaign in Austrian Moravia after the French capture of Vienna. One player commands the French army under the Emperor Napoleon Bonaparte while the other leads the Anti-French (i.e., Allied) forces consisting of the combined Austro-Russian Army lead by Gen. Kutuzov, Tsar Alexander I and Emperor Francis I.</p>}
+  publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=97"}
   engine{"Vassal"-"http://victorypointgames.com/documents/Austerlitz20_Vassal.zip","Cyberboard"-"victorypointgames.com/documents/Austerlitz20_Cyberboard.zip","ZunTzu"-"http://victorypointgames.com/documents/Austerlitz20_ZunTzu.zip"}
   genre{"Conflict Simulation","Tactical Level"}
   mechanic{"Counter","Hex","Cards"}
   theme{"Napoleonic"}
-  publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=97"}
   series{"Napoleon 20"-"#8"}
-  leader{"Napoleon Bonaparte","General Kutuzov","Tsar Alexander I","Emperor Francis I"}
+  scenario{"Austerlitz 20"}
+    dates{1805-12-01 / 1805-12-03}
+    position{1 / 1}
+    range{11}
+    timescale{3}
+    players{2 / 2}
+    side{"France","Austria","Russia"}
+    party{"France"-"2","Anti-French"-"2"}
+    leader{"Napoleon Bonaparte","General Kutuzov","Tsar Alexander I","Emperor Francis I"}
+    author{"Meints, Kim"}
+    description{<p>In Austerlitz 20, players recreate the battle of 2 December 1805 during Napoleon’s campaign in Austrian Moravia after the French capture of Vienna. One player commands the French army under the Emperor Napoleon Bonaparte while the other leads the Anti-French (i.e., Allied) forces consisting of the combined Austro-Russian Army lead by Gen. Kutuzov, Tsar Alexander I and Emperor Francis I.</p>}
+  }
 }
 
-"Bussaco 20" {
-  40803
-  <p>Bussaco 20 is based on the battle that occurred on 26 September 1810 during the Peninsular campaign. One player commands the French army invading Portugal under the command of Marshal Massena, while the other leads the Anti-French forces consisting of the combined British and reconstituted Portuguese army under General Sir Arthur Wellesley, Viscount of Wellington.</p>
-  1810-09-26 / 1810-09-28
-  1 / 1
-  8
-  3
-  2 / 2
-  author{"McMillan, Lance"}
-  side{"France","Britain","Portugal"}
-  engine{"Vassal"-"victorypointgames.com/documents/Bussaco20_Vassal.zip","Cyberboard"-"victorypointgames.com/documents/Bussaco20_Cyberboard.zip","ZunTzu"-"http://victorypointgames.com/documents/Bussaco_20_ZunTzu.zip"}
-  party{"France"-"2","Anti-French"-"2"}
-  genre{"Conflict Simulation","Tactical Level"}
-  mechanic{"Counter","Hex","Cards"}
-  theme{"Napoleonic"}
+40803 {
+  title{"Bussaco 20"}
+  description{<p>Bussaco 20 is based on the battle that occurred on 26 September 1810 during the Peninsular campaign. One player commands the French army invading Portugal under the command of Marshal Massena, while the other leads the Anti-French forces consisting of the combined British and reconstituted Portuguese army under General Sir Arthur Wellesley, Viscount of Wellington.</p>}
   publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=85"}
+  engine{"Vassal"-"victorypointgames.com/documents/Bussaco20_Vassal.zip","Cyberboard"-"victorypointgames.com/documents/Bussaco20_Cyberboard.zip","ZunTzu"-"http://victorypointgames.com/documents/Bussaco_20_ZunTzu.zip"}
+  genre{"Conflict Simulation","Tactical Level"}
+  mechanic{"Counter","Hex","Cards"}
+  theme{"Napoleonic"}
   series{"Napoleon 20"-"#5"}
-  leader{"Marshal Massena","Wellington"}
+  scenario{"Bussaco 20"}
+    dates{1810-09-26 / 1810-09-28}
+    position{1 / 1}
+    range{8}
+    timescale{3}
+    players{2 / 2}
+    side{"France","Britain","Portugal"}
+    party{"France"-"2","Anti-French"-"2"}
+    leader{"Marshal Massena","Wellington"}
+    author{"McMillan, Lance"}
+    description{<p>Bussaco 20 is based on the battle that occurred on 26 September 1810 during the Peninsular campaign. One player commands the French army invading Portugal under the command of Marshal Massena, while the other leads the Anti-French forces consisting of the combined British and reconstituted Portuguese army under General Sir Arthur Wellesley, Viscount of Wellington.</p>}
+  }
 }
 
-"Vittoria 20" {
-  42370
-  <p>Vittoria 20 is based on the 21 June 1813 battle during the Peninsular Campaign. One player commands the French army withdrawing from Spain under the command of Marshal Jourdan and King Joseph, while the other player leads the Anti-French (referred to as “Anglo-Allied”) forces consisting of the combined British, Portuguese and Spanish army under General Sir Arthur Wellesley, Viscount of Wellington.</p>
-  1813-06-21 / 1813-06-22
-  1 / 1
-  9
-  3
-  2 / 2
-  author{"Meints, Kim"}
-  side{"France","Britain","Spain","Portuguese"}
-  engine{"Cyberboard"-"victorypointgames.com/documents/Vittoria20_Cyberboard.zip","Vassal"-"http://victorypointgames.com/documents/Vittoria20_Vassal.zip","ZunTzu"-"http://victorypointgames.com/documents/Vittoria20_ZunTzu.zip"}
-  party{"France"-"2","Anti-French"-"2"}
-  genre{"Conflict Simulation","Tactical Level"}
-  mechanic{"Counter","Hex","Cards"}
-  theme{"Napoleonic"}
+42370 {
+  title{"Vittoria 20"}
+  description{<p>Vittoria 20 is based on the 21 June 1813 battle during the Peninsular Campaign. One player commands the French army withdrawing from Spain under the command of Marshal Jourdan and King Joseph, while the other player leads the Anti-French (referred to as “Anglo-Allied”) forces consisting of the combined British, Portuguese and Spanish army under General Sir Arthur Wellesley, Viscount of Wellington.</p>}
   publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=96"}
-  series{"Napoleon 20"-"#6"}
-  leader{"Marshal Jourdan","King Joseph","Wellington"}
-}
-
-"Smolensk 20 - Closing the Trap in Russia" {
-  39815
-  <p>Smolensk 20 is based on a trap sprung from August 16 to 19 during Napoleon’s Russian campaign in 1812 where the Russian ‘scorched earth’ retreat almost ended in a decisive pitched battle. One player commands the French army of Napoleon, while the other leads the (Russian) Anti-French forces under Barclay do Tolly.</p>
-  1812-08-16 / 1812-08-19
-  1 / 1
-  12
-  4
-  2 / 2
-  author{"Emrich, Alan"}
-  side{"France","Russia"}
-  engine{"Vassal"-"victorypointgames.com/documents/Smolensk20_Vassal.zip","Cyberboard"-"victorypointgames.com/documents/Smolensk20_Cyberboard.zip","ZunTzu"-"victorypointgames.com/documents/Smolensk20_ZunTzu.zip"}
-  party{"France"-"2","Russia"-"2"}
+  engine{"Cyberboard"-"victorypointgames.com/documents/Vittoria20_Cyberboard.zip","Vassal"-"http://victorypointgames.com/documents/Vittoria20_Vassal.zip","ZunTzu"-"http://victorypointgames.com/documents/Vittoria20_ZunTzu.zip"}
   genre{"Conflict Simulation","Tactical Level"}
   mechanic{"Counter","Hex","Cards"}
   theme{"Napoleonic"}
-  publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=67"}
-  series{"Napoleon 20"-"#4 Expansion"}
-  leader{"Napoleon Bonaparte","Barclay do Tolly"}
+  series{"Napoleon 20"-"#6"}
+  scenario{"Vittoria 20"}
+    dates{1813-06-21 / 1813-06-22}
+    position{1 / 1}
+    range{9}
+    timescale{3}
+    players{2 / 2}
+    side{"France","Britain","Spain","Portuguese"}
+    party{"France"-"2","Anti-French"-"2"}
+    leader{"Marshal Jourdan","King Joseph","Wellington"}
+    author{"Meints, Kim"}
+    description{<p>Vittoria 20 is based on the 21 June 1813 battle during the Peninsular Campaign. One player commands the French army withdrawing from Spain under the command of Marshal Jourdan and King Joseph, while the other player leads the Anti-French (referred to as “Anglo-Allied”) forces consisting of the combined British, Portuguese and Spanish army under General Sir Arthur Wellesley, Viscount of Wellington.</p>}
+  }
 }
 
-"WW2: Barbarossa to Berlin" {
-  3353
-  <p>WWII: Barbarossa to Berlin is a game that allows two players to simulate the course of WWII in Europe and North Africa from the German invasion of the Soviet Union on June 22, 1941 to the fall of the Reich in May, 1945. The game is based on the card system used in GMT’s Paths of Glory, but there are many differences that need to be fully understood.</p>
-  1941-06-22 / 1945-05-31
-  1 / 1
-  300
-  -1
-  2 / 2
-  author{"Raicer, Ted"}
-  side{"Germany","Axis","Allies"}
-  party{"Axis"-"2","Allies"-"2"}
+39815 {
+  title{"Smolensk 20 - Closing the Trap in Russia"}
+  description{<p>Smolensk 20 is based on a trap sprung from August 16 to 19 during Napoleon’s Russian campaign in 1812 where the Russian ‘scorched earth’ retreat almost ended in a decisive pitched battle. One player commands the French army of Napoleon, while the other leads the (Russian) Anti-French forces under Barclay do Tolly.</p>}
+  publisher{"Victory Point Games"-"http://victorypointgames.com/details.php?prodId=67"}
+  engine{"Vassal"-"victorypointgames.com/documents/Smolensk20_Vassal.zip","Cyberboard"-"victorypointgames.com/documents/Smolensk20_Cyberboard.zip","ZunTzu"-"victorypointgames.com/documents/Smolensk20_ZunTzu.zip"}
+  genre{"Conflict Simulation","Tactical Level"}
+  mechanic{"Counter","Hex","Cards"}
+  theme{"Napoleonic"}
+  series{"Napoleon 20"-"#4 Expansion"}
+  scenario{"Smolensk 20 - Closing the Trap in Russia"}
+    dates{1812-08-16 / 1812-08-19}
+    position{1 / 1}
+    range{12}
+    timescale{4}
+    players{2 / 2}
+    side{"France","Russia"}
+    party{"France"-"2","Russia"-"2"}
+    leader{"Napoleon Bonaparte","Barclay do Tolly"}
+    author{"Emrich, Alan"}
+    description{<p>Smolensk 20 is based on a trap sprung from August 16 to 19 during Napoleon’s Russian campaign in 1812 where the Russian ‘scorched earth’ retreat almost ended in a decisive pitched battle. One player commands the French army of Napoleon, while the other leads the (Russian) Anti-French forces under Barclay do Tolly.</p>}
+  }
+}
+
+3353 {
+  title{"WW2: Barbarossa to Berlin"}
+  description{<p>WWII: Barbarossa to Berlin is a game that allows two players to simulate the course of WWII in Europe and North Africa from the German invasion of the Soviet Union on June 22, 1941 to the fall of the Reich in May, 1945. The game is based on the card system used in GMT’s Paths of Glory, but there are many differences that need to be fully understood.</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/c/c7/BtB_ver2-01.vmod","Cyberboard"-"www."}
   genre{"Conflict Simulation","Strategic Level"}
   mechanic{"Card-Driven","Point-to-Point Movement","Counter"}
   theme{"WW2"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"WW2: Barbarossa to Berlin"}
+    dates{1941-06-22 / 1945-05-31}
+    position{1 / 1}
+    range{300}
+    timescale{-1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Raicer, Ted"}
+    description{<p>WWII: Barbarossa to Berlin is a game that allows two players to simulate the course of WWII in Europe and North Africa from the German invasion of the Soviet Union on June 22, 1941 to the fall of the Reich in May, 1945. The game is based on the card system used in GMT’s Paths of Glory, but there are many differences that need to be fully understood.</p>}
+  }
 }
 
-"Successors" {
-  26457
-  <p>When Alexander the Great died in 323 BC, he left no clear heir to the immense empire he had conquered. It was not long after his death that the Macedonian generals began to war among themselves over who would be the regent or successor to Alexander’s empire. By 305 BC they had given up on that endeavor and began to carve out their own kingdoms. SUCCESSORS is a four-player game based on those wars. Each player controls a faction of two or more generals and attempts to win the game through legitimacy or conquest.</p>
-  323-01-01 BC / 305-12-31 BC
-  1 / 1
-  300
-  6
-  2 / 4
-  author{"Berg, Richard","Firer, John","Simonitch, Mark"}
+26457 {
+  title{"Successors"}
+  description{<p>When Alexander the Great died in 323 BC, he left no clear heir to the immense empire he had conquered. It was not long after his death that the Macedonian generals began to war among themselves over who would be the regent or successor to Alexander’s empire. By 305 BC they had given up on that endeavor and began to carve out their own kingdoms. SUCCESSORS is a four-player game based on those wars. Each player controls a faction of two or more generals and attempts to win the game through legitimacy or conquest.</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/d/dd/SuccessorsIII2_2.vmod"}
   genre{"Conflict Simulation"}
   mechanic{"Card-Driven","Point-to-Point Movement","Counter"}
   theme{"Alexander"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Successors"}
+    dates{323-01-01 BC / 305-12-31 BC}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 4}
+    author{"Berg, Richard","Firer, John","Simonitch, Mark"}
+    description{<p>When Alexander the Great died in 323 BC, he left no clear heir to the immense empire he had conquered. It was not long after his death that the Macedonian generals began to war among themselves over who would be the regent or successor to Alexander’s empire. By 305 BC they had given up on that endeavor and began to carve out their own kingdoms. SUCCESSORS is a four-player game based on those wars. Each player controls a faction of two or more generals and attempts to win the game through legitimacy or conquest.</p>}
+  }
 }
 
-"Struggle of Empires" {
-  9625
-  <p>Players take the role of one of the major powers of the period and fight in both Europe and the colonies. The twist to the game is that in each war players must form into two alliances.</p><p>Once allied with a player you cannot fight each other. This means you do not have the backstabbing of Diplomacy to worry about; if he’s allied he’s with you until the end of the war. This means that a player has to think carefully about who he wants to fight against and who he wants to ally with. Very often he will want to ally with his natural enemy and go to war with the guy who doesn’t really want to fight him.</p><p>On top of this you have lots of improvement tiles that you buy to shape your empire, plus alliances with minor powers, and the possibility of going into revolution. Even though it is a big empire building game it will scale from 2 to 7 players and has pretty simple rules.</p>
-  1650-01-01 / 1930-12-31
-  1 / 1
-  300
-  6
-  2 / 7
-  author{"Wallace, Martin"}
-  side{"Great Britain","Spain","France","Germany","Russia"}
-  party{"Great Britain"-"2","Spain"-"2","France"-"2","Germany"-"2","Russia"-"2"}
+9625 {
+  title{"Struggle of Empires"}
+  description{<p>Players take the role of one of the major powers of the period and fight in both Europe and the colonies. The twist to the game is that in each war players must form into two alliances.</p><p>Once allied with a player you cannot fight each other. This means you do not have the backstabbing of Diplomacy to worry about; if he’s allied he’s with you until the end of the war. This means that a player has to think carefully about who he wants to fight against and who he wants to ally with. Very often he will want to ally with his natural enemy and go to war with the guy who doesn’t really want to fight him.</p><p>On top of this you have lots of improvement tiles that you buy to shape your empire, plus alliances with minor powers, and the possibility of going into revolution. Even though it is a big empire building game it will scale from 2 to 7 players and has pretty simple rules.</p>}
+  publisher{"Warfrog Games"-"http://www.treefroggames.com/struggle-of-empires"}
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/a/ac/SoE_ver_1-3.vmod"}
   genre{"Empire Building","World Domination"}
   mechanic{"Area Movement","Counter","Dice"}
   theme{"World Domination"}
-  publisher{"Warfrog Games"-"http://www.treefroggames.com/struggle-of-empires"}
+  scenario{"Struggle of Empires"}
+    dates{1650-01-01 / 1930-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 7}
+    side{"Great Britain","Spain","France","Germany","Russia"}
+    party{"Great Britain"-"2","Spain"-"2","France"-"2","Germany"-"2","Russia"-"2"}
+    author{"Wallace, Martin"}
+    description{<p>Players take the role of one of the major powers of the period and fight in both Europe and the colonies. The twist to the game is that in each war players must form into two alliances.</p><p>Once allied with a player you cannot fight each other. This means you do not have the backstabbing of Diplomacy to worry about; if he’s allied he’s with you until the end of the war. This means that a player has to think carefully about who he wants to fight against and who he wants to ally with. Very often he will want to ally with his natural enemy and go to war with the guy who doesn’t really want to fight him.</p><p>On top of this you have lots of improvement tiles that you buy to shape your empire, plus alliances with minor powers, and the possibility of going into revolution. Even though it is a big empire building game it will scale from 2 to 7 players and has pretty simple rules.</p>}
+  }
 }
 
-"1805, Sea of Glory" {
-  23685
-  <p>Spring, 1805 - Napoleon’s Grande Armée is encamped along the shores of the English Channel. Following the teachings of Alexander the Great, the French Emperor seeks to defeat a naval power from the land. He has but to place 100,000 troops on British soil and France’s hereditary enemy will finally fall. To do this, his combined fleet must control the Channel long enough for hundreds of shallow draft boats to ferry his troops to England. Standing in the Emperor’s way is the Royal Navy.</p><p>The year 1805, which is punctuated by the British naval victory at Trafalgar, represents England’s darkest time during the Napoleonic Wars. The threat of invasion looms large. Her great Wooden Walls offer the island nation its only defense against a far superior foe.</p><p>1805: Sea of Glory examines the naval war on an operational level during that pivotal year. Although Trafalgar shines through history as the beacon of victory, it is the successful blockade of enemy ports that kept French boots from stepping onto British soil. But 1805: Sea of Glory is more than a game about blockade duty. It is a game of breakout and pursuit, deception and false leads, husbanding meager resources, striking a blow where your enemy least suspects, and bringing about the decisive naval battle that defines victory or defeat.</p>
-  1805-01-01 / 1805-12-31
-  1 / 1
-  300
-  240
-  2 / 2
-  author{"Fry, Phil"}
-  side{"Great Britain","Spain","France"}
+23685 {
+  title{"1805, Sea of Glory"}
+  description{<p>Spring, 1805 - Napoleon’s Grande Armée is encamped along the shores of the English Channel. Following the teachings of Alexander the Great, the French Emperor seeks to defeat a naval power from the land. He has but to place 100,000 troops on British soil and France’s hereditary enemy will finally fall. To do this, his combined fleet must control the Channel long enough for hundreds of shallow draft boats to ferry his troops to England. Standing in the Emperor’s way is the Royal Navy.</p><p>The year 1805, which is punctuated by the British naval victory at Trafalgar, represents England’s darkest time during the Napoleonic Wars. The threat of invasion looms large. Her great Wooden Walls offer the island nation its only defense against a far superior foe.</p><p>1805: Sea of Glory examines the naval war on an operational level during that pivotal year. Although Trafalgar shines through history as the beacon of victory, it is the successful blockade of enemy ports that kept French boots from stepping onto British soil. But 1805: Sea of Glory is more than a game about blockade duty. It is a game of breakout and pursuit, deception and false leads, husbanding meager resources, striking a blow where your enemy least suspects, and bringing about the decisive naval battle that defines victory or defeat.</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
-  party{"Great Britain"-"2","France"-"2"}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Fog of War","Blocks"}
   theme{"Naval"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"1805, Sea of Glory"}
+    dates{1805-01-01 / 1805-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{240}
+    players{2 / 2}
+    side{"Great Britain","Spain","France"}
+    party{"Great Britain"-"2","France"-"2"}
+    author{"Fry, Phil"}
+    description{<p>Spring, 1805 - Napoleon’s Grande Armée is encamped along the shores of the English Channel. Following the teachings of Alexander the Great, the French Emperor seeks to defeat a naval power from the land. He has but to place 100,000 troops on British soil and France’s hereditary enemy will finally fall. To do this, his combined fleet must control the Channel long enough for hundreds of shallow draft boats to ferry his troops to England. Standing in the Emperor’s way is the Royal Navy.</p><p>The year 1805, which is punctuated by the British naval victory at Trafalgar, represents England’s darkest time during the Napoleonic Wars. The threat of invasion looms large. Her great Wooden Walls offer the island nation its only defense against a far superior foe.</p><p>1805: Sea of Glory examines the naval war on an operational level during that pivotal year. Although Trafalgar shines through history as the beacon of victory, it is the successful blockade of enemy ports that kept French boots from stepping onto British soil. But 1805: Sea of Glory is more than a game about blockade duty. It is a game of breakout and pursuit, deception and false leads, husbanding meager resources, striking a blow where your enemy least suspects, and bringing about the decisive naval battle that defines victory or defeat.</p>}
+  }
 }
 
-"Here I Stand" {
-  17392
-  <p>Here I Stand is a game for two to six players based on the military, political and religious conflicts within Europe at the outbreak of the Protestant Reformation, from 1517-1555. Each player controls one or more major powers that dominated Europe at the time. The major powers represented are the Ottoman Empire, the Hapsburgs, England, France, the Papacy and the Protestant states.</p>
-  1517-01-01 / 1555-12-31
-  1 / 1
-  300
-  6
-  2 / 6
-  author{"Beach, Ed"}
-  side{"Ottomans","Hapsburgs","France","England","Protestants","Papacy"}
-  party{"Ottomans"-"2","Hapsburgs"-"2","France"-"2","England"-"2","Protestants"-"2","Papacy"-"2"}
+17392 {
+  title{"Here I Stand"}
+  description{<p>Here I Stand is a game for two to six players based on the military, political and religious conflicts within Europe at the outbreak of the Protestant Reformation, from 1517-1555. Each player controls one or more major powers that dominated Europe at the time. The major powers represented are the Ottoman Empire, the Hapsburgs, England, France, the Papacy and the Protestant states.</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
   genre{"Historical Simulation","Strategic Level"}
   mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
   theme{"Wars of the Reformation"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Here I Stand"}
+    dates{1517-01-01 / 1555-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 6}
+    side{"Ottomans","Hapsburgs","France","England","Protestants","Papacy"}
+    party{"Ottomans"-"2","Hapsburgs"-"2","France"-"2","England"-"2","Protestants"-"2","Papacy"-"2"}
+    author{"Beach, Ed"}
+    description{<p>Here I Stand is a game for two to six players based on the military, political and religious conflicts within Europe at the outbreak of the Protestant Reformation, from 1517-1555. Each player controls one or more major powers that dominated Europe at the time. The major powers represented are the Ottoman Empire, the Hapsburgs, England, France, the Papacy and the Protestant states.</p>}
+  }
 }
 
-"Thirty Years War - Europe in Agony" {
-  2748
-  <p></p> direct descendant of Paths of Glory, 30 Years War covers the confusing post-Reformation conflict in central Europe, as the Holy Roman Empire attempts to reassert domination over the protestant states. On the side of Catholicism we have the Holy Roman Empire (Austria and some of Northern Italy at this point) and Spain, opposed by a cast of thousands: the German Protestants, Sweden at the height of her power, France, England, Denmark, and others.</p><p>While there are some new mechanics, virtually the entire game is borrowed from elsewhere: Leader activations and movement are as in Hannibal, combat is straight out of Paths of Glory (minus the flanking), and Siege resolves much Hannibal. Your armies have to be paid, with Aid Points that are received just like Paths of Glory's RPs. An interesting twist is that the movement and support of armies results in the landscape getting Pillaged, so as the game goes on the board becomes less and less capable of supporting military operations.</p>
-  1618-01-01 / 1648-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Fox, David","Welker, Michael"}
-  side{"Protestants","Catholics"}
+2748 {
+  title{"Thirty Years War - Europe in Agony"}
+  description{<p></p> direct descendant of Paths of Glory, 30 Years War covers the confusing post-Reformation conflict in central Europe, as the Holy Roman Empire attempts to reassert domination over the protestant states. On the side of Catholicism we have the Holy Roman Empire (Austria and some of Northern Italy at this point) and Spain, opposed by a cast of thousands: the German Protestants, Sweden at the height of her power, France, England, Denmark, and others.</p><p>While there are some new mechanics, virtually the entire game is borrowed from elsewhere: Leader activations and movement are as in Hannibal, combat is straight out of Paths of Glory (minus the flanking), and Siege resolves much Hannibal. Your armies have to be paid, with Aid Points that are received just like Paths of Glory's RPs. An interesting twist is that the movement and support of armies results in the landscape getting Pillaged, so as the game goes on the board becomes less and less capable of supporting military operations.</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/8/80/30YW_v1_1.vmod"}
-  party{"Protestants"-"2","Catholics"-"2"}
   genre{"Historical Simulation","Strategic Level"}
   mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
   theme{"30 Years War"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Thirty Years War - Europe in Agony"}
+    dates{1618-01-01 / 1648-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Protestants","Catholics"}
+    party{"Protestants"-"2","Catholics"-"2"}
+    author{"Fox, David","Welker, Michael"}
+    description{<p></p> direct descendant of Paths of Glory, 30 Years War covers the confusing post-Reformation conflict in central Europe, as the Holy Roman Empire attempts to reassert domination over the protestant states. On the side of Catholicism we have the Holy Roman Empire (Austria and some of Northern Italy at this point) and Spain, opposed by a cast of thousands: the German Protestants, Sweden at the height of her power, France, England, Denmark, and others.</p><p>While there are some new mechanics, virtually the entire game is borrowed from elsewhere: Leader activations and movement are as in Hannibal, combat is straight out of Paths of Glory (minus the flanking), and Siege resolves much Hannibal. Your armies have to be paid, with Aid Points that are received just like Paths of Glory's RPs. An interesting twist is that the movement and support of armies results in the landscape getting Pillaged, so as the game goes on the board becomes less and less capable of supporting military operations.</p>}
+  }
 }
 
-"Wilderness Wars" {
-  1822
-  <p>Description</p>
-  1755-01-01 / 1762-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Ruhnke, Volko"}
-  side{"Great Britain","Indians","France"}
+1822 {
+  title{"Wilderness Wars"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
   genre{"Historical Simulation","Operational Level"}
-  party{"Great Britain"-"2","France"-"2"}
   mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
   theme{"French & Indian War"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Wilderness Wars"}
+    dates{1755-01-01 / 1762-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Great Britain","Indians","France"}
+    party{"Great Britain"-"2","France"-"2"}
+    author{"Ruhnke, Volko"}
+    description{<p>Description</p>}
+  }
 }
 
-"Under the Lily Banners" {
-  17651
-  <p>Description</p>
-  1643-01-01 / 1648-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Hull, Ben"}
-  side{"Bavaria","Spain","France"}
-  party{"France"-"2","Spain"-"2"}
+17651 {
+  title{"Under the Lily Banners"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"30 Years War"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Under the Lily Banners"}
+    dates{1643-01-01 / 1648-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Bavaria","Spain","France"}
+    party{"France"-"2","Spain"-"2"}
+    author{"Hull, Ben"}
+    description{<p>Description</p>}
+  }
 }
 
-"Glory III" {
-  23928
-  <p>Description</p>
-  1862-01-01 / 1864-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Berg, Richard"}
-  side{"Union","Confederate"}
-  party{"Union"-"2","Confederate"-"2"}
+23928 {
+  title{"Glory III"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"American Civil War"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Glory III"}
+    dates{1862-01-01 / 1864-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Union","Confederate"}
+    party{"Union"-"2","Confederate"-"2"}
+    author{"Berg, Richard"}
+    description{<p>Description</p>}
+  }
 }
 
-"Fast Action Battle: The Bulge" {
-  20133
-  <p>Description</p>
-  1944-01-01 / 1944-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Young, Rick"}
-  side{"Germany","Allies"}
+20133 {
+  title{"Fast Action Battle: The Bulge"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
-  party{"Axis"-"2","Allies"-"2"}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Area Movement","Counter","Fog of War","Blocks","Dice"}
   theme{"WW2","Battle of the Bulge"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Fast Action Battle: The Bulge"}
+    dates{1944-01-01 / 1944-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Germany","Allies"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Young, Rick"}
+    description{<p>Description</p>}
+  }
 }
 
-"Paths of Glory" {
-  91
-  <p>Description</p>
-  1914-01-01 / 1919-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Raicer, Ted"}
-  side{"Central Powers","Allies"}
+91 {
+  title{"Paths of Glory"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
-  party{"Central Powers"-"2","Allies"-"2"}
   genre{"Conflict Simulation","Strategic Level"}
   mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
   theme{"WW1"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Paths of Glory"}
+    dates{1914-01-01 / 1919-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Central Powers","Allies"}
+    party{"Central Powers"-"2","Allies"-"2"}
+    author{"Raicer, Ted"}
+    description{<p>Description</p>}
+  }
 }
 
-"The Great War in Europe" {
-  30216
-  <p>Description</p>
-  1915-01-01 / 1919-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Raicer, Ted"}
-  side{"Central Powers","Allies"}
-  engine{"Cyberboard"-"www."}
-  genre{"Conflict Simulation","Operational Level"}
-  party{"Central Powers"-"2","Allies"-"2"}
-  mechanic{"Hex","Counter","Dice"}
-  theme{"WW1"}
+30216 {
+  title{"The Great War in Europe"}
+  description{<p>Description</p>}
   publisher{"GMT Games"-"www.gmtgames.com"}
-}
-
-"Grand Illusion" {
-  12282
-  <p>Description</p>
-  1914-01-01 / 1914-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Raicer, Ted"}
-  side{"Central Powers","Allies","Germany"}
-  party{"Central Powers"-"2","Allies"-"2"}
   engine{"Cyberboard"-"www."}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"WW1"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"The Great War in Europe"}
+    dates{1915-01-01 / 1919-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Central Powers","Allies"}
+    party{"Central Powers"-"2","Allies"-"2"}
+    author{"Raicer, Ted"}
+    description{<p>Description</p>}
+  }
 }
 
-"Empire of the Sun" {
-  11825
-  <p>Description</p>
-  1942-01-01 / 1944-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Herman, Mark"}
-  party{"Axis"-"2","Allies"-"2"}
-  side{"USA","Japan","Great Britain"}
+12282 {
+  title{"Grand Illusion"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
+  engine{"Cyberboard"-"www."}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Hex","Counter","Dice"}
+  theme{"WW1"}
+  scenario{"Grand Illusion"}
+    dates{1914-01-01 / 1914-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Central Powers","Allies","Germany"}
+    party{"Central Powers"-"2","Allies"-"2"}
+    author{"Raicer, Ted"}
+    description{<p>Description</p>}
+  }
+}
+
+11825 {
+  title{"Empire of the Sun"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Card-Driven","Dice"}
   theme{"WW2"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Empire of the Sun"}
+    dates{1942-01-01 / 1944-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    party{"Axis"-"2","Allies"-"2"}
+    side{"USA","Japan","Great Britain"}
+    author{"Herman, Mark"}
+    description{<p>Description</p>}
+  }
 }
 
-"Clash of Giants II" {
-  13709
-  <p>Description</p>
-  1914-01-01 / 1914-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Raicer, Ted"}
-  side{"Central Powers","Allies"}
+13709 {
+  title{"Clash of Giants II"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
-  party{"Central Powers"-"2","Allies"-"2"}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"WW1"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Clash of Giants II"}
+    dates{1914-01-01 / 1914-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Central Powers","Allies"}
+    party{"Central Powers"-"2","Allies"-"2"}
+    author{"Raicer, Ted"}
+    description{<p>Description</p>}
+  }
 }
 
-"Manifest Destiny" {
-  12283
-  <p>Description</p>
-  1760-01-01 / 2000-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Crenshaw, Bill"}
+12283 {
+  title{"Manifest Destiny"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
-  party{"Someone"-"2","Someone else"-"2"}
   genre{"Historical Simulation","Strategic Level"}
   mechanic{"Area Movement","Card-Driven","Wooden Cubes","Counter","Dice"}
   theme{"Empire Building"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Manifest Destiny"}
+    dates{1760-01-01 / 2000-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    party{"Someone"-"2","Someone else"-"2"}
+    author{"Crenshaw, Bill"}
+    description{<p>Description</p>}
+  }
 }
 
-"Clash of Monarchs" {
-  26447
-  <p>Description</p>
-  1756-01-01 / 1763-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Kalinowski, Bob"}
-  side{"Prussia","Great Britain","Austria","France","Russia","Saxony","Sweden","Holy Roman Empire"}
-  party{"Prussia"-"2","Great Britain"-"2","Austria"-"2","France"-"2","Russia"-"2","Saxony"-"2","Sweden"-"2","Holy Roman Empire"-"2"}
+26447 {
+  title{"Clash of Monarchs"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
   genre{"Historical Simulation","Strategic Level"}
   mechanic{"Point-to-Point Movement","Counter","Card-Driven","Dice"}
   theme{"7 Years War"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Clash of Monarchs"}
+    dates{1756-01-01 / 1763-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Prussia","Great Britain","Austria","France","Russia","Saxony","Sweden","Holy Roman Empire"}
+    party{"Prussia"-"2","Great Britain"-"2","Austria"-"2","France"-"2","Russia"-"2","Saxony"-"2","Sweden"-"2","Holy Roman Empire"-"2"}
+    author{"Kalinowski, Bob"}
+    description{<p>Description</p>}
+  }
 }
 
-"Unhappy King Charles" {
-  18748
-  <p>Description</p>
-  1642-01-01 / 1645-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Vasey, Charles"}
-  side{"Royalists","Parliament"}
-  party{"Royalists"-"2","Parliament"-"2"}
+18748 {
+  title{"Unhappy King Charles"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
   genre{"Historical Simulation","Strategic Level"}
   mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
   theme{"English Civil War"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Unhappy King Charles"}
+    dates{1642-01-01 / 1645-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Royalists","Parliament"}
+    party{"Royalists"-"2","Parliament"-"2"}
+    author{"Vasey, Charles"}
+    description{<p>Description</p>}
+  }
 }
 
-"PQ-17 - Arctic Naval Operations" {
-  26459
-  <p>Description</p>
-  1941-01-01 / 1943-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Janiec, Chris"}
-  side{"Axis","Allies","Germans"}
+26459 {
+  title{"PQ-17 - Arctic Naval Operations"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
   genre{"Conflict Simulation","Operational Level"}
-  party{"Axis"-"2","Allies"-"2"}
   mechanic{"Hex","Counter","Dice","Blocks","Fog of War","Card-Driven"}
   theme{"WW2","Naval"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"PQ-17 - Arctic Naval Operations"}
+    dates{1941-01-01 / 1943-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Axis","Allies","Germans"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Janiec, Chris"}
+    description{<p>Description</p>}
+  }
 }
 
-"Pursuit of Glory" {
-  23418
-  <p>Description</p>
-  1914-01-01 / 1918-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Stock, Brad","Stock, Brian"}
-  side{"Central Powers","Allies"}
+23418 {
+  title{"Pursuit of Glory"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
-  party{"Central Powers"-"2","Allies"-"2"}
   genre{"Conflict Simulation","Strategic Level"}
   mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
   theme{"WW1"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Pursuit of Glory"}
+    dates{1914-01-01 / 1918-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Central Powers","Allies"}
+    party{"Central Powers"-"2","Allies"-"2"}
+    author{"Stock, Brad","Stock, Brian"}
+    description{<p>Description</p>}
+  }
 }
 
-"The Napoleonic Wars" {
-  36399
-  <p>Description</p>
-  1805-01-01 / 1815-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"McLaughlin, Mark"}
-  party{"France"-"2","Great Britain"-"2","Austria"-"2","Russia"-"2","Prussia"-"2"}
-  side{"France","Great Britain","Austria","Russia","Prussia"}
+36399 {
+  title{"The Napoleonic Wars"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
   genre{"Conflict Simulation","Strategic Level"}
   mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
   theme{"Napoleonic"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"The Napoleonic Wars"}
+    dates{1805-01-01 / 1815-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    party{"France"-"2","Great Britain"-"2","Austria"-"2","Russia"-"2","Prussia"-"2"}
+    side{"France","Great Britain","Austria","Russia","Prussia"}
+    author{"McLaughlin, Mark"}
+    description{<p>Description</p>}
+  }
 }
 
-"Kutuzov" {
-  20077
-  <p>Description</p>
-  1812-01-01 / 1812-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"McLaughlin, Mark"}
-  side{"France","Russia"}
+20077 {
+  title{"Kutuzov"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
-  party{"Napoleon Bonaparte"-"2","Kutuzov"-"2"}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Point-to-Point Movement","Card-Driven","Counter","Dice"}
   theme{"Napoleonic"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Kutuzov"}
+    dates{1812-01-01 / 1812-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"France","Russia"}
+    party{"Napoleon Bonaparte"-"2","Kutuzov"-"2"}
+    author{"McLaughlin, Mark"}
+    description{<p>Description</p>}
+  }
 }
 
-"Wellington" {
-  11265
-  <p>Description</p>
-  1812-01-01 / 1814-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"McLaughlin, Mark"}
-  side{"France","Great Britain","Portuguese","Spain"}
+11265 {
+  title{"Wellington"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
   genre{"Conflict Simulation","Operational Level"}
-  party{"Napoleon Bonaparte"-"2","Wellington"-"2"}
   mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
   theme{"Napoleonic"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Wellington"}
+    dates{1812-01-01 / 1814-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"France","Great Britain","Portuguese","Spain"}
+    party{"Napoleon Bonaparte"-"2","Wellington"-"2"}
+    author{"McLaughlin, Mark"}
+    description{<p>Description</p>}
+  }
 }
 
-"The Kaisers Pirates" {
-  28185
-  <p>Description</p>
-  1914-01-01 / 1918-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Day, James"}
-  side{"Central Powers","Allies","Germany"}
+28185 {
+  title{"The Kaisers Pirates"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
-  party{"Germany"-"2","Allies"-"2"}
   genre{"Conflict Simulation"}
   mechanic{"Cards","Card-Driven","Dice"}
   theme{"WW1","Naval"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"The Kaisers Pirates"}
+    dates{1914-01-01 / 1918-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Central Powers","Allies","Germany"}
+    party{"Germany"-"2","Allies"-"2"}
+    author{"Day, James"}
+    description{<p>Description</p>}
+  }
 }
 
-"Men of Iron" {
-  14683
-  <p>Description</p>
-  1298-01-01 / 1367-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Berg, Richard"}
-  side{"France","Scottish","England","Flemish"}
-  party{"France"-"2","Scottish"-"2","England"-"2","Flemish"-"2"}
+14683 {
+  title{"Men of Iron"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
   genre{"Conflict Simulation","Tactical Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"Warfare in the Middle Ages"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Men of Iron"}
+    dates{1298-01-01 / 1367-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"France","Scottish","England","Flemish"}
+    party{"France"-"2","Scottish"-"2","England"-"2","Flemish"-"2"}
+    author{"Berg, Richard"}
+    description{<p>Description</p>}
+  }
 }
 
-"Devils Horsemen" {
-  11274
-  <p>Description</p>
-  1221-01-01 / 1260-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Berg, Richard","Herman, Mark"}
-  side{"Mongol","Persian","Mamluk"}
-  party{"Mongol"-"2","Other"-"2"}
+11274 {
+  title{"Devils Horsemen"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
   genre{"Conflict Simulation","Tactical Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"Cavalry"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Devils Horsemen"}
+    dates{1221-01-01 / 1260-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Mongol","Persian","Mamluk"}
+    party{"Mongol"-"2","Other"-"2"}
+    author{"Berg, Richard","Herman, Mark"}
+    description{<p>Description</p>}
+  }
 }
 
-"For the People" {
-  833
-  <p>Description</p>
-  1861-01-01 / 1864-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Herman, Mark"}
-  side{"Union","Confederate"}
+833 {
+  title{"For the People"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
-  party{"Union"-"2","Confederate"-"2"}
   genre{"Historical Simulation","Strategic Level"}
   mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
   theme{"American Civil War"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"For the People"}
+    dates{1861-01-01 / 1864-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Union","Confederate"}
+    party{"Union"-"2","Confederate"-"2"}
+    author{"Herman, Mark"}
+    description{<p>Description</p>}
+  }
 }
 
-"Monmouth" {
-  20078
-  <p>Description</p>
-  1778-01-01 / 1778-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Miklos, Mark"}
-  side{"Great Britain","American"}
-  party{"Great Britain"-"2","American"-"2"}
+20078 {
+  title{"Monmouth"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
   genre{"Conflict Simulation","Tactical Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"American Revolution"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Monmouth"}
+    dates{1778-01-01 / 1778-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Great Britain","American"}
+    party{"Great Britain"-"2","American"-"2"}
+    author{"Miklos, Mark"}
+    description{<p>Description</p>}
+  }
 }
 
-"Saratoga" {
-  3413
-  <p>Description</p>
-  1777-01-01 / 1777-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Miklos, Mark"}
-  side{"Great Britain","American"}
-  party{"Great Britain"-"2","American"-"2"}
+3413 {
+  title{"Saratoga"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
   genre{"Conflict Simulation","Tactical Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"American Revolution"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Saratoga"}
+    dates{1777-01-01 / 1777-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Great Britain","American"}
+    party{"Great Britain"-"2","American"-"2"}
+    author{"Miklos, Mark"}
+    description{<p>Description</p>}
+  }
 }
 
-"Savannah" {
-  17397
-  <p>Description</p>
-  1779-01-01 / 1779-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Miklos, Mark"}
-  side{"Great Britain","American"}
+17397 {
+  title{"Savannah"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
   genre{"Conflict Simulation","Tactical Level"}
-  party{"Great Britain"-"2","American"-"2"}
   mechanic{"Hex","Counter","Dice","Cards"}
   theme{"American Revolution"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Savannah"}
+    dates{1779-01-01 / 1779-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Great Britain","American"}
+    party{"Great Britain"-"2","American"-"2"}
+    author{"Miklos, Mark"}
+    description{<p>Description</p>}
+  }
 }
 
-"Roads to Leningrad" {
-  11269
-  <p>Description</p>
-  1941-01-01 / 1941-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Borries, Vance von"}
-  side{"Germany","Russia","Axis","Allies"}
+11269 {
+  title{"Roads to Leningrad"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
-  party{"Axis"-"2","Allies"-"2"}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"WW2","East Front"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Roads to Leningrad"}
+    dates{1941-01-01 / 1941-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Germany","Russia","Axis","Allies"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Borries, Vance von"}
+    description{<p>Description</p>}
+  }
 }
 
-"1914 - Twilight in the East" {
-  21779
-  <p>Description</p>
-  1914-01-01 / 1914-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Resch, Michael"}
-  side{"Germany","Russia","Austria-Hungary"}
+21779 {
+  title{"1914 - Twilight in the East"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
-  party{"Central Powers"-"2","Allies"-"2"}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"WW1","East Front"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"1914 - Twilight in the East"}
+    dates{1914-01-01 / 1914-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Germany","Russia","Austria-Hungary"}
+    party{"Central Powers"-"2","Allies"-"2"}
+    author{"Resch, Michael"}
+    description{<p>Description</p>}
+  }
 }
 
-"SPQR" {
-  21551
-  <p>Description</p>
-  280-01-01 BC / 109-12-31 BC
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Berg, Richard","Herman, Mark"}
-  side{"Roman","Carthage","Persian","Germany"}
+21551 {
+  title{"SPQR"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/d/d8/Spqr_2_5.vmod","Cyberboard"-"www."}
-  party{"Rome"-"2","Enemies of Rome"-"2"}
   genre{"Conflict Simulation","Tactical Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"Ancient Rome","Roman Civil War","Gallic War","Punic Wars"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"SPQR"}
+    dates{280-01-01 BC / 109-12-31 BC}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Roman","Carthage","Persian","Germany"}
+    party{"Rome"-"2","Enemies of Rome"-"2"}
+    author{"Berg, Richard","Herman, Mark"}
+    description{<p>Description</p>}
+  }
 }
 
-"The Burning Blue" {
-  17394
-  <p>Description</p>
-  1940-01-01 / 1940-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Lee Brimmicombe-Wood"}
-  side{"Great Britain","Germany","Axis","Allies"}
-  party{"Axis"-"2","Allies"-"2"}
+17394 {
+  title{"The Burning Blue"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
   genre{"Conflict Simulation","Strategic Level"}
   mechanic{"Card-Driven","Hex","Counter"}
   theme{"WW2","Battle of Britain"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"The Burning Blue"}
+    dates{1940-01-01 / 1940-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Great Britain","Germany","Axis","Allies"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Lee Brimmicombe-Wood"}
+    description{<p>Description</p>}
+  }
 }
 
-"Prussias Glory II" {
-  17395
-  <p>Description</p>
-  1757-01-01 / 1759-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Kalinowski, Bob"}
-  side{"Prussia","Austria","Hanover"}
+17395 {
+  title{"Prussias Glory II"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
   genre{"Conflict Simulation","Tactical Level"}
-  party{"Prussia"-"2","Other"-"2"}
   mechanic{"Hex","Counter","Dice"}
   theme{"7 Years War"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Prussias Glory II"}
+    dates{1757-01-01 / 1759-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Prussia","Austria","Hanover"}
+    party{"Prussia"-"2","Other"-"2"}
+    author{"Kalinowski, Bob"}
+    description{<p>Description</p>}
+  }
 }
 
-"Gustav Adolf the Great - With God and Victorious Arms" {
-  18746
-  <p>Description</p>
-  1627-01-01 / 1632-12-31
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Hull, Ben"}
-  side{"Swedish","Polish","Imperial","Royalist","Parliamentary"}
-  party{"Axis"-"2","Allies"-"2"}
+18746 {
+  title{"Gustav Adolf the Great - With God and Victorious Arms"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
   genre{"Conflict Simulation","Tactical Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"30 Years War","Musket & Pike"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Gustav Adolf the Great - With God and Victorious Arms"}
+    dates{1627-01-01 / 1632-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Swedish","Polish","Imperial","Royalist","Parliamentary"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Hull, Ben"}
+    description{<p>Description</p>}
+  }
 }
 
-"Carthage - The First Punic War" {
-  13855
-  <p>Description</p>
-  264-01-01 BC / 241-12-31 BC
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Berg, Richard"}
-  side{"Roman","Carthage"}
+13855 {
+  title{"Carthage - The First Punic War"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
-  party{"Rome"-"2","Carthage"-"2"}
   genre{"Conflict Simulation","Historical Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"Punic Wars","Ancient Rome","Naval"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"Carthage - The First Punic War"}
+    dates{264-01-01 BC / 241-12-31 BC}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Roman","Carthage"}
+    party{"Rome"-"2","Carthage"-"2"}
+    author{"Berg, Richard"}
+    description{<p>Description</p>}
+  }
 }
 
-"War Galley" {
-  1894
-  <p>Description</p>
-  494-01-01 BC / 31-12-31 BC
-  1 / 1
-  300
-  6
-  2 / 2
-  author{"Berg, Richard","Herman, Mark"}
-  side{"Roman","Carthage","Persian","Greak"}
+1894 {
+  title{"War Galley"}
+  description{<p>Description</p>}
+  publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/3/37/War_galley_2_1.vmod","Cyberboard"-"www."}
-  party{"Rome"-"2","Carthage"-"2"}
   genre{"Conflict Simulation","Historical Simulation","Tactical Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"Punic Wars","Ancient Rome","Naval","Peleponnesian Wars"}
-  publisher{"GMT Games"-"www.gmtgames.com"}
+  scenario{"War Galley"}
+    dates{494-01-01 BC / 31-12-31 BC}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Roman","Carthage","Persian","Greak"}
+    party{"Rome"-"2","Carthage"-"2"}
+    author{"Berg, Richard","Herman, Mark"}
+    description{<p>Description</p>}
+  }
 }
 
-"Combat Commander Europe" {
-  21050
-  <p></p>
-  1939-09-01 / 1945-05-01
-  1 / 1
-  250
-  6
-  2 / 2
-  author{"Jensen, Chad"}
+21050 {
+  title{"Combat Commander Europe"}
+  description{<p></p>}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
   engine{"Vassal"-""}
-  side{"Axis","Allies"}
   genre{"Conflict Simulation"}
   mechanic{"Card-Driven","Hex","Counter"}
   theme{"WW2"}
-  party{"Axis"-"2","Allies"-"2"}
-  publisher{"GMT Games"-"http://www.gmtgames.com"}
   series{"Combat Commander"-"Europe"}
+  scenario{"Combat Commander Europe"}
+    dates{1939-09-01 / 1945-05-01}
+    position{1 / 1}
+    range{250}
+    timescale{6}
+    players{2 / 2}
+    side{"Axis","Allies"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Jensen, Chad"}
+    description{<p></p>}
+  }
 }
 
-"Combat Commander Pacific" {
-  28181
-  <p></p>
-  1941-01-01 / 1945-05-01
-  1 / 1
-  250
-  6
-  2 / 2
-  author{"Jensen, Chad"}
+28181 {
+  title{"Combat Commander Pacific"}
+  description{<p></p>}
+  publisher{"GMT Games"-"http://www.gmtgames.com"}
   engine{"Vassal"-""}
-  side{"Axis","Allies"}
   genre{"Conflict Simulation"}
   mechanic{"Card-Driven","Hex","Counter"}
   theme{"WW2"}
-  party{"Axis"-"2","Allies"-"2"}
-  publisher{"GMT Games"-"http://www.gmtgames.com"}
   series{"Combat Commander"-"Pacific"}
+  scenario{"Combat Commander Pacific"}
+    dates{1941-01-01 / 1945-05-01}
+    position{1 / 1}
+    range{250}
+    timescale{6}
+    players{2 / 2}
+    side{"Axis","Allies"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Jensen, Chad"}
+    description{<p></p>}
+  }
 }
 
-"Panzerblitz, Hill of Death" {
-  26745
-  <p></p>
-  1944-07-01 / 1944-07-31
-  1 / 1
-  250
-  6
-  2 / 2
-  author{"Emge, Darren"}
+26745 {
+  title{"Panzerblitz, Hill of Death"}
+  description{<p></p>}
+  publisher{"Multi-Man Publishing"-"http://www.multimanpublishing.com"}
   engine{"Vassal"-"http://www.google.com"}
-  side{"Germany","Great Britain"}
   genre{"Conflict Simulation"}
   mechanic{"Hex","Counter"}
   theme{"WW2"}
-  party{"Germany"-"2","Great Britain"-"2"}
-  publisher{"Multi-Man Publishing"-"http://www.multimanpublishing.com"}
   series{"Panzerblitz"-"Hill of Death"}
+  scenario{"Panzerblitz, Hill of Death"}
+    dates{1944-07-01 / 1944-07-31}
+    position{1 / 1}
+    range{250}
+    timescale{6}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Emge, Darren"}
+    description{<p></p>}
+  }
 }
 

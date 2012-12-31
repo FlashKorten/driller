@@ -6,6 +6,7 @@ DROP INDEX IF EXISTS dr_scenario_year_upto_index CASCADE;
 DROP INDEX IF EXISTS dr_scenario_latitude_trunc_index CASCADE;
 DROP INDEX IF EXISTS dr_scenario_longitude_trunc_index CASCADE;
 DROP INDEX IF EXISTS dr_scenario_range_index CASCADE;
+DROP INDEX IF EXISTS dr_scenario_timescale_index CASCADE;
 DROP INDEX IF EXISTS dr_genre_index CASCADE;
 DROP INDEX IF EXISTS dr_mechanic_index CASCADE;
 DROP INDEX IF EXISTS dr_party_index CASCADE;
@@ -16,7 +17,7 @@ DROP INDEX IF EXISTS dr_side_index CASCADE;
 DROP INDEX IF EXISTS dr_special_index CASCADE;
 DROP INDEX IF EXISTS dr_theme_index CASCADE;
 DROP INDEX IF EXISTS dr_map_author_index CASCADE;
-DROP INDEX IF EXISTS dr_map_author_game_index CASCADE;
+DROP INDEX IF EXISTS dr_map_author_scenario_index CASCADE;
 DROP INDEX IF EXISTS dr_map_engine_index CASCADE;
 DROP INDEX IF EXISTS dr_map_engine_game_index CASCADE;
 DROP INDEX IF EXISTS dr_map_genre_index CASCADE;
@@ -58,13 +59,14 @@ DROP TABLE IF EXISTS dr_party CASCADE;
 DROP TABLE IF EXISTS dr_leader CASCADE;
 DROP TABLE IF EXISTS dr_publisher CASCADE;
 DROP TABLE IF EXISTS dr_series CASCADE;
+DROP TABLE IF EXISTS dr_scenario_data CASCADE;
+DROP TABLE IF EXISTS dr_scenario CASCADE;
 DROP TABLE IF EXISTS dr_side CASCADE;
 DROP TABLE IF EXISTS dr_special CASCADE;
 DROP TABLE IF EXISTS dr_theme CASCADE;
 
 DROP SEQUENCE IF EXISTS dr_author_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS dr_engine_id_seq CASCADE;
-DROP SEQUENCE IF EXISTS dr_game_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS dr_genre_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS dr_mechanic_id_seq CASCADE;
 DROP SEQUENCE IF EXISTS dr_party_id_seq CASCADE;
@@ -84,8 +86,6 @@ CREATE SEQUENCE dr_series_id_seq;
 ALTER TABLE public.dr_series_id_seq OWNER TO driller;
 CREATE SEQUENCE dr_engine_id_seq;
 ALTER TABLE public.dr_engine_id_seq OWNER TO driller;
-CREATE SEQUENCE dr_game_id_seq;
-ALTER TABLE public.dr_game_id_seq OWNER TO driller;
 CREATE SEQUENCE dr_mechanic_id_seq;
 ALTER TABLE public.dr_mechanic_id_seq OWNER TO driller;
 CREATE SEQUENCE dr_publisher_id_seq;
@@ -104,15 +104,12 @@ CREATE SEQUENCE dr_theme_id_seq;
 ALTER TABLE public.dr_theme_id_seq OWNER TO driller;
 
 CREATE TABLE dr_game (
-  id integer PRIMARY KEY DEFAULT nextval('dr_game_id_seq'),
-  id_bgg varchar(255) NOT NULL DEFAULT '',
+  id integer PRIMARY KEY,
   title varchar(255) NOT NULL DEFAULT '',
   subtitle varchar(255) NOT NULL DEFAULT '',
   description varchar(2000) NOT NULL DEFAULT '',
   gametime_start date,
-  gametime_end date,
-  players_min integer DEFAULT 0 NOT NULL,
-  players_max integer DEFAULT 0 NOT NULL
+  gametime_end date
 );
 
 ALTER TABLE public.dr_game OWNER TO driller;
@@ -124,8 +121,10 @@ CREATE TABLE dr_scenario (
   year_upto integer,
   latitude_trunc integer,
   longitude_trunc integer,
-  range integer DEFAULT 0 NOT NULL,    -- range in kilometers around epicenter
-  timescale integer DEFAULT 0 NOT NULL -- hours per turn
+  range integer DEFAULT 0 NOT NULL,
+  timescale integer DEFAULT 0 NOT NULL,
+  players_min integer DEFAULT 0 NOT NULL,
+  players_max integer DEFAULT 0 NOT NULL
 );
 
 ALTER TABLE public.dr_scenario OWNER TO driller;
@@ -170,16 +169,16 @@ CREATE INDEX dr_author_index ON dr_author(author ASC);
 ALTER INDEX dr_author_index OWNER TO driller;
 
 CREATE TABLE dr_map_author (
-  id_game integer NOT NULL REFERENCES dr_game(id),
+  id_scenario integer NOT NULL REFERENCES dr_scenario(id),
   id_author integer NOT NULL REFERENCES dr_author(id)
 );
 
 ALTER TABLE public.dr_map_author OWNER TO driller;
 
 CREATE INDEX dr_map_author_index ON dr_map_author(id_author ASC);
-CREATE INDEX dr_map_author_game_index ON dr_map_author(id_game ASC);
+CREATE INDEX dr_map_author_scenario_index ON dr_map_author(id_scenario ASC);
 ALTER INDEX dr_map_author_index OWNER TO driller;
-ALTER INDEX dr_map_author_game_index OWNER TO driller;
+ALTER INDEX dr_map_author_scenario_index OWNER TO driller;
 
 CREATE TABLE dr_genre (
   id integer PRIMARY KEY DEFAULT nextval('dr_genre_id_seq'),
