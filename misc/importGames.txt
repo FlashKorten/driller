@@ -5354,3 +5354,484 @@
     party{"Germany"-"2","Great Britain"-"2"}
   }
 }
+
+24800 {
+  title{"Conflict of Heroes - Awakening the Bear!"}
+  description{<p>The year is 1941. Germany has defeated Poland, Denmark, Norway, and France with ease. In the morning hours of June 22 over 3 million German soldiers attacked Soviet forces along a 1600 kilometer front heralding the beginning of Operation Barbarossa. Complete surprise was achieved and the Germans struck deep into Soviet territory. The Germans thought that the Soviets would fold like a house of cards. Their officer cadre had been massacred by Stalin, training was poor, and morale low. The Blitzkrieg catches the Soviets by surprise and they lose over 1.75 million men in the first two months alone.</p><p>The Germans are unstoppable, their Panzers pushing to the very gates of Moscow. But then winter hit and the cold drained the German’s resources, strength, and morale. The Soviets began striking back in the dead of winter and the momentum began to shift in their favor through the following spring. The bear had awoken!</p>}
+  publisher{"Academy Games"-"http://academy-games.com/games/conflict-of-heroes/awakening-the-bear-2nd-edition"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:Conflict_of_Heroes:_Awakening_the_Bear!_Russia_1941-1942"}
+  genre{"Conflict Simulation"}
+  mechanic{"Dice","Hex","Counter","Cards"}
+  theme{"WW2"}
+  scenario{"coh atb01 - Partisans"}{
+    dates{1941-10-17 / 1941-10-17}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>17 Oct, 1941 Comrades, this is a main supply route for the Germans. We will mine the road and ambush the next convoy that comes from the south. Take out as many trucks as you can and then melt away to the east. We will rendezvous at camp. Victor -- partisan leader.</p><p>Remnants of cut-off Soviet infantry units, scattered after the fall of Kiev, have begun partisan activities. A heavily armed group of partisans operating near Priluki have been tracked by a group of soldiers from the German 161st Inf. Div. sent to clean up the area. Worse for the Soviets, a detached squad of SS trackers are trailing a group of arriving partisan reinforcements from the east.</p>}
+  }
+  scenario{"coh atb02 - The Gap"}{
+    dates{1941-06-23 / 1941-06-23}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>23 Juni, 1941 Meine Liebste Friedle, Yesterday, the invasion against the Bolsheviks began. Our Panzers are rushing ahead and our company must sweep up the Soviets who are left behind and have not surrendered yet. I foresee no problems, because they are all ill trained and basically do not want to fight.... -- Corporal Hans Rastlingen near Przemysl.</p><p>As the 14th Panzer Div. punched through and rushed past the Soviet defenses on the Bug River, a gap opened between the 24th and 262nd Infantry Divisions of the 17th Army. The Soviets surprised the Germans with their tenacity, inflicting heavy loses on the Germans. The 296th Infantry Div had to be brought forward to close the hole and stabilize the line. Elements of the 520th Infantry Regiment must root out Soviet forces, some hidden, and scout the road to the east.</p>}
+  }
+  scenario{"coh atb03 - General Petrov"}{
+    dates{1941-10-08 / 1941-10-08}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>8th Oct, 1941 Urgent Dispatch! We immediately need a surgeon and a mobile force sent to evacuate General Petrov who has been seriously wounded. The Germans are approaching from the area of Istomo, hill 342. Commence artillery bombardment! -- Major Shabalin</p><p>After the break through by the German LIII Inf Corps from the SW to Bryansk, Soviet General Petrov withdrew his badly shaken 50th Army to the wooded terrain NE of Bryansk. Trying to break out of the ensuing Bryansk pocket, the general was critically wounded. Informants relay the general’s location in a local farmstead to the Germans, who jump at the opportunity to capture him. The Germans must capture or kill the wounded General, who cannot be moved until stabilized. The Soviets must hold out 5 turns until reinforcements arrive. In addition, Hovlau’s Hill (4-I14) offers an excellent mortar spotter vantage point, if captured by the Germans. Historical note: State Security Major Shabalin died at the side of General Petrov during a night break out attempt.</p>}
+  }
+  scenario{"coh atb04 - The Monsters"}{
+    dates{1941-06-23 / 1941-06-23}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>23th June, 1941 Personal Journal. First encounter with T34’s. Our 15th Panzer regiment was skirting the western side of Radziechow, storming a hill to the south and routing the enemy. As we crested the hill, my crew was shouting in elation as we hit tank after tank. Then we encountered a terrible monster that I will never forget -- the T34. 2nd Lieutenant Fried.</p><p>After two days of heavy fghting for the city of Przemysl, the Germans blasted through the Russian southern defenses, aiming their Panzer groups deep into enemy territory. Soviet General Andrei Vlassov led a counter attack with the IV Corps 32nd Tank Division to cut off the German’s lead attacking elements. A German recon unit of the 15th Panzer Regiment was the frst to stumble against the Soviets and were shocked by the heavy T-34 tanks, which simply rolled over their forward most infantry, 3.7cm anti-tank guns, and PzII scout tanks.</p>}
+  }
+  scenario{"coh atb05 - The Bunker"}{
+    dates{1941-06-24 / 1941-06-24}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>24th June, 1941 Operational Log. Our Panzer platoon has been ordered to take a Soviet stronghold situated on a critical position of hill 53 east of the village of Orlanka. We are told that they are well entrenched and also have tank support. Eighty-five percent of our Panzers are in operational order and we leave within the hour. -- Leutnant Rudi Dacher</p><p>The Germans have crossed the Bug river and are in full attack mode towards east. The Soviets have fortified hill 53 with bunkers, anti-tank guns, and tank support. Portions of the German Panzer Grenadier Regiment 33 must take and hold bunker 3-G15 and road hex 3-C10 in 5 turns.</p>}
+  }
+  scenario{"coh atb06 - Breakthrough to the Mzensk Pocket"}{
+    dates{1941-10-15 / 1941-10-31}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>Late October, 1941 Handwritten letter: The situation is desperate. Our company is surrounded on all sides, we are running out of ammunition and food. All day and all night rain and death have been pouring on us from the sky... -- Found on the body of an unidentified German soldier. A German force has been trapped in a village near Mzensk and is in desperate need of supplies. Reinforcements coming from the north must break through the encirclement to relieve the forces as soon as possible. Three wagons of ammunition and food are part of the relief force. Elements of General Datukov’s 4th Tank Brigade are rushing in numbers of T34 and KV tanks to stop the German breakthrough attempt.</p>}
+  }
+  scenario{"coh atb07 - KV2"}{
+    dates{1941-06-24 / 1941-06-24}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>24th June, 1941. 6th Panzer Division’s Operational Log. Yesterday, we ran into a roadblock on our advance into Rassaynjay. A lone KV2 tank with light support has held up our entire advance along the only road into the city. We have scored over 20 hits, but cannot penetrate its armor. We have sustained mounting casualties. Today we have requested heavy artillery support.</p><p>Elements of the 6th Pz Division are being held up by a single Soviet KV2 tank and its tenacious crew. The Germans must force their way through and take hex 5-K10.</p>}
+  }
+  scenario{"coh atb08 - Bug River"}{
+    dates{1941-06-22 / 1941-06-22}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>June 22, 1941 The Russians are running! We have crossed the Bug river into Russia. Everything looks run down and deserted. Curious that we don’t hear our artillery anymore. -- Kurt Treist.</p><p>General Situation:The German 56th Infantry Division attacked the bunker fortifcations across the Bug river near Wilczy-Przewoz, which were defended tenaciously by the Russians to the last man. Almost the entire German division got caught on the east side of the river without the support of their artillery, which had already used all of its ammunition. The Soviets launch a vicious counter attack in order to reclaim the bunkers.</p>}
+  }
+  scenario{"coh atb09 - Assault on Peprez"}{
+    dates{1941-10-02 / 1941-10-02}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>Oct 2nd, 1941. 4th Panzer Division Operational Log. On the first day of Operation “Taifun”, the division advanced rapidly towards Tula, capturing many cities along the way. We have met our frst strong resistance at the outskirts of Orel. The Soviets are well entrenched with heavy anti-tank gun support.</p><p>Forward elements of the 35th Pz Reg have encountered strong resistance on the outskirts of Orel near the city of Peprez. The Germans must penetrate the prepared positions outside of town and occupy key locations in the city. A quick capture will guarantee rapid advancement for the rest of the 4th Panzer Division, before cold weather hits.</p>}
+  }
+  scenario{"coh atb10 - The Demolition"}{
+    dates{1941-07-06 / 1941-07-06}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>6 July, 1942 General Orders - The Grossdeutschland Division will enter Voronezh with a special demolitions team to blow up a communications hub near the city center. -- Major Gen. Hörnlein</p><p>Lead elements of the 24th Pz Div along with the Grossdeutschland Motorized Infantry Div. have entered Voronezh, a major city on the Don river. All is in chaos and the Germans are attempting to blow a tall communication headquarters building. The Russians have been ordered by Stalin to hold the city at all costs.</p>}
+  }
+}
+
+38823 {
+  title{"Conflict of Heroes - Storms of Steel!"}
+  description{<p>Storms of Steel! makes you a witness to the greatest tank battle in history! After their stinging defeat at Stalingrad, the Germans mass their best forces for an all-out attack against the growing Soviet bulge at Kursk. The Soviets’ network of master spies has caught wind of the German plans, and they are prepared to trap and decimate the best panzer forces the Germans can muster...</p><p>Storms of Steel! is the second stand-alone title in the best selling “Conflict of Heroes” series and follows in the footsteps of Awakening the Bear! by winning the 2010 Origins Award for Best Historical Boardgame. Each game in the series uses the same core rules system, so it’s easy to advance from one game to the next!</p>}
+  publisher{"Academy Games"-"http://academy-games.com/games/conflict-of-heroes/storms-of-steel-kursk-1943"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:Conflict_of_Heroes:_Storms_of_Steel!_Kursk_1943"}
+  genre{"Conflict Simulation"}
+  mechanic{"Dice","Hex","Counter","Cards"}
+  theme{"WW2"}
+  scenario{"coh sos01 - Clear and Secure"}{
+    dates{1943-05-01 / 1943-05-31}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>Near Zmiyev, May 1943: The great battle of Stalingrad and the German counter strike that recaptured Kharkov have left both sides exhausted and stretched thin. The front is porous and as the Germans begin to consolidate for their planned summer offensive against the Kursk salient, it is important to secure their flanks from Soviet infiltrators – but with minimal casualties. Hence, all along the line, small German “Kampfgruppen” will seek out any Soviet incursions into their front. This is the most basic of infantry missions: clear and secure a specific objective.</p>}
+  }
+  scenario{"coh sos02 - The Courier's Satchel"}{
+    dates{1943-07-04 / 1943-07-04}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>4 July, 1943 I have not spent all of the energy and time necessary to secretly deploy our company just to have our disposition become common knowledge to the enemy! -- Captain Schubert, 1st Brigade of the 3rd SS Motorized Division</p><p>Shortly before operation Citadel was to begin, one of many covert Soviet probes along the front intercepted a courier and his satchel which contained last minute deployment orders. An elite platoon of Panzer Grenadiers has been assigned to immediately infiltrate the Soviet lines in order to retrieve the satchel containing the German documents. Upon receiving the satchel, the local Soviet commander orders that the information contained in it must be delivered to a nearby headquarters building for translation by an intelligence officer. With the local front now a beehive of activity on both sides, getting the satchel to headquarters is easier said than done.</p>}
+  }
+  scenario{"coh sos03 - Wind or Sniper?"}{
+    dates{1943-07-05 / 1943-07-05}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>5 July, 1943 I swear the wheat moved. Fire, fire, fire! -- as overheard by German gunner Emil Siegle</p><p>The Panzer Grenadier Division ‘Gross-Deutschland’ has fought its way to the edge of the village of Cherkasskoye and German engineers have been sent forward to clear paths through the last Soviet minefield defenses. Having reached the edge of the village, the engineer units are counter-attacked by strong elements of the 67th Guards Rifle Division. The Germans must hold on until their main battle force arrives. A cat and mouse game begins in which Soviet snipers and German machine gunners pick off anything that moves!</p>}
+  }
+  scenario{"coh sos04 - State Farm 158"}{
+    dates{1943-05-01 / 1943-05-31}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>Near Zmiyev, State Farm 158, May 1943. Despite initial success, the German effort to clear Russian penetrations into their southern flank continues to proceed slowly. Along a divisional supply route leading through State Farm 158, a number of supply convoys have been ambushed. As the Germans are preparing for summer operations against the Kursk salient this is clearly unacceptable, so a crack platoon of Panzer Grenadiers has been detailed to secure this area once and for all.</p>}
+  }
+  scenario{"coh sos05 - Pursuit from State Farm 158"}{
+    dates{1943-05-01 / 1943-05-31}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>Near Zmiyev, Outside State Farm 158, May 1943 Today’s earlier operation to clear State Farm 158 went well enough, except that the Russians were able to escape destruction by retreating into a tangle of balkas and hills northeast of the State Farm. Unfortunately, it also appears that they have received reinforcements. Hence, reinforced Panzer Grenadiers that earlier cleared the State Farm will redeploy and eliminate all Soviet units that have taken refuge in the large balka and on the two overlooking hills.</p>}
+  }
+  scenario{"coh sos06 - Sneak Attack"}{
+    dates{1943-07-05 / 1943-07-05}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>5 July 1943 The sappers [engineers] needed five hours to build the bridge... The first wounded coming back from the front were loaded onto inflatable dinghies. They did not speak of us in a very friendly manner because the Russians had resisted strongly and were well-organized... -- Leutnant Richard von Rosen, commander of a Tiger tank section of the 3rd Company of Heavy Tank Battalion 503</p><p>Before the III Panzer Corps could begin its thrust to secure the right flank of the German armored spearheads, it needed to establish a bridgehead across the northern Donets River southeast of Belgorod. On the first day of the German offensive, elements of Panzer Grenadier Regiment 114 of the 6th Panzer Division crossed the river to secure the opposite bank so the division’s engineers could build the vital bridge that would enable the heavy Panzers to cross. Little did they know that a company of Soviets had infiltrated to the very edge of their defensive perimeter intent on stopping the engineers.</p>}
+  }
+  scenario{"coh sos07 - Wounded Tiger"}{
+    dates{1943-07-08 / 1943-07-08}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>8 July 1943 Naturally, a lot of tanks had dropped out along the way, probably fewer due to enemy action than to the frequent transmission problems of the initial Tigers. -- Hauptmann Clemens Graf Kageneck, Commander of Heavy Tank Battalion 503</p><p>On the third day of the German offensive, the III Panzer Corps blasted a narrow corridor only a few kilometers wide through the Soviet defensive lines. The Kursk battlefield was littered with tanks that broke down due to mechanical problems rather than combat. Both sides attempted to retrieve and repair these valuable vehicles. As the German III Panzer Corp’s spearheads advanced, an immobilized Tiger was left behind in a field. Through the unsecured flanks, a platoon of T-34s and T-70s slipped through to finish off the ‘helpless’ tank.</p>}
+  }
+  scenario{"coh sos08 - Black Knights of the Steppe"}{
+    dates{1943-07-10 / 1943-07-10}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>10 July 1943 A wall of steel and fire...Then the message came...”Drive like hell, that is your only chance!” -- Rolf Erhardt, driver of a platoon leader’s tank, 7th Company, Panzer Regiment “LAH”</p><p>After five days of almost constant combat, the tired Germans were hoping for a break. Instead, advanced elements of the armored group for the 1st SS Panzer Grenadier Division “Leibstandarte Adolf Hitler” were ordered to assemble along the road to Prokhorovka. This small town on the vast steppe of Russia would become the site of the most famous tank engagement within the battle of Kursk.</p>}
+  }
+  scenario{"coh sos09 - Blinding the Bear"}{
+    dates{1943-07-07 / 1943-07-07}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>7 July 1943 We will have to use our heavy weapons to clear out that position. -- Oberstleutnant Rudolf Köhler, commander of Pz.Gren.Rgt. 73</p><p>As III Panzer Corps pushed north from its bridgehead across the northern Donets River southeast of Belgorod, it bypassed Soviet strong points. Now on the third day of the German offensive, these enemy positions needed to be eliminated because they enabled the Soviets to call in artillery on the German supply lines. As 19th Panzer Division’s armored Kampfgruppe continued to push northward, the truck-borne Panzer Grenadiers were used to clear out the rear area.</p>}
+  }
+  scenario{"coh sos10 - Tanks!"}{
+    dates{1943-07-08 / 1943-07-08}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>8 July 1943 Smoke, fire, bombs, and wrecked vehicles were everywhere. But by evening we began to see heavy reinforcements from the STAVKA reserve. -- Soviet Major General Popiel</p><p>Between July 8th and 9th, the German 48th Panzer Corps was forcing its way towards the approaches of Oboyan. East of Verkhopenye, elements of the Gross-Deutschland and 11th Panzer Divisions ran headlong into arriving Soviet reinforcements of the 1st Tank Army. A chaotic battle ensued with more Soviet straggler tanks arriving as the battle ignited across the open steppes and hills.</p>}
+  }
+  scenario{"coh sos11 - Rotmistrov's Red Dawn"}{
+    dates{1943-07-12 / 1943-07-12}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>12 July 1943 The situation suddenly became complicated. The jumping-off positions that we had earlier selected for the counter stroke were in the hands of the Hitlerites. -- Lieutenant General P.A. Rotmistrov, commander 5th Guards Tank Army</p><p>After establishing a bridgehead across the northern Donets River near Mikailovka (southeast of Belgorod), advanced elements of the German 6th Panzer Division’s “armored fist” (or breakthrough kampfgruppe) must now expand the bridgehead by quickly reaching the village of Blizhniaia Igumenka. This will enable the rest of the division to cross the river without coming under Soviet artillery fire, and also keep the III Panzer Corps’ advance on schedule.</p>}
+  }
+  scenario{"coh sos12 - The Bloody Brothers"}{
+    dates{1943-07-10 / 1943-07-10}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>10 July, 1943 We were ordered to reduce the center of resistance to a pulp. -- Hauptmann Kurt Burmeister</p><p>In the broken spaces between the large panzer battles, small skirmishes take place between companies of men that are close combat matches to the death. One such battle includes elements of the German 168th Infantry Division that are preparing to assault the city of Gostishchevo. They have set up an artillery observation post on top of the larger of two hills locally called “The Brothers”. From here the Germans are directing artillery fire into Gostishchevo. The Soviets are sending a detachment of men to retake The Brothers.</p>}
+  }
+  scenario{"coh sos13 - Luchki (Part 1)"}{
+    dates{1943-07-06 / 1943-07-06}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>6 July 1943 We have achieved the breakthrough required of us. -- SS-Gruppenführer Kruger.</p><p>Ferocious battles were being fought as the Germans smashed into the Soviet’s second line of defense. Along the critical Belgorod-Kursk highway, ‘Der Führer’ regiment of the 2nd SS PzGren Div., ‘Das Reich’, is trying to seize the village of Luchki. If successful, this will open a huge gap in the defences of General Chistyakov’s 6th Guards Army into which the II SS Panzer Corp can rush through.</p>}
+  }
+  scenario{"coh sos14 - Luchki (Part 2)"}{
+    dates{1943-05-01 / 1943-05-31}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>As the panzer grenadiers of the German 2nd SS PzGren Div. ‘Das Reich’ were trying to seize the village of Luchki, SS-Obergruppenführer Hausser tried to flank the city with his panzers in order to create a larger breakthrough point in Soviet General Chistyakov’s 6th Guards Army.</p>}
+  }
+  scenario{"coh sos15 - Dance of the Totenkopfs"}{
+    dates{1943-07-09 / 1943-07-09}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>9 July 1943 We are fighting our way through the worst country a tanker can imagine. A land full of hills, ravines, woods, and gorges. The fighting is all around us and we have no idea from which direction friend or foe may come. -- Unteroffizier Helmut Krotzer.</p><p>The 2nd SS Panzer Corps was fighting its way north to the Psel River in order to force through the last defensive ring before Kursk. Elements of the 3rd SS PzGren Div ‘Totenkopf’ had wheeled west towards Greznoye, encountering a concentrated defense from the Soviet 31st Tank Corp. The Soviets were desperate and threw in all of their area reserves. Soon the German Tigers and Panthers were fighting in small groups for their very survival. Larger formations broke rank in order to rescue lone stranded comrades. The death dance had begun.</p>}
+  }
+}
+
+45132 {
+  title{"Conflict of Heroes - Price of Honour"}
+  description{<p>“Peace is a precious and a desirable thing. Our generation, bloodied in wars, certainly deserves peace. But peace, like almost all things of this world, has its price, a high but a measurable one. We in Poland do not know the concept of peace at any price. There is only one thing in the lives of men, nations and countries that is without price. That thing is honour.” -- Polish Minister of Foreign Affairs Józef Beck, 5th of May, 1939</p><p>September 1st, 1939. Germany invades Poland in the early morning hours. The Germans employ highly mobile massed tank formations, closely supported by mobile artillery and their air force - the Luftwaffe. The world would come to know this form of warfare as the "Blitzkrieg". The Germans overwhelm the Polish forces and in a desperate bid to survive the Poles are ordered to mass together near the Romanian border, where they will try to hold out until their allies invade Germany from the west. But then the Soviets launch a surprise attack against the Poles from the East, cutting through their weakly defended border and fulfilling their secret pact with Germany to divide Poland between their two nations.</p>}
+  publisher{"Academy Games"-"http://academy-games.com/games/conflict-of-heroes/price-of-honour-poland-1939"}
+  engine{"Vassal"-"http://www.google.de"}
+  genre{"Conflict Simulation"}
+  mechanic{"Dice","Hex","Counter","Cards"}
+  theme{"WW2"}
+  scenario{"coh poh01 - Blitzkrieg! The Battle of Tuchola Forest"}{
+    dates{1939-09-01 / 1939-09-01}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Poland"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>Day One - After seizing the town of Pruszcz, the German 3rd Panzer Division quickly enters the Tuchola Woods through a gap it has found between the 34th and 22nd Infantry Regiments, Polish 9th Infantry Division. There is nothing to stop 3rd Panzer Division from reaching the Vistula River once it clears the woods, thus effectively cutting the Polish corridor in half and establishing a land connection between Germany proper and East Prussia.</p><p>Guderian’s troops must quickly cross this heavy terrain, before the gap closes and he gets trapped between the Polish 34th Infantry Regiment rushing in from the north and the 22nd Infantry Regiment from the south.</p>}
+  }
+  scenario{"coh poh02 - Cavalry Charge! Polish Cavalry Attack at Krojanty"}{
+    dates{1939-09-01 / 1939-09-01}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Poland"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>The German 76th Motorized Infantry Regiment of the 20th Motorized Infantry Division was moving east towards the Brda river, pushing back the Polish 85th National Defense Infantry Battalion. The Polish 18th Uhlan (Cavalry) Regiment was ordered to stop the German advance by assaulting their northern flank near the village of Krojanty.</p><p>Using the woods as cover, the Poles outflanked and charged the stretched German column. The Germans immediately deployed heavy MG fire in order to try to hold back the mounted attackers. The battle evolved into a desperate melee until German armored cars arrived, forcing the Poles, who had no heavy anti-tank weapons, to withdraw.</p><p>The Uhlans were mounted mobile infantry that fought dismounted. The Krojanty cavalry charge is one of the most famous and misinterpreted charges of WWII. The Poles are often accused of charging tanks on horseback. This never happened. At Krojanty, 250 Polish Uhlans emerging from the shelter of the forest surprised a German infantry battalion of about 800 men in open ground and broke into an ‘old fashioned’ cavalry charge to press home their advantage. When faced by the German armored car reinforcements and heavy MGs placed between buildings and woods near the village, they were forced to withdraw. This rather infamous charge stopped the advance of the entire 20th Division for the rest of the day, buying precious time for other Polish forces to organize their defenses for upcoming battles.</p>}
+  }
+  scenario{"coh poh03 - Armored Train No. 53; The Battle of Mokra"}{
+    dates{1939-09-01 / 1939-09-01}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Poland"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>In the early morning hours of Sept 1st, the German 10th Army crossed the Polish border into the operational sector of the Polish “Wołyńska” Cavalry brigade stationed near the village of Mokra. The “Wołyńska” Brigade was assigned to keep the lines of communication open between the Polish 7th Inf Division operating to the south and the 30th Inf Division to the north. The Germans quickly broke through the Polish border guard and the 4th Panzer Division was split in order to outflank and surround the Polish positions around Mokra.</p><p>North of the village, the German Panzers mounted an assault on the Polish 21st Uhlans Regiment, taking the village of Wilkowieck and then heading for the village of Mokra. Outside of the village, the Germans ran into well positioned defenses of the 19th Uhlans and the regrouped 21st Uhlans. A vicious battle ensued for control of Mokra village.</p><p>Repeated assaults by the Germans were repulsed. The Germans again and again bombed the area with artillery and Stukas to soften up the defenders. Finally a force consisting of over 100 tanks and AFVs drove into the rear of the 19th Uhlans, forcing them to retreat out of the forests and over a railroad embankment towards Mokra. As they neared the village, they found the way was blocked by German tanks. At that moment, Armored Train No. 53 (named Śmiały, meaning “the bold” in Polish) arrived and drove right into the midst of the German formation, firing its 75mm guns and heavy machine guns point blank at the bewildered Germans. The German losses mounted and they retreated.</p><p>At 12:15, the Germans attacked again, driving through the defenses and into the center of the village. Utter confusion reigned amid the smoke and fire of the burning houses. The battle broke into numerous skirmishes throughout the forest, village and rail lines. The situation grew desperate for the Poles as their guns were either disabled or ran out of ammunition. The Polish cavalry was being pushed back with heavy losses. In a desperate gamble, the Poles ordered tankettes of the 21st Armored Battalion to charge the Germans deployed in the village. This gained the Poles enough time for the return of the armored trains. The battle raged on until 17:00, at which point the Germans withdrew from Mokra.</p><p>The German 1st Panzer Division captured the city of Kłobuck directly to the south of Mokra, forcing the Poles to retreat from Mokra during the night. Both sides lost hundreds of men, tanks and horses in the vicious fighting that day.</p>}
+  }
+  scenario{"coh poh04 - The Black Brigade; Battle in the Mountain Passes of Jordanow"}{
+    dates{1939-09-02 / 1939-09-02}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Poland"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>General von Kleist’s XXII Army Corps (2nd Panzer, 4th Light and 3rd Mountain Divisions) hit the Polish Army “Kraków” from the south, after moving through Slovakia to bypass the Polish defenses in Silesia. The Polish General Staff was surprised by the German decision to throw a strong motorized unit into the mountainous area of Podhale. Weak Polish defenses, comprised of the Border Defense Corps, were unable to withstand the strong German advance. Facing the Germans was General Antonii Szylling, commander of the Polish Army “Kraków”. This surprise move by the Germans put General Szylling’s entire army in danger. He immediately ordered his fastest reserve unit, the 10th Motorized Cavalry Brigade led by Colonel Stanisław Maczek, to block the German advance. Countless times, Polish and German armored units clashed in the mountain passes. One such engagement took place near the village of Jordanów. The Poles need to hold back or delay the Germans long enough to reorganize their defenses.</p><p>Maczek and his troops fought very effectively, slowing the German advance for five days. Despite numerical and technical superiority, the German advance was slowed to a crawl, advancing less than 10 km. per day. The Germans called the 10th Cavalry Brigade “Die Schwarze Brigade” – “The Black Brigade”, because of the black jackets worn by the Polish mechanized troops. After intense fighting, the Germans broke the Kraków Army’s front to the north of Maczek’s position, after which Maczek’s brigade was pulled out of the front line.</p><p>Stanisław Maczek became one of the most famous Polish panzer leaders, fighting from the first to the last day of the war. After the fall of Poland, his troops were evacuated to France via Romania. Maczek commanded the Polish 10th Armored Cavalry Brigade in the French campaign. After the collapse of France, his troops were evacuated to Britain. They returned to France in 1944 as the 1st Polish Armor Division, taking part in Operation Totalize through the Falaise pocket, and towards the end of the war captured the main Kriegsmarine base in Wilhelmshaven.</p>}
+  }
+  scenario{"coh poh05 - Tank Clash; Battle of Piotrkow"}{
+    dates{1939-09-05 / 1939-09-05}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Poland"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>After breaking through the defensive positions of the Polish 7th Infantry Division, the German XVI Panzer Corps advanced towards Warsaw along the Piotrkowska road. On Sept. 4th, lead German units had reached the hastily prepared Polish positions located on the river Prudka and Borowa Mountain. After a day of battle, the Polish lines had been partially broken and German tanks poured onto the open plains near Piotrków. This area was occupied by the Polish 19th Infantry Division of the Polish Reserve Army “Prusy”. These forces were urgently preparing themselves against the German attack.</p><p>On September 5 on the outskirts of Piotrkow, a bloody battle took place. German tanks of the 1st and 4th Panzer Divisions, supported by artillery and the Luftwaffe, broke through the Polish positions and captured Piotrków, opening the way to Warsaw. Despite committing their armored reserves in the form of the 301st Tank Battalion, the Poles were pushed back by the concentrated power of the XVI Hoepner Panzer Corps.</p><p>In this battle, one player commands the German 2nd Panzer Company that has crossed the dense terrain surrounding the Prudka river and has moved into the plains south of Piotrków. It engages the entrenched Polish 86th Infantry Regiment, supported by tanks from the 2nd Company of the Polish 301st Light Tank Battalion. In the following close quarter battle frenzy, German technical superiority and heavy artillery support will be countered by the typically stubborn Polish defense. Can the Polish commander survive the wrath of the Blitzkrieg’s combined arms tactics?</p><p>The area around Piotrków area was open ground, perfect conditions for armor operations. The Germans could exploit their tanks and combined arms support to the maximum. The Polish forces made many brave counter-attacks, which included 49 tanks (7TPs) of the 301st, but the technically superior German communications and mobile reaction doctrine gave the Poles little chance of success.</p><p>The Battle of Piotrków was a disaster for the Poles. The Germans had finally broken the front through the center of the country and opened the road for the eventual advance on Warsaw. To make matters even worse, the German armored troops were in position to attack the not yet fully mobilized Polish Army “Prusy” – the last significant Polish strategic reserve.</p>}
+  }
+  scenario{"coh poh06 -  Grójecka Street; Assault on the Warsaw Suburbs"}{
+    dates{1939-09-09 / 1939-09-09}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Poland"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>Having broken through the border defenses of the Polish “Łódź” Army near Częstochowa on Sept. 3rd, the German 4th Panzer Division, commanded by Major-General Reinhardt, began its drive towards the river Vistula and Poland’s capital city of Warsaw.</p><p>Most of Warsaw’s authorities had dispersed, including significant parts of the police force, fire fighter and military garrisons. Only 4 battalions of infantry and one battery of artillery were left in Warsaw. The Polish Commander in Chief, Marshal of Poland Edward Śmigły-Rydz, ordered the creation of an improvised Command of the Defence for Warsaw. General Walerian Czuma was named its commander. Czuma and the mayor of Warsaw, Stefan Starzyński, began to organize the Civil Guard to replace the police forces and fire fighters. They also implored all civilians to construct barricades and anti-tank barriers on the outskirts of Warsaw.</p><p>After the decisive three day battle near the city of Piotrków, the German XVI Panzer Corps managed to break through the Polish front lines and make its way towards the outskirts of the Polish capital. The German staff was confident that Poland would collapse in the coming days and that they would occupy Warsaw without a fight. On the morning of September 8th, the suburbs of Grójec, Radziejowice, Nadarzyn, Raszyn and Piaseczno were captured and German propaganda announced that the Wehrmacht had entered Warsaw. “The end of the war is near” it proclaimed. However, later that day the German 4th Panzer Division attempted an assault on the western borough of Ochota, but was repulsed with heavy casualties.</p><p>On September 9th, the 4th Panzer Division, reinforced with artillery and motorized infantry, again mounted a full scale assault on Ochota and Wola. Barricades had been erected on the main streets leading into Warsaw in order to slow the German assault. This allowed well placed Polish 75mm anti-tank guns to ambush the invaders. The streets took on a hellish aspect as the Germans poured heavy artillery into the city, while their pioneer units attempted to blow up the street barricades. At the same time the Poles pumped large amounts of turpentine onto the streets, creating burning fire traps to which men and tanks fell prey.</p><p>The German forces suffered heavy casualties and had to retreat westward to help thwart the Bzura River counter offensive (Firefight #7). The 4th Panzer Division alone had approximately 80 of its estimated 220 tanks that took part in the assault disabled. Warsaw finally capitulated on the 28th of September, after a long and bloody siege that lasted 20 days longer than the Germans had anticipated.</p>}
+  }
+  scenario{"coh poh07 - Shadows in the Mist; The Battle of Bzura and the Assault on Łowicz"}{
+    dates{1939-09-14 / 1939-09-14}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Poland"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>The Battle of Bzura (Sept 9-19, 1939) was one of the biggest battles of the Polish campaign. In the first phase of the battle (Sept 9-12), two Polish armies, “Pomorze” and the “Poznań”, attacked the left flank of the German 8th Army, threatening the communication lines of the German armies moving towards Warsaw. The scale and the speed of the Polish operation surprised the German general staff, forcing them to halt their advance towards Warsaw and the Vistula river. The Germans reacted quickly, assembling all of their available fast moving mobile units to deploy against the Polish counter-offensive. The German 8th Army nearly reached its breaking point, but managed to hold its positions thanks to the quick response of the 10th Army’s mobile units.</p><p>During the second phase of the battle (Sept 13-15), Polish forces were trying to establish a bridgehead over the river Bzura, in order to open a road corridor for the deployment of Polish reinforcement armies destined for Warsaw. Łowicz and Sochaczew, two cities situated on the banks of the Bzura river, were sites of fierce and bloody urban fighting.</p><p>In the third stage of the battle (Sept 16-19), the Germans managed to encircle and pin the Polish forces along the river, in what is now called the Bzura pocket. The Germans systematically destroyed most of the Polish armies with heavy air and artillery attacks. Only a few Polish units managed to break out through the Kampinos Woods and enter Warsaw. The Battle of Bzura was the largest allied counter-offensive operation until the 1941 Soviet winter campaign!</p><p>In early morning hours of Sept 14th, Polish rifle units of the 16th Infantry Division silently crossed the muddy Bzura river banks to assault the city of Łowicz from its western flank. However, elements of the German 18th Infantry Division were picketed along their path, defending the outskirts of the city. A dense early morning fog blanketed the area, blinding both sides and forcing the Poles to assault the German defenders with hand grenades and bayonets. A fierce, close quarters battle erupted.</p>}
+  }
+  scenario{"coh poh08 - The Romanian Bridgehead; The First Battle of Tomaszów Lubelski"}{
+    dates{1939-09-18 / 1939-09-18}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Poland"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>The Poles had originally planned to make a defensive stand along the Vistula river, but because this line was overrun, the Polish Commander in Chief, Edward Śmigły-Rydz, decided to withdraw his troops towards the so-called ‘Romanian Bridgehead’. This was an easily defendable area in the south-eastern region of Poland, comprised of moors and rivers. This area also bordered Romania, from which Allied aid was supposed to be sent to Poland.</p><p>The plan was realistic and feasible, since Germany had turned most of its mobile units towards the Bzura river area in order to counter the ongoing Polish counteroffensive going on there. The Romanian Bridgehead could draw military forces from the northern, central and southern Polish fronts, instantly creating a strong defensive military position. Moreover, the Allies had promised to initiate an offensive on the Western front and this would greatly decrease the German pressure and number of units on the Polish front, since the Germans would have to re-deploy armies to the west. However, the unexpected Soviet surprise attack and the lack of Western Allied support put an end to these plans. The area of the Romanian Bridgehead was attacked and penetrated by Soviet armored units, forcing Śmigły to evacuate Poland, and as a result, he was no longer able to coordinate actions on the Polish fronts. The Polish armies, however, continued to steadfastly march towards the south-east where they encountered the German XXII Corps, which had out-distanced the main German supply lines and was low on fuel and ammunition. The Polish forces attacked the Germans, but did not coordinate their attacks. The Germans exploited their central position, beating the Polish forces piecemeal one after the other. The first battle, pitting the German XXII Corps against the Polish Central Front armies, took place between Sept 17 and 20 and became known as the First Battle of Tomaszów Lubelski. The Second Battle of Tomaszów Lubelski took place between Sept 22 and 27, where the XXII Corps faced the Polish Northern front forces.</p><p>On Sept 18, in an attempt to break through the German defenses and execute their orders to proceed south, Polish soldiers from the Central Front (previously armies “Kraków” and “Lublin”) attacked the city of Tomaszów Lubelski. The Poles were unaware of the Soviet invasion and that their struggle no longer had the same strategic significance it had just the day before. The Polish forces included one of the largest Polish armored formations of the time, the Warsaw Armored Motorized Brigade (32 light tanks, 48 tankettes), which led the attack on the city. The main Polish assault hit the southern section of Tomaszów Lubelski. Here, massed Polish armor clashed with agile German anti-tank defenses. The Polish tanks and tankettes managed to break through the German lines, leaving their infantry behind, but were stopped by a series of Panzer counter-attacks. Both sides took tremendous losses.</p><p>The Poles were stopped by the German 4th Light Division and 2nd Panzer Division and had to retreat from the field of battle. This three day battle was the largest armor battle of the Polish campaign. By battle’s end, the Polish troops were surrounded, out of ammunition, and only a few survivors managed to break through the German ring and escape to the temporary safety of Romania or Hungary.</p>}
+  }
+  scenario{"coh poh09 - The Red Tide; The Fortified Area of Sarny"}{
+    dates{1939-09-19 / 1939-09-19}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Poland","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>The stiffening resistance of Polish forces and the Bzura counteroffensive had slowed the German Blitzkrieg. Fearing an imminent attack from France, the Wehrmacht was under increasing pressure to conclude the Polish campaign. The Polish decision to consolidate and build a fighting force in the Romanian Bridgehead was a sound strategic move. The area was easy to defend and had direct access to potential Allied support through Romania. However, the Soviet attack of Sept 17th was a disaster for the Polish defense. It changed the European political balance and put an end to French plans of attacking Germany that year.</p><p>The Polish border positions along the Russian front were guarded by a thin cordon of Border Defense Corps, which could not hold back the massed Soviet invasion. Only one Polish position (the Sarny Fortified Area), that was guarding the Polesie swamps, held the “Red Tide” for a few days. The Sarny Fortified Area was a line of bunkers and trenches built along both sides of the Sluch river near the town of Sarny, close to the Soviet border. For many years, the Polish military considered the Soviet Union as Poland’s main enemy. As a result, a major construction project of fortifications up to five kilometers in depth began in 1936.</p><p>Most of the Sarny Fortified Area garrison had been redeployed to Poland’s western fortifications in preparation for the expected German invasion. The remaining soldiers were ordered in mid-September 1939 to abandon the bunkers and to move with their equipment towards the Romanian Bridgehead. On September 16, the eve of Soviet attack on Poland, there were only small formations remaining - altogether numbering some 4000 soldiers guarding 80 kilometers of border. The Poles had no heavy equipment, because it had been sent towards the German border in the summer of 1939. The Sarny Fortified Area was attacked by the Soviet 60th Rifle Division. The Polish defenders held the fortifications for three days, but on September 20, facing encirclement, they were forced to withdraw. However, not all of the soldiers received the order to withdraw and in some places the Poles resisted until September 25. Several soldiers in bunkers refused to surrender and had to be blown up by Red Army engineers.</p><p>The main Soviet assault was committed against the “Tynne Sector” of the Sarny Fortyfied Area. In order to pin the Polish troops in the northern fortifications, Soviet soldiers from the 194th Rifles Regiment were ordered to attack the northern “Polany Sector”. The Polish bunkers in front of the village of Polany were set up between lakes and swamps. Due to the marshy terrain, the Soviet soldiers could not deploy their heavy weapons in this sector. Therefore, the burden of fighting fell to the line soldiers. They paid dearly in blood for every meter of Polish ground they took.</p>}
+  }
+  scenario{"coh poh10 - Captured Convoy; The Battle of Bzura, Sieraków"}{
+    dates{1939-09-19 / 1939-09-19}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Poland"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>During the third phase of the Battle of Bzura (Sept 16-19), Polish forces of the “Poznań” and “Pomorze” armies were trying to break through to Warsaw via the forested area of Kampinos Woods. Leading the Polish formation was the “Wielkopolska” Cavalry Brigade. Its orders were to clear the forest roads of enemy resistance and to guide the infantry through the densely forested area. The Poles were hoping that the woods would offer protection from the Luftwaffe. Unfortunately, due to the drought that year, the cover was minimal and the trails were difficult to traverse.</p><p>The German 10th Army was just as busy, and quickly mobilized motorized and panzer divisions, with orders to block the roads between the Bzura pocket and Warsaw. The Germans were occupying crossroads and small villages hidden in the deep forest, with the intention to block, disorganize and ambush Polish columns. However, just as often the Germans became the victims of similar Polish actions. During the night of the 18th, Polish cavalrymen seized the village of Sieraków, capturing a German supply column from the 1st Light Division. The Polish prize was great: 34 trucks filled with equipment, ammunition and fuel. The next day, the Germans returned, eager to inflict revenge.</p><p>September 19th. The Polish 17th Uhlan Regiment holds Sieraków village and the East - West road, which is vital for the Polish withdrawal. The 11th Panzer Regiment is attacking from the south, hoping to break through the Polish resistance in the village in order to prevent the “Wielkopolska” Cavalry Brigade from moving Eastwards towards Warsaw.</p><p>Both sides were exhausted from the hardships of the campaign and their ranks had been reduced, nevertheless the resulting battle was fierce. The German assault did not succeed and their losses were so high, that the 1st Light Division was withdrawn from the front line soon thereafter. The “Wielkopolska” Cavalry Brigade reached Warsaw on the 20th of September, victorious, but bloodied with heavy losses. In addition, the Cavalry Brigade had not fulfilled its mission: the infantry divisions were left behind and had to try to break through the Germans on their own. Most units met their doom in the unforgiving Kampinos Woods.</p>}
+  }
+  scenario{"coh poh11 -  Race for Lwów; The Soviet/German battle of Winniki"}{
+    dates{1939-09-19 / 1939-09-19}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Poland","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>For seven days, the city of Lwów repelled German attacks. However, on Sept 19th, a Soviet rapid attack column struck the city from the east. Thus began a race between the invading armies to conquer this great Polish city, a historical symbol of Polish independence and freedom. The Germans and Soviets both targeted the strategic high ground on the south-eastern outskirts of Lwów, near the village of Winniki. This high ground, overlooking Lwów, offered an excellent location for artillery spotting. The sudden appearance of the 24th Soviet Tank Brigade swept the Poles from the area. Unexpectedly, the Soviets were attacked by the German 2nd Mountain Division which also had been ordered to take the Winniki hills! This was one of the first Soviet/German engagements of WWII, where soldiers of the German 137 Mountain Rifle Regiment, 2nd Mountain Division engaged the Soviet 24th and 10th Armored Brigades. On September 19, 1939, on the hills near Lwów, were played out scenes that would repeat themselves on a much grander scale two years later. The Germans and Soviets fought furiously for control of the high ground, leaving a trail of casualties, destroyed tanks and anti-tank guns. Meanwhile, Polish patrols from Lwów also entered this battleground in order to improve their position for the city’s defense.</p><p>Three armies vie for possession of the Winniki hills, in a “free for all” battle - each side fighting for itself. The Soviets must hold the ring of hills for later use as a base for assaulting the city. The Poles enter from the north in order to secure the defensible high ground outside the city. The Germans enter from the west in order to encircle the entire city and to drive the Soviets back.</p><p>This engagement was supressed by both the Germans and Soviets and was buried in the archives, because it negatively tainted the new alliance between the totalitarian powers. The Germans suceeded in driving back the Soviets. However, on the basis of the Ribbentrop – Molotov pact, in which it was agreed that Lwów was to be in the Soviet sphere of influence, the Germans withdrew from their positions on the 21st of September and Soviet troops encircled the city. The Poles decided to capitulate to the Soviets, because resistance seemed futile from a strategic viewpoint and would result in many unnecessary civilian casualties. The terms of surrender were negotiated and an agreement was signed, but the Soviets did not comply with its conditions and imprisoned all Polish officers. Recently disclosed Soviet archives detail how these officers were executed six months later in the Katyń Forest.</p>}
+  }
+  scenario{"coh poh12 - No Surrender; Armored Assault on Grodno"}{
+    dates{1939-09-20 / 1939-09-20}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Poland","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>At dawn an enormous tank drove onto the bridge, easily destroying our barricades, followed by a second, a third, then a fourth. There were red flags on them (the tanks). On the first tank lay a bouquet of flowers, they had welcomed it with flowers somewhere, but not here, not in Grodno... -- Grażyna Lipińska, Polish teacher from Grodno.</p><p>The invading Soviet armies marched into Polish territory with ease, as most Polish units were facing the Germans. The Soviets, however, suffered both from a lack of supplies and tactical planning. The Soviet officer cadre was very young and inexperienced, due to Stalin’s extensive purges of senior officers in 1936 - 1937.</p><p>The main objective of the Soviet 11th Army was Grodno, a city located in northern Poland, an important communication and transportation hub, due to its bridges crossing the Niemen river. The fastest Soviet units entered the city outskirts from the east on September 19th, but were thrown back by Polish soldiers of the 102nd Cavalry Regiment. The Soviet commanders decided to attack the city from the South using the 27th Tank Brigade, belonging to Ivan Boldin`s Cavalry Mechanized Group. The Soviets assessed the Polish defense as weak and thus decided to enter the city without infantry support or extensive reconnaissance. The hastily improvised Polish defense was composed of rear echelon military units, city police and citizen volunteers, including young boy scouts. The Poles had not expected a southern attack, but they still managed to organize anti-tank squads which could close with the Soviet tanks due to their lack of infantry support.</p><p>The Poles must drive back the Soviet tank attack using improvised anti-tank weapons such as grenades, bottles of gas or turpentine (molotov cocktails) and anti-aircraft guns. The young Soviet tank crews are inexperienced in urban warfare, have limited fuel, and minimal infantry support, but they must seize key sectors of Grodno. During the battle, Polish communist sympathizers rose up in support of the Soviets, joining them in battle.</p><p>The Poles managed to repel the initial Soviet attack on the 20th, disabling and destroying several tanks. The Soviets withdrew, but attacked again on the following day. The fight for control of the city center of Grodno turned into an intense close quarters battle. On Sept 22nd, the Soviets captured Grodno, while many Polish soldiers and civilians tried to escape to the Lithuanian border.</p>}
+  }
+  scenario{"coh poh13 - Clashing Sabers; The Cavalry Battle at Krasnobród"}{
+    dates{1939-09-23 / 1939-09-23}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Poland"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>A Polish cavalry group led by General Władysław Anders, composed of the “Kresowa”, “Nowogródzka” and “Wołyńska” cavalry brigades, was attempting to break through the German encirclement to the south during the Second Battle of Tomaszów Lubelski. General Anders’ men exploited a gap between the German 8th and 68th Infantry Divisions near the village of Krasnobród. On the morning of September 23rd, the “Nowogródzka” cavalry brigade broke through the German 8th Infantry Division’s perimeter units, moving into its flank and rear. The Polish penetration threatened the 8th Divisional Headquarters, so its commander, General Rudolf Koch-Erpach, ordered a counter-attack with his last reserves, the divisional cavalry unit - 17th Reiter Regiment.</p><p>The Polish 25th Uhlan regiment was dismounted when it broke through the German lines. The Poles supported the attack with artillery and heavy machine gun units. As the German line broke and soldiers began to flee, the Polish command ordered a mounted chase to catch and destroy the German infantry. Spearheading the Polish charge was the mounted 1st Uhlan squadron, supported by the dismounted 2nd Uhlan squadron that had been sent as a support force. The Poles had nearly overrun the opposing infantrymen, when they were counter-charged by the German 17th Reiter Regiment.</p><p>The engagement turned into a mounted cavalry skirmish of old, featuring many saber duels. The German cavalrymen held back the Poles until their foot soldiers had escaped into the cover of the buildings of Krasnobród. By this time, the 2nd Polish Uhlan squadron had arrived on the battlefield and began to pour machine gun fire into the German cavalry, forcing it to withdraw. The Poles regrouped, then attacked and overwhelmed the hastily prepared defenses in Krasnobród, surrounding the German 8th Division headquarters. General Koch-Erpach and many of his officers were captured. However, General Anders did not press his advantage. Instead, he ordered his troops to withdraw and retreat to the south. His cavalry group should have supported other Polish units in their breakout attempts, which could have led to the defeat of the German 8th Infantry Division and opened an escape route for many other Polish units.</p>}
+  }
+  scenario{"coh poh14 - End of the Line; The Battle of Krukienice"}{
+    dates{1939-09-27 / 1939-09-27}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Poland","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>After breaking through the German lines at the battle of Krasnobród, General Władysław Anders’ Cavalry Group was moving south to carry out its last order - to evacuate soldiers via the Romanian or Hungarian borders. Afterwards, they were to leave Poland themselves. The Ribbentrop - Molotov pact called for the withdrawal of German forces from eastern Poland, which were to be replaced by Soviet forces. A gap opened between the invading armies, which Anders’ cavalrymen slipped through, avoiding enemy opposition as they moved south. Their good fortune ended on Sept 27, when the exhausted Polish cavalrymen were confronted by the main body of the Soviet 4th Cavalry Corps.</p><p>Both cavalry forces began the engagement mounted, resulting in a very fluid and ever changing battlefield. There were numerous skirmishes between horse patrols, as both sides were surprised by sudden enemy appearances. The Soviet staff, expecting a mounted Polish attack, ordered their troops to dismount and adopt a defensive posture. The Poles, seeing the gathering Soviet forces supported by machine guns, tanks and artillery, ordered their soldiers to dismount and “dig in”, establishing a defensive perimeter in front of the village of Wola Sudkowska. When Soviet Kombrig (brigade commander) Cejtlin realized how weak the Poles were, he ordered his 34th Cavalry Division to begin a full scale assault.</p><p>The Poles do not have enough anti-tank weaponry and will not be able to withstand the increasing pressure of the Soviet tanks. The Poles must hold on to their objectives as long as possible, without losing all of their troops.</p><p>The Poles repulsed many attacks, but finally were defeated. There was no chance for the group to break through the masses of Soviet cavalry. By nightfall, the Polish cavalry group was scattered and had ceased to exist as a cohesive unit, as its soldiers tried to escape to the south in small groups. Two days later, General Anders was captured by the Soviets and sent to a Soviet prison. After the Germans invaded Russia in 1941, the Soviets charged General Anders with the task to organize a new Polish army in Russia. This partially organized army was eventually sent to the Middle East, where they were reorganized and resupplied by the Allies. The Poles participated in the invasion of Italy in 1944 and 1945. General Anders and his II Polish Army Corps’ most famous battle was their successful assault at Monte Cassino.</p>}
+  }
+  scenario{"coh poh15 - The Last Stand; The destruction of the Polish Border Defense Corps at Wytyczno"}{
+    dates{1939-10-01 / 1939-10-01}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Poland","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>The Polish Border Defense Corps was the only regular Polish defense on the eastern border on the day of the Soviet invasion. After a series of border fights, the Polish forces were concentrated under the command of General Wilhelm Orlik-Rückemann and designated the Border Defense Corps group. This group started to fight its way to the south-west through Soviet lines and towards the Hungarian border as ordered by the Polish General Staff.</p><p>They crossed the Bug river to rendezvous with the only remaining large Polish fighting unit - the Independent Operational Group (IOG) ”Polesie”. During their march, the Poles were pursued and finally caught by the Soviet 45th Rifles Division. The Poles were so exhausted that many soldiers refused to fight. The Polish commander, General Wilhelm Orlik-Rückemann, prepared a screening action with his last battleworthy units along a line drawn between two small villages. The western village, Wólka Wytycka, was held by troops of the “Sarny” battalion and was screened from the Soviets by Lake Wytyckie. The eastern village, Wytyczno, was held by troops of the “Polesie” battalion and lay on open ground. Behind this screen, columns of disorganized Polish Border Defense Corps soldiers were trying to continue their march away from Soviet pursuit and towards IOG “Polesie” positions.</p><p>The Soviets are attacking aggressively from the south, supported by artillery and tanks, while trying to flank the Poles from the east with their cavalry. The Poles must conserve their resources and try to hold back the large tank supported Soviet force as long as possible.</p><p>The Soviets managed to seize Wytyczno and Polish officers were unable to rally their soldiers to counter attack. In spite of this failure, the shielding action did manage to delay the Soviets long enough to permit the escape of many Polish units. Unable to continue the battle, the battered shielding force began to disband under the cover of darkness. The battle resulted in the destruction of the Polish Border Defense Corps as a viable fighting entity and allowed the Soviets to complete occupying the territory up to the Soviet - German demarcation line without any further significant resistance.</p>}
+  }
+  scenario{"coh poh16 - Tragedy of Victory; The Battle of Kock"}{
+    dates{1939-10-05 / 1939-10-05}
+    position{1 / 1}
+    range{800}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Russia"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Eickert, Uwe"}
+    description{<p>On Sept 9th, the Independent Operational Group “Polesie”, led by General Franciszek Kleeberg, was created to guard the Polesie area and the Brześć (Brest) fortress against German units (including Guderian’s XIX Corps) that had broken through the northern Polish defenses. It successfully managed to slow Guderian’s advance during the battles of Brześć (Sept 14-17) and Kobryń (Sept 16-18). On Sept 17th, General Kleeberg moved south to execute his orders to evacuate his men to Hungary and Romania. However, the rapid Soviet advance from the east cut off his southerly route and the group turned westwards to march towards Warsaw to help in the city’s defense. But Warsaw surrendered, so Kleeberg decided to march towards Dęblin, a major Polish Army supply depot, since his men needed ammunition and heavy equipment. Group “Polesie” successfully broke through Soviet lines at the battles of Jabłonów and Milanów (Sept 29-30). The Germans tracked the movement of this last large Polish formation and moved the XIV Motorized Corps, led by Gustav Anton von Wietersheim, to intercept it. After the capitulation of Warsaw on Sept 28 and the capitulation of Hel on Oct 1st, the Independent Operational Group “Polesie” was the last organized Polish fighting unit.</p><p>Near the city of Kock, the Polesie Group has been battling the German XIV Motorized Corps for 5 fierce days (Oct 1-5). On October 5th, as Hitler is celebrating a victory parade in Warsaw, the Poles are in the process of surrounding the German 13th Motorized Division, which has been isolated from the rest of its corps. The small village of Wola Gułowska is at the center of this engagement, where the fate of the battle of Kock will be determined. Both sides are attacking furiously, often engaging in hand to hand combat.</p><p>The position became perilous for the Germans as they were surrounded by the Polish cavalry. General Otto, commander of the 13th Motorized Division, ordered his soldiers to withdraw. The engagement was won by Poles, but all of their ammunition was spent, with no chance of resupply. On Oct 6, out of ammunition, out of supplies, and surrounded on all sides, General Kleeberg capitulated to the Germans. He was the last Polish general to surrender in the September Campaign.</p>}
+  }
+}
