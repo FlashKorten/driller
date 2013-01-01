@@ -26,6 +26,8 @@ DROP INDEX IF EXISTS dr_map_leader_index CASCADE;
 DROP INDEX IF EXISTS dr_map_leader_game_index CASCADE;
 DROP INDEX IF EXISTS dr_map_mechanic_index CASCADE;
 DROP INDEX IF EXISTS dr_map_mechanic_game_index CASCADE;
+DROP INDEX IF EXISTS dr_map_historical_victor_szenario CASCADE;
+DROP INDEX IF EXISTS dr_map_historical_victor_side CASCADE;
 DROP INDEX IF EXISTS dr_map_party_index CASCADE;
 DROP INDEX IF EXISTS dr_map_party_scenario_index CASCADE;
 DROP INDEX IF EXISTS dr_map_publisher_index CASCADE;
@@ -54,6 +56,7 @@ DROP TABLE IF EXISTS dr_map_series CASCADE;
 DROP TABLE IF EXISTS dr_map_special CASCADE;
 DROP TABLE IF EXISTS dr_map_side CASCADE;
 DROP TABLE IF EXISTS dr_map_theme CASCADE;
+DROP TABLE IF EXISTS dr_map_historical_victor CASCADE;
 DROP TABLE IF EXISTS dr_mechanic CASCADE;
 DROP TABLE IF EXISTS dr_party CASCADE;
 DROP TABLE IF EXISTS dr_leader CASCADE;
@@ -290,6 +293,18 @@ CREATE INDEX dr_map_side_index ON dr_map_side(id_side ASC);
 CREATE INDEX dr_map_side_scenario_index ON dr_map_side(id_scenario ASC);
 ALTER INDEX dr_map_side_index OWNER TO driller;
 ALTER INDEX dr_map_side_scenario_index OWNER TO driller;
+
+CREATE TABLE dr_map_historical_victor (
+  id_scenario integer NOT NULL REFERENCES dr_scenario(id),
+  id_side integer NOT NULL REFERENCES dr_side(id)
+);
+
+ALTER TABLE public.dr_map_historical_victor OWNER TO driller;
+
+CREATE INDEX dr_map_historical_victor_side ON dr_map_side(id_side ASC);
+CREATE INDEX dr_map_historical_victor_szenario ON dr_map_side(id_scenario ASC);
+ALTER INDEX dr_map_historical_victor_side OWNER TO driller;
+ALTER INDEX dr_map_historical_victor_szenario OWNER TO driller;
 
 CREATE TABLE dr_special (
   id integer PRIMARY KEY DEFAULT nextval('dr_special_id_seq'),

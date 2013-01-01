@@ -230,6 +230,11 @@ $sth_update_gametime_end->finish();
 
 sub insert_simple_field {
   my ($id_game, $label, $value, $mapped_to) = @_;
+  &insert_field($id_game, $label, $label, $value, $mapped_to);
+}
+
+sub insert_field {
+  my ($id_game, $label, $map_name, $value, $mapped_to) = @_;
   unless ($value) {
     return;
   }
@@ -251,7 +256,7 @@ sub insert_simple_field {
     } else {
       $tmpFoo[$i] = $selectResult;
     }
-    $insertQuery = "INSERT INTO dr_map_$label (id_" . $mapped_to . ", id_$label) VALUES (?,?);";
+    $insertQuery = "INSERT INTO dr_map_$map_name (id_" . $mapped_to . ", id_$label) VALUES (?,?);";
     $insertStatement = $dbh -> prepare($insertQuery);
     $insertStatement -> execute($id_game, $tmpFoo[$i]);
     $insertStatement -> finish();
@@ -308,6 +313,7 @@ sub insert_simple_field_for_scenario {
   &insert_simple_field($scenario_id,      "side",    $game{$game_id}{'scenario'}{$scenario_name}{"side"},                   "scenario");
   &insert_simple_field($scenario_id,      "leader",  $game{$game_id}{'scenario'}{$scenario_name}{"leader"},                 "scenario");
   &insert_simple_field($scenario_id,      "special", $game{$game_id}{'scenario'}{$scenario_name}{"special"},                "scenario");
+  &insert_field($scenario_id,      "side", "historical_victor", $game{$game_id}{'scenario'}{$scenario_name}{"victor"},      "scenario");
   &insert_field_with_attribute_in_map($scenario_id, "party",   $game{$game_id}{'scenario'}{$scenario_name}{"party"},   "num_players", "scenario");
 }
 
