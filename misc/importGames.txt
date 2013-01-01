@@ -3568,22 +3568,132 @@
 
 26459 {
   title{"PQ-17 - Arctic Naval Operations"}
-  description{<p>Description</p>}
-  publisher{"GMT Games"-"www.gmtgames.com"}
-  engine{"Cyberboard"-"www."}
+  description{<p>PQ-17 is a two-player game of WWII naval-air conflict in Arctic waters. The Allied player moves convoys of much-needed war material to the Soviet ports of Murmansk and Archangelsk, while the Axis player seeks to interrupt this traffic. Most Operation scenarios depict the voyage of a historical convoy, usually with a convoy of empty merchantmen returning from North Russia as well. The Campaign Scenario allows players to re-create the critical period of March 1942 through the end of the year.</p>}
+  publisher{"GMT Games"-"http://www.gmtgames.com/p-126-pq-17.aspx"}
+  engine{"Vassal"-"http://www.gmtgames.com/vassal/PQ17v2.vmod.zip"}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice","Blocks","Fog of War","Card-Driven"}
   theme{"WW2","Naval"}
-  scenario{"PQ-17 - Arctic Naval Operations"}{
-    dates{1941-01-01 / 1943-12-31}
+  scenario{"pq1701 - PQ06: The Kriegsmarine's First Effort"}{
+    dates{1941-12-01 / 1941-12-31}
     position{1 / 1}
     range{300}
-    timescale{6}
+    timescale{12}
     players{2 / 2}
-    side{"Axis","Allies","Germans"}
+    side{"Axis","Allies","Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Janiec, Chris"}
+    description{<p>Five 'Narvik' destroyers of the Kriegsmarine's Flotilla 8 arrived in Kirkenes on 12 December 1941, with instructions to interdict the convoy traffic from Britain and Soviet shipping along the Murman coast. The Luftwaffe failed to locate PQ-6 in the near-total darkness, but four German DDs were at sea conducting a sweep as the convoy approached. Two British minesweepers sent out to meet the convoy were misidentified as Soviet destroyers, and HMS Speedy was damaged before the Germans broke off the engagement. Ju88s of KG30 subsequently hit the freighter Dekabrist with two dud bombs before it entered Murmansk -- a harbinger of things to come -- but the first Allied ship on the "Murmansk run" was not lost until U134 sank the freighter Waziristan of PQ-7A on 2 January.</p>}
+  }
+  scenario{"pq1702 - PQ12: Tirpitz's Narrow Escape"}{
+    dates{1942-03-01 / 1942-03-31}
+    position{1 / 1}
+    range{300}
+    timescale{12}
+    players{2 / 2}
+    side{"Axis","Allies","Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Janiec, Chris"}
+    description{<p>Brand-new battleship Tirpitz steamed to Trondheim in January 1942, followed by Admiral Scheer a month later. As air reconnaissance improved with the lengthening hours of daylight, the Germans were determined to put this reinforced surface force to use. Tirpitz and four destroyers sortied to intercept PQ-12 on 6 March and were sighted by a patrolling British submarine. Though already at sea, Adm. Tovey feared an Atlantic breakout and kept his Home Fleet too far west to intercept the German force before it reached the vicinity of the convoy. Fortunately for the Allies, snow and fog shielded both PQ-12 and homebound QP-8 from the Germans, who found and sank only the straggling freighter Ijora from the latter before turning back to Norway. Cued by Ultra, however, Albacore torpedo bombers from HMS Victorious were able to attack Tirpitz in the approaches to Narvik. Although Capt. Topp skillfully evaded all the weapons dropped, a concerned Hitler placed further restrictions on future empoyment of his heavy ships.</p>}
+  }
+  scenario{"pq1703 - PQ13: Equinoctial Gales"}{
+    dates{1942-03-01 / 1942-03-31}
+    position{1 / 1}
+    range{300}
+    timescale{12}
+    players{2 / 2}
+    side{"Axis","Allies","Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Janiec, Chris"}
+    description{<p>PQ-13 sailed from Hvalfj&ouml;rdur on 20 March 1942. Within a week, severe gales had dispersed the merchantmen, making them highly vulnerable before their questing escorts relocated them; Ju88 bombers sank two. German heavy ships were immobilized by lack of fuel, but three destroyers juined the hunt. Z26 sank the straggling SS Bateau, but was badly damaged by Trinidad and later sunk by Eclipse. In the process, Trinidad was hit by one of her own rogue torpedoes, and barely limped into Murmansk. U-boats sank two more freighters before the remainder reached port, but lost two of their own number in return: HMS Sharpshooter of QP-9's escort surprised, rammed, and sank U655, and U585 was mined</p><p>With the loss of over 25% of its ships, PQ-13 demonstrated the vulnerability of Arctic convoys once cohesion was lost. Nor were the ships safe even after they reached Russia, as bombers sank SS New Westminster City in Murmansk before she completed unloading, and one other freighter before she could return.</p>}
+  }
+  scenario{"pq1704 - Limping Home"}{
+    dates{1942-05-01 / 1942-05-31}
+    position{1 / 1}
+    range{300}
+    timescale{12}
+    players{2 / 2}
+    side{"Axis","Allies","Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Janiec, Chris"}
+    description{<p>On 23 February 1942, HMS Trident torpedoed the German cruiser Prinz Eugen as she transited to Norway in company with Admiral Scheer. Following temporary repairs in Trondheim, she was ready to return to Germany on 16 May in what the Germans dubbed Operation Zauberfl&ouml;te ('Magic Flute'). Destroyers Paul Jacobi and Z25, both due for refit and the latter damaged while attacking PQ-15, were included. Coincidentally, Trinidad had just completed her own temporary repairs (See Scenario PQ13), and sailed from the Kola Inlet for the United States on 13 May. Both forces faced heavy air attacks, but while the German vessels arrived in Kiel unscathed, a Ju88 of KG30 bombed Trinidad on 14 May as she was preoccupied with evading a torpedo attack. She sank that night.</p>}
+  }
+  scenario{"pq1705 - PQ16: The Gathering Storm"}{
+    dates{1942-05-01 / 1942-05-31}
+    position{1 / 1}
+    range{300}
+    timescale{12}
+    players{2 / 2}
+    side{"Axis","Allies","Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Janiec, Chris"}
+    description{<p>PQ-16 and QP-12 both sailed on 21 May 1942, and were screened for portions of their route by dense fog. U-boats made several attacks, but only U703 scored by sinking the freighter Syros. Then heavy pack ice forced PQ-16 farther south on 27 May, where better weather and the reduced range allowed German aircraft to attack in waves. The eastbound ships ran low on AA ammunition, and six merchantmen were sunk (five by KG30, one by KG26) and several others damaged. The longer daylight hours afforded the Luftwaffe opportunities it did not waste.</p>}
+  }
+  scenario{"pq1706 - PQ17: 'Convoy is to Scatter'"}{
+    dates{1942-07-01 / 1942-07-31}
+    position{1 / 1}
+    range{300}
+    timescale{12}
+    players{2 / 2}
+    side{"Axis","Allies","Germany"}
     party{"Axis"-"2","Allies"-"2"}
     author{"Janiec, Chris"}
     description{<p>Description</p>}
+  }
+  scenario{"pq1707 - PQ18: The 'Golden Comb'"}{
+    dates{1942-09-01 / 1942-09-30}
+    position{1 / 1}
+    range{300}
+    timescale{12}
+    players{2 / 2}
+    side{"Axis","Allies","Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Janiec, Chris"}
+    description{<p></p>}
+  }
+  scenario{"pq1708 - JW51B: Battle of the Barents Sea"}{
+    dates{1942-12-01 / 1942-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{12}
+    players{2 / 2}
+    side{"Axis","Allies","Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Janiec, Chris"}
+    description{<p></p>}
+  }
+  scenario{"pq1709 - JW55B: Battle of the North Cape"}{
+    dates{1942-01-01 / 1942-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{12}
+    players{2 / 2}
+    side{"Axis","Allies","Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Janiec, Chris"}
+    description{<p>Despite the dimished German air threat, the British again suspended convoys to and from North Russia after the passage of JW-53 in February 1943. Not coincidentally, battlecruiser Scharnhorst -- her mine damage incurred during the daring 'Channel Dash' of a year earlier finally repaired -- arrived in Trondheim on 10 March. The convoys did not resume until November, when the lenthening hours of darkness again provided cover.</p><p>The first three convoys faced only submarine opposition, but the Germans mounted Operation Ostfront ('Eastern Front') against JW-55B. Tirpitz was again out of action after a daring midget submarine attack in September (Operation Source). But assisted by U-boats and Bv138s, RAdm. Bey with Scharnhorst and 5 DDs sortied for what was hoped would be a decisive blow.</p><p>The resulting Battle of the North Cape was indeed decisive, but not as the Kriegsmarine planned. The Luftwaffe lost contact on Christmas afternoon in stormy weather, and further U-boat contact reports proved misleading. Bey's sweeping destroyers came within 8 miles of the convoy, but not only failed to find it but lost touch with the flagship. Alerted by Ultra and brilliantly handled, the covering British cruisers twice fended off Scharnhorst before following her as she retired towards Alta. Despite running low on fuel, Adm. Fraser brought Duke of York, Jamaica, and 4 destroyers east to intercept. Though taken by surprise, the faster and more weatherly Scharnhorst almost escaped, but a 14" shell severed a vital steam pipe and slowed her enough to be caught by the destroyers. Their daring torpedo attack slowed the battlecruiser further, and her fate was sealed. With her went the last hope of interdicting the traffic to North Russia by German heavy ships.</p>}
+  }
+  scenario{"pq1711 - Operation 'EF': Churchill's Costly Gesture"}{
+    dates{1941-08-01 / 1941-08-31}
+    position{1 / 1}
+    range{300}
+    timescale{12}
+    players{2 / 2}
+    side{"Axis","Allies","Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Janiec, Chris"}
+    description{<p>Motivated to somehow assist his new Soviet allies in the face of the German Barbarossa onslaught, Churchill ordered the Home Fleet to strike at Axis forces in northern Norway. The Royal Navy responded by mounting a Fleet Air Arm strike on the ports of Petsamo, Kirkenes, and Tromsø, but accomplished little in exchange for heavy casualties (described in the 7.2.3 Example of Play). Force K under RADM Philip Vian investigated settlements on Spitzbergen to ensure they were not under German control and destroyed a valuable German weather station on Bear Island, while HMS Adventure delivered a cargo of magnetic mines to Russia.</p>}
+  }
+  scenario{"pq1712 - QP15: Survivors' Return"}{
+    dates{1942-11-01 / 1942-11-30}
+    position{1 / 1}
+    range{300}
+    timescale{12}
+    players{2 / 2}
+    side{"Axis","Allies","Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Janiec, Chris"}
+    description{<p>With Tirpitz under repair and most of Luftflotte 5’s bombers called away to oppose the landings in North Africa, the British determined to sail the unloaded ships from Arkhangelsk before ice closed the White Sea. 29 ships sailed in QP-15 on 17 November, one missing departure with mechanical problems and one running aground. Eight U-boats lay in wait and Hipper was ready to intercept, but remained in port when air reconnaissance failed to locate the convoy. Three days at sea the convoy was scattered by a gale, and the German subs succeeded in sinking only two freighters before the rest reached safety. Two Soviet destroyers of the local escort were less fortunate; Baku’s hull cracked and part of her superstructure was torn away before she struggled into Murmansk, while Sokrushitelniy broke in two and foundered in the storm.</p>}
   }
 }
 
