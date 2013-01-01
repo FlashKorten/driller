@@ -46,7 +46,7 @@ my $importfile = shift @ARGV;
 
 open(READ_FROM_FILE,"< $importfile") or die "Couldn't open file $importfile\n";
 
-my $debug = 1;
+my $debug = 0;
 
 my %game;
 my $game_id;
