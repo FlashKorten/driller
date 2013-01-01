@@ -895,9 +895,10 @@
     timescale{1}
     players{2 / 2}
     author{"Borg, Richard"}
-    side{"Greek","Persia"}
-    party{"Greek"-"2","Persia"-"2"}
+    side{"Greece","Persia"}
+    party{"Greece"-"2","Persia"-"2"}
     leader{"Callimachus","Datis"}
+    victor{"Greece"}
   }
   scenario{"CnCA 0102 - Himera"}{
     description{<p>Phoenicia and Greece both colonized the western Mediterranean. Carthage unified the Punic cities into an empire, while the Syracuse rose to become the leading Greek city under its first Tyrant, Gelon. With Theron of Akragas, Gelon took control of Himera and drove out the former ruler, Terillus, in 483. King Hamilcar of Carthage, an ally and friend of Terillus, led an army to Sicily in 480 BC to restore him to power. Hamilcar established two camps to the west and southwest of Himera. As the armies skirmished outside the city, Gelon's raiders captured a message providing the date of arrival of a body of Greek cavarly reinforcing Hamilcar's army. A treacherous plan was hatched to substitute Gelon's own cavalry for these reinforcements. At dawn on the specified day, Gelon's horsemen entered the Punic sea-camp without raising any suspicion. They suddenly attacked, raising havoc and killing Hamilcar. Meanwhile the rest of Gelon's army launched a surprise attack against both camps. Most of the forces in the sea-camp were slaughtered but a successful counter-attack at the hill camp prevented the total destruction of the Carthaginian army. A peace treaty was signed between Syracuse and Carthage, which held for seven decades. Since Hamilcar's expedition coincided with the Xerxes' invasion, it was believed to be part of a coordinated assault on the Greek world.</p>}
@@ -919,9 +920,10 @@
     timescale{1}
     players{2 / 2}
     author{"Borg, Richard"}
-    side{"Greek","Persia"}
-    party{"Greek"-"2","Persia"-"2"}
+    side{"Greece","Persia"}
+    party{"Greece"-"2","Persia"-"2"}
     leader{"Pausanius","Mardonius"}
+    victor{"Greece"}
   }
   scenario{"CnCA 0104 - Leuctra"}{
     description{<p>Sparta's victory over Athens in the Peloponnesian War (431 - 404) cemented the reputation of her hoplites as the premier infantry force in the world. However, Spartan arrogance following this victory led to the outbreak of hostilities with her former ally, Thebes. In 371 King Cleombrotos of Sparta marched against Thebes. When he reached Leuctra he found the Theban army barred his way. The Spartans deployed in a long line with their allies on the left. Greek commanders traditionally placed their best troops on the right, and this wing usually led the attack. The brilliant Theban commander, Epaminondas,devised an innovative plan to mass his best men on the left in a 50-man deep phalanx. He intended to meet Spartan shock with super shock. Both sides sent their cavalry out and the Spartan horse were quickly defeated. Seeing his cavalry fail, Cleombrotos ordered his infantry to advance. Simultaneously, Epaminondas' massed left advanced against the Spartan right, while the rest of his army was ordered to hold back, in an oblique order. The Spartans were attempting to change formation to deal with the situation when the Sacred Band charged and hit them in mid-maneuver. Cleombrotos was killed and the massive weight of the Theban phalanx broke the Spartan line. Never before had Sparta experienced such a defeat, and Leuctra shattered the myth of Spartan military invincibility.</p>}
@@ -934,6 +936,7 @@
     side{"Theban","Spartan"}
     party{"Theban"-"2","Spartan"-"2"}
     leader{"Epaminondas","Cleombrotos"}
+    victor{"Theban"}
   }
   scenario{"CnCA 0105 - Mantinea"}{
     description{<p>Thebes' shocking victory at Leuctra (371) had ended the Spartan hegemony over Greece. Epaminondas then organized the Arcadian League of cities in the Peloponnesus, in order to counter-balance Sparta and ensure Theban supremacy. A division in the Arcadian league led Mantinea to ally with Sparta. Sparta's hereditary enemy, Athens, even joined in the alliance against Thebes. Epaminondas invaded in 362 to reassert Theban dominance. In a plain near Mantinea he encountered the enemy force fo 20,000 foot and 2,000 horse with the Mantineans on the right, Spartans in the center, and Athenians on the left. Epaminondas' force of 30,000 foot and 3,000 horse was deployed with massive depth on his left, the same tactic he had used successfully at Leuctra. The Thebans closed in on the Mantinean wing and then grounded arms as if not to battle this day. Once the Mantineans relaxed their guard, Epaminondas suddenly ordered the attack. The onslaught broke the Mantinean right flank, leading to the defeat of the entire Spartan army. Disastrously for Thebes, Epaminondas was killed in the closing moments of the battle. Sparta had been humbled again, but without her brilliant leader, Thebes was unable to maintain her hegemony over Greece. The ultimate result was a weakening of Greece that paved the way for the Macedonian conquest.</p>}
@@ -946,6 +949,7 @@
     side{"Theban","Spartan"}
     party{"Theban"-"2","Spartan"-"2"}
     leader{"Epaminondas","Agesilaus"}
+    victor{"Theban"}
   }
   scenario{"CnCA 0106 - Crocus Plain"}{
     description{<p>In 359 BC, Philip became king of Macedon. As a youth he had been a hostage in Thebes, where he observed the innovations of Epaminondas. Applying these lessons, Philip created a combined arms force of a maneuverable phalanx, cavalry and light troops. He re-armed his phalanx with 17-foot pikes instead of the usual 9-foot spears. Philip aggressively expanded Macedonian control which brought him into conflict with the Athenians. In 352, Philip turned southwest into Thessaly. The Greek Phocian army under Onomarchus arrived at Crocus Plain with 20,000 foot and 500 horse to stop him. Onomarchus deployed with his back to the Pagasaean Gulf. Philip with the same number of foot and 3,000 horse, attacked. Onomarchus' army fought with surprising resilience holding off the Macedonian phalanx until flanked by Philip's cavalry. The Phocian lines began to withdraw and then broke and fled to the sea where many tried to swim out to the Athenian fleet that had just arrived. Onomarchus died fighting, and Macedon now dominated all of Thessaly. Philip had demonstrated the superiority of a combined arms force against a traditional Greek hoplite army. The irresistible Macedonian expansion into Greek would continue.</p>}
@@ -955,9 +959,10 @@
     timescale{1}
     players{2 / 2}
     author{"Borg, Richard"}
-    side{"Macedonian","Phocian"}
-    party{"Macedonian"-"2","Phocian"-"2"}
+    side{"Macedonia","Phocian"}
+    party{"Macedonia"-"2","Phocian"-"2"}
     leader{"Philip II","Onomarchus"}
+    victor{"Macedonia"}
   }
   scenario{"CnCA 0107 - Granicus"}{
     description{<p>Alexander succeeded his father in 336 BC, and after securing control of Macedon and the other Greek states, he marched east to challenge the Persian Empire. He crossed the Hellespont into Asia with about 32,000 infantry and 5,100 cavalry. Darius III, emperor of Persia, did not act in time to prevent the crossing and ordered his Satraps (governors) and generals to assemble their forces near the Granicus River. The Persian cavalry were deployed along the bank and the infantry some distance to the rear. Alexander placed his heavy infantry in the center and light infantry and cavalry on the wings. Parmenio commanded the defensive left and Alexander the overloaded right. The initial Macedonian attack across the river was repulsed. Alexander then led the Companion cavalry in a ferocious assault on the Persian leaders who were now grouped closely together. Mithridates, Darius' nephew, struch the Macedonian king with a javelin, but Alexander slew him with a sword stroke. Phoesaces then managed to deliver a blow that split Alexander's helmet. As Alexander struck Rhoesaces down, Spithradates came from behind and raised his scimitar to finish off the Macedonian king. However, Alexander's bodyguard Cleitus struck the Persian noble with such power that he severed his arm. The death of these three leaders was too much for the Persian cavalry and they broke and fled. So did the Persian foot. Only the Greek mercenaries held their ground. When they asked for quarters, none was given, and they were butchered almost to the man. Asia Minor was now ripe for Macedonian conquest.</p>}
@@ -967,9 +972,10 @@
     timescale{1}
     players{2 / 2}
     author{"Borg, Richard"}
-    side{"Macedonian","Persia"}
-    party{"Macedonian"-"2","Persia"-"2"}
+    side{"Macedonia","Persia"}
+    party{"Macedonia"-"2","Persia"-"2"}
     leader{"Alexander","Mithridates","Phoesaces","Spithridates"}
+    victor{"Macedonia"}
   }
   scenario{"CnCA 0108 - Issus"}{
     description{<p>After the battle of Granicus River, Darius assembled a new army near Babylon while Alexander overran Asia Minor. Darius advanced into Syria to await the Macedonian invader. However, when Alexander's advance was delayed due to his illness, Darius maneuvered his forces around behind the Macedonian army and overran his supply base. Alexander turned to meet Darius at the Pinarus River. Darius' army was deployed defensively behind the river, with light-armed units on the hills on his left, Greek mercenaries in the center and the majority of his cavalry on his right under Narbazanes. Alexander took command of the Companion Cavalry on the right, deployed his phalanx in the center and sent the Thessalian cavalry under Parmenio to the left flank to hold out against the massed Persian horse. Alexander's advance was slow at first, but when he realized the Persian units in the hills were no threat, he ordered the charge toward the Greek mercenaries. The Macedonian phalanx initially had a tough time against Darius' Greek mercenaries, but Alexander broke through with his Companions and took the mercenaries in the flank. The Persian center rapidly collapsed and Darius fled the field. A fierce, evenly matched cavalry battle near the shore turned into a Persian rout when the horsemen saw Darius take flight. Persia had lost two armies, and Alexander now had access into the heart of the empire.</p>}
@@ -979,9 +985,10 @@
     timescale{1}
     players{2 / 2}
     author{"Borg, Richard"}
-    side{"Macedonian","Persia"}
-    party{"Macedonian"-"2","Persia"-"2"}
+    side{"Macedonia","Persia"}
+    party{"Macedonia"-"2","Persia"-"2"}
     leader{"Alexander","Darius III"}
+    victor{"Macedonia"}
   }
   scenario{"CnCA 0109 - Gaugamela"}{
     description{<p>Rather than pursue Darius after the victory at Issus (333), Alexander turned south to neutralize the Persian fleet. In a two-year campaign he captured Tyre and Gaza, and conquered Egypt. In 331, Alexander marched into Mesopotamia, intent on attacking Babylon. Darius had raised another army, strong in cavalry but lacking in good infantry. The two armies met on the plain of Gaugamela. Darius posted cavalry on the right and the left, and occupied the center with his Greek mercenaries, guard cavarly, elephants and chariots. Alexander placed the Thessalian horse on the left, while taking charge of the phalanx in the center and the Companions on the right in person. The Persian line extended well beyond both flanks of the Macedonian formation. To counter, Alexander moved diagonally as he advanced, refusing his left. Darius ordered his mounted troops forward. The Macedonian right managed to hold their attackers just long enough for Alexander to charge with his Companions and heavy infantry straight for Darius. Again, Darius turned and fled the field, but the battle was not quite over. The Macedonian left was still hard pressed by the Persian cavalry. Alexander wheeled about and charged with the Companions into the Persians, forcing them back. Soon the entire Persian army was in retreat. Gaugamela is one of the truly decisive battles of history, and marked the beginning of Alexander's great empire. This battle is also considered the classic example of pentration tactics.</p>}
@@ -991,9 +998,10 @@
     timescale{1}
     players{2 / 2}
     author{"Borg, Richard"}
-    side{"Macedonian","Persia"}
-    party{"Macedonian"-"2","Persia"-"2"}
+    side{"Macedonia","Persia"}
+    party{"Macedonia"-"2","Persia"-"2"}
     leader{"Alexander","Darius III"}
+    victor{"Macedonia"}
   }
   scenario{"CnCA 0110 - Jaxartes River"}{
     description{<p>By 329 BC Alexander had completed the subjugation of the eastern Persian satraps, and his army was building a new city, Alexandria Eschate, on the banks of the Jaxartes, to guard his north-eastern frontier. A Scythian force under their chief, Satraces, arrived on the opposite bank. The Scythian force was mostly horse-archers who were about to launch a major raid. Alexander decided to attack and defeat the barbarians to dissuade them from future raids. Alexander set up catapults to deal with the horse-archers during their potentially difficult river crossing. When the catapults opened fire, a number of Scythian horsemen were immediately struck down. The horse-archers cautiously backed away from the river. Alexander's troops quickly crossed en masse. Once safely across, he sent out a few units of horse and foot as bait. When the Scythians, as expected, had surrounded the Macedonian detachment, Alexander sent in the rest of his horse and light infantry to block their retreat so they could not avoid Alexander's heavy foot units. After some brief hand-to-hand fighting, Satraces was killed and the Scythians broke and fled. Although the bulk of the Scythian army escaped, they knew that the Macedonians could beat their tactics. Alexander had succeeded in forcing a victory against the swift steppe horse-archers where Cyrus the Great and Darius I had failed.</p>}
@@ -1003,9 +1011,10 @@
     timescale{1}
     players{2 / 2}
     author{"Borg, Richard"}
-    side{"Macedonian","Scythian"}
-    party{"Macedonian"-"2","Scythian"-"2"}
+    side{"Macedonia","Scythian"}
+    party{"Macedonia"-"2","Scythian"-"2"}
     leader{"Alexander","Satraces"}
+    victor{"Macedonia"}
   }
   scenario{"CnCA 0111 - Hydaspes"}{
     description{<p>Having gained control over all of the known civilized world, Alexander ventured into India in 326 BC. He met resistance from Porus at the River Hydaspes. Porus' large corps of 200 elephants thwarted all of Alexander's attempts to cross the river. Learning that a lare force was moving to reinforce Porus, Alexander decisively divided his army, and secretly crossed up-river with the majority of the Macedonian troops. Craterus remained in place with a large detachment to deceive the Indians. Upon receiving the startling news that Alexande had crossed the Hydaspes, Porus hurriedly turned his army to meet him in battle. Porus sent his chariots forward but these were quickly destroyed. Alexander then sent his cavalry to attack Porus' right wing and gained the flank of the Indian army, while his heavy infantry advanced to attack the elephants and bowmen. The elephants charged the phalanx and did great execution among the elite Macedonian infantry. Only the timely intervention of the light troops prevented greater loss. Porus, wounded six times, was captured and the remainder of his army routed. Porus so impressed Alexander with his bravery that he was allowed to retain his kingdom as a Macedonian vassal. The power of the elephants was not lost upon the Macedonian generals who fought at Hydaspes. They would go to great pains to obtain elephants of their own during the Wars of the Successors.</p>}
@@ -1015,9 +1024,10 @@
     timescale{1}
     players{2 / 2}
     author{"Borg, Richard"}
-    side{"Macedonian","India"}
-    party{"Macedonian"-"2","India"-"2"}
+    side{"Macedonia","India"}
+    party{"Macedonia"-"2","India"-"2"}
     leader{"Alexander","Porus"}
+    victor{"Macedonia"}
   }
   scenario{"CnCA 0112 - Hellespont"}{
     description{<p>Alexander's death in 323 BC threw his empire into a state of political and military turmoil, with his generals and governors claiming independent kingdoms as his "Successors" (the Diadochia). Perdiccas inherited the main Macedonian army and the title 'regent of the Asiatic Empire.' A coalition of other successors formed against him. An army under Craterus was sent to Asia to confront Perdiccas and his allies. Perdiccas sent Eumenes and Neoptolemus with an army to the Hellespont to prevent Craterus from crossing into Asia. Neoptolemus, jealous of Eumenes, deserted with a few hundred horse and joined forces with Craterus. After crossing, when Craterus and Eumenes met, each had around 20,000 infantry but Craterus' phalanx of veteran Macedonians was superior. Eumenes relied on his more numerous cavalry. Both sides stationed their phalanx in the center and cavalry on the wings. Craterus, commanding the right wing, charged at the onset. He was slain, and his cavalry scattered. On the other wing, Neoptolemus confronted Eumenes, and in single combat, Neoptolemus was killed. Craterus' infantry, by now surrounded and leaderless, surrendered. Eumenes invited the defeated Macedonians to join him. They agreed, but took off by night to rejoin Antipater, the regent of Greece and Macedonia. The Battle of the Hellespont removed two contenders, but the War of the Successors would go on for another 40 years.</p>}
@@ -1030,6 +1040,7 @@
     side{"Craterus' Successor Army","Eumenes' Successor Army"}
     party{"Craterus' Successor Army"-"2","Eumenes' Successor Army"-"2"}
     leader{"Craterus","Eumenes"}
+    victor{"Eumenes"}
   }
   scenario{"CnCA 0113 - Paraitacene"}{
     description{<p>By 318 BC the Successors had formed two competing alliances: the 'Royalists' who claimed to fight to maintain the empire for Alexander's infant sons, and a rival coalition that sought to claim their own independent kingdoms. The opposing Successor Armies in Asia -- one commanded by Antigonus, the other by Eumenes -- met in battle at Paraitacene in 317 BC. Antigonus was by now the most powerful of the Diadochi, controlling most of Anatolia and the eastern satrapies. Eumenes had the backing of Alexander's heirs and a large war chest, though the fact that he was a Greek and not a Macedonian was a major handicap. Antigonus fielded 28,000 infantry and 11,000 horse. Eumenes' force of 35,000 foot and 6,000 horse included the veteran Silver Shields who had fought with distinction in all of Alexander's campaigns. The battle opened with Antigonus' light horse attacking Eumenes right. This attack was wrecked by Eumenes' heavy cavalry. Meanwhile in the center, the Silver Shields drove back Antigonus' phalanx. Antigonus' army was on the ropes when he pulled off a stroke that evened the score. He charged through a gap and was successful in routing Eumenes' left flank. Both sides at this point were exhausted and returned to their camps. Antigonus claimed victory but realistically the battle was a draw and a final resolution would be at Gabiene, a year later.</p>}
@@ -1054,6 +1065,7 @@
     side{"Antigonus' Successor Army","Eumenes' Successor Army"}
     party{"Antigonus' Successor Army"-"2","Eumenes' Successor Army"-"2"}
     leader{"Antigonus","Eumenes"}
+    victor{"Antigonus"}
   }
   scenario{"CnCA 0115 - Ipsus"}{
     description{<p>By 309 BC, all of Alexander's heirs had been executed. The Successors ended the pretense of fighting for the restauration of the empire, and proclaimed themselves kings. With the most powerful army of all the contenders, Antigonus made a bid to reunify the empire under his dominion in 302 BC. The other four Diadochi kings had formed an alliance to stop him. The allies met Antigonus' army near Ipsus. The armies were evenly matched in foot, with the allies superior in horse and greatly superior in elephants. As the battle began, Antigonus' cavalry charged against one of Seleucus' cavalry wings, routing it. Unfortunately, the Antigonid cavalry pursued too far, and then could not re-enter the battle because they were blocked by Seleucid elephants. This left Antigonus' phalanx unsupported as the allied phalanx charged forward. Overwhelmed, Antigonus was killed and his phalanx broken. The remaining horse and some of the foot escaped, along with a young general who would make his presence felt later -- Pyrrhus. With three kings and three future kings present, this had truly been "the Battle of the Kings." The 81-year old Antigonus had never before lost a battle. His defeat and death brought an end to the first phase of the Successor Wars and dashed any hope that the empire would be reunified.</p>}
@@ -1066,6 +1078,7 @@
     side{"Antigonus' Successor Army","Seleucus' Successor Army"}
     party{"Antigonus' Successor Army"-"2","Seleucus' Successor Army"-"2"}
     leader{"Antigonus","Seleucus","Lysimachus"}
+    victor{"Seleucus' Successor Army"}
   }
   scenario{"CnCA 0116 - Heraclea"}{
     description{<p>As a youth, Pyrrhus of Epirus served as a lieutenant under the Diadochi, including Demetrius and Ptolemy. In 297 BC he regained his ancestral kingdom, and went on to seize the throne of Macedon. By 284 he was driven out of Macedon, and looking for new adventures. When Rome threatened expansion in southern Italy, Pyrrhus accepted an invitation from Tarentum to lead their fight in 281 BC. His campaign started badly when his invasion army of 25,000 foot, 3,000 horse and 20 elephants was scattered in its sea crossing, and he discovered a "wait and see" attitude among his erstwhile Greek allies in Italy. Pyrrhus needed a quick victory to change their attitude. Laevinus moved south to deal with the Epirote invader with a Roman army of two legions and allies -- about 25,000 men. Both armies met near the river Siris. Pyrrhus could not prevent the Romans from crossing. In the early stage of the battle the Romans were getting the best of it, when Pyrrhus played his trump card and sent forward the elephants. No Roman soldier had seen one before and they were too much for the foot and cavalry alike. The Roman rout was on. There is little doubt the elephants were the key to Pyrrhus' victory, but it had been a bloody and hard-fought battle -- 7,000 Romans and 4,000 Greeks were left on the field. The victory swelled Pyrrhus' ranks with new allies, but Rome was far from beaten.</p>}
@@ -1078,6 +1091,7 @@
     side{"Epirote","Rome"}
     party{"Epirote"-"2","Rome"-"2"}
     leader{"Pyrrhus","Consular Valerius Laevinus"}
+    victor{"Epirote"}
   }
   scenario{"CnCA 0117 - Asculum"}{
     description{<p>Pyrrhus of Epirus nearly doubled the size of his army after the victory at Heraclea wih Greeks, Samnites and Lucanians flocking to his standard. After absorbing the new recruits, Pyrrhus set off towards Rome. His advance was stopped at Asculum by the two Roman Consuls Decius and Sulpicius, and their army of four legions and allies. Both sides had around 40,000 men, but Pyrrhus had the advantage in cavarly and, of course, his elephants. After a day of skirmishing in rough terrain, the two armies lined up at daybreak on level ground. What followed was a straight-forward Legion versus Phalanx battle. During the battle Pyrrhus failed to envelope the Roman flanks. After a hard fight in the center, the Romans were driven back once again by his elephants. Pyrrhus, at the forefront of the fighting, was wounded, preventing him from exploiting his victory. Over 6,000 Romans had been slain, but Pyrrhus had lost 3,500 of his men, mostly irreplaceable veterans and many of his officers. Pyrrhus reportedly exclaimed after the battle "One more such victory and I shall be lost!" giving rise to the term "Pyrrhic Victory." The path to Rome was still guarded by other armies, and the Romans refused to negotiate a peace treaty. Discouraged, Pyrrhus accepted an offer from Syracuse to lead the Sicilian Greeks in their war with Carthage in 278 BC.</p>}
@@ -1090,6 +1104,7 @@
     side{"Epirote","Rome"}
     party{"Epirote"-"2","Rome"-"2"}
     leader{"Pyrrhus","Consul Decius","Consul Suplicius"}
+    victor{"Epirote"}
   }
   scenario{"CnCA 0118 - Beneventum"}{
     description{<p>After the battle of Asculum, Pyrrhus left Italy for a three-year campaign in Sicily. Although he defeated the Carthaginians in every battle, he could not drive them off the island. Pyrrhus decided to return to Italy. Years of attrition and a naval defeat on his way back to Italy had greatly weakened his army. However, upon his return, his reputation brought thousands of new recruits out to join him. With 20,000 infantry, 3,000 cavalry and 20 elephants, Pyrrhus once again marched on Rome. Consul Manius Curius Dentatus gathered his army of about 20,000 foot and 2,000 horse and set up camp near Beneventum to await the Epiote army. Pyrrhus decided on a surprise night attack, but some of his detachments got lost. It was morning before he could organize his scattered forces near the Roman camp. Dentatus led his forces out and drove back Pyrrhus' vanguard. As the Roman attack continued it was in turn driven back by Pyrrhus' skillful use of his elephants. However, a second Roman assault stampeded the elephants into the Macedonian phalanx. Dentatus struck while the phalanx was disordered and broke it, winning the battle. Pyrrhus withdrew from the field with what was left of his army and returned to Epirus, never to return to Italy. Beneventum was the final pivotal battle in the Roman Republic's bid for control of the entire Italian peninsula, and the first great victory of the legion over the phalanx.</p>}
@@ -1102,6 +1117,7 @@
     side{"Epirote","Rome"}
     party{"Epirote"-"2","Rome"-"2"}
     leader{"Pyrrhus","Consul Manius Curius Dentatus"}
+    victor{"Rome"}
   }
   scenario{"CnCA 0119 - Raphia"}{
     description{<p>The Wars of the Successors led to the establishment of three Hellenistic Kingdoms: the Antigonids (Macedon), the Ptolemies (Egypt) and the Seleucids (from Asia Minor to India). The Seleucid Empire began to fragment, losing Judea and most of its eastern provinces and parts of Asia Minor. Antiochus III became ruler at the age of eighteen in 223 BC, and immediately began restoring his empire. In 217 he retook Judea and marched on Egypt with 62,000 foot, 6,000 horse and 103 elephants. Ptolemy IV, with a much smaller army, enrolled native Egyptians into his Greek phalanx, to bring his numbers up to 70,000 infantry, 6,000 cavalry and 73 elephants. The two armies met at Raphia on the Egyptian frontier. Both armies deployed with their phalanx in the center and cavalry on the wings. Antiochus began the battle by charging forward with his right wing cavalry and breaking Ptolemy's left. The young Antiochus impetuously pursued the fleeing cavalry before him. Meanwhile, the Egyptian right swung forward into action and defeated its counterpart. With both wings wheeling in opposite directions, Ptolemy ordered his center to attack. Surprisingly, the Egyptian phalanx got the best of the veteran Seleucids and Antiochus' entire army broke and fled. Antiochus withdrew, and Ptolemy recovered Judea. Despite this defeat, Antiochus went on to re-conquer his lost provinces and restore the great Seleucid Empire. Ptolemy, on the other hand, soon faced a major rebellion led by the Egyptian soldiers he had trained for the phalanx.</p>}
@@ -1114,6 +1130,7 @@
     side{"Ptolemaic","Seleucid"}
     party{"Ptolemaic"-"2","Seleucid"-"2"}
     leader{"Ptolemy","Antiochus"}
+    victor{"Ptolemaic"}
   }
   scenario{"CnCA 0120 - Cynoscephalae"}{
     description{<p>Victory in the Second Punic War (218 - 201 BC) established Rome as the dominant power in the Western Mediterranean. Since Philip V of Macedon had allied with Hannibal during that war, Rome had a score to settle. Rome used complaints from Rhodes and Pergamum about Macedonian aggression as a pretext to invade. The Senate sent Flaminius with two legions and some Greek allies for a showdown with Philip in 197 BC. This bould be the first contest between the Roman legion and a true Macedonian phalanx (Pyrrhus' phalanx had been composed of Epirotes, and Hannibal's of many nationalities). The two armies were nearly identical in size, with around 23,000 infantry and 2,000 cavalry each. The battle would be won by the superior tactical system, not weight of numbers. Still, the hilly Greek terrain at Cynoscephalae did favor the legion. The two armies were marching on opposite sides of a ridgeline and met unexpectedly in the early morning mist. A skirmish began between light troops, and Philip decided to commit his entire army. Philip took command of the right wing and successfully attacked the Roman left. Flaminius seized the initiative and launched an attack spearheaded by elephants on the left flank phalanx, breaking it before it was fully deployed. Each army's right wing was now victorious. An unknown Roman tribune, 'seeing what ought to be done' detached some maniples from the Roman right to strike the flank of the victorious Macedonaian right wing phalanx. Philip's phalanx was shattered in a textbook example of flexibility versus rigidity. philip's hopes to unite the Greeks under Macedonian hegemony ended with his defeat.</p>}
@@ -1123,9 +1140,10 @@
     timescale{1}
     players{2 / 2}
     author{"Borg, Richard"}
-    side{"Macedonian","Rome"}
-    party{"Macedonian"-"2","Rome"-"2"}
+    side{"Macedonia","Rome"}
+    party{"Macedonia"-"2","Rome"-"2"}
     leader{"Philip V","Consul Lucius Quinticus Flaminius"}
+    victor{"Rome"}
   }
   scenario{"CnCA 0121 - Magnesia"}{
     description{<p>Following his defeat at Raphia, Antiochus III campaigned continuously to restore his empire. He re-conquered Asia Minor, Armenia, Parthia and Bactria. Next, he avenged Raphia with a decisive victory over the Ptolemaic Egyptians at Panion in 199 BC. By these victories he earned the title 'the Great'. Meanwhile, Macedon's defeat at Cynoscephalae in 197 BC left a power vacuum in Greece. Antiochus, seeing an opportunity, invaded Greece, but Rome quickly drove him back. A Roman consular army under Lucius Cornelius Scipio pursued Antiochus to Asia Minor. Antiochus accepted the Roman challenge near Magnesia. Antiochus fielded a large army featuring his Greco-Macedonian phalanx, Galatian warriors, cataphracts, chariots and elephants. The Romans had two legions supported by Greek and Pergamene allies under their king Eumenes II. Though the Seleucid Army was larger, the Roman legionnaires, veterans of the war with Hannibal, were far more effective soldiers. The action started on the Roman right when Eumenes launched a combined skirmisher and cavalry force against the Seleucid chariots. The Legions then moved forward against the Seleucid phalanx. Seeing his army giving away, Antiochus charged forward with his heavy cavalry in an attempt to turn the tide. He broke through the Roman right, but was forced back by the Roman elephants before he could flank the Legions. Then the Seleucid elephants in the center stampeded, Antiochus' phalanx collapsed, and his entire army routed. Antiochus managed to escape and later make peace with Rome by yielding Asia Minor and paying a large indemnity. However, the defeat led to the rebellion of his eastern provinces, and Antiochus' life's work was undone. Rome emerged as the dominant Mediterranean power.</p>}
@@ -1138,6 +1156,7 @@
     side{"Seleucid","Rome"}
     party{"Seleucid"-"2","Rome"-"2"}
     leader{"Antiochus III","Consul Lucius Cornelius Scipio"}
+    victor{"Rome"}
   }
 }
 
@@ -2283,6 +2302,7 @@
     side{"Argive","Sparta"}
     party{"Argive"-"2","Sparta"-"2"}
     leader{"Pheidon","Unknown"}
+    victor{"Argive"}
   }
   scenario{"CnCA 0602 - Thyreatis (Battle of 300 Champions)"}{
     description{<p>Sparta and Argos were quarreling over Thyreatis, a territory which was occupied by Sparta, but belonged to Argos. The Argives marched out to recover their land, but instead of engaging in battle, the two armies agreed that rather than commit full armies, 300 of the best men from each side would fight it out to determine a victor. After a bloody contest, only three men remained, two Argives and one Spartan. The Argives claimed victory because of their numerical superiority and returned to their army. The Spartan also claimed victory, since their man was the last on the battlefield. The Argives sent their entire Hoplite army forward to settle the argument. An equally determined Spartan army met them. After heavy losses on both sides, the Spartans emerged victorious.</p>}
@@ -2295,6 +2315,7 @@
     side{"Argive","Sparta"}
     party{"Argive"-"2","Sparta"-"2"}
     leader{"Unknown"}
+    victor{"Sparta"}
   }
   scenario{"CnCA 0603 - Sepeia"}{
     description{<p>Cleomenes I of Sparta, inspired by the words of the oracle at Delphi that he would take Argos, marched into Argive territory. It was here that the Argive army took up a defensive position. The Argive generals wanted to be forewarned of any Spartan attack, so they instructed their herald to listen to orders issued by the Spartan herald and then to repeat them to the Argive camp. Cleomenes realized what was happening and ordered his army to ignore the next meal call and charge the enemy instead. The Argives were taken by surprise and those who were not killed in the assault fled to the Sacred Grove. The Spartan army then marched to Argos. but a female poet named Fetesilla rallied the women and children to defend the city walls. After an initial attack the Spartans withdrew, as there was no honor in defeating women.</p>}
@@ -2307,6 +2328,7 @@
     side{"Argive","Sparta"}
     party{"Argive"-"2","Sparta"-"2"}
     leader{"Unknown","Cleomenes I of Sparta"}
+    victor{"Sparta"}
   }
   scenario{"CnCA 0604 - Thermopylae (Middle Gate)"}{
     description{<p>King Xerxes desired to punish the Athenians for his father's defeat at Marathon and their support for Ionian revolts. He planned a second invasion of Greece in 480 BC and amassed a huge army to extend the Persian Empire into Europe. Several Greek city-states gathered around Athens and Sparta, and decided to slow the Persian advance at the narrow pass of Thermopylae. The Oracle at Delphi had announced that Sparta would either be destroyed or lose a King. Leonidas, one of the two Kings, chose the latter, leading 300 Spartansand other Greeks to one of History's most famous last stands. Xerxes waited four days for the small Greek force to leave. Then, for two and a half days he unleashed his army, wave after wave, against the Greek Hoplites who stood firm. The Persians did not prevail until Ephialtes betrayed the Greeks by revealing a goat path that led behind their lines. Dismissing the rest of the army, Leonidas fought to the death with his Spartans. Their epitaph reads: "Go tell the Spartans, stranger passing by, that here obedient to their laws we lie". While a tactical victory, the heavy losses and the delay, inflicted by just a few hundred Greeks, was a significant blow to the Persian morale. In September, the Greeks defeated the Persians at the naval battle of Salamis and Xerxes, fearful of being trapped in Europe, returned to Asia with part of his army.</p>}
@@ -2319,6 +2341,7 @@
     side{"Persia","Sparta"}
     party{"Persia"-"2","Sparta"-"2"}
     leader{"Xerxes","Leonidas"}
+    victor{"Persia"}
   }
   scenario{"CnCA 0605 - Thermopylae (Grand Overview)"}{
     description{<p>King Xerxes desired to punish the Athenians for his father's defeat at Marathon and their support for Ionian revolts. He planned a second invasion of Greece in 480 BC and amassed a huge army to extend the Persian Empire into Europe. Several Greek city-states gathered around Athens and Sparta, and decided to slow the Persian advance at the narrow pass of Thermopylae. The Oracle at Delphi had announced that Sparta would either be destroyed or lose a King. Leonidas, one of the two Kings, chose the latter, leading 300 Spartans and other Greeks to one of History's most famous last stands. Xerxes waited four days for the small Greek force to leave. Then, for two and a half days he unleashed his army, wave after wave, against the Greek Hoplites who stood firm. The Persians did not prevail until Ephialtes betrayed the Greeks by revealing a goat path that led behind their lines. Dismissing the rest of the army, Leonidas fought to the death with his Spartans. Their epitaph reads: "Go tell the Spartans, stranger passing by, that here obedient to their lays we lie". While a tactical victory, the heavy losses and the delay, inflicted by just a few hundred Greeks, was a significant blow to the Persian morale. In September, the Greeks defeated the Persians at the naval battle of Salamis and Xerxes, fearful of being trapped in Europe, returned to Asia with part of his army.</p>}
@@ -2331,6 +2354,7 @@
     side{"Persia","Sparta"}
     party{"Persia"-"2","Sparta"-"2"}
     leader{"Xerxes","Leonidas"}
+    victor{"Persia"}
   }
   scenario{"CnCA 0606 - Plataea"}{
     description{<p>The Persian emperor Xerxes I led a massive invasion of Greece to avenge the defeat of his father's forces at Marathon. After annihilating the 300 Spartans at Thermopylae, Xerxes captured and burned Athens. Macedon, Thessaly and Boeotia submitted to Xerxes. However, following the loss of the Persian fleet at Salamis (480), Xerxes withdrew to Asia and left Mardonius with half of the Persian land forces to continue the subjugation of Greece. Amid much bickering, an allied Greek army was formed under the Spartan Pausanias, and moved to oppose the Persians. The Greeks were always careful to stay in terrain that negated the Persian cavalry. The Persian cavalry attacked anyway, but their commander Masistias was killed. Ceasing direct combat, the Persian cavalry began raiding effectively, poisoning the Greek's water supply and destroying a large Greek baggage train. Short of water and food, Pausanias ordered a night withdrawal, but only the allies in the center did so. The Spartan right and Athenian left were both still standing fast at first light. Mardonius ordered an advance to exploit his perceived advantage, and attacked the Athenian units on the Greek left wing. It was a fierce onslaught that prevented the Athenians from moving to assist the Spartans who were being pressed hard on the right. Holding back until the omens were right, the Spartans were finally ordered to charge, routing all before them and killing Mardonius. The sight of Persians retreating unnerved Artabazus'forces and they also fled the field. The victory at Plataea meant the Persian threat to Greece was effectively ended.</p>}
@@ -2341,8 +2365,9 @@
     players{2 / 2}
     author{"Borg, Richard"}
     side{"Persia","Greece"}
-    party{"Persia"-"2","Greek"-"2"}
+    party{"Persia"-"2","Greece"-"2"}
     leader{"Mardonius","Pausanias"}
+    victor{"Greece"}
   }
   scenario{"CnCA 0607 - Mycale"}{
     description{<p>In the spring of 479 BC, various Ionian cities began a revolt against their Persian rulers, and soon were forced to turn to the Greek mainland for help. A meeting was called in Athens, and a Greek fleet of 110 ships set sail from Delos under the command of the Spartan King Leotychides. The Persians, no longer confident after the crushing naval defeat at Salamis, dismissed their Phoenician naval contingent and moved the remainder of the fleet to Mycale, where they joined forces with the army that Xerxes had led back to Asia. The Greeks expected a naval battle, but when they approached the Persian camp, they found the ships beached and the Persian army in combat formation. The Athenians, under Xanthippus, landed on the beach and during their advance found a herald's scepter. Believing it was a divine sign that the Greeks had been victorious at Plataea, they charged forward without the Spartans. The Spartans had landed at another site and were still marching around the flank through the hills. The Persians repelled the Athenian assaults for a time, but eventually the Athenians manage to burst through to the Persian camp. The battle continued with no side certain of victory until the arrival of the Spartans, and the desertion of the Ionian Greeks, who joined in the attack on the Persians. The Persian army turned and fled to the mountains. Mycale ended the Persian Wars and the Greek cities in Asia were accepted into a league with Athens.</p>}
@@ -2355,6 +2380,7 @@
     side{"Persia","Greece"}
     party{"Persia"-"2","Greece"-"2"}
     leader{"Tigranes","Leotychides"}
+    victor{"Greece"}
   }
   scenario{"CnCA 0608 - Tanagra"}{
     description{<p>The First Peleponnesian War (460-445 BC) broke out due to Megara's defection from the Spartan alliance, and Spartan envy and fear over the growth of the Athenian Empire. Nicomedes marched an army into Boeotia in 457 BC to intervene in a dispute between the Dorians and Phocians. He forced the Phocians to accept terms, but while he was in Doris an Athenian Fleet moved into position to block his return across the Corinthian Gulf. Athens, then sent out an army to meet the Spartans, and the two forces meet outside Tanagra. The Athenians brought a large contingent of Hoplites supplemented by a number of allies. The total number given by Thucydides is 14,000 plus a small contingent of Thessalian cavalry. The allied Spartan army consisted of 1,500 Spartans and 10,000 allied soldiers. According to Thucydides, the Thessalian cavalry joined the Spartan side during the battle, and the Spartans and their allies wore down and broke the Athenians. Both armies suffered heavy losses, but the Spartans won the battle and opened the way back home. This was the first major land battle of the war and began a pattern of Spartan dominance on land.</p>}
@@ -2367,6 +2393,7 @@
     side{"Athens","Sparta"}
     party{"Athens"-"2","Sparta"-"2"}
     leader{"Myronides","Nicomedes"}
+    victor{"Sparta"}
   }
   scenario{"CnCA 0609 - Olpae"}{
     description{<p>During the Second, or Great, Peleponnesian War (431 - 404 BC) the Athenians recognized their inferiority to Sparta in land warfare, and chose to fight with proxy forces and at sea. Nevertheless, there were many small battles, and the clash at Olpae is representative. In 426, the Spartan general Eurylochus was operating in western Greece with a small force of Hoplites. He convinced the Ambraciots to invade Amphilokia, and their forces joined him at Olpae. in response, the Amphilokians called on their allies and the nearby Athenian fleet under Demosthenes. Demosthenes only had a small force, but was chosen to be the strategos, or commander, of the allied army. Eurylochus deployed with his Peleponnesians on the left and Ambraciots on the right. Demosthenes countered with his Messenians on the right, Arcanians in the center and Amphilokians on the left. Seeing that his army was badly outnumbered, Demosthenes extended his left wing with light troops and posted a picket force in hiding to ambush the Spartan right. When the lines clashed, Demosthenes sprung his ambush and routed the Peleponnesians, killing Eurylochus. Meanwhile, the Ambraciots also routed the Athenian left, but Demosthenes was able to keep his victorious wing in good order and attacked these troops, completing his victory. This victory recharged Demoshtenes' career, but gained little for Athens.</p>}
@@ -2379,6 +2406,7 @@
     side{"Athens","Sparta"}
     party{"Athens"-"2","Sparta"-"2"}
     leader{"Demosthenes","Eurylchus"}
+    victor{"Athens"}
   }
   scenario{"CnCA 0610 - Sphacteria"}{
     description{<p>After the Battle of Pylos, a force of Spartan soldiers was isolated on the island of Sphacteria. Demosthenes,commanding the force at Pylos, initially planned to starve the Spartans out, but it became clear over time that the Spartans would be able to hold out. He requested reinforcements from Athens. Cleon, with an Athenian expeditionary force, landed and moved inland, harassing the Spartans with missile fire whenever they attempted to advance to battle. The frustrated Spartans withdrew to the northern end of the island, where they waited behind their fortifications.A stalemate took place for some time, until an Athenian force burst into the Spartan rear using a route along the island's shore that had been left unguarded because of its roughness. The Spartans abandoned their defenses after Epitadas, their commander, was killed. Styphon, now in command, ordered his surrounded men to throw down their shields and surrender. The mystique of Spartan invincibility was shattered.</p>}
@@ -2391,6 +2419,7 @@
     side{"Athens","Sparta"}
     party{"Athens"-"2","Sparta"-"2"}
     leader{"Demosthenes","Epitades"}
+    victor{"Athens"}
   }
   scenario{"CnCA 0611 - Delium"}{
     description{<p></p>}
@@ -2403,6 +2432,7 @@
     side{"Athens","Boeotia"}
     party{"Athens"-"2","Boeotia"-"2"}
     leader{"Hippocrates","Pagondas"}
+    victor{"Boeotia"}
   }
   scenario{"CnCA 0612 - Amphipolis"}{
     description{<p>In 424 BC, the Spartan general Brasidas led an army toward Thrace to threaten the only accessible part of the Athenian Empire. He reached Thrace and offered generous terms to the people of Amphipolis, who surrendered without a fight. In 423 BC, Athens and Sparta signed a truce, hoping to exchange Amphipolis for the Spartan hostages of Sphacteria, but Brasidas, against the wishes of the Spartan regime, continued to support the rebellion in the area. Athens ended the truce and sent Cleon with an army to recover Amphipolis. Brasidas would not emerge from the city for battle. Frustrated by the apparent Spartan timidity, Cleon began to move his troops back to Eion. Brasidas waited till the Athenian left wing marched past the South Gate, and with his best men charged out of the city, while Clearidas, his subordinate, emerged from the Thracian Gate with the rest of the Spartan army. The Athenians on the left wing fled to Eion, while those on the right fought bravely against Clearidas. Cleon was killed during the battle, and Brasidas mortally wounded. Athens agreed to stop the war and signed the Peace of Nicias in 421 BC. Sparta recovered their hostages and Athens the towns captured by Brasidas. Both sides would have time to prepare for the final phase of the war.</p>}
@@ -2427,6 +2457,7 @@
     side{"Argos","Sparta"}
     party{"Argos"-"2","Sparta"-"2"}
     leader{"Laches","King Agis II"}
+    victor{"Sparta"}
   }
   scenario{"CnCA 0614 - Anapus River"}{
     description{<p>In 415 BC Athens and Sparta were still under the Peace of Nicias, when the Sicilian city of Segesta requested help from Athens in their war against Selinus. Some Athenians saw this as an opportunity to take over all of Sicily,Syracuse, and even Carthage. Against his wishes, Nicias was elected general to lead the Sicilian Expedition. The Athenians used a double agent to trick the Syracusan army into marching to Catana, and when they took the bait, landed unopposed south of the Anapus River. There they took up a strong defensive position. When the Syracusans returned and found the Athenians waiting, they made camp for the night, intending to fight the next day. The Athenians, in a surprise move, attacked at dawn across the river. The unprepared Syracusan soldiers formed up as best they could in the short time before the Athenian force made contact. The Athenians used the river to guard their left as they advanced, and placed their light troops on the wings to fight off the Syracusan cavalry. Despite the greater depth of the Syracusan phalanx, the superior discipline and experience of the Athenians carried the day. However, they could not undertake an aggressive pursuit and score a decisive victory due to the lack of cavalry. It was a tactical victory without a strategic result. The Athenians sailed back to Catana for the winter, while the Syracusans prepared fot a siege and sent to Corinth and Sparta for help.</p>}
@@ -2439,6 +2470,7 @@
     side{"Athens","Syracuse"}
     party{"Athens"-"2","Syracuse"-"2"}
     leader{"Nicias","Hermocrates"}
+    victor{"Athens"}
   }
   scenario{"CnCA 0615 - Phyle"}{
     description{<p>Following Athens' defeat in the Peleponnesian War, the victorious Spartans imposed an oligarchic government on the city which became known as the Thirty Tyrants. Late in 404, Thrasybulus, leading a force of Athenian exiles, gathered at Phyle near Mount Parnes. The Thirty Tyrants, to keep watch on the exiles and prevent them from raiding the countryside, dispatched a Spartan force from Athens. The Spartan force was not expecting any trouble and set up camp. However, Thrasybulus, whose force of exiles had grown in numbers, attacked the Spartan camp. The attack caught the Spartan force in the midst of waking up and a total rout ensued. The defeated Spartans fled back to Athens and the victorious exiles returned to Phyle.</p>}
@@ -2451,6 +2483,7 @@
     side{"Athenian Exiles","Sparta"}
     party{"Athenian Exiles"-"2","Sparta"-"2"}
     leader{"Thrasybulus","Callibus"}
+    victor{"Athenian Exiles"}
   }
   scenario{"CnCA 0616 - Munychia"}{
     description{<p>Thrasybulus and the Athenian exiles marched from Phyle to the port city of Piraeus. The next day, oligarchic forces under the command of Critias, one of the Thirty Tyrants, marched out to meet them. Thrasybulus had taken a defensive position on Mount Munychia, but when Critias men advanced towards the hill, the Athenian exiles charged down the hill and broke the oligarchic line of the Thirty before the Spartans could come forward. After the defeat, a new government was elected and the Thirty Tyrants fled to Eleusis.</p>}
@@ -2463,6 +2496,7 @@
     side{"Athenian Exiles","Sparta"}
     party{"Athenian Exiles"-"2","Sparta"-"2"}
     leader{"Thrasybulus","Critias"}
+    victor{"Athenian Exiles"}
   }
   scenario{"CnCA 0617 - Piraeus"}{
     description{<p>After the Thirty were deposed, the new government, although more moderate, was not ready to compromise with the Athenian exiles, who now held the Athenian port of Piraeus. The new government sent emissaries to Sparta, and Sparta sent Pausanias at the head of an army to resolve the situation. When Pausanias ordered the exiles to disperse, they refused. The following day, an Athenian exile force of light troops attacked the Spartans. Pausanias responded and ordered his cavalry and light troops forward with his Spartan Hoplites in support. The Athenian lights held for a time, giving Thrasybulus the opportunity to bring forward his Hoplites. The Spartan Hoplites engaged them and the exiles were defeated. After winning the battle, Pausanias suggested the government in Athens and the exiles talk. In time, the new government arranged a settlement between the oligarchs and the exiles that reunified Athens.</p>}
@@ -2475,6 +2509,7 @@
     side{"Athenian Exiles","Sparta"}
     party{"Athenian Exiles"-"2","Sparta"-"2"}
     leader{"Thrasybulus","Pausanius"}
+    victor{"Sparta"}
   }
   scenario{"CnCA 0618 - River Centrites"}{
     description{<p>After the battle of Cunaxa, the Ten Thousand chose Cheirisophus and Xenophon as leaders. Xenophon led an organized retreat through Carducia and Armenia toward the Black Sea, constantly harassed first by Persian armies and then by local tribes. Using part of his men, Xenophon created a small cavalry force and a body of archers to meed the tactics of the enemy. He reported the whole expedition in his Anabasis. Approaching the River Centrites, Xenophon found that the satrap of Armenia had occupied the far bank. The situation was desparate, but the next morning a better ford higher up the river was found, and to it the Spartans marched. The Carducians followed closely in pursuit. Cheirisophus began to cross, while Xenophon, made a feint to move back to the lower ford. The Armenians responded to the feint, which allowed Cheirisophus to gain a foothold on the other shore. Xenophon retraced his steps and made preparations to follow. The Carducians, saw their opportunity and began to attack the Greeks before they could cross. When most of the troops were over, Xenophon turned and charged the Carducians and they were dispersed. Then, before they could recover, he retired Trapezus, on the Black Sea. A few years later, Alexander would read the Anabasis and follow Xenophon's advice: Persia belongs to the man who has the courage to attack it...</p>}
@@ -2487,6 +2522,7 @@
     side{"Armenia","Carducian","Sparta"}
     party{"Armenian/Carducian"-"2","Sparta"-"2"}
     leader{"Unknown","Xenophon"}
+    victor{"Sparta"}
   }
   scenario{"CnCA 0619 - Nemea"}{
     description{<p>After the Theban victory at the battle of Haliartus, Athens, Thebes, Corinth and Argos joined together in an anti-Spartan alliance. Aristodemus was sent north to challenge the alliance and the two armies met neat the dry riverbed of Nemea. The Spartan army fielded about 18,000 Hoplites and lined up with the Spartans on the right and their Peleponnesian allies on the left. The coalition forces were made up of about the same number of Hoplites with the Athenians opposite the Spartans, while the Boeotians were on the right of the coalition line. As the lines advanced, both lines shifted to the right and when the two met each line extended past the opponents left flank, which meant that both right flanks overlapped the enemy line and were victorious. The Spartans, instead of pursuing the Athenians, quickly turned to the center and defeated the other coalition forces one by one.</p>}
@@ -2499,6 +2535,7 @@
     side{"Greece","Sparta"}
     party{"Greece"-"2","Sparta"-"2"}
     leader{"Unknown","Aristodemus"}
+    victor{"Sparta"}
   }
   scenario{"CnCA 0620 - Coronea"}{
     description{<p>After the battle of Nemea, Agelilaus was moving south into Boeotia with an army of helots and veterans of the Ten Thousand, reinforced by some Spartan regiments and other allies. The coalition forces lined up to oppose him at Coronea. As at Nemea, both right wings were victorious, with the Thebans on the right breaking through, while the rest of the coalition forces fled to Mount Helicon. Agesilaus, assumed the battle was over when news came that the Thebans were at the baggage train, ransacking the loot taken from Asia. He immediately wheeled his Spartan forces around and headed for the Thebans. The Thebans, seeing that their allies had fled, formed up and attempted to break through the Spartans and join the rest of their army. What followed was one of the worst blood baths in the history of Hoplite battles. In the end, only a few Thebans made it to Mount Helicon.</p>}
@@ -2511,6 +2548,7 @@
     side{"Greece","Sparta"}
     party{"Greece"-"2","Sparta"-"2"}
     leader{"Unknown","Agelilaus"}
+    victor{"Sparta"}
   }
   scenario{"CnCA 0621 - Lechaeum"}{
     description{<p>The Spartan commander at Lechaeum, honoring the tradition of the Amyclaeans in his army to return to their city of Amyclae to celebrate a religious festival, marched an escort force of Hoplites and cavalry past Corinth. After successfully leading his force well past the city of Corinth, the Spartan commander ordered his Hoplites to return to Lechaeum, while the cavalry continued on with the Amyclaeans. Iphicrates, who commanded the light troops in Corinth, seeing that the Spartan Hoplite force was unprotected by light infantry or cavalry, decided to attack the Spartans as they marched past the city. The Spartan commander ordered some of his men to charge the Athenians, but the slow heavily-armed Hoplites could not make contact. When the Spartans turned to return to their lines, the Athenian lights fell upon them again flinging spears, and inflicting casualties. This process was repeated several times, with similar results. Unable to drive off the Athenians, the Spartans were forced back to the hills which proved to be a bitter blow to Spartan pride.</p>}
@@ -2523,6 +2561,7 @@
     side{"Athens","Sparta"}
     party{"Athens"-"2","Sparta"-"2"}
     leader{"Iphicrates","Unknown"}
+    victor{"Athens"}
   }
   scenario{"CnCA 0622 - Tegyra"}{
     description{<p>In 379 BC, an insurrection ejected the Spartan garrison at Thebes, and the city set about reestablishing its control over the Boeotian League. After several years, the Thebans succeeded in driving Spartan garrisons out of every city in Boeotia, except Orchomenus. In 375 BC, Pelpidas set out with the Sacred Band and a small force of cavalry to seize Orchomenus. However, learning that a sizable force had been dispatched from Sparta to reinforce the garrison there, Pelopidas retreated. Before the Thebans could reach safety, they encountered the Spartan reinforcements. The Spartan fielded over 1,000 men; the Thebans, only 300. Plutarch reports that one Theban soldier, upon seeing the enemy force, said to Pelopidas "We are fallen into our enemies' hands", to which he replied "And why not they into ours?" Pelopidas then ordered the Theban cavalry to charge, while the infantry formed up into a dense formation. When the two forces came together, the compact Theban formation broke through the Spartan line and then turned to attack the Spartans to either side. The Spartan force broke and fled. The Theban victory had little immediate military significance. However, it marked the first occasion on which a Spartan formation had been defeated by a force of equal of lesser size in a set battle.</p>}
@@ -2535,6 +2574,7 @@
     side{"Thebes","Sparta"}
     party{"Thebes"-"2","Sparta"-"2"}
     leader{"Pelopidas","Gorgoleon"}
+    victor{"Thebes"}
   }
   scenario{"CnCA 0623 - Leuctra"}{
     description{<p>Sparta's victory over Athens in the Peleponnesian War (431 - 404) cemented the reputation of her hoplites as the premier infantry force in the world. However, Spartan arrogance following this victory led to the outbreak of hostilities with their former ally, Thebes. In 371 King Cleombrotos of Sparta marched against Thebes. When he reached Leuctra he found the Thegan army barred his way. The Spartans deployed in a long line with their allies on the left. Greek commanders traditionally placed their best troops on the right, and this wing usually led the attack. The brilliant Theban commander, Epaminondas, devised an innovative plan to mass his best men on the left in a 50-man deep phalanx. He intended to use this mass to break through the famed Spartan phalanx. Both sides sent their cavalry out and the Spartan horse were quickly defeated. Seeing his cavalry fail, Cleombrotos ordered his infantry to advance. Simultaneously, Epaminondas' massed left advanced against the Spartan right, while the rest of his army was ordered to hold back, in an oblique order. The Spartans were attempting to change formation to deal with the situation when the Sacred Band charged and hit them in mid-maneuver. Cleombrotos was killed and the massive weight of the Theban phalanx broke the Spartan line. Never before had Sparta experienced such a significant defeat, and Leuctra ended the era of Spartan military invincibility.</p>}
@@ -2547,6 +2587,7 @@
     side{"Thebes","Sparta"}
     party{"Thebes"-"2","Sparta"-"2"}
     leader{"Epaminondas","Cleombrotos"}
+    victor{"Thebes"}
   }
   scenario{"CnCA 0624 - Mantinea"}{
     description{<p>Thebes' shocking victory at Leuctra in 371 had ended the Spartan hegemony over Greece. Epimondas then organized the Arcadian League of cities in the Peleponnesus, in order to counter-balance Sparta and ensure Theban supremacy. A division in the Arcadian league led Mantinea to ally with Sparta. Sparta's hereditary enemy, Athens, even joined in the alliance against Thebes. Epaminondas invaded in 362 to reassert Theban dominance. In a plain near Mantinea he encountered the enemy force of 20,000 foot and 2,000 horse with the Mantineans on the right, Spartans in the center, and Athenians on the left. Epaminondas' force of 30,000 foot and 3,000 horse was deployed with massive depth on his left, the same tactic he had used successfully at Leuctra. The Thebans closed in on the Mantinean wing and then grounded arms as if not to battle this day. Once the Mantineans relaxed their guard, Epaminondas suddenly ordered the attack. The onslaught broke the Mantinean right flank, leading to the defeat of the entire Spartan army. Disastrously for Thebes, Epaminondas was killed in the closing moments of the battle. Sparta had been humbled again, but without her brilliant leader, Thebes was unable to maintain her hegemony over Greece. The ultimate result was a weakening of Greece that paved the way for the Macedonian conquest.</p>}
@@ -2559,6 +2600,7 @@
     side{"Thebes","Sparta"}
     party{"Thebes"-"2","Sparta"-"2"}
     leader{"Epimondas","Agesilaus"}
+    victor{"Thebes"}
   }
   scenario{"CnCA 0625 - Chaeronea"}{
     description{<p>Philip II gained the throne of Macedon in 359 BC and re-organized his army into a combined arms force. He then set on a long diplomatic and military campaign to dominate the Greek city-states. In 338, Athens and Thebes allied and took up a position at Chaeronea. Philip soon arrived to accept the challenge. Both armies numbered about 30,000 men. The Athenians were on the left under Chares, allies held the center, the Thebans stood on the right under Theagenes and the Sacred Band held the extreme right. Philip commanded the Macedonian right wing, placed his heavy phalanx in the center, and allies and mercenaries on the left with his son Alexander and the Companion Cavalry. Philip began the battle by withdrawing his right wing, provoking an advance by the Athenians. The Thebans advanced next and began to make headway, but Alexander led a furious cavalry charge and surrounded the Sacred Band. Meanwhile Philip ended his feigned retreat and assaulted the Athenians, who quickly broke. Once the Sacred Band had been eliminated, Alexander rolled up the Theban flank completing the Macedonian victory. Following this battle, nearly all the Greek cities (save Sparta) were forced to join the League of Corinth and accept Macedonian hegemony.</p>}
@@ -2568,9 +2610,10 @@
     timescale{1}
     players{2 / 2}
     author{"Borg, Richard"}
-    side{"Macedon","Greece"}
-    party{"Macedon"-"2","Greece"-"2"}
+    side{"Macedonia","Greece"}
+    party{"Macedonia"-"2","Greece"-"2"}
     leader{"Philip II","Chares","Theagenes"}
+    victor{"Macedonia"}
   }
   scenario{"CnCA 0626 - Megalopolis"}{
     description{<p>Sparta had stood on the sidelines while Athens and Thebes battled Macedon at Chaeronea. As the Macedonian army plunged ever deeper into Asia, King Agis III sensed an opportunity to regain the hegemony of Greece for Sparta. Agis began secret negotiations with the Persians and obtained funding for a rebellion. in 331 the Macedonian army was stretched thin - Alexander was advancing into Mesopotamia, Antigonus was fighting an insurrection in Phrygia and Antipater, the strategos of Europe, was quelling a revolt in Thrace. Agis chose this opportune moment to attack Megalopolis, but Antipater quickly subdued the Thracians and headed south to face the upstart Spartans. Agis commanded 20,000 foot and 2,000 cavalry while Antipater had about 30,000 men. Agis's numerical inferiority convinced Agis to lift the siege and maneuver to a constricted battlefield. When the two armies clashed, Agis's Spartans broke through the Macedonian line at first, and his mercenaries drove back their opponents. Antipater brought up his reserves and stabilized his line. There was fierce fighting around the Spartan king and when Agis was slain, his army collapsed. The power of Sparta was broken for a century, and Alexander's home base was secure as he headed further east.</p>}
@@ -2580,9 +2623,10 @@
     timescale{1}
     players{2 / 2}
     author{"Borg, Richard"}
-    side{"Macedon","Sparta"}
-    party{"Macedon"-"2","Sparta"-"2"}
+    side{"Macedonia","Sparta"}
+    party{"Macedonia"-"2","Sparta"-"2"}
     leader{"Antipater","Agis III"}
+    victor{"Macedonia"}
   }
 }
 
