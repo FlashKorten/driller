@@ -138,7 +138,7 @@ allUpToRangesQuery = "SELECT range           FROM dr_scenario GROUP BY range    
 
 scenarioListQuery :: JoinMap -> [Parameter] -> Query
 scenarioListQuery joinMap pList = foldl' mappend prefix parts
-             where prefix = "SELECT id FROM dr_scenario AS s"
+             where prefix = "SELECT s.id FROM dr_scenario AS s"
                    parts = DL.toList $ DL.append (DL.fromList joins) (DL.fromList $ " WHERE 1=1":wheres)
                    (joins, wheres) = unzip $ map (getParameterQuery joinMap) pList
 
@@ -176,14 +176,14 @@ parameterList = [ "author"
 
 joinList, whereIncludeList, whereExcludeList :: [Query]
 joinList = [ " JOIN dr_map_author    AS author    ON s.id = author.id_scenario"
-           , " JOIN dr_map_side      AS side      ON s.id = side.id_scenario"
-           , " JOIN dr_map_party     AS party     ON s.id = party.id_scenario"
-           , " JOIN dr_map_leader    AS leader    ON s.id = leader.id_scenario"
            , " JOIN dr_map_publisher AS publisher ON s.id_game = publisher.id_game"
            , " JOIN dr_map_theme     AS theme     ON s.id_game = theme.id_game"
            , " JOIN dr_map_genre     AS genre     ON s.id_game = genre.id_game"
            , " JOIN dr_map_mechanic  AS mechanic  ON s.id_game = mechanic.id_game"
+           , " JOIN dr_map_side      AS side      ON s.id = side.id_scenario"
+           , " JOIN dr_map_party     AS party     ON s.id = party.id_scenario"
            , " JOIN dr_map_series    AS series    ON s.id_game = series.id_game"
+           , " JOIN dr_map_leader    AS leader    ON s.id = leader.id_scenario"
            , " JOIN dr_map_engine    AS engine    ON s.id_game = engine.id_game"
            , ""
            , ""
