@@ -110,7 +110,7 @@ CREATE TABLE dr_game (
   id integer PRIMARY KEY,
   title varchar(255) NOT NULL DEFAULT '',
   subtitle varchar(255) NOT NULL DEFAULT '',
-  description varchar(2000) NOT NULL DEFAULT '',
+  description varchar(4096) NOT NULL DEFAULT '',
   gametime_start date,
   gametime_end date
 );
@@ -149,7 +149,7 @@ CREATE TABLE dr_scenario_data (
   id_scenario integer PRIMARY KEY REFERENCES dr_scenario(id),
   title varchar(255) NOT NULL DEFAULT '',
   subtitle varchar(255) NOT NULL DEFAULT '',
-  description varchar(2000) NOT NULL DEFAULT '',
+  description varchar(4096) NOT NULL DEFAULT '',
   gametime_start date,
   gametime_end date,
   latitude double precision,
@@ -301,8 +301,8 @@ CREATE TABLE dr_map_historical_victor (
 
 ALTER TABLE public.dr_map_historical_victor OWNER TO driller;
 
-CREATE INDEX dr_map_historical_victor_side ON dr_map_side(id_side ASC);
-CREATE INDEX dr_map_historical_victor_szenario ON dr_map_side(id_scenario ASC);
+CREATE INDEX dr_map_historical_victor_side ON dr_map_historical_victor(id_side ASC);
+CREATE INDEX dr_map_historical_victor_szenario ON dr_map_historical_victor(id_scenario ASC);
 ALTER INDEX dr_map_historical_victor_side OWNER TO driller;
 ALTER INDEX dr_map_historical_victor_szenario OWNER TO driller;
 
