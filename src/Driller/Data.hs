@@ -27,6 +27,7 @@ module Driller.Data
     , fromInt
     , FromInt
     , JoinMap
+    , JoinComponentMap
     , MarkExclusive
     , markExclusive
     ) where
@@ -97,10 +98,11 @@ data Scenario = Scenario { getScenarioId       :: Int
                          , getScenarioUpToYear :: Int
                          }
 
-type Parameter    = (Text.Text, Int)
-type ParameterMap = HM.HashMap Text.Text Int
-type Answer       = Either ParameterError GameResult
-type JoinMap      = HM.HashMap Text.Text (Query, Query, Query)
+type Parameter        = (Text.Text, Int)
+type ParameterMap     = HM.HashMap Text.Text Int
+type Answer           = Either ParameterError GameResult
+type JoinMap          = HM.HashMap Text.Text (Query, Query, Query)
+type JoinComponentMap = HM.HashMap Text.Text Query
 
 instance ToJSON Answer where
   toJSON (Left e)  = toJSON e

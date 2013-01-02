@@ -59,7 +59,7 @@ module Driller.DB.Queries
     , allScenariosQuery
     ) where
 
-import Driller.Data ( JoinMap, Parameter )
+import Driller.Data ( JoinMap, JoinComponentMap, Parameter )
 import Database.PostgreSQL.Simple ( Query )
 import Data.Monoid ( mappend )
 import Data.List ( foldl' )
@@ -154,9 +154,9 @@ getParameterQuery joinMap (key, value) = (j, w)
 initJoinMap :: JoinMap
 initJoinMap = HM.fromList $ prepareList parameterList joinList whereIncludeList whereExcludeList
 
-prepareList :: [Text] -> [Query] -> [Query] -> [Query] -> [(Text, (Query, Query, Query))]
-prepareList (p:ps) (j:js) (wi:wis) (we:wes) = (p, (j, wi, we)) : prepareList ps js wis wes
-prepareList _ _ _ _                         = []
+prepareList :: [Text] -> JoinComponentMap -> JoinComponentMap -> JoinComponentMap -> [(Text, (Query, Query, Query))]
+prepareList (p:ps) j w1 w2 = (p, (j HM.! p, w1 HM.! p, w2 HM.! p)) : prepareList ps j w1 w2
+prepareList _ _ _ _        = []
 
 parameterList :: [Text]
 parameterList = [ "author"
@@ -178,60 +178,60 @@ parameterList = [ "author"
                 , "upToRange"
                 ]
 
-joinList, whereIncludeList, whereExcludeList :: [Query]
-joinList = [ " JOIN dr_map_author    AS author    ON s.id = author.id_scenario"
-           , " JOIN dr_map_publisher AS publisher ON s.id_game = publisher.id_game"
-           , " JOIN dr_map_theme     AS theme     ON s.id_game = theme.id_game"
-           , " JOIN dr_map_genre     AS genre     ON s.id_game = genre.id_game"
-           , " JOIN dr_map_mechanic  AS mechanic  ON s.id_game = mechanic.id_game"
-           , " JOIN dr_map_side      AS side      ON s.id = side.id_scenario"
-           , " JOIN dr_map_party     AS party     ON s.id = party.id_scenario"
-           , " JOIN dr_map_series    AS series    ON s.id_game = series.id_game"
-           , " JOIN dr_map_leader    AS leader    ON s.id = leader.id_scenario"
-           , " JOIN dr_map_engine    AS engine    ON s.id_game = engine.id_game"
-           , ""
-           , ""
-           , ""
-           , ""
-           , ""
-           , ""
-           , ""
-           ]
+joinList, whereIncludeList, whereExcludeList :: JoinComponentMap
+joinList = HM.fromList[ ("author",    " JOIN dr_map_author    AS author    ON s.id      = author.id_scenario")
+                      , ("publisher", " JOIN dr_map_publisher AS publisher ON s.id_game = publisher.id_game")
+                      , ("theme",     " JOIN dr_map_theme     AS theme     ON s.id_game = theme.id_game")
+                      , ("genre",     " JOIN dr_map_genre     AS genre     ON s.id_game = genre.id_game")
+                      , ("mechanic",  " JOIN dr_map_mechanic  AS mechanic  ON s.id_game = mechanic.id_game")
+                      , ("side",      " JOIN dr_map_side      AS side      ON s.id      = side.id_scenario")
+                      , ("party",     " JOIN dr_map_party     AS party     ON s.id      = party.id_scenario")
+                      , ("series",    " JOIN dr_map_series    AS series    ON s.id_game = series.id_game")
+                      , ("leader",    " JOIN dr_map_leader    AS leader    ON s.id      = leader.id_scenario")
+                      , ("engine",    " JOIN dr_map_engine    AS engine    ON s.id_game = engine.id_game")
+                      , ("game",      "")
+                      , ("latitude",  "")
+                      , ("longitude", "")
+                      , ("fromYear",  "")
+                      , ("upToYear",  "")
+                      , ("fromRange", "")
+                      , ("upToRange", "")
+                      ]
 
-whereIncludeList = [ " AND author.id_author       = ?"
-                   , " AND publisher.id_publisher = ?"
-                   , " AND theme.id_theme         = ?"
-                   , " AND genre.id_genre         = ?"
-                   , " AND mechanic.id_mechanic   = ?"
-                   , " AND side.id_side           = ?"
-                   , " AND party.id_party         = ?"
-                   , " AND series.id_series       = ?"
-                   , " AND leader.id_leader       = ?"
-                   , " AND engine.id_engine       = ?"
-                   , " AND s.id_game              = ?"
-                   , " AND s.latitude_trunc       = ?"
-                   , " AND s.longitude_trunc      = ?"
-                   , " AND NOT s.year_upto        < ?"
-                   , " AND NOT s.year_from        > ?"
-                   , " AND s.range               >= ?"
-                   , " AND s.range               <= ?"
-                   ]
+whereIncludeList = HM.fromList[ ("author",    " AND author.id_author       = ?")
+                              , ("publisher", " AND publisher.id_publisher = ?")
+                              , ("theme",     " AND theme.id_theme         = ?")
+                              , ("genre",     " AND genre.id_genre         = ?")
+                              , ("mechanic",  " AND mechanic.id_mechanic   = ?")
+                              , ("side",      " AND side.id_side           = ?")
+                              , ("party",     " AND party.id_party         = ?")
+                              , ("series",    " AND series.id_series       = ?")
+                              , ("leader",    " AND leader.id_leader       = ?")
+                              , ("engine",    " AND engine.id_engine       = ?")
+                              , ("game",      " AND s.id_game              = ?")
+                              , ("latitude",  " AND s.latitude_trunc       = ?")
+                              , ("longitude", " AND s.longitude_trunc      = ?")
+                              , ("fromYear",  " AND NOT s.year_upto        < ?")
+                              , ("upToYear",  " AND NOT s.year_from        > ?")
+                              , ("fromRange", " AND s.range               >= ?")
+                              , ("upToRange", " AND s.range               <= ?")
+                              ]
 
-whereExcludeList = [ " AND NOT EXISTS (SELECT id_scenario FROM dr_map_author    WHERE id_scenario = s.id AND id_author    = (-1 * ?))"
-                   , " AND NOT EXISTS (SELECT id_scenario FROM dr_map_side      WHERE id_scenario = s.id AND id_side      = (-1 * ?))"
-                   , " AND NOT EXISTS (SELECT id_scenario FROM dr_map_party     WHERE id_scenario = s.id AND id_party     = (-1 * ?))"
-                   , " AND NOT EXISTS (SELECT id_scenario FROM dr_map_leader    WHERE id_scenario = s.id AND id_leader    = (-1 * ?))"
-                   , " AND NOT EXISTS (SELECT id_game FROM dr_map_publisher WHERE id_game = s.id_game AND id_publisher = (-1 * ?))"
-                   , " AND NOT EXISTS (SELECT id_game FROM dr_map_theme     WHERE id_game = s.id_game AND id_theme     = (-1 * ?))"
-                   , " AND NOT EXISTS (SELECT id_game FROM dr_map_genre     WHERE id_game = s.id_game AND id_genre     = (-1 * ?))"
-                   , " AND NOT EXISTS (SELECT id_game FROM dr_map_mechanic  WHERE id_game = s.id_game AND id_mechanic  = (-1 * ?))"
-                   , " AND NOT EXISTS (SELECT id_game FROM dr_map_series    WHERE id_game = s.id_game AND id_series    = (-1 * ?))"
-                   , " AND NOT EXISTS (SELECT id_game FROM dr_map_engine    WHERE id_game = s.id_game AND id_engine    = (-1 * ?))"
-                   , " AND s.id_game             != (-1 * ?)"
-                   , " AND s.latitude_trunc       = ?"
-                   , " AND s.longitude_trunc      = ?"
-                   , " AND NOT s.year_upto        < ?"
-                   , " AND NOT s.year_from        > ?"
-                   , " AND s.range               >= ?"
-                   , " AND s.range               <= ?"
-                   ]
+whereExcludeList = HM.fromList [ ("author",    " AND NOT EXISTS (SELECT id_scenario FROM dr_map_author    WHERE id_scenario = s.id AND id_author         = (-1 * ?))")
+                               , ("side",      " AND NOT EXISTS (SELECT id_scenario FROM dr_map_side      WHERE id_scenario = s.id AND id_side           = (-1 * ?))")
+                               , ("party",     " AND NOT EXISTS (SELECT id_scenario FROM dr_map_party     WHERE id_scenario = s.id AND id_party          = (-1 * ?))")
+                               , ("leader",    " AND NOT EXISTS (SELECT id_scenario FROM dr_map_leader    WHERE id_scenario = s.id AND id_leader         = (-1 * ?))")
+                               , ("publisher", " AND NOT EXISTS (SELECT id_game     FROM dr_map_publisher WHERE id_game     = s.id_game AND id_publisher = (-1 * ?))")
+                               , ("theme",     " AND NOT EXISTS (SELECT id_game     FROM dr_map_theme     WHERE id_game     = s.id_game AND id_theme     = (-1 * ?))")
+                               , ("genre",     " AND NOT EXISTS (SELECT id_game     FROM dr_map_genre     WHERE id_game     = s.id_game AND id_genre     = (-1 * ?))")
+                               , ("mechanic",  " AND NOT EXISTS (SELECT id_game     FROM dr_map_mechanic  WHERE id_game     = s.id_game AND id_mechanic  = (-1 * ?))")
+                               , ("series",    " AND NOT EXISTS (SELECT id_game     FROM dr_map_series    WHERE id_game     = s.id_game AND id_series    = (-1 * ?))")
+                               , ("engine",    " AND NOT EXISTS (SELECT id_game     FROM dr_map_engine    WHERE id_game     = s.id_game AND id_engine    = (-1 * ?))")
+                               , ("game",      " AND s.id_game             != (-1 * ?)")
+                               , ("latitude",  " AND s.latitude_trunc       = ?")
+                               , ("longitude", " AND s.longitude_trunc      = ?")
+                               , ("fromYear",  " AND NOT s.year_upto        < ?")
+                               , ("upToYear",  " AND NOT s.year_from        > ?")
+                               , ("fromRange", " AND s.range               >= ?")
+                               , ("uptoRange", " AND s.range               <= ?")
+                               ]
