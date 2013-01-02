@@ -85,8 +85,12 @@ main = do
     getRouteWithParameter    "/longitudes/:id" $ DB.fetchLongitude conn
     getRouteWithoutParameter "/fromYears"      $ DB.fetchAllFromYears conn
     getRouteWithParameter    "/fromYears/:id"  $ DB.fetchFromYear conn
+    getRouteWithoutParameter "/fromYearsToc"      $ DB.fetchFromYearsToc conn
+    getRouteWithParameter    "/fromYearsToc/:id"  $ DB.fetchFromYearSection conn
     getRouteWithoutParameter "/upToYears"      $ DB.fetchAllUpToYears conn
     getRouteWithParameter    "/upToYears/:id"  $ DB.fetchUpToYear conn
+    getRouteWithoutParameter "/upToYearsToc"      $ DB.fetchUpToYearsToc conn
+    getRouteWithParameter    "/upToYearsToc/:id"  $ DB.fetchUpToYearSection conn
     getRouteWithoutParameter "/fromRanges"     $ DB.fetchAllFromRanges conn
     getRouteWithParameter    "/fromRanges/:id" $ DB.fetchFromRange conn
     getRouteWithoutParameter "/upToRanges"     $ DB.fetchAllUpToRanges conn

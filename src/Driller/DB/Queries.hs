@@ -79,6 +79,10 @@ module Driller.DB.Queries
     , publisherSectionQuery
     , themesTocQuery
     , themeSectionQuery
+    , fromYearsTocQuery
+    , fromYearSectionQuery
+    , upToYearsTocQuery
+    , upToYearSectionQuery
     ) where
 
 import Driller.Data ( JoinMap, JoinComponentMap, Parameter )
@@ -115,7 +119,7 @@ seriessQuery       = "SELECT d.id, d.series    FROM dr_series AS d    JOIN dr_ma
 sidesQuery         = "SELECT d.id, d.side      FROM dr_side AS d      JOIN dr_map_side AS m      ON m.id_side = d.id      WHERE m.id_scenario IN ? GROUP BY d.id, d.side      ORDER BY d.side"
 themesQuery        = "SELECT d.id, d.theme     FROM dr_theme AS d     JOIN dr_map_theme AS m     ON m.id_theme = d.id     JOIN dr_scenario AS s ON s.id_game = m.id_game WHERE s.id IN ? GROUP BY d.id, d.theme     ORDER BY d.theme"
 
-authorsTocQuery, genresTocQuery, seriesTocQuery, leadersTocQuery, gamesTocQuery, sidesTocQuery,
+authorsTocQuery, genresTocQuery, seriesTocQuery, leadersTocQuery, gamesTocQuery, sidesTocQuery, fromYearsTocQuery, upToYearsTocQuery,
  enginesTocQuery, mechanicsTocQuery, publishersTocQuery, partiesTocQuery, themesTocQuery :: Query
 authorsTocQuery    = "SELECT substring(author    FROM 1 FOR 1) AS author,    count(id) FROM dr_author    GROUP BY substring(author    FROM 1 for 1) ORDER BY author"
 enginesTocQuery    = "SELECT substring(engine    FROM 1 FOR 1) AS engine,    count(id) FROM dr_engine    GROUP BY substring(engine    FROM 1 for 1) ORDER BY engine"
@@ -128,8 +132,10 @@ publishersTocQuery = "SELECT substring(publisher FROM 1 FOR 1) AS publisher, cou
 seriesTocQuery     = "SELECT substring(series    FROM 1 FOR 1) AS series,    count(id) FROM dr_series    GROUP BY substring(series    FROM 1 for 1) ORDER BY series"
 sidesTocQuery      = "SELECT substring(side      FROM 1 FOR 1) AS side,      count(id) FROM dr_side      GROUP BY substring(side      FROM 1 for 1) ORDER BY side"
 themesTocQuery     = "SELECT substring(theme     FROM 1 FOR 1) AS theme,     count(id) FROM dr_theme     GROUP BY substring(theme     FROM 1 for 1) ORDER BY theme"
+fromYearsTocQuery  = "SELECT (year_from / 50) * 50             AS year_from, count(distinct(year_from)) FROM dr_scenario  GROUP BY (year_from / 50) * 50 ORDER BY year_from"
+upToYearsTocQuery  = "SELECT (year_upto / 50) * 50             AS year_upto, count(distinct(year_upto)) FROM dr_scenario  GROUP BY (year_upto / 50) * 50 ORDER BY year_upto"
 
-authorsSectionQuery, genreSectionQuery, seriesSectionQuery, leaderSectionQuery, gameSectionQuery,
+authorsSectionQuery, genreSectionQuery, seriesSectionQuery, leaderSectionQuery, gameSectionQuery, fromYearSectionQuery, upToYearSectionQuery,
  engineSectionQuery, mechanicSectionQuery, publisherSectionQuery, sideSectionQuery, partySectionQuery, themeSectionQuery :: Query
 authorsSectionQuery   = "SELECT id, author          FROM dr_author    WHERE substring(author    FROM 1 FOR 1) = ? ORDER BY author"
 engineSectionQuery    = "SELECT id, engine          FROM dr_engine    WHERE substring(engine    FROM 1 FOR 1) = ? ORDER BY engine"
@@ -142,6 +148,8 @@ publisherSectionQuery = "SELECT id, publisher       FROM dr_publisher WHERE subs
 seriesSectionQuery    = "SELECT id, series          FROM dr_series    WHERE substring(series    FROM 1 FOR 1) = ? ORDER BY series"
 sideSectionQuery      = "SELECT id, side            FROM dr_side      WHERE substring(side      FROM 1 FOR 1) = ? ORDER BY side"
 themeSectionQuery     = "SELECT id, theme           FROM dr_theme     WHERE substring(theme     FROM 1 FOR 1) = ? ORDER BY theme"
+fromYearSectionQuery  = "SELECT year_from           FROM dr_scenario  WHERE 50 * (year_from / 50) = ? GROUP BY year_from ORDER BY year_from"
+upToYearSectionQuery  = "SELECT year_upto           FROM dr_scenario  WHERE 50 * (year_upto / 50) = ? GROUP BY year_upto ORDER BY year_upto"
 
 allAuthorsQuery, allGenresQuery, allEnginesQuery, allThemesQuery, allMechanicsQuery, allSidesQuery,
  allPartiesQuery, allPublishersQuery, allSeriesQuery, allLeadersQuery :: Query

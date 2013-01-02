@@ -67,6 +67,11 @@ module Driller.DB
     , fetchSeriesSection
     , fetchGamesToc
     , fetchGameSection
+    , fetchFromYearsToc
+    , fetchFromYearSection
+    , fetchUpToYearsToc
+    , fetchUpToYearSection
+    , convertValue
     ) where
 
 import Driller.Data

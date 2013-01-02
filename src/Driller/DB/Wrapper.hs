@@ -12,8 +12,8 @@ module Driller.DB.Wrapper
     , fetchLeader,    fetchLeaders,    fetchLeaderSection,    fetchLeadersToc,    fetchAllLeaders
     , fetchLatitude,  fetchLatitudes,  fetchAllLatitudes
     , fetchLongitude, fetchLongitudes, fetchAllLongitudes
-    , fetchFromYear,  fetchFromYears,  fetchAllFromYears
-    , fetchUpToYear,  fetchUpToYears,  fetchAllUpToYears
+    , fetchFromYear,  fetchFromYears,  fetchFromYearSection,  fetchFromYearsToc,  fetchAllFromYears
+    , fetchUpToYear,  fetchUpToYears,  fetchUpToYearSection,  fetchUpToYearsToc,  fetchAllUpToYears
     , fetchFromRange, fetchFromRanges, fetchAllFromRanges
     , fetchUpToRange, fetchUpToRanges, fetchAllUpToRanges
     , fetchScenario,  fetchScenarios,  fetchAllScenarios
@@ -22,7 +22,9 @@ module Driller.DB.Wrapper
 
 import Driller.Data
 import Driller.DB.Queries
+import qualified Data.Text as T ( Text(), length )
 import qualified Data.Text.Lazy as TL ( Text(), toStrict )
+import qualified Data.Text.Read as TR ( signed, decimal )
 import Database.PostgreSQL.Simple
     ( Only(Only)
     , In(In)
@@ -220,6 +222,14 @@ fetchFromYear c = query c fromYearQuery
 fetchFromYears :: Connection -> [Int] -> IO [FromYear]
 fetchFromYears c ids = query c fromYearsQuery (Only (In ids))
 
+fetchFromYearSection :: Connection -> TL.Text -> IO [FromYear]
+fetchFromYearSection c t = case getFromParser (TR.signed TR.decimal (TL.toStrict t)) of
+                             Just n  -> query c fromYearSectionQuery n
+                             Nothing -> query c fromYearSectionQuery (0 :: Int)
+
+fetchFromYearsToc :: Connection -> IO [SectionNumber]
+fetchFromYearsToc c = query_ c fromYearsTocQuery
+
 fetchAllFromYears :: Connection -> IO [FromYear]
 fetchAllFromYears c = query_ c allFromYearsQuery
 
@@ -228,6 +238,14 @@ fetchUpToYear c = query c upToYearQuery
 
 fetchUpToYears :: Connection -> [Int] -> IO [UpToYear]
 fetchUpToYears c ids = query c upToYearsQuery (Only (In ids))
+
+fetchUpToYearSection :: Connection -> TL.Text -> IO [UpToYear]
+fetchUpToYearSection c t = case getFromParser (TR.signed TR.decimal (TL.toStrict t)) of
+                             Just n  -> query c upToYearSectionQuery n
+                             Nothing -> query c upToYearSectionQuery (0 :: Int)
+
+fetchUpToYearsToc :: Connection -> IO [SectionNumber]
+fetchUpToYearsToc c = query_ c upToYearsTocQuery
 
 fetchAllUpToYears :: Connection -> IO [UpToYear]
 fetchAllUpToYears c = query_ c allUpToYearsQuery
@@ -261,3 +279,9 @@ fetchScenarios c ids = query c scenariosQuery (Only (In ids))
 
 fetchScenarioIds :: Connection -> JoinMap -> [Parameter] -> IO [Int]
 fetchScenarioIds c joinMap p = query c (scenarioListQuery joinMap p) (map snd p)
+
+getFromParser :: Either String (Int, T.Text) -> Maybe Int
+getFromParser (Left _)       = Nothing
+getFromParser (Right (n, r)) | T.length r == 0 = Just n
+                             | otherwise       = Nothing
+
