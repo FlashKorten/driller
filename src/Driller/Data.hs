@@ -34,7 +34,7 @@ module Driller.Data
 
 import Driller.Error ( ParameterError )
 import qualified Data.Text as Text ( Text )
-import qualified Data.HashMap.Strict as HM ( HashMap )
+import Data.HashMap.Strict ( HashMap )
 import Database.PostgreSQL.Simple ( Query )
 import Database.PostgreSQL.Simple.ToRow ( ToRow(..) )
 import Data.Aeson.TH ( deriveJSON )
@@ -99,10 +99,10 @@ data Scenario = Scenario { getScenarioId       :: Int
                          }
 
 type Parameter        = (Text.Text, Int)
-type ParameterMap     = HM.HashMap Text.Text Int
+type ParameterMap     = HashMap Text.Text Int
 type Answer           = Either ParameterError GameResult
-type JoinMap          = HM.HashMap Text.Text (Query, Query, Query)
-type JoinComponentMap = HM.HashMap Text.Text Query
+type JoinMap          = HashMap Text.Text (Query, Query, Query)
+type JoinComponentMap = HashMap Text.Text Query
 
 instance ToJSON Answer where
   toJSON (Left e)  = toJSON e
