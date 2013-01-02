@@ -57,6 +57,28 @@ module Driller.DB.Queries
     , scenarioQuery
     , scenariosQuery
     , allScenariosQuery
+    , authorsTocQuery
+    , authorsSectionQuery
+    , genresTocQuery
+    , genreSectionQuery
+    , seriesTocQuery
+    , seriesSectionQuery
+    , leadersTocQuery
+    , leaderSectionQuery
+    , sidesTocQuery
+    , sideSectionQuery
+    , partiesTocQuery
+    , partySectionQuery
+    , gamesTocQuery
+    , gameSectionQuery
+    , enginesTocQuery
+    , engineSectionQuery
+    , mechanicsTocQuery
+    , mechanicSectionQuery
+    , publishersTocQuery
+    , publisherSectionQuery
+    , themesTocQuery
+    , themeSectionQuery
     ) where
 
 import Driller.Data ( JoinMap, JoinComponentMap, Parameter )
@@ -70,28 +92,56 @@ import Data.HashMap.Strict ( fromList, (!) )
 authorQuery, genreQuery, engineQuery, themeQuery, mechanicQuery, sideQuery,
  partyQuery, publisherQuery, seriesQuery, leaderQuery :: Query
 authorQuery        = "SELECT id, author    FROM dr_author    WHERE id = ?"
-genreQuery         = "SELECT id, genre     FROM dr_genre     WHERE id = ?"
 engineQuery        = "SELECT id, engine    FROM dr_engine    WHERE id = ?"
-themeQuery         = "SELECT id, theme     FROM dr_theme     WHERE id = ?"
+genreQuery         = "SELECT id, genre     FROM dr_genre     WHERE id = ?"
+leaderQuery        = "SELECT id, leader    FROM dr_leader    WHERE id = ?"
 mechanicQuery      = "SELECT id, mechanic  FROM dr_mechanic  WHERE id = ?"
-sideQuery          = "SELECT id, side      FROM dr_side      WHERE id = ?"
 partyQuery         = "SELECT id, party     FROM dr_party     WHERE id = ?"
 publisherQuery     = "SELECT id, publisher FROM dr_publisher WHERE id = ?"
 seriesQuery        = "SELECT id, series    FROM dr_series    WHERE id = ?"
-leaderQuery        = "SELECT id, leader    FROM dr_leader    WHERE id = ?"
+sideQuery          = "SELECT id, side      FROM dr_side      WHERE id = ?"
+themeQuery         = "SELECT id, theme     FROM dr_theme     WHERE id = ?"
 
 authorsQuery, genresQuery, enginesQuery, themesQuery, mechanicsQuery, sidesQuery,
  partiesQuery, publishersQuery, seriessQuery, leadersQuery :: Query
-genresQuery        = "SELECT d.id, d.genre     FROM dr_genre AS d     JOIN dr_map_genre AS m     ON m.id_genre = d.id     JOIN dr_scenario AS s ON s.id_game = m.id_game WHERE s.id IN ? GROUP BY d.id, d.genre     ORDER BY d.genre"
+authorsQuery       = "SELECT d.id, d.author    FROM dr_author AS d    JOIN dr_map_author AS m    ON m.id_author = d.id    WHERE m.id_scenario IN ? GROUP BY d.id, d.author    ORDER BY d.author"
 enginesQuery       = "SELECT d.id, d.engine    FROM dr_engine AS d    JOIN dr_map_engine AS m    ON m.id_engine = d.id    JOIN dr_scenario AS s ON s.id_game = m.id_game WHERE s.id IN ? GROUP BY d.id, d.engine    ORDER BY d.engine"
-themesQuery        = "SELECT d.id, d.theme     FROM dr_theme AS d     JOIN dr_map_theme AS m     ON m.id_theme = d.id     JOIN dr_scenario AS s ON s.id_game = m.id_game WHERE s.id IN ? GROUP BY d.id, d.theme     ORDER BY d.theme"
+genresQuery        = "SELECT d.id, d.genre     FROM dr_genre AS d     JOIN dr_map_genre AS m     ON m.id_genre = d.id     JOIN dr_scenario AS s ON s.id_game = m.id_game WHERE s.id IN ? GROUP BY d.id, d.genre     ORDER BY d.genre"
+leadersQuery       = "SELECT d.id, d.leader    FROM dr_leader AS d    JOIN dr_map_leader AS m    ON m.id_leader = d.id    WHERE m.id_scenario IN ? GROUP BY d.id, d.leader    ORDER BY d.leader"
 mechanicsQuery     = "SELECT d.id, d.mechanic  FROM dr_mechanic AS d  JOIN dr_map_mechanic AS m  ON m.id_mechanic = d.id  JOIN dr_scenario AS s ON s.id_game = m.id_game WHERE s.id IN ? GROUP BY d.id, d.mechanic  ORDER BY d.mechanic"
+partiesQuery       = "SELECT d.id, d.party     FROM dr_party AS d     JOIN dr_map_party AS m     ON m.id_party = d.id     WHERE m.id_scenario IN ? GROUP BY d.id, d.party     ORDER BY d.party"
 publishersQuery    = "SELECT d.id, d.publisher FROM dr_publisher AS d JOIN dr_map_publisher AS m ON m.id_publisher = d.id JOIN dr_scenario AS s ON s.id_game = m.id_game WHERE s.id IN ? GROUP BY d.id, d.publisher ORDER BY d.publisher"
 seriessQuery       = "SELECT d.id, d.series    FROM dr_series AS d    JOIN dr_map_series AS m    ON m.id_series = d.id    JOIN dr_scenario AS s ON s.id_game = m.id_game WHERE s.id IN ? GROUP BY d.id, d.series    ORDER BY d.series"
-authorsQuery       = "SELECT d.id, d.author    FROM dr_author AS d    JOIN dr_map_author AS m    ON m.id_author = d.id    WHERE m.id_scenario IN ? GROUP BY d.id, d.author    ORDER BY d.author"
 sidesQuery         = "SELECT d.id, d.side      FROM dr_side AS d      JOIN dr_map_side AS m      ON m.id_side = d.id      WHERE m.id_scenario IN ? GROUP BY d.id, d.side      ORDER BY d.side"
-partiesQuery       = "SELECT d.id, d.party     FROM dr_party AS d     JOIN dr_map_party AS m     ON m.id_party = d.id     WHERE m.id_scenario IN ? GROUP BY d.id, d.party     ORDER BY d.party"
-leadersQuery       = "SELECT d.id, d.leader    FROM dr_leader AS d    JOIN dr_map_leader AS m    ON m.id_leader = d.id    WHERE m.id_scenario IN ? GROUP BY d.id, d.leader    ORDER BY d.leader"
+themesQuery        = "SELECT d.id, d.theme     FROM dr_theme AS d     JOIN dr_map_theme AS m     ON m.id_theme = d.id     JOIN dr_scenario AS s ON s.id_game = m.id_game WHERE s.id IN ? GROUP BY d.id, d.theme     ORDER BY d.theme"
+
+authorsTocQuery, genresTocQuery, seriesTocQuery, leadersTocQuery, gamesTocQuery, sidesTocQuery,
+ enginesTocQuery, mechanicsTocQuery, publishersTocQuery, partiesTocQuery, themesTocQuery :: Query
+authorsTocQuery    = "SELECT substring(author    FROM 1 FOR 1) AS author,    count(id) FROM dr_author    GROUP BY substring(author    FROM 1 for 1) ORDER BY author"
+enginesTocQuery    = "SELECT substring(engine    FROM 1 FOR 1) AS engine,    count(id) FROM dr_engine    GROUP BY substring(engine    FROM 1 for 1) ORDER BY engine"
+gamesTocQuery      = "SELECT substring(title     FROM 1 FOR 1) AS title,     count(id) FROM dr_game      GROUP BY substring(title     FROM 1 for 1) ORDER BY title"
+genresTocQuery     = "SELECT substring(genre     FROM 1 FOR 1) AS genre,     count(id) FROM dr_genre     GROUP BY substring(genre     FROM 1 for 1) ORDER BY genre"
+leadersTocQuery    = "SELECT substring(leader    FROM 1 FOR 1) AS leader,    count(id) FROM dr_leader    GROUP BY substring(leader    FROM 1 for 1) ORDER BY leader"
+mechanicsTocQuery  = "SELECT substring(mechanic  FROM 1 FOR 1) AS mechanic,  count(id) FROM dr_mechanic  GROUP BY substring(mechanic  FROM 1 for 1) ORDER BY mechanic"
+partiesTocQuery    = "SELECT substring(party     FROM 1 FOR 1) AS party,     count(id) FROM dr_party     GROUP BY substring(party     FROM 1 for 1) ORDER BY party"
+publishersTocQuery = "SELECT substring(publisher FROM 1 FOR 1) AS publisher, count(id) FROM dr_publisher GROUP BY substring(publisher FROM 1 for 1) ORDER BY publisher"
+seriesTocQuery     = "SELECT substring(series    FROM 1 FOR 1) AS series,    count(id) FROM dr_series    GROUP BY substring(series    FROM 1 for 1) ORDER BY series"
+sidesTocQuery      = "SELECT substring(side      FROM 1 FOR 1) AS side,      count(id) FROM dr_side      GROUP BY substring(side      FROM 1 for 1) ORDER BY side"
+themesTocQuery     = "SELECT substring(theme     FROM 1 FOR 1) AS theme,     count(id) FROM dr_theme     GROUP BY substring(theme     FROM 1 for 1) ORDER BY theme"
+
+authorsSectionQuery, genreSectionQuery, seriesSectionQuery, leaderSectionQuery, gameSectionQuery,
+ engineSectionQuery, mechanicSectionQuery, publisherSectionQuery, sideSectionQuery, partySectionQuery, themeSectionQuery :: Query
+authorsSectionQuery   = "SELECT id, author          FROM dr_author    WHERE substring(author    FROM 1 FOR 1) = ? ORDER BY author"
+engineSectionQuery    = "SELECT id, engine          FROM dr_engine    WHERE substring(engine    FROM 1 FOR 1) = ? ORDER BY engine"
+gameSectionQuery      = "SELECT id, title, subtitle FROM dr_game      WHERE substring(title     FROM 1 FOR 1) = ? ORDER BY title"
+genreSectionQuery     = "SELECT id, genre           FROM dr_genre     WHERE substring(genre     FROM 1 FOR 1) = ? ORDER BY genre"
+leaderSectionQuery    = "SELECT id, leader          FROM dr_leader    WHERE substring(leader    FROM 1 FOR 1) = ? ORDER BY leader"
+mechanicSectionQuery  = "SELECT id, mechanic        FROM dr_mechanic  WHERE substring(mechanic  FROM 1 FOR 1) = ? ORDER BY mechanic"
+partySectionQuery     = "SELECT id, party           FROM dr_party     WHERE substring(party     FROM 1 FOR 1) = ? ORDER BY party"
+publisherSectionQuery = "SELECT id, publisher       FROM dr_publisher WHERE substring(publisher FROM 1 FOR 1) = ? ORDER BY publisher"
+seriesSectionQuery    = "SELECT id, series          FROM dr_series    WHERE substring(series    FROM 1 FOR 1) = ? ORDER BY series"
+sideSectionQuery      = "SELECT id, side            FROM dr_side      WHERE substring(side      FROM 1 FOR 1) = ? ORDER BY side"
+themeSectionQuery     = "SELECT id, theme           FROM dr_theme     WHERE substring(theme     FROM 1 FOR 1) = ? ORDER BY theme"
 
 allAuthorsQuery, allGenresQuery, allEnginesQuery, allThemesQuery, allMechanicsQuery, allSidesQuery,
  allPartiesQuery, allPublishersQuery, allSeriesQuery, allLeadersQuery :: Query

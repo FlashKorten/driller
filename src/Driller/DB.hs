@@ -45,6 +45,28 @@ module Driller.DB
     , fetchUpToYear
     , fetchUpToYears
     , initJoinMap
+    , fetchPublishersToc
+    , fetchPublisherSection
+    , fetchMechanicsToc
+    , fetchMechanicSection
+    , fetchEnginesToc
+    , fetchEngineSection
+    , fetchAuthorsToc
+    , fetchAuthorSection
+    , fetchSidesToc
+    , fetchSideSection
+    , fetchPartiesToc
+    , fetchPartySection
+    , fetchThemesToc
+    , fetchThemeSection
+    , fetchGenresToc
+    , fetchGenreSection
+    , fetchLeadersToc
+    , fetchLeaderSection
+    , fetchSeriesToc
+    , fetchSeriesSection
+    , fetchGamesToc
+    , fetchGameSection
     ) where
 
 import Driller.Data

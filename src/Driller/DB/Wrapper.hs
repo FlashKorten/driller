@@ -1,15 +1,15 @@
 module Driller.DB.Wrapper
-    ( fetchAuthor,    fetchAuthors,    fetchAllAuthors
-    , fetchGenre,     fetchGenres,     fetchAllGenres
-    , fetchEngine,    fetchEngines,    fetchAllEngines
-    , fetchTheme,     fetchThemes,     fetchAllThemes
-    , fetchMechanic,  fetchMechanics,  fetchAllMechanics
-    , fetchSide,      fetchSides,      fetchAllSides
-    , fetchParty,     fetchParties,    fetchAllParties
-    , fetchPublisher, fetchPublishers, fetchAllPublishers
-    , fetchSeries,    fetchSeriess,    fetchAllSeries
-    , fetchGame,      fetchGames,      fetchAllGames
-    , fetchLeader,    fetchLeaders,    fetchAllLeaders
+    ( fetchAuthor,    fetchAuthors,    fetchAuthorSection,    fetchAuthorsToc,    fetchAllAuthors
+    , fetchGenre,     fetchGenres,     fetchGenreSection,     fetchGenresToc,     fetchAllGenres
+    , fetchEngine,    fetchEngines,    fetchEngineSection,    fetchEnginesToc,    fetchAllEngines
+    , fetchTheme,     fetchThemes,     fetchThemeSection,     fetchThemesToc,     fetchAllThemes
+    , fetchMechanic,  fetchMechanics,  fetchMechanicSection,  fetchMechanicsToc,  fetchAllMechanics
+    , fetchSide,      fetchSides,      fetchSideSection,      fetchSidesToc,      fetchAllSides
+    , fetchParty,     fetchParties,    fetchPartySection,     fetchPartiesToc,    fetchAllParties
+    , fetchPublisher, fetchPublishers, fetchPublisherSection, fetchPublishersToc, fetchAllPublishers
+    , fetchSeries,    fetchSeriess,    fetchSeriesSection,    fetchSeriesToc,     fetchAllSeries
+    , fetchGame,      fetchGames,      fetchGameSection,      fetchGamesToc,      fetchAllGames
+    , fetchLeader,    fetchLeaders,    fetchLeaderSection,    fetchLeadersToc,    fetchAllLeaders
     , fetchLatitude,  fetchLatitudes,  fetchAllLatitudes
     , fetchLongitude, fetchLongitudes, fetchAllLongitudes
     , fetchFromYear,  fetchFromYears,  fetchAllFromYears
@@ -22,6 +22,7 @@ module Driller.DB.Wrapper
 
 import Driller.Data
 import Driller.DB.Queries
+import qualified Data.Text.Lazy as TL ( Text(), toStrict )
 import Database.PostgreSQL.Simple
     ( Only(Only)
     , In(In)
@@ -36,6 +37,12 @@ fetchAuthor c = query c authorQuery
 fetchAuthors :: Connection -> [Int] -> IO [Author]
 fetchAuthors c ids = query c authorsQuery (Only (In ids))
 
+fetchAuthorSection :: Connection -> TL.Text -> IO [Author]
+fetchAuthorSection c = query c authorsSectionQuery . TL.toStrict
+
+fetchAuthorsToc :: Connection -> IO [SectionAlph]
+fetchAuthorsToc c = query_ c authorsTocQuery
+
 fetchAllAuthors :: Connection -> IO [Author]
 fetchAllAuthors c = query_ c allAuthorsQuery
 
@@ -44,6 +51,12 @@ fetchGenre c = query c genreQuery
 
 fetchGenres :: Connection -> [Int] -> IO [Genre]
 fetchGenres c ids = query c genresQuery (Only (In ids))
+
+fetchGenreSection :: Connection -> TL.Text -> IO [Genre]
+fetchGenreSection c = query c genreSectionQuery . TL.toStrict
+
+fetchGenresToc :: Connection -> IO [SectionAlph]
+fetchGenresToc c = query_ c genresTocQuery
 
 fetchAllGenres :: Connection -> IO [Genre]
 fetchAllGenres c = query_ c allGenresQuery
@@ -54,6 +67,12 @@ fetchEngine c = query c engineQuery
 fetchEngines :: Connection -> [Int] -> IO [Engine]
 fetchEngines c ids = query c enginesQuery (Only (In ids))
 
+fetchEngineSection :: Connection -> TL.Text -> IO [Engine]
+fetchEngineSection c = query c engineSectionQuery . TL.toStrict
+
+fetchEnginesToc :: Connection -> IO [SectionAlph]
+fetchEnginesToc c = query_ c enginesTocQuery
+
 fetchAllEngines :: Connection -> IO [Engine]
 fetchAllEngines c = query_ c allEnginesQuery
 
@@ -62,6 +81,12 @@ fetchTheme c = query c themeQuery
 
 fetchThemes :: Connection -> [Int] -> IO [Theme]
 fetchThemes c ids = query c themesQuery (Only (In ids))
+
+fetchThemeSection :: Connection -> TL.Text -> IO [Theme]
+fetchThemeSection c = query c themeSectionQuery . TL.toStrict
+
+fetchThemesToc :: Connection -> IO [SectionAlph]
+fetchThemesToc c = query_ c themesTocQuery
 
 fetchAllThemes :: Connection -> IO [Theme]
 fetchAllThemes c = query_ c allThemesQuery
@@ -72,6 +97,12 @@ fetchMechanic c = query c mechanicQuery
 fetchMechanics :: Connection -> [Int] -> IO [Mechanic]
 fetchMechanics c ids = query c mechanicsQuery (Only (In ids))
 
+fetchMechanicSection :: Connection -> TL.Text -> IO [Mechanic]
+fetchMechanicSection c = query c mechanicSectionQuery . TL.toStrict
+
+fetchMechanicsToc :: Connection -> IO [SectionAlph]
+fetchMechanicsToc c = query_ c mechanicsTocQuery
+
 fetchAllMechanics :: Connection -> IO [Mechanic]
 fetchAllMechanics c = query_ c allMechanicsQuery
 
@@ -80,6 +111,12 @@ fetchSide c = query c sideQuery
 
 fetchSides :: Connection -> [Int] -> IO [Side]
 fetchSides c ids = query c sidesQuery (Only (In ids))
+
+fetchSideSection :: Connection -> TL.Text -> IO [Side]
+fetchSideSection c = query c sideSectionQuery . TL.toStrict
+
+fetchSidesToc :: Connection -> IO [SectionAlph]
+fetchSidesToc c = query_ c sidesTocQuery
 
 fetchAllSides :: Connection -> IO [Side]
 fetchAllSides c = query_ c allSidesQuery
@@ -90,6 +127,12 @@ fetchParty c = query c partyQuery
 fetchParties :: Connection -> [Int] -> IO [Party]
 fetchParties c ids = query c partiesQuery (Only (In ids))
 
+fetchPartySection :: Connection -> TL.Text -> IO [Party]
+fetchPartySection c = query c partySectionQuery . TL.toStrict
+
+fetchPartiesToc :: Connection -> IO [SectionAlph]
+fetchPartiesToc c = query_ c partiesTocQuery
+
 fetchAllParties :: Connection -> IO [Party]
 fetchAllParties c = query_ c allPartiesQuery
 
@@ -98,6 +141,12 @@ fetchPublisher c = query c publisherQuery
 
 fetchPublishers :: Connection -> [Int] -> IO [Publisher]
 fetchPublishers c ids = query c publishersQuery (Only (In ids))
+
+fetchPublisherSection :: Connection -> TL.Text -> IO [Publisher]
+fetchPublisherSection c = query c publisherSectionQuery . TL.toStrict
+
+fetchPublishersToc :: Connection -> IO [SectionAlph]
+fetchPublishersToc c = query_ c publishersTocQuery
 
 fetchAllPublishers :: Connection -> IO [Publisher]
 fetchAllPublishers c = query_ c allPublishersQuery
@@ -108,6 +157,12 @@ fetchSeries c = query c seriesQuery
 fetchSeriess :: Connection -> [Int] -> IO [Series]
 fetchSeriess c ids = query c seriessQuery (Only (In ids))
 
+fetchSeriesSection :: Connection -> TL.Text -> IO [Series]
+fetchSeriesSection c = query c seriesSectionQuery . TL.toStrict
+
+fetchSeriesToc :: Connection -> IO [SectionAlph]
+fetchSeriesToc c = query_ c seriesTocQuery
+
 fetchAllSeries :: Connection -> IO [Series]
 fetchAllSeries c = query_ c allSeriesQuery
 
@@ -117,6 +172,12 @@ fetchGame c = query c gameQuery
 fetchGames :: Connection -> [Int] -> IO [Game]
 fetchGames c ids = query c gamesQuery (Only (In ids))
 
+fetchGameSection :: Connection -> TL.Text -> IO [Game]
+fetchGameSection c = query c gameSectionQuery . TL.toStrict
+
+fetchGamesToc :: Connection -> IO [SectionAlph]
+fetchGamesToc c = query_ c gamesTocQuery
+
 fetchAllGames :: Connection -> IO [Game]
 fetchAllGames c = query_ c allGamesQuery
 
@@ -125,6 +186,12 @@ fetchLeader c = query c leaderQuery
 
 fetchLeaders :: Connection -> [Int] -> IO [Leader]
 fetchLeaders c ids = query c leadersQuery (Only (In ids))
+
+fetchLeaderSection :: Connection -> TL.Text -> IO [Leader]
+fetchLeaderSection c = query c leaderSectionQuery . TL.toStrict
+
+fetchLeadersToc :: Connection -> IO [SectionAlph]
+fetchLeadersToc c = query_ c leadersTocQuery
 
 fetchAllLeaders :: Connection -> IO [Leader]
 fetchAllLeaders c = query_ c allLeadersQuery
