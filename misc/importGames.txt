@@ -4104,7 +4104,7 @@
   genre{"Conflict Simulation"}
   mechanic{"Card-Driven","Hex","Counter"}
   theme{"WW2"}
-  series{"Combat Commander"-"Mediterranean"}
+  series{"Combat Commander"-"Mediterranean","Combat Commander Europe"-"Expansion 01"}
   scenario{"CCE 0013 - Tussle at Maleme"}{
     description{<p>Near Maleme Airfield, Crete&mdash;Captain Van Etten's parachutists had been in many chaotic skirmishes with Allied forces in and around Maleme Airfield since the airborne landing on Crete the previous morning. His forces were wearing thin, he decided to temporarily reassemble in the high ground to the south.</p><p>As it happened, elements of the 5th New Zealand Brigade had decided to cross those very same hills in an attempt to withdraw southeast of the airfield for a future counterattack. Van Etten's depleted company attacked and surrounded a platoon of withdrawing New Zealanders belonging to the 22nd Battalion unaware that more were fast approaching.</p>}
     dates{1941-05-21 / 1941-05-21}
@@ -4247,7 +4247,7 @@
   genre{"Conflict Simulation"}
   mechanic{"Card-Driven","Hex","Counter"}
   theme{"WW2"}
-  series{"Combat Commander"-"Europe","CC Battlepack"-"#1"}
+  series{"Combat Commander"-"Europe","Combat Commander Europe"-" Battlepack #1"}
   scenario{"CCE 0025 - Fields of Fire"}{
     description{<p>The Ghost Front, Lanzerath, Germany&mdash;Regimental Order No. 54 was given to the 1st Company, 9th Regiment of the 3rd Fallschirmjäger Division: The unit was instructed to clear Lanzerath and other villages in and around the Losheim Gap of enemy resistance. This was to prepare the way for Joachim Peiper's 1st SS Panzer Division, recently outfitted with 30 King Tigers, to storm through the front without delay.</p><p>As US soldiers were needed to defend this lightly held area, an Intelligence &amp; Recon platoon of 18 men - trained to be the "eyes and ears" of a division - belonging to the American 394th Regiment, 99th Division, was placed on the front line near the small hamlet of Lanzerath which overlooked Losheim further east. Their orders were to observe the area and provide warning of enemy action.</p><p>From the woods looking down a gently sloping snow-covered field leading down to Lanzerath, these men had improved their positions with overlapping logs, creating a solid defensive bunker with good fields of fire.</p><p>As a German column was seen marching through Lanzerath, a young girl ran out of a house and approached a German officer. Speaking excitedly while pointing in the I&amp;R platoon's general direction, the German commander barked an order and the troops dive for the ditches lining the road. Lt. Bouck yelled to "Open fire!" and the Battle of the Bulge began for this handful of men.</p>}
     dates{1944-12-16 / 1944-12-16}
@@ -4379,7 +4379,7 @@
   genre{"Conflict Simulation"}
   mechanic{"Card-Driven","Hex","Counter"}
   theme{"WW2"}
-  series{"Combat Commander"-"Europe","CC Battlepack"-"#2"}
+  series{"Combat Commander"-"Europe","Combat Commander Europe"-"Battlepack #2"}
   scenario{"CCE 0035 - Spartakovka Salient"}{
     description{<p>Spartakovka, Russia&mdash;The Germans were advancing headlong toward Stalingrad. Elements of the Soviet 62nd Army were in disarray from the speed at which the German 6th Army was advancing. The German VIII Fliegerkorps had laid waste to much of the suburbs and command &amp; control areas. Against this backdrop of confusion, Panzergrenadiers of the 16th Panzer Division launched their attack at first light to reach the Volga. Defending the area near the town of Spartakovka was a mixed force of militia - rear area units along with hastily arrived reinforcements. Their task was simple: Stop the Germans from reaching the Volga river...</p>}
     dates{1942-08-23 / 1942-08-23}
@@ -4511,7 +4511,7 @@
   genre{"Conflict Simulation"}
   mechanic{"Card-Driven","Hex","Counter"}
   theme{"WW2"}
-  series{"Combat Commander"-"Europe","CC Battlepack"-"#3"}
+  series{"Combat Commander"-"Europe","Combat Commander Europe"-"Battlepack #3"}
   scenario{"CCE 0046 - Pegasus Bridge"}{
     description{<p>Benouville, France&mdash;At 0016 hours, three Airspeed Horsa gliders, flowsn with outstanding skill by pilots of the Glider Pilot Regiment, landed troops from the 2nd Battalion, Oxfordshire and Buckingham Light Infantry within 50 yards of the Caen Canal Bridge at Benouville in Normandy, France. The bold and audacious coup de main attack on the bridge was a complete success and, after a brief 15 minute fight, this vital bridge was in Allied hands.</p><p>Determined counterattacks by elements of the 736th Grenadier Regiment, 716th Infantry Division were launched throughout the early morning hours to retake the bridge.</p>}
     dates{1944-06-06 / 1944-06-06}
@@ -4709,7 +4709,7 @@
   genre{"Conflict Simulation"}
   mechanic{"Card-Driven","Hex","Counter"}
   theme{"WW2"}
-  series{"Combat Commander"-"Europe"}
+  series{"Combat Commander"-"Europe","Combat Commander Europe"-"Expansion #2"}
   scenario{"CCE 0062 - Bessarabian Nights II"}{
     description{<p>is a new version of Scenario 6 originally published in Combat Commander: Europe, set in a German rear area as Soviet forces press German forces back into the Carpathian Mountains</p>}{
     dates{1944-04-01 / 1944-04-30}{
@@ -4828,7 +4828,7 @@
   genre{"Conflict Simulation"}
   mechanic{"Card-Driven","Hex","Counter"}
   theme{"WW2"}
-  series{"Combat Commander"-"Pacific","CC Battlepack"-"#4"}
+  series{"Combat Commander"-"Pacific","Combat Commander Pacific"-"Battlepack #4"}
   scenario{"CCP M01 - Rabaul Rousers"}{
     description{<p>set at the base of Mt Vulcan on Simpson Bay across from the town of Rabaul, with a Japanese barge landing against Australian defenses at night</p>}
     dates{1942-01-23 / 1942-01-23}
@@ -4971,14 +4971,14 @@
 }
 
 21050 {
-  title{"Combat Commander Europe"}
+  title{"Combat Commander - Europe"}
   description{<p></p>}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
   engine{"Vassal"-""}
   genre{"Conflict Simulation"}
   mechanic{"Card-Driven","Hex","Counter"}
   theme{"WW2"}
-  series{"Combat Commander"-"Europe"}
+  series{"Combat Commander"-"Europe","Combat Commander Europe"-"Base Game"}
   scenario{"CCE 0001 - Fat Lipki"}{
     description{<p>As tanks of the 1st Moscow Motor Rifle Division clashed with the 18th Panzer Division's armored spearhead north of Lipki, infantry elements from both divisions were tasked with securing their reflective southern flanks.</p><p>One such encounter between these flanking forces occurred in a heavily-wooded hamlet south of town, where several Platoon-sized groups met while trying to secure an important crossroads.</p>}
     dates{1941-07-03 / 1941-07-03}
@@ -5114,14 +5114,14 @@
 }
 
 28181 {
-  title{"Combat Commander Pacific"}
+  title{"Combat Commander - Pacific"}
   description{<p></p>}
   publisher{"GMT Games"-"http://www.gmtgames.com"}
   engine{"Vassal"-""}
   genre{"Conflict Simulation"}
   mechanic{"Card-Driven","Hex","Counter"}
   theme{"WW2"}
-  series{"Combat Commander"-"Pacific"}
+  series{"Combat Commander"-"Pacific","Combat Commander Pacific"-"Base Game"}
   scenario{"CCP A - Grassy Knoll"}{
     description{<p>Mindanao Island, Philippines&mdash;After capturing Libby Airfield with the aid of Filipino guerrillas, the US 24th Infantry Division found the assault toward Davao becoming exceedingly slow and ponderous. Exacerbating the issue was the preponderance of hemp fields in the area, now very much overgrown with disuse. Traversing these unkempt fields was slow going at best. Japanese forces of the 100th Division, however, found these numerous plantations extremely useful for hiding defensive strongpoints. Guerrillas continued to aid the Americans in their push toward Davao, and in one particularly nasty firefight on the 7th of May actually proved decisive in overcoming a Japanese bunker that was covering a major trail break through the area.</p>}
     dates{1945-05-07 / 1945-05-07}
