@@ -16,7 +16,8 @@ module Driller.DB.Wrapper
     , fetchUpToYear,  fetchUpToYears,  fetchAllUpToYears
     , fetchFromRange, fetchFromRanges, fetchAllFromRanges
     , fetchUpToRange, fetchUpToRanges, fetchAllUpToRanges
-    , fetchScenarios, fetchScenarioIds
+    , fetchScenario,  fetchScenarios,  fetchAllScenarios
+    , fetchScenarioIds
     ) where
 
 import Driller.Data
@@ -181,6 +182,12 @@ fetchUpToRanges c ids = query c upToRangesQuery (Only (In ids))
 
 fetchAllUpToRanges :: Connection -> IO [UpToRange]
 fetchAllUpToRanges c = query_ c allUpToRangesQuery
+
+fetchScenario :: Connection -> Int -> IO [Scenario]
+fetchScenario c = query c scenarioQuery
+
+fetchAllScenarios :: Connection -> IO [Scenario]
+fetchAllScenarios c = query_ c allScenariosQuery
 
 fetchScenarios :: Connection -> [Int] -> IO [Scenario]
 fetchScenarios c ids = query c scenariosQuery (Only (In ids))

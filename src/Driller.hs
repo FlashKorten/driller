@@ -51,6 +51,8 @@ main = do
     getRouteWithParameter    "/mechanic/:id"  $ DB.fetchMechanic conn
     getRouteWithoutParameter "/games"         $ DB.fetchAllGames conn
     getRouteWithParameter    "/game/:id"      $ DB.fetchGame conn
+    getRouteWithoutParameter "/scenarios"     $ DB.fetchAllScenarios conn
+    getRouteWithParameter    "/scenario/:id"  $ DB.fetchScenario conn
     getRouteWithoutParameter "/genres"        $ DB.fetchAllGenres conn
     getRouteWithParameter    "/genre/:id"     $ DB.fetchGenre conn
     getRouteWithoutParameter "/themes"        $ DB.fetchAllThemes conn

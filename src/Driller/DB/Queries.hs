@@ -54,7 +54,9 @@ module Driller.DB.Queries
     , fromYearsQuery
     , upToYearQuery
     , upToYearsQuery
+    , scenarioQuery
     , scenariosQuery
+    , allScenariosQuery
     ) where
 
 import Driller.Data ( JoinMap, Parameter )
@@ -109,8 +111,10 @@ gameQuery          = "SELECT id, title, subtitle FROM dr_game WHERE id = ?"
 gamesQuery         = "SELECT g.id, g.title, g.subtitle FROM dr_game AS g JOIN dr_scenario AS s ON s.id_game = g.id WHERE s.id IN ? GROUP BY g.id, g.title, g.subtitle ORDER BY g.title, g.subtitle"
 allGamesQuery      = "SELECT id, title, subtitle FROM dr_game ORDER BY title, subtitle"
 
-scenariosQuery :: Query
-scenariosQuery     = "SELECT sd.title, sd.subtitle, s.year_from, s.year_upto FROM dr_scenario AS s JOIN dr_scenario_data AS sd ON s.id = sd.id_scenario WHERE s.id IN ?"
+scenarioQuery, scenariosQuery, allScenariosQuery :: Query
+scenarioQuery      = "SELECT s.id, sd.title, sd.subtitle, s.year_from, s.year_upto FROM dr_scenario AS s JOIN dr_scenario_data AS sd ON s.id = sd.id_scenario WHERE s.id = ?"
+scenariosQuery     = "SELECT s.id, sd.title, sd.subtitle, s.year_from, s.year_upto FROM dr_scenario AS s JOIN dr_scenario_data AS sd ON s.id = sd.id_scenario WHERE s.id IN ?"
+allScenariosQuery  = "SELECT s.id, sd.title, sd.subtitle, s.year_from, s.year_upto FROM dr_scenario AS s JOIN dr_scenario_data AS sd ON s.id = sd.id_scenario ORDER BY sd.title, sd.subtitle"
 
 latitudeQuery, longitudeQuery, fromYearQuery, upToYearQuery, fromRangeQuery, upToRangeQuery :: Query
 latitudeQuery      = "SELECT latitude_trunc  FROM dr_scenario WHERE latitude_trunc = ?"

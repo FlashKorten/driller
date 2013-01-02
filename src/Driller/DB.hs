@@ -13,6 +13,7 @@ module Driller.DB
     , fetchAllPublishers
     , fetchAllFromRanges
     , fetchAllUpToRanges
+    , fetchAllScenarios
     , fetchAllSeries
     , fetchAllSides
     , fetchAllThemes
@@ -35,6 +36,7 @@ module Driller.DB
     , fetchFromRanges
     , fetchUpToRange
     , fetchUpToRanges
+    , fetchScenario
     , fetchSeries
     , fetchSide
     , fetchTheme

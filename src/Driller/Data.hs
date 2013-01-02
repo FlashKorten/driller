@@ -102,7 +102,8 @@ instance ToJSON Game where
                     , "subtitle" .= getGameSubtitle g
                     ]
 
-data Scenario = Scenario { getScenarioTitle    :: Text.Text
+data Scenario = Scenario { getScenarioId       :: Int
+                         , getScenarioTitle    :: Text.Text
                          , getScenarioSubtitle :: Text.Text
                          , getScenarioFromYear :: Int
                          , getScenarioUpToYear :: Int
@@ -165,7 +166,7 @@ instance FromRow Leader    where fromRow = Leader    <$> field <*> field
 instance FromRow Publisher where fromRow = Publisher <$> field <*> field
 instance FromRow Series    where fromRow = Series    <$> field <*> field
 instance FromRow Game      where fromRow = Game      <$> field <*> field <*> field
-instance FromRow Scenario  where fromRow = Scenario  <$> field <*> field <*> field <*> field
+instance FromRow Scenario  where fromRow = Scenario  <$> field <*> field <*> field <*> field <*> field
 instance FromRow Int       where fromRow = field
 instance ToRow Int         where toRow n = [toField n]
 
