@@ -48,7 +48,7 @@ module Driller.DB
     ) where
 
 import Driller.Data
-import qualified Driller.Error as Error ( ParameterError, unknownParameter, illegalValue )
+import qualified Driller.Error as Error
 import Driller.DB.Wrapper
 import Driller.DB.Queries ( initJoinMap )
 import Control.Monad ( liftM )
@@ -88,16 +88,21 @@ fetchSimpleValuesForResult parameterMap key fetchMany c ids
         Nothing    -> fetchMany c ids
 
 filterParameters :: [Param] -> JoinMap -> Either Error.ParameterError [Parameter]
-filterParameters [] _ = Right []
 filterParameters p jm = filterParameters' p jm []
 
 filterParameters' :: [Param] -> JoinMap -> [Parameter] -> Either Error.ParameterError [Parameter]
 filterParameters' [] _ result        = Right result
 filterParameters' ((k, v):ps) jm tmp | not $ HM.member key jm = Left $ Error.unknownParameter key
                                      | isNothing value        = Left $ Error.illegalValue key
+                                     | alreadySeen key tmp    = Left $ Error.duplicateParameter key
                                      | otherwise              = filterParameters' ps jm ((key, fromJust value):tmp)
                                     where key   = TL.toStrict k
                                           value = convertValue key (TL.toStrict v)
+
+alreadySeen :: T.Text -> [Parameter] -> Bool
+alreadySeen _ []        = False
+alreadySeen name (p:ps) | name == fst p = True
+                        | otherwise     = alreadySeen name ps
 
 convertValue :: T.Text -> T.Text -> Maybe Int
 convertValue "latitude"  t = getFromParser (TR.signed TR.decimal t) >>= filterWithinLimits (negate 90) 90
