@@ -106,8 +106,8 @@ allLeadersQuery    = "SELECT id, leader    FROM dr_leader    ORDER BY leader"
 
 gameQuery, gamesQuery, allGamesQuery :: Query
 gameQuery          = "SELECT id, title, subtitle FROM dr_game WHERE id = ?"
-gamesQuery         = "SELECT g.id, g.title, g.subtitle FROM dr_game AS g JOIN dr_scenario AS s ON s.id_game = g.id WHERE s.id IN ?"
-allGamesQuery      = "SELECT id, title, subtitle FROM dr_game ORDER BY title"
+gamesQuery         = "SELECT g.id, g.title, g.subtitle FROM dr_game AS g JOIN dr_scenario AS s ON s.id_game = g.id WHERE s.id IN ? GROUP BY g.id, g.title, g.subtitle ORDER BY g.title, g.subtitle"
+allGamesQuery      = "SELECT id, title, subtitle FROM dr_game ORDER BY title, subtitle"
 
 scenariosQuery :: Query
 scenariosQuery     = "SELECT sd.title, sd.subtitle, s.year_from, s.year_upto FROM dr_scenario AS s JOIN dr_scenario_data AS sd ON s.id = sd.id_scenario WHERE s.id IN ?"

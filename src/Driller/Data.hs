@@ -102,7 +102,7 @@ instance ToJSON Game where
                     , "subtitle" .= getGameSubtitle g
                     ]
 
-data Scenario = Scenario { getScenarioTitle :: Text.Text
+data Scenario = Scenario { getScenarioTitle    :: Text.Text
                          , getScenarioSubtitle :: Text.Text
                          , getScenarioFromYear :: Int
                          , getScenarioUpToYear :: Int
