@@ -90,18 +90,6 @@ data Game = Game { getGameId        :: Int
                  , getGameSubtitle  :: Text.Text
                  }
 
-instance FromJSON Game where
-  parseJSON (Object o) = Game <$>
-    o .: "id" <*>
-    o .: "title" <*>
-    o .: "subtitle"
-
-instance ToJSON Game where
-  toJSON g = object [ "id" .= getGameId g
-                    , "title" .= getGameTitle g
-                    , "subtitle" .= getGameSubtitle g
-                    ]
-
 data Scenario = Scenario { getScenarioId       :: Int
                          , getScenarioTitle    :: Text.Text
                          , getScenarioSubtitle :: Text.Text
@@ -136,7 +124,8 @@ $(deriveJSON (drop 8)  ''Latitude)
 $(deriveJSON (drop 8)  ''Longitude)
 $(deriveJSON (drop 8)  ''FromRange)
 $(deriveJSON (drop 8)  ''UpToRange)
-$(deriveJSON (drop 11)  ''Scenario)
+$(deriveJSON (drop 11) ''Scenario)
+$(deriveJSON (drop 7)  ''Game)
 
 class FromInt a where
   fromInt :: Int -> a
