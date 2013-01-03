@@ -113,11 +113,15 @@ my $sth_insert_scenario = $dbh -> prepare(
   . "year_upto_group, "
   . "latitude_trunc, "
   . "longitude_trunc, "
+  . "latitude_group, "
+  . "longitude_group, "
   . "range, "
+  . "range_group, "
   . "timescale, "
+  . "timescale_group, "
   . "players_min, "
   . "players_max) "
-  . "VALUES (?,?,?,?,?,?,?,?,?,?,?) "
+  . "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) "
   . "RETURNING id;");
 
 my $sth_insert_scenario_data = $dbh -> prepare(
@@ -178,8 +182,11 @@ foreach my $key (sort(keys %game)){
       ($scen_title, $scen_subtitle) = ($scen_key, "");
     }
 
-    my $year_from = &get_year_from_date($time_01);
-    my $year_upto = &get_year_from_date($time_02);
+    my $year_from  = &get_year_from_date($time_01);
+    my $year_upto  = &get_year_from_date($time_02);
+    my $range      = $game{$key}{'scenario'}{$scen_key}{'range'};
+    my $timescale  = $game{$key}{'scenario'}{$scen_key}{'timescale'};
+
     $sth_insert_scenario -> execute( $key
                                    , $year_from
                                    , $year_upto
@@ -187,8 +194,12 @@ foreach my $key (sort(keys %game)){
                                    , &get_number_group($year_upto, 50)
                                    , (split(/\./, $latitude))[0]
                                    , (split(/\./, $longitude))[0]
-                                   , $game{$key}{'scenario'}{$scen_key}{'range'}
-                                   , $game{$key}{'scenario'}{$scen_key}{'timescale'}
+                                   , &get_number_group($latitude, 10)
+                                   , &get_number_group($longitude, 10)
+                                   , $range
+                                   , &get_number_group($range, 25)
+                                   , $timescale
+                                   , &get_number_group($timescale, 24)
                                    , $players_min
                                    , $players_max);
 

@@ -7,6 +7,10 @@ DROP INDEX IF EXISTS dr_scenario_latitude_trunc_idx CASCADE;
 DROP INDEX IF EXISTS dr_scenario_longitude_trunc_idx CASCADE;
 DROP INDEX IF EXISTS dr_scenario_range_idx CASCADE;
 DROP INDEX IF EXISTS dr_scenario_timescale_idx CASCADE;
+DROP INDEX IF EXISTS dr_scenario_latitude_group_idx CASCADE;
+DROP INDEX IF EXISTS dr_scenario_longitude_group_idx CASCADE;
+DROP INDEX IF EXISTS dr_scenario_range_group_idx CASCADE;
+DROP INDEX IF EXISTS dr_scenario_timescale_group_idx CASCADE;
 DROP INDEX IF EXISTS dr_author_idx CASCADE;
 DROP INDEX IF EXISTS dr_engine_idx CASCADE;
 DROP INDEX IF EXISTS dr_genre_idx CASCADE;
@@ -140,8 +144,12 @@ CREATE TABLE dr_scenario (
   year_upto_group integer,
   latitude_trunc integer,
   longitude_trunc integer,
+  latitude_group integer,
+  longitude_group integer,
   range integer DEFAULT 0 NOT NULL,
+  range_group integer DEFAULT 0 NOT NULL,
   timescale integer DEFAULT 0 NOT NULL,
+  timescale_group integer DEFAULT 0 NOT NULL,
   players_min integer DEFAULT 0 NOT NULL,
   players_max integer DEFAULT 0 NOT NULL
 );
@@ -160,10 +168,18 @@ CREATE INDEX dr_scenario_latitude_trunc_idx ON dr_scenario(latitude_trunc ASC);
 ALTER INDEX dr_scenario_latitude_trunc_idx OWNER TO driller;
 CREATE INDEX dr_scenario_longitude_trunc_idx ON dr_scenario(longitude_trunc ASC);
 ALTER INDEX dr_scenario_longitude_trunc_idx OWNER TO driller;
+CREATE INDEX dr_scenario_latitude_group_idx ON dr_scenario(latitude_group ASC);
+ALTER INDEX dr_scenario_latitude_group_idx OWNER TO driller;
+CREATE INDEX dr_scenario_longitude_group_idx ON dr_scenario(longitude_group ASC);
+ALTER INDEX dr_scenario_longitude_group_idx OWNER TO driller;
 CREATE INDEX dr_scenario_range_idx ON dr_scenario(range ASC);
 ALTER INDEX dr_scenario_range_idx OWNER TO driller;
+CREATE INDEX dr_scenario_range_group_idx ON dr_scenario(range_group ASC);
+ALTER INDEX dr_scenario_range_group_idx OWNER TO driller;
 CREATE INDEX dr_scenario_timescale_idx ON dr_scenario(timescale ASC);
 ALTER INDEX dr_scenario_timescale_idx OWNER TO driller;
+CREATE INDEX dr_scenario_timescale_group_idx ON dr_scenario(timescale_group ASC);
+ALTER INDEX dr_scenario_timescale_group_idx OWNER TO driller;
 
 CREATE TABLE dr_scenario_data (
   id_scenario integer PRIMARY KEY REFERENCES dr_scenario(id),
