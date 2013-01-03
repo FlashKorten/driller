@@ -13,6 +13,8 @@ module Driller.DB
     , fetchAllPublishers
     , fetchAllFromRanges
     , fetchAllUpToRanges
+    , fetchAllFromTimescales
+    , fetchAllUpToTimescales
     , fetchAllScenarios
     , fetchAllSeries
     , fetchAllSides
@@ -36,6 +38,10 @@ module Driller.DB
     , fetchFromRanges
     , fetchUpToRange
     , fetchUpToRanges
+    , fetchFromTimescale
+    , fetchFromTimescales
+    , fetchUpToTimescale
+    , fetchUpToTimescales
     , fetchScenario
     , fetchSeries
     , fetchSide
@@ -77,6 +83,8 @@ module Driller.DB
     , fetchLongitudeGroup
     , fetchRangeGroups
     , fetchRangeGroup
+    , fetchTimescaleGroups
+    , fetchTimescaleGroup
     , convertValue
     ) where
 
@@ -191,6 +199,8 @@ prepareResult parameterMap c ids = do
     upToYears  <- fetchSimpleValuesForResult parameterMap "upToYear"  fetchUpToYears  c ids
     fromRanges <- fetchSimpleValuesForResult parameterMap "fromRange" fetchFromRanges c ids
     upToRanges <- fetchSimpleValuesForResult parameterMap "upToRange" fetchUpToRanges c ids
+    fromTimescales <- fetchSimpleValuesForResult parameterMap "fromTimescale" fetchFromTimescales c ids
+    upToTimescales <- fetchSimpleValuesForResult parameterMap "upToTimescale" fetchUpToTimescales c ids
     return $ Right GameResult { getNoResults  = numberOfResults
                               , getGames      = games
                               , getGenres     = genres
@@ -210,4 +220,6 @@ prepareResult parameterMap c ids = do
                               , getUpToYears  = upToYears
                               , getFromRanges = fromRanges
                               , getUpToRanges = upToRanges
+                              , getFromTimescales = fromTimescales
+                              , getUpToTimescales = upToTimescales
                               }

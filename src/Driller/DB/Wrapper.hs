@@ -16,8 +16,11 @@ module Driller.DB.Wrapper
     , fetchUpToYear,  fetchUpToYears,  fetchUpToYearGroup,  fetchUpToYearGroups,  fetchAllUpToYears
     , fetchFromRange, fetchFromRanges, fetchAllFromRanges
     , fetchUpToRange, fetchUpToRanges, fetchAllUpToRanges
-    , fetchScenario,  fetchScenarios,  fetchAllScenarios
     , fetchRangeGroup, fetchRangeGroups
+    , fetchFromTimescale, fetchFromTimescales, fetchAllFromTimescales
+    , fetchUpToTimescale, fetchUpToTimescales, fetchAllUpToTimescales
+    , fetchTimescaleGroup, fetchTimescaleGroups
+    , fetchScenario,  fetchScenarios,  fetchAllScenarios
     , fetchScenarioIds
     ) where
 
@@ -266,6 +269,32 @@ fetchUpToYearGroups c = query_ c upToYearGroupsQuery
 
 fetchAllUpToYears :: Connection -> IO [UpToYear]
 fetchAllUpToYears c = query_ c allUpToYearsQuery
+
+fetchFromTimescale :: Connection -> Int -> IO [FromTimescale]
+fetchFromTimescale c = query c fromTimescaleQuery
+
+fetchUpToTimescale :: Connection -> Int -> IO [UpToTimescale]
+fetchUpToTimescale c = query c upToTimescaleQuery
+
+fetchFromTimescales :: Connection -> [Int] -> IO [FromTimescale]
+fetchFromTimescales c ids = query c timescalesQuery (Only (In ids))
+
+fetchUpToTimescales :: Connection -> [Int] -> IO [UpToTimescale]
+fetchUpToTimescales c ids = query c timescalesQuery (Only (In ids))
+
+fetchTimescaleGroup :: Connection -> TL.Text -> IO [UpToTimescale]
+fetchTimescaleGroup c t = case getFromParser (TR.signed TR.decimal (TL.toStrict t)) of
+                             Just n  -> query c timescaleGroupQuery n
+                             Nothing -> query c timescaleGroupQuery (0 :: Int)
+
+fetchTimescaleGroups :: Connection -> IO [GroupNumber]
+fetchTimescaleGroups c = query_ c timescaleGroupsQuery
+
+fetchAllFromTimescales :: Connection -> IO [FromTimescale]
+fetchAllFromTimescales c = query_ c allTimescalesQuery
+
+fetchAllUpToTimescales :: Connection -> IO [UpToTimescale]
+fetchAllUpToTimescales c = query_ c allTimescalesQuery
 
 fetchFromRange :: Connection -> Int -> IO [FromRange]
 fetchFromRange c = query c fromRangeQuery

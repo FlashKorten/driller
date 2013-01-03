@@ -12,7 +12,7 @@ module Driller.DB.Queries
     , allPartiesQuery
     , allPublishersQuery
     , allRangesQuery
-    , allTimescaleQuery
+    , allTimescalesQuery
     , allSeriesQuery
     , allSidesQuery
     , allThemesQuery
@@ -43,7 +43,9 @@ module Driller.DB.Queries
     , fromRangeQuery
     , rangesQuery
     , upToRangeQuery
+    , fromTimescaleQuery
     , timescalesQuery
+    , upToTimescaleQuery
     , seriesQuery
     , seriessQuery
     , sideQuery
@@ -192,13 +194,15 @@ scenarioQuery      = "SELECT s.id, sd.title, sd.subtitle, s.year_from, s.year_up
 scenariosQuery     = "SELECT s.id, sd.title, sd.subtitle, s.year_from, s.year_upto FROM dr_scenario AS s JOIN dr_scenario_data AS sd ON s.id = sd.id_scenario WHERE s.id IN ?"
 allScenariosQuery  = "SELECT s.id, sd.title, sd.subtitle, s.year_from, s.year_upto FROM dr_scenario AS s JOIN dr_scenario_data AS sd ON s.id = sd.id_scenario ORDER BY sd.title, sd.subtitle"
 
-latitudeQuery, longitudeQuery, fromYearQuery, upToYearQuery, fromRangeQuery, upToRangeQuery :: Query
+latitudeQuery, longitudeQuery, fromYearQuery, upToYearQuery, fromRangeQuery, upToRangeQuery, fromTimescaleQuery, upToTimescaleQuery :: Query
 latitudeQuery      = "SELECT latitude_trunc  FROM dr_scenario WHERE latitude_trunc = ?"
 longitudeQuery     = "SELECT longitude_trunc FROM dr_scenario WHERE longitude_trunc = ?"
 fromYearQuery      = "SELECT min(year_from)  FROM dr_scenario WHERE year_from >= ?"
 upToYearQuery      = "SELECT max(year_upto)  FROM dr_scenario WHERE year_upto <= ?"
 fromRangeQuery     = "SELECT min(range)      FROM dr_scenario WHERE range >= ?"
 upToRangeQuery     = "SELECT max(range)      FROM dr_scenario WHERE range <= ?"
+fromTimescaleQuery = "SELECT min(timescale)      FROM dr_scenario WHERE timescale >= ?"
+upToTimescaleQuery = "SELECT max(timescale)      FROM dr_scenario WHERE timescale <= ?"
 
 latitudesQuery, longitudesQuery, fromYearsQuery, upToYearsQuery, rangesQuery, timescalesQuery :: Query
 latitudesQuery     = "SELECT latitude_trunc  FROM dr_scenario WHERE id IN ? GROUP BY latitude_trunc  ORDER BY latitude_trunc"
@@ -208,13 +212,13 @@ upToYearsQuery     = "SELECT year_upto       FROM dr_scenario WHERE id IN ? GROU
 rangesQuery        = "SELECT range           FROM dr_scenario WHERE id IN ? GROUP BY range           ORDER BY range"
 timescalesQuery    = "SELECT timescale       FROM dr_scenario WHERE id IN ? GROUP BY timescale       ORDER BY timescale"
 
-allLatitudesQuery, allLongitudesQuery, allFromYearsQuery, allUpToYearsQuery, allRangesQuery, allTimescaleQuery :: Query
+allLatitudesQuery, allLongitudesQuery, allFromYearsQuery, allUpToYearsQuery, allRangesQuery, allTimescalesQuery :: Query
 allLatitudesQuery  = "SELECT latitude_trunc  FROM dr_scenario GROUP BY latitude_trunc  ORDER BY latitude_trunc"
 allLongitudesQuery = "SELECT longitude_trunc FROM dr_scenario GROUP BY longitude_trunc ORDER BY longitude_trunc"
 allFromYearsQuery  = "SELECT year_from       FROM dr_scenario GROUP BY year_from       ORDER BY year_from"
 allUpToYearsQuery  = "SELECT year_upto       FROM dr_scenario GROUP BY year_upto       ORDER BY year_upto"
 allRangesQuery     = "SELECT range           FROM dr_scenario GROUP BY range           ORDER BY range"
-allTimescaleQuery  = "SELECT timescale       FROM dr_scenario GROUP BY timescale       ORDER BY timescale"
+allTimescalesQuery = "SELECT timescale       FROM dr_scenario GROUP BY timescale       ORDER BY timescale"
 
 scenarioListQuery :: JoinMap -> [Parameter] -> Query
 scenarioListQuery joinMap pList = foldl' mappend prefix parts

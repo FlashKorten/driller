@@ -105,5 +105,11 @@ main = do
     getRouteWithParameter    "/rangeGroup/:id"     $ DB.fetchRangeGroup conn
     getRouteWithoutParameter "/upToRanges"         $ DB.fetchAllUpToRanges conn
     getRouteWithParameter    "/upToRange/:id"      $ DB.fetchUpToRange conn
+    getRouteWithoutParameter "/fromTimescales"     $ DB.fetchAllFromTimescales conn
+    getRouteWithParameter    "/fromTimescale/:id"  $ DB.fetchFromTimescale conn
+    getRouteWithoutParameter "/timescaleGroups"    $ DB.fetchTimescaleGroups conn
+    getRouteWithParameter    "/timescaleGroup/:id" $ DB.fetchTimescaleGroup conn
+    getRouteWithoutParameter "/upToTimescales"     $ DB.fetchAllUpToTimescales conn
+    getRouteWithParameter    "/upToTimescale/:id"  $ DB.fetchUpToTimescale conn
     getRouteWithoutParameter "/scenarios"          $ DB.fetchAllScenarios conn
     getRouteWithParameter    "/scenario/:id"       $ DB.fetchScenario conn

@@ -23,6 +23,8 @@ module Driller.Data
     , Longitude
     , FromRange
     , UpToRange
+    , FromTimescale
+    , UpToTimescale
     , Scenario
     , fromInt
     , FromInt
@@ -60,36 +62,40 @@ data Author    = Author    { getAuthorId    :: Int, getAuthorName    :: Text.Tex
 data GroupLetter = GroupLetter { getGroupLetterPrefix :: Text.Text, getGroupLetterMatches :: Int }
 data GroupNumber = GroupNumber { getGroupNumberNumber :: Int,       getGroupNumberMatches :: Int }
 
-newtype FromYear  = FromYear  { getValueFromYear  :: Int }
-newtype UpToYear  = UpToYear  { getValueUpToYear  :: Int }
-newtype Latitude  = Latitude  { getValueLatitude  :: Int }
-newtype Longitude = Longitude { getValueLongitude :: Int }
-newtype FromRange = FromRange { getValueFromRange :: Int }
-newtype UpToRange = UpToRange { getValueUpToRange :: Int }
+newtype FromYear      = FromYear      { getValueFromYear      :: Int }
+newtype UpToYear      = UpToYear      { getValueUpToYear      :: Int }
+newtype Latitude      = Latitude      { getValueLatitude      :: Int }
+newtype Longitude     = Longitude     { getValueLongitude     :: Int }
+newtype FromRange     = FromRange     { getValueFromRange     :: Int }
+newtype UpToRange     = UpToRange     { getValueUpToRange     :: Int }
+newtype FromTimescale = FromTimescale { getValueFromTimescale :: Int }
+newtype UpToTimescale = UpToTimescale { getValueUpToTimescale :: Int }
 
-data GameResult = GameResult { getNoResults  :: Int
-                             , getGames      :: [Game]
-                             , getGenres     :: [Genre]
-                             , getThemes     :: [Theme]
-                             , getMechanics  :: [Mechanic]
-                             , getSides      :: [Side]
-                             , getParties    :: [Party]
-                             , getPublishers :: [Publisher]
-                             , getSeries     :: [Series]
-                             , getAuthors    :: [Author]
-                             , getEngines    :: [Engine]
-                             , getLeaders    :: [Leader]
-                             , getScenarios  :: [Scenario]
-                             , getLatitudes  :: [Latitude]
-                             , getLongitudes :: [Longitude]
-                             , getFromYears  :: [FromYear]
-                             , getUpToYears  :: [UpToYear]
-                             , getFromRanges :: [FromRange]
-                             , getUpToRanges :: [UpToRange]
-}
+data GameResult = GameResult { getNoResults     :: Int
+                             , getGames         :: [Game]
+                             , getGenres        :: [Genre]
+                             , getThemes        :: [Theme]
+                             , getMechanics     :: [Mechanic]
+                             , getSides         :: [Side]
+                             , getParties       :: [Party]
+                             , getPublishers    :: [Publisher]
+                             , getSeries        :: [Series]
+                             , getAuthors       :: [Author]
+                             , getEngines       :: [Engine]
+                             , getLeaders       :: [Leader]
+                             , getScenarios     :: [Scenario]
+                             , getLatitudes     :: [Latitude]
+                             , getLongitudes    :: [Longitude]
+                             , getFromYears     :: [FromYear]
+                             , getUpToYears     :: [UpToYear]
+                             , getFromRanges    :: [FromRange]
+                             , getUpToRanges    :: [UpToRange]
+                             , getFromTimescales :: [FromTimescale]
+                             , getUpToTimescales :: [UpToTimescale]
+                             }
 
 emptyGameResult :: GameResult
-emptyGameResult =  GameResult 0 [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
+emptyGameResult =  GameResult 0 [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
 
 data Game = Game { getGameId        :: Int
                  , getGameTitle     :: Text.Text
@@ -131,6 +137,8 @@ $(deriveJSON (drop 8)  ''Latitude)
 $(deriveJSON (drop 8)  ''Longitude)
 $(deriveJSON (drop 8)  ''FromRange)
 $(deriveJSON (drop 8)  ''UpToRange)
+$(deriveJSON (drop 8)  ''FromTimescale)
+$(deriveJSON (drop 8)  ''UpToTimescale)
 $(deriveJSON (drop 11) ''Scenario)
 $(deriveJSON (drop 7)  ''Game)
 $(deriveJSON (drop 14) ''GroupLetter)
@@ -145,13 +153,17 @@ instance FromInt FromRange where fromInt = FromRange
 instance FromInt UpToRange where fromInt = UpToRange
 instance FromInt Latitude  where fromInt = Latitude
 instance FromInt Longitude where fromInt = Longitude
+instance FromInt FromTimescale where fromInt = FromTimescale
+instance FromInt UpToTimescale where fromInt = UpToTimescale
 
-instance FromRow FromYear  where fromRow = FromYear  <$> field
-instance FromRow UpToYear  where fromRow = UpToYear  <$> field
-instance FromRow Latitude  where fromRow = Latitude  <$> field
-instance FromRow Longitude where fromRow = Longitude <$> field
-instance FromRow FromRange where fromRow = FromRange <$> field
-instance FromRow UpToRange where fromRow = UpToRange <$> field
+instance FromRow FromYear      where fromRow = FromYear      <$> field
+instance FromRow UpToYear      where fromRow = UpToYear      <$> field
+instance FromRow Latitude      where fromRow = Latitude      <$> field
+instance FromRow Longitude     where fromRow = Longitude     <$> field
+instance FromRow FromRange     where fromRow = FromRange     <$> field
+instance FromRow UpToRange     where fromRow = UpToRange     <$> field
+instance FromRow FromTimescale where fromRow = FromTimescale <$> field
+instance FromRow UpToTimescale where fromRow = UpToTimescale <$> field
 
 instance FromRow Author      where fromRow = Author      <$> field <*> field
 instance FromRow Genre       where fromRow = Genre       <$> field <*> field
