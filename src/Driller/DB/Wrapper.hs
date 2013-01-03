@@ -7,16 +7,17 @@ module Driller.DB.Wrapper
     , fetchSide,      fetchSides,      fetchSideGroup,      fetchSideGroups,      fetchAllSides
     , fetchParty,     fetchParties,    fetchPartyGroup,     fetchPartieGroups,    fetchAllParties
     , fetchPublisher, fetchPublishers, fetchPublisherGroup, fetchPublisherGroups, fetchAllPublishers
-    , fetchSeries,    fetchSeriess,    fetchSeriesGroup,    fetchSeriesGroups,     fetchAllSeries
+    , fetchSeries,    fetchSeriess,    fetchSeriesGroup,    fetchSeriesGroups,    fetchAllSeries
     , fetchGame,      fetchGames,      fetchGameGroup,      fetchGameGroups,      fetchAllGames
     , fetchLeader,    fetchLeaders,    fetchLeaderGroup,    fetchLeaderGroups,    fetchAllLeaders
-    , fetchLatitude,  fetchLatitudes,  fetchAllLatitudes
-    , fetchLongitude, fetchLongitudes, fetchAllLongitudes
+    , fetchLatitude,  fetchLatitudes,  fetchLatitudeGroup,  fetchLatitudeGroups,  fetchAllLatitudes
+    , fetchLongitude, fetchLongitudes, fetchLongitudeGroup, fetchLongitudeGroups, fetchAllLongitudes
     , fetchFromYear,  fetchFromYears,  fetchFromYearGroup,  fetchFromYearGroups,  fetchAllFromYears
     , fetchUpToYear,  fetchUpToYears,  fetchUpToYearGroup,  fetchUpToYearGroups,  fetchAllUpToYears
     , fetchFromRange, fetchFromRanges, fetchAllFromRanges
     , fetchUpToRange, fetchUpToRanges, fetchAllUpToRanges
     , fetchScenario,  fetchScenarios,  fetchAllScenarios
+    , fetchRangeGroup, fetchRangeGroups
     , fetchScenarioIds
     ) where
 
@@ -204,6 +205,14 @@ fetchLatitude c = query c latitudeQuery
 fetchLatitudes :: Connection -> [Int] -> IO [Latitude]
 fetchLatitudes c ids = query c latitudesQuery (Only (In ids))
 
+fetchLatitudeGroup :: Connection -> TL.Text -> IO [Latitude]
+fetchLatitudeGroup c t = case getFromParser (TR.signed TR.decimal (TL.toStrict t)) of
+                             Just n  -> query c latitudeGroupQuery n
+                             Nothing -> query c latitudeGroupQuery (0 :: Int)
+
+fetchLatitudeGroups :: Connection -> IO [GroupNumber]
+fetchLatitudeGroups c = query_ c latitudeGroupsQuery
+
 fetchAllLatitudes :: Connection -> IO [Latitude]
 fetchAllLatitudes c = query_ c allLatitudesQuery
 
@@ -212,6 +221,14 @@ fetchLongitude c = query c longitudeQuery
 
 fetchLongitudes :: Connection -> [Int] -> IO [Longitude]
 fetchLongitudes c ids = query c longitudesQuery (Only (In ids))
+
+fetchLongitudeGroup :: Connection -> TL.Text -> IO [Longitude]
+fetchLongitudeGroup c t = case getFromParser (TR.signed TR.decimal (TL.toStrict t)) of
+                             Just n  -> query c longitudeGroupQuery n
+                             Nothing -> query c longitudeGroupQuery (0 :: Int)
+
+fetchLongitudeGroups :: Connection -> IO [GroupNumber]
+fetchLongitudeGroups c = query_ c longitudeGroupsQuery
 
 fetchAllLongitudes :: Connection -> IO [Longitude]
 fetchAllLongitudes c = query_ c allLongitudesQuery
@@ -253,20 +270,28 @@ fetchAllUpToYears c = query_ c allUpToYearsQuery
 fetchFromRange :: Connection -> Int -> IO [FromRange]
 fetchFromRange c = query c fromRangeQuery
 
-fetchFromRanges :: Connection -> [Int] -> IO [FromRange]
-fetchFromRanges c ids = query c fromRangesQuery (Only (In ids))
-
-fetchAllFromRanges :: Connection -> IO [FromRange]
-fetchAllFromRanges c = query_ c allFromRangesQuery
-
 fetchUpToRange :: Connection -> Int -> IO [UpToRange]
 fetchUpToRange c = query c upToRangeQuery
 
+fetchFromRanges :: Connection -> [Int] -> IO [FromRange]
+fetchFromRanges c ids = query c rangesQuery (Only (In ids))
+
 fetchUpToRanges :: Connection -> [Int] -> IO [UpToRange]
-fetchUpToRanges c ids = query c upToRangesQuery (Only (In ids))
+fetchUpToRanges c ids = query c rangesQuery (Only (In ids))
+
+fetchRangeGroup :: Connection -> TL.Text -> IO [UpToRange]
+fetchRangeGroup c t = case getFromParser (TR.signed TR.decimal (TL.toStrict t)) of
+                             Just n  -> query c rangeGroupQuery n
+                             Nothing -> query c rangeGroupQuery (0 :: Int)
+
+fetchRangeGroups :: Connection -> IO [GroupNumber]
+fetchRangeGroups c = query_ c rangeGroupsQuery
+
+fetchAllFromRanges :: Connection -> IO [FromRange]
+fetchAllFromRanges c = query_ c allRangesQuery
 
 fetchAllUpToRanges :: Connection -> IO [UpToRange]
-fetchAllUpToRanges c = query_ c allUpToRangesQuery
+fetchAllUpToRanges c = query_ c allRangesQuery
 
 fetchScenario :: Connection -> Int -> IO [Scenario]
 fetchScenario c = query c scenarioQuery

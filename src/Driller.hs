@@ -83,10 +83,6 @@ main = do
     getRouteWithParameter    "/leader/:id"         $ DB.fetchLeader conn
     getRouteWithoutParameter "/leaderGroups"       $ DB.fetchLeaderGroups conn
     getRouteWithParameter    "/leaderGroup/:id"    $ DB.fetchLeaderGroup conn
-    getRouteWithoutParameter "/latitudes"          $ DB.fetchAllLatitudes conn
-    getRouteWithParameter    "/latitude/:id"       $ DB.fetchLatitude conn
-    getRouteWithoutParameter "/longitudes"         $ DB.fetchAllLongitudes conn
-    getRouteWithParameter    "/longitude/:id"      $ DB.fetchLongitude conn
     getRouteWithoutParameter "/fromYears"          $ DB.fetchAllFromYears conn
     getRouteWithParameter    "/fromYear/:id"       $ DB.fetchFromYear conn
     getRouteWithoutParameter "/fromYearGroups"     $ DB.fetchFromYearGroups conn
@@ -95,8 +91,18 @@ main = do
     getRouteWithParameter    "/upToYear/:id"       $ DB.fetchUpToYear conn
     getRouteWithoutParameter "/upToYearGroups"     $ DB.fetchUpToYearGroups conn
     getRouteWithParameter    "/upToYearGroup/:id"  $ DB.fetchUpToYearGroup conn
+    getRouteWithoutParameter "/latitudes"          $ DB.fetchAllLatitudes conn
+    getRouteWithParameter    "/latitude/:id"       $ DB.fetchLatitude conn
+    getRouteWithoutParameter "/latitudeGroups"     $ DB.fetchLatitudeGroups conn
+    getRouteWithParameter    "/latitudeGroups/:id" $ DB.fetchLatitudeGroup conn
+    getRouteWithoutParameter "/longitudes"         $ DB.fetchAllLongitudes conn
+    getRouteWithParameter    "/longitude/:id"      $ DB.fetchLongitude conn
+    getRouteWithoutParameter "/longitudeGroups"    $ DB.fetchLongitudeGroups conn
+    getRouteWithParameter    "/longitudeGroups/:id"$ DB.fetchLongitudeGroup conn
     getRouteWithoutParameter "/fromRanges"         $ DB.fetchAllFromRanges conn
     getRouteWithParameter    "/fromRange/:id"      $ DB.fetchFromRange conn
+    getRouteWithoutParameter "/rangeGroups"        $ DB.fetchRangeGroups conn
+    getRouteWithParameter    "/rangeGroup/:id"     $ DB.fetchRangeGroup conn
     getRouteWithoutParameter "/upToRanges"         $ DB.fetchAllUpToRanges conn
     getRouteWithParameter    "/upToRange/:id"      $ DB.fetchUpToRange conn
     getRouteWithoutParameter "/scenarios"          $ DB.fetchAllScenarios conn

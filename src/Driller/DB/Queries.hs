@@ -11,8 +11,8 @@ module Driller.DB.Queries
     , allMechanicsQuery
     , allPartiesQuery
     , allPublishersQuery
-    , allFromRangesQuery
-    , allUpToRangesQuery
+    , allRangesQuery
+    , allTimescaleQuery
     , allSeriesQuery
     , allSidesQuery
     , allThemesQuery
@@ -41,9 +41,9 @@ module Driller.DB.Queries
     , publisherQuery
     , publishersQuery
     , fromRangeQuery
-    , fromRangesQuery
+    , rangesQuery
     , upToRangeQuery
-    , upToRangesQuery
+    , timescalesQuery
     , seriesQuery
     , seriessQuery
     , sideQuery
@@ -83,6 +83,14 @@ module Driller.DB.Queries
     , fromYearGroupQuery
     , upToYearGroupsQuery
     , upToYearGroupQuery
+    , latitudeGroupsQuery
+    , latitudeGroupQuery
+    , longitudeGroupsQuery
+    , longitudeGroupQuery
+    , rangeGroupsQuery
+    , rangeGroupQuery
+    , timescaleGroupsQuery
+    , timescaleGroupQuery
     ) where
 
 import Driller.Data ( JoinMap, JoinComponentMap, Parameter )
@@ -120,6 +128,7 @@ sidesQuery         = "SELECT d.id, d.side      FROM dr_side AS d      JOIN dr_ma
 themesQuery        = "SELECT d.id, d.theme     FROM dr_theme AS d     JOIN dr_map_theme AS m     ON m.id_theme = d.id     JOIN dr_scenario AS s ON s.id_game = m.id_game WHERE s.id IN ? GROUP BY d.id, d.theme     ORDER BY d.theme"
 
 authorGroupsQuery, genreGroupsQuery, seriesGroupsQuery, leaderGroupsQuery, gameGroupsQuery, sideGroupsQuery, fromYearGroupsQuery, upToYearGroupsQuery,
+ latitudeGroupsQuery, longitudeGroupsQuery, rangeGroupsQuery, timescaleGroupsQuery,
  engineGroupsQuery, mechanicGroupsQuery, publisherGroupsQuery, partieGroupsQuery, themeGroupsQuery :: Query
 authorGroupsQuery    = "SELECT grp, count(id) FROM dr_author    GROUP BY grp ORDER BY grp"
 engineGroupsQuery    = "SELECT grp, count(id) FROM dr_engine    GROUP BY grp ORDER BY grp"
@@ -132,10 +141,15 @@ publisherGroupsQuery = "SELECT grp, count(id) FROM dr_publisher GROUP BY grp ORD
 seriesGroupsQuery    = "SELECT grp, count(id) FROM dr_series    GROUP BY grp ORDER BY grp"
 sideGroupsQuery      = "SELECT grp, count(id) FROM dr_side      GROUP BY grp ORDER BY grp"
 themeGroupsQuery     = "SELECT grp, count(id) FROM dr_theme     GROUP BY grp ORDER BY grp"
-fromYearGroupsQuery  = "SELECT year_from_group, count(distinct(year_from)) FROM dr_scenario  GROUP BY year_from_group ORDER BY year_from_group"
-upToYearGroupsQuery  = "SELECT year_upto_group, count(distinct(year_upto)) FROM dr_scenario  GROUP BY year_upto_group ORDER BY year_upto_group"
+fromYearGroupsQuery  = "SELECT year_from_group, count(distinct(year_from))       FROM dr_scenario  GROUP BY year_from_group ORDER BY year_from_group"
+upToYearGroupsQuery  = "SELECT year_upto_group, count(distinct(year_upto))       FROM dr_scenario  GROUP BY year_upto_group ORDER BY year_upto_group"
+latitudeGroupsQuery  = "SELECT latitude_group,  count(distinct(latitude_trunc))  FROM dr_scenario  GROUP BY latitude_group  ORDER BY latitude_group"
+longitudeGroupsQuery = "SELECT longitude_group, count(distinct(longitude_trunc)) FROM dr_scenario  GROUP BY longitude_group ORDER BY longitude_group"
+rangeGroupsQuery     = "SELECT range_group,     count(distinct(range))           FROM dr_scenario  GROUP BY range_group     ORDER BY range_group"
+timescaleGroupsQuery = "SELECT timescale_group, count(distinct(timescale))       FROM dr_scenario  GROUP BY timescale_group ORDER BY timescale_group"
 
 authorGroupQuery, genreGroupQuery, seriesGroupQuery, leaderGroupQuery, gameGroupQuery, fromYearGroupQuery, upToYearGroupQuery,
+ latitudeGroupQuery, longitudeGroupQuery, rangeGroupQuery, timescaleGroupQuery,
  engineGroupQuery, mechanicGroupQuery, publisherGroupQuery, sideGroupQuery, partyGroupQuery, themeGroupQuery :: Query
 authorGroupQuery    = "SELECT id, author          FROM dr_author    WHERE grp = ? ORDER BY author"
 engineGroupQuery    = "SELECT id, engine          FROM dr_engine    WHERE grp = ? ORDER BY engine"
@@ -150,6 +164,10 @@ sideGroupQuery      = "SELECT id, side            FROM dr_side      WHERE grp = 
 themeGroupQuery     = "SELECT id, theme           FROM dr_theme     WHERE grp = ? ORDER BY theme"
 fromYearGroupQuery  = "SELECT year_from           FROM dr_scenario  WHERE year_from_group = ? GROUP BY year_from ORDER BY year_from"
 upToYearGroupQuery  = "SELECT year_upto           FROM dr_scenario  WHERE year_upto_group = ? GROUP BY year_upto ORDER BY year_upto"
+latitudeGroupQuery  = "SELECT latitude            FROM dr_scenario  WHERE latitude_group =  ? GROUP BY latitude  ORDER BY latitude"
+longitudeGroupQuery = "SELECT longitude           FROM dr_scenario  WHERE longitude_group = ? GROUP BY longitude ORDER BY longitude"
+rangeGroupQuery     = "SELECT range               FROM dr_scenario  WHERE range_group =     ? GROUP BY range     ORDER BY range"
+timescaleGroupQuery = "SELECT timescale           FROM dr_scenario  WHERE timescale_group = ? GROUP BY timescale ORDER BY timescale"
 
 allAuthorsQuery, allGenresQuery, allEnginesQuery, allThemesQuery, allMechanicsQuery, allSidesQuery,
  allPartiesQuery, allPublishersQuery, allSeriesQuery, allLeadersQuery :: Query
@@ -182,21 +200,21 @@ upToYearQuery      = "SELECT max(year_upto)  FROM dr_scenario WHERE year_upto <=
 fromRangeQuery     = "SELECT min(range)      FROM dr_scenario WHERE range >= ?"
 upToRangeQuery     = "SELECT max(range)      FROM dr_scenario WHERE range <= ?"
 
-latitudesQuery, longitudesQuery, fromYearsQuery, upToYearsQuery, fromRangesQuery, upToRangesQuery :: Query
+latitudesQuery, longitudesQuery, fromYearsQuery, upToYearsQuery, rangesQuery, timescalesQuery :: Query
 latitudesQuery     = "SELECT latitude_trunc  FROM dr_scenario WHERE id IN ? GROUP BY latitude_trunc  ORDER BY latitude_trunc"
 longitudesQuery    = "SELECT longitude_trunc FROM dr_scenario WHERE id IN ? GROUP BY longitude_trunc ORDER BY longitude_trunc"
 fromYearsQuery     = "SELECT year_from       FROM dr_scenario WHERE id IN ? GROUP BY year_from       ORDER BY year_from"
 upToYearsQuery     = "SELECT year_upto       FROM dr_scenario WHERE id IN ? GROUP BY year_upto       ORDER BY year_upto"
-fromRangesQuery    = "SELECT range           FROM dr_scenario WHERE id IN ? GROUP BY range           ORDER BY range"
-upToRangesQuery    = "SELECT range           FROM dr_scenario WHERE id IN ? GROUP BY range           ORDER BY range"
+rangesQuery        = "SELECT range           FROM dr_scenario WHERE id IN ? GROUP BY range           ORDER BY range"
+timescalesQuery    = "SELECT timescale       FROM dr_scenario WHERE id IN ? GROUP BY timescale       ORDER BY timescale"
 
-allLatitudesQuery, allLongitudesQuery, allFromYearsQuery, allUpToYearsQuery, allFromRangesQuery, allUpToRangesQuery :: Query
+allLatitudesQuery, allLongitudesQuery, allFromYearsQuery, allUpToYearsQuery, allRangesQuery, allTimescaleQuery :: Query
 allLatitudesQuery  = "SELECT latitude_trunc  FROM dr_scenario GROUP BY latitude_trunc  ORDER BY latitude_trunc"
 allLongitudesQuery = "SELECT longitude_trunc FROM dr_scenario GROUP BY longitude_trunc ORDER BY longitude_trunc"
 allFromYearsQuery  = "SELECT year_from       FROM dr_scenario GROUP BY year_from       ORDER BY year_from"
 allUpToYearsQuery  = "SELECT year_upto       FROM dr_scenario GROUP BY year_upto       ORDER BY year_upto"
-allFromRangesQuery = "SELECT range           FROM dr_scenario GROUP BY range           ORDER BY range"
-allUpToRangesQuery = "SELECT range           FROM dr_scenario GROUP BY range           ORDER BY range"
+allRangesQuery     = "SELECT range           FROM dr_scenario GROUP BY range           ORDER BY range"
+allTimescaleQuery  = "SELECT timescale       FROM dr_scenario GROUP BY timescale       ORDER BY timescale"
 
 scenarioListQuery :: JoinMap -> [Parameter] -> Query
 scenarioListQuery joinMap pList = foldl' mappend prefix parts

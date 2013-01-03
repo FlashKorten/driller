@@ -89,7 +89,7 @@ data GameResult = GameResult { getNoResults  :: Int
 }
 
 emptyGameResult :: GameResult
-emptyGameResult = GameResult 0 [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
+emptyGameResult =  GameResult 0 [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
 
 data Game = Game { getGameId        :: Int
                  , getGameTitle     :: Text.Text
@@ -134,7 +134,7 @@ $(deriveJSON (drop 8)  ''UpToRange)
 $(deriveJSON (drop 11) ''Scenario)
 $(deriveJSON (drop 7)  ''Game)
 $(deriveJSON (drop 14) ''GroupLetter)
-$(deriveJSON (drop 16) ''GroupNumber)
+$(deriveJSON (drop 14) ''GroupNumber)
 
 class FromInt a where
   fromInt :: Int -> a

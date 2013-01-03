@@ -71,6 +71,12 @@ module Driller.DB
     , fetchFromYearGroup
     , fetchUpToYearGroups
     , fetchUpToYearGroup
+    , fetchLatitudeGroups
+    , fetchLatitudeGroup
+    , fetchLongitudeGroups
+    , fetchLongitudeGroup
+    , fetchRangeGroups
+    , fetchRangeGroup
     , convertValue
     ) where
 
