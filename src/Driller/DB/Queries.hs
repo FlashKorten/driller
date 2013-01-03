@@ -59,6 +59,7 @@ module Driller.DB.Queries
     , scenarioQuery
     , scenariosQuery
     , allScenariosQuery
+    , authorsCountQuery
     , authorGroupsQuery
     , authorGroupQuery
     , genreGroupsQuery
@@ -170,6 +171,9 @@ latitudeGroupQuery  = "SELECT latitude            FROM dr_scenario  WHERE latitu
 longitudeGroupQuery = "SELECT longitude           FROM dr_scenario  WHERE longitude_group = ? GROUP BY longitude ORDER BY longitude"
 rangeGroupQuery     = "SELECT range               FROM dr_scenario  WHERE range_group =     ? GROUP BY range     ORDER BY range"
 timescaleGroupQuery = "SELECT timescale           FROM dr_scenario  WHERE timescale_group = ? GROUP BY timescale ORDER BY timescale"
+
+authorsCountQuery   :: Query
+authorsCountQuery   = "SELECT count(id) FROM dr_author"
 
 allAuthorsQuery, allGenresQuery, allEnginesQuery, allThemesQuery, allMechanicsQuery, allSidesQuery,
  allPartiesQuery, allPublishersQuery, allSeriesQuery, allLeadersQuery :: Query

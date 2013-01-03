@@ -85,6 +85,7 @@ module Driller.DB
     , fetchRangeGroup
     , fetchTimescaleGroups
     , fetchTimescaleGroup
+    , fetchAuthorsForSelection
     , convertValue
     ) where
 

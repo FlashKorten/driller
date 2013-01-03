@@ -34,6 +34,7 @@ module Driller.Data
     , markExclusive
     , GroupLetter
     , GroupNumber
+    , AuthorList
     ) where
 
 import Driller.Error ( ParameterError )
@@ -114,8 +115,13 @@ type ParameterMap     = HashMap Text.Text Int
 type Answer           = Either ParameterError GameResult
 type JoinMap          = HashMap Text.Text (Query, Query, Query)
 type JoinComponentMap = HashMap Text.Text Query
+type AuthorList       = Either [GroupLetter] [Author]
 
 instance ToJSON Answer where
+  toJSON (Left e)  = toJSON e
+  toJSON (Right r) = toJSON r
+
+instance ToJSON AuthorList where
   toJSON (Left e)  = toJSON e
   toJSON (Right r) = toJSON r
 

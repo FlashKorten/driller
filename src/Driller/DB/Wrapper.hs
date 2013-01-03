@@ -22,6 +22,7 @@ module Driller.DB.Wrapper
     , fetchTimescaleGroup, fetchTimescaleGroups
     , fetchScenario,  fetchScenarios,  fetchAllScenarios
     , fetchScenarioIds
+    , fetchAuthorsForSelection
     ) where
 
 import Driller.Data
@@ -29,6 +30,7 @@ import Driller.DB.Queries
 import qualified Data.Text as T ( Text(), length )
 import qualified Data.Text.Lazy as TL ( Text(), toStrict )
 import qualified Data.Text.Read as TR ( signed, decimal )
+import Control.Monad ( liftM )
 import Database.PostgreSQL.Simple
     ( Only(Only)
     , In(In)
@@ -51,6 +53,16 @@ fetchAuthorGroups c = query_ c authorGroupsQuery
 
 fetchAllAuthors :: Connection -> IO [Author]
 fetchAllAuthors c = query_ c allAuthorsQuery
+
+fetchAuthorsForSelection :: Connection -> IO AuthorList
+fetchAuthorsForSelection c = do
+    count <- countAuthors c
+    if head count < (30 :: Int)
+        then liftM Right $ fetchAllAuthors c
+        else liftM Left  $ fetchAuthorGroups c
+
+countAuthors :: Connection -> IO [Int]
+countAuthors c = query_ c authorsCountQuery
 
 fetchGenre :: Connection -> Int -> IO [Genre]
 fetchGenre c = query c genreQuery
