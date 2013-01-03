@@ -57,32 +57,32 @@ module Driller.DB.Queries
     , scenarioQuery
     , scenariosQuery
     , allScenariosQuery
-    , authorsTocQuery
-    , authorsSectionQuery
-    , genresTocQuery
-    , genreSectionQuery
-    , seriesTocQuery
-    , seriesSectionQuery
-    , leadersTocQuery
-    , leaderSectionQuery
-    , sidesTocQuery
-    , sideSectionQuery
-    , partiesTocQuery
-    , partySectionQuery
-    , gamesTocQuery
-    , gameSectionQuery
-    , enginesTocQuery
-    , engineSectionQuery
-    , mechanicsTocQuery
-    , mechanicSectionQuery
-    , publishersTocQuery
-    , publisherSectionQuery
-    , themesTocQuery
-    , themeSectionQuery
-    , fromYearsTocQuery
-    , fromYearSectionQuery
-    , upToYearsTocQuery
-    , upToYearSectionQuery
+    , authorGroupsQuery
+    , authorGroupQuery
+    , genreGroupsQuery
+    , genreGroupQuery
+    , seriesGroupsQuery
+    , seriesGroupQuery
+    , leaderGroupsQuery
+    , leaderGroupQuery
+    , sideGroupsQuery
+    , sideGroupQuery
+    , partieGroupsQuery
+    , partyGroupQuery
+    , gameGroupsQuery
+    , gameGroupQuery
+    , engineGroupsQuery
+    , engineGroupQuery
+    , mechanicGroupsQuery
+    , mechanicGroupQuery
+    , publisherGroupsQuery
+    , publisherGroupQuery
+    , themeGroupsQuery
+    , themeGroupQuery
+    , fromYearGroupsQuery
+    , fromYearGroupQuery
+    , upToYearGroupsQuery
+    , upToYearGroupQuery
     ) where
 
 import Driller.Data ( JoinMap, JoinComponentMap, Parameter )
@@ -119,37 +119,37 @@ seriessQuery       = "SELECT d.id, d.series    FROM dr_series AS d    JOIN dr_ma
 sidesQuery         = "SELECT d.id, d.side      FROM dr_side AS d      JOIN dr_map_side AS m      ON m.id_side = d.id      WHERE m.id_scenario IN ? GROUP BY d.id, d.side      ORDER BY d.side"
 themesQuery        = "SELECT d.id, d.theme     FROM dr_theme AS d     JOIN dr_map_theme AS m     ON m.id_theme = d.id     JOIN dr_scenario AS s ON s.id_game = m.id_game WHERE s.id IN ? GROUP BY d.id, d.theme     ORDER BY d.theme"
 
-authorsTocQuery, genresTocQuery, seriesTocQuery, leadersTocQuery, gamesTocQuery, sidesTocQuery, fromYearsTocQuery, upToYearsTocQuery,
- enginesTocQuery, mechanicsTocQuery, publishersTocQuery, partiesTocQuery, themesTocQuery :: Query
-authorsTocQuery    = "SELECT grp, count(id) FROM dr_author    GROUP BY grp ORDER BY author"
-enginesTocQuery    = "SELECT grp, count(id) FROM dr_engine    GROUP BY grp ORDER BY engine"
-gamesTocQuery      = "SELECT grp, count(id) FROM dr_game      GROUP BY grp ORDER BY title"
-genresTocQuery     = "SELECT grp, count(id) FROM dr_genre     GROUP BY grp ORDER BY genre"
-leadersTocQuery    = "SELECT grp, count(id) FROM dr_leader    GROUP BY grp ORDER BY leader"
-mechanicsTocQuery  = "SELECT grp, count(id) FROM dr_mechanic  GROUP BY grp ORDER BY mechanic"
-partiesTocQuery    = "SELECT grp, count(id) FROM dr_party     GROUP BY grp ORDER BY party"
-publishersTocQuery = "SELECT grp, count(id) FROM dr_publisher GROUP BY grp ORDER BY publisher"
-seriesTocQuery     = "SELECT grp, count(id) FROM dr_series    GROUP BY grp ORDER BY series"
-sidesTocQuery      = "SELECT grp, count(id) FROM dr_side      GROUP BY grp ORDER BY side"
-themesTocQuery     = "SELECT grp, count(id) FROM dr_theme     GROUP BY grp ORDER BY theme"
-fromYearsTocQuery  = "SELECT year_from_group, count(distinct(year_from)) FROM dr_scenario  GROUP BY year_from_group ORDER BY year_from_group"
-upToYearsTocQuery  = "SELECT year_upto_group, count(distinct(year_upto)) FROM dr_scenario  GROUP BY year_upto_group ORDER BY year_upto_group"
+authorGroupsQuery, genreGroupsQuery, seriesGroupsQuery, leaderGroupsQuery, gameGroupsQuery, sideGroupsQuery, fromYearGroupsQuery, upToYearGroupsQuery,
+ engineGroupsQuery, mechanicGroupsQuery, publisherGroupsQuery, partieGroupsQuery, themeGroupsQuery :: Query
+authorGroupsQuery    = "SELECT grp, count(id) FROM dr_author    GROUP BY grp ORDER BY author"
+engineGroupsQuery    = "SELECT grp, count(id) FROM dr_engine    GROUP BY grp ORDER BY engine"
+gameGroupsQuery      = "SELECT grp, count(id) FROM dr_game      GROUP BY grp ORDER BY title"
+genreGroupsQuery     = "SELECT grp, count(id) FROM dr_genre     GROUP BY grp ORDER BY genre"
+leaderGroupsQuery    = "SELECT grp, count(id) FROM dr_leader    GROUP BY grp ORDER BY leader"
+mechanicGroupsQuery  = "SELECT grp, count(id) FROM dr_mechanic  GROUP BY grp ORDER BY mechanic"
+partieGroupsQuery    = "SELECT grp, count(id) FROM dr_party     GROUP BY grp ORDER BY party"
+publisherGroupsQuery = "SELECT grp, count(id) FROM dr_publisher GROUP BY grp ORDER BY publisher"
+seriesGroupsQuery     = "SELECT grp, count(id) FROM dr_series    GROUP BY grp ORDER BY series"
+sideGroupsQuery      = "SELECT grp, count(id) FROM dr_side      GROUP BY grp ORDER BY side"
+themeGroupsQuery     = "SELECT grp, count(id) FROM dr_theme     GROUP BY grp ORDER BY theme"
+fromYearGroupsQuery  = "SELECT year_from_group, count(distinct(year_from)) FROM dr_scenario  GROUP BY year_from_group ORDER BY year_from_group"
+upToYearGroupsQuery  = "SELECT year_upto_group, count(distinct(year_upto)) FROM dr_scenario  GROUP BY year_upto_group ORDER BY year_upto_group"
 
-authorsSectionQuery, genreSectionQuery, seriesSectionQuery, leaderSectionQuery, gameSectionQuery, fromYearSectionQuery, upToYearSectionQuery,
- engineSectionQuery, mechanicSectionQuery, publisherSectionQuery, sideSectionQuery, partySectionQuery, themeSectionQuery :: Query
-authorsSectionQuery   = "SELECT id, author          FROM dr_author    WHERE grp = ? ORDER BY author"
-engineSectionQuery    = "SELECT id, engine          FROM dr_engine    WHERE grp = ? ORDER BY engine"
-gameSectionQuery      = "SELECT id, title, subtitle FROM dr_game      WHERE grp = ? ORDER BY title"
-genreSectionQuery     = "SELECT id, genre           FROM dr_genre     WHERE grp = ? ORDER BY genre"
-leaderSectionQuery    = "SELECT id, leader          FROM dr_leader    WHERE grp = ? ORDER BY leader"
-mechanicSectionQuery  = "SELECT id, mechanic        FROM dr_mechanic  WHERE grp = ? ORDER BY mechanic"
-partySectionQuery     = "SELECT id, party           FROM dr_party     WHERE grp = ? ORDER BY party"
-publisherSectionQuery = "SELECT id, publisher       FROM dr_publisher WHERE grp = ? ORDER BY publisher"
-seriesSectionQuery    = "SELECT id, series          FROM dr_series    WHERE grp = ? ORDER BY series"
-sideSectionQuery      = "SELECT id, side            FROM dr_side      WHERE grp = ? ORDER BY side"
-themeSectionQuery     = "SELECT id, theme           FROM dr_theme     WHERE grp = ? ORDER BY theme"
-fromYearSectionQuery  = "SELECT year_from           FROM dr_scenario  WHERE year_from_group = ? GROUP BY year_from ORDER BY year_from"
-upToYearSectionQuery  = "SELECT year_upto           FROM dr_scenario  WHERE year_upto_group = ? GROUP BY year_upto ORDER BY year_upto"
+authorGroupQuery, genreGroupQuery, seriesGroupQuery, leaderGroupQuery, gameGroupQuery, fromYearGroupQuery, upToYearGroupQuery,
+ engineGroupQuery, mechanicGroupQuery, publisherGroupQuery, sideGroupQuery, partyGroupQuery, themeGroupQuery :: Query
+authorGroupQuery    = "SELECT id, author          FROM dr_author    WHERE grp = ? ORDER BY author"
+engineGroupQuery    = "SELECT id, engine          FROM dr_engine    WHERE grp = ? ORDER BY engine"
+gameGroupQuery      = "SELECT id, title, subtitle FROM dr_game      WHERE grp = ? ORDER BY title"
+genreGroupQuery     = "SELECT id, genre           FROM dr_genre     WHERE grp = ? ORDER BY genre"
+leaderGroupQuery    = "SELECT id, leader          FROM dr_leader    WHERE grp = ? ORDER BY leader"
+mechanicGroupQuery  = "SELECT id, mechanic        FROM dr_mechanic  WHERE grp = ? ORDER BY mechanic"
+partyGroupQuery     = "SELECT id, party           FROM dr_party     WHERE grp = ? ORDER BY party"
+publisherGroupQuery = "SELECT id, publisher       FROM dr_publisher WHERE grp = ? ORDER BY publisher"
+seriesGroupQuery     = "SELECT id, series          FROM dr_series    WHERE grp = ? ORDER BY series"
+sideGroupQuery      = "SELECT id, side            FROM dr_side      WHERE grp = ? ORDER BY side"
+themeGroupQuery     = "SELECT id, theme           FROM dr_theme     WHERE grp = ? ORDER BY theme"
+fromYearGroupQuery  = "SELECT year_from           FROM dr_scenario  WHERE year_from_group = ? GROUP BY year_from ORDER BY year_from"
+upToYearGroupQuery  = "SELECT year_upto           FROM dr_scenario  WHERE year_upto_group = ? GROUP BY year_upto ORDER BY year_upto"
 
 allAuthorsQuery, allGenresQuery, allEnginesQuery, allThemesQuery, allMechanicsQuery, allSidesQuery,
  allPartiesQuery, allPublishersQuery, allSeriesQuery, allLeadersQuery :: Query

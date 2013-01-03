@@ -45,32 +45,32 @@ module Driller.DB
     , fetchUpToYear
     , fetchUpToYears
     , initJoinMap
-    , fetchPublishersToc
-    , fetchPublisherSection
-    , fetchMechanicsToc
-    , fetchMechanicSection
-    , fetchEnginesToc
-    , fetchEngineSection
-    , fetchAuthorsToc
-    , fetchAuthorSection
-    , fetchSidesToc
-    , fetchSideSection
-    , fetchPartiesToc
-    , fetchPartySection
-    , fetchThemesToc
-    , fetchThemeSection
-    , fetchGenresToc
-    , fetchGenreSection
-    , fetchLeadersToc
-    , fetchLeaderSection
-    , fetchSeriesToc
-    , fetchSeriesSection
-    , fetchGamesToc
-    , fetchGameSection
-    , fetchFromYearsToc
-    , fetchFromYearSection
-    , fetchUpToYearsToc
-    , fetchUpToYearSection
+    , fetchPublisherGroups
+    , fetchPublisherGroup
+    , fetchMechanicGroups
+    , fetchMechanicGroup
+    , fetchEngineGroups
+    , fetchEngineGroup
+    , fetchAuthorGroups
+    , fetchAuthorGroup
+    , fetchSideGroups
+    , fetchSideGroup
+    , fetchPartieGroups
+    , fetchPartyGroup
+    , fetchThemeGroups
+    , fetchThemeGroup
+    , fetchGenreGroups
+    , fetchGenreGroup
+    , fetchLeaderGroups
+    , fetchLeaderGroup
+    , fetchSeriesGroups
+    , fetchSeriesGroup
+    , fetchGameGroups
+    , fetchGameGroup
+    , fetchFromYearGroups
+    , fetchFromYearGroup
+    , fetchUpToYearGroups
+    , fetchUpToYearGroup
     , convertValue
     ) where
 

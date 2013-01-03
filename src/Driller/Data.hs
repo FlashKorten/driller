@@ -30,8 +30,8 @@ module Driller.Data
     , JoinComponentMap
     , MarkExclusive
     , markExclusive
-    , SectionAlph
-    , SectionNumber
+    , GroupLetter
+    , GroupNumber
     ) where
 
 import Driller.Error ( ParameterError )
@@ -57,8 +57,8 @@ data Leader    = Leader    { getLeaderId    :: Int, getLeaderName    :: Text.Tex
 data Author    = Author    { getAuthorId    :: Int, getAuthorName    :: Text.Text }
   deriving Show
 
-data SectionAlph   = SectionAlph   { getSectionAlphPrefix   :: Text.Text, getSectionAlphMatches :: Int }
-data SectionNumber = SectionNumber { getSectionNumberNumber :: Int, getSectionNumberMatches     :: Int }
+data GroupLetter = GroupLetter { getGroupLetterPrefix :: Text.Text, getGroupLetterMatches :: Int }
+data GroupNumber = GroupNumber { getGroupNumberNumber :: Int,       getGroupNumberMatches :: Int }
 
 newtype FromYear  = FromYear  { getValueFromYear  :: Int }
 newtype UpToYear  = UpToYear  { getValueUpToYear  :: Int }
@@ -133,8 +133,8 @@ $(deriveJSON (drop 8)  ''FromRange)
 $(deriveJSON (drop 8)  ''UpToRange)
 $(deriveJSON (drop 11) ''Scenario)
 $(deriveJSON (drop 7)  ''Game)
-$(deriveJSON (drop 14) ''SectionAlph)
-$(deriveJSON (drop 16) ''SectionNumber)
+$(deriveJSON (drop 14) ''GroupLetter)
+$(deriveJSON (drop 16) ''GroupNumber)
 
 class FromInt a where
   fromInt :: Int -> a
@@ -153,21 +153,21 @@ instance FromRow Longitude where fromRow = Longitude <$> field
 instance FromRow FromRange where fromRow = FromRange <$> field
 instance FromRow UpToRange where fromRow = UpToRange <$> field
 
-instance FromRow Author        where fromRow = Author        <$> field <*> field
-instance FromRow Genre         where fromRow = Genre         <$> field <*> field
-instance FromRow Engine        where fromRow = Engine        <$> field <*> field
-instance FromRow Theme         where fromRow = Theme         <$> field <*> field
-instance FromRow Mechanic      where fromRow = Mechanic      <$> field <*> field
-instance FromRow Side          where fromRow = Side          <$> field <*> field
-instance FromRow Party         where fromRow = Party         <$> field <*> field
-instance FromRow Leader        where fromRow = Leader        <$> field <*> field
-instance FromRow Publisher     where fromRow = Publisher     <$> field <*> field
-instance FromRow Series        where fromRow = Series        <$> field <*> field
-instance FromRow Game          where fromRow = Game          <$> field <*> field <*> field
-instance FromRow Scenario      where fromRow = Scenario      <$> field <*> field <*> field <*> field <*> field
-instance FromRow SectionAlph   where fromRow = SectionAlph   <$> field <*> field
-instance FromRow SectionNumber where fromRow = SectionNumber <$> field <*> field
-instance FromRow Int           where fromRow = field
+instance FromRow Author      where fromRow = Author      <$> field <*> field
+instance FromRow Genre       where fromRow = Genre       <$> field <*> field
+instance FromRow Engine      where fromRow = Engine      <$> field <*> field
+instance FromRow Theme       where fromRow = Theme       <$> field <*> field
+instance FromRow Mechanic    where fromRow = Mechanic    <$> field <*> field
+instance FromRow Side        where fromRow = Side        <$> field <*> field
+instance FromRow Party       where fromRow = Party       <$> field <*> field
+instance FromRow Leader      where fromRow = Leader      <$> field <*> field
+instance FromRow Publisher   where fromRow = Publisher   <$> field <*> field
+instance FromRow Series      where fromRow = Series      <$> field <*> field
+instance FromRow Game        where fromRow = Game        <$> field <*> field <*> field
+instance FromRow Scenario    where fromRow = Scenario    <$> field <*> field <*> field <*> field <*> field
+instance FromRow GroupLetter where fromRow = GroupLetter <$> field <*> field
+instance FromRow GroupNumber where fromRow = GroupNumber <$> field <*> field
+instance FromRow Int         where fromRow = field
 
 instance ToRow Int           where toRow n = [toField n]
 instance ToRow Text.Text     where toRow n = [toField n]
