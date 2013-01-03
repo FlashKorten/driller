@@ -91,6 +91,7 @@ my $sth_update_game = $dbh -> prepare(
     "UPDATE dr_game SET "
   . "title = ?, "
   . "subtitle = ?, "
+  . "grp = ?, "
   . "description = ? "
   . "WHERE id = ?;");
 
@@ -99,21 +100,24 @@ my $sth_insert_game = $dbh -> prepare(
   . "id, "
   . "title, "
   . "subtitle, "
+  . "grp, "
   . "description)"
-  . "VALUES (?,?,?,?);");
+  . "VALUES (?,?,?,?,?);");
 
 my $sth_insert_scenario = $dbh -> prepare(
     "INSERT INTO dr_scenario ("
   . "id_game, "
   . "year_from, "
   . "year_upto, "
+  . "year_from_group, "
+  . "year_upto_group, "
   . "latitude_trunc, "
   . "longitude_trunc, "
   . "range, "
   . "timescale, "
   . "players_min, "
   . "players_max) "
-  . "VALUES (?,?,?,?,?,?,?,?,?) "
+  . "VALUES (?,?,?,?,?,?,?,?,?,?,?) "
   . "RETURNING id;");
 
 my $sth_insert_scenario_data = $dbh -> prepare(
@@ -149,6 +153,7 @@ foreach my $key (sort(keys %game)){
     print "---------------------------------\n";
     $sth_update_game -> execute( $game{$key}{'title'}
                                , $game{$key}{'subtitle'}
+                               , substr($game{$key}{'title'}, 0, 1)
                                , $game{$key}{'description'}
                                , $key);
     &clean_up_dependent_tables($dbh, $id_game);
@@ -156,6 +161,7 @@ foreach my $key (sort(keys %game)){
     $sth_insert_game -> execute( $key,
                                , $game{$key}{'title'}
                                , $game{$key}{'subtitle'}
+                               , substr($game{$key}{'title'}, 0, 1)
                                , $game{$key}{'description'});
   }
 
@@ -166,9 +172,19 @@ foreach my $key (sort(keys %game)){
     ($time_01, $time_02) = split(/\s*\/\s*/, $game{$key}{'scenario'}{$scen_key}{'dates'});
     ($latitude, $longitude) = split(/\s*\/\s*/, $game{$key}{'scenario'}{$scen_key}{'position'});
 
+    if ($scen_key =~ m/ - /){
+      ($scen_title, $scen_subtitle) = split(/\s+-\s+/, $scen_key);
+    } else {
+      ($scen_title, $scen_subtitle) = ($scen_key, "");
+    }
+
+    my $year_from = &get_year_from_date($time_01);
+    my $year_upto = &get_year_from_date($time_02);
     $sth_insert_scenario -> execute( $key
-                                   , &get_year_from_date($time_01)
-                                   , &get_year_from_date($time_02)
+                                   , $year_from
+                                   , $year_upto
+                                   , &get_number_group($year_from, 50)
+                                   , &get_number_group($year_upto, 50)
                                    , (split(/\./, $latitude))[0]
                                    , (split(/\./, $longitude))[0]
                                    , $game{$key}{'scenario'}{$scen_key}{'range'}
@@ -179,11 +195,6 @@ foreach my $key (sort(keys %game)){
    $result = $sth_insert_scenario->fetchrow_hashref();
    $id_scenario = $$result{"id"};
 
-   if ($scen_key =~ m/ - /){
-     ($scen_title, $scen_subtitle) = split(/\s+-\s+/, $scen_key);
-   } else {
-     ($scen_title, $scen_subtitle) = ($scen_key, "");
-   }
    $sth_insert_scenario_data -> execute( $id_scenario
                                        , $scen_title
                                        , $scen_subtitle
@@ -247,9 +258,9 @@ sub insert_field {
     $selectStatement -> execute($tmpFoo[$i]);
     $selectResult = $selectStatement->fetchrow_array();
     if (!defined $selectResult){
-      $insertQuery = "INSERT INTO dr_$label ($label) VALUES (?) RETURNING id;";
+      $insertQuery = "INSERT INTO dr_$label (grp, $label) VALUES (?,?) RETURNING id;";
       $insertStatement = $dbh -> prepare($insertQuery);
-      $insertStatement -> execute($tmpFoo[$i]);
+      $insertStatement -> execute(substr($tmpFoo[$i], 0, 1), $tmpFoo[$i]);
       my $foo_rec = $insertStatement->fetchrow_hashref();
       $insertStatement -> finish();
       $tmpFoo[$i] = $$foo_rec{"id"};
@@ -280,9 +291,9 @@ sub insert_field_with_attribute_in_map {
     $selectStatement -> execute($valueFoo);
     $selectResult = $selectStatement->fetchrow_array();
     if (!defined $selectResult){
-      $insertQuery = "INSERT INTO dr_$label ($label) VALUES (?) RETURNING id;";
+      $insertQuery = "INSERT INTO dr_$label (grp, $label) VALUES (?,?) RETURNING id;";
       $insertStatement = $dbh -> prepare($insertQuery);
-      $insertStatement -> execute($valueFoo);
+      $insertStatement -> execute(substr($valueFoo, 0, 1), $valueFoo);
       my $foo_rec = $insertStatement->fetchrow_hashref();
       $insertStatement -> finish();
       $tmpFoo[$i] = $$foo_rec{"id"};
@@ -369,4 +380,14 @@ sub get_year_from_date {
     $result *= -1;
   }
   return $result;
+}
+
+sub get_number_group {
+  my ($val, $base) = @_;
+  $val /= $base;
+  if ($val < 0) {
+    $val -= 1;
+  }
+  $val =~ s/\..*//;
+  return $val * $base;
 }
