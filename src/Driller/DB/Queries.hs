@@ -94,6 +94,8 @@ module Driller.DB.Queries
     , rangeGroupQuery
     , timescaleGroupsQuery
     , timescaleGroupQuery
+    , authorManyGroupsQuery
+    , authorsCountManyQuery
     ) where
 
 import Driller.Data ( JoinMap, JoinComponentMap, Parameter )
@@ -131,9 +133,10 @@ sidesQuery         = "SELECT d.id, d.side      FROM dr_side AS d      JOIN dr_ma
 themesQuery        = "SELECT d.id, d.theme     FROM dr_theme AS d     JOIN dr_map_theme AS m     ON m.id_theme = d.id     JOIN dr_scenario AS s ON s.id_game = m.id_game WHERE s.id IN ? GROUP BY d.id, d.theme     ORDER BY d.theme"
 
 authorGroupsQuery, genreGroupsQuery, seriesGroupsQuery, leaderGroupsQuery, gameGroupsQuery, sideGroupsQuery, fromYearGroupsQuery, upToYearGroupsQuery,
- latitudeGroupsQuery, longitudeGroupsQuery, rangeGroupsQuery, timescaleGroupsQuery,
+ latitudeGroupsQuery, longitudeGroupsQuery, rangeGroupsQuery, timescaleGroupsQuery, authorManyGroupsQuery,
  engineGroupsQuery, mechanicGroupsQuery, publisherGroupsQuery, partieGroupsQuery, themeGroupsQuery :: Query
 authorGroupsQuery    = "SELECT grp, count(id) FROM dr_author    GROUP BY grp ORDER BY grp"
+authorManyGroupsQuery    = "SELECT a.grp, count(distinct(a.id)) FROM dr_author AS a JOIN dr_map_author AS ma on a.id = ma.id_author JOIN dr_scenario AS s ON s.id = ma.id_scenario WHERE s.id IN ? GROUP BY grp ORDER BY grp"
 engineGroupsQuery    = "SELECT grp, count(id) FROM dr_engine    GROUP BY grp ORDER BY grp"
 gameGroupsQuery      = "SELECT grp, count(id) FROM dr_game      GROUP BY grp ORDER BY grp"
 genreGroupsQuery     = "SELECT grp, count(id) FROM dr_genre     GROUP BY grp ORDER BY grp"
@@ -172,8 +175,9 @@ longitudeGroupQuery = "SELECT longitude           FROM dr_scenario  WHERE longit
 rangeGroupQuery     = "SELECT range               FROM dr_scenario  WHERE range_group =     ? GROUP BY range     ORDER BY range"
 timescaleGroupQuery = "SELECT timescale           FROM dr_scenario  WHERE timescale_group = ? GROUP BY timescale ORDER BY timescale"
 
-authorsCountQuery   :: Query
-authorsCountQuery   = "SELECT count(id) FROM dr_author"
+authorsCountQuery, authorsCountManyQuery   :: Query
+authorsCountQuery    = "SELECT count(id) FROM dr_author"
+authorsCountManyQuery = "SELECT count(distinct(id_author)) FROM dr_map_author AS a JOIN dr_scenario AS s ON s.id = a.id_scenario WHERE s.id IN ?"
 
 allAuthorsQuery, allGenresQuery, allEnginesQuery, allThemesQuery, allMechanicsQuery, allSidesQuery,
  allPartiesQuery, allPublishersQuery, allSeriesQuery, allLeadersQuery :: Query

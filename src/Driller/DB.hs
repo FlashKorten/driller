@@ -123,6 +123,15 @@ fetchForResult parameterMap key fetchOne fetchMany c ids
                         else liftM markExclusive (fetchOne c (negate value))
         Nothing    -> fetchMany c ids
 
+fetchForResult_ :: (Monad m, MarkExclusive b)
+                => ParameterMap -> T.Text -> Int -> (Connection -> Int -> m b) -> (Connection -> Int -> [Int] -> m (Either a b)) -> Connection -> [Int] -> m (Either a b)
+fetchForResult_ parameterMap key limit fetchOne fetchMany c ids
+    = case HM.lookup key parameterMap of
+        Just value -> if value >= 0
+                        then liftM Right $ fetchOne c value
+                        else liftM (Right .  markExclusive) (fetchOne c (negate value))
+        Nothing    -> fetchMany c limit ids
+
 fetchSimpleValuesForResult :: (FromInt t, Monad m) => ParameterMap -> T.Text -> (Connection -> [Int] -> m [t]) -> Connection -> [Int] -> m [t]
 fetchSimpleValuesForResult parameterMap key fetchMany c ids
     = case HM.lookup key parameterMap of
@@ -191,7 +200,7 @@ prepareResult parameterMap c ids = do
     parties    <- fetchForResult parameterMap "party"     fetchParty     fetchParties    c ids
     publishers <- fetchForResult parameterMap "publisher" fetchPublisher fetchPublishers c ids
     series     <- fetchForResult parameterMap "series"    fetchSeries    fetchSeriess    c ids
-    authors    <- fetchForResult parameterMap "author"    fetchAuthor    fetchAuthors    c ids
+    authors    <- fetchForResult_ parameterMap "author" 25   fetchAuthor    fetchManyAuthorsForSelection    c ids
     engines    <- fetchForResult parameterMap "engine"    fetchEngine    fetchEngines    c ids
     leaders    <- fetchForResult parameterMap "leader"    fetchLeader    fetchLeaders    c ids
     latitudes  <- fetchSimpleValuesForResult parameterMap "latitude"  fetchLatitudes  c ids

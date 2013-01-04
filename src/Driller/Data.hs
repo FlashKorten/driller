@@ -81,7 +81,7 @@ data GameResult = GameResult { getNoResults     :: Int
                              , getParties       :: [Party]
                              , getPublishers    :: [Publisher]
                              , getSeries        :: [Series]
-                             , getAuthors       :: [Author]
+                             , getAuthors       :: AuthorList
                              , getEngines       :: [Engine]
                              , getLeaders       :: [Leader]
                              , getScenarios     :: [Scenario]
@@ -96,7 +96,7 @@ data GameResult = GameResult { getNoResults     :: Int
                              }
 
 emptyGameResult :: GameResult
-emptyGameResult =  GameResult 0 [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []
+emptyGameResult =  GameResult 0 [] [] [] [] [] [] [] [] (Right []) [] [] [] [] [] [] [] [] [] [] []
 
 data Game = Game { getGameId        :: Int
                  , getGameTitle     :: Text.Text

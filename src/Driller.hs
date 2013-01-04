@@ -34,7 +34,7 @@ main = do
   scotty 3003 $ do
     middleware logStdoutDev
 
-    get "/g" $ do
+    get "/q" $ do
       p <- params
       result <- liftIO $ DB.fetchDrilledGameResult conn joinMap p
       json result

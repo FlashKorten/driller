@@ -22,7 +22,7 @@ module Driller.DB.Wrapper
     , fetchTimescaleGroup, fetchTimescaleGroups
     , fetchScenario,  fetchScenarios,  fetchAllScenarios
     , fetchScenarioIds
-    , fetchAuthorsForSelection
+    , fetchAuthorsForSelection, fetchManyAuthorGroups, fetchManyAuthorsForSelection,
     ) where
 
 import Driller.Data
@@ -51,6 +51,9 @@ fetchAuthorGroup c = query c authorGroupQuery . TL.toStrict
 fetchAuthorGroups :: Connection -> IO [GroupLetter]
 fetchAuthorGroups c = query_ c authorGroupsQuery
 
+fetchManyAuthorGroups :: Connection -> [Int] -> IO [GroupLetter]
+fetchManyAuthorGroups c ids = query c authorManyGroupsQuery (Only (In ids))
+
 fetchAllAuthors :: Connection -> IO [Author]
 fetchAllAuthors c = query_ c allAuthorsQuery
 
@@ -61,8 +64,20 @@ fetchAuthorsForSelection c = do
         then liftM Right $ fetchAllAuthors c
         else liftM Left  $ fetchAuthorGroups c
 
+fetchManyAuthorsForSelection :: Connection -> Int -> [Int] -> IO AuthorList
+fetchManyAuthorsForSelection c limit ids = do
+    count <- countManyAuthors c ids
+    if not $ null count
+      then if head count < limit
+          then liftM Right $ fetchAuthors c ids
+          else liftM Left  $ fetchManyAuthorGroups c ids
+      else return $ Right []
+
 countAuthors :: Connection -> IO [Int]
 countAuthors c = query_ c authorsCountQuery
+
+countManyAuthors :: Connection -> [Int] -> IO [Int]
+countManyAuthors c ids = query c authorsCountManyQuery (Only (In ids))
 
 fetchGenre :: Connection -> Int -> IO [Genre]
 fetchGenre c = query c genreQuery
