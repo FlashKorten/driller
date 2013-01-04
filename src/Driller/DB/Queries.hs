@@ -59,43 +59,54 @@ module Driller.DB.Queries
     , scenarioQuery
     , scenariosQuery
     , allScenariosQuery
-    , authorsCountQuery
-    , authorGroupsQuery
-    , authorGroupQuery
-    , genreGroupsQuery
-    , genreGroupQuery
-    , seriesGroupsQuery
-    , seriesGroupQuery
-    , leaderGroupsQuery
-    , leaderGroupQuery
-    , sideGroupsQuery
-    , sideGroupQuery
-    , partieGroupsQuery
-    , partyGroupQuery
-    , gameGroupsQuery
-    , gameGroupQuery
-    , engineGroupsQuery
-    , engineGroupQuery
-    , mechanicGroupsQuery
-    , mechanicGroupQuery
-    , publisherGroupsQuery
-    , publisherGroupQuery
-    , themeGroupsQuery
-    , themeGroupQuery
-    , fromYearGroupsQuery
-    , fromYearGroupQuery
-    , upToYearGroupsQuery
-    , upToYearGroupQuery
-    , latitudeGroupsQuery
-    , latitudeGroupQuery
-    , longitudeGroupsQuery
-    , longitudeGroupQuery
-    , rangeGroupsQuery
-    , rangeGroupQuery
-    , timescaleGroupsQuery
-    , timescaleGroupQuery
+    , authorGroupsQuery, authorGroupQuery
+    , genreGroupsQuery, genreGroupQuery
+    , seriesGroupsQuery, seriesGroupQuery
+    , leaderGroupsQuery, leaderGroupQuery
+    , sideGroupsQuery, sideGroupQuery
+    , partieGroupsQuery, partyGroupQuery
+    , gameGroupsQuery, gameGroupQuery
+    , engineGroupsQuery, engineGroupQuery
+    , mechanicGroupsQuery, mechanicGroupQuery
+    , publisherGroupsQuery, publisherGroupQuery
+    , themeGroupsQuery, themeGroupQuery
+    , fromYearGroupsQuery, fromYearGroupQuery
+    , upToYearGroupsQuery, upToYearGroupQuery
+    , latitudeGroupsQuery, latitudeGroupQuery
+    , longitudeGroupsQuery, longitudeGroupQuery
+    , rangeGroupsQuery, rangeGroupQuery
+    , timescaleGroupsQuery, timescaleGroupQuery
+    , authorsCountQuery, authorsCountManyQuery
+    , enginesCountQuery, enginesCountManyQuery
+    , gamesCountQuery, gamesCountManyQuery
+    , genresCountQuery, genresCountManyQuery
+    , leadersCountQuery, leadersCountManyQuery
+    , mechanicsCountQuery, mechanicsCountManyQuery
+    , partiesCountQuery, partiesCountManyQuery
+    , publishersCountQuery, publishersCountManyQuery
+    , seriesCountQuery, seriesCountManyQuery
+    , sidesCountQuery, sidesCountManyQuery
+    , themesCountQuery, themesCountManyQuery
+    , fromYearCountManyQuery, upToYearCountManyQuery
+    , rangeCountManyQuery, timescaleCountManyQuery
+    , latitudeCountManyQuery, longitudeCountManyQuery
+    , gameManyGroupsQuery
     , authorManyGroupsQuery
-    , authorsCountManyQuery
+    , engineManyGroupsQuery
+    , genreManyGroupsQuery
+    , leaderManyGroupsQuery
+    , mechanicManyGroupsQuery
+    , partyManyGroupsQuery
+    , publisherManyGroupsQuery
+    , seriesManyGroupsQuery
+    , sideManyGroupsQuery
+    , themeManyGroupsQuery
+    , fromYearManyGroupsQuery
+    , upToYearManyGroupsQuery
+    , latitudeManyGroupsQuery
+    , longitudeManyGroupsQuery
+    , rangeManyGroupsQuery
+    , timescaleManyGroupsQuery
     ) where
 
 import Driller.Data ( JoinMap, JoinComponentMap, Parameter )
@@ -121,22 +132,21 @@ themeQuery         = "SELECT id, theme     FROM dr_theme     WHERE id = ?"
 
 authorsQuery, genresQuery, enginesQuery, themesQuery, mechanicsQuery, sidesQuery,
  partiesQuery, publishersQuery, seriessQuery, leadersQuery :: Query
-authorsQuery       = "SELECT d.id, d.author    FROM dr_author AS d    JOIN dr_map_author AS m    ON m.id_author = d.id    WHERE m.id_scenario IN ? GROUP BY d.id, d.author    ORDER BY d.author"
 enginesQuery       = "SELECT d.id, d.engine    FROM dr_engine AS d    JOIN dr_map_engine AS m    ON m.id_engine = d.id    JOIN dr_scenario AS s ON s.id_game = m.id_game WHERE s.id IN ? GROUP BY d.id, d.engine    ORDER BY d.engine"
 genresQuery        = "SELECT d.id, d.genre     FROM dr_genre AS d     JOIN dr_map_genre AS m     ON m.id_genre = d.id     JOIN dr_scenario AS s ON s.id_game = m.id_game WHERE s.id IN ? GROUP BY d.id, d.genre     ORDER BY d.genre"
-leadersQuery       = "SELECT d.id, d.leader    FROM dr_leader AS d    JOIN dr_map_leader AS m    ON m.id_leader = d.id    WHERE m.id_scenario IN ? GROUP BY d.id, d.leader    ORDER BY d.leader"
 mechanicsQuery     = "SELECT d.id, d.mechanic  FROM dr_mechanic AS d  JOIN dr_map_mechanic AS m  ON m.id_mechanic = d.id  JOIN dr_scenario AS s ON s.id_game = m.id_game WHERE s.id IN ? GROUP BY d.id, d.mechanic  ORDER BY d.mechanic"
-partiesQuery       = "SELECT d.id, d.party     FROM dr_party AS d     JOIN dr_map_party AS m     ON m.id_party = d.id     WHERE m.id_scenario IN ? GROUP BY d.id, d.party     ORDER BY d.party"
 publishersQuery    = "SELECT d.id, d.publisher FROM dr_publisher AS d JOIN dr_map_publisher AS m ON m.id_publisher = d.id JOIN dr_scenario AS s ON s.id_game = m.id_game WHERE s.id IN ? GROUP BY d.id, d.publisher ORDER BY d.publisher"
 seriessQuery       = "SELECT d.id, d.series    FROM dr_series AS d    JOIN dr_map_series AS m    ON m.id_series = d.id    JOIN dr_scenario AS s ON s.id_game = m.id_game WHERE s.id IN ? GROUP BY d.id, d.series    ORDER BY d.series"
-sidesQuery         = "SELECT d.id, d.side      FROM dr_side AS d      JOIN dr_map_side AS m      ON m.id_side = d.id      WHERE m.id_scenario IN ? GROUP BY d.id, d.side      ORDER BY d.side"
 themesQuery        = "SELECT d.id, d.theme     FROM dr_theme AS d     JOIN dr_map_theme AS m     ON m.id_theme = d.id     JOIN dr_scenario AS s ON s.id_game = m.id_game WHERE s.id IN ? GROUP BY d.id, d.theme     ORDER BY d.theme"
+sidesQuery         = "SELECT d.id, d.side      FROM dr_side AS d      JOIN dr_map_side AS m      ON m.id_side = d.id      WHERE m.id_scenario IN ? GROUP BY d.id, d.side      ORDER BY d.side"
+authorsQuery       = "SELECT d.id, d.author    FROM dr_author AS d    JOIN dr_map_author AS m    ON m.id_author = d.id    WHERE m.id_scenario IN ? GROUP BY d.id, d.author    ORDER BY d.author"
+leadersQuery       = "SELECT d.id, d.leader    FROM dr_leader AS d    JOIN dr_map_leader AS m    ON m.id_leader = d.id    WHERE m.id_scenario IN ? GROUP BY d.id, d.leader    ORDER BY d.leader"
+partiesQuery       = "SELECT d.id, d.party     FROM dr_party AS d     JOIN dr_map_party AS m     ON m.id_party = d.id     WHERE m.id_scenario IN ? GROUP BY d.id, d.party     ORDER BY d.party"
 
 authorGroupsQuery, genreGroupsQuery, seriesGroupsQuery, leaderGroupsQuery, gameGroupsQuery, sideGroupsQuery, fromYearGroupsQuery, upToYearGroupsQuery,
- latitudeGroupsQuery, longitudeGroupsQuery, rangeGroupsQuery, timescaleGroupsQuery, authorManyGroupsQuery,
+ latitudeGroupsQuery, longitudeGroupsQuery, rangeGroupsQuery, timescaleGroupsQuery,
  engineGroupsQuery, mechanicGroupsQuery, publisherGroupsQuery, partieGroupsQuery, themeGroupsQuery :: Query
 authorGroupsQuery    = "SELECT grp, count(id) FROM dr_author    GROUP BY grp ORDER BY grp"
-authorManyGroupsQuery    = "SELECT a.grp, count(distinct(a.id)) FROM dr_author AS a JOIN dr_map_author AS ma on a.id = ma.id_author JOIN dr_scenario AS s ON s.id = ma.id_scenario WHERE s.id IN ? GROUP BY grp ORDER BY grp"
 engineGroupsQuery    = "SELECT grp, count(id) FROM dr_engine    GROUP BY grp ORDER BY grp"
 gameGroupsQuery      = "SELECT grp, count(id) FROM dr_game      GROUP BY grp ORDER BY grp"
 genreGroupsQuery     = "SELECT grp, count(id) FROM dr_genre     GROUP BY grp ORDER BY grp"
@@ -153,6 +163,28 @@ latitudeGroupsQuery  = "SELECT latitude_group,  count(distinct(latitude_trunc)) 
 longitudeGroupsQuery = "SELECT longitude_group, count(distinct(longitude_trunc)) FROM dr_scenario  GROUP BY longitude_group ORDER BY longitude_group"
 rangeGroupsQuery     = "SELECT range_group,     count(distinct(range))           FROM dr_scenario  GROUP BY range_group     ORDER BY range_group"
 timescaleGroupsQuery = "SELECT timescale_group, count(distinct(timescale))       FROM dr_scenario  GROUP BY timescale_group ORDER BY timescale_group"
+
+gameManyGroupsQuery, authorManyGroupsQuery, engineManyGroupsQuery, genreManyGroupsQuery, leaderManyGroupsQuery, mechanicManyGroupsQuery,
+ partyManyGroupsQuery, publisherManyGroupsQuery, seriesManyGroupsQuery, sideManyGroupsQuery, themeManyGroupsQuery,
+ fromYearManyGroupsQuery, upToYearManyGroupsQuery, latitudeManyGroupsQuery, longitudeManyGroupsQuery,
+ rangeManyGroupsQuery, timescaleManyGroupsQuery :: Query
+gameManyGroupsQuery      = "SELECT a.grp, count(distinct(a.id)) FROM dr_game AS a JOIN dr_scenario AS s ON a.id = s.id_game WHERE s.id IN ? GROUP BY grp ORDER BY grp"
+authorManyGroupsQuery    = "SELECT a.grp, count(distinct(a.id)) FROM dr_author AS a JOIN dr_map_author AS ma on a.id       = ma.id_author JOIN dr_scenario AS s ON s.id    = ma.id_scenario WHERE s.id IN ? GROUP BY grp ORDER BY grp"
+partyManyGroupsQuery     = "SELECT a.grp, count(distinct(a.id)) FROM dr_party AS a JOIN dr_map_party AS ma on a.id         = ma.id_party JOIN dr_scenario AS s ON s.id     = ma.id_scenario WHERE s.id IN ? GROUP BY grp ORDER BY grp"
+sideManyGroupsQuery      = "SELECT a.grp, count(distinct(a.id)) FROM dr_side AS a JOIN dr_map_side AS ma on a.id           = ma.id_side JOIN dr_scenario AS s ON s.id      = ma.id_scenario WHERE s.id IN ? GROUP BY grp ORDER BY grp"
+leaderManyGroupsQuery    = "SELECT a.grp, count(distinct(a.id)) FROM dr_leader AS a JOIN dr_map_leader AS ma on a.id       = ma.id_leader JOIN dr_scenario AS s ON s.id    = ma.id_scenario WHERE s.id IN ? GROUP BY grp ORDER BY grp"
+engineManyGroupsQuery    = "SELECT a.grp, count(distinct(a.id)) FROM dr_engine AS a JOIN dr_map_engine AS ma on a.id       = ma.id_engine JOIN dr_scenario AS s ON s.id_game    = ma.id_game WHERE s.id IN ? GROUP BY grp ORDER BY grp"
+genreManyGroupsQuery     = "SELECT a.grp, count(distinct(a.id)) FROM dr_genre AS a JOIN dr_map_genre AS ma on a.id         = ma.id_genre JOIN dr_scenario AS s ON s.id_game     = ma.id_game WHERE s.id IN ? GROUP BY grp ORDER BY grp"
+mechanicManyGroupsQuery  = "SELECT a.grp, count(distinct(a.id)) FROM dr_mechanic AS a JOIN dr_map_mechanic AS ma on a.id   = ma.id_mechanic JOIN dr_scenario AS s ON s.id_game  = ma.id_game WHERE s.id IN ? GROUP BY grp ORDER BY grp"
+publisherManyGroupsQuery = "SELECT a.grp, count(distinct(a.id)) FROM dr_publisher AS a JOIN dr_map_publisher AS ma on a.id = ma.id_publisher JOIN dr_scenario AS s ON s.id_game = ma.id_game WHERE s.id IN ? GROUP BY grp ORDER BY grp"
+seriesManyGroupsQuery    = "SELECT a.grp, count(distinct(a.id)) FROM dr_series AS a JOIN dr_map_series AS ma on a.id       = ma.id_series JOIN dr_scenario AS s ON s.id_game    = ma.id_game WHERE s.id IN ? GROUP BY grp ORDER BY grp"
+themeManyGroupsQuery     = "SELECT a.grp, count(distinct(a.id)) FROM dr_theme AS a JOIN dr_map_theme AS ma on a.id         = ma.id_theme JOIN dr_scenario AS s ON s.id_game     = ma.id_game WHERE s.id IN ? GROUP BY grp ORDER BY grp"
+fromYearManyGroupsQuery  = "SELECT year_from_group, count(distinct(year_from))       FROM dr_scenario  WHERE id IN ? GROUP BY year_from_group ORDER BY year_from_group"
+upToYearManyGroupsQuery  = "SELECT year_upto_group, count(distinct(year_upto))       FROM dr_scenario  WHERE id IN ? GROUP BY year_upto_group ORDER BY year_upto_group"
+latitudeManyGroupsQuery  = "SELECT latitude_group,  count(distinct(latitude_trunc))  FROM dr_scenario  WHERE id IN ? GROUP BY latitude_group  ORDER BY latitude_group"
+longitudeManyGroupsQuery = "SELECT longitude_group, count(distinct(longitude_trunc)) FROM dr_scenario  WHERE id IN ? GROUP BY longitude_group ORDER BY longitude_group"
+rangeManyGroupsQuery     = "SELECT range_group,     count(distinct(range))           FROM dr_scenario  WHERE id IN ? GROUP BY range_group     ORDER BY range_group"
+timescaleManyGroupsQuery = "SELECT timescale_group, count(distinct(timescale))       FROM dr_scenario  WHERE id IN ? GROUP BY timescale_group ORDER BY timescale_group"
 
 authorGroupQuery, genreGroupQuery, seriesGroupQuery, leaderGroupQuery, gameGroupQuery, fromYearGroupQuery, upToYearGroupQuery,
  latitudeGroupQuery, longitudeGroupQuery, rangeGroupQuery, timescaleGroupQuery,
@@ -175,9 +207,48 @@ longitudeGroupQuery = "SELECT longitude           FROM dr_scenario  WHERE longit
 rangeGroupQuery     = "SELECT range               FROM dr_scenario  WHERE range_group =     ? GROUP BY range     ORDER BY range"
 timescaleGroupQuery = "SELECT timescale           FROM dr_scenario  WHERE timescale_group = ? GROUP BY timescale ORDER BY timescale"
 
-authorsCountQuery, authorsCountManyQuery   :: Query
+fromYearCountManyQuery, upToYearCountManyQuery,
+ rangeCountManyQuery, timescaleCountManyQuery,
+ latitudeCountManyQuery, longitudeCountManyQuery,
+ authorsCountQuery, authorsCountManyQuery,
+ enginesCountQuery, enginesCountManyQuery,
+ gamesCountQuery, gamesCountManyQuery,
+ genresCountQuery, genresCountManyQuery,
+ leadersCountQuery, leadersCountManyQuery,
+ mechanicsCountQuery, mechanicsCountManyQuery,
+ partiesCountQuery, partiesCountManyQuery,
+ publishersCountQuery, publishersCountManyQuery,
+ seriesCountQuery, seriesCountManyQuery,
+ sidesCountQuery, sidesCountManyQuery,
+ themesCountQuery, themesCountManyQuery   :: Query
 authorsCountQuery    = "SELECT count(id) FROM dr_author"
-authorsCountManyQuery = "SELECT count(distinct(id_author)) FROM dr_map_author AS a JOIN dr_scenario AS s ON s.id = a.id_scenario WHERE s.id IN ?"
+enginesCountQuery    = "SELECT count(id) FROM dr_engine"
+gamesCountQuery      = "SELECT count(id) FROM dr_game"
+genresCountQuery     = "SELECT count(id) FROM dr_genre"
+leadersCountQuery    = "SELECT count(id) FROM dr_leader"
+mechanicsCountQuery  = "SELECT count(id) FROM dr_mechanic"
+partiesCountQuery    = "SELECT count(id) FROM dr_party"
+publishersCountQuery = "SELECT count(id) FROM dr_publisher"
+seriesCountQuery     = "SELECT count(id) FROM dr_series"
+sidesCountQuery      = "SELECT count(id) FROM dr_side"
+themesCountQuery     = "SELECT count(id) FROM dr_theme"
+authorsCountManyQuery    = "SELECT count(distinct(id_author))       FROM dr_map_author    AS a JOIN dr_scenario AS s ON s.id = a.id_scenario  WHERE s.id IN ?"
+enginesCountManyQuery    = "SELECT count(distinct(id_engine))       FROM dr_map_engine    AS a JOIN dr_scenario AS s ON s.id_game = a.id_game WHERE s.id IN ?"
+genresCountManyQuery     = "SELECT count(distinct(id_genre))        FROM dr_map_genre     AS a JOIN dr_scenario AS s ON s.id_game = a.id_game WHERE s.id IN ?"
+leadersCountManyQuery    = "SELECT count(distinct(id_leader))       FROM dr_map_leader    AS a JOIN dr_scenario AS s ON s.id = a.id_scenario  WHERE s.id IN ?"
+mechanicsCountManyQuery  = "SELECT count(distinct(id_mechanic))     FROM dr_map_mechanic  AS a JOIN dr_scenario AS s ON s.id_game = a.id_game WHERE s.id IN ?"
+partiesCountManyQuery    = "SELECT count(distinct(id_party))        FROM dr_map_party     AS a JOIN dr_scenario AS s ON s.id = a.id_scenario  WHERE s.id IN ?"
+publishersCountManyQuery = "SELECT count(distinct(id_publisher))    FROM dr_map_publisher AS a JOIN dr_scenario AS s ON s.id_game = a.id_game WHERE s.id IN ?"
+seriesCountManyQuery     = "SELECT count(distinct(id_series))       FROM dr_map_series    AS a JOIN dr_scenario AS s ON s.id_game = a.id_game WHERE s.id IN ?"
+sidesCountManyQuery      = "SELECT count(distinct(id_side))         FROM dr_map_side      AS a JOIN dr_scenario AS s ON s.id = a.id_scenario  WHERE s.id IN ?"
+themesCountManyQuery     = "SELECT count(distinct(id_theme))        FROM dr_map_theme     AS a JOIN dr_scenario AS s ON s.id_game = a.id_game WHERE s.id IN ?"
+gamesCountManyQuery      = "SELECT count(distinct(id_game))         FROM dr_scenario WHERE id IN ?"
+fromYearCountManyQuery   = "SELECT count(distinct(year_from))       FROM dr_scenario WHERE id IN ?"
+upToYearCountManyQuery   = "SELECT count(distinct(year_upto))       FROM dr_scenario WHERE id IN ?"
+rangeCountManyQuery      = "SELECT count(distinct(range))           FROM dr_scenario WHERE id IN ?"
+timescaleCountManyQuery  = "SELECT count(distinct(timescale))       FROM dr_scenario WHERE id IN ?"
+latitudeCountManyQuery   = "SELECT count(distinct(latitude_trunc))  FROM dr_scenario WHERE id IN ?"
+longitudeCountManyQuery  = "SELECT count(distinct(longitude_trunc)) FROM dr_scenario WHERE id IN ?"
 
 allAuthorsQuery, allGenresQuery, allEnginesQuery, allThemesQuery, allMechanicsQuery, allSidesQuery,
  allPartiesQuery, allPublishersQuery, allSeriesQuery, allLeadersQuery :: Query

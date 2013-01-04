@@ -7,8 +7,8 @@ module Driller.Data
     , Party
     , Mechanic
     , Genre
-    , GameResult(..)
-    , emptyGameResult
+    , Result(..)
+    , emptyResult
     , Game
     , Engine
     , Leader
@@ -35,6 +35,24 @@ module Driller.Data
     , GroupLetter
     , GroupNumber
     , AuthorList
+    , GameList
+    , GenreList
+    , EngineList
+    , ThemeList
+    , MechanicList
+    , SideList
+    , PartyList
+    , PublisherList
+    , SeriesList
+    , LeaderList
+    , FromYearList
+    , UpToYearList
+    , FromRangeList
+    , UpToRangeList
+    , FromTimescaleList
+    , UpToTimescaleList
+    , LatitudeList
+    , LongitudeList
     ) where
 
 import Driller.Error ( ParameterError )
@@ -43,7 +61,7 @@ import Data.HashMap.Strict ( HashMap )
 import Database.PostgreSQL.Simple ( Query )
 import Database.PostgreSQL.Simple.ToRow ( ToRow(..) )
 import Data.Aeson.TH ( deriveJSON )
-import Data.Aeson ( Value(Object), FromJSON(..), ToJSON(..), (.=), (.:), object )
+import Data.Aeson ( ToJSON(..) )
 import Database.PostgreSQL.Simple.FromRow ( FromRow(..), field )
 import Database.PostgreSQL.Simple.ToField ( ToField(toField) )
 import Control.Applicative ( (<$>), (<*>) )
@@ -72,31 +90,32 @@ newtype UpToRange     = UpToRange     { getValueUpToRange     :: Int }
 newtype FromTimescale = FromTimescale { getValueFromTimescale :: Int }
 newtype UpToTimescale = UpToTimescale { getValueUpToTimescale :: Int }
 
-data GameResult = GameResult { getNoResults     :: Int
-                             , getGames         :: [Game]
-                             , getGenres        :: [Genre]
-                             , getThemes        :: [Theme]
-                             , getMechanics     :: [Mechanic]
-                             , getSides         :: [Side]
-                             , getParties       :: [Party]
-                             , getPublishers    :: [Publisher]
-                             , getSeries        :: [Series]
-                             , getAuthors       :: AuthorList
-                             , getEngines       :: [Engine]
-                             , getLeaders       :: [Leader]
-                             , getScenarios     :: [Scenario]
-                             , getLatitudes     :: [Latitude]
-                             , getLongitudes    :: [Longitude]
-                             , getFromYears     :: [FromYear]
-                             , getUpToYears     :: [UpToYear]
-                             , getFromRanges    :: [FromRange]
-                             , getUpToRanges    :: [UpToRange]
-                             , getFromTimescales :: [FromTimescale]
-                             , getUpToTimescales :: [UpToTimescale]
-                             }
+data Result = Result { getNoResults     :: Int
+                     , getScenarios     :: [Scenario]
+                     , getGames         :: GameList
+                     , getGenres        :: GenreList
+                     , getThemes        :: ThemeList
+                     , getMechanics     :: MechanicList
+                     , getSides         :: SideList
+                     , getParties       :: PartyList
+                     , getPublishers    :: PublisherList
+                     , getSeries        :: SeriesList
+                     , getAuthors       :: AuthorList
+                     , getEngines       :: EngineList
+                     , getLeaders       :: LeaderList
+                     , getLatitudes     :: LatitudeList
+                     , getLongitudes    :: LongitudeList
+                     , getFromYears     :: FromYearList
+                     , getUpToYears     :: UpToYearList
+                     , getFromRanges    :: FromRangeList
+                     , getUpToRanges    :: UpToRangeList
+                     , getFromTimescales :: FromTimescaleList
+                     , getUpToTimescales :: UpToTimescaleList
+                     }
 
-emptyGameResult :: GameResult
-emptyGameResult =  GameResult 0 [] [] [] [] [] [] [] [] (Right []) [] [] [] [] [] [] [] [] [] [] []
+emptyResult :: Result
+emptyResult =  Result 0 [] d d d d d d d d d d d d d d d d d d d
+                where d = Right []
 
 data Game = Game { getGameId        :: Int
                  , getGameTitle     :: Text.Text
@@ -110,18 +129,32 @@ data Scenario = Scenario { getScenarioId       :: Int
                          , getScenarioUpToYear :: Int
                          }
 
-type Parameter        = (Text.Text, Int)
-type ParameterMap     = HashMap Text.Text Int
-type Answer           = Either ParameterError GameResult
-type JoinMap          = HashMap Text.Text (Query, Query, Query)
-type JoinComponentMap = HashMap Text.Text Query
-type AuthorList       = Either [GroupLetter] [Author]
+type Parameter         = (Text.Text, Int)
+type ParameterMap      = HashMap Text.Text Int
+type Answer            = Either ParameterError Result
+type JoinMap           = HashMap Text.Text (Query, Query, Query)
+type JoinComponentMap  = HashMap Text.Text Query
+type AuthorList        = Either [GroupLetter] [Author]
+type GameList          = Either [GroupLetter] [Game]
+type GenreList         = Either [GroupLetter] [Genre]
+type EngineList        = Either [GroupLetter] [Engine]
+type ThemeList         = Either [GroupLetter] [Theme]
+type MechanicList      = Either [GroupLetter] [Mechanic]
+type SideList          = Either [GroupLetter] [Side]
+type PartyList         = Either [GroupLetter] [Party]
+type PublisherList     = Either [GroupLetter] [Publisher]
+type SeriesList        = Either [GroupLetter] [Series]
+type LeaderList        = Either [GroupLetter] [Leader]
+type FromYearList      = Either [GroupNumber] [FromYear]
+type UpToYearList      = Either [GroupNumber] [UpToYear]
+type FromRangeList     = Either [GroupNumber] [FromRange]
+type UpToRangeList     = Either [GroupNumber] [UpToRange]
+type FromTimescaleList = Either [GroupNumber] [FromTimescale]
+type UpToTimescaleList = Either [GroupNumber] [UpToTimescale]
+type LatitudeList      = Either [GroupNumber] [Latitude]
+type LongitudeList     = Either [GroupNumber] [Longitude]
 
 instance ToJSON Answer where
-  toJSON (Left e)  = toJSON e
-  toJSON (Right r) = toJSON r
-
-instance ToJSON AuthorList where
   toJSON (Left e)  = toJSON e
   toJSON (Right r) = toJSON r
 
@@ -135,7 +168,7 @@ $(deriveJSON (drop 8)  ''Party)
 $(deriveJSON (drop 12) ''Publisher)
 $(deriveJSON (drop 9)  ''Series)
 $(deriveJSON (drop 9)  ''Leader)
-$(deriveJSON (drop 3)  ''GameResult)
+$(deriveJSON (drop 3)  ''Result)
 
 $(deriveJSON (drop 8)  ''FromYear)
 $(deriveJSON (drop 8)  ''UpToYear)
