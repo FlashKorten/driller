@@ -1,5 +1,5 @@
 name:                driller
-version:             0.2.0.0
+version:             0.2.5.0
 -- synopsis:
 -- description:
 license:             MIT
@@ -30,7 +30,8 @@ executable driller
                    , postgresql-simple == 0.2.*
 
   ghc-options: -O2 -Wall -funbox-strict-fields
-  -- ghc-options: -O2 -Wall -funbox-strict-fields -with-rtsopts=-T -ddump-minimal-imports
+  -- ghc-options: -O2 -Wall -funbox-strict-fields -with-rtsopts=-T
+  -- ghc-options: -O2 -Wall -funbox-strict-fields -ddump-minimal-imports
   if impl(ghc >= 6.8)
     ghc-options: -fwarn-tabs
 
