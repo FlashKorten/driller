@@ -1,3 +1,4 @@
+{-# LANGUAGE NoMonomorphismRestriction #-}
 module Driller.DB.Wrapper
     ( fetchAuthor,    fetchAuthors,    fetchAuthorGroup,    fetchAuthorGroups,    fetchAllAuthors
     , fetchGenre,     fetchGenres,     fetchGenreGroup,     fetchGenreGroups,     fetchAllGenres
@@ -22,7 +23,7 @@ module Driller.DB.Wrapper
     , fetchTimescaleGroup, fetchTimescaleGroups
     , fetchScenario,  fetchScenarios,  fetchAllScenarios
     , fetchScenarioIds
-    , fetchAuthorsForSelection, fetchManyAuthorsForSelection
+    , fetchManyAuthorsForSelection
     , fetchManyGamesForSelection
     , fetchManyGenresForSelection
     , fetchManyEnginesForSelection
@@ -54,14 +55,42 @@ import Driller.DB.Queries
 import qualified Data.Text as T ( Text(), length )
 import qualified Data.Text.Lazy as TL ( Text(), toStrict )
 import qualified Data.Text.Read as TR ( signed, decimal )
+import Data.Maybe ( fromMaybe )
 import Control.Monad ( liftM )
 import Database.PostgreSQL.Simple
     ( Only(Only)
     , In(In)
     , Connection
+    , Query
     , query_
     , query
     )
+
+fetchManyForSelection fC fS fG c limit ids = do
+    count <- query c fC (Only (In ids))
+    if head count < limit
+      then liftM Right $ fS c ids
+      else liftM Left  $ query c fG (Only (In ids))
+
+fetchManyAuthorsForSelection        = fetchManyForSelection authorsCountManyQuery    fetchAuthors        authorManyGroupsQuery
+fetchManyEnginesForSelection        = fetchManyForSelection enginesCountManyQuery    fetchEngines        engineManyGroupsQuery
+fetchManyFromRangesForSelection     = fetchManyForSelection rangeCountManyQuery      fetchFromRanges     rangeManyGroupsQuery
+fetchManyFromTimescalesForSelection = fetchManyForSelection timescaleCountManyQuery  fetchFromTimescales timescaleManyGroupsQuery
+fetchManyFromYearsForSelection      = fetchManyForSelection fromYearCountManyQuery   fetchFromYears      fromYearManyGroupsQuery
+fetchManyGamesForSelection          = fetchManyForSelection gamesCountManyQuery      fetchGames          gameManyGroupsQuery
+fetchManyGenresForSelection         = fetchManyForSelection genresCountManyQuery     fetchGenres         genreManyGroupsQuery
+fetchManyLatitudesForSelection      = fetchManyForSelection latitudeCountManyQuery   fetchLatitudes      latitudeManyGroupsQuery
+fetchManyLeadersForSelection        = fetchManyForSelection leadersCountManyQuery    fetchLeaders        leaderManyGroupsQuery
+fetchManyLongitudesForSelection     = fetchManyForSelection longitudeCountManyQuery  fetchLongitudes     longitudeManyGroupsQuery
+fetchManyMechanicsForSelection      = fetchManyForSelection mechanicsCountManyQuery  fetchMechanics      mechanicManyGroupsQuery
+fetchManyPartiesForSelection        = fetchManyForSelection partiesCountManyQuery    fetchParties        partyManyGroupsQuery
+fetchManyPublishersForSelection     = fetchManyForSelection publishersCountManyQuery fetchPublishers     publisherManyGroupsQuery
+fetchManySeriessForSelection        = fetchManyForSelection seriesCountManyQuery     fetchSeriess        seriesManyGroupsQuery
+fetchManySidesForSelection          = fetchManyForSelection sidesCountManyQuery      fetchSides          sideManyGroupsQuery
+fetchManyThemesForSelection         = fetchManyForSelection themesCountManyQuery     fetchThemes         themeManyGroupsQuery
+fetchManyUpToRangesForSelection     = fetchManyForSelection rangeCountManyQuery      fetchUpToRanges     rangeManyGroupsQuery
+fetchManyUpToTimescalesForSelection = fetchManyForSelection timescaleCountManyQuery  fetchUpToTimescales timescaleManyGroupsQuery
+fetchManyUpToYearsForSelection      = fetchManyForSelection upToYearCountManyQuery   fetchUpToYears      upToYearManyGroupsQuery
 
 fetchAuthor :: Connection -> Int -> IO [Author]
 fetchAuthor c = query c authorQuery
@@ -77,149 +106,6 @@ fetchAuthorGroups c = query_ c authorGroupsQuery
 
 fetchAllAuthors :: Connection -> IO [Author]
 fetchAllAuthors c = query_ c allAuthorsQuery
-
-fetchAuthorsForSelection :: Connection -> IO AuthorList
-fetchAuthorsForSelection c = do
-    count <- countAuthors c
-    if head count < (30 :: Int)
-        then liftM Right $ fetchAllAuthors c
-        else liftM Left  $ fetchAuthorGroups c
-
-countAuthors :: Connection -> IO [Int]
-countAuthors c = query_ c authorsCountQuery
-
-fetchManyAuthorsForSelection :: Connection -> Int -> [Int] -> IO AuthorList
-fetchManyAuthorsForSelection c limit ids = do
-    count <- query c authorsCountManyQuery (Only (In ids))
-    if head count < limit
-      then liftM Right $ fetchAuthors c ids
-      else liftM Left  $ query c authorManyGroupsQuery (Only (In ids))
-
-fetchManyGenresForSelection :: Connection -> Int -> [Int] -> IO GenreList
-fetchManyGenresForSelection c limit ids = do
-    count <- query c genresCountManyQuery (Only (In ids))
-    if head count < limit
-      then liftM Right $ fetchGenres c ids
-      else liftM Left  $ query c genreManyGroupsQuery (Only (In ids))
-
-fetchManyGamesForSelection :: Connection -> Int -> [Int] -> IO GameList
-fetchManyGamesForSelection c limit ids = do
-    count <- query c gamesCountManyQuery (Only (In ids))
-    if head count < limit
-      then liftM Right $ fetchGames c ids
-      else liftM Left  $ query c gameManyGroupsQuery (Only (In ids))
-
-fetchManyPublishersForSelection :: Connection -> Int -> [Int] -> IO PublisherList
-fetchManyPublishersForSelection c limit ids = do
-    count <- query c publishersCountManyQuery (Only (In ids))
-    if head count < limit
-      then liftM Right $ fetchPublishers c ids
-      else liftM Left  $ query c publisherManyGroupsQuery (Only (In ids))
-
-fetchManySidesForSelection :: Connection -> Int -> [Int] -> IO SideList
-fetchManySidesForSelection c limit ids = do
-    count <- query c sidesCountManyQuery (Only (In ids))
-    if head count < limit
-      then liftM Right $ fetchSides c ids
-      else liftM Left  $ query c sideManyGroupsQuery (Only (In ids))
-
-fetchManySeriessForSelection :: Connection -> Int -> [Int] -> IO SeriesList
-fetchManySeriessForSelection c limit ids = do
-    count <- query c seriesCountManyQuery (Only (In ids))
-    if head count < limit
-      then liftM Right $ fetchSeriess c ids
-      else liftM Left  $ query c seriesManyGroupsQuery (Only (In ids))
-
-fetchManyPartiesForSelection :: Connection -> Int -> [Int] -> IO PartyList
-fetchManyPartiesForSelection c limit ids = do
-    count <- query c partiesCountManyQuery (Only (In ids))
-    if head count < limit
-      then liftM Right $ fetchParties c ids
-      else liftM Left  $ query c partyManyGroupsQuery (Only (In ids))
-
-fetchManyThemesForSelection :: Connection -> Int -> [Int] -> IO ThemeList
-fetchManyThemesForSelection c limit ids = do
-    count <- query c themesCountManyQuery (Only (In ids))
-    if head count < limit
-      then liftM Right $ fetchThemes c ids
-      else liftM Left  $ query c themeManyGroupsQuery (Only (In ids))
-
-fetchManyEnginesForSelection :: Connection -> Int -> [Int] -> IO EngineList
-fetchManyEnginesForSelection c limit ids = do
-    count <- query c enginesCountManyQuery (Only (In ids))
-    if head count < limit
-      then liftM Right $ fetchEngines c ids
-      else liftM Left  $ query c engineManyGroupsQuery (Only (In ids))
-
-fetchManyLeadersForSelection :: Connection -> Int -> [Int] -> IO LeaderList
-fetchManyLeadersForSelection c limit ids = do
-    count <- query c leadersCountManyQuery (Only (In ids))
-    if head count < limit
-      then liftM Right $ fetchLeaders c ids
-      else liftM Left  $ query c leaderManyGroupsQuery (Only (In ids))
-
-fetchManyMechanicsForSelection :: Connection -> Int -> [Int] -> IO MechanicList
-fetchManyMechanicsForSelection c limit ids = do
-    count <- query c mechanicsCountManyQuery (Only (In ids))
-    if head count < limit
-      then liftM Right $ fetchMechanics c ids
-      else liftM Left  $ query c mechanicManyGroupsQuery (Only (In ids))
-
-fetchManyFromYearsForSelection :: Connection -> Int -> [Int] -> IO FromYearList
-fetchManyFromYearsForSelection c limit ids = do
-    count <- query c fromYearCountManyQuery (Only (In ids))
-    if head count < limit
-      then liftM Right $ fetchFromYears c ids
-      else liftM Left  $ query c fromYearManyGroupsQuery (Only (In ids))
-
-fetchManyUpToYearsForSelection :: Connection -> Int -> [Int] -> IO UpToYearList
-fetchManyUpToYearsForSelection c limit ids = do
-    count <- query c upToYearCountManyQuery (Only (In ids))
-    if head count < limit
-      then liftM Right $ fetchUpToYears c ids
-      else liftM Left  $ query c upToYearManyGroupsQuery (Only (In ids))
-
-fetchManyFromTimescalesForSelection :: Connection -> Int -> [Int] -> IO FromTimescaleList
-fetchManyFromTimescalesForSelection c limit ids = do
-    count <- query c timescaleCountManyQuery (Only (In ids))
-    if head count < limit
-      then liftM Right $ fetchFromTimescales c ids
-      else liftM Left  $ query c timescaleManyGroupsQuery (Only (In ids))
-
-fetchManyUpToTimescalesForSelection :: Connection -> Int -> [Int] -> IO UpToTimescaleList
-fetchManyUpToTimescalesForSelection c limit ids = do
-    count <- query c timescaleCountManyQuery (Only (In ids))
-    if head count < limit
-      then liftM Right $ fetchUpToTimescales c ids
-      else liftM Left  $ query c timescaleManyGroupsQuery (Only (In ids))
-
-fetchManyFromRangesForSelection :: Connection -> Int -> [Int] -> IO FromRangeList
-fetchManyFromRangesForSelection c limit ids = do
-    count <- query c rangeCountManyQuery (Only (In ids))
-    if head count < limit
-      then liftM Right $ fetchFromRanges c ids
-      else liftM Left  $ query c rangeManyGroupsQuery (Only (In ids))
-
-fetchManyUpToRangesForSelection :: Connection -> Int -> [Int] -> IO UpToRangeList
-fetchManyUpToRangesForSelection c limit ids = do
-    count <- query c rangeCountManyQuery (Only (In ids))
-    if head count < limit
-      then liftM Right $ fetchUpToRanges c ids
-      else liftM Left  $ query c rangeManyGroupsQuery (Only (In ids))
-
-fetchManyLatitudesForSelection :: Connection -> Int -> [Int] -> IO LatitudeList
-fetchManyLatitudesForSelection c limit ids = do
-    count <- query c latitudeCountManyQuery (Only (In ids))
-    if head count < limit
-      then liftM Right $ fetchLatitudes c ids
-      else liftM Left  $ query c latitudeManyGroupsQuery (Only (In ids))
-
-fetchManyLongitudesForSelection :: Connection -> Int -> [Int] -> IO LongitudeList
-fetchManyLongitudesForSelection c limit ids = do
-    count <- query c longitudeCountManyQuery (Only (In ids))
-    if head count < limit
-      then liftM Right $ fetchLongitudes c ids
-      else liftM Left  $ query c longitudeManyGroupsQuery (Only (In ids))
 
 fetchGenre :: Connection -> Int -> IO [Genre]
 fetchGenre c = query c genreQuery
@@ -377,10 +263,26 @@ fetchLatitude c = query c latitudeQuery
 fetchLatitudes :: Connection -> [Int] -> IO [Latitude]
 fetchLatitudes c ids = query c latitudesQuery (Only (In ids))
 
+fetchNumberGroup :: FromRow r => Either String (Int, T.Text) -> Query -> Connection -> IO [r]
+fetchNumberGroup p q c = query c q $ fromMaybe 0 $ getFromParser p
+
 fetchLatitudeGroup :: Connection -> TL.Text -> IO [Latitude]
-fetchLatitudeGroup c t = case getFromParser (TR.signed TR.decimal (TL.toStrict t)) of
-                             Just n  -> query c latitudeGroupQuery n
-                             Nothing -> query c latitudeGroupQuery (0 :: Int)
+fetchLatitudeGroup c t = fetchNumberGroup (TR.signed TR.decimal (TL.toStrict t)) latitudeGroupQuery c
+
+fetchLongitudeGroup :: Connection -> TL.Text -> IO [Longitude]
+fetchLongitudeGroup c t = fetchNumberGroup (TR.signed TR.decimal (TL.toStrict t)) longitudeGroupQuery c
+
+fetchFromYearGroup :: Connection -> TL.Text -> IO [FromYear]
+fetchFromYearGroup c t = fetchNumberGroup (TR.signed TR.decimal (TL.toStrict t)) fromYearGroupQuery c
+
+fetchUpToYearGroup :: Connection -> TL.Text -> IO [UpToYear]
+fetchUpToYearGroup c t = fetchNumberGroup (TR.signed TR.decimal (TL.toStrict t)) upToYearGroupQuery c
+
+fetchTimescaleGroup :: Connection -> TL.Text -> IO [UpToTimescale]
+fetchTimescaleGroup c t = fetchNumberGroup (TR.decimal (TL.toStrict t)) timescaleGroupQuery c
+
+fetchRangeGroup :: Connection -> TL.Text -> IO [UpToRange]
+fetchRangeGroup c t = fetchNumberGroup (TR.decimal (TL.toStrict t)) rangeGroupQuery c
 
 fetchLatitudeGroups :: Connection -> IO [GroupNumber]
 fetchLatitudeGroups c = query_ c latitudeGroupsQuery
@@ -394,11 +296,6 @@ fetchLongitude c = query c longitudeQuery
 fetchLongitudes :: Connection -> [Int] -> IO [Longitude]
 fetchLongitudes c ids = query c longitudesQuery (Only (In ids))
 
-fetchLongitudeGroup :: Connection -> TL.Text -> IO [Longitude]
-fetchLongitudeGroup c t = case getFromParser (TR.signed TR.decimal (TL.toStrict t)) of
-                             Just n  -> query c longitudeGroupQuery n
-                             Nothing -> query c longitudeGroupQuery (0 :: Int)
-
 fetchLongitudeGroups :: Connection -> IO [GroupNumber]
 fetchLongitudeGroups c = query_ c longitudeGroupsQuery
 
@@ -411,11 +308,6 @@ fetchFromYear c = query c fromYearQuery
 fetchFromYears :: Connection -> [Int] -> IO [FromYear]
 fetchFromYears c ids = query c fromYearsQuery (Only (In ids))
 
-fetchFromYearGroup :: Connection -> TL.Text -> IO [FromYear]
-fetchFromYearGroup c t = case getFromParser (TR.signed TR.decimal (TL.toStrict t)) of
-                             Just n  -> query c fromYearGroupQuery n
-                             Nothing -> query c fromYearGroupQuery (0 :: Int)
-
 fetchFromYearGroups :: Connection -> IO [GroupNumber]
 fetchFromYearGroups c = query_ c fromYearGroupsQuery
 
@@ -427,11 +319,6 @@ fetchUpToYear c = query c upToYearQuery
 
 fetchUpToYears :: Connection -> [Int] -> IO [UpToYear]
 fetchUpToYears c ids = query c upToYearsQuery (Only (In ids))
-
-fetchUpToYearGroup :: Connection -> TL.Text -> IO [UpToYear]
-fetchUpToYearGroup c t = case getFromParser (TR.signed TR.decimal (TL.toStrict t)) of
-                             Just n  -> query c upToYearGroupQuery n
-                             Nothing -> query c upToYearGroupQuery (0 :: Int)
 
 fetchUpToYearGroups :: Connection -> IO [GroupNumber]
 fetchUpToYearGroups c = query_ c upToYearGroupsQuery
@@ -450,11 +337,6 @@ fetchFromTimescales c ids = query c timescalesQuery (Only (In ids))
 
 fetchUpToTimescales :: Connection -> [Int] -> IO [UpToTimescale]
 fetchUpToTimescales c ids = query c timescalesQuery (Only (In ids))
-
-fetchTimescaleGroup :: Connection -> TL.Text -> IO [UpToTimescale]
-fetchTimescaleGroup c t = case getFromParser (TR.signed TR.decimal (TL.toStrict t)) of
-                             Just n  -> query c timescaleGroupQuery n
-                             Nothing -> query c timescaleGroupQuery (0 :: Int)
 
 fetchTimescaleGroups :: Connection -> IO [GroupNumber]
 fetchTimescaleGroups c = query_ c timescaleGroupsQuery
@@ -476,11 +358,6 @@ fetchFromRanges c ids = query c rangesQuery (Only (In ids))
 
 fetchUpToRanges :: Connection -> [Int] -> IO [UpToRange]
 fetchUpToRanges c ids = query c rangesQuery (Only (In ids))
-
-fetchRangeGroup :: Connection -> TL.Text -> IO [UpToRange]
-fetchRangeGroup c t = case getFromParser (TR.signed TR.decimal (TL.toStrict t)) of
-                             Just n  -> query c rangeGroupQuery n
-                             Nothing -> query c rangeGroupQuery (0 :: Int)
 
 fetchRangeGroups :: Connection -> IO [GroupNumber]
 fetchRangeGroups c = query_ c rangeGroupsQuery

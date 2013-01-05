@@ -53,6 +53,7 @@ module Driller.Data
     , UpToTimescaleList
     , LatitudeList
     , LongitudeList
+    , FromRow
     ) where
 
 import Driller.Error ( ParameterError )

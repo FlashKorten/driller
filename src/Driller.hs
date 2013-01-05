@@ -39,7 +39,6 @@ main = do
       result <- liftIO $ DB.fetchDrilledGameResult conn joinMap p
       json result
     get "/"                                        $ text "No service at this level."
-    getRouteWithoutParameter "/authorsPD"          $ DB.fetchAuthorsForSelection conn
     getRouteWithoutParameter "/authors"            $ DB.fetchAllAuthors conn
     getRouteWithParameter    "/author/:id"         $ DB.fetchAuthor conn
     getRouteWithoutParameter "/authorGroups"       $ DB.fetchAuthorGroups conn
