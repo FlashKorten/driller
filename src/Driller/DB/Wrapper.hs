@@ -69,8 +69,8 @@ import Database.PostgreSQL.Simple
 fetchManyForSelection fC fS fG c limit ids = do
     count <- query c fC (Only (In ids))
     if head count < limit
-      then liftM Right $ fS c ids
-      else liftM Left  $ query c fG (Only (In ids))
+      then liftM Entries $ fS c ids
+      else liftM Groups  $ query c fG (Only (In ids))
 
 fetchManyAuthorsForSelection        = fetchManyForSelection authorsCountManyQuery    fetchAuthors        authorManyGroupsQuery
 fetchManyEnginesForSelection        = fetchManyForSelection enginesCountManyQuery    fetchEngines        engineManyGroupsQuery

@@ -114,19 +114,19 @@ connectionInfo = defaultConnectInfo { connectUser     = "driller"
                                     }
 
 fetchForResult :: (Monad m, MarkExclusive b)
-                => ParameterMap -> T.Text -> (Connection -> Int -> m b) -> (Connection -> Int -> [Int] -> m (Either a b)) -> Connection -> [Int] -> m (Either a b)
+                => ParameterMap -> T.Text -> (Connection -> Int -> m b) -> (Connection -> Int -> [Int] -> m (AnswerList a b)) -> Connection -> [Int] -> m (AnswerList a b)
 fetchForResult parameterMap key fetchOne fetchMany c ids
     = case HM.lookup key parameterMap of
         Just value -> if value >= 0
-                        then liftM Right $ fetchOne c value
-                        else liftM (Right .  markExclusive) (fetchOne c (negate value))
+                        then liftM Entries $ fetchOne c value
+                        else liftM (Entries .  markExclusive) (fetchOne c (negate value))
         Nothing    -> fetchMany c 25 ids
 
 fetchSimpleValuesForResult :: (FromInt t, Monad m)
-                => ParameterMap -> T.Text -> (Connection -> Int -> [Int] -> m (Either a [t])) -> Connection -> [Int] -> m (Either a [t])
+                => ParameterMap -> T.Text -> (Connection -> Int -> [Int] -> m (AnswerList a [t])) -> Connection -> [Int] -> m (AnswerList a [t])
 fetchSimpleValuesForResult parameterMap key fetchMany c ids
     = case HM.lookup key parameterMap of
-        Just value -> return $ Right [fromInt value]
+        Just value -> return $ Entries [fromInt value]
         Nothing    -> fetchMany c 25 ids
 
 filterParameters :: [Param] -> JoinMap -> Either Error.ParameterError [Parameter]

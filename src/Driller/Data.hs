@@ -54,6 +54,7 @@ module Driller.Data
     , LatitudeList
     , LongitudeList
     , FromRow
+    , AnswerList(..)
     ) where
 
 import Driller.Error ( ParameterError )
@@ -116,7 +117,7 @@ data Result = Result { getNoResults     :: Int
 
 emptyResult :: Result
 emptyResult =  Result 0 [] d d d d d d d d d d d d d d d d d d d
-                where d = Right []
+                where d = Entries []
 
 data Game = Game { getGameId        :: Int
                  , getGameTitle     :: Text.Text
@@ -135,25 +136,28 @@ type ParameterMap      = HashMap Text.Text Int
 type Answer            = Either ParameterError Result
 type JoinMap           = HashMap Text.Text (Query, Query, Query)
 type JoinComponentMap  = HashMap Text.Text Query
-type AuthorList        = Either [GroupLetter] [Author]
-type GameList          = Either [GroupLetter] [Game]
-type GenreList         = Either [GroupLetter] [Genre]
-type EngineList        = Either [GroupLetter] [Engine]
-type ThemeList         = Either [GroupLetter] [Theme]
-type MechanicList      = Either [GroupLetter] [Mechanic]
-type SideList          = Either [GroupLetter] [Side]
-type PartyList         = Either [GroupLetter] [Party]
-type PublisherList     = Either [GroupLetter] [Publisher]
-type SeriesList        = Either [GroupLetter] [Series]
-type LeaderList        = Either [GroupLetter] [Leader]
-type FromYearList      = Either [GroupNumber] [FromYear]
-type UpToYearList      = Either [GroupNumber] [UpToYear]
-type FromRangeList     = Either [GroupNumber] [FromRange]
-type UpToRangeList     = Either [GroupNumber] [UpToRange]
-type FromTimescaleList = Either [GroupNumber] [FromTimescale]
-type UpToTimescaleList = Either [GroupNumber] [UpToTimescale]
-type LatitudeList      = Either [GroupNumber] [Latitude]
-type LongitudeList     = Either [GroupNumber] [Longitude]
+type AuthorList        = AnswerList [GroupLetter] [Author]
+type GameList          = AnswerList [GroupLetter] [Game]
+type GenreList         = AnswerList [GroupLetter] [Genre]
+type EngineList        = AnswerList [GroupLetter] [Engine]
+type ThemeList         = AnswerList [GroupLetter] [Theme]
+type MechanicList      = AnswerList [GroupLetter] [Mechanic]
+type SideList          = AnswerList [GroupLetter] [Side]
+type PartyList         = AnswerList [GroupLetter] [Party]
+type PublisherList     = AnswerList [GroupLetter] [Publisher]
+type SeriesList        = AnswerList [GroupLetter] [Series]
+type LeaderList        = AnswerList [GroupLetter] [Leader]
+type FromYearList      = AnswerList [GroupNumber] [FromYear]
+type UpToYearList      = AnswerList [GroupNumber] [UpToYear]
+type FromRangeList     = AnswerList [GroupNumber] [FromRange]
+type UpToRangeList     = AnswerList [GroupNumber] [UpToRange]
+type FromTimescaleList = AnswerList [GroupNumber] [FromTimescale]
+type UpToTimescaleList = AnswerList [GroupNumber] [UpToTimescale]
+type LatitudeList      = AnswerList [GroupNumber] [Latitude]
+type LongitudeList     = AnswerList [GroupNumber] [Longitude]
+
+data AnswerList a b = Groups a | Entries b
+  deriving (Eq, Show)
 
 instance ToJSON Answer where
   toJSON (Left e)  = toJSON e
@@ -183,6 +187,7 @@ $(deriveJSON (drop 11) ''Scenario)
 $(deriveJSON (drop 7)  ''Game)
 $(deriveJSON (drop 14) ''GroupLetter)
 $(deriveJSON (drop 14) ''GroupNumber)
+$(deriveJSON id ''AnswerList)
 
 class FromInt a where
   fromInt :: Int -> a
