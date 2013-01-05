@@ -115,32 +115,17 @@ connectionInfo = defaultConnectInfo { connectUser     = "driller"
                                     }
 
 fetchForResult :: (Monad m, MarkExclusive b)
-               => ParameterMap -> T.Text -> (Connection -> Int -> m [b]) -> (Connection -> [Int] -> m [b]) -> Connection -> [Int] -> m [b]
-fetchForResult parameterMap key fetchOne fetchMany c ids
-    = case HM.lookup key parameterMap of
-        Just value -> if value >= 0
-                        then fetchOne c value
-                        else liftM markExclusive (fetchOne c (negate value))
-        Nothing    -> fetchMany c ids
-
-fetchForResult_ :: (Monad m, MarkExclusive b)
                 => ParameterMap -> T.Text -> (Connection -> Int -> m b) -> (Connection -> Int -> [Int] -> m (Either a b)) -> Connection -> [Int] -> m (Either a b)
-fetchForResult_ parameterMap key fetchOne fetchMany c ids
+fetchForResult parameterMap key fetchOne fetchMany c ids
     = case HM.lookup key parameterMap of
         Just value -> if value >= 0
                         then liftM Right $ fetchOne c value
                         else liftM (Right .  markExclusive) (fetchOne c (negate value))
         Nothing    -> fetchMany c 25 ids
 
-fetchSimpleValuesForResult :: (FromInt t, Monad m) => ParameterMap -> T.Text -> (Connection -> [Int] -> m [t]) -> Connection -> [Int] -> m [t]
-fetchSimpleValuesForResult parameterMap key fetchMany c ids
-    = case HM.lookup key parameterMap of
-        Just value -> return [fromInt value]
-        Nothing    -> fetchMany c ids
-
-fetchSimpleValuesForResult_ :: (FromInt t, Monad m)
+fetchSimpleValuesForResult :: (FromInt t, Monad m)
                 => ParameterMap -> T.Text -> (Connection -> Int -> [Int] -> m (Either a [t])) -> Connection -> [Int] -> m (Either a [t])
-fetchSimpleValuesForResult_ parameterMap key fetchMany c ids
+fetchSimpleValuesForResult parameterMap key fetchMany c ids
     = case HM.lookup key parameterMap of
         Just value -> return $ Right [fromInt value]
         Nothing    -> fetchMany c 25 ids
@@ -199,25 +184,25 @@ prepareResult :: ParameterMap -> Connection -> [Int] -> IO Answer
 prepareResult parameterMap c ids = do
     let numberOfResults = length ids
     scenarios  <- if numberOfResults > 50 then return [] else fetchScenarios c ids
-    games      <- fetchForResult_ parameterMap "game"      fetchGame      fetchManyGamesForSelection      c ids
-    genres     <- fetchForResult_ parameterMap "genre"     fetchGenre     fetchManyGenresForSelection     c ids
-    themes     <- fetchForResult_ parameterMap "theme"     fetchTheme     fetchManyThemesForSelection     c ids
-    mechanics  <- fetchForResult_ parameterMap "mechanic"  fetchMechanic  fetchManyMechanicsForSelection  c ids
-    sides      <- fetchForResult_ parameterMap "side"      fetchSide      fetchManySidesForSelection      c ids
-    parties    <- fetchForResult_ parameterMap "party"     fetchParty     fetchManyPartiesForSelection    c ids
-    publishers <- fetchForResult_ parameterMap "publisher" fetchPublisher fetchManyPublishersForSelection c ids
-    series     <- fetchForResult_ parameterMap "series"    fetchSeries    fetchManySeriessForSelection    c ids
-    authors    <- fetchForResult_ parameterMap "author"    fetchAuthor    fetchManyAuthorsForSelection    c ids
-    engines    <- fetchForResult_ parameterMap "engine"    fetchEngine    fetchManyEnginesForSelection    c ids
-    leaders    <- fetchForResult_ parameterMap "leader"    fetchLeader    fetchManyLeadersForSelection    c ids
-    latitudes  <- fetchSimpleValuesForResult_ parameterMap "latitude"  fetchManyLatitudesForSelection  c ids
-    longitudes <- fetchSimpleValuesForResult_ parameterMap "longitude" fetchManyLongitudesForSelection c ids
-    fromYears  <- fetchSimpleValuesForResult_ parameterMap "fromYear"  fetchManyFromYearsForSelection  c ids
-    upToYears  <- fetchSimpleValuesForResult_ parameterMap "upToYear"  fetchManyUpToYearsForSelection  c ids
-    fromRanges <- fetchSimpleValuesForResult_ parameterMap "fromRange" fetchManyFromRangesForSelection c ids
-    upToRanges <- fetchSimpleValuesForResult_ parameterMap "upToRange" fetchManyUpToRangesForSelection c ids
-    fromTimescales <- fetchSimpleValuesForResult_ parameterMap "fromTimescale" fetchManyFromTimescalesForSelection c ids
-    upToTimescales <- fetchSimpleValuesForResult_ parameterMap "upToTimescale" fetchManyUpToTimescalesForSelection c ids
+    games      <- fetchForResult parameterMap "game"      fetchGame      fetchManyGamesForSelection      c ids
+    genres     <- fetchForResult parameterMap "genre"     fetchGenre     fetchManyGenresForSelection     c ids
+    themes     <- fetchForResult parameterMap "theme"     fetchTheme     fetchManyThemesForSelection     c ids
+    mechanics  <- fetchForResult parameterMap "mechanic"  fetchMechanic  fetchManyMechanicsForSelection  c ids
+    sides      <- fetchForResult parameterMap "side"      fetchSide      fetchManySidesForSelection      c ids
+    parties    <- fetchForResult parameterMap "party"     fetchParty     fetchManyPartiesForSelection    c ids
+    publishers <- fetchForResult parameterMap "publisher" fetchPublisher fetchManyPublishersForSelection c ids
+    series     <- fetchForResult parameterMap "series"    fetchSeries    fetchManySeriessForSelection    c ids
+    authors    <- fetchForResult parameterMap "author"    fetchAuthor    fetchManyAuthorsForSelection    c ids
+    engines    <- fetchForResult parameterMap "engine"    fetchEngine    fetchManyEnginesForSelection    c ids
+    leaders    <- fetchForResult parameterMap "leader"    fetchLeader    fetchManyLeadersForSelection    c ids
+    latitudes  <- fetchSimpleValuesForResult parameterMap "latitude"  fetchManyLatitudesForSelection  c ids
+    longitudes <- fetchSimpleValuesForResult parameterMap "longitude" fetchManyLongitudesForSelection c ids
+    fromYears  <- fetchSimpleValuesForResult parameterMap "fromYear"  fetchManyFromYearsForSelection  c ids
+    upToYears  <- fetchSimpleValuesForResult parameterMap "upToYear"  fetchManyUpToYearsForSelection  c ids
+    fromRanges <- fetchSimpleValuesForResult parameterMap "fromRange" fetchManyFromRangesForSelection c ids
+    upToRanges <- fetchSimpleValuesForResult parameterMap "upToRange" fetchManyUpToRangesForSelection c ids
+    fromTimescales <- fetchSimpleValuesForResult parameterMap "fromTimescale" fetchManyFromTimescalesForSelection c ids
+    upToTimescales <- fetchSimpleValuesForResult parameterMap "upToTimescale" fetchManyUpToTimescalesForSelection c ids
     return $ Right Result { getNoResults  = numberOfResults
                               , getGames      = games
                               , getGenres     = genres
