@@ -1,6 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Main where
 
+import Driller.Data
 import qualified Driller.DB as DB
 import Network.Wai.Middleware.RequestLogger ( logStdoutDev )
 import Database.PostgreSQL.Simple ( connect )
@@ -30,86 +31,85 @@ main :: IO ()
 main = do
   -- _ <- forkServer "localhost" 8000
   conn <- connect DB.connectionInfo
-  let joinMap = DB.initJoinMap
+  let joinMap  = DB.initJoinMap
+      queryMap = DB.initQueryMap
   scotty 3003 $ do
     middleware logStdoutDev
 
     get "/q" $ do
       p <- params
-      result <- liftIO $ DB.fetchDrilledGameResult conn joinMap p
+      result <- liftIO $ DB.fetchDrilledGameResult conn joinMap queryMap p
       json result
-    get "/"                                        $ text "No service at this level."
-    getRouteWithoutParameter "/authors"            $ DB.fetchAllAuthors conn
-    getRouteWithParameter    "/author/:id"         $ DB.fetchAuthor conn
-    getRouteWithoutParameter "/authorGroups"       $ DB.fetchAuthorGroups conn
-    getRouteWithParameter    "/authorGroup/:id"    $ DB.fetchAuthorGroup conn
-    getRouteWithoutParameter "/engines"            $ DB.fetchAllEngines conn
-    getRouteWithParameter    "/engine/:id"         $ DB.fetchEngine conn
-    getRouteWithoutParameter "/engineGroups"       $ DB.fetchEngineGroups conn
-    getRouteWithParameter    "/engineGroup/:id"    $ DB.fetchEngineGroup conn
-    getRouteWithoutParameter "/sides"              $ DB.fetchAllSides conn
-    getRouteWithParameter    "/side/:id"           $ DB.fetchSide conn
-    getRouteWithoutParameter "/sideGroups"         $ DB.fetchSideGroups conn
-    getRouteWithParameter    "/sideGroup/:id"      $ DB.fetchSideGroup conn
-    getRouteWithoutParameter "/publishers"         $ DB.fetchAllPublishers conn
-    getRouteWithParameter    "/publisher/:id"      $ DB.fetchPublisher conn
-    getRouteWithoutParameter "/publisherGroups"    $ DB.fetchPublisherGroups conn
-    getRouteWithParameter    "/publisherGroup/:id" $ DB.fetchPublisherGroup conn
-    getRouteWithoutParameter "/mechanics"          $ DB.fetchAllMechanics conn
-    getRouteWithParameter    "/mechanic/:id"       $ DB.fetchMechanic conn
-    getRouteWithoutParameter "/mechanicGroups"     $ DB.fetchMechanicGroups conn
-    getRouteWithParameter    "/mechanicGroup/:id"  $ DB.fetchMechanicGroup conn
-    getRouteWithoutParameter "/games"              $ DB.fetchAllGames conn
-    getRouteWithParameter    "/game/:id"           $ DB.fetchGame conn
-    getRouteWithoutParameter "/gameGroups"         $ DB.fetchGameGroups conn
-    getRouteWithParameter    "/gameGroup/:id"      $ DB.fetchGameGroup conn
-    getRouteWithoutParameter "/genres"             $ DB.fetchAllGenres conn
-    getRouteWithParameter    "/genre/:id"          $ DB.fetchGenre conn
-    getRouteWithoutParameter "/genreGroups"        $ DB.fetchGenreGroups conn
-    getRouteWithParameter    "/genreGroup/:id"     $ DB.fetchGenreGroup conn
-    getRouteWithoutParameter "/themes"             $ DB.fetchAllThemes conn
-    getRouteWithParameter    "/theme/:id"          $ DB.fetchTheme conn
-    getRouteWithoutParameter "/themeGroups"        $ DB.fetchThemeGroups conn
-    getRouteWithParameter    "/themeGroup/:id"     $ DB.fetchThemeGroup conn
-    getRouteWithoutParameter "/parties"            $ DB.fetchAllParties conn
-    getRouteWithParameter    "/party/:id"          $ DB.fetchParty conn
-    getRouteWithoutParameter "/partieGroups"       $ DB.fetchPartieGroups conn
-    getRouteWithParameter    "/partyGroup/:id"     $ DB.fetchPartyGroup conn
-    getRouteWithoutParameter "/series"             $ DB.fetchAllSeries conn
-    getRouteWithParameter    "/serie/:id"          $ DB.fetchSeries conn
-    getRouteWithoutParameter "/serieGroups"        $ DB.fetchSeriesGroups conn
-    getRouteWithParameter    "/serieGroup/:id"     $ DB.fetchSeriesGroup conn
-    getRouteWithoutParameter "/leaders"            $ DB.fetchAllLeaders conn
-    getRouteWithParameter    "/leader/:id"         $ DB.fetchLeader conn
-    getRouteWithoutParameter "/leaderGroups"       $ DB.fetchLeaderGroups conn
-    getRouteWithParameter    "/leaderGroup/:id"    $ DB.fetchLeaderGroup conn
-    getRouteWithoutParameter "/fromYears"          $ DB.fetchAllFromYears conn
-    getRouteWithParameter    "/fromYear/:id"       $ DB.fetchFromYear conn
-    getRouteWithoutParameter "/fromYearGroups"     $ DB.fetchFromYearGroups conn
-    getRouteWithParameter    "/fromYearGroup/:id"  $ DB.fetchFromYearGroup conn
-    getRouteWithoutParameter "/upToYears"          $ DB.fetchAllUpToYears conn
-    getRouteWithParameter    "/upToYear/:id"       $ DB.fetchUpToYear conn
-    getRouteWithoutParameter "/upToYearGroups"     $ DB.fetchUpToYearGroups conn
-    getRouteWithParameter    "/upToYearGroup/:id"  $ DB.fetchUpToYearGroup conn
-    getRouteWithoutParameter "/latitudes"          $ DB.fetchAllLatitudes conn
-    getRouteWithParameter    "/latitude/:id"       $ DB.fetchLatitude conn
-    getRouteWithoutParameter "/latitudeGroups"     $ DB.fetchLatitudeGroups conn
-    getRouteWithParameter    "/latitudeGroups/:id" $ DB.fetchLatitudeGroup conn
-    getRouteWithoutParameter "/longitudes"         $ DB.fetchAllLongitudes conn
-    getRouteWithParameter    "/longitude/:id"      $ DB.fetchLongitude conn
-    getRouteWithoutParameter "/longitudeGroups"    $ DB.fetchLongitudeGroups conn
-    getRouteWithParameter    "/longitudeGroups/:id"$ DB.fetchLongitudeGroup conn
-    getRouteWithoutParameter "/fromRanges"         $ DB.fetchAllFromRanges conn
-    getRouteWithParameter    "/fromRange/:id"      $ DB.fetchFromRange conn
-    getRouteWithoutParameter "/rangeGroups"        $ DB.fetchRangeGroups conn
-    getRouteWithParameter    "/rangeGroup/:id"     $ DB.fetchRangeGroup conn
-    getRouteWithoutParameter "/upToRanges"         $ DB.fetchAllUpToRanges conn
-    getRouteWithParameter    "/upToRange/:id"      $ DB.fetchUpToRange conn
-    getRouteWithoutParameter "/fromTimescales"     $ DB.fetchAllFromTimescales conn
-    getRouteWithParameter    "/fromTimescale/:id"  $ DB.fetchFromTimescale conn
-    getRouteWithoutParameter "/timescaleGroups"    $ DB.fetchTimescaleGroups conn
-    getRouteWithParameter    "/timescaleGroup/:id" $ DB.fetchTimescaleGroup conn
-    getRouteWithoutParameter "/upToTimescales"     $ DB.fetchAllUpToTimescales conn
-    getRouteWithParameter    "/upToTimescale/:id"  $ DB.fetchUpToTimescale conn
-    getRouteWithoutParameter "/scenarios"          $ DB.fetchAllScenarios conn
-    getRouteWithParameter    "/scenario/:id"       $ DB.fetchScenario conn
+    get "/"                                  $ text "No service at this level."
+    getRouteWithoutParameter "/authorGroups"    (DB.fetchGroups AUTHOR conn queryMap             :: IO [GroupLetter])
+    getRouteWithoutParameter "/authors"         (DB.fetchAllEntries AUTHOR conn queryMap         :: IO [Author])
+    getRouteWithoutParameter "/engineGroups"    (DB.fetchGroups ENGINE conn queryMap             :: IO [GroupLetter])
+    getRouteWithoutParameter "/engines"         (DB.fetchAllEntries ENGINE conn queryMap         :: IO [Engine])
+    getRouteWithoutParameter "/fromRanges"      (DB.fetchAllEntries FROM_RANGE conn queryMap     :: IO [FromRange])
+    getRouteWithoutParameter "/fromTimescales"  (DB.fetchAllEntries FROM_TIMESCALE conn queryMap :: IO [FromTimescale])
+    getRouteWithoutParameter "/fromYearGroups"  (DB.fetchGroups FROM_YEAR conn queryMap          :: IO [GroupNumber])
+    getRouteWithoutParameter "/fromYears"       (DB.fetchAllEntries FROM_YEAR conn queryMap      :: IO [FromYear])
+    getRouteWithoutParameter "/gameGroups"      (DB.fetchGroups GAME conn queryMap               :: IO [GroupLetter])
+    getRouteWithoutParameter "/games"           (DB.fetchAllEntries GAME conn queryMap           :: IO [Game])
+    getRouteWithoutParameter "/genreGroups"     (DB.fetchGroups GENRE conn queryMap              :: IO [GroupLetter])
+    getRouteWithoutParameter "/genres"          (DB.fetchAllEntries GENRE conn queryMap          :: IO [Genre])
+    getRouteWithoutParameter "/latitudeGroups"  (DB.fetchGroups LATITUDE conn queryMap           :: IO [GroupNumber])
+    getRouteWithoutParameter "/latitudes"       (DB.fetchAllEntries LATITUDE conn queryMap       :: IO [Latitude])
+    getRouteWithoutParameter "/leaderGroups"    (DB.fetchGroups LEADER conn queryMap             :: IO [GroupLetter])
+    getRouteWithoutParameter "/leaders"         (DB.fetchAllEntries LEADER conn queryMap         :: IO [Leader])
+    getRouteWithoutParameter "/longitudeGroups" (DB.fetchGroups LONGITUDE conn queryMap          :: IO [GroupNumber])
+    getRouteWithoutParameter "/longitudes"      (DB.fetchAllEntries LONGITUDE conn queryMap      :: IO [Longitude])
+    getRouteWithoutParameter "/mechanicGroups"  (DB.fetchGroups MECHANIC conn queryMap           :: IO [GroupLetter])
+    getRouteWithoutParameter "/mechanics"       (DB.fetchAllEntries MECHANIC conn queryMap       :: IO [Mechanic])
+    getRouteWithoutParameter "/parties"         (DB.fetchAllEntries PARTY conn queryMap          :: IO [Party])
+    getRouteWithoutParameter "/partyGroups"     (DB.fetchGroups PARTY conn queryMap              :: IO [GroupLetter])
+    getRouteWithoutParameter "/publisherGroups" (DB.fetchGroups PUBLISHER conn queryMap          :: IO [GroupLetter])
+    getRouteWithoutParameter "/publishers"      (DB.fetchAllEntries PUBLISHER conn queryMap      :: IO [Publisher])
+    getRouteWithoutParameter "/rangeGroups"     (DB.fetchGroups RANGE conn queryMap              :: IO [GroupNumber])
+    getRouteWithoutParameter "/seriesGroups"    (DB.fetchGroups SERIES conn queryMap             :: IO [GroupLetter])
+    getRouteWithoutParameter "/seriess"         (DB.fetchAllEntries SERIES conn queryMap         :: IO [Series])
+    getRouteWithoutParameter "/sideGroups"      (DB.fetchGroups SIDE conn queryMap               :: IO [GroupLetter])
+    getRouteWithoutParameter "/sides"           (DB.fetchAllEntries SIDE conn queryMap           :: IO [Side])
+    getRouteWithoutParameter "/themeGroups"     (DB.fetchGroups THEME conn queryMap              :: IO [GroupLetter])
+    getRouteWithoutParameter "/themes"          (DB.fetchAllEntries THEME conn queryMap          :: IO [Theme])
+    getRouteWithoutParameter "/timescaleGroups" (DB.fetchGroups TIMESCALE conn queryMap          :: IO [GroupNumber])
+    getRouteWithoutParameter "/upToRanges"      (DB.fetchAllEntries UPTO_RANGE conn queryMap     :: IO [UpToRange])
+    getRouteWithoutParameter "/upToTimescales"  (DB.fetchAllEntries UPTO_TIMESCALE conn queryMap :: IO [UpToTimescale])
+    getRouteWithoutParameter "/upToYearGroups"  (DB.fetchGroups UPTO_YEAR conn queryMap          :: IO [GroupNumber])
+    getRouteWithoutParameter "/upToYears"       (DB.fetchAllEntries UPTO_YEAR conn queryMap      :: IO [UpToYear])
+    getRouteWithParameter    "/author/:id"         $ DB.fetchAuthorEntry conn queryMap
+    getRouteWithParameter    "/authorGroup/:id"    $ DB.fetchAuthorGroup conn queryMap
+    getRouteWithParameter    "/engine/:id"         $ DB.fetchEngineEntry conn queryMap
+    getRouteWithParameter    "/engineGroup/:id"    $ DB.fetchEngineGroup conn queryMap
+    getRouteWithParameter    "/fromRange/:id"      $ DB.fetchFromRangeEntry conn queryMap
+    getRouteWithParameter    "/fromTimescale/:id"  $ DB.fetchFromTimescaleEntry conn queryMap
+    getRouteWithParameter    "/fromYear/:id"       $ DB.fetchFromYearEntry conn queryMap
+    getRouteWithParameter    "/fromYearGroup/:id"  $ DB.fetchFromYearGroup conn queryMap
+    getRouteWithParameter    "/game/:id"           $ DB.fetchGameEntry conn queryMap
+    getRouteWithParameter    "/gameGroup/:id"      $ DB.fetchGameGroup conn queryMap
+    getRouteWithParameter    "/genre/:id"          $ DB.fetchGenreEntry conn queryMap
+    getRouteWithParameter    "/genreGroup/:id"     $ DB.fetchGenreGroup conn queryMap
+    getRouteWithParameter    "/latitude/:id"       $ DB.fetchLatitudeEntry conn queryMap
+    getRouteWithParameter    "/latitudeGroup/:id"  $ DB.fetchLatitudeGroup conn queryMap
+    getRouteWithParameter    "/leader/:id"         $ DB.fetchLeaderEntry conn queryMap
+    getRouteWithParameter    "/leaderGroup/:id"    $ DB.fetchLeaderGroup conn queryMap
+    getRouteWithParameter    "/longitude/:id"      $ DB.fetchLongitudeEntry conn queryMap
+    getRouteWithParameter    "/longitudeGroup/:id" $ DB.fetchLongitudeGroup conn queryMap
+    getRouteWithParameter    "/mechanic/:id"       $ DB.fetchMechanicEntry conn queryMap
+    getRouteWithParameter    "/mechanicGroup/:id"  $ DB.fetchMechanicGroup conn queryMap
+    getRouteWithParameter    "/party/:id"          $ DB.fetchPartyEntry conn queryMap
+    getRouteWithParameter    "/partyGroup/:id"     $ DB.fetchPartyGroup conn queryMap
+    getRouteWithParameter    "/publisher/:id"      $ DB.fetchPublisherEntry conn queryMap
+    getRouteWithParameter    "/publisherGroup/:id" $ DB.fetchPublisherGroup conn queryMap
+    getRouteWithParameter    "/rangeGroup/:id"     $ DB.fetchRangeGroup conn queryMap
+    getRouteWithParameter    "/series/:id"         $ DB.fetchSeriesEntry conn queryMap
+    getRouteWithParameter    "/seriesGroup/:id"    $ DB.fetchSeriesGroup conn queryMap
+    getRouteWithParameter    "/side/:id"           $ DB.fetchSideEntry conn queryMap
+    getRouteWithParameter    "/sideGroup/:id"      $ DB.fetchSideGroup conn queryMap
+    getRouteWithParameter    "/theme/:id"          $ DB.fetchThemeEntry conn queryMap
+    getRouteWithParameter    "/themeGroup/:id"     $ DB.fetchThemeGroup conn queryMap
+    getRouteWithParameter    "/timescaleGroup/:id" $ DB.fetchTimescaleGroup conn queryMap
+    getRouteWithParameter    "/upToRange/:id"      $ DB.fetchUpToRangeEntry conn queryMap
+    getRouteWithParameter    "/upToTimescale/:id"  $ DB.fetchUpToTimescaleEntry conn queryMap
+    getRouteWithParameter    "/upToYear/:id"       $ DB.fetchUpToYearEntry conn queryMap
+    getRouteWithParameter    "/upToYearGroup/:id"  $ DB.fetchUpToYearGroup conn queryMap

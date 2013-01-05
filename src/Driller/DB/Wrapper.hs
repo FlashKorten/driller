@@ -1,381 +1,228 @@
 {-# LANGUAGE NoMonomorphismRestriction #-}
 module Driller.DB.Wrapper
-    ( fetchAuthor,    fetchAuthors,    fetchAuthorGroup,    fetchAuthorGroups,    fetchAllAuthors
-    , fetchGenre,     fetchGenres,     fetchGenreGroup,     fetchGenreGroups,     fetchAllGenres
-    , fetchEngine,    fetchEngines,    fetchEngineGroup,    fetchEngineGroups,    fetchAllEngines
-    , fetchTheme,     fetchThemes,     fetchThemeGroup,     fetchThemeGroups,     fetchAllThemes
-    , fetchMechanic,  fetchMechanics,  fetchMechanicGroup,  fetchMechanicGroups,  fetchAllMechanics
-    , fetchSide,      fetchSides,      fetchSideGroup,      fetchSideGroups,      fetchAllSides
-    , fetchParty,     fetchParties,    fetchPartyGroup,     fetchPartieGroups,    fetchAllParties
-    , fetchPublisher, fetchPublishers, fetchPublisherGroup, fetchPublisherGroups, fetchAllPublishers
-    , fetchSeries,    fetchSeriess,    fetchSeriesGroup,    fetchSeriesGroups,    fetchAllSeries
-    , fetchGame,      fetchGames,      fetchGameGroup,      fetchGameGroups,      fetchAllGames
-    , fetchLeader,    fetchLeaders,    fetchLeaderGroup,    fetchLeaderGroups,    fetchAllLeaders
-    , fetchLatitude,  fetchLatitudes,  fetchLatitudeGroup,  fetchLatitudeGroups,  fetchAllLatitudes
-    , fetchLongitude, fetchLongitudes, fetchLongitudeGroup, fetchLongitudeGroups, fetchAllLongitudes
-    , fetchFromYear,  fetchFromYears,  fetchFromYearGroup,  fetchFromYearGroups,  fetchAllFromYears
-    , fetchUpToYear,  fetchUpToYears,  fetchUpToYearGroup,  fetchUpToYearGroups,  fetchAllUpToYears
-    , fetchFromRange, fetchFromRanges, fetchAllFromRanges
-    , fetchUpToRange, fetchUpToRanges, fetchAllUpToRanges
-    , fetchRangeGroup, fetchRangeGroups
-    , fetchFromTimescale, fetchFromTimescales, fetchAllFromTimescales
-    , fetchUpToTimescale, fetchUpToTimescales, fetchAllUpToTimescales
-    , fetchTimescaleGroup, fetchTimescaleGroups
-    , fetchScenario,  fetchScenarios,  fetchAllScenarios
+    ( fetchScenarios
     , fetchScenarioIds
+    , fetchManyForSelection
+    , fetchEntry
+    , fetchAllEntries
+    , fetchGroup
+    , fetchGroups
+    , fetchAuthorGroup
+    , fetchAuthorEntry
+    , fetchGameGroup
+    , fetchGameEntry
+    , fetchGenreGroup
+    , fetchGenreEntry
+    , fetchThemeGroup
+    , fetchThemeEntry
+    , fetchMechanicGroup
+    , fetchMechanicEntry
+    , fetchSideGroup
+    , fetchSideEntry
+    , fetchPartyGroup
+    , fetchPartyEntry
+    , fetchPublisherGroup
+    , fetchPublisherEntry
+    , fetchSeriesGroup
+    , fetchSeriesEntry
+    , fetchEngineGroup
+    , fetchEngineEntry
+    , fetchLeaderGroup
+    , fetchLeaderEntry
+    , fetchLatitudeGroup
+    , fetchLatitudeEntry
+    , fetchLongitudeGroup
+    , fetchLongitudeEntry
+    , fetchFromYearGroup
+    , fetchFromYearEntry
+    , fetchUpToYearGroup
+    , fetchUpToYearEntry
+    , fetchRangeGroup
+    , fetchFromRangeEntry
+    , fetchUpToRangeEntry
+    , fetchTimescaleGroup
+    , fetchFromTimescaleEntry
+    , fetchUpToTimescaleEntry
     , fetchManyAuthorsForSelection
     , fetchManyGamesForSelection
     , fetchManyGenresForSelection
-    , fetchManyEnginesForSelection
     , fetchManyThemesForSelection
     , fetchManyMechanicsForSelection
     , fetchManySidesForSelection
     , fetchManyPartiesForSelection
     , fetchManyPublishersForSelection
-    , fetchManySeriessForSelection
+    , fetchManySeriesForSelection
+    , fetchManyEnginesForSelection
     , fetchManyLeadersForSelection
-    , fromYearManyGroupsQuery
-    , upToYearManyGroupsQuery
-    , latitudeManyGroupsQuery
-    , longitudeManyGroupsQuery
-    , rangeManyGroupsQuery
-    , timescaleManyGroupsQuery
-    , fetchManyFromYearsForSelection
-    , fetchManyUpToYearsForSelection
-    , fetchManyFromTimescalesForSelection
-    , fetchManyUpToTimescalesForSelection
-    , fetchManyFromRangesForSelection
-    , fetchManyUpToRangesForSelection
     , fetchManyLatitudesForSelection
     , fetchManyLongitudesForSelection
+    , fetchManyFromYearsForSelection
+    , fetchManyUpToYearsForSelection
+    , fetchManyFromRangesForSelection
+    , fetchManyUpToRangesForSelection
+    , fetchManyFromTimescalesForSelection
+    , fetchManyUpToTimescalesForSelection
     ) where
 
 import Driller.Data
-import Driller.DB.Queries
+import Driller.DB.Queries ( scenarioListQuery )
 import qualified Data.Text as T ( Text(), length )
 import qualified Data.Text.Lazy as TL ( Text(), toStrict )
 import qualified Data.Text.Read as TR ( signed, decimal )
 import Data.Maybe ( fromMaybe )
+import Data.HashMap.Strict ( (!) )
 import Control.Monad ( liftM )
+import Database.PostgreSQL.Simple.ToRow ( ToRow )
 import Database.PostgreSQL.Simple
-    ( Only(Only)
-    , In(In)
-    , Connection
-    , Query
-    , query_
-    , query
-    )
+    ( Only(Only), In(In), Connection, query_, query )
 
-fetchManyForSelection fC fS fG c limit ids = do
-    count <- query c fC (Only (In ids))
+fetchManyForSelection :: (FromRow a, FromRow b) => QueryCategory -> QueryMap -> Connection -> Int -> [Int] -> IO (AnswerList [a] [b])
+fetchManyForSelection category queryMap c limit ids = do
+    count <- query c (queryMap ! (category, COUNT, POLY)) (Only (In ids))
     if head count < limit
-      then liftM Entries $ fS c ids
-      else liftM Groups  $ query c fG (Only (In ids))
+      then liftM Entries $ query c (queryMap ! (category, ENTRY, POLY)) (Only (In ids))
+      else liftM Groups  $ query c (queryMap ! (category, GROUP, POLY)) (Only (In ids))
 
-fetchManyAuthorsForSelection        = fetchManyForSelection authorsCountManyQuery    fetchAuthors        authorManyGroupsQuery
-fetchManyEnginesForSelection        = fetchManyForSelection enginesCountManyQuery    fetchEngines        engineManyGroupsQuery
-fetchManyFromRangesForSelection     = fetchManyForSelection rangeCountManyQuery      fetchFromRanges     rangeManyGroupsQuery
-fetchManyFromTimescalesForSelection = fetchManyForSelection timescaleCountManyQuery  fetchFromTimescales timescaleManyGroupsQuery
-fetchManyFromYearsForSelection      = fetchManyForSelection fromYearCountManyQuery   fetchFromYears      fromYearManyGroupsQuery
-fetchManyGamesForSelection          = fetchManyForSelection gamesCountManyQuery      fetchGames          gameManyGroupsQuery
-fetchManyGenresForSelection         = fetchManyForSelection genresCountManyQuery     fetchGenres         genreManyGroupsQuery
-fetchManyLatitudesForSelection      = fetchManyForSelection latitudeCountManyQuery   fetchLatitudes      latitudeManyGroupsQuery
-fetchManyLeadersForSelection        = fetchManyForSelection leadersCountManyQuery    fetchLeaders        leaderManyGroupsQuery
-fetchManyLongitudesForSelection     = fetchManyForSelection longitudeCountManyQuery  fetchLongitudes     longitudeManyGroupsQuery
-fetchManyMechanicsForSelection      = fetchManyForSelection mechanicsCountManyQuery  fetchMechanics      mechanicManyGroupsQuery
-fetchManyPartiesForSelection        = fetchManyForSelection partiesCountManyQuery    fetchParties        partyManyGroupsQuery
-fetchManyPublishersForSelection     = fetchManyForSelection publishersCountManyQuery fetchPublishers     publisherManyGroupsQuery
-fetchManySeriessForSelection        = fetchManyForSelection seriesCountManyQuery     fetchSeriess        seriesManyGroupsQuery
-fetchManySidesForSelection          = fetchManyForSelection sidesCountManyQuery      fetchSides          sideManyGroupsQuery
-fetchManyThemesForSelection         = fetchManyForSelection themesCountManyQuery     fetchThemes         themeManyGroupsQuery
-fetchManyUpToRangesForSelection     = fetchManyForSelection rangeCountManyQuery      fetchUpToRanges     rangeManyGroupsQuery
-fetchManyUpToTimescalesForSelection = fetchManyForSelection timescaleCountManyQuery  fetchUpToTimescales timescaleManyGroupsQuery
-fetchManyUpToYearsForSelection      = fetchManyForSelection upToYearCountManyQuery   fetchUpToYears      upToYearManyGroupsQuery
+fetchManyAuthorsForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO AuthorList
+fetchManyAuthorsForSelection = fetchManyForSelection AUTHOR
 
-fetchAuthor :: Connection -> Int -> IO [Author]
-fetchAuthor c = query c authorQuery
+fetchManyGamesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO GameList
+fetchManyGamesForSelection = fetchManyForSelection GAME
 
-fetchAuthors :: Connection -> [Int] -> IO [Author]
-fetchAuthors c ids = query c authorsQuery (Only (In ids))
+fetchManyGenresForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO GenreList
+fetchManyGenresForSelection = fetchManyForSelection GENRE
 
-fetchAuthorGroup :: Connection -> TL.Text -> IO [Author]
-fetchAuthorGroup c = query c authorGroupQuery . TL.toStrict
+fetchManyThemesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO ThemeList
+fetchManyThemesForSelection = fetchManyForSelection THEME
 
-fetchAuthorGroups :: Connection -> IO [GroupLetter]
-fetchAuthorGroups c = query_ c authorGroupsQuery
+fetchManyMechanicsForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO MechanicList
+fetchManyMechanicsForSelection = fetchManyForSelection MECHANIC
 
-fetchAllAuthors :: Connection -> IO [Author]
-fetchAllAuthors c = query_ c allAuthorsQuery
+fetchManySidesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO SideList
+fetchManySidesForSelection = fetchManyForSelection SIDE
 
-fetchGenre :: Connection -> Int -> IO [Genre]
-fetchGenre c = query c genreQuery
+fetchManyPartiesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO PartyList
+fetchManyPartiesForSelection = fetchManyForSelection PARTY
 
-fetchGenres :: Connection -> [Int] -> IO [Genre]
-fetchGenres c ids = query c genresQuery (Only (In ids))
+fetchManyPublishersForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO PublisherList
+fetchManyPublishersForSelection = fetchManyForSelection PUBLISHER
 
-fetchGenreGroup :: Connection -> TL.Text -> IO [Genre]
-fetchGenreGroup c = query c genreGroupQuery . TL.toStrict
+fetchManySeriesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO SeriesList
+fetchManySeriesForSelection = fetchManyForSelection SERIES
 
-fetchGenreGroups :: Connection -> IO [GroupLetter]
-fetchGenreGroups c = query_ c genreGroupsQuery
+fetchManyEnginesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO EngineList
+fetchManyEnginesForSelection = fetchManyForSelection ENGINE
 
-fetchAllGenres :: Connection -> IO [Genre]
-fetchAllGenres c = query_ c allGenresQuery
+fetchManyLeadersForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO LeaderList
+fetchManyLeadersForSelection = fetchManyForSelection LEADER
 
-fetchEngine :: Connection -> Int -> IO [Engine]
-fetchEngine c = query c engineQuery
+fetchManyLatitudesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO LatitudeList
+fetchManyLatitudesForSelection = fetchManyForSelection LATITUDE
 
-fetchEngines :: Connection -> [Int] -> IO [Engine]
-fetchEngines c ids = query c enginesQuery (Only (In ids))
+fetchManyLongitudesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO LongitudeList
+fetchManyLongitudesForSelection = fetchManyForSelection LONGITUDE
 
-fetchEngineGroup :: Connection -> TL.Text -> IO [Engine]
-fetchEngineGroup c = query c engineGroupQuery . TL.toStrict
+fetchManyFromYearsForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO FromYearList
+fetchManyFromYearsForSelection = fetchManyForSelection FROM_YEAR
 
-fetchEngineGroups :: Connection -> IO [GroupLetter]
-fetchEngineGroups c = query_ c engineGroupsQuery
+fetchManyUpToYearsForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO UpToYearList
+fetchManyUpToYearsForSelection = fetchManyForSelection UPTO_YEAR
 
-fetchAllEngines :: Connection -> IO [Engine]
-fetchAllEngines c = query_ c allEnginesQuery
+fetchManyFromRangesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO FromRangeList
+fetchManyFromRangesForSelection = fetchManyForSelection FROM_RANGE
 
-fetchTheme :: Connection -> Int -> IO [Theme]
-fetchTheme c = query c themeQuery
+fetchManyUpToRangesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO UpToRangeList
+fetchManyUpToRangesForSelection = fetchManyForSelection UPTO_RANGE
 
-fetchThemes :: Connection -> [Int] -> IO [Theme]
-fetchThemes c ids = query c themesQuery (Only (In ids))
+fetchManyFromTimescalesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO FromTimescaleList
+fetchManyFromTimescalesForSelection = fetchManyForSelection FROM_TIMESCALE
 
-fetchThemeGroup :: Connection -> TL.Text -> IO [Theme]
-fetchThemeGroup c = query c themeGroupQuery . TL.toStrict
+fetchManyUpToTimescalesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO UpToTimescaleList
+fetchManyUpToTimescalesForSelection = fetchManyForSelection UPTO_TIMESCALE
 
-fetchThemeGroups :: Connection -> IO [GroupLetter]
-fetchThemeGroups c = query_ c themeGroupsQuery
+fetchAuthorGroup, fetchAuthorEntry :: Connection -> QueryMap -> TL.Text -> IO [Author]
+fetchAuthorGroup c queryMap = fetchGroup AUTHOR c queryMap . TL.toStrict
+fetchAuthorEntry c queryMap = fetchEntry AUTHOR c queryMap . TL.toStrict
 
-fetchAllThemes :: Connection -> IO [Theme]
-fetchAllThemes c = query_ c allThemesQuery
+fetchGameGroup, fetchGameEntry :: Connection -> QueryMap -> TL.Text -> IO [Game]
+fetchGameGroup c queryMap = fetchGroup GAME c queryMap . TL.toStrict
+fetchGameEntry c queryMap = fetchEntry GAME c queryMap . TL.toStrict
 
-fetchMechanic :: Connection -> Int -> IO [Mechanic]
-fetchMechanic c = query c mechanicQuery
+fetchGenreGroup, fetchGenreEntry :: Connection -> QueryMap -> TL.Text -> IO [Genre]
+fetchGenreGroup c queryMap = fetchGroup GENRE c queryMap . TL.toStrict
+fetchGenreEntry c queryMap = fetchEntry GENRE c queryMap . TL.toStrict
 
-fetchMechanics :: Connection -> [Int] -> IO [Mechanic]
-fetchMechanics c ids = query c mechanicsQuery (Only (In ids))
+fetchThemeGroup, fetchThemeEntry :: Connection -> QueryMap -> TL.Text -> IO [Theme]
+fetchThemeGroup c queryMap = fetchGroup THEME c queryMap . TL.toStrict
+fetchThemeEntry c queryMap = fetchEntry THEME c queryMap . TL.toStrict
 
-fetchMechanicGroup :: Connection -> TL.Text -> IO [Mechanic]
-fetchMechanicGroup c = query c mechanicGroupQuery . TL.toStrict
+fetchMechanicGroup, fetchMechanicEntry :: Connection -> QueryMap -> TL.Text -> IO [Mechanic]
+fetchMechanicGroup c queryMap = fetchGroup MECHANIC c queryMap . TL.toStrict
+fetchMechanicEntry c queryMap = fetchEntry MECHANIC c queryMap . TL.toStrict
 
-fetchMechanicGroups :: Connection -> IO [GroupLetter]
-fetchMechanicGroups c = query_ c mechanicGroupsQuery
+fetchSideGroup, fetchSideEntry :: Connection -> QueryMap -> TL.Text -> IO [Side]
+fetchSideGroup c queryMap = fetchGroup SIDE c queryMap . TL.toStrict
+fetchSideEntry c queryMap = fetchEntry SIDE c queryMap . TL.toStrict
 
-fetchAllMechanics :: Connection -> IO [Mechanic]
-fetchAllMechanics c = query_ c allMechanicsQuery
+fetchPartyGroup, fetchPartyEntry :: Connection -> QueryMap -> TL.Text -> IO [Party]
+fetchPartyGroup c queryMap = fetchGroup PARTY c queryMap . TL.toStrict
+fetchPartyEntry c queryMap = fetchEntry PARTY c queryMap . TL.toStrict
 
-fetchSide :: Connection -> Int -> IO [Side]
-fetchSide c = query c sideQuery
+fetchPublisherGroup, fetchPublisherEntry :: Connection -> QueryMap -> TL.Text -> IO [Publisher]
+fetchPublisherGroup c queryMap = fetchGroup PUBLISHER c queryMap . TL.toStrict
+fetchPublisherEntry c queryMap = fetchEntry PUBLISHER c queryMap . TL.toStrict
 
-fetchSides :: Connection -> [Int] -> IO [Side]
-fetchSides c ids = query c sidesQuery (Only (In ids))
+fetchSeriesGroup, fetchSeriesEntry :: Connection -> QueryMap -> TL.Text -> IO [Series]
+fetchSeriesGroup c queryMap = fetchGroup SERIES c queryMap . TL.toStrict
+fetchSeriesEntry c queryMap = fetchEntry SERIES c queryMap . TL.toStrict
 
-fetchSideGroup :: Connection -> TL.Text -> IO [Side]
-fetchSideGroup c = query c sideGroupQuery . TL.toStrict
+fetchEngineGroup, fetchEngineEntry :: Connection -> QueryMap -> TL.Text -> IO [Engine]
+fetchEngineGroup c queryMap = fetchGroup ENGINE c queryMap . TL.toStrict
+fetchEngineEntry c queryMap = fetchEntry ENGINE c queryMap . TL.toStrict
 
-fetchSideGroups :: Connection -> IO [GroupLetter]
-fetchSideGroups c = query_ c sideGroupsQuery
-
-fetchAllSides :: Connection -> IO [Side]
-fetchAllSides c = query_ c allSidesQuery
-
-fetchParty :: Connection -> Int -> IO [Party]
-fetchParty c = query c partyQuery
-
-fetchParties :: Connection -> [Int] -> IO [Party]
-fetchParties c ids = query c partiesQuery (Only (In ids))
-
-fetchPartyGroup :: Connection -> TL.Text -> IO [Party]
-fetchPartyGroup c = query c partyGroupQuery . TL.toStrict
-
-fetchPartieGroups :: Connection -> IO [GroupLetter]
-fetchPartieGroups c = query_ c partieGroupsQuery
-
-fetchAllParties :: Connection -> IO [Party]
-fetchAllParties c = query_ c allPartiesQuery
-
-fetchPublisher :: Connection -> Int -> IO [Publisher]
-fetchPublisher c = query c publisherQuery
-
-fetchPublishers :: Connection -> [Int] -> IO [Publisher]
-fetchPublishers c ids = query c publishersQuery (Only (In ids))
-
-fetchPublisherGroup :: Connection -> TL.Text -> IO [Publisher]
-fetchPublisherGroup c = query c publisherGroupQuery . TL.toStrict
-
-fetchPublisherGroups :: Connection -> IO [GroupLetter]
-fetchPublisherGroups c = query_ c publisherGroupsQuery
-
-fetchAllPublishers :: Connection -> IO [Publisher]
-fetchAllPublishers c = query_ c allPublishersQuery
-
-fetchSeries :: Connection -> Int -> IO [Series]
-fetchSeries c = query c seriesQuery
-
-fetchSeriess :: Connection -> [Int] -> IO [Series]
-fetchSeriess c ids = query c seriessQuery (Only (In ids))
-
-fetchSeriesGroup :: Connection -> TL.Text -> IO [Series]
-fetchSeriesGroup c = query c seriesGroupQuery . TL.toStrict
-
-fetchSeriesGroups :: Connection -> IO [GroupLetter]
-fetchSeriesGroups c = query_ c seriesGroupsQuery
-
-fetchAllSeries :: Connection -> IO [Series]
-fetchAllSeries c = query_ c allSeriesQuery
-
-fetchGame :: Connection -> Int -> IO [Game]
-fetchGame c = query c gameQuery
-
-fetchGames :: Connection -> [Int] -> IO [Game]
-fetchGames c ids = query c gamesQuery (Only (In ids))
-
-fetchGameGroup :: Connection -> TL.Text -> IO [Game]
-fetchGameGroup c = query c gameGroupQuery . TL.toStrict
-
-fetchGameGroups :: Connection -> IO [GroupLetter]
-fetchGameGroups c = query_ c gameGroupsQuery
-
-fetchAllGames :: Connection -> IO [Game]
-fetchAllGames c = query_ c allGamesQuery
-
-fetchLeader :: Connection -> Int -> IO [Leader]
-fetchLeader c = query c leaderQuery
-
-fetchLeaders :: Connection -> [Int] -> IO [Leader]
-fetchLeaders c ids = query c leadersQuery (Only (In ids))
-
-fetchLeaderGroup :: Connection -> TL.Text -> IO [Leader]
-fetchLeaderGroup c = query c leaderGroupQuery . TL.toStrict
-
-fetchLeaderGroups :: Connection -> IO [GroupLetter]
-fetchLeaderGroups c = query_ c leaderGroupsQuery
-
-fetchAllLeaders :: Connection -> IO [Leader]
-fetchAllLeaders c = query_ c allLeadersQuery
-
-fetchLatitude :: Connection -> Int -> IO [Latitude]
-fetchLatitude c = query c latitudeQuery
-
-fetchLatitudes :: Connection -> [Int] -> IO [Latitude]
-fetchLatitudes c ids = query c latitudesQuery (Only (In ids))
-
-fetchNumberGroup :: FromRow r => Either String (Int, T.Text) -> Query -> Connection -> IO [r]
-fetchNumberGroup p q c = query c q $ fromMaybe 0 $ getFromParser p
-
-fetchLatitudeGroup :: Connection -> TL.Text -> IO [Latitude]
-fetchLatitudeGroup c t = fetchNumberGroup (TR.signed TR.decimal (TL.toStrict t)) latitudeGroupQuery c
-
-fetchLongitudeGroup :: Connection -> TL.Text -> IO [Longitude]
-fetchLongitudeGroup c t = fetchNumberGroup (TR.signed TR.decimal (TL.toStrict t)) longitudeGroupQuery c
-
-fetchFromYearGroup :: Connection -> TL.Text -> IO [FromYear]
-fetchFromYearGroup c t = fetchNumberGroup (TR.signed TR.decimal (TL.toStrict t)) fromYearGroupQuery c
-
-fetchUpToYearGroup :: Connection -> TL.Text -> IO [UpToYear]
-fetchUpToYearGroup c t = fetchNumberGroup (TR.signed TR.decimal (TL.toStrict t)) upToYearGroupQuery c
-
-fetchTimescaleGroup :: Connection -> TL.Text -> IO [UpToTimescale]
-fetchTimescaleGroup c t = fetchNumberGroup (TR.decimal (TL.toStrict t)) timescaleGroupQuery c
-
-fetchRangeGroup :: Connection -> TL.Text -> IO [UpToRange]
-fetchRangeGroup c t = fetchNumberGroup (TR.decimal (TL.toStrict t)) rangeGroupQuery c
-
-fetchLatitudeGroups :: Connection -> IO [GroupNumber]
-fetchLatitudeGroups c = query_ c latitudeGroupsQuery
-
-fetchAllLatitudes :: Connection -> IO [Latitude]
-fetchAllLatitudes c = query_ c allLatitudesQuery
-
-fetchLongitude :: Connection -> Int -> IO [Longitude]
-fetchLongitude c = query c longitudeQuery
-
-fetchLongitudes :: Connection -> [Int] -> IO [Longitude]
-fetchLongitudes c ids = query c longitudesQuery (Only (In ids))
-
-fetchLongitudeGroups :: Connection -> IO [GroupNumber]
-fetchLongitudeGroups c = query_ c longitudeGroupsQuery
-
-fetchAllLongitudes :: Connection -> IO [Longitude]
-fetchAllLongitudes c = query_ c allLongitudesQuery
-
-fetchFromYear :: Connection -> Int -> IO [FromYear]
-fetchFromYear c = query c fromYearQuery
-
-fetchFromYears :: Connection -> [Int] -> IO [FromYear]
-fetchFromYears c ids = query c fromYearsQuery (Only (In ids))
-
-fetchFromYearGroups :: Connection -> IO [GroupNumber]
-fetchFromYearGroups c = query_ c fromYearGroupsQuery
-
-fetchAllFromYears :: Connection -> IO [FromYear]
-fetchAllFromYears c = query_ c allFromYearsQuery
-
-fetchUpToYear :: Connection -> Int -> IO [UpToYear]
-fetchUpToYear c = query c upToYearQuery
-
-fetchUpToYears :: Connection -> [Int] -> IO [UpToYear]
-fetchUpToYears c ids = query c upToYearsQuery (Only (In ids))
-
-fetchUpToYearGroups :: Connection -> IO [GroupNumber]
-fetchUpToYearGroups c = query_ c upToYearGroupsQuery
-
-fetchAllUpToYears :: Connection -> IO [UpToYear]
-fetchAllUpToYears c = query_ c allUpToYearsQuery
-
-fetchFromTimescale :: Connection -> Int -> IO [FromTimescale]
-fetchFromTimescale c = query c fromTimescaleQuery
-
-fetchUpToTimescale :: Connection -> Int -> IO [UpToTimescale]
-fetchUpToTimescale c = query c upToTimescaleQuery
-
-fetchFromTimescales :: Connection -> [Int] -> IO [FromTimescale]
-fetchFromTimescales c ids = query c timescalesQuery (Only (In ids))
-
-fetchUpToTimescales :: Connection -> [Int] -> IO [UpToTimescale]
-fetchUpToTimescales c ids = query c timescalesQuery (Only (In ids))
-
-fetchTimescaleGroups :: Connection -> IO [GroupNumber]
-fetchTimescaleGroups c = query_ c timescaleGroupsQuery
-
-fetchAllFromTimescales :: Connection -> IO [FromTimescale]
-fetchAllFromTimescales c = query_ c allTimescalesQuery
-
-fetchAllUpToTimescales :: Connection -> IO [UpToTimescale]
-fetchAllUpToTimescales c = query_ c allTimescalesQuery
-
-fetchFromRange :: Connection -> Int -> IO [FromRange]
-fetchFromRange c = query c fromRangeQuery
-
-fetchUpToRange :: Connection -> Int -> IO [UpToRange]
-fetchUpToRange c = query c upToRangeQuery
-
-fetchFromRanges :: Connection -> [Int] -> IO [FromRange]
-fetchFromRanges c ids = query c rangesQuery (Only (In ids))
-
-fetchUpToRanges :: Connection -> [Int] -> IO [UpToRange]
-fetchUpToRanges c ids = query c rangesQuery (Only (In ids))
-
-fetchRangeGroups :: Connection -> IO [GroupNumber]
-fetchRangeGroups c = query_ c rangeGroupsQuery
-
-fetchAllFromRanges :: Connection -> IO [FromRange]
-fetchAllFromRanges c = query_ c allRangesQuery
-
-fetchAllUpToRanges :: Connection -> IO [UpToRange]
-fetchAllUpToRanges c = query_ c allRangesQuery
-
-fetchScenario :: Connection -> Int -> IO [Scenario]
-fetchScenario c = query c scenarioQuery
-
-fetchAllScenarios :: Connection -> IO [Scenario]
-fetchAllScenarios c = query_ c allScenariosQuery
-
-fetchScenarios :: Connection -> [Int] -> IO [Scenario]
-fetchScenarios c ids = query c scenariosQuery (Only (In ids))
+fetchLeaderGroup, fetchLeaderEntry :: Connection -> QueryMap -> TL.Text -> IO [Leader]
+fetchLeaderGroup c queryMap = fetchGroup LEADER c queryMap . TL.toStrict
+fetchLeaderEntry c queryMap = fetchEntry LEADER c queryMap . TL.toStrict
+
+fetchEntry, fetchGroup :: (ToRow f, FromRow r) => QueryCategory -> Connection -> QueryMap -> f -> IO [r]
+fetchEntry cat c qm = query c $ qm ! (cat, ENTRY, MONO)
+fetchGroup cat c qm = query c (qm ! (cat, GROUP, MONO))
+
+fetchGroups, fetchAllEntries :: (FromRow r) => QueryCategory -> Connection -> QueryMap -> IO [r]
+fetchGroups cat c qm = query_ c (qm ! (cat, GROUP, OMNI))
+fetchAllEntries cat c qm = query_ c (qm ! (cat, ENTRY, OMNI))
+
+fetchNumberGroup :: FromRow r => Either String (Int, T.Text) -> Connection -> QueryCategory -> QueryMap -> IO [r]
+fetchNumberGroup p c cat qm = query c (qm ! (cat, GROUP, MONO)) $ fromMaybe 0 $ getFromParser p
+
+fetchLatitudeGroup, fetchLatitudeEntry :: Connection -> QueryMap -> TL.Text -> IO [Latitude]
+fetchLatitudeGroup c queryMap t = fetchNumberGroup (TR.signed TR.decimal (TL.toStrict t)) c LATITUDE queryMap
+fetchLatitudeEntry c queryMap = fetchEntry LATITUDE c queryMap . TL.toStrict
+
+fetchLongitudeGroup, fetchLongitudeEntry :: Connection -> QueryMap -> TL.Text -> IO [Longitude]
+fetchLongitudeGroup c queryMap t = fetchNumberGroup (TR.signed TR.decimal (TL.toStrict t)) c LONGITUDE queryMap
+fetchLongitudeEntry c queryMap = fetchEntry LONGITUDE c queryMap . TL.toStrict
+
+fetchFromYearGroup, fetchFromYearEntry :: Connection -> QueryMap -> TL.Text -> IO [FromYear]
+fetchFromYearGroup c queryMap t = fetchNumberGroup (TR.signed TR.decimal (TL.toStrict t)) c FROM_YEAR queryMap
+fetchFromYearEntry c queryMap = fetchEntry FROM_YEAR c queryMap . TL.toStrict
+
+fetchUpToYearGroup, fetchUpToYearEntry :: Connection -> QueryMap -> TL.Text -> IO [UpToYear]
+fetchUpToYearGroup c queryMap t = fetchNumberGroup (TR.signed TR.decimal (TL.toStrict t)) c UPTO_YEAR queryMap
+fetchUpToYearEntry c queryMap = fetchEntry UPTO_YEAR c queryMap . TL.toStrict
+
+fetchTimescaleGroup, fetchFromTimescaleEntry, fetchUpToTimescaleEntry :: Connection -> QueryMap -> TL.Text -> IO [UpToTimescale]
+fetchTimescaleGroup c queryMap t = fetchNumberGroup (TR.decimal (TL.toStrict t)) c TIMESCALE queryMap
+fetchFromTimescaleEntry c queryMap = fetchEntry FROM_TIMESCALE c queryMap . TL.toStrict
+fetchUpToTimescaleEntry c queryMap = fetchEntry UPTO_TIMESCALE c queryMap . TL.toStrict
+
+fetchRangeGroup, fetchFromRangeEntry, fetchUpToRangeEntry :: Connection -> QueryMap -> TL.Text -> IO [UpToRange]
+fetchRangeGroup c queryMap t = fetchNumberGroup (TR.decimal (TL.toStrict t)) c RANGE queryMap
+fetchFromRangeEntry c queryMap = fetchEntry FROM_RANGE c queryMap . TL.toStrict
+fetchUpToRangeEntry c queryMap = fetchEntry UPTO_RANGE c queryMap . TL.toStrict
+
+fetchScenarios :: Connection -> QueryMap -> [Int] -> IO [Scenario]
+fetchScenarios c qm ids = query c (qm ! (SCENARIO, ENTRY, POLY)) (Only (In ids))
 
 fetchScenarioIds :: Connection -> JoinMap -> [Parameter] -> IO [Int]
 fetchScenarioIds c joinMap p = query c (scenarioListQuery joinMap p) (map snd p)
@@ -384,4 +231,3 @@ getFromParser :: Either String (Int, T.Text) -> Maybe Int
 getFromParser (Left _)       = Nothing
 getFromParser (Right (n, r)) | T.length r == 0 = Just n
                              | otherwise       = Nothing
-

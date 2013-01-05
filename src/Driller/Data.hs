@@ -55,10 +55,17 @@ module Driller.Data
     , LongitudeList
     , FromRow
     , AnswerList(..)
+    , QueryCategory(..)
+    , QueryTarget(..)
+    , QueryType(..)
+    , QueryKey
+    , QueryMap
+    , categoryToQuery
     ) where
 
 import Driller.Error ( ParameterError )
 import qualified Data.Text as Text ( Text )
+import Data.Hashable ( Hashable(..) )
 import Data.HashMap.Strict ( HashMap )
 import Database.PostgreSQL.Simple ( Query )
 import Database.PostgreSQL.Simple.ToRow ( ToRow(..) )
@@ -159,6 +166,22 @@ type LongitudeList     = AnswerList [GroupNumber] [Longitude]
 data AnswerList a b = Groups a | Entries b
   deriving (Eq, Show)
 
+data QueryCategory = AUTHOR | GAME | GENRE | ENGINE | THEME | MECHANIC | SIDE | PARTY | PUBLISHER | SERIES | LEADER | SCENARIO
+                   | LATITUDE | LONGITUDE | FROM_YEAR | UPTO_YEAR | RANGE | FROM_RANGE | UPTO_RANGE | TIMESCALE | FROM_TIMESCALE | UPTO_TIMESCALE deriving (Eq, Show, Enum)
+data QueryTarget   = ENTRY  | GROUP | COUNT                       deriving (Eq, Show, Enum)
+data QueryType     = MONO   | POLY  | OMNI                        deriving (Eq, Show, Enum)
+type QueryKey      = (QueryCategory, QueryTarget, QueryType)
+type QueryMap      = HashMap QueryKey Query
+
+instance Hashable QueryCategory where
+  hashWithSalt salt qc = hashWithSalt (fromEnum qc) salt
+
+instance Hashable QueryTarget where
+  hashWithSalt salt qc = hashWithSalt (fromEnum qc) salt
+
+instance Hashable QueryType where
+  hashWithSalt salt qc = hashWithSalt (fromEnum qc) salt
+
 instance ToJSON Answer where
   toJSON (Left e)  = toJSON e
   toJSON (Right r) = toJSON r
@@ -245,4 +268,28 @@ instance MarkExclusive Series    where markExclusive a = a{ getSeriesId    = neg
 instance MarkExclusive Game      where markExclusive a = a{ getGameId      = negate $ getGameId a }
 
 instance MarkExclusive a => MarkExclusive [a] where markExclusive = map markExclusive
+
+categoryToQuery :: QueryCategory -> Query
+categoryToQuery AUTHOR         = "author"
+categoryToQuery GAME           = "game"
+categoryToQuery GENRE          = "genre"
+categoryToQuery ENGINE         = "engine"
+categoryToQuery THEME          = "theme"
+categoryToQuery MECHANIC       = "mechanic"
+categoryToQuery SIDE           = "side"
+categoryToQuery PARTY          = "party"
+categoryToQuery PUBLISHER      = "publisher"
+categoryToQuery SERIES         = "series"
+categoryToQuery LEADER         = "leader"
+categoryToQuery LATITUDE       = "latitude_trunc"
+categoryToQuery LONGITUDE      = "longitude_trunc"
+categoryToQuery FROM_YEAR      = "year_from"
+categoryToQuery UPTO_YEAR      = "year_upto"
+categoryToQuery RANGE          = "range"
+categoryToQuery FROM_RANGE     = "range"
+categoryToQuery UPTO_RANGE     = "range"
+categoryToQuery TIMESCALE      = "timescale"
+categoryToQuery FROM_TIMESCALE = "timescale"
+categoryToQuery UPTO_TIMESCALE = "timescale"
+categoryToQuery SCENARIO       = "scenario"
 
