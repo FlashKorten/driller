@@ -2950,7 +2950,7 @@
 84 {
   title{"Rommel in the Desert"}
   description{<p>Rommel in the Desert is a game of strategy for two players based on the North African Campaign of World War II. One player commands the Allied (British and Commonwealth) forces, and the other commands the Axis (German and Italian) forces.</p><p>Game Scenarios provided include: the 1941 and 1942 Campaigns, the 1940 "Italian" Campaign, and several shorter scenarios. The 1941 and 1942 campaigns can also be combined into the full “campaign game”.</p><p>The game is played in alternating Player Turns, with monthly Buildup interludes (for Reinforcements, Resupply, etc.).</p><p>The object of the game is to hold Tobruk and its environs, or preserve a superior army if this area remains contested. Capturing the enemy Base wins the game immediately.</p>}
-  publisher{"Columbia Games"-"www.columbiagames.com"}
+  publisher{"Columbia Games"-"http://www.columbiagames.com/cgi-bin/query/cfg/zoom.cfg?product_id=3421"}
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/e/ef/Rommel-Desert-v7.vmod"}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Fog of War","Blocks","Hex","Cards"}
@@ -3056,7 +3056,7 @@
 3685 {
   title{"Hammer of the Scots"}
   description{<p>Hammer of the Scots is a game of the Scottish Wars of Independence. One player plays the Scots, the other, the English. The object is to control a majority of nobles when a game ends.</p><p>There are two scenarios, Braveheart (1297–1305) and The Bruce (1306–1314). Each can be played as a separate game.</p><p>There is also a Campaign game that extends over both periods.</p>}
-  publisher{"Columbia Games"-"www.columbiagames.com"}
+  publisher{"Columbia Games"-"http://www.columbiagames.com/cgi-bin/query/cfg/zoom.cfg?product_id=3161"}
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/d/d4/Hammer-Scots-v7.vmod"}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Fog of War","Blocks","Area Movement","Cards","Dice"}
@@ -3096,10 +3096,392 @@
   }
 }
 
+29656 {
+  title{"Athens & Sparta"}
+  description{<p>Athens & Sparta is a strategic level block game of the Peloponnesian War, fought from 431BC to 404BC. This war pitted the superior wealth and naval power of Athens against the militarism of Sparta. It was a bloody contest, with many heroic triumphs and great atrocities. Victory by Sparta ended the Golden Age of Greece.</p><p>This game provides insight into why the war was fought the way it was. One player controls the wealthy and sea faring Athenians, the other the powerful armies of the Spartans. The object is to control important city-states that dotted the Grecian landscape.</p>}
+  publisher{"Columbia Games"-"http://www.columbiagames.com/cgi-bin/query/cfg/zoom.cfg?product_id=3061"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:Athens_%26_Sparta"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Fog of War","Blocks","Point-to-Point Movement","Dice"}
+  theme{""}
+  scenario{"3061"}{
+    dates{0431-01-01 BC / 0404-12-31 BC}
+    position{1 / 1}
+    range{1400}
+    timescale{5856}
+    players{2 / 2}
+    side{"Athens","Sparta"}
+    party{"Athens"-"2","Sparta"-"2"}
+    author{"Dalgliesh, Tom"}
+    description{<p>Nothing yet...</p>}
+  }
+}
+
+8481 {
+  title{"Crusader Rex"}
+  description{<p>Crusader Rex is a game of the 3rd Crusade. One player plays the Christian Franks, the other, the Muslim Saracens. The objective of the game is to control important Victory Cities such as Jerusalem, Acre, Damascus, and Antioch.</p><p>The board depicts the Middle East from Antioch in the north to Egypt in the south.</p>}
+  publisher{"Columbia Games"-"http://www.columbiagames.com/cgi-bin/query/cfg/zoom.cfg?product_id=3151"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:Crusader_Rex"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Fog of War","Blocks","Point-to-Point Movement","Dice"}
+  theme{"Crusades"}
+  scenario{"3151"}{
+    dates{1187-01-01 / 1193-12-31}
+    position{1 / 1}
+    range{1}
+    timescale{1460}
+    players{2 / 2}
+    side{"Francs","Saracens"}
+    party{"Francs"-"2","Saracens"-"2"}
+    author{"Dalgliesh, Tom","Taylor, Jerry"}
+    description{<p>Nothing yet...</p>}
+  }
+}
+9804 {
+  title{"Gettysburg ~ Badges of Courage"}
+  description{<p>Badges of Courage is an exciting, fast-paced wargame simulating the Battle of Gettysburg in 1863. The map covers the essential area of the historical battlefield. Military units are represented by blocks which provide elegant mechanics for Fog of War and Step Reduction.</p>}
+  publisher{"Columbia Games"-"http://www.columbiagames.com/cgi-bin/query/cfg/zoom.cfg?product_id=3321"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:Gettysburg:_Badges_of_Courage","Cyberboard"-"http://www.columbiagames.com/resources/3321/gettysburg-cyberboard-gameset.zip"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Fog of War","Blocks","Point-to-Point Movement","Dice"}
+  theme{"American Civil War"}
+  scenario{"3321-01 ~ Complete"}{
+    dates{1863-07-01 / 1863-07-03}
+    position{1 / 1}
+    range{1400}
+    timescale{1}
+    players{2 / 2}
+    side{"Union","Confederate"}
+    party{"Union"-"2","Confederate"-"2"}
+    author{"Dalgliesh, Tom","Dalgliesh, Grant"}
+    description{<p>Nothing yet...</p>}
+  }
+  scenario{"3321-02 ~ Day 1"}{
+    dates{1863-07-01 / 1863-07-01}
+    position{1 / 1}
+    range{1400}
+    timescale{1}
+    players{2 / 2}
+    side{"Union","Confederate"}
+    party{"Union"-"2","Confederate"-"2"}
+    author{"Dalgliesh, Tom","Dalgliesh, Grant"}
+    description{<p>Nothing yet...</p>}
+  }
+  scenario{"3321-03 ~ Day 2: Sickles' Folly"}{
+    dates{1863-07-02 / 1863-07-02}
+    position{1 / 1}
+    range{1400}
+    timescale{1}
+    players{2 / 2}
+    side{"Union","Confederate"}
+    party{"Union"-"2","Confederate"-"2"}
+    author{"Dalgliesh, Tom","Dalgliesh, Grant"}
+    description{<p>Nothing yet...</p>}
+  }
+  scenario{"3321-04 ~ Day 3: Pickett's Charge"}{
+    dates{1863-07-03 / 1863-07-03}
+    position{1 / 1}
+    range{1400}
+    timescale{1}
+    players{2 / 2}
+    side{"Union","Confederate"}
+    party{"Union"-"2","Confederate"-"2"}
+    author{"Dalgliesh, Tom","Dalgliesh, Grant"}
+    description{<p>Nothing yet...</p>}
+  }
+}
+
+37836 {
+  title{"Julius Caesar"}
+  description{<p>Julius Caesar brings the drama of the Roman Civil War (49-45 BC) to life. Players take control of the legions of Caesar or Pompey and fight to determine the future of Rome: republic or empire. Marc Antony, Cleopatra, Octavian, and Brutus also play key roles.</p>}
+  publisher{"Columbia Games"-"http://www.columbiagames.com/cgi-bin/query/cfg/zoom.cfg?product_id=3121"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:Julius_Caesar"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Fog of War","Blocks","Point-to-Point Movement","Dice"}
+  theme{"Roman Civil War","Ancients"}
+  scenario{"3121"}{
+    dates{0049-01-01 BC / 0045-12-31 BC}
+    position{1 / 1}
+    range{1400}
+    timescale{1752}
+    players{2 / 2}
+    side{"Caesarian","Pompeian"}
+    leader{"Caesar","Pompey"}
+    party{"Caesarian"-"2","Pompeian"-"2"}
+    author{"Dalgliesh, Grant","Thompson, Justin"}
+    description{<p>Nothing yet...</p>}
+  }
+}
+
+6719 {
+  title{"Liberty ~ The American Revolution"}
+  description{<p>Liberty is a fast-playing game covering the American Revolution from 1775-1783. It is we feel the perfect blend of scale, ease of play, and accuracy. British, American, and French forces are included and the role of the Indians and Navies is depicted. The unique problems faced by each side become clear in this exciting game.</p>}
+  publisher{"Columbia Games"-"http://www.columbiagames.com/cgi-bin/query/cfg/zoom.cfg?product_id=3021"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:Liberty:_The_American_Revolution_1775-83","Cyberboard"-"http://www.columbiagames.com/resources/3021/liberty-cyberboard.zip"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Fog of War","Blocks","Point-to-Point Movement","Dice"}
+  theme{"American Revolution"}
+  scenario{"3021"}{
+    dates{1775-01-01 / 1783-12-31}
+    position{1 / 1}
+    range{1400}
+    timescale{1752}
+    players{2 / 2}
+    side{"British","US","French"}
+    party{"Britain"-"2","US"-"2"}
+    author{"Dalgliesh, Tom","Dalgliesh, Grant","Kwasny, Mark"}
+    description{<p>The Shot Heard Around the World</p><p>“Stand your ground. Don’t fire unless fired upon. But if they mean to have a war, let it begin here.”</p><p>So said Jonathan Parker on Lexington Green, April 19, 1775. Minutes later, the “shot heard ‘round the world” shattered the morning stillness and sparked a clash between British soldiers and Parker’s Lexington militiamen. Before the day ended, close to three hundred British soldiers and one hundred American colonists were dead or wounded. The ensuing civil war lasted eight years and engulfed most of the eastern half of North America. To crush the American rebels, the British government deployed the largest military force they had yet sent overseas. The American colonists, divided amongst themselves, fought each other, British regulars, German mercenaries, and Indian warriors in a brutal war. Ultimately, George Washington’s embattled Continental Army and the loosely organized local militia forces, with essential help from the French army and navy, prevailed over the most powerful empire of the age. Playing this game will help you understand why this unlikely outcome became possible.</p>}
+  }
+}
+
+85 {
+  title{"Quebec 1759"}
+  description{<p>Québec 1759 lets you replay the French-British struggle for control of Québec City in 1759. This battle was won by the English under General James Wolfe and was decisive for the future of North America.</p><p>Québec 1759 is an elegant game that sets up in 5 minutes and plays in under an hour. This classic game has been enjoyed by thousands of gamers for over 35 years.</p>}
+  publisher{"Columbia Games"-"http://www.columbiagames.com/cgi-bin/query/cfg/zoom.cfg?product_id=3001"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:Quebec_1759"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Fog of War","Blocks","Point-to-Point Movement","Dice"}
+  theme{"Seven Years' War"}
+  scenario{"3001"}{
+    dates{1759-06-01 / 1759-12-31}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    side{"Britain","French"}
+    party{"Britain"-"2","French"-"2"}
+    author{"Dalgliesh, Tom","Gutteridge, Lance","Brewster, Steve"}
+    description{<p>Nothing yet...</p>}
+  }
+}
+25277 {
+  title{"Richard III ~ The War of the Roses"}
+  description{<p>Richard the Third is an epic two-player game that recreates the 15th century, bloody dynastic struggle between the royal houses of Lancaster and York for the throne of England. Will the mad-king Henry VI and his Queen Margaret keep the throne or will the Duke of York recover it for the Plantagenets. Also strutting across the game's stage are Edward IV, Richard III, Henry VII, and Warwick, the notorious "Kingmaker".</p><p>The object of play is to eliminate all five enemy heirs and/or win control of the powerful nobles of England. The Lancastrians start the game holding the throne, and the Yorkists are in exile ready to invade. Kingship can be won or lost several times during the game. Will Richard III emerge triumphant, or will he perish in battle as he did historically?</p>}
+  publisher{"Columbia Games"-"http://www.columbiagames.com/cgi-bin/query/cfg/zoom.cfg?product_id=3171"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:Richard_III:_The_Wars_of_the_Roses"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Fog of War","Blocks","Point-to-Point Movement","Dice"}
+  theme{"War of the Roses"}
+  scenario{"3171"}{
+    dates{1455-01-01 / 1486-12-31}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    side{"Lancaster","York"}
+    party{"Lancaster"-"2","York"-"2"}
+    author{"Dalgliesh, Tom","Taylor, Jerry"}
+    description{<p>Nothing yet...</p>}
+  }
+}
+83 {
+  title{"Sam Grant"}
+  description{<p>Sam Grant brings to life the most dramatic event in American history, the Civil War. The game covers the war in the western theater, focusing on the three year struggle for Alabama, Georgia, Kentucky, Mississippi, and Tennessee. Rules to link Sam Grant with Bobby Lee (our game on the eastern theater) are included.</p><p>The historical campaigns of Shiloh, Vicksburg, Chickamauga, and Atlanta can be restaged, or you can devise your own "war-winning" strategies. </p>}
+  publisher{"Columbia Games"-"http://www.columbiagames.com/cgi-bin/query/cfg/zoom.cfg?product_id=3302"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:Sam_Grant"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Fog of War","Blocks","Point-to-Point Movement","Dice"}
+  theme{"American Civil War"}
+  scenario{"3302-01 ~ Complete"}{
+    dates{1862-01-01 / 1864-12-31}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    side{"Union","Confederate"}
+    party{"Union"-"2","Confederate"-"2"}
+    author{"Dalgliesh, Tom","Selkirk, Gary"}
+    description{<p>Nothing yet...</p>}
+  }
+  scenario{"3302-02 ~ Year 1"}{
+    dates{1862-01-01 / 1862-12-31}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    side{"Union","Confederate"}
+    party{"Union"-"2","Confederate"-"2"}
+    author{"Dalgliesh, Tom","Selkirk, Gary"}
+    description{<p>Nothing yet...</p>}
+  }
+  scenario{"3302-03 ~ Year 2"}{
+    dates{1863-01-01 / 1863-12-31}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    side{"Union","Confederate"}
+    party{"Union"-"2","Confederate"-"2"}
+    author{"Dalgliesh, Tom","Selkirk, Gary"}
+    description{<p>Nothing yet...</p>}
+  }
+  scenario{"3302-04 ~ Year 3"}{
+    dates{1864-01-01 / 1864-12-31}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    side{"Union","Confederate"}
+    party{"Union"-"2","Confederate"-"2"}
+    author{"Dalgliesh, Tom","Selkirk, Gary"}
+    description{<p>Nothing yet...</p>}
+  }
+}
+
+82 {
+  title{"Bobby Lee"}
+  description{<p>Bobby Lee brings to life the most dramatic military event in American history, the Civil War. The game covers the war in the east, focusing on the one hundred miles between the two rival capitals of Richmond and Washington.</p><p>For four years, the Confederate Army of Northern Virginia, commanded by the incomparable Robert E. Lee, defended these few bloody miles against overwhelming Union strength in men and material. This was the scene of most major battles of the war, including First and Second Bull Run, Antietam, Fredricksburg, Chancellorsville and Gettysburg, and the Valley, Peninsula, and Wilderness campaigns. You can restage all these campaigns, or experiment with your own war-winning strategies.</p>}
+  publisher{"Columbia Games"-"http://www.columbiagames.com/cgi-bin/query/cfg/zoom.cfg?product_id=3301"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:Bobby_Lee"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Fog of War","Blocks","Point-to-Point Movement","Dice"}
+  theme{"American Civil War"}
+  scenario{"3301-01 ~ Campaign"}{
+    dates{1861-01-01 / 1864-12-31}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    side{"Union","Confederate"}
+    party{"Union"-"2","Confederate"-"2"}
+    author{"Dalgliesh, Tom"}
+    description{<p>Nothing yet...</p>}
+  }
+  scenario{"3301-02 ~ Year 1"}{
+    dates{1861-01-01 / 1861-12-31}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    side{"Union","Confederate"}
+    party{"Union"-"2","Confederate"-"2"}
+    author{"Dalgliesh, Tom"}
+    description{<p>Nothing yet...</p>}
+  }
+  scenario{"3301-03 ~ Year 2"}{
+    dates{1862-01-01 / 1862-12-31}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    side{"Union","Confederate"}
+    party{"Union"-"2","Confederate"-"2"}
+    author{"Dalgliesh, Tom"}
+    description{<p>Nothing yet...</p>}
+  }
+  scenario{"3301-04 ~ Year 3"}{
+    dates{1863-01-01 / 1863-12-31}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    side{"Union","Confederate"}
+    party{"Union"-"2","Confederate"-"2"}
+    author{"Dalgliesh, Tom"}
+    description{<p>Nothing yet...</p>}
+  }
+  scenario{"3301-05 ~ Year 4"}{
+    dates{1864-01-01 / 1864-12-31}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    side{"Union","Confederate"}
+    party{"Union"-"2","Confederate"-"2"}
+    author{"Dalgliesh, Tom"}
+    description{<p>Nothing yet...</p>}
+  }
+}
+
+26697 {
+  title{"Shenandoah ~ Jackson's Valley Campaign"}
+  description{<p>Shenandoah covers the remarkable Valley Campaign of May/June 1862. Led by Thomas 'Stonewall' Jackson, a smaller Confederate army with audacious marching and fighting, paralyzed and defeated three enveloping Union armies. Military students worldwide study Jackson's strategy and tactics to this day.</p><p>The CSA player has the advantage of central position, but must use it aggressively to prevent the Union armies from combining against him. The USA player has a clear advantage in numbers, but must cope with a command system that penalizes the wide separation of his three forces.</p><p>The Valley Campaign is a difficult one to simulate historically. USA commander Banks believed by mid-April that Jackson had left the Valley for Richmond, and reported this to Washington. On May 1st, Lincoln ordered Shields division transferred from Banks to McDowell's corps at Fredericksburg. However, not until May 12th, (Turn 3) did Shields actually leave New Market for Fredericksburg via Luray, Front Royal, and Manassas Gap. Ewell's CSA division at Standardsville could easily have intercepted Shields on that march, but did not. Shields actual withdrawal begins four days after Jackson has defeated Fremont's advance brigades at McDowell, and has then pursued them as far as Franklin. Clearly, Banks and Shields had no idea Jackson has won this battle, partly because General Fremont reported it by telegram as a minor skirmish and tactical retreat. USA players are not obliged to mimic this foolishness.</p>}
+  publisher{"Columbia Games"-"http://www.columbiagames.com/cgi-bin/query/cfg/zoom.cfg?product_id=3311"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:Shenandoah:_Jackson%27s_Valley_Campaign"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Fog of War","Blocks","Point-to-Point Movement","Dice"}
+  theme{"American Civil War"}
+  scenario{"3311"}{
+    dates{1862-05-01 / 1862-06-30}
+    position{1 / 1}
+    range{1}
+    timescale{72}
+    players{2 / 2}
+    side{"Union","Confederate"}
+    party{"Union"-"2","Confederate"-"2"}
+    author{"Selkirk, Gary"}
+    description{<p>When the USA supreme commander McClellan sought to defeat the CSA with his bold if risky Peninsula Campaign, he pledged to leave sufficient forces around Washington to protect the capital. President Lincoln soon came to believe this was not true.</p><p>The CSA leadership sought to upset the USA plan with a flanking campaign in the Shenandoah Valley. Jackson's brilliant success in the Valley caused Lincoln to fear for Washington. He refused to allow a large USA corps at Fredericksburg to move south to attack Richmond and used part of that corps to reinforce USA troops in the Valley.</p><p>Jackson eventually defeated USA forces triple his size in the Valley, yet was still able to leave and defend Richmond against McClellan. It is a campaign still studied at war colleges everywhere.</p>}
+  }
+}
+
+19902 {
+  title{"Shiloh ~ April 1862"}
+  description{<p>Shiloh was an important American Civil War battle fought in April 1862. A surprise Confederate attack, led by Albert Sydney Johnston, nearly swept encamped Union defenders into the Tennessee River. The next day, a reinforced Union army counter-attacked and drove the CSA line back in confusion and retreat. A CSA victory might have ruined the career of General Ulysses S. Grant. Instead, the battle ended with a Union victory, the death of Johnston, and the eventual demise of Confederate hopes in the West. Days 1 and 2 can be played separately or together.</p><p>Movement and combat are resolved within areas. The game plays using the fast-paced Move-Move-Battle sequence seen in Hammer of the Scots and Julius Caesar. There are no cards involved; players activate leaders to command brigades of the same division or corps. The game plays smoothly and quickly; each player gets to play one day on offense and one day on defense for a great gaming experience. Game time is 2-4 hours for both days of Shiloh.</p>}
+  publisher{"Columbia Games"-"http://www.columbiagames.com/cgi-bin/query/cfg/zoom.cfg?product_id=3322"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:Shiloh:_April_1862"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Fog of War","Blocks","Point-to-Point Movement","Dice"}
+  theme{"American Civil War"}
+  scenario{"3322"}{
+    dates{1862-04-06 / 1862-04-07}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    side{"Union","Confederate"}
+    party{"Union"-"2","Confederate"-"2"}
+    author{"Dalgliesh, Tom","Dalgliesh, Grant"}
+    description{<p>Gettysburg is today the most famous of American Civil war battles, but this was not always true. For at least twenty years after the war, Shiloh was the more famous battle because there were more casualties at Shiloh than the total of all previous American wars. Generals like Grant, Sherman, Buell, and Beauregard fought a postwar battle of words to justify their actions and protect their reputations. Location and Lincoln's Gettysburg Address transformed Gettysburg into the premier battle of the war.</p>}
+  }
+}
+
+11886 {
+  title{"Texas Glory"}
+  description{<p>In 1835 Texas fought for independence from Mexico. The Mexican dictator, Santa Anna, responded in 1836 by recapturing the Alamo and overrunning much of Texas until he was captured at the battle of San Jacinto.</p><p>Texas Glory is a strategy game that brings this exciting period in history to life. Men like Houston, Austin, Crockett, and Bowie play key roles in the Texan struggle to defeat superior Mexican forces with a small but heroic army.</p><p>The game is challenging and exciting for both players. The Mexicans have a powerful army but time and supply are their enemies.</p><p>Intervention by U.S. forces can occur and the fierce Comanche are a threat to both sides.</p>}
+  publisher{"Columbia Games"-"http://www.columbiagames.com/cgi-bin/query/cfg/zoom.cfg?product_id=3041"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:Texas_Glory"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Fog of War","Blocks","Point-to-Point Movement","Dice"}
+  theme{"Texan Independence"}
+  scenario{"3041-01 ~ 1836: Remember the Alamo"}{
+    dates{1836-02-21 / 1836-05-14}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    side{"Texas","Mexico"}
+    party{"Texas"-"2","Mexico"-"2"}
+    author{"Dalgliesh, Tom","Mings, Dan","Willner, Carl"}
+    description{<p>Nothing yet...</p>}
+  }
+  scenario{"3041-02 ~ 1835: Texas Revolt"}{
+    dates{1835-10-07 / 1835-12-14}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    side{"Texas","Mexico"}
+    party{"Texas"-"2","Mexico"-"2"}
+    author{"Dalgliesh, Tom","Mings, Dan","Willner, Carl"}
+    description{<p>Nothing yet...</p>}
+  }
+  scenario{"3041-03 ~ Complete"}{
+    dates{1835-10-07 / 1836-05-14}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    side{"Texas","Mexico"}
+    party{"Texas"-"2","Mexico"-"2"}
+    author{"Dalgliesh, Tom","Mings, Dan","Willner, Carl"}
+    description{<p>Nothing yet...</p>}
+  }
+}
+
 1645 {
   title{"War of 1812"}
   description{<p>On Christmas Eve 1814, American and British diplomats signed the Treaty of Gent. This brought an end to a thirty month struggle known as the War of 1812, the result of which has been disputed ever since.</p>}
-  publisher{"Columbia Games"-"www.columbiagames.com"}
+  publisher{"Columbia Games"-"http://www.columbiagames.com/cgi-bin/query/cfg/zoom.cfg?product_id=3002"}
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/1/1a/WarOf1812-v8.vmod"}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Fog of War","Blocks","Point-to-Point Movement","Dice"}
@@ -3118,14 +3500,14 @@
 }
 
 22143 {
-  title{"EastFront"}
+  title{"Eastfront"}
   description{<p>EastFront simulates the largest military campaign in history: the "Eastern Front" in World War II, 1941-45. One player commands the Axis forces, the other commands the Soviets.</p>}
-  publisher{"Columbia Games"-"www.columbiagames.com"}
+  publisher{"Columbia Games"-"http://www.columbiagames.com/cgi-bin/query/cfg/zoom.cfg?product_id=3405"}
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/3/37/EuroFront_II_v1.8.vmod"}
   genre{"Conflict Simulation","Strategic Level"}
   mechanic{"Fog of War","Blocks","Hex","Dice"}
   theme{"WW2","East Front"}
-  series{"Eurofront"-"EastFront"}
+  series{"Eurofront"-"Eastfront"}
   scenario{"3405-01 ~ Barbarossa; The Invasion of Russia"}{
     dates{1941-06-15 / 1941-11-30}
     position{1 / 1}
@@ -3228,14 +3610,14 @@
 }
 
 22161 {
-  title{"WestFront"}
+  title{"Westfront"}
   description{<p>WestFront simulates the "Western Front" campaign in World War II, 1943-45, beginning with the invasion of Sicily. One player commands the Axis forces, the other commands the Allies.</p>}
-  publisher{"Columbia Games"-"www.columbiagames.com"}
+  publisher{"Columbia Games"-"http://www.columbiagames.com/cgi-bin/query/cfg/zoom.cfg?product_id=3406"}
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/3/37/EuroFront_II_v1.8.vmod"}
   genre{"Conflict Simulation","Strategic Level"}
   mechanic{"Fog of War","Blocks","Hex","Dice"}
   theme{"WW2","West Front"}
-  series{"Eurofront"-"WestFront"}
+  series{"Eurofront"-"Westfront"}
   scenario{"3406-01 ~ Operation 'Husky'; The Invasion of Italy"}{
     dates{1943-07-01 / 1943-11-30}
     position{1 / 1}
@@ -3283,14 +3665,14 @@
 }
 
 22160 {
-  title{"EuroFront"}
+  title{"Eurofront"}
   description{<p>World War II was the defining event of the 20th century. When Adolf Hitler gained dictatorial power over Germany in 1933, his ambition went beyond the political control and economic exploitation of previous conquerors. He envisioned the extermination or enslavement of his victims, based on a ruthless ideology of racist totalitarianism.</p><p>Hitler concealed his true aims behind a cloak of conventional nationalism for as long as possible, gaining a series of bloodless conquests by threat and duplicity.</p><p>Finally Britain, his main geopolitical opponent, lost patience, took courage, and drew the line at Poland. A 6-year struggle for the survival of democracy, freedom and basic human decency ensued, costing 100 million lives. It was a close-run thing.</p><p>Untold thousands of acts of bravery, resolution and sacrifice had telling effects in battle. Others had none. Technical advances had a profound impact (we know now that code-breaking played a key role).</p><p>But in the end, it is very possible that the issue was decided by strategy.</p>}
-  publisher{"Columbia Games"-"www.columbiagames.com"}
+  publisher{"Columbia Games"-"http://www.columbiagames.com/cgi-bin/query/cfg/zoom.cfg?product_id=3407"}
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/3/37/EuroFront_II_v1.8.vmod"}
   genre{"Conflict Simulation","Strategic Level"}
   mechanic{"Fog of War","Blocks","Hex","Cards"}
   theme{"WW2"}
-  series{"Eurofront"-"EuroFront"}
+  series{"Eurofront"-"Eurofront"}
   scenario{"3407-01 ~ 1939: Assault on Poland"}{
     dates{1939-09-01 / 1940-05-31}
     position{1 / 1}
@@ -3439,7 +3821,7 @@
 1662 {
   title{"Napoleon ~ The Waterloo Campaign, 1815"}
   description{<p>On June 18, 1815, one of the most decisive battles in military history was fought in Belgian fields twenty miles southeast of Brussels. Within a short 100 days, Napoléon, former emperor of France, had returned from exile on the island of Elba, again seized power, quickly assembled an army, and marched to defeat the dispersed British and Prussian armies now preparing to invade France.</p><p>Napoléon invaded Belgium on June15th, defeated the Prussians at the Battle of Ligny on the 16th and after a day of pursuit, faced the British and Dutch army commanded by Wellington. Aided by superb defensive tactics and the timely arrival of Prussian reinforcements, Wellington defeated the French in the great Battle of Waterloo, ending forever the military ambitions of the great Napoléon.</p>}
-  publisher{"Columbia Games"-"www.columbiagames.com"}
+  publisher{"Columbia Games"-"http://www.columbiagames.com/cgi-bin/query/cfg/zoom.cfg?product_id=3201"}
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/e/eb/Napoleon-v3.vmod"}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Fog of War","Blocks","Point-to-Point Movement","Dice","Secret Deployment"}
@@ -3454,6 +3836,49 @@
     party{"France"-"2","Allies"-"2","France"-"3","Britain"-"3","Prussia"-"3"}
     leader{"Napoleon Bonaparte","Wellington","Bl&uuml;cher"}
     author{"Dalgliesh, Tom","Gibson, Ron","Gutteridge, Lance"}
+    description{<p>Nothing yet...</p>}
+  }
+}
+
+101118 {
+  title{"Borodino ~ 1812"}
+  description{<p>Borodino was fought between the Army of Imperial Russia and Napoléon's Grand Armée on September 7, 1812. The battle ended with a French victory, but strategic defeat. Losses were terrible on both sides, but the Russians could replace theirs. One week after the battle Napoléon occupied an undefended Moscow, hoping to impose a peace, but after four weeks was forced to retreat home with calamitous results.</p><p>The historical battle involved wave after wave of frontal attacks by both sides, focusing on the Russian redoubts. However, the game will show all the options available to Napoléon and Kutuzov, including some not attempted historically. The French player has several possible lines of attack and the Russian player must try to anticipate and counter them all. The tactical interaction of Napoléonic infantry, cavalry and artillery is also emphasized, including cavalry charges and squares. This makes for exciting and tense gaming.</p><p>Movement and combat are resolved within areas. The game plays using the fast-paced Move-Move-Battle sequence seen in Shiloh. Players activate leaders to command divisions of the same corps. Game time is 3-4 hours.</p>}
+  publisher{"Columbia Games"-"http://www.columbiagames.com/cgi-bin/query/cfg/zoom.cfg?product_id=3212"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:Borodino_1812"}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Fog of War","Blocks","Point-to-Point Movement","Dice"}
+  theme{"Napoleonic"}
+  scenario{"3212-01 ~ Shevardino"}{
+    dates{1812-09-05 / 1812-09-05}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    side{"Russia","French"}
+    party{"Russia"-"2","French"-"2"}
+    author{"Dalgliesh, Tom","Willner, Carl"}
+    description{<p>After weeks of retreat from Smolensk, the Russians halted to fight for Moscow. The battlefield they choose was Borodino, planning to defend the Kolocha River. Shevardino redoubt was built to anchor the western end of this line. Historically, the French won control of the Shevardino redoubt by 7pm and retained it against a Russian counterattack. Russian losses exceeded French losses.</p>}
+  }
+  scenario{"3212-02 ~ Borodino"}{
+    dates{1812-09-07 / 1812-09-07}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    side{"Russia","French"}
+    party{"Russia"-"2","French"-"2"}
+    author{"Dalgliesh, Tom","Willner, Carl"}
+    description{<p>The French army attempts to breach or turn the Russian defensive line, while the Russians seek to hold their positions.</p>}
+  }
+  scenario{"3212-03 ~ Campaign"}{
+    dates{1812-09-05 / 1812-09-07}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    side{"Russia","French"}
+    party{"Russia"-"2","French"-"2"}
+    author{"Dalgliesh, Tom","Willner, Carl"}
     description{<p>Nothing yet...</p>}
   }
 }
