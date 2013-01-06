@@ -74,158 +74,160 @@ import Data.HashMap.Strict ( (!) )
 import Control.Monad ( liftM )
 import Database.PostgreSQL.Simple.ToRow ( ToRow )
 import Database.PostgreSQL.Simple
-    ( Only(Only), In(In), Connection, query_, query )
+    ( Only(Only), In(In), query_, query )
 
-fetchManyForSelection :: (FromRow a, FromRow b) => QueryCategory -> QueryMap -> Connection -> Int -> [Int] -> IO (AnswerList [a] [b])
-fetchManyForSelection category queryMap c limit ids = do
-    count <- query c (queryMap ! (category, COUNT, POLY)) (Only (In ids))
+fetchManyForSelection :: (FromRow a, FromRow b) => QueryCategory -> Config -> Int -> [Int] -> IO (AnswerList [a] [b])
+fetchManyForSelection category config limit ids = do
+    count <- query c (qm ! (category, COUNT, POLY)) (Only (In ids))
     if head count < limit
-      then liftM Entries $ query c (queryMap ! (category, ENTRY, POLY)) (Only (In ids))
-      else liftM Groups  $ query c (queryMap ! (category, GROUP, POLY)) (Only (In ids))
+      then liftM Entries $ query c (qm ! (category, ENTRY, POLY)) (Only (In ids))
+      else liftM Groups  $ query c (qm ! (category, GROUP, POLY)) (Only (In ids))
+    where c  = getDBConnection config
+          qm = getQueryMap config
 
-fetchManyAuthorsForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO AuthorList
+fetchManyAuthorsForSelection :: Config -> Int -> [Int] -> IO AuthorList
 fetchManyAuthorsForSelection = fetchManyForSelection AUTHOR
 
-fetchManyGamesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO GameList
+fetchManyGamesForSelection :: Config -> Int -> [Int] -> IO GameList
 fetchManyGamesForSelection = fetchManyForSelection GAME
 
-fetchManyGenresForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO GenreList
+fetchManyGenresForSelection :: Config -> Int -> [Int] -> IO GenreList
 fetchManyGenresForSelection = fetchManyForSelection GENRE
 
-fetchManyThemesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO ThemeList
+fetchManyThemesForSelection :: Config -> Int -> [Int] -> IO ThemeList
 fetchManyThemesForSelection = fetchManyForSelection THEME
 
-fetchManyMechanicsForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO MechanicList
+fetchManyMechanicsForSelection :: Config -> Int -> [Int] -> IO MechanicList
 fetchManyMechanicsForSelection = fetchManyForSelection MECHANIC
 
-fetchManySidesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO SideList
+fetchManySidesForSelection :: Config -> Int -> [Int] -> IO SideList
 fetchManySidesForSelection = fetchManyForSelection SIDE
 
-fetchManyPartiesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO PartyList
+fetchManyPartiesForSelection :: Config -> Int -> [Int] -> IO PartyList
 fetchManyPartiesForSelection = fetchManyForSelection PARTY
 
-fetchManyPublishersForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO PublisherList
+fetchManyPublishersForSelection :: Config -> Int -> [Int] -> IO PublisherList
 fetchManyPublishersForSelection = fetchManyForSelection PUBLISHER
 
-fetchManySeriesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO SeriesList
+fetchManySeriesForSelection :: Config -> Int -> [Int] -> IO SeriesList
 fetchManySeriesForSelection = fetchManyForSelection SERIES
 
-fetchManyEnginesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO EngineList
+fetchManyEnginesForSelection :: Config -> Int -> [Int] -> IO EngineList
 fetchManyEnginesForSelection = fetchManyForSelection ENGINE
 
-fetchManyLeadersForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO LeaderList
+fetchManyLeadersForSelection :: Config -> Int -> [Int] -> IO LeaderList
 fetchManyLeadersForSelection = fetchManyForSelection LEADER
 
-fetchManyLatitudesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO LatitudeList
+fetchManyLatitudesForSelection :: Config -> Int -> [Int] -> IO LatitudeList
 fetchManyLatitudesForSelection = fetchManyForSelection LATITUDE
 
-fetchManyLongitudesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO LongitudeList
+fetchManyLongitudesForSelection :: Config -> Int -> [Int] -> IO LongitudeList
 fetchManyLongitudesForSelection = fetchManyForSelection LONGITUDE
 
-fetchManyFromYearsForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO FromYearList
+fetchManyFromYearsForSelection :: Config -> Int -> [Int] -> IO FromYearList
 fetchManyFromYearsForSelection = fetchManyForSelection FROM_YEAR
 
-fetchManyUpToYearsForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO UpToYearList
+fetchManyUpToYearsForSelection :: Config -> Int -> [Int] -> IO UpToYearList
 fetchManyUpToYearsForSelection = fetchManyForSelection UPTO_YEAR
 
-fetchManyFromRangesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO FromRangeList
+fetchManyFromRangesForSelection :: Config -> Int -> [Int] -> IO FromRangeList
 fetchManyFromRangesForSelection = fetchManyForSelection FROM_RANGE
 
-fetchManyUpToRangesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO UpToRangeList
+fetchManyUpToRangesForSelection :: Config -> Int -> [Int] -> IO UpToRangeList
 fetchManyUpToRangesForSelection = fetchManyForSelection UPTO_RANGE
 
-fetchManyFromTimescalesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO FromTimescaleList
+fetchManyFromTimescalesForSelection :: Config -> Int -> [Int] -> IO FromTimescaleList
 fetchManyFromTimescalesForSelection = fetchManyForSelection FROM_TIMESCALE
 
-fetchManyUpToTimescalesForSelection :: QueryMap -> Connection -> Int -> [Int] -> IO UpToTimescaleList
+fetchManyUpToTimescalesForSelection :: Config -> Int -> [Int] -> IO UpToTimescaleList
 fetchManyUpToTimescalesForSelection = fetchManyForSelection UPTO_TIMESCALE
 
-fetchAuthorGroup, fetchAuthorEntry :: Connection -> QueryMap -> TL.Text -> IO [Author]
-fetchAuthorGroup c queryMap = fetchGroup AUTHOR c queryMap . TL.toStrict
-fetchAuthorEntry c queryMap = fetchEntry AUTHOR c queryMap . TL.toStrict
+fetchAuthorGroup, fetchAuthorEntry :: Config -> TL.Text -> IO [Author]
+fetchAuthorGroup c = fetchGroup c AUTHOR . TL.toStrict
+fetchAuthorEntry c = fetchEntry c AUTHOR . TL.toStrict
 
-fetchGameGroup, fetchGameEntry :: Connection -> QueryMap -> TL.Text -> IO [Game]
-fetchGameGroup c queryMap = fetchGroup GAME c queryMap . TL.toStrict
-fetchGameEntry c queryMap = fetchEntry GAME c queryMap . TL.toStrict
+fetchGameGroup, fetchGameEntry :: Config -> TL.Text -> IO [Game]
+fetchGameGroup c = fetchGroup c GAME . TL.toStrict
+fetchGameEntry c = fetchEntry c GAME . TL.toStrict
 
-fetchGenreGroup, fetchGenreEntry :: Connection -> QueryMap -> TL.Text -> IO [Genre]
-fetchGenreGroup c queryMap = fetchGroup GENRE c queryMap . TL.toStrict
-fetchGenreEntry c queryMap = fetchEntry GENRE c queryMap . TL.toStrict
+fetchGenreGroup, fetchGenreEntry :: Config -> TL.Text -> IO [Genre]
+fetchGenreGroup c = fetchGroup c GENRE . TL.toStrict
+fetchGenreEntry c = fetchEntry c GENRE . TL.toStrict
 
-fetchThemeGroup, fetchThemeEntry :: Connection -> QueryMap -> TL.Text -> IO [Theme]
-fetchThemeGroup c queryMap = fetchGroup THEME c queryMap . TL.toStrict
-fetchThemeEntry c queryMap = fetchEntry THEME c queryMap . TL.toStrict
+fetchThemeGroup, fetchThemeEntry :: Config -> TL.Text -> IO [Theme]
+fetchThemeGroup c = fetchGroup c THEME . TL.toStrict
+fetchThemeEntry c = fetchEntry c THEME . TL.toStrict
 
-fetchMechanicGroup, fetchMechanicEntry :: Connection -> QueryMap -> TL.Text -> IO [Mechanic]
-fetchMechanicGroup c queryMap = fetchGroup MECHANIC c queryMap . TL.toStrict
-fetchMechanicEntry c queryMap = fetchEntry MECHANIC c queryMap . TL.toStrict
+fetchMechanicGroup, fetchMechanicEntry :: Config -> TL.Text -> IO [Mechanic]
+fetchMechanicGroup c = fetchGroup c MECHANIC . TL.toStrict
+fetchMechanicEntry c = fetchEntry c MECHANIC . TL.toStrict
 
-fetchSideGroup, fetchSideEntry :: Connection -> QueryMap -> TL.Text -> IO [Side]
-fetchSideGroup c queryMap = fetchGroup SIDE c queryMap . TL.toStrict
-fetchSideEntry c queryMap = fetchEntry SIDE c queryMap . TL.toStrict
+fetchSideGroup, fetchSideEntry :: Config -> TL.Text -> IO [Side]
+fetchSideGroup c = fetchGroup c SIDE . TL.toStrict
+fetchSideEntry c = fetchEntry c SIDE . TL.toStrict
 
-fetchPartyGroup, fetchPartyEntry :: Connection -> QueryMap -> TL.Text -> IO [Party]
-fetchPartyGroup c queryMap = fetchGroup PARTY c queryMap . TL.toStrict
-fetchPartyEntry c queryMap = fetchEntry PARTY c queryMap . TL.toStrict
+fetchPartyGroup, fetchPartyEntry :: Config -> TL.Text -> IO [Party]
+fetchPartyGroup c = fetchGroup c PARTY . TL.toStrict
+fetchPartyEntry c = fetchEntry c PARTY . TL.toStrict
 
-fetchPublisherGroup, fetchPublisherEntry :: Connection -> QueryMap -> TL.Text -> IO [Publisher]
-fetchPublisherGroup c queryMap = fetchGroup PUBLISHER c queryMap . TL.toStrict
-fetchPublisherEntry c queryMap = fetchEntry PUBLISHER c queryMap . TL.toStrict
+fetchPublisherGroup, fetchPublisherEntry :: Config -> TL.Text -> IO [Publisher]
+fetchPublisherGroup c = fetchGroup c PUBLISHER . TL.toStrict
+fetchPublisherEntry c = fetchEntry c PUBLISHER . TL.toStrict
 
-fetchSeriesGroup, fetchSeriesEntry :: Connection -> QueryMap -> TL.Text -> IO [Series]
-fetchSeriesGroup c queryMap = fetchGroup SERIES c queryMap . TL.toStrict
-fetchSeriesEntry c queryMap = fetchEntry SERIES c queryMap . TL.toStrict
+fetchSeriesGroup, fetchSeriesEntry :: Config -> TL.Text -> IO [Series]
+fetchSeriesGroup c = fetchGroup c SERIES . TL.toStrict
+fetchSeriesEntry c = fetchEntry c SERIES . TL.toStrict
 
-fetchEngineGroup, fetchEngineEntry :: Connection -> QueryMap -> TL.Text -> IO [Engine]
-fetchEngineGroup c queryMap = fetchGroup ENGINE c queryMap . TL.toStrict
-fetchEngineEntry c queryMap = fetchEntry ENGINE c queryMap . TL.toStrict
+fetchEngineGroup, fetchEngineEntry :: Config -> TL.Text -> IO [Engine]
+fetchEngineGroup c = fetchGroup c ENGINE . TL.toStrict
+fetchEngineEntry c = fetchEntry c ENGINE . TL.toStrict
 
-fetchLeaderGroup, fetchLeaderEntry :: Connection -> QueryMap -> TL.Text -> IO [Leader]
-fetchLeaderGroup c queryMap = fetchGroup LEADER c queryMap . TL.toStrict
-fetchLeaderEntry c queryMap = fetchEntry LEADER c queryMap . TL.toStrict
+fetchLeaderGroup, fetchLeaderEntry :: Config -> TL.Text -> IO [Leader]
+fetchLeaderGroup c = fetchGroup c LEADER . TL.toStrict
+fetchLeaderEntry c = fetchEntry c LEADER . TL.toStrict
 
-fetchEntry, fetchGroup :: (ToRow f, FromRow r) => QueryCategory -> Connection -> QueryMap -> f -> IO [r]
-fetchEntry cat c qm = query c $ qm ! (cat, ENTRY, MONO)
-fetchGroup cat c qm = query c (qm ! (cat, GROUP, MONO))
+fetchEntry, fetchGroup :: (ToRow f, FromRow r) => Config -> QueryCategory -> f -> IO [r]
+fetchEntry config cat = query (getDBConnection config) $ getQueryMap config ! (cat, ENTRY, MONO)
+fetchGroup config cat = query (getDBConnection config) $ getQueryMap config ! (cat, GROUP, MONO)
 
-fetchGroups, fetchAllEntries :: (FromRow r) => QueryCategory -> Connection -> QueryMap -> IO [r]
-fetchGroups cat c qm = query_ c (qm ! (cat, GROUP, OMNI))
-fetchAllEntries cat c qm = query_ c (qm ! (cat, ENTRY, OMNI))
+fetchGroups, fetchAllEntries :: (FromRow r) => QueryCategory -> Config -> IO [r]
+fetchGroups cat c = query_ (getDBConnection c) (getQueryMap c ! (cat, GROUP, OMNI))
+fetchAllEntries cat c = query_ (getDBConnection c) (getQueryMap c ! (cat, ENTRY, OMNI))
 
-fetchNumberGroup :: FromRow r => Either String (Int, T.Text) -> Connection -> QueryCategory -> QueryMap -> IO [r]
-fetchNumberGroup p c cat qm = query c (qm ! (cat, GROUP, MONO)) $ fromMaybe 0 $ getFromParser p
+fetchNumberGroup :: FromRow r => Either String (Int, T.Text) -> Config -> QueryCategory -> IO [r]
+fetchNumberGroup p c cat = query (getDBConnection c) (getQueryMap c ! (cat, GROUP, MONO)) $ fromMaybe 0 $ getFromParser p
 
-fetchLatitudeGroup, fetchLatitudeEntry :: Connection -> QueryMap -> TL.Text -> IO [Latitude]
-fetchLatitudeGroup c queryMap t = fetchNumberGroup (TR.signed TR.decimal (TL.toStrict t)) c LATITUDE queryMap
-fetchLatitudeEntry c queryMap = fetchEntry LATITUDE c queryMap . TL.toStrict
+fetchLatitudeGroup, fetchLatitudeEntry :: Config -> TL.Text -> IO [Latitude]
+fetchLatitudeGroup c t = fetchNumberGroup (TR.signed TR.decimal (TL.toStrict t)) c LATITUDE
+fetchLatitudeEntry c = fetchEntry c LATITUDE . TL.toStrict
 
-fetchLongitudeGroup, fetchLongitudeEntry :: Connection -> QueryMap -> TL.Text -> IO [Longitude]
-fetchLongitudeGroup c queryMap t = fetchNumberGroup (TR.signed TR.decimal (TL.toStrict t)) c LONGITUDE queryMap
-fetchLongitudeEntry c queryMap = fetchEntry LONGITUDE c queryMap . TL.toStrict
+fetchLongitudeGroup, fetchLongitudeEntry :: Config -> TL.Text -> IO [Longitude]
+fetchLongitudeGroup c t = fetchNumberGroup (TR.signed TR.decimal (TL.toStrict t)) c LONGITUDE
+fetchLongitudeEntry c = fetchEntry c LONGITUDE . TL.toStrict
 
-fetchFromYearGroup, fetchFromYearEntry :: Connection -> QueryMap -> TL.Text -> IO [FromYear]
-fetchFromYearGroup c queryMap t = fetchNumberGroup (TR.signed TR.decimal (TL.toStrict t)) c FROM_YEAR queryMap
-fetchFromYearEntry c queryMap = fetchEntry FROM_YEAR c queryMap . TL.toStrict
+fetchFromYearGroup, fetchFromYearEntry :: Config -> TL.Text -> IO [FromYear]
+fetchFromYearGroup c t = fetchNumberGroup (TR.signed TR.decimal (TL.toStrict t)) c FROM_YEAR
+fetchFromYearEntry c = fetchEntry c FROM_YEAR . TL.toStrict
 
-fetchUpToYearGroup, fetchUpToYearEntry :: Connection -> QueryMap -> TL.Text -> IO [UpToYear]
-fetchUpToYearGroup c queryMap t = fetchNumberGroup (TR.signed TR.decimal (TL.toStrict t)) c UPTO_YEAR queryMap
-fetchUpToYearEntry c queryMap = fetchEntry UPTO_YEAR c queryMap . TL.toStrict
+fetchUpToYearGroup, fetchUpToYearEntry :: Config -> TL.Text -> IO [UpToYear]
+fetchUpToYearGroup c t = fetchNumberGroup (TR.signed TR.decimal (TL.toStrict t)) c UPTO_YEAR
+fetchUpToYearEntry c = fetchEntry c UPTO_YEAR . TL.toStrict
 
-fetchTimescaleGroup, fetchFromTimescaleEntry, fetchUpToTimescaleEntry :: Connection -> QueryMap -> TL.Text -> IO [UpToTimescale]
-fetchTimescaleGroup c queryMap t = fetchNumberGroup (TR.decimal (TL.toStrict t)) c TIMESCALE queryMap
-fetchFromTimescaleEntry c queryMap = fetchEntry FROM_TIMESCALE c queryMap . TL.toStrict
-fetchUpToTimescaleEntry c queryMap = fetchEntry UPTO_TIMESCALE c queryMap . TL.toStrict
+fetchTimescaleGroup, fetchFromTimescaleEntry, fetchUpToTimescaleEntry :: Config -> TL.Text -> IO [UpToTimescale]
+fetchTimescaleGroup c t = fetchNumberGroup (TR.decimal (TL.toStrict t)) c TIMESCALE
+fetchFromTimescaleEntry c = fetchEntry c FROM_TIMESCALE . TL.toStrict
+fetchUpToTimescaleEntry c = fetchEntry c UPTO_TIMESCALE . TL.toStrict
 
-fetchRangeGroup, fetchFromRangeEntry, fetchUpToRangeEntry :: Connection -> QueryMap -> TL.Text -> IO [UpToRange]
-fetchRangeGroup c queryMap t = fetchNumberGroup (TR.decimal (TL.toStrict t)) c RANGE queryMap
-fetchFromRangeEntry c queryMap = fetchEntry FROM_RANGE c queryMap . TL.toStrict
-fetchUpToRangeEntry c queryMap = fetchEntry UPTO_RANGE c queryMap . TL.toStrict
+fetchRangeGroup, fetchFromRangeEntry, fetchUpToRangeEntry :: Config -> TL.Text -> IO [UpToRange]
+fetchRangeGroup c t = fetchNumberGroup (TR.decimal (TL.toStrict t)) c RANGE
+fetchFromRangeEntry c = fetchEntry c FROM_RANGE . TL.toStrict
+fetchUpToRangeEntry c = fetchEntry c UPTO_RANGE . TL.toStrict
 
-fetchScenarios :: Connection -> QueryMap -> [Int] -> IO [Scenario]
-fetchScenarios c qm ids = query c (qm ! (SCENARIO, ENTRY, POLY)) (Only (In ids))
+fetchScenarios :: Config -> [Int] -> IO [Scenario]
+fetchScenarios c ids = query (getDBConnection c) (getQueryMap c ! (SCENARIO, ENTRY, POLY)) (Only (In ids))
 
-fetchScenarioIds :: Connection -> JoinMap -> [Parameter] -> IO [Int]
-fetchScenarioIds c joinMap p = query c (scenarioListQuery joinMap p) (map snd p)
+fetchScenarioIds :: Config -> [Parameter] -> IO [Int]
+fetchScenarioIds c ps = query (getDBConnection c) (scenarioListQuery (getJoinMap c) ps) (map snd ps)
 
 getFromParser :: Either String (Int, T.Text) -> Maybe Int
 getFromParser (Left _)       = Nothing

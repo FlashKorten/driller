@@ -61,19 +61,30 @@ module Driller.Data
     , QueryKey
     , QueryMap
     , categoryToQuery
+    , Config(..)
+    , initConfig
     ) where
 
 import Driller.Error ( ParameterError )
 import qualified Data.Text as Text ( Text )
 import Data.Hashable ( Hashable(..) )
-import Data.HashMap.Strict ( HashMap )
-import Database.PostgreSQL.Simple ( Query )
-import Database.PostgreSQL.Simple.ToRow ( ToRow(..) )
+import Data.HashMap.Strict ( HashMap, empty )
 import Data.Aeson.TH ( deriveJSON )
 import Data.Aeson ( ToJSON(..) )
+import Database.PostgreSQL.Simple ( Query, Connection )
 import Database.PostgreSQL.Simple.FromRow ( FromRow(..), field )
+import Database.PostgreSQL.Simple.ToRow ( ToRow(..) )
 import Database.PostgreSQL.Simple.ToField ( ToField(toField) )
 import Control.Applicative ( (<$>), (<*>) )
+
+data Config = Config { getDBConnection :: Connection
+                     , getQueryMap     :: QueryMap
+                     , getJoinMap      :: JoinMap
+                     , getParameterMap :: ParameterMap
+                     }
+
+initConfig :: Connection -> QueryMap -> JoinMap -> Config
+initConfig conn queryMap joinMap = Config conn queryMap joinMap empty
 
 data Genre     = Genre     { getGenreId     :: Int, getGenreName     :: Text.Text }
 data Engine    = Engine    { getEngineId    :: Int, getEngineName    :: Text.Text }

@@ -62,8 +62,7 @@ import qualified Data.HashMap.Strict as HM
     ( fromList, lookup, member )
 import Web.Scotty ( Param )
 import Database.PostgreSQL.Simple
-    ( Connection
-    , ConnectInfo(connectDatabase, connectPassword, connectUser)
+    ( ConnectInfo(connectDatabase, connectPassword, connectUser)
     , defaultConnectInfo
     )
 
@@ -110,64 +109,64 @@ filterPositive :: Int -> Maybe Int
 filterPositive value | value > 0 = Just value
                      | otherwise = Nothing
 
-fetchDrilledGameResult :: Connection -> JoinMap -> QueryMap -> [Param] -> IO Answer
-fetchDrilledGameResult c joinMap queryMap p =
-    case filterParameters p joinMap of
+fetchDrilledGameResult :: Config -> [Param] -> IO Answer
+fetchDrilledGameResult config p =
+    case filterParameters p (getJoinMap config) of
         Left e      -> return $ Left e
-        Right pList -> fetchPositiveAnswer c joinMap queryMap pList
+        Right pList -> fetchPositiveAnswer config pList
 
-fetchPositiveAnswer :: Connection -> JoinMap -> QueryMap -> [Parameter] -> IO Answer
-fetchPositiveAnswer c joinMap queryMap p = do
-    ids <- fetchScenarioIds c joinMap p
+fetchPositiveAnswer :: Config -> [Parameter] -> IO Answer
+fetchPositiveAnswer config p = do
+    ids <- fetchScenarioIds config p
     if null ids
        then return $ Right emptyResult
-       else prepareResult (HM.fromList p) queryMap c ids
+       else prepareResult config{getParameterMap = HM.fromList p} ids
 
 fetchForResult ::
-  (FromRow r, MarkExclusive r) =>
-     ParameterMap -> QueryMap -> T.Text -> QueryCategory
-       -> (QueryMap -> Connection -> Int -> [Int] -> IO (AnswerList a [r])) -> Connection -> [Int] -> IO (AnswerList a [r])
+  (FromRow r, MarkExclusive r) => Config -> T.Text -> QueryCategory
+       -> (Config -> Int -> [Int] -> IO (AnswerList a [r]))
+       -> [Int] -> IO (AnswerList a [r])
 
-fetchForResult parameterMap queryMap key cat f c ids
-    = case HM.lookup key parameterMap of
+fetchForResult config key cat f ids
+    = case HM.lookup key $ getParameterMap config of
         Just value -> if value >= 0
-                        then liftM Entries $ fetchEntry cat c queryMap value
-                        else liftM (Entries .  markExclusive) (fetchEntry cat c queryMap (negate value))
-        Nothing    -> f queryMap c 25 ids
+                        then liftM Entries $ fetchEntry config cat value
+                        else liftM (Entries .  markExclusive) (fetchEntry config cat (negate value))
+        Nothing    -> f config 25 ids
 
 fetchSimpleValuesForResult ::
-  (Monad m, FromInt t1) =>
-    ParameterMap -> QueryMap -> T.Text
-      -> (QueryMap -> Connection -> Int -> [Int] -> m (AnswerList a [t1])) -> Connection -> [Int] -> m (AnswerList a [t1])
+  (FromInt r) => Config -> T.Text
+      -> (Config -> Int -> [Int] -> IO (AnswerList a [r]))
+      -> [Int] -> IO (AnswerList a [r])
 
-fetchSimpleValuesForResult parameterMap queryMap key f c ids
-    = case HM.lookup key parameterMap of
+fetchSimpleValuesForResult config key f ids
+    = case HM.lookup key $ getParameterMap config of
         Just value -> return $ Entries [fromInt value]
-        Nothing    -> f queryMap c 25 ids
+        Nothing    -> f config 25 ids
 
-prepareResult :: ParameterMap -> QueryMap -> Connection -> [Int] -> IO Answer
-prepareResult parameterMap queryMap c ids = do
+prepareResult :: Config -> [Int] -> IO Answer
+prepareResult config ids = do
     let numberOfResults = length ids
-    scenarios  <- if numberOfResults > 50 then return [] else fetchScenarios c queryMap ids
-    games      <- fetchForResult parameterMap queryMap "game"      GAME      fetchManyGamesForSelection c ids
-    genres     <- fetchForResult parameterMap queryMap "genre"     GENRE     fetchManyGenresForSelection c ids
-    themes     <- fetchForResult parameterMap queryMap "theme"     THEME     fetchManyThemesForSelection c ids
-    mechanics  <- fetchForResult parameterMap queryMap "mechanic"  MECHANIC  fetchManyMechanicsForSelection c ids
-    sides      <- fetchForResult parameterMap queryMap "side"      SIDE      fetchManySidesForSelection c ids
-    parties    <- fetchForResult parameterMap queryMap "party"     PARTY     fetchManyPartiesForSelection c ids
-    publishers <- fetchForResult parameterMap queryMap "publisher" PUBLISHER fetchManyPublishersForSelection c ids
-    series     <- fetchForResult parameterMap queryMap "series"    SERIES    fetchManySeriesForSelection c ids
-    authors    <- fetchForResult parameterMap queryMap "author"    AUTHOR    fetchManyAuthorsForSelection c ids
-    engines    <- fetchForResult parameterMap queryMap "engine"    ENGINE    fetchManyEnginesForSelection c ids
-    leaders    <- fetchForResult parameterMap queryMap "leader"    LEADER    fetchManyLeadersForSelection c ids
-    latitudes  <- fetchSimpleValuesForResult parameterMap queryMap "latitude"  fetchManyLatitudesForSelection c ids
-    longitudes <- fetchSimpleValuesForResult parameterMap queryMap "longitude" fetchManyLongitudesForSelection c ids
-    fromYears  <- fetchSimpleValuesForResult parameterMap queryMap "fromYear"  fetchManyFromYearsForSelection c ids
-    upToYears  <- fetchSimpleValuesForResult parameterMap queryMap "upToYear"  fetchManyUpToYearsForSelection c ids
-    fromRanges <- fetchSimpleValuesForResult parameterMap queryMap "fromRange" fetchManyFromRangesForSelection c ids
-    upToRanges <- fetchSimpleValuesForResult parameterMap queryMap "upToRange" fetchManyUpToRangesForSelection c ids
-    fromTimescales <- fetchSimpleValuesForResult parameterMap queryMap "fromTimescale" fetchManyFromTimescalesForSelection c ids
-    upToTimescales <- fetchSimpleValuesForResult parameterMap queryMap "upToTimescale" fetchManyUpToTimescalesForSelection c ids
+    scenarios  <- if numberOfResults > 50 then return [] else fetchScenarios config ids
+    games      <- fetchForResult config "game"      GAME      fetchManyGamesForSelection ids
+    genres     <- fetchForResult config "genre"     GENRE     fetchManyGenresForSelection ids
+    themes     <- fetchForResult config "theme"     THEME     fetchManyThemesForSelection ids
+    mechanics  <- fetchForResult config "mechanic"  MECHANIC  fetchManyMechanicsForSelection ids
+    sides      <- fetchForResult config "side"      SIDE      fetchManySidesForSelection ids
+    parties    <- fetchForResult config "party"     PARTY     fetchManyPartiesForSelection ids
+    publishers <- fetchForResult config "publisher" PUBLISHER fetchManyPublishersForSelection ids
+    series     <- fetchForResult config "series"    SERIES    fetchManySeriesForSelection ids
+    authors    <- fetchForResult config "author"    AUTHOR    fetchManyAuthorsForSelection ids
+    engines    <- fetchForResult config "engine"    ENGINE    fetchManyEnginesForSelection ids
+    leaders    <- fetchForResult config "leader"    LEADER    fetchManyLeadersForSelection ids
+    latitudes  <- fetchSimpleValuesForResult config "latitude"  fetchManyLatitudesForSelection ids
+    longitudes <- fetchSimpleValuesForResult config "longitude" fetchManyLongitudesForSelection ids
+    fromYears  <- fetchSimpleValuesForResult config "fromYear"  fetchManyFromYearsForSelection ids
+    upToYears  <- fetchSimpleValuesForResult config "upToYear"  fetchManyUpToYearsForSelection ids
+    fromRanges <- fetchSimpleValuesForResult config "fromRange" fetchManyFromRangesForSelection ids
+    upToRanges <- fetchSimpleValuesForResult config "upToRange" fetchManyUpToRangesForSelection ids
+    fromTimescales <- fetchSimpleValuesForResult config "fromTimescale" fetchManyFromTimescalesForSelection ids
+    upToTimescales <- fetchSimpleValuesForResult config "upToTimescale" fetchManyUpToTimescalesForSelection ids
     return $ Right Result { getNoResults  = numberOfResults
                               , getGames      = games
                               , getGenres     = genres
