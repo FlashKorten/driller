@@ -2955,8 +2955,8 @@
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Fog of War","Blocks","Hex","Cards"}
   theme{"WW2","Desert"}
-  scenario{"Rommel in the Desert"}{
-    dates{1940-09-01 / 1942-12-31}
+  scenario{"3004-01 ~ 1940 Scenario"}{
+    dates{1940-09-01 / 1941-02-28}
     position{1 / 1}
     range{800}
     timescale{120}
@@ -2965,7 +2965,91 @@
     party{"Axis"-"2","Allies"-"2"}
     leader{"Rommel","Montgomery"}
     author{"Besinque, Craig"}
-    description{<p>Rommel in the Desert is a game of strategy for two players based on the North African Campaign of World War II. One player commands the Allied (British and Commonwealth) forces, and the other commands the Axis (German and Italian) forces.</p><p>Game Scenarios provided include: the 1941 and 1942 Campaigns, the 1940 "Italian" Campaign, and several shorter scenarios. The 1941 and 1942 campaigns can also be combined into the full “campaign game”.</p><p>The game is played in alternating Player Turns, with monthly Buildup interludes (for Reinforcements, Resupply, etc.).</p><p>The object of the game is to hold Tobruk and its environs, or preserve a superior army if this area remains contested. Capturing the enemy Base wins the game immediately.</p>}
+    description{<p>In September 1940, Britain stood alone: France had fallen, and Russia and America were not yet involved. The Battle of Britain was raging, and Italy had assembled a large army in North Africa to invade Egypt, capture the canal, and turn the British out of the Mediterranean. Britain could not spare forces for Egypt, and the heavily outnumbered British covering force harassed the invaders but fell back under superior pressure. The Italian Army, under Graziani, advanced to Sidi Barrani, and there stopped and fortified. The Italian buildup was slow, and in November the British hazarded a spoiling raid to disrupt the Italian buildup. Graziani's army disintegrated under the shock: half was captured outright and half routed back to the Libyan coastal fortresses. The much more mobile British isolated the two fortresses of Bardia and Tobruk and after a delay, stormed them and captured most of the rest of Graziani's force. The final remnants of the Italians attempted to withdraw to Agheila, but were cut off at Beda Fomm by a daring British move, and annihilated. An entire Italian army of over 150,000 had been wiped out by a British force of 30,000 in less than 4 months. Though the way was clear for a British advance to Tripoli, Churchill instead stripped the front of forces for a pet project: the disastrous expedition to Greece. The stage was set for Rommel.</p><p>The Italians begin with an advantage in strength and supply, but greatly inferior mobility. The British have an infantry shortage, but gain an armor and supply advantage late in the game. They must put it to good use to regain lost ground, besiege Tobruk, and attrition the Italian Army enough to win.</p>}
+  }
+  scenario{"3004-02 ~ 1941 Scenario"}{
+    dates{1941-04-01 / 1942-01-31}
+    position{1 / 1}
+    range{800}
+    timescale{120}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Great Britain","Commonwealth"}
+    party{"Axis"-"2","Allies"-"2"}
+    leader{"Rommel","Montgomery"}
+    author{"Besinque, Craig"}
+    description{<p>After the disastrous Italian defeat of the winter of 1940-41, the Axis High Command dispatched Rommel and advance elements of the Afrika Korps to North Africa to stiffen the faltering Italians. Meanwhile the British front had been stripped of forces for the ill-fated expedition to Greece.</p><p>Rommel probed aggressively with his meagre force, sensed weakness, and went on the offensive (against orders) out of E1 Agheila around the beginning of April. Skillfully blending bluff, deception, and bold maneuver, Rommel advanced to the Egyptian frontier in less than a fortnight, bypassing Tobruk. Then a hastily-prepared assault on the fortress was sharply rebuffed by the 12,000 Australian defenders.</p><p>In the following months, Rommel attacked Tobruk without success, and two British attacks across the frontier failed to relieve the fortress. Both sides dug in and built up strength, the British more rapidly as Africa had become an Axis sideshow during the invasion of Russia.</p><p>In November, when Rommel was almost ready for his planned setpiece attack on Tobruk, he was forestalled by "Crusader", the strongest Allied offensive to date. After two weeks of incredibly confused fighting, both sides were exhausted, but it was Rommel who was forced to withdraw due to insufficient strength. He fell back all the way to El Agheila, inflicting some stinging blows on pursuing Allied spearheads. Rommel's first offensive had narrowly failed.</p><p>The Axis has superior quality units, and better mobility, but is short of supply, and must contend with the burden of the attack. The Allies start with a territorial advantage and have a superior flow of reinforcements and supply. Using withdrawals to advantage, the Allies can often accumulate a dominant supply quantity.</p>}
+  }
+  scenario{"3004-03 ~ 1941-42 Campaign"}{
+    dates{1941-04-01 / 1942-12-31}
+    position{1 / 1}
+    range{800}
+    timescale{120}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Great Britain","Commonwealth"}
+    party{"Axis"-"2","Allies"-"2"}
+    leader{"Rommel","Montgomery"}
+    author{"Besinque, Craig"}
+    description{<p>After the disastrous Italian defeat of the winter of 1940-41, the Axis High Command dispatched Rommel and advance elements of the Afrika Korps to North Africa to stiffen the faltering Italians. Meanwhile the British front had been stripped of forces for the ill-fated expedition to Greece.</p><p>Rommel probed aggressively with his meagre force, sensed weakness, and went on the offensive (against orders) out of E1 Agheila around the beginning of April. Skillfully blending bluff, deception, and bold maneuver, Rommel advanced to the Egyptian frontier in less than a fortnight, bypassing Tobruk. Then a hastily-prepared assault on the fortress was sharply rebuffed by the 12,000 Australian defenders.</p><p>In the following months, Rommel attacked Tobruk without success, and two British attacks across the frontier failed to relieve the fortress. Both sides dug in and built up strength, the British more rapidly as Africa had become an Axis sideshow during the invasion of Russia.</p><p>In November, when Rommel was almost ready for his planned setpiece attack on Tobruk, he was forestalled by "Crusader", the strongest Allied offensive to date. After two weeks of incredibly confused fighting, both sides were exhausted, but it was Rommel who was forced to withdraw due to insufficient strength. He fell back all the way to El Agheila, inflicting some stinging blows on pursuing Allied spearheads. Rommel's first offensive had narrowly failed.</p><p>The Axis has superior quality units, and better mobility, but is short of supply, and must contend with the burden of the attack. The Allies start with a territorial advantage and have a superior flow of reinforcements and supply. Using withdrawals to advantage, the Allies can often accumulate a dominant supply quantity.</p>}
+  }
+  scenario{"3004-04 ~ Crusader"}{
+    dates{1941-11-01 / 1942-01-31}
+    position{1 / 1}
+    range{800}
+    timescale{120}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Great Britain","Commonwealth"}
+    party{"Axis"-"2","Allies"-"2"}
+    leader{"Rommel","Montgomery"}
+    author{"Besinque, Craig"}
+    description{<p>After the disastrous Italian defeat of the winter of 1940-41, the Axis High Command dispatched Rommel and advance elements of the Afrika Korps to North Africa to stiffen the faltering Italians. Meanwhile the British front had been stripped of forces for the ill-fated expedition to Greece.</p><p>Rommel probed aggressively with his meagre force, sensed weakness, and went on the offensive (against orders) out of E1 Agheila around the beginning of April. Skillfully blending bluff, deception, and bold maneuver, Rommel advanced to the Egyptian frontier in less than a fortnight, bypassing Tobruk. Then a hastily-prepared assault on the fortress was sharply rebuffed by the 12,000 Australian defenders.</p><p>In the following months, Rommel attacked Tobruk without success, and two British attacks across the frontier failed to relieve the fortress. Both sides dug in and built up strength, the British more rapidly as Africa had become an Axis sideshow during the invasion of Russia.</p><p>In November, when Rommel was almost ready for his planned setpiece attack on Tobruk, he was forestalled by "Crusader", the strongest Allied offensive to date. After two weeks of incredibly confused fighting, both sides were exhausted, but it was Rommel who was forced to withdraw due to insufficient strength. He fell back all the way to El Agheila, inflicting some stinging blows on pursuing Allied spearheads. Rommel's first offensive had narrowly failed.</p><p>The Axis has superior quality units, and better mobility, but is short of supply, and must contend with the burden of the attack. The Allies start with a territorial advantage and have a superior flow of reinforcements and supply. Using withdrawals to advantage, the Allies can often accumulate a dominant supply quantity.</p>}
+  }
+  scenario{"3004-05 ~ Battleaxe"}{
+    dates{1941-07-01 / 1942-01-31}
+    position{1 / 1}
+    range{800}
+    timescale{120}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Great Britain","Commonwealth"}
+    party{"Axis"-"2","Allies"-"2"}
+    leader{"Rommel","Montgomery"}
+    author{"Besinque, Craig"}
+    description{<p>This scenario picks up the 1941 Campaign in the 4th Month with Rommel investing Tobruk and holding the frontier. The British have escaped major losses by giving ground, and have accumulated a supply advantage. [This scenario was introduced in a tournament at ‘Origins 1987’.]</p>}
+  }
+  scenario{"3004-06 ~ 1942 Scenario"}{
+    dates{1942-02-01 / 1942-12-31}
+    position{1 / 1}
+    range{800}
+    timescale{120}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Great Britain","Commonwealth"}
+    party{"Axis"-"2","Allies"-"2"}
+    leader{"Rommel","Montgomery"}
+    author{"Besinque, Craig"}
+    description{<p>After pursuing Rommel back to El Agheila, the British again diverted forces to other MidEast areas. Rommel struck unexpectedly and chased the British back to the fortified "Gazala Line" where he paused. The British were preparing a new offensive but Rommel beat them to the punch, swinging south around the line and driving toward the coast to cut it off.</p><p>He was stopped short and trapped behind enemy lines, but the British were slow to take advantage, and he pushed a supply line back through the minefields. British armor finally attacked, but was defeated and then routed by a counterattack.</p><p>Rommel once again deceived the Allies by driving past Tobruk in pursuit of British forces, then doubling back at night and taking the fortress. Resupplied with the vast amount of stores in Tobruk, Rommel advanced into Egypt.</p><p>After outmaneuvering a British stand at Mersa Matruh, Rommel came up to the partially-prepared Alamein Line, the last (and best) defensive position before Suez. He attacked, but Allied C-in-C (Near East) Auckenleck took direct command and skillfully parried his thrusts.</p><p>After weeks of inconclusive skirmishing, both sides dug in and built up. Seeing that the Allied buildup was outpacing his own, Rommel attempted to break through at Alam Halfa in late August, but was foiled by minefields and short supply.</p><p>Montgomery completed the massive British buildup before attacking. In late October he opened a relentless battle of attrition against a heavily outnumbered opponent. Rommel returned from sick-leave in time to order a withdrawal, but was countermanded by Hitler.</p><p>The British broke through, the Italian forces disintegrated, and the Afrika Korps was shattered. Rommel skillfully extricated the remnants of his mobile forces and escaped but meanwhile the Allies landed in Morocco and Algeria. The Axis was finished in North Africa.</p><p>The Axis has better supply but its strength position deteriorates seriously in time. Again, the burden of the attack is costly in supply. The desirability of rebuilding the depleted Axis force is counter-balanced by the time factor, Allied rebuilding, and the appearance of minefields.</p>}
+  }
+  scenario{"3004-07 ~ Gazala"}{
+    dates{1942-05-01 / 1942-06-30}
+    position{1 / 1}
+    range{800}
+    timescale{120}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Great Britain","Commonwealth"}
+    party{"Axis"-"2","Allies"-"2"}
+    leader{"Rommel","Montgomery"}
+    author{"Besinque, Craig"}
+    description{<p>This scenario begins with the stage set for perhaps Rommel’s most remarkable comeback victory of the campaign. His second push towards Tobruk has met a strong Allied perimeter based on minefield boxes, quickly thrown together by the British by transplanting mines from the old Italian Tobruk defenses.</p><p>Though the Allies were preparing a counteroffensive, Rommel struck first with the trusty ‘right hook’ plan. The Afrika Korps outflanked Bir Hacheim and defeated British mobile forces at Retma, but the minefield boxes of the Gazala Line and especially Koenig’s stolid Free French at Bir Hacheim held firm. Rommel was trapped behind British lines with no supply.</p><p>After British bumbling saved him from utter defeat, Rommel turned the tables, routed the British, and took Tobruk. The British missed a great opportunity here.</p>}
+  }
+  scenario{"3004-08 ~ Pursuit to Alamain"}{
+    dates{1942-06-01 / 1942-11-30}
+    position{1 / 1}
+    range{800}
+    timescale{120}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Great Britain","Commonwealth"}
+    party{"Axis"-"2","Allies"-"2"}
+    leader{"Rommel","Montgomery"}
+    author{"Besinque, Craig"}
+    description{<p>Beginning one month after Gazala, Rommel has decimated the British army and captured Tobruk with its immense supplies. In the process the Afrika Korps has also taken heavy losses from which it will never completely recover.</p><p>Rommel has convinced Axis High Command to abandon the assault on Malta and instead devote airpower and supplies to supporting a lightning pursuit into Egypt. His forces were to prove slightly inadequate to the task but it was “a close run thing.” Failure to clear Malta meant increasing Axis supply problems while the British could rebuild rapidly so near their base and hold at El Alamein.</p>}
   }
 }
 
@@ -2977,16 +3061,38 @@
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Fog of War","Blocks","Area Movement","Cards","Dice"}
   theme{"Scottish Wars of Independence"}
-  scenario{"Hammer of the Scots"}{
-    dates{1297-01-01 / 1314-12-31}
-    position{1 / 1}
-    range{1000}
+  scenario{"3161-01 ~ Braveheart"}{
+    dates{1297-01-01 / 1305-12-31}
+    position{56.245059 / -4.211663}
+    range{200}
     timescale{144}
     players{2 / 2}
     side{"England","Scotland","Norse"}
     party{"England"-"2","Scotland"-"2"}
     author{"Taylor, Jerry"}
-    description{<p>Hammer of the Scots is a game of the Scottish Wars of Independence. One player plays the Scots, the other, the English. The object is to control a majority of nobles when a game ends.</p><p>There are two scenarios, Braveheart (1297–1305) and The Bruce (1306–1314). Each can be played as a separate game.</p><p>There is also a Campaign game that extends over both periods.</p>}
+    description{<p>The Scottish nobility was reduced after the battle of Dunbar to abject servitude and humiliation. But in the ashes of defeat two courageous young men rose to continue the fight against tremendous odds.</p><p>William Wallace had turned brigand in 1294. His murderous guerrilla war against the English culminated in the sack of Lanark in 1297. Suddenly, the invincible English looked invincible no longer. Meanwhile, Andrew de Moray, a young knight from one of Scotland's major land-owning families in the north, launched a bloody uprising in the Highlands.</p><p>Scotland, already smoldering with discontent and sporadic resistance by the fall of 1296, flamed into open rebellion by the spring of 1297. It took Longshanks seven years to put out the fire lit by these two heroes.</p>}
+  }
+  scenario{"3161-02 ~ The Bruce"}{
+    dates{1306-01-01 / 1314-12-31}
+    position{56.245059 / -4.211663}
+    range{200}
+    timescale{144}
+    players{2 / 2}
+    side{"England","Scotland","Norse"}
+    party{"England"-"2","Scotland"-"2"}
+    author{"Taylor, Jerry"}
+    description{<p>After John Comyn's negotiated surrender to Longshanks in February 1304, an uneasy peace returned to Scotland. Robert Bruce had not supported Comyn's rebellion and resented Edward's betrayal of his promise to deliver him the Scottish throne. Bruce conspired with sympathetic nobles and the leadership of the Scottish church to seize the throne and inspire his countrymen to revolt, a task made easy when news spread of Wallace's brutal execution in August 1305.</p><p>Bruce and John Comyn met alone in a Dumfries church. They engaged in violent argument over the wisdom of Bruce's plans; it ended with Bruce's knife in Comyn's heart.</p><p>With the absolution of the Scottish clergy, Bruce was crowned at Scone on March 10, 1306, the 10th anniversary of the outbreak of the rebellion. Faced with civil war against Comyn loyalists and imminent attack from England, Bruce desperately assembled an army and prepared for the worst.</p>}
+  }
+  scenario{"3161-03 ~ Campaign Game"}{
+    dates{1297-01-01 / 1314-12-31}
+    position{56.245059 / -4.211663}
+    range{200}
+    timescale{144}
+    players{2 / 2}
+    side{"England","Scotland","Norse"}
+    party{"England"-"2","Scotland"-"2"}
+    author{"Taylor, Jerry"}
+    description{<p>This game starts as per Braveheart scenario and is played until one player achieves victory. Extend game years beyond 1314 if necessary.</p>}
   }
 }
 
@@ -3007,7 +3113,7 @@
     side{"Britain","US","Indians"}
     party{"Britain"-"2","US"-"2"}
     author{"Dalgliesh, Tom","Gutteridge, Lance"}
-    description{<p>On Christmas Eve 1814, American and British diplomats signed the Treaty of Gent. This brought an end to a thirty month struggle known as the War of 1812, the result of which has been disputed ever since.</p>}
+    description{<p>Nothing yet...</p>}
   }
 }
 
@@ -3020,8 +3126,8 @@
   mechanic{"Fog of War","Blocks","Hex","Dice"}
   theme{"WW2","East Front"}
   series{"Eurofront"-"EastFront"}
-  scenario{"EastFront"}{
-    dates{1941-01-01 / 1945-12-31}
+  scenario{"3405-01 ~ Barbarossa; The Invasion of Russia"}{
+    dates{1941-06-15 / 1941-11-30}
     position{1 / 1}
     range{2500}
     timescale{360}
@@ -3029,7 +3135,95 @@
     side{"Germany","Hungary","Bulgaria","Italy","Rumania","Axis","Russia"}
     party{"Axis"-"2","Russia"-"2"}
     author{"Dalgliesh, Tom","Besinque, Craig"}
-    description{<p>EastFront simulates the largest military campaign in history: the "Eastern Front" in World War II, 1941-45. One player commands the Axis forces, the other commands the Soviets.</p>}
+    description{<p>Barbarossa is an unstable scenario, and probably the most difficult for beginners to play, particularly on the Soviet side. With HQs disrupted, the Soviet initial deployment is critical (its initial reaction should be thought out). Even with a good setup, the Soviet frontline army will usually be mauled. Although this will be demoralizing, the Soviet aces (cheap units and winter) are still in hand.</p>}
+  }
+  scenario{"3405-02 ~ Operation 'Typhoon'; The Moscow Counter-Offensive"}{
+    dates{1941-12-01 / 1942-05-31}
+    position{1 / 1}
+    range{2500}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany","Hungary","Bulgaria","Italy","Rumania","Axis","Russia"}
+    party{"Axis"-"2","Russia"-"2"}
+    author{"Dalgliesh, Tom","Besinque, Craig"}
+    description{<p>After taking steady punishment all summer, the Russians get their turn to dish some out. With the Axis paralyzed by winter and the shock armies in play, the Soviet Army turns tiger.</p><p>The Axis will be hard pressed to pull off any large-scale maneuvering due to reduced mobility and HQ costs and disruption. The Axis may be loath to relinquish territory (and their ‘42 prospects), but will find it very costly to defend in open terrain.</p>}
+  }
+  scenario{"3405-03 ~ Operation 'Blue'; The Drive on Stalingrad"}{
+    dates{1942-06-01 / 1943-01-31}
+    position{1 / 1}
+    range{2500}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany","Hungary","Bulgaria","Italy","Rumania","Axis","Russia"}
+    party{"Axis"-"2","Russia"-"2"}
+    author{"Dalgliesh, Tom","Besinque, Craig"}
+    description{<p>Summer ’42 was crunch time for Germany. The Soviets were getting stronger and smarter. America was turning England into an armed camp. Germany’s nemesis, the two-front war, loomed. Russia had to be defeated quickly.</p><p>German economic weakness in petroleum lured Hitler south toward the Caucasus. As the Soviets were heavily deployed in front of Moscow, their southern front was quickly shredded, but this time retired before being bagged.</p><p>Hitler once again fiddled with the plan, but Stalingrad became the eventual focus. There the Germans forswore mobile warfare for street fighting and met their match. Meanwhile, Stalin patiently hoarded his reserves behind the Don and Volga. Those who had lived by the blitzkrieg were about to die by it.</p><p>The Soviet army has improved, but space is no longer its ally: Moscow, Leningrad, and the Caucasus are all within Axis striking distance. The Germans are as dangerous as ever, and have a whole summer to win somewhere.</p>}
+  }
+  scenario{"3405-04 ~ Operation 'Uranus'; The Stalingrad Counter-Offensive"}{
+    dates{1943-02-01 / 1943-06-30}
+    position{1 / 1}
+    range{2500}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany","Hungary","Bulgaria","Italy","Rumania","Axis","Russia"}
+    party{"Axis"-"2","Russia"-"2"}
+    author{"Dalgliesh, Tom","Besinque, Craig"}
+    description{<p>Everybody knows about Stalingrad. Cold. Starvation. Suffering. Germany lost a quarter million men along with its arrogance. Few of the 90,000 German prisoners ever returned home. Hitler sacrificed Sixth Army to extract 1st Panzer Army from the Caucasus and save the southern wing. The Soviets didn’t win the war at Stalingrad, but Germany’s military advantage was erased.</p><p>The Germans are overextended and hamstrung by snow-weather command disruption. The German player must avoid a decisive pocketing of Stalingrad.</p><p>Rostov is an attractive target because of the number of German units dependent on it for supply. If the German defends the Don tenaciously, a general withdrawal can succeed. The Soviet strategy is to pick a weak spot, blitz, and grind away mercilessly. The Germans don’t have the HQ steps or Command Range for a lot of fancy maneuvering.</p>}
+  }
+  scenario{"3405-05 ~ Operation 'Citadel'; The Battle of Kursk"}{
+    dates{1943-07-01 / 1943-10-31}
+    position{1 / 1}
+    range{2500}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany","Hungary","Bulgaria","Italy","Rumania","Axis","Russia"}
+    party{"Axis"-"2","Russia"-"2"}
+    author{"Dalgliesh, Tom","Besinque, Craig"}
+    description{<p>Hitler was a gambler. He gambled at Kursk and lost badly, his plans betrayed by the Red Choir. They were bad plans anyway, and his new wonder-weapons, Panther and Tiger tanks, proved disappointing in action due to engine breakdowns.</p><p>The Soviets were ready, in spades, with the bane of the blitzkrieg: interlocked defense in depth, with adequate reserves. The battle ate up German armor that could have riposted future Soviet offensives. Without it the German line in the south collapsed and the Soviets rolled to the Dnepr, and across.</p><p>Kursk is a shoot-out. Both sides are offensively capable, and roughly equal. There are many different viable strategies. Players will have to master the skills of managing a series of ongoing battle along the front line to be successful. Enjoy.</p>}
+  }
+  scenario{"3405-06 ~ Crisis in the Ukraine; The Soviet Steamroller"}{
+    dates{1943-11-01 / 1944-05-31}
+    position{1 / 1}
+    range{2500}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany","Hungary","Bulgaria","Italy","Rumania","Axis","Russia"}
+    party{"Axis"-"2","Russia"-"2"}
+    author{"Dalgliesh, Tom","Besinque, Craig"}
+    description{<p>In the winter of ‘43, the Soviet superiority in men and machines was becoming obvious. There was no longer any chance the Germans could win the war in the east, and only a faint hope they could still avoid total calamity.</p><p>Most action occurred in the south. The Soviets sprang from their bridgeheads over the Dnepr and mauled the retreating and demoralized Germans. They pushed across the Western Ukraine, pocketing German holdouts, but rarely keeping them in the bag. The winter ended with Odessa and Sevastopol liberated, and a front line bulging into northern Rumania, the Carpathian mountains in sight.</p><p>In the north, the Soviets finally broke the German pressure on Leningrad, ending a 900 day trauma filled with horror and heroics for two million citizens. After a shaky start, Army Group North managed to regroup and form a new defensive line along Lake Pskov. In the center, things were quiet. Ominously quiet.</p><p>This is a continuation of Kursk under winter conditions. The Axis knows it will be unable to make good their losses. The Russians are slightly stronger, but careless of loss. Axis command is still disrupted in snow, but at least their HQ steps no longer cost extra. Soviet confidence soars as the Axis fights a stubborn retreat across the frozen Ukraine.</p>}
+  }
+  scenario{"3405-07 ~ Operation 'Bagration'; Destruction of Army Group Center"}{
+    dates{1944-06-01 / 1944-10-31}
+    position{1 / 1}
+    range{2500}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany","Hungary","Bulgaria","Italy","Rumania","Axis","Russia"}
+    party{"Axis"-"2","Russia"-"2"}
+    author{"Dalgliesh, Tom","Besinque, Craig"}
+    description{<p>In June 1944, the Allies had just landed in Normandy. The Soviet winter drive in the Ukraine left them threatening to push through the Lvov Gap to the Baltic, cutting off Army Groups North and Center, or into Rumania.</p><p>Instead, the Red Army struck in Belorussia, demolishing Army Group Center and eventually cutting off Army Group North anyway. The northern front finally stabilized near the old Prussian border, leaving AGN in Courland.</p><p>In the center, the Soviets made slow, expensive progress to the Vistula. After a repulse near Warsaw, they consolidated the central front. In the south, Uncle Joe had a postwar eye on the Balkans. A mid-summer Soviet offensive slashed into Rumania, which switched sides, trapping German forces there. As the German garrisons in Albania and Greece hastily retreated north, the Russians drove northwest across the Hungarian plains to Budapest.</p><p>Winter found the Allies on the Rhine and the Russians on the Vistula, with Germany clinging to its last viable lines of defense, east and west. Germany needed a miracle.</p><p>None came.</p><p>This scenario is in some ways the mirror image of Barbarossa: a wide-open game with lots of motion. The Axis must employ a creative mix of defensive tactics, from stonewall to outright flight, from strong crust to defense in depth. The Soviets learn about problems the Axis would love to have again; the frustrations of overall superiority on a tight HQ budget.</p>}
+  }
+  scenario{"3405-08 ~ The Drive on Berlin; The End in the East"}{
+    dates{1944-11-01 / 1945-05-31}
+    position{1 / 1}
+    range{2500}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany","Hungary","Bulgaria","Italy","Rumania","Axis","Russia"}
+    party{"Axis"-"2","Russia"-"2"}
+    author{"Dalgliesh, Tom","Besinque, Craig"}
+    description{<p>This scenario is your basic one-sided walkover. It can be useful as a solitaire game or to seduce a recruit into the pleasures of wargaming. In an emergency it can be useful to soothe a damaged ego.</p><p>As a solitaire game, play the Soviets and take no prisoners. Do what little can be done for the poor Germans in between, and then gloat over the weakness of German play as you stomp, smash, and generally have your way on the plains of Poland. See you in Berlin!</p>}
+  }
+  scenario{"3405-09 ~ Operation 'Edelweiss'; Trapped in the Caucasus"}{
+    dates{1942-07-15 / 1942-08-31}
+    position{1 / 1}
+    range{2500}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany","Hungary","Bulgaria","Italy","Rumania","Axis","Russia"}
+    party{"Axis"-"2","Russia"-"2"}
+    author{"Dalgliesh, Tom","Besinque, Craig"}
+    description{<p>Introductory Scenario</p>}
   }
 }
 
@@ -3042,8 +3236,8 @@
   mechanic{"Fog of War","Blocks","Hex","Dice"}
   theme{"WW2","West Front"}
   series{"Eurofront"-"WestFront"}
-  scenario{"WestFront"}{
-    dates{1943-01-01 / 1945-12-31}
+  scenario{"3406-01 ~ Operation 'Husky'; The Invasion of Italy"}{
+    dates{1943-07-01 / 1943-11-30}
     position{1 / 1}
     range{2200}
     timescale{360}
@@ -3051,7 +3245,40 @@
     side{"Germany","Axis","Allies","Italy","Spain","Portugal","Britain","Commonwealth"}
     party{"Axis"-"2","Allies"-"2"}
     author{"Besinque, Craig"}
-    description{<p>WestFront simulates the "Western Front" campaign in World War II, 1943-45, beginning with the invasion of Sicily. One player commands the Axis forces, the other commands the Allies.</p>}
+    description{<p>Husky is a good learning scenario, showing the technical but powerful nature of invasions. With a huge coastline to defend, Axis initial deployment is critical. Even with a good setup, the Allies will usually be able to land. Although Allied airpower be demoralizing, the Axis does have formidable counterattacking power and plenty of good defensive terrain to work with.</p>}
+  }
+  scenario{"3406-02 ~ Operation 'Avalanche'; The Cassino-Anzio Stalemate"}{
+    dates{1943-12-01 / 1944-05-31}
+    position{1 / 1}
+    range{2200}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Italy","Spain","Portugal","Britain","Commonwealth"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Besinque, Craig"}
+    description{<p>Nothing yet...</p>}
+  }
+  scenario{"3406-03 ~ Operation 'Overlord'; The Invasion of France"}{
+    dates{1944-06-01 / 1944-11-30}
+    position{1 / 1}
+    range{2200}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Italy","Spain","Portugal","Britain","Commonwealth"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Besinque, Craig"}
+    description{<p>Nothing yet...</p>}
+  }
+  scenario{"3406-04 ~ Across the Rhine; The End in the West"}{
+    dates{1944-12-01 / 1945-01-31}
+    position{1 / 1}
+    range{2200}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany","Axis","Allies","Italy","Spain","Portugal","Britain","Commonwealth"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Besinque, Craig"}
+    description{<p>With the Russians in Budapest and Warsaw, the Allies are in a race for Berlin. Germany has a lot of good defensive terrain, but her capabilities are winding down.</p>}
   }
 }
 
@@ -3064,16 +3291,148 @@
   mechanic{"Fog of War","Blocks","Hex","Cards"}
   theme{"WW2"}
   series{"Eurofront"-"EuroFront"}
-  scenario{"EuroFront"}{
-    dates{1939-09-01 / 1945-05-31}
+  scenario{"3407-01 ~ 1939: Assault on Poland"}{
+    dates{1939-09-01 / 1940-05-31}
     position{1 / 1}
     range{4000}
     timescale{360}
     players{2 / 2}
-    side{"Germany","Soviet Union","France","Poland","Hungary","Yugoslavia","Belgium","Denmark","Spain","Finland","Norway","Turkey","Iraq","Eire","Britain","US","Italy","Rumania","Bulgaria","Greece","Holland","Vichy","Portugal","Sweden","Switzerland","Syria","Persia","Axis","Allies","Soviet"}
+    side{"Germany"}
     party{"Axis"-"2","Allies"-"2"}
     author{"Besinque, Craig"}
-    description{<p>World War II was the defining event of the 20th century. When Adolf Hitler gained dictatorial power over Germany in 1933, his ambition went beyond the political control and economic exploitation of previous conquerors. He envisioned the extermination or enslavement of his victims, based on a ruthless ideology of racist totalitarianism.</p><p>Hitler concealed his true aims behind a cloak of conventional nationalism for as long as possible, gaining a series of bloodless conquests by threat and duplicity.</p><p>Finally Britain, his main geopolitical opponent, lost patience, took courage, and drew the line at Poland. A 6-year struggle for the survival of democracy, freedom and basic human decency ensued, costing 100 million lives. It was a close-run thing.</p><p>Untold thousands of acts of bravery, resolution and sacrifice had telling effects in battle. Others had none. Technical advances had a profound impact (we know now that code-breaking played a key role).</p><p>But in the end, it is very possible that the issue was decided by strategy.</p>}
+    description{<p></p>}
+  }
+  scenario{"3407-02 ~ 1939 A: Winter War"}{
+    dates{1939-12-01 / 1940-03-31}
+    position{1 / 1}
+    range{4000}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Besinque, Craig"}
+    description{<p>The USSR needs to win the Winter War to reduce its crippling 20 PP HQ costs (Red Army Reform). The Finns are tough and so is their home terrain. With the Gulf of Bothnia frozen, the Finns must trace National Supply through Oulu and Sweden. Cutting this supply line or capturing Helsinki will finish the campaign. Options include direct assault through the isthmus, sea landings at Turku or Kotka, northern overland drives or a combination of the above. Soviet DF Airpower and DF mech fire help a lot.</p>}
+  }
+  scenario{"3407-03 ~ 1939 B: Operation Weser"}{
+    dates{1940-03-01 / 1940-06-30}
+    position{1 / 1}
+    range{4000}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Besinque, Craig"}
+    description{<p>The Axis fear Allied control of Norway: loss of the Ore Sea Route, Atlantic Barrage, and Allied Naval Supremacy are very damaging. Spring 1940 is their best shot, and if they don’t take it the British may. The operation is technically demanding (hence the need for a few “practice runs”). There are many offensive possibilities, but suffice to say that the most expensive are the surest. If the commitment is half-hearted or unlucky, a strong British response can save Norway.</p>}
+  }
+  scenario{"3407-04 ~ 1940: Assault on France"}{
+    dates{1940-07-01 / 1941-05-31}
+    position{1 / 1}
+    range{4000}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Besinque, Craig"}
+    description{<p>France’s military position was fatally undermined by Belgium’s reversion to neutrality in 1935, leaving the Maginot Line with an open flank. After five years of German rearmament and French political and military confusion, the French army is no match for the Germans even with significant British help.</p><p>As defeat approaches (Paris about to be lost or surrounded), France should consider offering Armistice. Axis acceptance conserves Axis resources but preserves a French empire, leaving the Allies a Vichy-defended “soft spot” for later re-entry into French North Africa. If Britain has over-committed to the continent, the Axis can follow up a quick Armistice with an invasion of England. A dicey proposition, Sea Lion can win the war, or prove a costly failure (even while scaring the daylights out of the Allies).</p><p>Axis refusal of Armistice often leads to an intensive Mediterranean campaign, with the Allies threatening Libya from east and west. Successful evacuation of French forces can prove a great boost to Allied capabilities.</p><p>Axis conquest of Malta or Gibraltar will allow a greatly expanded Axis presence in North Africa, but taking either fortress requires a major Axis effort.  A Gibraltar campaign presupposes the belligerence or defeat of Spain. In the latter case, the Allies should be sure to secure Tangier, facilitating the defense of the fortress. Malta is more vulnerable, being hard to reinforce or supply if Italy is belligerent, but the Axis window of opportunity is tight, with Axis TF airpower ending in winter.</p><p>During the German attack on France, there is a great temptation to Mobilize the Soviets and attack Rumania to deprive Germany of oil. But even if Mobilization is obtained, success in Rumania is iffy. Loss of Ploesti is a huge blow to the Axis, but failure endangers Soviet survival, as it must fight the Germans until at least W’41 with expensive units and reduced Production (Japanese Intervention).</p><p>After the French campaign, the Axis may also want to clear up the Balkans. This will clear up their rear areas in advance of a Russian campaign and put additional pressure on the British in the MF by encouraging Mid East Uprisings</p>}
+  }
+  scenario{"3407-05 ~ 1940 A: Fall of France"}{
+    dates{1940-05-01 / 1941-05-31}
+    position{1 / 1}
+    range{4000}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Besinque, Craig"}
+    description{<p>The Fall of France scenario encompasses some of the crucial strategic decisions of the war. Assuming Germany can knock off France in fairly short order, it arrives at a major strategy crossroads. Taking any one path will permanently prejudice efforts in other directions.</p><p>Sea Lion? Spain/Gibraltar? Malta? Med Front/Mid East? Balkans/Russia? These can be combined to some degree, but time-and-motion severely hampers large changes of strategic direction.</p><p>With no threat of Soviet intervention, the Axis can be a bit bolder in this scenario, so it can see more that its share of strategic ‘adventures’.</p><p>The Allies, of course, must defend against all of these threats. Britain can be hard-pressed to hold everywhere (as the next mini-scenario demonstrates). Historically, Britain did hold at every crucial point, with very limited resources compared to the Axis, arguably the best strategic performance of the war.</p>}
+  }
+  scenario{"3407-06 ~ 1940 B: Britain Stands Alone"}{
+    dates{1940-08-01 / 1941-05-31}
+    position{1 / 1}
+    range{4000}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Lockwood, Dave"}
+    description{<p>At this point, with the British standing behind their last and deepest ditches, the Axis has considerable freedom of action, too many targets, and too little time. Choosing the historical option is for wimps, but none of the Britain / Mediterranean options are either cheap to prosecute or certain no matter how hard you hit.</p><p>In SeaLion, capture of a control port cancels naval interdiction and permits cheap sea movement: SE England will then last no longer than the Low Countries. Lacking this, invasions will suck HQ capacity, face DR/DF Sea Interdiction and up to TR/DF beach defense fire, and receive only occasional Sea Supply. All too soon winter Mud and Storms arrive, and TF Airpower departs.</p><p>Med options involve either relying on the Italians, betraying the Vichy French or Franco, and/or assaulting fortresses with two unsuppliable units. Those Russian winters start to look quite cozy.</p>}
+  }
+  scenario{"3407-07 ~ 1940 C: Surf and Sand"}{
+    dates{1940-08-01 / 1941-05-31}
+    position{1 / 1}
+    range{4000}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Lockwood, Dave"}
+    description{<p>Pain. Grief. Headaches. These are just some of the great things awaiting players of this mini-game. Play twice, exchanging sides. Good for solitaire, too.</p>}
+  }
+  scenario{"3407-08 ~ 1941: Assault on Russia"}{
+    dates{1941-06-15 / 1942-05-31}
+    position{1 / 1}
+    range{4000}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Besinque, Craig"}
+    description{<p>As the Battle of the Atlantic rages and the North African campaign seesaws back and forth, an isolated but defiant Britain girds for the expected German invasion.</p><p>To its unutterable relief, the mighty Wehrmacht instead heads east into Russia, allowing Britain to deploy the best of its meager forces to beleaguered Egypt. The Soviets, on the other hand, have a fight for survival on their hands.</p>}
+  }
+  scenario{"3407-09 ~ 1942: Axis High Tide"}{
+    dates{1942-06-01 / 1943-06-30}
+    position{1 / 1}
+    range{4000}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Besinque, Craig"}
+    description{<p>The war in Europe still hangs in the balance. The Axis still has good prospects in the East, while the Allies remain relatively impotent in the West for the time being.</p><p>The war in Africa remains undecided, although the American aid has begun to tilt the balance against the Axis, and Torch invasion forces are nearing readiness.</p>}
+  }
+  scenario{"3407-10 ~ 1943: Closing the Ring"}{
+    dates{1943-06-01 / 1944-05-31}
+    position{1 / 1}
+    range{4000}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Besinque, Craig"}
+    description{<p>This scenario marks the beginning of the end for the Axis. With Soviet strength approaching parity and its production in full gear, prospects in the East are fading.</p><p>In the West, hard-won Allied Naval and Air Supremacy begin to tell, US forces begin to arrive in quantity, and Allied production is simply overwhelming. Still, tenacious German defense can make progress slow and costly, and the panzers still pack a mighty punch.</p>}
+  }
+  scenario{"3407-11 ~ 1944: Anvil of Victory"}{
+    dates{1944-06-01 / 1944-12-31}
+    position{1 / 1}
+    range{4000}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Besinque, Craig"}
+    description{<p>This scenario traces the final downfall of the Reich from east and west. When starting in 1944, consider a technical Draw (Axis holds Berlin) an Axis Moral Victory, and an Axis Moral Victory (holding the Rhine/Vistula line into 1945, a great accomplishment) a Major Victory.</p>}
+  }
+  scenario{"3407-12 ~ 1944 A: The Struggle for Europe"}{
+    dates{1944-06-01 / 1944-12-31}
+    position{1 / 1}
+    range{4000}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany"}
+    party{"Axis"-"3","Allies"-"3","Russia"-"3"}
+    author{"Besinque, Craig"}
+    description{<p>This scenario (only) can also be played as a three-sided game, with the Allies and Soviets playing as separate “sides.” The Allies and Soviets observe all normal rules, but are in competition with each other and with Germany for control of post-war Europe.</p>}
+  }
+  scenario{"3407-13 ~ 1936: Spanish Civil War"}{
+    dates{1936-07-15 / 1939-05-31}
+    position{1 / 1}
+    range{4000}
+    timescale{360}
+    players{2 / 2}
+    side{"Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Besinque, Craig"}
+    description{<p>The Spanish Civil War, perhaps the saddest war of the 20th Century, reflected the clash of Fascism and Socialism. In the early 1930s Spain was wracked with political upheaval through a series of bitter, closely fought elections between leftist and rightist multi-party coalitions with nearly equal popular support.</p><p>The Popular Front, a loose coalition of landless peasants, labor activists, liberals, socialists, anarchists, Communists, and Catalonian and Basque nationalists, formed the government after a narrow election victory in Feb 1936. On the right were the army, wealthy landowners, the Church, Royalists, and the proto-fascist Falange.</p><p>An exchange of assassinations shook the country, prompting Generals Franco and Mola to raise an army revolt in July 1936. Some risings were suppressed by loyalists (notably in Barcelona and Madrid) and a bloody tradition of execution of “traitors” began on both sides, the Nationalists executing 500,000 of its opponents versus 20,000 by the Republicans.</p><p>The war was fought with a terrible out- pouring of passion, valor, and hostility on both sides. Portugal, Germany, and Italy openly aided Franco, while Russia sent help to the Republic, France vacillated and Britain stood aloof. Motivation was not lacking on either side, just armaments. While the Republican government could never fully arm its numerous volunteers, Germany and Italy saw to it that Franco’s army was well endowed.</p><p>The Nationalists advanced on Madrid, spear-headed by the Spanish Legion (which Franco commanded in the ‘20s) and the largely Moorish Army of Africa. The capital was saved by a stubborn defense keyed by the 11th-hour arrival of the first International Brigades.</p><p>The struggle continued for 3 long years, ending in the slow strangulation of Republican Spain by an international arms blockade, while Franco continued to receive German and Italian arms covertly via Portugal.</p>}
   }
 }
 
@@ -3095,7 +3454,7 @@
     party{"France"-"2","Allies"-"2","France"-"3","Britain"-"3","Prussia"-"3"}
     leader{"Napoleon Bonaparte","Wellington","Bl&uuml;cher"}
     author{"Dalgliesh, Tom","Gibson, Ron","Gutteridge, Lance"}
-    description{<p>On June 18, 1815, one of the most decisive battles in military history was fought in Belgian fields twenty miles southeast of Brussels. Within a short 100 days, Napoléon, former emperor of France, had returned from exile on the island of Elba, again seized power, quickly assembled an army, and marched to defeat the dispersed British and Prussian armies now preparing to invade France.</p><p>Napoléon invaded Belgium on June15th, defeated the Prussians at the Battle of Ligny on the 16th and after a day of pursuit, faced the British and Dutch army commanded by Wellington. Aided by superb defensive tactics and the timely arrival of Prussian reinforcements, Wellington defeated the French in the great Battle of Waterloo, ending forever the military ambitions of the great Napoléon.</p>}
+    description{<p>Nothing yet...</p>}
   }
 }
 
