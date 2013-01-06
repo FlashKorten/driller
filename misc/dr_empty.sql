@@ -128,7 +128,7 @@ CREATE TABLE dr_game (
   title varchar(255) NOT NULL DEFAULT '',
   subtitle varchar(255) NOT NULL DEFAULT '',
   grp char(1) NOT NULL DEFAULT '',
-  description varchar(4096) NOT NULL DEFAULT '',
+  description varchar(8192) NOT NULL DEFAULT '',
   gametime_start date,
   gametime_end date
 );
@@ -185,7 +185,7 @@ CREATE TABLE dr_scenario_data (
   id_scenario integer PRIMARY KEY REFERENCES dr_scenario(id),
   title varchar(255) NOT NULL DEFAULT '',
   subtitle varchar(255) NOT NULL DEFAULT '',
-  description varchar(4096) NOT NULL DEFAULT '',
+  description varchar(8192) NOT NULL DEFAULT '',
   gametime_start date,
   gametime_end date,
   latitude double precision,
