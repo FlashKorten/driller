@@ -94,7 +94,7 @@ polyEntryFromValues      q = mconcat ["SELECT ", q, " FROM dr_scenario WHERE id 
 omniGroupFromMap         q = mconcat ["SELECT grp, count(id) FROM dr_", q, " GROUP BY grp ORDER BY grp"]
 omniGroupFromValues      q = mconcat ["SELECT ", q, "_group, count(distinct(", q, ")) FROM dr_scenario GROUP BY ", q, "_group ORDER BY ", q, "_group"]
 polyGroupFromGameMap     q = mconcat ["SELECT a.grp, count(distinct(a.id)) FROM dr_", q, " AS a JOIN dr_map_", q, " AS ma on a.id = ma.id_", q, " JOIN dr_scenario AS s ON s.id_game = ma.id_game WHERE s.id IN ? GROUP BY grp ORDER BY grp"]
-polyGroupFromScenarioMap q = mconcat ["SELECT a.grp, count(distinct(a.id)) FROM dr_", q, " AS a JOIN dr_map_", q, " AS ma on a.id = ma.id_", q, " JOIN dr_scenario AS s ON s.id_game = ma.id_scenario WHERE s.id IN ? GROUP BY grp ORDER BY grp"]
+polyGroupFromScenarioMap q = mconcat ["SELECT a.grp, count(distinct(a.id)) FROM dr_", q, " AS a JOIN dr_map_", q, " AS ma on a.id = ma.id_", q, " JOIN dr_scenario AS s ON s.id = ma.id_scenario WHERE s.id IN ? GROUP BY grp ORDER BY grp"]
 polyGroupFromValues      q = mconcat ["SELECT ", q, "_group, count(distinct(", q, ")) FROM dr_scenario WHERE id IN ? GROUP BY ", q, "_group ORDER BY ", q, "_group"]
 monoGroupFromMap         q = mconcat ["SELECT id, ", q, " FROM dr_", q, " WHERE grp = ? ORDER BY ", q]
 monoGroupFromValues      q = mconcat ["SELECT ", q, " FROM dr_scenario WHERE ", q, "_group = ? GROUP BY ", q, " ORDER BY ", q]
