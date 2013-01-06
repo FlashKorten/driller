@@ -144,8 +144,8 @@ my $sth_select_game_id = $dbh -> prepare(
 foreach my $key (sort(keys %game)){
   # Insert the game:
 
-  if ($game{$key}{'title'} =~ m/ - /){
-    ($game{$key}{'title'}, $game{$key}{'subtitle'}) = split(/\s+-\s+/, $game{$key}{'title'});
+  if ($game{$key}{'title'} =~ m/ ~ /){
+    ($game{$key}{'title'}, $game{$key}{'subtitle'}) = split(/\s+~\s+/, $game{$key}{'title'});
   } else {
     $game{$key}{'subtitle'} = "";
   }
@@ -176,8 +176,8 @@ foreach my $key (sort(keys %game)){
     ($time_01, $time_02) = split(/\s*\/\s*/, $game{$key}{'scenario'}{$scen_key}{'dates'});
     ($latitude, $longitude) = split(/\s*\/\s*/, $game{$key}{'scenario'}{$scen_key}{'position'});
 
-    if ($scen_key =~ m/ - /){
-      ($scen_title, $scen_subtitle) = split(/\s+-\s+/, $scen_key);
+    if ($scen_key =~ m/ ~ /){
+      ($scen_title, $scen_subtitle) = split(/\s+~\s+/, $scen_key);
     } else {
       ($scen_title, $scen_subtitle) = ($scen_key, "");
     }
