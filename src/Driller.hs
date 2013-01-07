@@ -16,6 +16,7 @@ import Web.Scotty
     , text
     , params
     , param
+    , Param()
     , json
     , scotty
     , middleware
@@ -27,25 +28,35 @@ getRouteWithoutParameter url getter = get url $ liftIO getter >>= json
 getRouteWithParameter :: (Parsable a1, ToJSON a) => RoutePattern -> (a1 -> IO a) -> ScottyM ()
 getRouteWithParameter url getter = get url $ param "id" >>= liftIO . getter >>= json
 
+getDrilledResult :: ToJSON a => RoutePattern -> (Config -> [Param] -> IO a) -> Config -> ScottyM ()
+getDrilledResult url getter config = get url $ params >>= liftIO . getter config >>= json
+
 main :: IO ()
 main = do
   -- _ <- forkServer "localhost" 8000
   conn <- connect DB.connectionInfo
   let config = initConfig conn DB.initQueryMap DB.initJoinMap DB.initGroupMap
-  print $ getGroupMap config
-  print $ getJoinMap config
   scotty 3003 $ do
     middleware logStdoutDev
 
-    get "/q" $ do
-      p <- params
-      result <- liftIO $ DB.fetchDrilledGameResult config p
-      json result
-    get "/authorGroup" $ do
-      p <- params
-      result <- liftIO $ DB.fetchDrilledAuthorGroup config p
-      json result
-    get "/"                                  $ text "No service at this level."
+    getDrilledResult "/q"                   DB.fetchDrilledGameResult config
+    getDrilledResult "/authorGroup/:id"     DB.fetchDrilledAuthorGroup config
+    getDrilledResult "/publisherGroup/:id"  DB.fetchDrilledPublisherGroup config
+    getDrilledResult "/gameGroup/:id"       DB.fetchDrilledGameGroup config
+    getDrilledResult "/seriesGroup/:id"     DB.fetchDrilledSeriesGroup config
+    getDrilledResult "/sideGroup/:id"       DB.fetchDrilledSideGroup config
+    getDrilledResult "/themeGroup/:id"      DB.fetchDrilledThemeGroup config
+    getDrilledResult "/leaderGroup/:id"     DB.fetchDrilledLeaderGroup config
+    getDrilledResult "/mechanicGroup/:id"   DB.fetchDrilledMechanicGroup config
+    getDrilledResult "/partyGroup/:id"      DB.fetchDrilledPartyGroup config
+    getDrilledResult "/engineGroup/:id"     DB.fetchDrilledEngineGroup config
+    getDrilledResult "/genreGroup/:id"      DB.fetchDrilledGenreGroup config
+    getDrilledResult "/fromYearGroup/:id"   DB.fetchDrilledFromYearGroup config
+    getDrilledResult "/latitudeGroup/:id"   DB.fetchDrilledLatitudeGroup config
+    getDrilledResult "/longitudeGroup/:id"  DB.fetchDrilledLongitudeGroup config
+    -- getDrilledResult "/rangeGroup/:id"      DB.fetchDrilledRangeGroup config
+    -- getDrilledResult "/timescaleGroup/:id"  DB.fetchDrilledTimescaleGroup config
+    getDrilledResult "/upToYearGroup/:id"   DB.fetchDrilledUpToYearGroup config
     getRouteWithoutParameter "/authors"         (DB.fetchAllEntries AUTHOR config         :: IO [Author])
     getRouteWithoutParameter "/engines"         (DB.fetchAllEntries ENGINE config         :: IO [Engine])
     getRouteWithoutParameter "/fromRanges"      (DB.fetchAllEntries FROM_RANGE config     :: IO [FromRange])
@@ -101,21 +112,4 @@ main = do
     getRouteWithParameter    "/upToRange/:id"      $ DB.fetchUpToRangeEntry config
     getRouteWithParameter    "/upToTimescale/:id"  $ DB.fetchUpToTimescaleEntry config
     getRouteWithParameter    "/upToYear/:id"       $ DB.fetchUpToYearEntry config
-
-    -- getRouteWithParameter    "/authorGroup/:id"    $ DB.fetchAuthorGroup config
-    getRouteWithParameter    "/engineGroup/:id"    $ DB.fetchEngineGroup config
-    getRouteWithParameter    "/fromYearGroup/:id"  $ DB.fetchFromYearGroup config
-    getRouteWithParameter    "/gameGroup/:id"      $ DB.fetchGameGroup config
-    getRouteWithParameter    "/genreGroup/:id"     $ DB.fetchGenreGroup config
-    getRouteWithParameter    "/latitudeGroup/:id"  $ DB.fetchLatitudeGroup config
-    getRouteWithParameter    "/leaderGroup/:id"    $ DB.fetchLeaderGroup config
-    getRouteWithParameter    "/longitudeGroup/:id" $ DB.fetchLongitudeGroup config
-    getRouteWithParameter    "/mechanicGroup/:id"  $ DB.fetchMechanicGroup config
-    getRouteWithParameter    "/partyGroup/:id"     $ DB.fetchPartyGroup config
-    getRouteWithParameter    "/publisherGroup/:id" $ DB.fetchPublisherGroup config
-    getRouteWithParameter    "/rangeGroup/:id"     $ DB.fetchRangeGroup config
-    getRouteWithParameter    "/seriesGroup/:id"    $ DB.fetchSeriesGroup config
-    getRouteWithParameter    "/sideGroup/:id"      $ DB.fetchSideGroup config
-    getRouteWithParameter    "/themeGroup/:id"     $ DB.fetchThemeGroup config
-    getRouteWithParameter    "/timescaleGroup/:id" $ DB.fetchTimescaleGroup config
-    getRouteWithParameter    "/upToYearGroup/:id"  $ DB.fetchUpToYearGroup config
+    get                      "/"                   $ text "No service at this level."

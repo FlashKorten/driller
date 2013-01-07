@@ -21,6 +21,7 @@ import Driller.Data
     , GroupMapComponents
     , Parameter
     , categoryToQuery
+    , ParameterValue(..)
     )
 import Database.PostgreSQL.Simple ( Query )
 import Data.Monoid ( mappend, mconcat )
@@ -30,9 +31,15 @@ import qualified Data.DList as DL ( toList, fromList, append, concat )
 import Data.HashMap.Strict ( fromList, (!) )
 
 groupQuery :: Config -> Text -> [Parameter] -> Query
-groupQuery config group pList = mconcat $ DL.toList $ DL.concat [DL.fromList [select], DL.fromList joins, DL.fromList (" WHERE 1=1":wheres), DL.fromList [order]]
-                   where (select, order) = groupMap ! group
-                         (joins, wheres) = unzip $ map (getParameterQuery joinMap) pList
+groupQuery config group pList =
+    mconcat $ DL.toList $ DL.concat [ DL.fromList [selectPart]
+                                    , DL.fromList joinParts
+                                    , DL.fromList [wherePart]
+                                    , DL.fromList whereParts
+                                    , DL.fromList [orderPart]
+                                    ]
+                   where (selectPart, wherePart, orderPart) = groupMap ! group
+                         (joinParts, whereParts) = unzip $ map (getParameterQuery joinMap) $ drop 1 pList
                          joinMap = getJoinMap config
                          groupMap = getGroupMap config
 
@@ -44,9 +51,10 @@ scenarioListQuery config pList = foldl' mappend prefix parts
                    joinMap = getJoinMap config
 
 getParameterQuery :: JoinMap -> Parameter -> (Query, Query)
-getParameterQuery joinMap (key, value) = (j, w)
-                                        where (j, w1, w2) = (joinMap !) key
-                                              w = if value >= 0 then w1 else w2
+getParameterQuery joinMap (key, Number value) = (j, w)
+                                              where (j, w1, w2) = (joinMap !) key
+                                                    w = if value >= 0 then w1 else w2
+getParameterQuery _ (a, b) = error $ "This will not have happened!" ++ show a ++ " - " ++ show b
 
 mapToGameCategories :: [QueryCategory]
 mapToGameCategories = [GENRE, ENGINE, THEME, MECHANIC, PUBLISHER, SERIES]
@@ -120,11 +128,11 @@ monoEntryForMaxValues    q = mconcat ["SELECT max(", q, ") FROM dr_scenario WHER
 monoEntryForExactValues  q = mconcat ["SELECT ", q, " FROM dr_scenario WHERE ", q, " = ?"]
 
 initGroupMap :: GroupMap
-initGroupMap = fromList $ prepareGroupList parameterList selectList orderList
+initGroupMap = fromList $ prepareGroupList parameterList selectList whereGroupList orderGroupList
 
-prepareGroupList :: [Text] -> ComponentMap -> ComponentMap -> [(Text, GroupMapComponents)]
-prepareGroupList (p:ps) s o = (p, (s ! p, o ! p)) : prepareGroupList ps s o
-prepareGroupList _ _ _      = []
+prepareGroupList :: [Text] -> ComponentMap -> ComponentMap -> ComponentMap -> [(Text, GroupMapComponents)]
+prepareGroupList (p:ps) sMap wMap oMap = (p, (sMap ! p, wMap ! p, oMap ! p)) : prepareGroupList ps sMap wMap oMap
+prepareGroupList _ _ _ _               = []
 
 initJoinMap :: JoinMap
 initJoinMap = fromList $ prepareJoinList parameterList joinList whereIncludeList whereExcludeList
@@ -153,17 +161,26 @@ parameterList = [ "author"
                 , "upToRange"
                 ]
 
+joinForMap :: Query -> Query -> Query -> Query
+joinForMap mapSource mapTarget q = mconcat [" JOIN dr_map_", q, " AS ", q, " ON s.", mapSource, " = ", q, ".", mapTarget]
+
+joinForMapToGame :: Query -> Query
+joinForMapToGame = joinForMap "id_game" "id_game"
+
+joinForMapToScenario :: Query -> Query
+joinForMapToScenario = joinForMap "id" "id_scenario"
+
 joinList :: ComponentMap
-joinList = fromList[ ("author",    " JOIN dr_map_author    AS author    ON s.id      = author.id_scenario")
-                   , ("publisher", " JOIN dr_map_publisher AS publisher ON s.id_game = publisher.id_game")
-                   , ("theme",     " JOIN dr_map_theme     AS theme     ON s.id_game = theme.id_game")
-                   , ("genre",     " JOIN dr_map_genre     AS genre     ON s.id_game = genre.id_game")
-                   , ("mechanic",  " JOIN dr_map_mechanic  AS mechanic  ON s.id_game = mechanic.id_game")
-                   , ("side",      " JOIN dr_map_side      AS side      ON s.id      = side.id_scenario")
-                   , ("party",     " JOIN dr_map_party     AS party     ON s.id      = party.id_scenario")
-                   , ("series",    " JOIN dr_map_series    AS series    ON s.id_game = series.id_game")
-                   , ("leader",    " JOIN dr_map_leader    AS leader    ON s.id      = leader.id_scenario")
-                   , ("engine",    " JOIN dr_map_engine    AS engine    ON s.id_game = engine.id_game")
+joinList = fromList[ ("author",    joinForMapToScenario "author")
+                   , ("side",      joinForMapToScenario "side")
+                   , ("party",     joinForMapToScenario "party")
+                   , ("leader",    joinForMapToScenario "leader")
+                   , ("series",    joinForMapToGame "series")
+                   , ("publisher", joinForMapToGame "publisher")
+                   , ("theme",     joinForMapToGame "theme")
+                   , ("genre",     joinForMapToGame "genre")
+                   , ("mechanic",  joinForMapToGame "mechanic")
+                   , ("engine",    joinForMapToGame "engine")
                    , ("game",      "")
                    , ("latitude",  "")
                    , ("longitude", "")
@@ -173,17 +190,20 @@ joinList = fromList[ ("author",    " JOIN dr_map_author    AS author    ON s.id 
                    , ("upToRange", "")
                    ]
 
+whereIncludeForMap :: Query -> Query
+whereIncludeForMap q = mconcat [" AND ", q, ".id_", q, " = ?"]
+
 whereIncludeList :: ComponentMap
-whereIncludeList = fromList[ ("author",    " AND author.id_author       = ?")
-                           , ("publisher", " AND publisher.id_publisher = ?")
-                           , ("theme",     " AND theme.id_theme         = ?")
-                           , ("genre",     " AND genre.id_genre         = ?")
-                           , ("mechanic",  " AND mechanic.id_mechanic   = ?")
-                           , ("side",      " AND side.id_side           = ?")
-                           , ("party",     " AND party.id_party         = ?")
-                           , ("series",    " AND series.id_series       = ?")
-                           , ("leader",    " AND leader.id_leader       = ?")
-                           , ("engine",    " AND engine.id_engine       = ?")
+whereIncludeList = fromList[ ("author",    whereIncludeForMap "author")
+                           , ("publisher", whereIncludeForMap "publisher")
+                           , ("theme",     whereIncludeForMap "theme")
+                           , ("genre",     whereIncludeForMap "genre")
+                           , ("mechanic",  whereIncludeForMap "mechanic")
+                           , ("side",      whereIncludeForMap "side")
+                           , ("party",     whereIncludeForMap "party")
+                           , ("series",    whereIncludeForMap "series")
+                           , ("leader",    whereIncludeForMap "leader")
+                           , ("engine",    whereIncludeForMap "engine")
                            , ("game",      " AND s.id_game              = ?")
                            , ("latitude",  " AND s.latitude_trunc       = ?")
                            , ("longitude", " AND s.longitude_trunc      = ?")
@@ -193,63 +213,117 @@ whereIncludeList = fromList[ ("author",    " AND author.id_author       = ?")
                            , ("upToRange", " AND s.range               <= ?")
                            ]
 
+whereExcludeForMapToGame :: Query -> Query
+whereExcludeForMapToGame = whereExcludeForMap "id_game" "id_game"
+
+whereExcludeForMapToScenario :: Query -> Query
+whereExcludeForMapToScenario = whereExcludeForMap "id_scenario" "id"
+
+whereExcludeForMap :: Query -> Query -> Query -> Query
+whereExcludeForMap what mappedTo q = mconcat [ " AND NOT EXISTS (SELECT ", what
+                                             , " FROM dr_map_" ,q
+                                             , " WHERE ", what, " = s.", mappedTo
+                                             , " AND id_", q, " = (-1 * ?))"]
+
 whereExcludeList :: ComponentMap
-whereExcludeList = fromList [ ("author",    " AND NOT EXISTS (SELECT id_scenario FROM dr_map_author    WHERE id_scenario = s.id AND id_author         = (-1 * ?))")
-                            , ("side",      " AND NOT EXISTS (SELECT id_scenario FROM dr_map_side      WHERE id_scenario = s.id AND id_side           = (-1 * ?))")
-                            , ("party",     " AND NOT EXISTS (SELECT id_scenario FROM dr_map_party     WHERE id_scenario = s.id AND id_party          = (-1 * ?))")
-                            , ("leader",    " AND NOT EXISTS (SELECT id_scenario FROM dr_map_leader    WHERE id_scenario = s.id AND id_leader         = (-1 * ?))")
-                            , ("publisher", " AND NOT EXISTS (SELECT id_game     FROM dr_map_publisher WHERE id_game     = s.id_game AND id_publisher = (-1 * ?))")
-                            , ("theme",     " AND NOT EXISTS (SELECT id_game     FROM dr_map_theme     WHERE id_game     = s.id_game AND id_theme     = (-1 * ?))")
-                            , ("genre",     " AND NOT EXISTS (SELECT id_game     FROM dr_map_genre     WHERE id_game     = s.id_game AND id_genre     = (-1 * ?))")
-                            , ("mechanic",  " AND NOT EXISTS (SELECT id_game     FROM dr_map_mechanic  WHERE id_game     = s.id_game AND id_mechanic  = (-1 * ?))")
-                            , ("series",    " AND NOT EXISTS (SELECT id_game     FROM dr_map_series    WHERE id_game     = s.id_game AND id_series    = (-1 * ?))")
-                            , ("engine",    " AND NOT EXISTS (SELECT id_game     FROM dr_map_engine    WHERE id_game     = s.id_game AND id_engine    = (-1 * ?))")
+whereExcludeList = fromList [ ("author",    whereExcludeForMapToScenario "author")
+                            , ("side",      whereExcludeForMapToScenario "side")
+                            , ("party",     whereExcludeForMapToScenario "party")
+                            , ("leader",    whereExcludeForMapToScenario "leader")
+                            , ("publisher", whereExcludeForMapToGame "publisher")
+                            , ("theme",     whereExcludeForMapToGame "theme")
+                            , ("genre",     whereExcludeForMapToGame "genre")
+                            , ("mechanic",  whereExcludeForMapToGame "mechanic")
+                            , ("series",    whereExcludeForMapToGame "series")
+                            , ("engine",    whereExcludeForMapToGame "engine")
                             , ("game",      " AND s.id_game             != (-1 * ?)")
                             , ("latitude",  " AND s.latitude_trunc       = ?")
                             , ("longitude", " AND s.longitude_trunc      = ?")
                             , ("fromYear",  " AND NOT s.year_upto        < ?")
                             , ("upToYear",  " AND NOT s.year_from        > ?")
                             , ("fromRange", " AND s.range               >= ?")
-                            , ("uptoRange", " AND s.range               <= ?")
+                            , ("upToRange", " AND s.range               <= ?")
                             ]
 
+groupEntriesForMapPrefix :: Query -> Query -> Query -> Query
+groupEntriesForMapPrefix mappedTo mapId q = mconcat [ "SELECT ", q, ".id, ", q, ".", q
+                                                    , " FROM dr_scenario s JOIN dr_map_", q, " AS m_", q
+                                                    , " ON s.", mappedTo, " = m_" , q, ".",mapId, " JOIN dr_", q, " AS ", q
+                                                    , " ON m_", q, ".id_", q, " = ", q, ".id"
+                                                    ]
+
+groupEntriesForSimpleValuesPrefix :: Query -> Query
+groupEntriesForSimpleValuesPrefix q = mconcat ["SELECT distinct(s.", q, ") FROM dr_scenario s"]
+
 selectList :: ComponentMap
-selectList = fromList[ ("author",    "SELECT author.id, author.author FROM scenario s")
-                     , ("publisher", "SELECT publisher.id, publisher.publisher FROM scenario s")
-                     , ("theme",     "SELECT theme.id, theme.theme FROM scenario s")
-                     , ("genre",     "SELECT genre.id, genre.genre FROM scenario s")
-                     , ("mechanic",  "SELECT mechanic.id, mechanic.mechanic FROM scenario s")
-                     , ("side",      "SELECT side.id, side.side FROM scenario s")
-                     , ("party",     "SELECT party.id, party.party FROM scenario s")
-                     , ("series",    "SELECT series.id, series.series FROM scenario s")
-                     , ("leader",    "SELECT leader.id, leader.leader FROM scenario s")
-                     , ("engine",    "SELECT engine.id, engine.engine FROM scenario s")
-                     , ("game",      "SELECT game.id, game.game FROM scenario s")
-                     , ("latitude",  "SELECT latitude.id, latitude.latitude FROM scenario s")
-                     , ("longitude", "SELECT longitude.id, longitude.longitude FROM scenario s")
-                     , ("fromYear",  "SELECT year_from.id, year_from.year_from FROM scenario s")
-                     , ("upToYear",  "SELECT year_upto.id, year_upto.year_upto FROM scenario s")
-                     , ("fromRange", "SELECT range_from.id, range_from.range_from FROM scenario s")
-                     , ("upToRange", "SELECT range_upto.id, range_upto.range_upto FROM scenario s")
+selectList = fromList[ ("author",    groupEntriesForMapPrefix "id" "id_scenario" "author")
+                     , ("side",      groupEntriesForMapPrefix "id" "id_scenario" "side")
+                     , ("party",     groupEntriesForMapPrefix "id" "id_scenario" "party")
+                     , ("leader",    groupEntriesForMapPrefix "id" "id_scenario" "leader")
+                     , ("series",    groupEntriesForMapPrefix "id_game" "id_game"  "series")
+                     , ("publisher", groupEntriesForMapPrefix "id_game" "id_game"  "publisher")
+                     , ("theme",     groupEntriesForMapPrefix "id_game" "id_game"  "theme")
+                     , ("genre",     groupEntriesForMapPrefix "id_game" "id_game"  "genre")
+                     , ("mechanic",  groupEntriesForMapPrefix "id_game" "id_game"  "mechanic")
+                     , ("engine",    groupEntriesForMapPrefix "id_game" "id_game"  "engine")
+                     , ("latitude",  groupEntriesForSimpleValuesPrefix "latitude_trunc")
+                     , ("longitude", groupEntriesForSimpleValuesPrefix "longitude_trunc")
+                     , ("fromYear",  groupEntriesForSimpleValuesPrefix "year_from")
+                     , ("upToYear",  groupEntriesForSimpleValuesPrefix "year_upto")
+                     , ("fromRange", groupEntriesForSimpleValuesPrefix "range")
+                     , ("upToRange", groupEntriesForSimpleValuesPrefix "range")
+                     , ("game",      "SELECT game.id, game.title, game.subtitle FROM dr_scenario s JOIN dr_game AS game ON s.id_game = game.id ")
                      ]
 
-orderList :: ComponentMap
-orderList = fromList[ ("author",    " AND author.grp = ? ORDER BY author.author")
-                    , ("publisher", " AND publisher.grp = ? ORDER BY publisher.publisher")
-                    , ("theme",     " AND theme.grp = ? ORDER BY theme.theme")
-                    , ("genre",     " AND genre.grp = ? ORDER BY genre.genre")
-                    , ("mechanic",  " AND mechanic.grp = ? ORDER BY mechanic.mechanic")
-                    , ("side",      " AND side.grp = ? ORDER BY side.side")
-                    , ("party",     " AND party.grp = ? ORDER BY party.party")
-                    , ("series",    " AND series.grp = ? ORDER BY series.series")
-                    , ("leader",    " AND leader.grp = ? ORDER BY leader.leader")
-                    , ("engine",    " AND engine.grp = ? ORDER BY engine.engine")
-                    , ("game",      " AND game.grp = ? ORDER BY game.title, game.subtitle")
-                    , ("latitude",  " AND s.latitude_group = ? GROUP BY (s.latitude_trunc) ORDER BY s.latitude_trunc")
-                    , ("longitude", " AND s.longitude_group = ? GROUP BY (s.longitude_trunc) ORDER BY s.longitude_trunc")
-                    , ("fromYear",  " AND s.year_from_group = ? GROUP BY (s.year_from) ORDER BY s.year_from")
-                    , ("upToYear",  " AND s.year_upto_group = ? GROUP BY (s.year_upto) ORDER BY s.year_upto")
-                    , ("fromRange", " AND s.range_group = ? GROUP BY (s.range) ORDER BY s.range")
-                    , ("upToRange", " AND s.range_group = ? GROUP BY (s.range) ORDER BY s.range")
-                    ]
+whereGroupEntriesForMapSuffix :: Query -> Query
+whereGroupEntriesForMapSuffix q = mconcat [" WHERE ", q, ".grp = ?"]
+
+whereGroupEntriesForSimpleValuesSuffix :: Query -> Query
+whereGroupEntriesForSimpleValuesSuffix q = mconcat [" WHERE s.", q, "_group = ?"]
+
+whereGroupList :: ComponentMap
+whereGroupList = fromList[ ("author",    whereGroupEntriesForMapSuffix "author")
+                         , ("publisher", whereGroupEntriesForMapSuffix "publisher")
+                         , ("theme",     whereGroupEntriesForMapSuffix "theme")
+                         , ("genre",     whereGroupEntriesForMapSuffix "genre")
+                         , ("mechanic",  whereGroupEntriesForMapSuffix "mechanic")
+                         , ("side",      whereGroupEntriesForMapSuffix "side")
+                         , ("party",     whereGroupEntriesForMapSuffix "party")
+                         , ("series",    whereGroupEntriesForMapSuffix "series")
+                         , ("leader",    whereGroupEntriesForMapSuffix "leader")
+                         , ("engine",    whereGroupEntriesForMapSuffix "engine")
+                         , ("latitude",  whereGroupEntriesForSimpleValuesSuffix "latitude_trunc")
+                         , ("longitude", whereGroupEntriesForSimpleValuesSuffix "longitude_trunc")
+                         , ("fromYear",  whereGroupEntriesForSimpleValuesSuffix "year_from")
+                         , ("upToYear",  whereGroupEntriesForSimpleValuesSuffix "year_upto")
+                         , ("fromRange", whereGroupEntriesForSimpleValuesSuffix "range")
+                         , ("upToRange", whereGroupEntriesForSimpleValuesSuffix "range")
+                         , ("game",      " WHERE game.grp = ?")
+                         ]
+
+orderGroupEntriesForMapSuffix :: Query -> Query
+orderGroupEntriesForMapSuffix q = mconcat [" GROUP BY ", q, ".id, ", q, ".", q, " ORDER BY ", q, ".", q]
+
+orderGroupEntriesForSimpleValuesSuffix :: Query -> Query
+orderGroupEntriesForSimpleValuesSuffix q = mconcat [" ORDER BY s.", q]
+
+orderGroupList :: ComponentMap
+orderGroupList = fromList[ ("author",    orderGroupEntriesForMapSuffix "author")
+                         , ("publisher", orderGroupEntriesForMapSuffix "publisher")
+                         , ("theme",     orderGroupEntriesForMapSuffix "theme")
+                         , ("genre",     orderGroupEntriesForMapSuffix "genre")
+                         , ("mechanic",  orderGroupEntriesForMapSuffix "mechanic")
+                         , ("side",      orderGroupEntriesForMapSuffix "side")
+                         , ("party",     orderGroupEntriesForMapSuffix "party")
+                         , ("series",    orderGroupEntriesForMapSuffix "series")
+                         , ("leader",    orderGroupEntriesForMapSuffix "leader")
+                         , ("engine",    orderGroupEntriesForMapSuffix "engine")
+                         , ("latitude",  orderGroupEntriesForSimpleValuesSuffix "latitude_trunc")
+                         , ("longitude", orderGroupEntriesForSimpleValuesSuffix "longitude_trunc")
+                         , ("fromYear",  orderGroupEntriesForSimpleValuesSuffix "year_from")
+                         , ("upToYear",  orderGroupEntriesForSimpleValuesSuffix "year_upto")
+                         , ("fromRange", orderGroupEntriesForSimpleValuesSuffix "range")
+                         , ("upToRange", orderGroupEntriesForSimpleValuesSuffix "range")
+                         , ("game",      " GROUP BY game.title, game.subtitle, game.id ORDER BY game.title, game.subtitle")
+                         ]
 

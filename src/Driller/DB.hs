@@ -3,6 +3,20 @@ module Driller.DB
     ( connectionInfo
     , fetchDrilledGameResult
     , fetchDrilledAuthorGroup
+    , fetchDrilledEngineGroup
+    , fetchDrilledGameGroup
+    , fetchDrilledGenreGroup
+    , fetchDrilledLeaderGroup
+    , fetchDrilledMechanicGroup
+    , fetchDrilledPartyGroup
+    , fetchDrilledPublisherGroup
+    , fetchDrilledSeriesGroup
+    , fetchDrilledSideGroup
+    , fetchDrilledThemeGroup
+    , fetchDrilledFromYearGroup
+    , fetchDrilledUpToYearGroup
+    , fetchDrilledLatitudeGroup
+    , fetchDrilledLongitudeGroup
     , fetchAuthorGroup
     , fetchAuthorEntry
     , fetchGameGroup
@@ -55,7 +69,7 @@ import Driller.DB.Wrapper
 import Driller.DB.Queries ( initJoinMap, initQueryMap, initGroupMap )
 import Control.Monad ( liftM )
 import Data.Hashable ()
-import Data.Maybe ( isNothing, fromJust )
+import Data.Maybe ( isJust, isNothing, fromJust )
 import Data.Text.Lazy.Internal ()
 import qualified Data.Text as T ( Text, length )
 import qualified Data.Text.Read as TR ( signed, decimal )
@@ -74,17 +88,27 @@ connectionInfo = defaultConnectInfo { connectUser     = "driller"
                                     , connectDatabase = "dr"
                                     }
 
-filterParameters :: [Param] -> JoinMap -> Either Error.ParameterError [Parameter]
-filterParameters p jm = filterParameters' p jm []
+filterParameters :: [Param] -> JoinMap -> [Parameter] -> Either Error.ParameterError [Parameter]
+filterParameters [] _ result        = Right result
+filterParameters ((k, v):ps) jm tmp | not $ HM.member key jm = Left $ Error.unknownParameter key
+                                    | isNothing value        = Left $ Error.illegalValue key
+                                    | alreadySeen key tmp    = Left $ Error.duplicateParameter key
+                                    | otherwise              = filterParameters ps jm ((key, Number $ fromJust value):tmp)
+                                   where key   = TL.toStrict k
+                                         value = convertValue key (TL.toStrict v)
 
-filterParameters' :: [Param] -> JoinMap -> [Parameter] -> Either Error.ParameterError [Parameter]
-filterParameters' [] _ result        = Right result
-filterParameters' ((k, v):ps) jm tmp | not $ HM.member key jm = Left $ Error.unknownParameter key
-                                     | isNothing value        = Left $ Error.illegalValue key
-                                     | alreadySeen key tmp    = Left $ Error.duplicateParameter key
-                                     | otherwise              = filterParameters' ps jm ((key, fromJust value):tmp)
-                                    where key   = TL.toStrict k
-                                          value = convertValue key (TL.toStrict v)
+prepareGroupParameters :: Bool -> [Param] -> JoinMap -> Either Error.ParameterError [Parameter]
+prepareGroupParameters _ [] _                   = Left Error.noGroupIdFound
+prepareGroupParameters isNumeric (p:ps) joinMap = result
+                                       where result = if not isNumeric || isJust num
+                                                        then fmap (groupId :) $ filterParameters ps joinMap []
+                                                        else Left $ Error.illegalGroupId rawValue
+                                             groupId = ("id" :: T.Text, value)
+                                             rawValue = TL.toStrict $ snd p
+                                             num = getFromParser (TR.signed TR.decimal rawValue)
+                                             value = if isNumeric
+                                                          then Number $ fromJust num
+                                                          else GroupID rawValue
 
 alreadySeen :: T.Text -> [Parameter] -> Bool
 alreadySeen _ []        = False
@@ -112,14 +136,65 @@ filterPositive value | value > 0 = Just value
                      | otherwise = Nothing
 
 fetchDrilledAuthorGroup :: Config -> [Param] -> IO [Author]
-fetchDrilledAuthorGroup config p =
-    case filterParameters p (getJoinMap config) of
+fetchDrilledAuthorGroup = fetchDrilledLetterGroup "author"
+
+fetchDrilledPublisherGroup :: Config -> [Param] -> IO [Publisher]
+fetchDrilledPublisherGroup = fetchDrilledLetterGroup "publisher"
+
+fetchDrilledGameGroup :: Config -> [Param] -> IO [Game]
+fetchDrilledGameGroup = fetchDrilledLetterGroup "game"
+
+fetchDrilledSeriesGroup :: Config -> [Param] -> IO [Series]
+fetchDrilledSeriesGroup = fetchDrilledLetterGroup "series"
+
+fetchDrilledSideGroup :: Config -> [Param] -> IO [Side]
+fetchDrilledSideGroup = fetchDrilledLetterGroup "side"
+
+fetchDrilledPartyGroup :: Config -> [Param] -> IO [Party]
+fetchDrilledPartyGroup = fetchDrilledLetterGroup "party"
+
+fetchDrilledMechanicGroup :: Config -> [Param] -> IO [Mechanic]
+fetchDrilledMechanicGroup = fetchDrilledLetterGroup "mechanic"
+
+fetchDrilledThemeGroup :: Config -> [Param] -> IO [Theme]
+fetchDrilledThemeGroup = fetchDrilledLetterGroup "theme"
+
+fetchDrilledLeaderGroup :: Config -> [Param] -> IO [Leader]
+fetchDrilledLeaderGroup = fetchDrilledLetterGroup "leader"
+
+fetchDrilledGenreGroup :: Config -> [Param] -> IO [Genre]
+fetchDrilledGenreGroup = fetchDrilledLetterGroup "genre"
+
+fetchDrilledEngineGroup :: Config -> [Param] -> IO [Engine]
+fetchDrilledEngineGroup = fetchDrilledLetterGroup "engine"
+
+fetchDrilledFromYearGroup :: Config -> [Param] -> IO [FromYear]
+fetchDrilledFromYearGroup = fetchDrilledNumberGroup "fromYear"
+
+fetchDrilledUpToYearGroup :: Config -> [Param] -> IO [UpToYear]
+fetchDrilledUpToYearGroup = fetchDrilledNumberGroup "upToYear"
+
+fetchDrilledLatitudeGroup :: Config -> [Param] -> IO [Latitude]
+fetchDrilledLatitudeGroup = fetchDrilledNumberGroup "latitude"
+
+fetchDrilledLongitudeGroup :: Config -> [Param] -> IO [Longitude]
+fetchDrilledLongitudeGroup = fetchDrilledNumberGroup "longitude"
+
+fetchDrilledLetterGroup :: FromRow a => T.Text -> Config -> [Param] -> IO [a]
+fetchDrilledLetterGroup = fetchDrilledGroup False
+
+fetchDrilledNumberGroup :: FromRow a => T.Text -> Config -> [Param] -> IO [a]
+fetchDrilledNumberGroup = fetchDrilledGroup True
+
+fetchDrilledGroup :: FromRow a => Bool -> T.Text -> Config -> [Param] -> IO [a]
+fetchDrilledGroup isNumeric category config p =
+    case prepareGroupParameters isNumeric p (getJoinMap config) of
         Left _      -> return []
-        Right pList -> fetchDrilledAuthorGroupEntries config pList
+        Right pList -> fetchDrilledGroupEntries config category pList
 
 fetchDrilledGameResult :: Config -> [Param] -> IO Answer
 fetchDrilledGameResult config p =
-    case filterParameters p (getJoinMap config) of
+    case filterParameters p (getJoinMap config) [] of
         Left e      -> return $ Left e
         Right pList -> fetchPositiveAnswer config pList
 
@@ -137,10 +212,10 @@ fetchForResult ::
 
 fetchForResult config key cat f ids
     = case HM.lookup key $ getParameterMap config of
-        Just value -> if value >= 0
-                        then liftM Entries $ fetchEntry config cat value
-                        else liftM (Entries .  markExclusive) (fetchEntry config cat (negate value))
-        Nothing    -> f config 25 ids
+        Just (Number value) -> if value >= 0
+                                 then liftM Entries $ fetchEntry config cat value
+                                 else liftM (Entries .  markExclusive) (fetchEntry config cat (negate value))
+        _ -> f config 25 ids
 
 fetchSimpleValuesForResult ::
   (FromInt r) => Config -> T.Text
@@ -149,8 +224,8 @@ fetchSimpleValuesForResult ::
 
 fetchSimpleValuesForResult config key f ids
     = case HM.lookup key $ getParameterMap config of
-        Just value -> return $ Entries [fromInt value]
-        Nothing    -> f config 25 ids
+        Just (Number value) -> return $ Entries [fromInt value]
+        _ -> f config 25 ids
 
 prepareResult :: Config -> [Int] -> IO Answer
 prepareResult config ids = do

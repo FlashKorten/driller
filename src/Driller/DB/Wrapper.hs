@@ -2,7 +2,7 @@
 module Driller.DB.Wrapper
     ( fetchScenarios
     , fetchScenarioIds
-    , fetchDrilledAuthorGroupEntries
+    , fetchDrilledGroupEntries
     , fetchManyForSelection
     , fetchEntry
     , fetchAllEntries
@@ -45,7 +45,6 @@ module Driller.DB.Wrapper
     , fetchFromTimescaleEntry
     , fetchUpToTimescaleEntry
     , fetchManyAuthorsForSelection
-    , fetchEntriesForAuthorGroup
     , fetchManyGamesForSelection
     , fetchManyGenresForSelection
     , fetchManyThemesForSelection
@@ -86,13 +85,6 @@ fetchManyForSelection category config limit ids = do
       else liftM Groups  $ query c (qm ! (category, GROUP, POLY)) (Only (In ids))
     where c  = getDBConnection config
           qm = getQueryMap config
-
-fetchEntriesForGroup :: (FromRow a, FromRow b) => QueryCategory -> Config -> [Int] -> IO (AnswerList [a] [b])
-fetchEntriesForGroup category config ids =
-    liftM Entries $ query (getDBConnection config) (getQueryMap config ! (category, ENTRY, POLY)) (Only (In ids))
-
-fetchEntriesForAuthorGroup :: Config -> [Int] -> IO AuthorList
-fetchEntriesForAuthorGroup = fetchEntriesForGroup AUTHOR
 
 fetchManyAuthorsForSelection :: Config -> Int -> [Int] -> IO AuthorList
 fetchManyAuthorsForSelection = fetchManyForSelection AUTHOR
@@ -235,8 +227,8 @@ fetchUpToRangeEntry c = fetchEntry c UPTO_RANGE . TL.toStrict
 fetchScenarios :: Config -> [Int] -> IO [Scenario]
 fetchScenarios c ids = query (getDBConnection c) (getQueryMap c ! (SCENARIO, ENTRY, POLY)) (Only (In ids))
 
-fetchDrilledAuthorGroupEntries :: Config -> [Parameter] -> IO [Author]
-fetchDrilledAuthorGroupEntries c ps = query (getDBConnection c) (groupQuery c "author" ps) (map snd ps)
+fetchDrilledGroupEntries :: FromRow r => Config -> T.Text -> [Parameter] -> IO [r]
+fetchDrilledGroupEntries c cat ps = query (getDBConnection c) (groupQuery c cat ps) (map snd ps)
 
 fetchScenarioIds :: Config -> [Parameter] -> IO [Int]
 fetchScenarioIds c ps = query (getDBConnection c) (scenarioListQuery c ps) (map snd ps)

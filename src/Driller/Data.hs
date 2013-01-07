@@ -16,6 +16,7 @@ module Driller.Data
     , Series
     , Answer
     , Parameter
+    , ParameterValue(..)
     , ParameterMap
     , FromYear
     , UpToYear
@@ -153,12 +154,13 @@ data Scenario = Scenario { getScenarioId       :: Int
                          , getScenarioUpToYear :: Int
                          }
 
-type Parameter          = (Text.Text, Int)
-type ParameterMap       = HashMap Text.Text Int
+data ParameterValue     = Number Int | GroupID Text.Text deriving (Show, Eq, Ord)
+type Parameter          = (Text.Text, ParameterValue)
+type ParameterMap       = HashMap Text.Text ParameterValue
 type Answer             = Either ParameterError Result
 type ComponentMap       = HashMap Text.Text Query
 type GroupMap           = HashMap Text.Text GroupMapComponents
-type GroupMapComponents = (Query, Query)
+type GroupMapComponents = (Query, Query, Query)
 type JoinMap            = HashMap Text.Text JoinMapComponents
 type JoinMapComponents  = (Query, Query, Query)
 type AuthorList         = AnswerList [GroupLetter] [Author]
@@ -269,6 +271,13 @@ instance FromRow Int         where fromRow = field
 
 instance ToRow Int           where toRow n = [toField n]
 instance ToRow Text.Text     where toRow n = [toField n]
+instance ToRow ParameterValue where
+  toRow (Number n)  = [toField n]
+  toRow (GroupID x) = [toField x]
+
+instance ToField ParameterValue where
+  toField (Number n)  = toField n
+  toField (GroupID x) = toField x
 
 class MarkExclusive a where
   markExclusive :: a -> a

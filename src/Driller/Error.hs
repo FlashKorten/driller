@@ -3,7 +3,9 @@ module Driller.Error
     ( ParameterError()
     , unknownParameter
     , illegalValue
+    , illegalGroupId
     , duplicateParameter
+    , noGroupIdFound
     ) where
 
 import qualified Data.Text as Text ( Text, append )
@@ -23,3 +25,11 @@ illegalValue parameter = ParameterError { getErrorCode    = 405
 duplicateParameter :: Text.Text -> ParameterError
 duplicateParameter parameter = ParameterError { getErrorCode    = 406
                                               , getErrorMessage = Text.append "Duplicate query parameter: " parameter }
+
+noGroupIdFound :: ParameterError
+noGroupIdFound = ParameterError { getErrorCode    = 407
+                                , getErrorMessage = "Missing GroupID parameter: " }
+
+illegalGroupId :: Text.Text -> ParameterError
+illegalGroupId parameter = ParameterError { getErrorCode    = 408
+                                          , getErrorMessage = Text.append "Illegal value for GroupID: " parameter }
