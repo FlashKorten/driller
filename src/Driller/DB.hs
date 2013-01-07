@@ -2,6 +2,7 @@
 module Driller.DB
     ( connectionInfo
     , fetchDrilledGameResult
+    , fetchDrilledAuthorGroup
     , fetchAuthorGroup
     , fetchAuthorEntry
     , fetchGameGroup
@@ -44,13 +45,14 @@ module Driller.DB
     , fetchGroups
     , initJoinMap
     , initQueryMap
+    , initGroupMap
     , convertValue
     ) where
 
 import Driller.Data
 import qualified Driller.Error as Error
 import Driller.DB.Wrapper
-import Driller.DB.Queries ( initJoinMap, initQueryMap )
+import Driller.DB.Queries ( initJoinMap, initQueryMap, initGroupMap )
 import Control.Monad ( liftM )
 import Data.Hashable ()
 import Data.Maybe ( isNothing, fromJust )
@@ -108,6 +110,12 @@ filterWithinLimits lower upper value | value >= lower && value <= upper = Just v
 filterPositive :: Int -> Maybe Int
 filterPositive value | value > 0 = Just value
                      | otherwise = Nothing
+
+fetchDrilledAuthorGroup :: Config -> [Param] -> IO [Author]
+fetchDrilledAuthorGroup config p =
+    case filterParameters p (getJoinMap config) of
+        Left _      -> return []
+        Right pList -> fetchDrilledAuthorGroupEntries config pList
 
 fetchDrilledGameResult :: Config -> [Param] -> IO Answer
 fetchDrilledGameResult config p =

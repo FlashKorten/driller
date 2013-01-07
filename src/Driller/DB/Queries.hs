@@ -2,7 +2,9 @@
 module Driller.DB.Queries
     ( JoinMap
     , scenarioListQuery
+    , groupQuery
     , initJoinMap
+    , initGroupMap
     , initQueryMap
     ) where
 
@@ -11,8 +13,12 @@ import Driller.Data
     , QueryType(MONO, OMNI, POLY)
     , QueryTarget(COUNT, ENTRY, GROUP)
     , QueryCategory(..)
-    , JoinComponentMap
+    , ComponentMap
+    , Config(..)
+    , JoinMapComponents
     , JoinMap
+    , GroupMap
+    , GroupMapComponents
     , Parameter
     , categoryToQuery
     )
@@ -20,14 +26,22 @@ import Database.PostgreSQL.Simple ( Query )
 import Data.Monoid ( mappend, mconcat )
 import Data.List ( foldl' )
 import Data.Text ( Text )
-import qualified Data.DList as DL ( toList, fromList, append )
+import qualified Data.DList as DL ( toList, fromList, append, concat )
 import Data.HashMap.Strict ( fromList, (!) )
 
-scenarioListQuery :: JoinMap -> [Parameter] -> Query
-scenarioListQuery joinMap pList = foldl' mappend prefix parts
+groupQuery :: Config -> Text -> [Parameter] -> Query
+groupQuery config group pList = mconcat $ DL.toList $ DL.concat [DL.fromList [select], DL.fromList joins, DL.fromList (" WHERE 1=1":wheres), DL.fromList [order]]
+                   where (select, order) = groupMap ! group
+                         (joins, wheres) = unzip $ map (getParameterQuery joinMap) pList
+                         joinMap = getJoinMap config
+                         groupMap = getGroupMap config
+
+scenarioListQuery :: Config -> [Parameter] -> Query
+scenarioListQuery config pList = foldl' mappend prefix parts
              where prefix = "SELECT s.id FROM dr_scenario AS s"
                    parts = DL.toList $ DL.append (DL.fromList joins) (DL.fromList $ " WHERE 1=1":wheres)
                    (joins, wheres) = unzip $ map (getParameterQuery joinMap) pList
+                   joinMap = getJoinMap config
 
 getParameterQuery :: JoinMap -> Parameter -> (Query, Query)
 getParameterQuery joinMap (key, value) = (j, w)
@@ -105,12 +119,19 @@ monoEntryForMinValues    q = mconcat ["SELECT min(", q, ") FROM dr_scenario WHER
 monoEntryForMaxValues    q = mconcat ["SELECT max(", q, ") FROM dr_scenario WHERE ", q, " <= ?"]
 monoEntryForExactValues  q = mconcat ["SELECT ", q, " FROM dr_scenario WHERE ", q, " = ?"]
 
-initJoinMap :: JoinMap
-initJoinMap = fromList $ prepareList parameterList joinList whereIncludeList whereExcludeList
+initGroupMap :: GroupMap
+initGroupMap = fromList $ prepareGroupList parameterList selectList orderList
 
-prepareList :: [Text] -> JoinComponentMap -> JoinComponentMap -> JoinComponentMap -> [(Text, (Query, Query, Query))]
-prepareList (p:ps) j w1 w2 = (p, (j ! p, w1 ! p, w2 ! p)) : prepareList ps j w1 w2
-prepareList _ _ _ _        = []
+prepareGroupList :: [Text] -> ComponentMap -> ComponentMap -> [(Text, GroupMapComponents)]
+prepareGroupList (p:ps) s o = (p, (s ! p, o ! p)) : prepareGroupList ps s o
+prepareGroupList _ _ _      = []
+
+initJoinMap :: JoinMap
+initJoinMap = fromList $ prepareJoinList parameterList joinList whereIncludeList whereExcludeList
+
+prepareJoinList :: [Text] -> ComponentMap -> ComponentMap -> ComponentMap -> [(Text, JoinMapComponents)]
+prepareJoinList (p:ps) j w1 w2 = (p, (j ! p, w1 ! p, w2 ! p)) : prepareJoinList ps j w1 w2
+prepareJoinList _ _ _ _        = []
 
 parameterList :: [Text]
 parameterList = [ "author"
@@ -132,7 +153,7 @@ parameterList = [ "author"
                 , "upToRange"
                 ]
 
-joinList, whereIncludeList, whereExcludeList :: JoinComponentMap
+joinList :: ComponentMap
 joinList = fromList[ ("author",    " JOIN dr_map_author    AS author    ON s.id      = author.id_scenario")
                    , ("publisher", " JOIN dr_map_publisher AS publisher ON s.id_game = publisher.id_game")
                    , ("theme",     " JOIN dr_map_theme     AS theme     ON s.id_game = theme.id_game")
@@ -152,6 +173,7 @@ joinList = fromList[ ("author",    " JOIN dr_map_author    AS author    ON s.id 
                    , ("upToRange", "")
                    ]
 
+whereIncludeList :: ComponentMap
 whereIncludeList = fromList[ ("author",    " AND author.id_author       = ?")
                            , ("publisher", " AND publisher.id_publisher = ?")
                            , ("theme",     " AND theme.id_theme         = ?")
@@ -171,6 +193,7 @@ whereIncludeList = fromList[ ("author",    " AND author.id_author       = ?")
                            , ("upToRange", " AND s.range               <= ?")
                            ]
 
+whereExcludeList :: ComponentMap
 whereExcludeList = fromList [ ("author",    " AND NOT EXISTS (SELECT id_scenario FROM dr_map_author    WHERE id_scenario = s.id AND id_author         = (-1 * ?))")
                             , ("side",      " AND NOT EXISTS (SELECT id_scenario FROM dr_map_side      WHERE id_scenario = s.id AND id_side           = (-1 * ?))")
                             , ("party",     " AND NOT EXISTS (SELECT id_scenario FROM dr_map_party     WHERE id_scenario = s.id AND id_party          = (-1 * ?))")
@@ -189,3 +212,44 @@ whereExcludeList = fromList [ ("author",    " AND NOT EXISTS (SELECT id_scenario
                             , ("fromRange", " AND s.range               >= ?")
                             , ("uptoRange", " AND s.range               <= ?")
                             ]
+
+selectList :: ComponentMap
+selectList = fromList[ ("author",    "SELECT author.id, author.author FROM scenario s")
+                     , ("publisher", "SELECT publisher.id, publisher.publisher FROM scenario s")
+                     , ("theme",     "SELECT theme.id, theme.theme FROM scenario s")
+                     , ("genre",     "SELECT genre.id, genre.genre FROM scenario s")
+                     , ("mechanic",  "SELECT mechanic.id, mechanic.mechanic FROM scenario s")
+                     , ("side",      "SELECT side.id, side.side FROM scenario s")
+                     , ("party",     "SELECT party.id, party.party FROM scenario s")
+                     , ("series",    "SELECT series.id, series.series FROM scenario s")
+                     , ("leader",    "SELECT leader.id, leader.leader FROM scenario s")
+                     , ("engine",    "SELECT engine.id, engine.engine FROM scenario s")
+                     , ("game",      "SELECT game.id, game.game FROM scenario s")
+                     , ("latitude",  "SELECT latitude.id, latitude.latitude FROM scenario s")
+                     , ("longitude", "SELECT longitude.id, longitude.longitude FROM scenario s")
+                     , ("fromYear",  "SELECT year_from.id, year_from.year_from FROM scenario s")
+                     , ("upToYear",  "SELECT year_upto.id, year_upto.year_upto FROM scenario s")
+                     , ("fromRange", "SELECT range_from.id, range_from.range_from FROM scenario s")
+                     , ("upToRange", "SELECT range_upto.id, range_upto.range_upto FROM scenario s")
+                     ]
+
+orderList :: ComponentMap
+orderList = fromList[ ("author",    " AND author.grp = ? ORDER BY author.author")
+                    , ("publisher", " AND publisher.grp = ? ORDER BY publisher.publisher")
+                    , ("theme",     " AND theme.grp = ? ORDER BY theme.theme")
+                    , ("genre",     " AND genre.grp = ? ORDER BY genre.genre")
+                    , ("mechanic",  " AND mechanic.grp = ? ORDER BY mechanic.mechanic")
+                    , ("side",      " AND side.grp = ? ORDER BY side.side")
+                    , ("party",     " AND party.grp = ? ORDER BY party.party")
+                    , ("series",    " AND series.grp = ? ORDER BY series.series")
+                    , ("leader",    " AND leader.grp = ? ORDER BY leader.leader")
+                    , ("engine",    " AND engine.grp = ? ORDER BY engine.engine")
+                    , ("game",      " AND game.grp = ? ORDER BY game.title, game.subtitle")
+                    , ("latitude",  " AND s.latitude_group = ? GROUP BY (s.latitude_trunc) ORDER BY s.latitude_trunc")
+                    , ("longitude", " AND s.longitude_group = ? GROUP BY (s.longitude_trunc) ORDER BY s.longitude_trunc")
+                    , ("fromYear",  " AND s.year_from_group = ? GROUP BY (s.year_from) ORDER BY s.year_from")
+                    , ("upToYear",  " AND s.year_upto_group = ? GROUP BY (s.year_upto) ORDER BY s.year_upto")
+                    , ("fromRange", " AND s.range_group = ? GROUP BY (s.range) ORDER BY s.range")
+                    , ("upToRange", " AND s.range_group = ? GROUP BY (s.range) ORDER BY s.range")
+                    ]
+

@@ -28,8 +28,11 @@ module Driller.Data
     , Scenario
     , fromInt
     , FromInt
+    , GroupMap
+    , GroupMapComponents
     , JoinMap
-    , JoinComponentMap
+    , JoinMapComponents
+    , ComponentMap
     , MarkExclusive
     , markExclusive
     , GroupLetter
@@ -77,14 +80,15 @@ import Database.PostgreSQL.Simple.ToRow ( ToRow(..) )
 import Database.PostgreSQL.Simple.ToField ( ToField(toField) )
 import Control.Applicative ( (<$>), (<*>) )
 
-data Config = Config { getDBConnection :: Connection
+data Config = Config { getParameterMap :: ParameterMap
+                     , getDBConnection :: Connection
                      , getQueryMap     :: QueryMap
                      , getJoinMap      :: JoinMap
-                     , getParameterMap :: ParameterMap
+                     , getGroupMap     :: GroupMap
                      }
 
-initConfig :: Connection -> QueryMap -> JoinMap -> Config
-initConfig conn queryMap joinMap = Config conn queryMap joinMap empty
+initConfig :: Connection -> QueryMap -> JoinMap -> GroupMap -> Config
+initConfig = Config empty
 
 data Genre     = Genre     { getGenreId     :: Int, getGenreName     :: Text.Text }
 data Engine    = Engine    { getEngineId    :: Int, getEngineName    :: Text.Text }
@@ -149,30 +153,33 @@ data Scenario = Scenario { getScenarioId       :: Int
                          , getScenarioUpToYear :: Int
                          }
 
-type Parameter         = (Text.Text, Int)
-type ParameterMap      = HashMap Text.Text Int
-type Answer            = Either ParameterError Result
-type JoinMap           = HashMap Text.Text (Query, Query, Query)
-type JoinComponentMap  = HashMap Text.Text Query
-type AuthorList        = AnswerList [GroupLetter] [Author]
-type GameList          = AnswerList [GroupLetter] [Game]
-type GenreList         = AnswerList [GroupLetter] [Genre]
-type EngineList        = AnswerList [GroupLetter] [Engine]
-type ThemeList         = AnswerList [GroupLetter] [Theme]
-type MechanicList      = AnswerList [GroupLetter] [Mechanic]
-type SideList          = AnswerList [GroupLetter] [Side]
-type PartyList         = AnswerList [GroupLetter] [Party]
-type PublisherList     = AnswerList [GroupLetter] [Publisher]
-type SeriesList        = AnswerList [GroupLetter] [Series]
-type LeaderList        = AnswerList [GroupLetter] [Leader]
-type FromYearList      = AnswerList [GroupNumber] [FromYear]
-type UpToYearList      = AnswerList [GroupNumber] [UpToYear]
-type FromRangeList     = AnswerList [GroupNumber] [FromRange]
-type UpToRangeList     = AnswerList [GroupNumber] [UpToRange]
-type FromTimescaleList = AnswerList [GroupNumber] [FromTimescale]
-type UpToTimescaleList = AnswerList [GroupNumber] [UpToTimescale]
-type LatitudeList      = AnswerList [GroupNumber] [Latitude]
-type LongitudeList     = AnswerList [GroupNumber] [Longitude]
+type Parameter          = (Text.Text, Int)
+type ParameterMap       = HashMap Text.Text Int
+type Answer             = Either ParameterError Result
+type ComponentMap       = HashMap Text.Text Query
+type GroupMap           = HashMap Text.Text GroupMapComponents
+type GroupMapComponents = (Query, Query)
+type JoinMap            = HashMap Text.Text JoinMapComponents
+type JoinMapComponents  = (Query, Query, Query)
+type AuthorList         = AnswerList [GroupLetter] [Author]
+type GameList           = AnswerList [GroupLetter] [Game]
+type GenreList          = AnswerList [GroupLetter] [Genre]
+type EngineList         = AnswerList [GroupLetter] [Engine]
+type ThemeList          = AnswerList [GroupLetter] [Theme]
+type MechanicList       = AnswerList [GroupLetter] [Mechanic]
+type SideList           = AnswerList [GroupLetter] [Side]
+type PartyList          = AnswerList [GroupLetter] [Party]
+type PublisherList      = AnswerList [GroupLetter] [Publisher]
+type SeriesList         = AnswerList [GroupLetter] [Series]
+type LeaderList         = AnswerList [GroupLetter] [Leader]
+type FromYearList       = AnswerList [GroupNumber] [FromYear]
+type UpToYearList       = AnswerList [GroupNumber] [UpToYear]
+type FromRangeList      = AnswerList [GroupNumber] [FromRange]
+type UpToRangeList      = AnswerList [GroupNumber] [UpToRange]
+type FromTimescaleList  = AnswerList [GroupNumber] [FromTimescale]
+type UpToTimescaleList  = AnswerList [GroupNumber] [UpToTimescale]
+type LatitudeList       = AnswerList [GroupNumber] [Latitude]
+type LongitudeList      = AnswerList [GroupNumber] [Longitude]
 
 data AnswerList a b = Groups a | Entries b
   deriving (Eq, Show)

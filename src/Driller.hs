@@ -31,7 +31,9 @@ main :: IO ()
 main = do
   -- _ <- forkServer "localhost" 8000
   conn <- connect DB.connectionInfo
-  let config = initConfig conn DB.initQueryMap DB.initJoinMap
+  let config = initConfig conn DB.initQueryMap DB.initJoinMap DB.initGroupMap
+  print $ getGroupMap config
+  print $ getJoinMap config
   scotty 3003 $ do
     middleware logStdoutDev
 
@@ -39,76 +41,81 @@ main = do
       p <- params
       result <- liftIO $ DB.fetchDrilledGameResult config p
       json result
+    get "/authorGroup" $ do
+      p <- params
+      result <- liftIO $ DB.fetchDrilledAuthorGroup config p
+      json result
     get "/"                                  $ text "No service at this level."
-    getRouteWithoutParameter "/authorGroups"    (DB.fetchGroups AUTHOR config             :: IO [GroupLetter])
     getRouteWithoutParameter "/authors"         (DB.fetchAllEntries AUTHOR config         :: IO [Author])
-    getRouteWithoutParameter "/engineGroups"    (DB.fetchGroups ENGINE config             :: IO [GroupLetter])
     getRouteWithoutParameter "/engines"         (DB.fetchAllEntries ENGINE config         :: IO [Engine])
     getRouteWithoutParameter "/fromRanges"      (DB.fetchAllEntries FROM_RANGE config     :: IO [FromRange])
     getRouteWithoutParameter "/fromTimescales"  (DB.fetchAllEntries FROM_TIMESCALE config :: IO [FromTimescale])
-    getRouteWithoutParameter "/fromYearGroups"  (DB.fetchGroups FROM_YEAR config          :: IO [GroupNumber])
     getRouteWithoutParameter "/fromYears"       (DB.fetchAllEntries FROM_YEAR config      :: IO [FromYear])
-    getRouteWithoutParameter "/gameGroups"      (DB.fetchGroups GAME config               :: IO [GroupLetter])
     getRouteWithoutParameter "/games"           (DB.fetchAllEntries GAME config           :: IO [Game])
-    getRouteWithoutParameter "/genreGroups"     (DB.fetchGroups GENRE config              :: IO [GroupLetter])
     getRouteWithoutParameter "/genres"          (DB.fetchAllEntries GENRE config          :: IO [Genre])
-    getRouteWithoutParameter "/latitudeGroups"  (DB.fetchGroups LATITUDE config           :: IO [GroupNumber])
     getRouteWithoutParameter "/latitudes"       (DB.fetchAllEntries LATITUDE config       :: IO [Latitude])
-    getRouteWithoutParameter "/leaderGroups"    (DB.fetchGroups LEADER config             :: IO [GroupLetter])
     getRouteWithoutParameter "/leaders"         (DB.fetchAllEntries LEADER config         :: IO [Leader])
-    getRouteWithoutParameter "/longitudeGroups" (DB.fetchGroups LONGITUDE config          :: IO [GroupNumber])
     getRouteWithoutParameter "/longitudes"      (DB.fetchAllEntries LONGITUDE config      :: IO [Longitude])
-    getRouteWithoutParameter "/mechanicGroups"  (DB.fetchGroups MECHANIC config           :: IO [GroupLetter])
     getRouteWithoutParameter "/mechanics"       (DB.fetchAllEntries MECHANIC config       :: IO [Mechanic])
     getRouteWithoutParameter "/parties"         (DB.fetchAllEntries PARTY config          :: IO [Party])
-    getRouteWithoutParameter "/partyGroups"     (DB.fetchGroups PARTY config              :: IO [GroupLetter])
-    getRouteWithoutParameter "/publisherGroups" (DB.fetchGroups PUBLISHER config          :: IO [GroupLetter])
     getRouteWithoutParameter "/publishers"      (DB.fetchAllEntries PUBLISHER config      :: IO [Publisher])
-    getRouteWithoutParameter "/rangeGroups"     (DB.fetchGroups RANGE config              :: IO [GroupNumber])
-    getRouteWithoutParameter "/seriesGroups"    (DB.fetchGroups SERIES config             :: IO [GroupLetter])
     getRouteWithoutParameter "/seriess"         (DB.fetchAllEntries SERIES config         :: IO [Series])
-    getRouteWithoutParameter "/sideGroups"      (DB.fetchGroups SIDE config               :: IO [GroupLetter])
     getRouteWithoutParameter "/sides"           (DB.fetchAllEntries SIDE config           :: IO [Side])
-    getRouteWithoutParameter "/themeGroups"     (DB.fetchGroups THEME config              :: IO [GroupLetter])
     getRouteWithoutParameter "/themes"          (DB.fetchAllEntries THEME config          :: IO [Theme])
-    getRouteWithoutParameter "/timescaleGroups" (DB.fetchGroups TIMESCALE config          :: IO [GroupNumber])
     getRouteWithoutParameter "/upToRanges"      (DB.fetchAllEntries UPTO_RANGE config     :: IO [UpToRange])
     getRouteWithoutParameter "/upToTimescales"  (DB.fetchAllEntries UPTO_TIMESCALE config :: IO [UpToTimescale])
-    getRouteWithoutParameter "/upToYearGroups"  (DB.fetchGroups UPTO_YEAR config          :: IO [GroupNumber])
     getRouteWithoutParameter "/upToYears"       (DB.fetchAllEntries UPTO_YEAR config      :: IO [UpToYear])
+    getRouteWithoutParameter "/authorGroups"    (DB.fetchGroups AUTHOR config             :: IO [GroupLetter])
+    getRouteWithoutParameter "/engineGroups"    (DB.fetchGroups ENGINE config             :: IO [GroupLetter])
+    getRouteWithoutParameter "/fromYearGroups"  (DB.fetchGroups FROM_YEAR config          :: IO [GroupNumber])
+    getRouteWithoutParameter "/gameGroups"      (DB.fetchGroups GAME config               :: IO [GroupLetter])
+    getRouteWithoutParameter "/genreGroups"     (DB.fetchGroups GENRE config              :: IO [GroupLetter])
+    getRouteWithoutParameter "/latitudeGroups"  (DB.fetchGroups LATITUDE config           :: IO [GroupNumber])
+    getRouteWithoutParameter "/leaderGroups"    (DB.fetchGroups LEADER config             :: IO [GroupLetter])
+    getRouteWithoutParameter "/longitudeGroups" (DB.fetchGroups LONGITUDE config          :: IO [GroupNumber])
+    getRouteWithoutParameter "/mechanicGroups"  (DB.fetchGroups MECHANIC config           :: IO [GroupLetter])
+    getRouteWithoutParameter "/partyGroups"     (DB.fetchGroups PARTY config              :: IO [GroupLetter])
+    getRouteWithoutParameter "/publisherGroups" (DB.fetchGroups PUBLISHER config          :: IO [GroupLetter])
+    getRouteWithoutParameter "/rangeGroups"     (DB.fetchGroups RANGE config              :: IO [GroupNumber])
+    getRouteWithoutParameter "/seriesGroups"    (DB.fetchGroups SERIES config             :: IO [GroupLetter])
+    getRouteWithoutParameter "/sideGroups"      (DB.fetchGroups SIDE config               :: IO [GroupLetter])
+    getRouteWithoutParameter "/themeGroups"     (DB.fetchGroups THEME config              :: IO [GroupLetter])
+    getRouteWithoutParameter "/timescaleGroups" (DB.fetchGroups TIMESCALE config          :: IO [GroupNumber])
+    getRouteWithoutParameter "/upToYearGroups"  (DB.fetchGroups UPTO_YEAR config          :: IO [GroupNumber])
     getRouteWithParameter    "/author/:id"         $ DB.fetchAuthorEntry config
-    getRouteWithParameter    "/authorGroup/:id"    $ DB.fetchAuthorGroup config
     getRouteWithParameter    "/engine/:id"         $ DB.fetchEngineEntry config
-    getRouteWithParameter    "/engineGroup/:id"    $ DB.fetchEngineGroup config
     getRouteWithParameter    "/fromRange/:id"      $ DB.fetchFromRangeEntry config
     getRouteWithParameter    "/fromTimescale/:id"  $ DB.fetchFromTimescaleEntry config
     getRouteWithParameter    "/fromYear/:id"       $ DB.fetchFromYearEntry config
-    getRouteWithParameter    "/fromYearGroup/:id"  $ DB.fetchFromYearGroup config
     getRouteWithParameter    "/game/:id"           $ DB.fetchGameEntry config
-    getRouteWithParameter    "/gameGroup/:id"      $ DB.fetchGameGroup config
     getRouteWithParameter    "/genre/:id"          $ DB.fetchGenreEntry config
-    getRouteWithParameter    "/genreGroup/:id"     $ DB.fetchGenreGroup config
     getRouteWithParameter    "/latitude/:id"       $ DB.fetchLatitudeEntry config
-    getRouteWithParameter    "/latitudeGroup/:id"  $ DB.fetchLatitudeGroup config
     getRouteWithParameter    "/leader/:id"         $ DB.fetchLeaderEntry config
-    getRouteWithParameter    "/leaderGroup/:id"    $ DB.fetchLeaderGroup config
     getRouteWithParameter    "/longitude/:id"      $ DB.fetchLongitudeEntry config
-    getRouteWithParameter    "/longitudeGroup/:id" $ DB.fetchLongitudeGroup config
     getRouteWithParameter    "/mechanic/:id"       $ DB.fetchMechanicEntry config
-    getRouteWithParameter    "/mechanicGroup/:id"  $ DB.fetchMechanicGroup config
     getRouteWithParameter    "/party/:id"          $ DB.fetchPartyEntry config
-    getRouteWithParameter    "/partyGroup/:id"     $ DB.fetchPartyGroup config
     getRouteWithParameter    "/publisher/:id"      $ DB.fetchPublisherEntry config
-    getRouteWithParameter    "/publisherGroup/:id" $ DB.fetchPublisherGroup config
-    getRouteWithParameter    "/rangeGroup/:id"     $ DB.fetchRangeGroup config
     getRouteWithParameter    "/series/:id"         $ DB.fetchSeriesEntry config
-    getRouteWithParameter    "/seriesGroup/:id"    $ DB.fetchSeriesGroup config
     getRouteWithParameter    "/side/:id"           $ DB.fetchSideEntry config
-    getRouteWithParameter    "/sideGroup/:id"      $ DB.fetchSideGroup config
     getRouteWithParameter    "/theme/:id"          $ DB.fetchThemeEntry config
-    getRouteWithParameter    "/themeGroup/:id"     $ DB.fetchThemeGroup config
-    getRouteWithParameter    "/timescaleGroup/:id" $ DB.fetchTimescaleGroup config
     getRouteWithParameter    "/upToRange/:id"      $ DB.fetchUpToRangeEntry config
     getRouteWithParameter    "/upToTimescale/:id"  $ DB.fetchUpToTimescaleEntry config
     getRouteWithParameter    "/upToYear/:id"       $ DB.fetchUpToYearEntry config
+
+    -- getRouteWithParameter    "/authorGroup/:id"    $ DB.fetchAuthorGroup config
+    getRouteWithParameter    "/engineGroup/:id"    $ DB.fetchEngineGroup config
+    getRouteWithParameter    "/fromYearGroup/:id"  $ DB.fetchFromYearGroup config
+    getRouteWithParameter    "/gameGroup/:id"      $ DB.fetchGameGroup config
+    getRouteWithParameter    "/genreGroup/:id"     $ DB.fetchGenreGroup config
+    getRouteWithParameter    "/latitudeGroup/:id"  $ DB.fetchLatitudeGroup config
+    getRouteWithParameter    "/leaderGroup/:id"    $ DB.fetchLeaderGroup config
+    getRouteWithParameter    "/longitudeGroup/:id" $ DB.fetchLongitudeGroup config
+    getRouteWithParameter    "/mechanicGroup/:id"  $ DB.fetchMechanicGroup config
+    getRouteWithParameter    "/partyGroup/:id"     $ DB.fetchPartyGroup config
+    getRouteWithParameter    "/publisherGroup/:id" $ DB.fetchPublisherGroup config
+    getRouteWithParameter    "/rangeGroup/:id"     $ DB.fetchRangeGroup config
+    getRouteWithParameter    "/seriesGroup/:id"    $ DB.fetchSeriesGroup config
+    getRouteWithParameter    "/sideGroup/:id"      $ DB.fetchSideGroup config
+    getRouteWithParameter    "/themeGroup/:id"     $ DB.fetchThemeGroup config
+    getRouteWithParameter    "/timescaleGroup/:id" $ DB.fetchTimescaleGroup config
     getRouteWithParameter    "/upToYearGroup/:id"  $ DB.fetchUpToYearGroup config
