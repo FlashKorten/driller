@@ -159,6 +159,8 @@ parameterList = [ "author"
                 , "upToYear"
                 , "fromRange"
                 , "upToRange"
+                , "fromTimescale"
+                , "upToTimescale"
                 ]
 
 joinForMap :: Query -> Query -> Query -> Query
@@ -188,6 +190,8 @@ joinList = fromList[ ("author",    joinForMapToScenario "author")
                    , ("upToYear",  "")
                    , ("fromRange", "")
                    , ("upToRange", "")
+                   , ("fromTimescale", "")
+                   , ("upToTimescale", "")
                    ]
 
 whereIncludeForMap :: Query -> Query
@@ -211,6 +215,8 @@ whereIncludeList = fromList[ ("author",    whereIncludeForMap "author")
                            , ("upToYear",  " AND NOT s.year_from        > ?")
                            , ("fromRange", " AND s.range               >= ?")
                            , ("upToRange", " AND s.range               <= ?")
+                           , ("fromTimescale", " AND s.timescale       >= ?")
+                           , ("upToTimescale", " AND s.timescale       <= ?")
                            ]
 
 whereExcludeForMapToGame :: Query -> Query
@@ -243,6 +249,8 @@ whereExcludeList = fromList [ ("author",    whereExcludeForMapToScenario "author
                             , ("upToYear",  " AND NOT s.year_from        > ?")
                             , ("fromRange", " AND s.range               >= ?")
                             , ("upToRange", " AND s.range               <= ?")
+                            , ("fromTimescale", " AND s.timescale       >= ?")
+                            , ("upToTimescale", " AND s.timescale       <= ?")
                             ]
 
 groupEntriesForMapPrefix :: Query -> Query -> Query -> Query
@@ -272,6 +280,8 @@ selectList = fromList[ ("author",    groupEntriesForMapPrefix "id" "id_scenario"
                      , ("upToYear",  groupEntriesForSimpleValuesPrefix "year_upto")
                      , ("fromRange", groupEntriesForSimpleValuesPrefix "range")
                      , ("upToRange", groupEntriesForSimpleValuesPrefix "range")
+                     , ("fromTimescale", groupEntriesForSimpleValuesPrefix "timescale")
+                     , ("upToTimescale", groupEntriesForSimpleValuesPrefix "timescale")
                      , ("game",      "SELECT game.id, game.title, game.subtitle FROM dr_scenario s JOIN dr_game AS game ON s.id_game = game.id ")
                      ]
 
@@ -298,6 +308,8 @@ whereGroupList = fromList[ ("author",    whereGroupEntriesForMapSuffix "author")
                          , ("upToYear",  whereGroupEntriesForSimpleValuesSuffix "year_upto")
                          , ("fromRange", whereGroupEntriesForSimpleValuesSuffix "range")
                          , ("upToRange", whereGroupEntriesForSimpleValuesSuffix "range")
+                         , ("fromTimescale", whereGroupEntriesForSimpleValuesSuffix "timescale")
+                         , ("upToTimescale", whereGroupEntriesForSimpleValuesSuffix "timescale")
                          , ("game",      " WHERE game.grp = ?")
                          ]
 
@@ -324,6 +336,8 @@ orderGroupList = fromList[ ("author",    orderGroupEntriesForMapSuffix "author")
                          , ("upToYear",  orderGroupEntriesForSimpleValuesSuffix "year_upto")
                          , ("fromRange", orderGroupEntriesForSimpleValuesSuffix "range")
                          , ("upToRange", orderGroupEntriesForSimpleValuesSuffix "range")
+                         , ("fromTimescale", orderGroupEntriesForSimpleValuesSuffix "timescale")
+                         , ("upToTimescale", orderGroupEntriesForSimpleValuesSuffix "timescale")
                          , ("game",      " GROUP BY game.title, game.subtitle, game.id ORDER BY game.title, game.subtitle")
                          ]
 
