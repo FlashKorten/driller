@@ -94,11 +94,36 @@ initQueryMap = fromList
  ++ [((GAME, GROUP, POLY),     polyGroupForGame)]
  ++ [((GAME, GROUP, MONO),     monoGroupForGame)]
  ++ [((GAME, COUNT, POLY),     polyCountForGame)]
- ++ [((GAME, ENTRY, OMNI),     mappend selectForMonoOrOmniGameEntry " ORDER BY title, subtitle")]
- ++ [((GAME, ENTRY, MONO),     mappend selectForMonoOrOmniGameEntry " WHERE id = ?")]
- ++ [((SCENARIO, ENTRY, OMNI), mappend selectForScenarioEntry       " ORDER BY sd.title, sd.subtitle")]
- ++ [((SCENARIO, ENTRY, MONO), mappend selectForScenarioEntry       " WHERE s.id = ?")]
- ++ [((SCENARIO, ENTRY, POLY), mappend selectForScenarioEntry       " WHERE s.id IN ?")]
+ ++ [((GAME, ENTRY, OMNI),     omniEntryForGame)]
+ ++ [((GAME, ENTRY, MONO),     monoEntryForGame)]
+ ++ [((SCENARIO, ENTRY, OMNI), omniEntryForScenario)]
+ ++ [((SCENARIO, ENTRY, MONO), monoEntryForScenario)]
+ ++ [((SCENARIO, ENTRY, POLY), polyEntryForScenario)]
+
+omniEntryForGame :: Query
+omniEntryForGame = mappend
+  selectForMonoOrOmniGameEntry
+  " ORDER BY title, subtitle"
+
+monoEntryForGame :: Query
+monoEntryForGame = mappend
+  selectForMonoOrOmniGameEntry
+  " WHERE id = ?"
+
+omniEntryForScenario :: Query
+omniEntryForScenario = mappend
+  selectForScenarioEntry
+  " ORDER BY sd.title, sd.subtitle"
+
+monoEntryForScenario :: Query
+monoEntryForScenario = mappend
+  selectForScenarioEntry
+  " WHERE s.id = ?"
+
+polyEntryForScenario :: Query
+polyEntryForScenario = mappend
+  selectForScenarioEntry
+  " WHERE s.id IN ?"
 
 selectForScenarioEntry :: Query
 selectForScenarioEntry = mconcat
@@ -156,20 +181,14 @@ polyCountForGame = mconcat
   , " WHERE id IN ?"
   ]
 
-omniEntryFromMap, omniEntryFromValues, monoEntryFromMap,
- polyEntryFromGameMap, polyEntryFromScenarioMap, polyEntryFromValues,
- omniGroupFromMap, omniGroupFromValues,
- polyGroupFromGameMap, polyGroupFromScenarioMap, polyGroupFromValues,
- monoGroupFromMap, monoGroupFromValues,
- polyCountFromGameMap, polyCountFromScenarioMap, polyCountFromValues,
- monoEntryForExactValues, monoEntryForMinValues, monoEntryForMaxValues,
- omniEntryFromMap :: Query -> Query
+omniEntryFromMap :: Query -> Query
 omniEntryFromMap q = mconcat
   [ "SELECT id, ", q
   , " FROM dr_", q
   , " ORDER BY ", q
   ]
 
+omniEntryFromValues :: Query -> Query
 omniEntryFromValues q = mconcat
   [ "SELECT ", q
   , " FROM dr_scenario"
@@ -177,12 +196,14 @@ omniEntryFromValues q = mconcat
   , " ORDER BY ", q
   ]
 
+monoEntryFromMap :: Query -> Query
 monoEntryFromMap q = mconcat
   [ "SELECT id, ", q
   , " FROM dr_", q
   , " WHERE id = ?"
   ]
 
+polyEntryFromGameMap :: Query -> Query
 polyEntryFromGameMap q = mconcat
   [ "SELECT d.id, d.", q
   , " FROM dr_", q, " AS d"
@@ -193,6 +214,7 @@ polyEntryFromGameMap q = mconcat
   , " ORDER BY d.", q
   ]
 
+polyEntryFromScenarioMap :: Query -> Query
 polyEntryFromScenarioMap q = mconcat
   [ "SELECT d.id, d.", q
   , " FROM dr_", q, " AS d"
@@ -202,6 +224,7 @@ polyEntryFromScenarioMap q = mconcat
   , " ORDER BY d.", q
   ]
 
+polyEntryFromValues :: Query -> Query
 polyEntryFromValues q = mconcat
   [ "SELECT ", q
   , " FROM dr_scenario"
@@ -210,6 +233,7 @@ polyEntryFromValues q = mconcat
   , " ORDER BY ", q
   ]
 
+omniGroupFromMap :: Query -> Query
 omniGroupFromMap q = mconcat
   [ "SELECT grp, count(id)"
   , " FROM dr_", q
@@ -217,6 +241,7 @@ omniGroupFromMap q = mconcat
   , " ORDER BY grp"
   ]
 
+omniGroupFromValues :: Query -> Query
 omniGroupFromValues q = mconcat
   [ "SELECT ", q, "_group, count(distinct(", q, "))"
   , " FROM dr_scenario"
@@ -224,6 +249,7 @@ omniGroupFromValues q = mconcat
   , " ORDER BY ", q, "_group"
   ]
 
+polyGroupFromGameMap :: Query -> Query
 polyGroupFromGameMap q = mconcat
   [ "SELECT a.grp, count(distinct(a.id))"
   , " FROM dr_", q, " AS a"
@@ -234,6 +260,7 @@ polyGroupFromGameMap q = mconcat
   , " ORDER BY grp"
   ]
 
+polyGroupFromScenarioMap :: Query -> Query
 polyGroupFromScenarioMap q = mconcat
   [ "SELECT a.grp, count(distinct(a.id))"
   , " FROM dr_", q, " AS a"
@@ -244,6 +271,7 @@ polyGroupFromScenarioMap q = mconcat
   , " ORDER BY grp"
   ]
 
+polyGroupFromValues :: Query -> Query
 polyGroupFromValues q = mconcat
   [ "SELECT ", q, "_group, count(distinct(", q, "))"
   , " FROM dr_scenario"
@@ -252,6 +280,7 @@ polyGroupFromValues q = mconcat
   , " ORDER BY ", q, "_group"
   ]
 
+monoGroupFromMap :: Query -> Query
 monoGroupFromMap q = mconcat
   [ "SELECT id, ", q
   , " FROM dr_", q
@@ -259,6 +288,7 @@ monoGroupFromMap q = mconcat
   , " ORDER BY ", q
   ]
 
+monoGroupFromValues :: Query -> Query
 monoGroupFromValues q = mconcat
   [ "SELECT ", q
   , " FROM dr_scenario"
@@ -267,6 +297,7 @@ monoGroupFromValues q = mconcat
   , " ORDER BY ", q
   ]
 
+polyCountFromGameMap :: Query -> Query
 polyCountFromGameMap q = mconcat
   [ "SELECT count(distinct(id_", q, "))"
   , " FROM dr_map_", q, " AS a"
@@ -274,6 +305,7 @@ polyCountFromGameMap q = mconcat
   , " WHERE s.id IN ?"
   ]
 
+polyCountFromScenarioMap :: Query -> Query
 polyCountFromScenarioMap q = mconcat
   [ "SELECT count(distinct(id_", q, "))"
   , " FROM dr_map_", q, " AS a"
@@ -281,24 +313,28 @@ polyCountFromScenarioMap q = mconcat
   , " WHERE s.id IN ?"
   ]
 
+polyCountFromValues :: Query -> Query
 polyCountFromValues q = mconcat
   [ "SELECT count(distinct(", q, "))"
   , " FROM dr_scenario"
   , " WHERE id IN ?"
   ]
 
+monoEntryForMinValues :: Query -> Query
 monoEntryForMinValues q = mconcat
   [ "SELECT min(", q, ")"
   , " FROM dr_scenario"
   , " WHERE ", q, " >= ?"
   ]
 
+monoEntryForMaxValues :: Query -> Query
 monoEntryForMaxValues q = mconcat
   [ "SELECT max(", q, ")"
   , " FROM dr_scenario"
   , " WHERE ", q, " <= ?"
   ]
 
+monoEntryForExactValues :: Query -> Query
 monoEntryForExactValues q = mconcat
   [ "SELECT ", q
   , " FROM dr_scenario"
