@@ -81,6 +81,10 @@ import Database.PostgreSQL.Simple.ToRow ( ToRow(..) )
 import Database.PostgreSQL.Simple.ToField ( ToField(toField) )
 import Control.Applicative ( (<$>), (<*>) )
 
+-- | Config contains all configuration specifics needed deep down in the db-parts.
+-- | Everything in here is constant over the runtime of the program - except for
+-- | the @ParameterMap@, which is set for each request that uses parameters.
+
 data Config = Config { getParameterMap :: ParameterMap
                      , getDBConnection :: Connection
                      , getQueryMap     :: QueryMap
@@ -90,6 +94,8 @@ data Config = Config { getParameterMap :: ParameterMap
 
 initConfig :: Connection -> QueryMap -> JoinMap -> GroupMap -> Config
 initConfig = Config empty
+
+-- | These types contain the data relevant to this drilldown search.
 
 data Genre     = Genre     { getGenreId     :: Int, getGenreName     :: Text.Text }
 data Engine    = Engine    { getEngineId    :: Int, getEngineName    :: Text.Text }
@@ -103,9 +109,6 @@ data Leader    = Leader    { getLeaderId    :: Int, getLeaderName    :: Text.Tex
 data Author    = Author    { getAuthorId    :: Int, getAuthorName    :: Text.Text }
   deriving Show
 
-data GroupLetter = GroupLetter { getGroupLetterPrefix :: Text.Text, getGroupLetterMatches :: Int }
-data GroupNumber = GroupNumber { getGroupNumberNumber :: Int,       getGroupNumberMatches :: Int }
-
 newtype FromYear      = FromYear      { getValueFromYear      :: Int }
 newtype UpToYear      = UpToYear      { getValueUpToYear      :: Int }
 newtype Latitude      = Latitude      { getValueLatitude      :: Int }
@@ -114,6 +117,21 @@ newtype FromRange     = FromRange     { getValueFromRange     :: Int }
 newtype UpToRange     = UpToRange     { getValueUpToRange     :: Int }
 newtype FromTimescale = FromTimescale { getValueFromTimescale :: Int }
 newtype UpToTimescale = UpToTimescale { getValueUpToTimescale :: Int }
+
+data Game = Game { getGameId        :: Int
+                 , getGameTitle     :: Text.Text
+                 , getGameSubtitle  :: Text.Text
+                 }
+
+data Scenario = Scenario { getScenarioId       :: Int
+                         , getScenarioTitle    :: Text.Text
+                         , getScenarioSubtitle :: Text.Text
+                         , getScenarioFromYear :: Int
+                         , getScenarioUpToYear :: Int
+                         }
+
+-- | @Result@ collects all individual informations to be sent as a response to
+-- | a drilldown request.
 
 data Result = Result { getNoResults     :: Int
                      , getScenarios     :: [Scenario]
@@ -142,17 +160,13 @@ emptyResult :: Result
 emptyResult =  Result 0 [] d d d d d d d d d d d d d d d d d d d
                 where d = Entries []
 
-data Game = Game { getGameId        :: Int
-                 , getGameTitle     :: Text.Text
-                 , getGameSubtitle  :: Text.Text
-                 }
+-- | @Entries@ map to one specific group: text-types map to a @GroupLetter@ with the same first Letter,
+-- | number-types map to an implicit range as a @GroupNumber@;
+-- | i.e. the year '1976' will map to the group '1950'.
+-- | Each group known how many @Entries@ are contained in it.
 
-data Scenario = Scenario { getScenarioId       :: Int
-                         , getScenarioTitle    :: Text.Text
-                         , getScenarioSubtitle :: Text.Text
-                         , getScenarioFromYear :: Int
-                         , getScenarioUpToYear :: Int
-                         }
+data GroupLetter = GroupLetter { getGroupLetterPrefix :: Text.Text, getGroupLetterMatches :: Int }
+data GroupNumber = GroupNumber { getGroupNumberNumber :: Int,       getGroupNumberMatches :: Int }
 
 data ParameterValue     = Number Int | GroupID Text.Text deriving (Show, Eq, Ord)
 type Parameter          = (Text.Text, ParameterValue)
@@ -183,11 +197,16 @@ type UpToTimescaleList  = AnswerList [GroupNumber] [UpToTimescale]
 type LatitudeList       = AnswerList [GroupNumber] [Latitude]
 type LongitudeList      = AnswerList [GroupNumber] [Longitude]
 
+-- | An answer is either a list of concrete @Entries@
+-- | or a list of @Groups@ if there were too many @Entries@.
 data AnswerList a b = Groups a | Entries b
   deriving (Eq, Show)
 
-data QueryCategory = AUTHOR | GAME | GENRE | ENGINE | THEME | MECHANIC | SIDE | PARTY | PUBLISHER | SERIES | LEADER | SCENARIO
-                   | LATITUDE | LONGITUDE | FROM_YEAR | UPTO_YEAR | RANGE | FROM_RANGE | UPTO_RANGE | TIMESCALE | FROM_TIMESCALE | UPTO_TIMESCALE deriving (Eq, Show, Enum)
+data QueryCategory = AUTHOR | LEADER | SIDE | PARTY
+                   | GAME | GENRE | ENGINE | THEME | MECHANIC  | PUBLISHER | SERIES | SCENARIO
+                   | LATITUDE | LONGITUDE | FROM_YEAR | UPTO_YEAR
+                   | RANGE | FROM_RANGE | UPTO_RANGE
+                   | TIMESCALE | FROM_TIMESCALE | UPTO_TIMESCALE deriving (Eq, Show, Enum)
 data QueryTarget   = ENTRY  | GROUP | COUNT                       deriving (Eq, Show, Enum)
 data QueryType     = MONO   | POLY  | OMNI                        deriving (Eq, Show, Enum)
 type QueryKey      = (QueryCategory, QueryTarget, QueryType)
@@ -232,6 +251,7 @@ $(deriveJSON (drop 14) ''GroupLetter)
 $(deriveJSON (drop 14) ''GroupNumber)
 $(deriveJSON id ''AnswerList)
 
+-- | A class to promote simple @Int@ values to instances of types represented by numbers.
 class FromInt a where
   fromInt :: Int -> a
 
@@ -244,6 +264,7 @@ instance FromInt Longitude where fromInt = Longitude
 instance FromInt FromTimescale where fromInt = FromTimescale
 instance FromInt UpToTimescale where fromInt = UpToTimescale
 
+-- | Instances needed for moving data to and from the database.
 instance FromRow FromYear      where fromRow = FromYear      <$> field
 instance FromRow UpToYear      where fromRow = UpToYear      <$> field
 instance FromRow Latitude      where fromRow = Latitude      <$> field
@@ -278,6 +299,11 @@ instance ToRow ParameterValue where
 instance ToField ParameterValue where
   toField (Number n)  = toField n
   toField (GroupID x) = toField x
+
+
+-- | Those categories using mapping tables only use positive integers for reference.
+-- | If a query contains a negative value for such a category
+-- | this means "every value but this one".
 
 class MarkExclusive a where
   markExclusive :: a -> a

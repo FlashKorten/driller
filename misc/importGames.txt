@@ -3998,7 +3998,7 @@
 
 26457 {
   title{"Successors"}
-  description{<p>When Alexander the Great died in 323 BC, he left no clear heir to the immense empire he had conquered. It was not long after his death that the Macedonian generals began to war among themselves over who would be the regent or successor to Alexander’s empire. By 305 BC they had given up on that endeavor and began to carve out their own kingdoms. SUCCESSORS is a four-player game based on those wars. Each player controls a faction of two or more generals and attempts to win the game through legitimacy or conquest.</p>}
+  description{<p>When Alexander the Great died in 323 BC, he left no clear heir to the immense empire he had conquered. It was not long after his death that the Macedonian generals began to war among themselves over who would be the regent or successor to Alexander’s empire. By 305 BC they had given up on that endeavor and began to carve out their own kingdoms. Successors is a four-player game based on those wars. Each player controls a faction of two or more generals and attempts to win the game through legitimacy or conquest.</p>}
   publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/d/dd/SuccessorsIII2_2.vmod"}
   genre{"Conflict Simulation"}
@@ -4011,7 +4011,7 @@
     timescale{6}
     players{2 / 4}
     author{"Berg, Richard","Firer, John","Simonitch, Mark"}
-    description{<p>When Alexander the Great died in 323 BC, he left no clear heir to the immense empire he had conquered. It was not long after his death that the Macedonian generals began to war among themselves over who would be the regent or successor to Alexander’s empire. By 305 BC they had given up on that endeavor and began to carve out their own kingdoms. SUCCESSORS is a four-player game based on those wars. Each player controls a faction of two or more generals and attempts to win the game through legitimacy or conquest.</p>}
+    description{<p>When Alexander the Great died in 323 BC, he left no clear heir to the immense empire he had conquered. It was not long after his death that the Macedonian generals began to war among themselves over who would be the regent or successor to Alexander’s empire. By 305 BC they had given up on that endeavor and began to carve out their own kingdoms. SUccessors is a four-player game based on those wars. Each player controls a faction of two or more generals and attempts to win the game through legitimacy or conquest.</p>}
   }
 }
 
@@ -4085,7 +4085,7 @@
   engine{"Vassal"-"www.vassalengine.org/mediawiki/images/8/80/30YW_v1_1.vmod"}
   genre{"Historical Simulation","Strategic Level"}
   mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
-  theme{"30 Years War"}
+  theme{"Thirty Years' War"}
   scenario{"Thirty Years War ~ Europe in Agony"}{
     dates{1618-01-01 / 1648-12-31}
     position{1 / 1}
@@ -4127,7 +4127,7 @@
   engine{"Cyberboard"-"www."}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice"}
-  theme{"30 Years War"}
+  theme{"Thirty Years' War"}
   scenario{"Under the Lily Banners"}{
     dates{1643-01-01 / 1648-12-31}
     position{1 / 1}
@@ -4315,7 +4315,7 @@
   engine{"Cyberboard"-"www."}
   genre{"Historical Simulation","Strategic Level"}
   mechanic{"Point-to-Point Movement","Counter","Card-Driven","Dice"}
-  theme{"7 Years War"}
+  theme{"Seven Years' War"}
   scenario{"Clash of Monarchs"}{
     dates{1756-01-01 / 1763-12-31}
     position{1 / 1}
@@ -4803,7 +4803,7 @@
   engine{"Cyberboard"-"www."}
   genre{"Conflict Simulation","Tactical Level"}
   mechanic{"Hex","Counter","Dice"}
-  theme{"7 Years War"}
+  theme{"Seven Years' War"}
   scenario{"Prussias Glory II"}{
     dates{1757-01-01 / 1759-12-31}
     position{1 / 1}
@@ -4813,27 +4813,6 @@
     side{"Prussia","Austria","Hanover"}
     party{"Prussia"-"2","Other"-"2"}
     author{"Kalinowski, Bob"}
-    description{<p>Description</p>}
-  }
-}
-
-18746 {
-  title{"Gustav Adolf the Great ~ With God and Victorious Arms"}
-  description{<p>Description</p>}
-  publisher{"GMT Games"-"www.gmtgames.com"}
-  engine{"Cyberboard"-"www."}
-  genre{"Conflict Simulation","Tactical Level"}
-  mechanic{"Hex","Counter","Dice"}
-  theme{"30 Years War","Musket & Pike"}
-  scenario{"Gustav Adolf the Great ~ With God and Victorious Arms"}{
-    dates{1627-01-01 / 1632-12-31}
-    position{1 / 1}
-    range{300}
-    timescale{6}
-    players{2 / 2}
-    side{"Swedish","Polish","Imperial","Royalist","Parliamentary"}
-    party{"Axis"-"2","Allies"-"2"}
-    author{"Hull, Ben"}
     description{<p>Description</p>}
   }
 }
@@ -5482,6 +5461,28 @@
     author{"Jensen, Chad"}
     side{"Axis","Allies","Germany","Poland"}
     party{"Germany"-"2","Poland"-"2"}
+  }
+  scenario{"CCE 0101 ~ Rubble-Rousers"}{
+    description{<p>Stalingrad, Russia, October 30, 1942</p><p>As fierce battles raged on for the “Barrikady” ordnance factories to the north and the “Krasny Oktyabr” sector to the south, German forces in between the two had advanced steadily eastwards until they were able to interdict an important ferry route across the Volga River. While plans for a Soviet counteroffensive on the following day by Colonel Sokolov’s newly-arrived 45th Rifle Division were being hammered out, German and Russian forces jockeyed for position amidst the rubble and ruins of the shattered city of Stalingrad.</p>}
+    dates{1942-10-30 / 1942-10-30}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Jensen, Chad"}
+    side{"Axis","Allies","Germany","Russia"}
+    party{"Germany"-"2","Russia"-"2"}
+  }
+  scenario{"CCE 0102 ~ Night Shift"}{
+    description{<p>Near Belle Fontaine, France, July 11, 1944</p><p>Shortly after midnight, German guns laid down a brief artillery barrage onto positions held by the 1st Battalion of the US Army’s 115th Infantry Regiment, which had recently been brought up to the front line to relieve the battle-worn 116th after a 48-hour rest three miles behind the front lines.</p><p>As the bombardment eased, elements of the 3rd Fallschirmjaeger Division – including a handful of combat engineers armed with flamethrowers – assaulted the still-dazed Americans, who were themselves preparing for an early morning attack against these very same German troops.</p>}
+    dates{1944-07-11 / 1944-07-11}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Jensen, Chad"}
+    side{"Axis","Allies","Germany","US"}
+    party{"Germany"-"2","US"-"2"}
   }
 }
 
@@ -6619,3 +6620,119 @@
     description{<p>On Sept 9th, the Independent Operational Group “Polesie”, led by General Franciszek Kleeberg, was created to guard the Polesie area and the Brześć (Brest) fortress against German units (including Guderian’s XIX Corps) that had broken through the northern Polish defenses. It successfully managed to slow Guderian’s advance during the battles of Brześć (Sept 14-17) and Kobryń (Sept 16-18). On Sept 17th, General Kleeberg moved south to execute his orders to evacuate his men to Hungary and Romania. However, the rapid Soviet advance from the east cut off his southerly route and the group turned westwards to march towards Warsaw to help in the city’s defense. But Warsaw surrendered, so Kleeberg decided to march towards Dęblin, a major Polish Army supply depot, since his men needed ammunition and heavy equipment. Group “Polesie” successfully broke through Soviet lines at the battles of Jabłonów and Milanów (Sept 29-30). The Germans tracked the movement of this last large Polish formation and moved the XIV Motorized Corps, led by Gustav Anton von Wietersheim, to intercept it. After the capitulation of Warsaw on Sept 28 and the capitulation of Hel on Oct 1st, the Independent Operational Group “Polesie” was the last organized Polish fighting unit.</p><p>Near the city of Kock, the Polesie Group has been battling the German XIV Motorized Corps for 5 fierce days (Oct 1-5). On October 5th, as Hitler is celebrating a victory parade in Warsaw, the Poles are in the process of surrounding the German 13th Motorized Division, which has been isolated from the rest of its corps. The small village of Wola Gułowska is at the center of this engagement, where the fate of the battle of Kock will be determined. Both sides are attacking furiously, often engaging in hand to hand combat.</p><p>The position became perilous for the Germans as they were surrounded by the Polish cavalry. General Otto, commander of the 13th Motorized Division, ordered his soldiers to withdraw. The engagement was won by Poles, but all of their ammunition was spent, with no chance of resupply. On Oct 6, out of ammunition, out of supplies, and surrounded on all sides, General Kleeberg capitulated to the Germans. He was the last Polish general to surrender in the September Campaign.</p>}
   }
 }
+
+94246 {
+  title{"1812 ~ The Invasion of Canada"}
+  description{<p>The year is 1812. War is raging across Europe and Russia as Napoleon, emperor of France, seeks to dominate Europe through conquest. However, a coalition of France’s enemies, led by Great Britain, desperately resists his ambitions. Great Britain, in dire need of resources, is capturing American ships that are supplying France, confiscating their cargoes and impressing some of their sailors to serve in its Royal Navy.</p><p>The young United States objects. Eager to defend its sovereign rights and to strengthen its position in North America, the United States declares war on Britain on June 18, 1812. Taking advantage of the British army’s struggles against Napoleon in Europe, American forces invade Canada on July 12, 1812. The goal is to drive the British from their last remaining colony on North American soil. Surprised, Britain reels from the attack and now has to face another enemy threat on another continent.</p><p>In 1812 - The Invasion of Canada, players take on the roles of the major factions that participated in the War of 1812. On the British side these are represented by the British Regulars (Redcoats), Canadian Militia and Native Americans; the American Regular Army and American Militia comprise the American side. Players for each side will strategize together in order to plan and conduct their campaigns. Each side will attempt to capture Objective cities and forts on the map. When a truce is called, the side that controls the most enemy Objectives wins.</p>}
+  publisher{"Academy Games"-"http://academy-games.com/games/birth-of-america/1812-the-invasion-of-canada"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:1812:_The_Invasion_of_Canada"}
+  genre{"Conflict Simulation"}
+  mechanic{"Dice","Hex","Counter"}
+  theme{"Seven Years' War"}
+  series{"Birth of America"-"1812"}
+  scenario{"ag1812-01 ~ Full Campaign"}{
+    dates{1812-01-01 / 1813-12-31}
+    position{1 / 1}
+    range{-1}
+    timescale{-1}
+    players{2 / 5}
+    side{"US","British","Canada","Native American"}
+    party{"Germany"-"2","US"-"2"}
+    author{"Beckett, Beau","Stahl, Jeph"}
+    description{<p>The War of 1812 has been called America’s second war of independence, a forgotten conflict, the war that nobody won. It was a complex and fascinating chapter in North American history which shaped the destiny of two nations. Beginning in 2012, its bicentennial will commemorate 200 years of peace between Canada and the United States.</p>}
+  }
+  scenario{"ag1812-02 ~ 1812 - Introductory Scenario"}{
+    dates{1812-01-01 / 1812-12-31}
+    position{1 / 1}
+    range{-1}
+    timescale{-1}
+    players{2 / 5}
+    side{"US","British","Canada","Native American"}
+    party{"Germany"-"2","US"-"2"}
+    author{"Beckett, Beau","Stahl, Jeph"}
+    description{<p>The War of 1812 has been called America’s second war of independence, a forgotten conflict, the war that nobody won. It was a complex and fascinating chapter in North American history which shaped the destiny of two nations. Beginning in 2012, its bicentennial will commemorate 200 years of peace between Canada and the United States.</p>}
+  }
+  scenario{"ag1812-03 ~ 1813 Campaign"}{
+    dates{1813-01-01 / 1813-12-31}
+    position{1 / 1}
+    range{-1}
+    timescale{-1}
+    players{2 / 5}
+    side{"US","British","Canada","Native American"}
+    party{"Germany"-"2","US"-"2"}
+    author{"Beckett, Beau","Stahl, Jeph"}
+    description{<p>By the spring of 1813, the war had been raging for almost a year with fierce battles occurring on both sides of the border. The Americans realized that this was not going to be a simple invasion. Under the command of General William Hull, the American northwest army had been defeated at Fort Detroit, losing the entire territory of Michigan to the British. In addition, several attempts to advance on the Niagara front failed.</p><p>Undeterred, the American forces rallied for a second invasion of Canada. William Harrison amassed an army in the west, ready to retake Michigan and march onward into British territory. York (present day Toronto), the capitol of Upper Canada, was raided and burned by men from Sacket’s Harbor. In the Niagara peninsula, Fort George finally fell to American troops who then marched on Stoney Creek. American plans for Lower Canada were well underway, focusing on a two-pronged attack on Montreal.</p><p>The war is at its peak and both sides are desperately trying to hold their territories. The Americans, confronted with unexpected resistance, are pushed to the limits of their resources and the British are struggling to maintain their presence in North America. This is where “1813 Scenario” begins...</p>}
+  }
+}
+
+18746 {
+  title{"Gustav Adolf the Great ~ With God and Victorious Arms"}
+  description{<p></p>}
+  publisher{"GMT Games"-"http://www.gmtgames.com/p-59-gustav-adolf-with-god-victorious-arms.aspx"}
+  engine{"Vassal"-""}
+  genre{"Conflict Simulation"}
+  mechanic{"Dice","Hex","Counter"}
+  theme{"Thirty Years' War"}
+  series{"Musket and Pike"-"#4"}
+  scenario{"Dirschau / Tczew"}{
+    dates{1627-08-17 / 1627-08-18}
+    position{1 / 1}
+    range{-1}
+    timescale{-1}
+    players{2 / 2}
+    leader{"Gustav II Adolf","Potocki, Mikolaj"}
+    side{"Sweden","Poland"}
+    party{"Sweden"-"2","Poland"-"2"}
+    author{"Hull, Ben"}
+    description{<p>The Swedish-Polish Wars have not been given much coverage in English and uncovering the facts was certainly a challenge. My original sources for Dirschau were Swedish and I felt I had a good handle on the events. I was able to get in contact with a Polish historian and when he provided the other side it changed everything. I found myself in an interesting position. Both sides claimed victory, but both sides also clearly had a strong dose of national pride involved. I have attempted to piece together an impartial picture of the events.</p>}
+  }
+  scenario{"Honingfelde / Trzciano"}{
+    dates{1629-06-27 / 1629-06-27}
+    position{1 / 1}
+    range{-1}
+    timescale{-1}
+    players{2 / 2}
+    leader{"Gustav II Adolf","Arnim, Hans Georg von"}
+    side{"Sweden","Polish/Imperial"}
+    party{"Sweden"-"2","Polish/Imperial"-"2"}
+    author{"Hull, Ben"}
+    description{<p>Polish history remembers this battle as Trzciana or Trzcianka, but research has revealed that the actual town is Trzciano. There are several towns called Trzciana across Poland which may have given rise to the confusion. As with all the towns and rivers in this region of Poland, it has a German and a Polish name. Some are just transliterations, others are completely unrelated. Honigfelde means honey fields, and regardless of the name it was and still is a tiny village. The battle took place in four distinct locations, starting with Honigfelde / Trzciano, followed by Dietrichsdorf / Straszewo about 2 km. north, then Pulkowitz / Pulkowice another 3 km. north, and finally Neudorf / Nowa Wies about 4 km away. This scenario covers the first two locations.</p>}
+  }
+  scenario{"Breitenfeld"}{
+    dates{1631-09-17 / 1631-09-17}
+    position{1 / 1}
+    range{-1}
+    timescale{-1}
+    players{2 / 2}
+    leader{"Gustav II Adolf","Graf von Tilly"}
+    side{"Sweden","Imperial"}
+    party{"Sweden"-"2","Imperial"-"2"}
+    author{"Hull, Ben"}
+    description{<p>Breitenfeld is unquestionably the most famous battle of the Thirty Years War. But the question is why? While an important battle that marked a major change of initiative in the war, it did not destroy the Imperial-League army completely, nor did it speed the end of the war. Some have tried pouring additional significance into it such as a clash of Swedish versus Spanish military systems or Protestant work ethic versus Catholic work ethic. These efforts break down under scrutiny and recent scholarship. The armies were not as dramatically different as many thought and idea that a “Protestant” work ethic was somehow superior on the battlefield is just plain wrong sectarianism.</p><p>The contrast between the tactics and formations of the opposing armies has been overplayed. Two specific areas that have been popularized are the Swedish “Linear” formations versus Spanish style “Tercios” for the infantry and Swedish charging cavalry versus Caracole cavalry (see the notes on the Swedish Army). The Swedish brigades were unique to Gustav Adolf’s army, but they were based on the Dutch model. The Imperial-League Army was not organized as tercios, but with regiments along the German style, the same German style that served with the Spanish in Flanders, and the same German style that was to be adopted as the official organizational model for the Spanish tercios in 1634. The German style had been around for some time and was a tried and true organization. The German style was simpler to train and master than the Swedish brigade. It would be the same style adopted by the Swedes not long after Gustav Adolf was killed.</p><p>Three tactics or techniques the Swedes had practiced that the Imperial-League Army was not expecting was the triple rank salvo, regimental artillery and the use of commanded musketeers to support their cavalry. While making a contribution, it is doubtful that these tactics were decisive. Some were controversial and often failed to yield the desired result. The Imperial Army did copy the regimental artillery and adopted a modified version of the salvo, but never did think much of the commanded musketeers. Superior Swedish artillery was mentioned as being annoying, but Tilly held the advantage of the ground which reduced the overall impact of the Swedish guns.</p><p>Tilly’s real problem wasn’t superior enemy tactics; it was superior numbers of the Swedish-Saxon Army. Above all, it was the size and length of their line of battle that spread his army thin, forcing him into one long line to prevent being outflanked. Once the end of the line failed, the line collapsed, rolled up by Banér, while Horn held firm, pinning them to the front.</p>}
+  }
+  scenario{"Alte Veste"}{
+    dates{1632-09-03 / 1632-09-03}
+    position{1 / 1}
+    range{-1}
+    timescale{-1}
+    players{2 / 2}
+    leader{"Gustav II Adolf","Wallenstein"}
+    side{"Sweden","Imperial"}
+    party{"Sweden"-"2","Imperial"-"2"}
+    author{"Hull, Ben"}
+    description{<p>This is a lesser known battle and proved to be a great challenge pulling together the research. Thanks to the help of Knut Grünitz, Dr. Venus of the Museum at Zirndorf, author-historian Peter Engerisser, and Daniel Sodders at the University of Kansas, we pulled together a very accurate map and order of battle. My starting point was the very detailed engravings and order of battle info from the Sveriges Krig (SK). Dr. Guthrie also provided a comprehensive list of regiments, but it did not take long to discover some major inconsistencies on the Swedes deployment and a dearth of information on the Imperials. Engerisser was able to fill in the missing pieces of the Swedish deployment; it turns out the SK was based on a drawing and plan from Gustav Adolf drawn a few days before the actual battle and thus could be used only as a general guideline. During actual deployment, positions changed and brigades were broken down into battalions due to the difficult approach. For the Imperials, we had a good list of Wallenstein’s army, but not all the army was in place for the battle. We had a couple of regiments mentioned by name, but it was only a fraction. Sodders dug up an Imperial casualty list by regiment which filled in the gaps. The Imperial units present are those that took casualties. I based the order of arrival on the number of casualties; the fewer, the later the arrival. While not 100% accurate, it represents an educated guess that is far more than was available before.</p><p>Yes, we know that in modern German “Old Fort” is Alte Feste, but the place name was codified before the spelling was modernized so the place is still known as Alte Veste. The fort was a small castle, dating from the 14th Century, mainly a tower that was completely ruined by the time of the battle. There is a tower at the park today, just north of Zirndorf. The park preserves most of the battlefield, and is still wooded and has many walking trails. The tower adorns the crest of Stadt Zirndorf.</p><p>I wanted to show Gustav Adolf in a variety of different engagements. This one is very different from the set-piece field battles. It also shows Gustav Adolf’s direct and aggressive approach being sharply rebuffed.</p>}
+  }
+  scenario{"L&uuml;tzen"}{
+    dates{1632-11-16 / 1632-11-16}
+    position{1 / 1}
+    range{-1}
+    timescale{-1}
+    players{2 / 2}
+    leader{"Gustav II Adolf","Wallenstein"}
+    side{"Sweden","Imperial"}
+    party{"Sweden"-"2","Imperial"-"2"}
+    author{"Hull, Ben"}
+    description{<p>This battle is another famous one, and in many ways it had greater repercussions than Breitenfeld. It was certainly a turning point. It has also seen several treatments in games, not the least of which is GMT’s Lion of the North. However, we wanted to take a fresh look at the battle. Knut did some digging and was able to put together a very nice map from a variety of sources. I had the benefit of Richard Brzezinski’s excellent book on the battle, which allowed me to do a comprehensive review of the order of battle. For those who played Lion of the North or used the revision in Sweden Fights On: Musket & Mike Battle Series Volume II, you will notice some changes based on this research. Daniel Sodders also helped by reviewing and providing an alternative view to Brzezinski’s Imperial Order of Battle. All in all, we ended up with a new look at the battle, not a rehash, that we hope you will enjoy.</p>}
+  }
+}
+
