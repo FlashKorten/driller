@@ -414,7 +414,7 @@ whereIncludeList = fromList
   , ("series",    whereIncludeForMap "series")
   , ("leader",    whereIncludeForMap "leader")
   , ("engine",    whereIncludeForMap "engine")
-  , ("game",      whereForGame)
+  , ("game",      " AND s.id_game = ?")
   , ("latitude",  whereForLatitude)
   , ("longitude", whereForLongitude)
   , ("fromYear",  whereForFromYear)
@@ -441,7 +441,7 @@ whereExcludeList = fromList
   , ("mechanic",  whereExcludeForMapToGame "mechanic")
   , ("series",    whereExcludeForMapToGame "series")
   , ("engine",    whereExcludeForMapToGame "engine")
-  , ("game",      whereForGame)
+  , ("game",      " AND s.id_game != (-1 * ?)")
   , ("latitude",  whereForLatitude)
   , ("longitude", whereForLongitude)
   , ("fromYear",  whereForFromYear)
@@ -466,12 +466,10 @@ whereExcludeForMap what mappedTo q = mconcat
   , " AND id_", q, " = (-1 * ?))"
   ]
 
-whereForGame,
-  whereForLatitude, whereForLongitude,
+whereForLatitude, whereForLongitude,
   whereForFromYear, whereForUpToYear,
   whereForFromRange, whereForUpToRange,
   whereForFromTimescale, whereForUpToTimescale :: Query
-whereForGame          = " AND s.id_game != (-1 * ?)"
 whereForLatitude      = " AND s.latitude_trunc = ?"
 whereForLongitude     = " AND s.longitude_trunc = ?"
 whereForFromYear      = " AND NOT s.year_upto < ?"
