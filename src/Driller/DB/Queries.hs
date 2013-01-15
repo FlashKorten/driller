@@ -474,10 +474,10 @@ whereForLatitude      = " AND s.latitude_trunc = ?"
 whereForLongitude     = " AND s.longitude_trunc = ?"
 whereForFromYear      = " AND NOT s.year_upto < ?"
 whereForUpToYear      = " AND NOT s.year_from > ?"
-whereForFromRange     = " AND s.range > = ?"
-whereForUpToRange     = " AND s.range < = ?"
-whereForFromTimescale = " AND s.timescale > = ?"
-whereForUpToTimescale = " AND s.timescale < = ?"
+whereForFromRange     = " AND s.range >= ?"
+whereForUpToRange     = " AND s.range <= ?"
+whereForFromTimescale = " AND s.timescale >= ?"
+whereForUpToTimescale = " AND s.timescale <= ?"
 
 selectList :: ComponentMap
 selectList = fromList

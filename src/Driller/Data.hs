@@ -109,14 +109,14 @@ data Leader    = Leader    { getLeaderId    :: Int, getLeaderName    :: Text.Tex
 data Author    = Author    { getAuthorId    :: Int, getAuthorName    :: Text.Text }
   deriving Show
 
-newtype FromYear      = FromYear      { getValueFromYear      :: Int }
-newtype UpToYear      = UpToYear      { getValueUpToYear      :: Int }
-newtype Latitude      = Latitude      { getValueLatitude      :: Int }
-newtype Longitude     = Longitude     { getValueLongitude     :: Int }
-newtype FromRange     = FromRange     { getValueFromRange     :: Int }
-newtype UpToRange     = UpToRange     { getValueUpToRange     :: Int }
-newtype FromTimescale = FromTimescale { getValueFromTimescale :: Int }
-newtype UpToTimescale = UpToTimescale { getValueUpToTimescale :: Int }
+newtype FromYear      = FromYear      { getFromYearValue      :: Int }
+newtype UpToYear      = UpToYear      { getUpToYearValue      :: Int }
+newtype Latitude      = Latitude      { getLatitudeValue      :: Int }
+newtype Longitude     = Longitude     { getLongitudeValue     :: Int }
+newtype FromRange     = FromRange     { getFromRangeValue     :: Int }
+newtype UpToRange     = UpToRange     { getUpToRangeValue     :: Int }
+newtype FromTimescale = FromTimescale { getFromTimescaleValue :: Int }
+newtype UpToTimescale = UpToTimescale { getUpToTimescaleValue :: Int }
 
 data Game = Game { getGameId        :: Int
                  , getGameTitle     :: Text.Text
@@ -165,8 +165,8 @@ emptyResult =  Result 0 [] d d d d d d d d d d d d d d d d d d d
 -- | i.e. the year '1976' will map to the group '1950'.
 -- | Each group known how many @Entries@ are contained in it.
 
-data GroupLetter = GroupLetter { getGroupLetterPrefix :: Text.Text, getGroupLetterMatches :: Int }
-data GroupNumber = GroupNumber { getGroupNumberNumber :: Int,       getGroupNumberMatches :: Int }
+data GroupLetter = GroupLetter { getGroupLetterGroupId :: Text.Text, getGroupLetterMatches :: Int }
+data GroupNumber = GroupNumber { getGroupNumberGroupId :: Int,       getGroupNumberMatches :: Int }
 
 data ParameterValue     = Number Int | GroupID Text.Text deriving (Show, Eq, Ord)
 type Parameter          = (Text.Text, ParameterValue)
@@ -237,14 +237,14 @@ $(deriveJSON (drop 9)  ''Series)
 $(deriveJSON (drop 9)  ''Leader)
 $(deriveJSON (drop 3)  ''Result)
 
-$(deriveJSON (drop 8)  ''FromYear)
-$(deriveJSON (drop 8)  ''UpToYear)
-$(deriveJSON (drop 8)  ''Latitude)
-$(deriveJSON (drop 8)  ''Longitude)
-$(deriveJSON (drop 8)  ''FromRange)
-$(deriveJSON (drop 8)  ''UpToRange)
-$(deriveJSON (drop 8)  ''FromTimescale)
-$(deriveJSON (drop 8)  ''UpToTimescale)
+$(deriveJSON (drop 11)  ''FromYear)
+$(deriveJSON (drop 11)  ''UpToYear)
+$(deriveJSON (drop 11)  ''Latitude)
+$(deriveJSON (drop 12)  ''Longitude)
+$(deriveJSON (drop 12)  ''FromRange)
+$(deriveJSON (drop 12)  ''UpToRange)
+$(deriveJSON (drop 16)  ''FromTimescale)
+$(deriveJSON (drop 16)  ''UpToTimescale)
 $(deriveJSON (drop 11) ''Scenario)
 $(deriveJSON (drop 7)  ''Game)
 $(deriveJSON (drop 14) ''GroupLetter)
