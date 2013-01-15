@@ -155,8 +155,7 @@ connectionInfo = defaultConnectInfo { connectUser     = "driller"
 
 filterParameters :: [Param] -> JoinMap -> [Parameter] -> Either Error.ParameterError [Parameter]
 filterParameters [] _ result        = Right result
-filterParameters ((k, v):ps) jm tmp | key `elem` ["_", "callback"] = filterParameters ps jm tmp
-                                    | not $ HM.member key jm = Left $ Error.unknownParameter key
+filterParameters ((k, v):ps) jm tmp | not $ HM.member key jm = Left $ Error.unknownParameter key
                                     | isNothing value        = Left $ Error.illegalValue key
                                     | alreadySeen key tmp    = Left $ Error.duplicateParameter key
                                     | otherwise              = filterParameters ps jm ((key, Number $ fromJust value):tmp)

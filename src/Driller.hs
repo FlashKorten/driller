@@ -4,7 +4,6 @@ module Main where
 import Driller.Data
 import qualified Driller.DB as DB
 import Network.Wai.Middleware.RequestLogger ( logStdoutDev )
-import Driller.JsonP ( jsonp )
 import Database.PostgreSQL.Simple ( connect )
 import Control.Monad.IO.Class ( liftIO )
 import Data.Aeson ( ToJSON )
@@ -30,7 +29,6 @@ main = do
   let config = initConfig conn DB.initQueryMap DB.initJoinMap DB.initGroupMap
   scotty 3003 $ do
     middleware logStdoutDev
-    middleware jsonp
 
     drilledResultRoutes config
     groupsRoutes config
