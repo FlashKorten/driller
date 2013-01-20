@@ -45,7 +45,7 @@ groupQuery config group pList =
 
 scenarioListQuery :: Config -> [Parameter] -> Query
 scenarioListQuery config pList = foldl' mappend prefix parts
-             where prefix = "SELECT s.id FROM dr_scenario AS s"
+             where prefix = "SELECT distinct(s.id) FROM dr_scenario AS s"
                    parts = DL.toList $ DL.append (DL.fromList joins) (DL.fromList $ " WHERE 1=1":wheres)
                    (joins, wheres) = unzip $ map (getParameterQuery joinMap) pList
                    joinMap = getJoinMap config
