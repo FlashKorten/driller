@@ -227,9 +227,12 @@ fetchForResult ::
 fetchForResult config key cat f ids
     = case HM.lookup key $ getParameterMap config of
         Just (Number value) -> if value >= 0
-                                 then liftM Entries $ fetchEntry config cat value
-                                 else liftM (Entries .  markExclusive) (fetchEntry config cat (negate value))
+                                 then liftM createEntries $ fetchEntry config cat value
+                                 else liftM (createEntries .  markExclusive) (fetchEntry config cat (negate value))
         _ -> f config 25 ids
+
+createEntries x = Entries x []
+createGroups x = Groups x []
 
 fetchSimpleValuesForResult ::
   (FromInt r) => Config -> T.Text
@@ -238,7 +241,7 @@ fetchSimpleValuesForResult ::
 
 fetchSimpleValuesForResult config key f ids
     = case HM.lookup key $ getParameterMap config of
-        Just (Number value) -> return $ Entries [fromInt value]
+        Just (Number value) -> return $ Entries [fromInt value] []
         _ -> f config 25 ids
 
 prepareResult :: Config -> [Int] -> IO Answer
@@ -287,14 +290,26 @@ prepareResult config ids = do
                               , getUpToTimescales = upToTimescales
                               }
 
-fetchManyForSelection :: (FromRow a, FromRow b) => QueryCategory -> Config -> Int -> [Int] -> IO (AnswerList [a] [b])
-fetchManyForSelection category config limit ids = do
+fetchManyFromMapForSelection :: (FromRow a, FromRow b) => QueryCategory -> Config -> Int -> [Int] -> IO (AnswerList [a] [b])
+fetchManyFromMapForSelection category config limit ids = do
+    matches <- query c (qm ! (category, ENTRY, POLYB)) params
     count <- query c (qm ! (category, COUNT, POLY)) (Only (In ids))
     if head count < limit
-      then liftM Entries $ query c (qm ! (category, ENTRY, POLY)) (Only (In ids))
-      else liftM Groups  $ query c (qm ! (category, GROUP, POLY)) (Only (In ids))
+      then liftM (\x -> Entries x matches) $ query c (qm ! (category, ENTRY, POLYA)) params
+      else liftM (\x -> Groups x matches) $ query c (qm ! (category, GROUP, POLY)) params
     where c  = getDBConnection config
           qm = getQueryMap config
+          params = (In ids, length ids)
+
+fetchManyForSelection :: (FromRow a, FromRow b) => QueryCategory -> Config -> Int -> [Int] -> IO (AnswerList [a] [b])
+fetchManyForSelection category config limit ids = do
+    count <- query c (qm ! (category, COUNT, POLY)) params
+    if head count < limit
+      then liftM createEntries $ query c (qm ! (category, ENTRY, POLY)) params
+      else liftM createGroups $ query c (qm ! (category, GROUP, POLY)) params
+    where c  = getDBConnection config
+          qm = getQueryMap config
+          params = Only (In ids)
 
 fetchDrilledAuthorGroup :: Config -> [Param] -> IO [Author]
 fetchDrilledAuthorGroup = fetchDrilledLetterGroup "author"
@@ -360,37 +375,37 @@ fetchDrilledNumberGroup :: FromRow a => T.Text -> Config -> [Param] -> IO [a]
 fetchDrilledNumberGroup = fetchDrilledGroup True
 
 fetchManyAuthorsForSelection :: Config -> Int -> [Int] -> IO AuthorList
-fetchManyAuthorsForSelection = fetchManyForSelection AUTHOR
+fetchManyAuthorsForSelection = fetchManyFromMapForSelection AUTHOR
 
 fetchManyGamesForSelection :: Config -> Int -> [Int] -> IO GameList
 fetchManyGamesForSelection = fetchManyForSelection GAME
 
 fetchManyGenresForSelection :: Config -> Int -> [Int] -> IO GenreList
-fetchManyGenresForSelection = fetchManyForSelection GENRE
+fetchManyGenresForSelection = fetchManyFromMapForSelection GENRE
 
 fetchManyThemesForSelection :: Config -> Int -> [Int] -> IO ThemeList
-fetchManyThemesForSelection = fetchManyForSelection THEME
+fetchManyThemesForSelection = fetchManyFromMapForSelection THEME
 
 fetchManyMechanicsForSelection :: Config -> Int -> [Int] -> IO MechanicList
-fetchManyMechanicsForSelection = fetchManyForSelection MECHANIC
+fetchManyMechanicsForSelection = fetchManyFromMapForSelection MECHANIC
 
 fetchManySidesForSelection :: Config -> Int -> [Int] -> IO SideList
-fetchManySidesForSelection = fetchManyForSelection SIDE
+fetchManySidesForSelection = fetchManyFromMapForSelection SIDE
 
 fetchManyPartiesForSelection :: Config -> Int -> [Int] -> IO PartyList
-fetchManyPartiesForSelection = fetchManyForSelection PARTY
+fetchManyPartiesForSelection = fetchManyFromMapForSelection PARTY
 
 fetchManyPublishersForSelection :: Config -> Int -> [Int] -> IO PublisherList
-fetchManyPublishersForSelection = fetchManyForSelection PUBLISHER
+fetchManyPublishersForSelection = fetchManyFromMapForSelection PUBLISHER
 
 fetchManySeriesForSelection :: Config -> Int -> [Int] -> IO SeriesList
-fetchManySeriesForSelection = fetchManyForSelection SERIES
+fetchManySeriesForSelection = fetchManyFromMapForSelection SERIES
 
 fetchManyEnginesForSelection :: Config -> Int -> [Int] -> IO EngineList
-fetchManyEnginesForSelection = fetchManyForSelection ENGINE
+fetchManyEnginesForSelection = fetchManyFromMapForSelection ENGINE
 
 fetchManyLeadersForSelection :: Config -> Int -> [Int] -> IO LeaderList
-fetchManyLeadersForSelection = fetchManyForSelection LEADER
+fetchManyLeadersForSelection = fetchManyFromMapForSelection LEADER
 
 fetchManyLatitudesForSelection :: Config -> Int -> [Int] -> IO LatitudeList
 fetchManyLatitudesForSelection = fetchManyForSelection LATITUDE

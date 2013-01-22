@@ -158,7 +158,7 @@ data Result = Result { getNoResults     :: Int
 
 emptyResult :: Result
 emptyResult =  Result 0 [] d d d d d d d d d d d d d d d d d d d
-                where d = Entries []
+                where d = Entries [] []
 
 -- | @Entries@ map to one specific group: text-types map to a @GroupLetter@ with the same first Letter,
 -- | number-types map to an implicit range as a @GroupNumber@;
@@ -199,7 +199,7 @@ type LongitudeList      = AnswerList [GroupNumber] [Longitude]
 
 -- | An answer is either a list of concrete @Entries@
 -- | or a list of @Groups@ if there were too many @Entries@.
-data AnswerList a b = Groups a | Entries b
+data AnswerList a b = Groups a b | Entries b b
   deriving (Eq, Show)
 
 data QueryCategory = AUTHOR | LEADER | SIDE | PARTY
@@ -207,8 +207,8 @@ data QueryCategory = AUTHOR | LEADER | SIDE | PARTY
                    | LATITUDE | LONGITUDE | FROM_YEAR | UPTO_YEAR
                    | RANGE | FROM_RANGE | UPTO_RANGE
                    | TIMESCALE | FROM_TIMESCALE | UPTO_TIMESCALE deriving (Eq, Show, Enum)
-data QueryTarget   = ENTRY  | GROUP | COUNT                       deriving (Eq, Show, Enum)
-data QueryType     = MONO   | POLY  | OMNI                        deriving (Eq, Show, Enum)
+data QueryTarget   = ENTRY  | GROUP | COUNT                      deriving (Eq, Show, Enum)
+data QueryType     = MONO   | POLY  | OMNI | POLYA | POLYB       deriving (Eq, Show, Enum)
 type QueryKey      = (QueryCategory, QueryTarget, QueryType)
 type QueryMap      = HashMap QueryKey Query
 

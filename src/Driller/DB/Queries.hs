@@ -10,7 +10,7 @@ module Driller.DB.Queries
 
 import Driller.Data
     ( QueryMap
-    , QueryType(MONO, OMNI, POLY)
+    , QueryType(..)
     , QueryTarget(COUNT, ENTRY, GROUP)
     , QueryCategory(..)
     , ComponentMap
@@ -76,8 +76,11 @@ initQueryMap = fromList
  ++ [((category, ENTRY, MONO), monoEntryForExactValues  $ categoryToQuery category) | category <- [LATITUDE, LONGITUDE]]
  ++ [((category, ENTRY, MONO), monoEntryForMinValues    $ categoryToQuery category) | category <- [FROM_YEAR, FROM_RANGE, FROM_TIMESCALE]]
  ++ [((category, ENTRY, MONO), monoEntryForMaxValues    $ categoryToQuery category) | category <- [UPTO_YEAR, UPTO_RANGE, UPTO_TIMESCALE]]
- ++ [((category, ENTRY, POLY), polyEntryFromGameMap     $ categoryToQuery category) | category <- categoriesMappedToGame]
- ++ [((category, ENTRY, POLY), polyEntryFromScenarioMap $ categoryToQuery category) | category <- categoriesMappedToScenario]
+ ++ [((category, ENTRY, POLYA), polyAEntryFromGameMap     $ categoryToQuery category) | category <- categoriesMappedToGame]
+ ++ [((category, ENTRY, POLYA), polyAEntryFromScenarioMap $ categoryToQuery category) | category <- categoriesMappedToScenario]
+ ++ [((category, ENTRY, POLY), polyEntryFromValues      $ categoryToQuery category) | category <- numberCategories]
+ ++ [((category, ENTRY, POLYB), polyBEntryFromGameMap     $ categoryToQuery category) | category <- categoriesMappedToGame]
+ ++ [((category, ENTRY, POLYB), polyBEntryFromScenarioMap $ categoryToQuery category) | category <- categoriesMappedToScenario]
  ++ [((category, ENTRY, POLY), polyEntryFromValues      $ categoryToQuery category) | category <- numberCategories]
  ++ [((category, GROUP, OMNI), omniGroupFromMap         $ categoryToQuery category) | category <- mappedCategories]
  ++ [((category, GROUP, OMNI), omniGroupFromValues      $ categoryToQuery category) | category <- numberCategories]
@@ -161,24 +164,49 @@ polyEntryForGame = mconcat
   , " ORDER BY g.title, g.subtitle"
   ]
 
-polyEntryFromGameMap :: Query -> Query
-polyEntryFromGameMap q = mconcat
+polyAEntryFromGameMap :: Query -> Query
+polyAEntryFromGameMap q = mconcat
   [ "SELECT a.id, a.", q
   , " FROM dr_", q, " AS a"
   , " JOIN dr_map_", q, " AS ma ON a.id = ma.id_", q
   , " JOIN dr_scenario AS s ON s.id_game = ma.id_game"
   , " WHERE s.id IN ?"
   , " GROUP BY a.id, a.", q
+  , " HAVING count(a.id) < ?"
   , " ORDER BY a.", q
   ]
 
-polyEntryFromScenarioMap :: Query -> Query
-polyEntryFromScenarioMap q = mconcat
+polyBEntryFromGameMap :: Query -> Query
+polyBEntryFromGameMap q = mconcat
+  [ "SELECT a.id, a.", q
+  , " FROM dr_", q, " AS a"
+  , " JOIN dr_map_", q, " AS ma ON a.id = ma.id_", q
+  , " JOIN dr_scenario AS s ON s.id_game = ma.id_game"
+  , " WHERE s.id IN ?"
+  , " GROUP BY a.id, a.", q
+  , " HAVING count(a.id) = ?"
+  , " ORDER BY a.", q
+  ]
+
+polyAEntryFromScenarioMap :: Query -> Query
+polyAEntryFromScenarioMap q = mconcat
   [ "SELECT a.id, a.", q
   , " FROM dr_", q, " AS a"
   , " JOIN dr_map_", q, " AS ma ON a.id = ma.id_", q
   , " WHERE ma.id_scenario IN ?"
   , " GROUP BY a.id, a.", q
+  , " HAVING count(a.id) < ?"
+  , " ORDER BY a.", q
+  ]
+
+polyBEntryFromScenarioMap :: Query -> Query
+polyBEntryFromScenarioMap q = mconcat
+  [ "SELECT a.id, a.", q
+  , " FROM dr_", q, " AS a"
+  , " JOIN dr_map_", q, " AS ma ON a.id = ma.id_", q
+  , " WHERE ma.id_scenario IN ?"
+  , " GROUP BY a.id, a.", q
+  , " HAVING count(a.id) = ?"
   , " ORDER BY a.", q
   ]
 
@@ -215,6 +243,7 @@ polyGroupFromMap mapping q = mconcat
   , " JOIN dr_scenario AS s ON ", mapping
   , " WHERE s.id IN ?"
   , " GROUP BY grp"
+  , " HAVING count(a.id) < ?"
   , " ORDER BY grp"
   ]
 
