@@ -378,7 +378,7 @@ fetchManyAuthorsForSelection :: Config -> Int -> [Int] -> IO AuthorList
 fetchManyAuthorsForSelection = fetchManyFromMapForSelection AUTHOR
 
 fetchManyGamesForSelection :: Config -> Int -> [Int] -> IO GameList
-fetchManyGamesForSelection = fetchManyForSelection GAME
+fetchManyGamesForSelection = fetchManyFromMapForSelection GAME
 
 fetchManyGenresForSelection :: Config -> Int -> [Int] -> IO GenreList
 fetchManyGenresForSelection = fetchManyFromMapForSelection GENRE

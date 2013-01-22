@@ -199,6 +199,9 @@ type LongitudeList      = AnswerList [GroupNumber] [Longitude]
 
 -- | An answer is either a list of concrete @Entries@
 -- | or a list of @Groups@ if there were too many @Entries@.
+-- | In both cases there is a second list of concrete @Entries@ to
+-- | show which attributes are no longer useful for filtering, since
+-- | they apply to all results.
 data AnswerList a b = Groups a b | Entries b b
   deriving (Eq, Show)
 

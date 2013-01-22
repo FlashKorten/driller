@@ -92,7 +92,8 @@ initQueryMap = fromList
  ++ [((category, COUNT, POLY), polyCountFromGameMap     $ categoryToQuery category) | category <- categoriesMappedToGame]
  ++ [((category, COUNT, POLY), polyCountFromScenarioMap $ categoryToQuery category) | category <- categoriesMappedToScenario]
  ++ [((category, COUNT, POLY), polyCountFromValues      $ categoryToQuery category) | category <- numberCategories]
- ++ [((GAME, ENTRY, POLY),     polyEntryForGame)]
+ ++ [((GAME, ENTRY, POLYA),    polyAEntryForGame)]
+ ++ [((GAME, ENTRY, POLYB),    polyBEntryForGame)]
  ++ [((GAME, GROUP, OMNI),     omniGroupForGame)]
  ++ [((GAME, GROUP, POLY),     polyGroupForGame)]
  ++ [((GAME, GROUP, MONO),     monoGroupForGame)]
@@ -154,13 +155,25 @@ polyEntryForScenario :: Query
 polyEntryForScenario = mappend
   selectForScenarioEntry " WHERE s.id IN ?"
 
-polyEntryForGame :: Query
-polyEntryForGame = mconcat
+polyAEntryForGame :: Query
+polyAEntryForGame = mconcat
   [ "SELECT g.id, g.title, g.subtitle"
   , " FROM dr_game AS g"
   , " JOIN dr_scenario AS s ON s.id_game = g.id"
   , " WHERE s.id IN ?"
   , " GROUP BY g.id, g.title, g.subtitle"
+  , " HAVING count(g.id) < ?"
+  , " ORDER BY g.title, g.subtitle"
+  ]
+
+polyBEntryForGame :: Query
+polyBEntryForGame = mconcat
+  [ "SELECT g.id, g.title, g.subtitle"
+  , " FROM dr_game AS g"
+  , " JOIN dr_scenario AS s ON s.id_game = g.id"
+  , " WHERE s.id IN ?"
+  , " GROUP BY g.id, g.title, g.subtitle"
+  , " HAVING count(g.id) = ?"
   , " ORDER BY g.title, g.subtitle"
   ]
 
@@ -226,6 +239,7 @@ polyGroupForGame = mconcat
   , " JOIN dr_scenario AS s ON a.id = s.id_game"
   , " WHERE s.id IN ?"
   , " GROUP BY grp"
+  , " HAVING count(a.id) < ?"
   , " ORDER BY grp"
   ]
 
