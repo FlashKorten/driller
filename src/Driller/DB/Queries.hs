@@ -253,8 +253,8 @@ polyGroupFromMap :: Query -> Query -> Query
 polyGroupFromMap mapping q = mconcat
   [ "SELECT a.grp, count(distinct(a.id))"
   , " FROM dr_", q, " AS a"
-  , " JOIN dr_map_", q, " AS ma on a.id = ma.id_", q
-  , " JOIN dr_scenario AS s ON ", mapping
+  , " LEFT JOIN dr_map_", q, " AS ma on a.id = ma.id_", q
+  , " LEFT JOIN dr_scenario AS s ON ", mapping
   , " WHERE s.id IN ?"
   , " GROUP BY grp"
   , " HAVING count(a.id) < ?"
@@ -287,7 +287,7 @@ polyCountFromMap :: Query -> Query -> Query
 polyCountFromMap mapping q = mconcat
   [ "SELECT count(distinct(id_", q, "))"
   , " FROM dr_map_", q, " AS a"
-  , " JOIN dr_scenario AS s ON ", mapping
+  , " LEFT JOIN dr_scenario AS s ON ", mapping
   , " WHERE s.id IN ?"
   ]
 
@@ -363,7 +363,7 @@ selectForScenarioEntry :: Query
 selectForScenarioEntry = mconcat
   [ "SELECT s.id, sd.title, sd.subtitle, s.year_from, s.year_upto"
   , " FROM dr_scenario AS s"
-  , " JOIN dr_scenario_data AS sd ON s.id = sd.id_scenario"
+  , " LEFT JOIN dr_scenario_data AS sd ON s.id = sd.id_scenario"
   ]
 
 selectForMonoOrOmniGameEntry :: Query
@@ -411,7 +411,7 @@ parameterList =
 
 joinForMap :: Query -> Query -> Query -> Query
 joinForMap mapSource mapTarget q = mconcat
-  [" JOIN dr_map_", q
+  [" LEFT JOIN dr_map_", q
   , " AS ", q
   , " ON s.", mapSource, " = ", q, ".", mapTarget
   ]
