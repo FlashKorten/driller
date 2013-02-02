@@ -4872,7 +4872,7 @@
     description{<p>Near Maleme Airfield, Crete&mdash;Captain Van Etten's parachutists had been in many chaotic skirmishes with Allied forces in and around Maleme Airfield since the airborne landing on Crete the previous morning. His forces were wearing thin, he decided to temporarily reassemble in the high ground to the south.</p><p>As it happened, elements of the 5th New Zealand Brigade had decided to cross those very same hills in an attempt to withdraw southeast of the airfield for a future counterattack. Van Etten's depleted company attacked and surrounded a platoon of withdrawing New Zealanders belonging to the 22nd Battalion unaware that more were fast approaching.</p>}
     dates{1941-05-21 / 1941-05-21}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -4883,7 +4883,7 @@
     description{<p>Sochaczew, Poland&mdash;On 9 September, the Polish Poznan Army, encircled by the rapid German advance, attempted to force a crossing of the Bzura River to the southeast. This attack inadvertently allowed time for the Polish Pomorze Army - also trapped in the pocket - to regroup further east near the Kampinos Forest. Many attempts were made by elements of the Pomozore Army to affect a withdrawal from the pocket east towards Warsaw; by the middle of the month, however, only two divisions had made the escape.</p><p>On September 15, one such skirmish saw a company of Polish regulars attempt a breakout along an infrequently-used farm road.</p>}
     dates{1939-09-15 / 1939-09-15}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -4894,7 +4894,7 @@
     description{<p>Bessarabia&mdash;After forcing a crossing of the River Prut at Falciu earlier in the week, the Rumanian Army was on the move across Bessarabia.</p><p>In the afternoon of July 7, elements of the Rumanian 6th Infantry Division attempted to clear one of many Russian-held villages on the road to Moghilev. Due to the need for a rapid advance, the Rumanian columns were lackluster in their scouting efforts. In this case, the town defenders were members of the "elite" 74th Rifle Division which had just received a smattering of conscripted replacementes to bolster the body count.</p>}
     dates{1941-07-07 / 1941-07-07}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -4905,7 +4905,7 @@
     description{<p>Gembloux, France&mdash;As French forces fought the Germans to a near standstill in and around Gembloux, infantry forces belonging to the attacking 3rd Panzer Division were tasked with taking a nearby sunken road.</p><p>Led by the determined Captain Grudler, a battered company of the Moroccan RTM fiercly defended the road - called the Chemin Creux, or "Hollow Road" - for many hours and, in the end, to the very last man.</p>}
     dates{1940-05-15 / 1940-05-15}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -4916,7 +4916,7 @@
     description{<p>Ortona, Italy&mdash;On December 21, house to house fighting began in earnest in the Adriatic seaport of Ortona. It was during the next seven days that the Canadian 1st Infantry Division literally rewrote the book on close-quarters city fighting techniques. More than one thousand Canadians had lost their lives by the time the German defenders withdrew from the city on the 28th.</p><p>Here we have a typical situation amongst the densely packed buildings of this otherwise idyllic town, where elements of Germany's 1st Parachute Division fight to hold ground against the relentless advance of a company of Seaforth Highlanders.</p>}
     dates{1943-12-24 / 1943-12-24}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -4927,7 +4927,7 @@
     description{<p>Nisava River, Yugoslavia&mdash;A day after the attack on Yugoslavia commenced, von Kleist's 1st Panzer Group found many of the bridges across the Nisava River to be blown or in flames, holding up his vital armored forces. The German 23rd Infantry Regiment was thus one of several battle groups sent forth ahead of the armored spearhead in order to secure bridges over the otherwise unfordable river obstacle.</p><p>One German detachment found such a bridge - apparently unguarded - near the town of Bela Pelanka. Its supporting tanks set to refuel, the infantry casually advanced across empty fields to secure the crossing. A sudden burst of machine-gun fire from the low hills opposite the river, however, indicated to the grenadiers that this bridge may be heavily defended after all...</p>}
     dates{1941-04-07 / 1941-04-07}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -4938,7 +4938,7 @@
     description{<p>Kilkis, Greece&mdash;The Metaxas Line was a 90-mile chain of fortifications built by the Greeks in the 1930s along their border with Bulgaria. In the spring of 1941, it fell to the German XVIII Corps to assault the Metaxas Line at the outset of hostilities against Greece and Yugoslavia. The defenses were too tough to affect a worthwhile breakthrough for the bulk of the attacking armies so - as with the Maginot Line in France a year earlier - it was eventually just outflanked through southern Yugoslavia.</p><p>Here we have elements of the 5th Mountain Division assaulting yet another fortified position held by garrison troops of the 2nd Greek Army.</p>}
     dates{1941-04-07 / 1941-04-07}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -4949,7 +4949,7 @@
     description{<p>Tolvajärvi, Finland&mdash;As two battalions of Belyayev's 139th Rifle Division skirted the north end of Lake Hirvasjäri in an attempt to outflank the Finnish defenders of Tolvajärvi, one company was sent forward along a forest path to the southwest. As discipline within this group slackened and they began singing patriotic marching songs - likely brought on by the extra vodka rations issued just that morning - nearby elements of Task Force Pajari were alerted to their imminent arrival and set up an ambush for the unsuspecting Soviet force.</p>}
     dates{1939-12-12 / 1939-12-12}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -4960,7 +4960,7 @@
     description{<p>Northern Siciliy&mdash;While elements of the 15th and 30th Infantry Regiments of the US 9th Division seized a key hill along San Fratello Line, Lt. Col. Lyle Bernard led a reinforced Battalion in an amphibious landing at Sant' Agata, a few miles behind San Fratello. This assault force quickly blocked the coastal highway - unfortunately the Germans had already selected that night to withdraw from the area.</p><p>Taking advantage of the constricting terrain and armed with a plethora of mines, General Hube deftly withdrew XIV Panzer Corps toward Messina. As the American forces pursued, however, they came upon innumerable blocking forces - both German and Italian - at every twist and turn of the narrow roads cutting through the rough Sicilian countryside.</p>}
     dates{1943-08-08 / 1943-08-08}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -4971,7 +4971,7 @@
     description{<p>South of Goch, Holland&mdash;Operation Veritable - Montgomery's push to the Rhine - was encountering fanatic German resistance for every square mile of Holland. Having just about secured the town of Goch, the 1st Gordon Highlanders were ordered to continue the advance south and east. The next obstacle for Company A turned out to be the hamlet of Thomashof: a gathering of stone buildings and farmland interlaced with wire fences. The German defenders enjoyed both wide fields of fire and the element of surprise as the "Spandaus" - the British nickname fot the German MG42 machine gun - opened up...</p>}
     dates{1945-02-17 / 1945-02-17}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -4982,7 +4982,7 @@
     description{<p>Southern Desert, Egypt&mdash;Unaware of the preparations being made by Rommel's Afrika Korps for an attack later in the month, life in the Italian trenches along the Alam Halfa Line was hot, dusty and boring, and punctuated by timely British artillery attacks every two hours around the clock.</p><p>On the morning of the 11th of August it was discovered that, during the previous night, a British sniper team had apparently infiltrated to an abandoned truck in no-man's land. One unlucky Italian sentry had already suffered the ultimate fate so an 81mm mortar was called forward to deal with the intruders.</p>}
     dates{1942-08-11 / 1942-08-11}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -4993,7 +4993,7 @@
     description{<p>Tug Argan Pass, Somaliland&mdash;On August 11, Italian General de Simone's assaults on three of the six hills overlooking Tug Argan Pass had been less than spectacular. Only one hill was taken before the attacks were called off for the night. Eager to reach the coast and the important British port at Berbera, a heavy bombardment was ordered for the morning of the 12th before the assaults were to recommence.</p><p>Elements of the 15th Punjab Regiment were defending one such height when the Italian guns openend up, signalling the start of the day's hostilities.</p>}
     dates{1940-08-12 / 1940-08-12}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5015,7 +5015,7 @@
     description{<p>The Ghost Front, Lanzerath, Germany&mdash;Regimental Order No. 54 was given to the 1st Company, 9th Regiment of the 3rd Fallschirmjäger Division: The unit was instructed to clear Lanzerath and other villages in and around the Losheim Gap of enemy resistance. This was to prepare the way for Joachim Peiper's 1st SS Panzer Division, recently outfitted with 30 King Tigers, to storm through the front without delay.</p><p>As US soldiers were needed to defend this lightly held area, an Intelligence &amp; Recon platoon of 18 men - trained to be the "eyes and ears" of a division - belonging to the American 394th Regiment, 99th Division, was placed on the front line near the small hamlet of Lanzerath which overlooked Losheim further east. Their orders were to observe the area and provide warning of enemy action.</p><p>From the woods looking down a gently sloping snow-covered field leading down to Lanzerath, these men had improved their positions with overlapping logs, creating a solid defensive bunker with good fields of fire.</p><p>As a German column was seen marching through Lanzerath, a young girl ran out of a house and approached a German officer. Speaking excitedly while pointing in the I&amp;R platoon's general direction, the German commander barked an order and the troops dive for the ditches lining the road. Lt. Bouck yelled to "Open fire!" and the Battle of the Bulge began for this handful of men.</p>}
     dates{1944-12-16 / 1944-12-16}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5026,7 +5026,7 @@
     description{<p>The Ghost Front, Lanzerath, Germany&mdash;After a pause to tend to the wounded, the German paratroopers launched another attack on the American positions along the woodline above Lanzerath. Lieutenant Bouck again called for artilley support and was again denied due to more pressing concerns elsewhere. When he asked what he should do without artillery support the reply was succinct: "hold at all costs". Shortly thereafter, an enemy fire attack pierced the radio,destroying it.</p><p>Despite the morning's intense fighting, only one American soldier had been wounded, having been hit in the face by a rifle grenade that luckily failed to explode as it fell to the ground.</p><p>As the afternoon attacks across the open fields continued, the lack of sleep from the previous night and dwindling ammunition supplies began to take its toll on the vastly outnumbered American defenders. In the end they held out for 18 hours before being outflanked - effectively crippling a good portion of the 3rd Fallschirmjäger's manpower while allowing critical time for the US Army to reposition itself in order to meed the Germans' main thrust.</p><p>Because of their actions during that first morning of what would later be called "The Battle of the Bulge" this group of brave men became the most decorated platoon of WWII.</p>}
     dates{1944-12-16 / 1944-12-16}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5037,7 +5037,7 @@
     description{<p>Neuville-au-Plain, France&mdash;It's D-Day, and the 82nd Airborne Division is struggling to consolidate its defenses at St. Mere-Eglise. Expecting a counter-attack from the north, 3/505 Commander Lt. Col. Benjamin Vandervoort orders D Company's 3rd Platoon - led by 1st Lt. Turner Turnbull - to block Route D-15 at Neuville-au-Plain. Shortly after arriving, Turnbull's force of 43 men spot a large column of men in feldgrau approaching down the highway, apparently escorted by soldiers wearing American paratroopers' uniform. Wary of a ruse, an American machine-gunner fires warning shots into a nearby field. The German "prioners" dive for the ditches.</p><p>After fanning out in either direction in order to try and outflank the outnumbered but well-entrenched Americans, the German attack commences.</p>}
     dates{1944-06-06 / 1944-06-06}
     position{49.43 / 1.33}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5048,7 +5048,7 @@
     description{<p>North of Carentan, France&mdash;Shortly after D-Day, American forces arriving at Omaha and Utah beaches were separated by the Douve River, the city of Carentan, and a determined force of German defenders. Lt. Col. Robert Cole's 3/502 PIR (101st Airborne), supported by artillery and mortar fire, was tasked with assaulting Carentan from the north across a narrow causeway over marshy ground along the river. As the Americans approached the outskirts of Carentan, German Fallschirmjäger opened up with machine guns and rifle fire from positions in nearby hedgerows and farmhouses.</p>}
     dates{1944-06-10 / 1944-06-10}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5059,7 +5059,7 @@
     description{<p>M.Ingouf's Farm North of Carentan, France&mdash;Against heavy machine-gun, mortar and artillery fire, the bloody remnants of Lt. Col. Robert Cole's 3/502 PIR (101st Airborne) charged across open ground and established themselves around an abandoned farmhouse near the Madeleine Canal. Reinforced by elements of Lt. Col. Patrick Cassidy's 2/502 PIR during a lull in the fighting, they braced themselves for a counterattack by the German 6th Fallschirmjäger Regiment. American mortar ammo was gone, the radio link to divisional artillery support jammed. As the paratroopers caught their breath, the rising clatter of machine-gun and small arms fire from down among the hedgerows heralded the German attack.</p>}
     dates{1944-06-10 / 1944-06-10}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5070,7 +5070,7 @@
     description{<p>Bastogne, Belgium&mdash;The isolated 101st Airborne seemed to be surviving on courage alone. By Christmas, they were running low on food, medicine, fuel and heavy ammunition. A plan was devised to re-supply them from the air. Fifty gliders towed by C47 cargo planes took off from France and headed for Bastogne. Not knowing which side controlled the landing zones, the brave glider pilots cast off their tow lines, flew through intense anti-aircraft fire, and landed with their volatile cargo. German and American troops poured out of their foxholes to capture the gliders and their contents.</p>}
     dates{1944-12-27 / 1944-12-27}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5081,7 +5081,7 @@
     description{<p>Veliki Bukrin Bridgehead, Russia&mdash;On the night of September 24-25, the Russian 5th Airborne Brigade air assaulted into the Burkin Bend to establish a bridgehead on the west bank of the Dnieper River. The jump was less than successful as the troopers were widely scattered across the bend - landing on three previously unnoticed German divisions, including 10th Panzergrenadier.</p><p>As day breaks, elements of the 5th Airborne are moving to their initial objectives. Meanwhile units of the 41st Infantry Regiment are tasked with eliminating the dispersed paratroopers.</p>}
     dates{1943-09-25 / 1943-09-25}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5092,7 +5092,7 @@
     description{<p>Flamierge, Belgium&mdash;The US 17th Airborne Division was new to the European Theater of Operations, having just arrived in the Reims area in France on the 25th of December. The division was attached to General Patton's 3rd Army. One of its initial assignments was to take down the town of Flamierge lying northwest of Bastogne.</p><p>When the 513th Parachute Infantry Regiment finally jumped off for its assault on the town, a near blizzard set in...</p>}
     dates{1945-01-04 / 1945-01-04}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5103,7 +5103,7 @@
     description{<p>Belgium&mdash;After being isolated for 7 days - out of fuel and low on ammunition - Peiper was finally given permission to breakout from his beleaguered position at La Gleize. Leaving a rear guard to demolish the remaining tanks and vehicles (numbering nearly 100), Peiper and some 800 survivors set off in the dead of night to find a way back to friendly lines. Marching in single file they crossed the Ambleve River and up into the rugged hills above Trois Ponts. Somewhere out in the dark, the newly arrived 456th PFAB of the 82nd Airborne division was blocking their path.</p>}
     dates{1944-12-24 / 1944-12-24}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5114,7 +5114,7 @@
     description{<p>St. Mere-Eglise, France&mdash;In the early hours of June 6, the paratroopers of the 101st and 82nd Airborne divisions leapt into the night over Normandy to clear the path for the invading Allied forces who were at that time steaming across the English Channel. Through the chaos of enemy fire, the pilots did the best they could to put the troopers over their planned drop zones, but many of them were dropped far from their planned sites, with little idea of where they were.</p><p>The 506th PIR landed on the outskirts of St. Mere-Eglise. They quickly organized as best they could and began clearing the way to Utah Beach.</p>}
     dates{1944-06-06 / 1944-06-06}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5125,7 +5125,7 @@
     description{<p>Hill 30, Caponnet, France&mdash;Elements of the 2nd Bn, 508th PIR under Lt. Col. Thomas Shanley were one of the few groups of troopers that landed west of the Merdenet River. In constant enemy contact and short of supplies, Shanley decided to withdraw to the originally planned battalion assembly point at Hill 30 and defend the position.</p><p>The German 1057th Regiment of the 91st Luftlande Division was ordered to counterattack towards Utah Beach and eliminate any paratroopers they found west of the Merderet. They found the 508th at Hill 30.</p>}
     dates{1944-06-08 / 1944-06-08}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5147,7 +5147,7 @@
     description{<p>Spartakovka, Russia&mdash;The Germans were advancing headlong toward Stalingrad. Elements of the Soviet 62nd Army were in disarray from the speed at which the German 6th Army was advancing. The German VIII Fliegerkorps had laid waste to much of the suburbs and command &amp; control areas. Against this backdrop of confusion, Panzergrenadiers of the 16th Panzer Division launched their attack at first light to reach the Volga. Defending the area near the town of Spartakovka was a mixed force of militia - rear area units along with hastily arrived reinforcements. Their task was simple: Stop the Germans from reaching the Volga river...</p>}
     dates{1942-08-23 / 1942-08-23}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5158,7 +5158,7 @@
     description{<p>Minina Suburb, Stalingrad, Russia&mdash;During the night of September 17, Lt. Andrey Khozyaynov of the 92nd Marine Infantry Brigade was ordered to reinforce elements of the 35 Guards Infantry Division defending the Grain Elevator. This key position anchored the Soviet defenses soiuth of the Tsaritsa river bed. As morning broke, the 276th Infantry Regiment, 94th Saxon Infantry Division was tasked with eliminating the stubborn defenders of the Grain Elevator.</p>}
     dates{1942-09-18 / 1942-09-18}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5169,7 +5169,7 @@
     description{<p>Behind the Barrikady, Stalingrad&mdash;Since October 24 Ivan Ilyich Svidrov - a 19-year-old Sergeant in 650th Rifle Regiment - and his squad of determined soldiers had beaten back repeated morning attacks against the concrete and iron house they were sworn to defend with their lives; a house with the address "Dom 31". Dom 31 held a highly strategic location: it guarded the rear entrance of the Barrikady factory and anchored the left flank of Colonel Lyudnikov's 138th Rifle Division. The importance of this location was further impressed upon Sgt. Svidrov when Col. Lyudnikov himself paid the squad a visit on the evening of the 26th. On the 27th the first attack didn't commence until noon, but was repeated throughout the day with growing ferocity.</p>}
     dates{1942-10-27 / 1942-10-27}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5180,7 +5180,7 @@
     description{<p>Dolgyi Gully, Stalingrad, Russia&mdash;Elements of the German 295th Infantry Division had infiltrated the northern flank of the 13th Guards Rifle Division along Krutoy Gully and reached the Volga River.</p><p>A detachment was sent to secure a wooden bridge spanning a neighboring ravine. Unbeknownst to them, Russian units were just then utilizing the very same bridge in order to move a field gun towards the battle still raging in Krutoy Gully. Their advance temporarily halted - and with Stalin's infamous Order No. 227 in effect espousing Soviet soldiers to not take a single step backwards - the Russians prepared to hold the gully without falling back into Stalingrad proper to the south.</p>}
     dates{1942-10-01 / 1942-10-01}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5191,7 +5191,7 @@
     description{<p>Near Krutoy Gully, Stalingrad, Russia&mdash;As dawn broke on the first day of October the 295th Infantry Division attacked Rodimtsev's 13th Guards Rifle Division from the front and flank. The 3rd Battalion, 39th Infantry Regiment bore the brunt of the frontal attack. The German assault led by the 517th Infantry Regiment initially gained ground and forced the 39th back. in an effort to stop the German advance the 39th savagely counter-attacked to reclaim their lost positions.</p>}
     dates{1942-10-01 / 1942-10-01}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5202,7 +5202,7 @@
     description{<p>Barridady Gun Factory, Stalingrad, Russia&mdash;'Fortress Stalingrad' was living up to its name. On this day, elements of the German 305. Infanterie-Division continued their assault into the ruins of the factory's workshops. The fighting was up close and personal:</p><p>"Walz's commander, Leutnant Hermann Hennes, helped him into a bomb crater and did his best to bind the nasty wound. When Hennes stood up, he saw enemy soldiers moving towards them, so he grabbed his rifle and lined up a shot. Lying on his back in the crater, Walz looked up at his commander, expecting him to be the first to fire. A shot rang out and Leutnant Hennes' helmet flew off his head: a Soviet sniper had nailed him from the side... For an eternal second, Hennes stared down at Walz, disbelief etched on his face, then he toppled backwards into the bottom of the crater - dead."</p><p>&mdash;excerpt from the book Island of Fire by Jason D. Mark</p>}
     dates{1942-10-17 / 1942-10-17}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5213,7 +5213,7 @@
     description{<p>Near the Volga, Stalingrad, Russia&mdash;During the last major attack by the German 6th Army to capture Stalingrad, a formidable structure known as the Commissar House (Kommissarhaus) was targeted as one of the key points near the Volga River. With the temperature at minus 25 degrees on the morning of the 13th, Pionier-Bataillon 45 - attached to SturmKompanie 44 - attacked the structure. Facing them, the remnants of Russian 650th Rifle Regiment stiffened their resolve to deny this fortress to the Germans. The fighting was vicious: the Germans eventually forced their way in but the Russians never surrendered control of the house - they were prepared to fight without ammunition to the last man.</p>}
     dates{1942-11-13 / 1942-11-13}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5224,7 +5224,7 @@
     description{<p>Obliskaya Airfield, Russia&mdash;During the opening stages of Operation Uranus, Major Gheorghe Rasconescu led the 1Bn, 15th Dorobanti Infantry Regiment to the relative safety of the Chir River at Obliskaya on November 25th, successfully retreating in the face of overwhelming Soviet armored thrusts. There they set up a defensive perimeter at a nearby airfield. The Soviet 8th Cavalry Corps was tasked with clearing the north bank of Chir River. Major Rasconescu and his battalion fought off Soviet attacks for seven days, determined to not let the vital airfield fall into enemy hands.</p>}
     dates{1942-11-29 / 1942-11-29}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5235,7 +5235,7 @@
     description{<p>Barrikady Fuel Tanks, Stalingrad, Russia&mdash;For six weeks the Germans had surrounded Lyudnikov's 138th Rifle Division, separating it from the rest of the front line. As the Germans attempted to crush Lyudnikov's "island" by pushing it against the Volga River, Soviet resistance stiffened near the fuel cells area. Each side relentlessly probed for weakness in the other's line. The Soviets found, then exploited one, and reconnected the 138th to the rest of the front line.</p>}
     dates{1942-12-22 / 1942-12-22}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5246,7 +5246,7 @@
     description{<p>Velikiye Luki, Russia&mdash;The Soviet Kalinin Front offensive at the beginning of winter 1942 successfully cut off and encircled the key transportation hub of Velikiye Luki. The German 277th Infantry Tegt. under orders from Hitler to hold at all costs resolutely defended the city. Under constant pressure from units of the 3rd Shock Army, the battered remnants of the defenders were forced back to the Citadel - a key defensive position in the western half of town. As 1943 arrived, the end drew nearer for the 277th.</p><p>In a last ditch effort to relieve the town, elements of the 5th Gebirgsjäger (Mountain) Infantry Regt. assaulted the Soviet 113th Rifle Regt., attempting to break through to the Citadel.</p>}
     dates{1943-01-14 / 1943-01-14}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5257,7 +5257,7 @@
     description{<p>Mamayev Kurgan, Stalingrad, Russia&mdash;The fighting over the ground of the Mamayev Kurgan hill mass, a prominent terrain feature of the central city area of Stalingrad, was among the most bitter of the fall and winter of 1942. This is a large hilly area extending up from the Volga River through the center of the city towards the west, commanding a critical position across the entire city. Today, it holds a deeply moving memorial for the Russian people.</p>}
     dates{1942-09-27 / 1942-09-27}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5279,7 +5279,7 @@
     description{<p>Benouville, France&mdash;At 0016 hours, three Airspeed Horsa gliders, flowsn with outstanding skill by pilots of the Glider Pilot Regiment, landed troops from the 2nd Battalion, Oxfordshire and Buckingham Light Infantry within 50 yards of the Caen Canal Bridge at Benouville in Normandy, France. The bold and audacious coup de main attack on the bridge was a complete success and, after a brief 15 minute fight, this vital bridge was in Allied hands.</p><p>Determined counterattacks by elements of the 736th Grenadier Regiment, 716th Infantry Division were launched throughout the early morning hours to retake the bridge.</p>}
     dates{1944-06-06 / 1944-06-06}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5290,7 +5290,7 @@
     description{<p>Pointe-du-Hoc, France&mdash;The US Rangers drew the most difficult single mission for the morning of the invasion of Nazi-occupied France: Neutralize the Battery of guns on Pointe du Hoc. The Rangers had to scale 100-foot cliffs on the seaward side of the point to take out the battery of six 155mm guns to ensure a safer passage for the rest of the invasion forces on Utah and Omaha beaches. After a hellish ride across the channel and nearly landing at the wrong point, the Rangers disembarked from the Higgins boats to attempt what many thought was a suicide mission.</p>}
     dates{1944-06-06 / 1944-06-06}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5301,7 +5301,7 @@
     description{<p>Pointe-du-Hoc, France&mdash;The plan called for three of the companies of 2nd Ranger Battalion to land east and west of the point at 0630 hours, instantly following a half-hour bombardment from the battleships Arkansas and Texas. Delta on the West with Echo and Foxtrot on the East, the rest of the Battalion was in reserve. The Rangers were armed with M-1 rifles, Thompson submachine guns, grenades and pistols. Would this audacious plan silence the expected six 155mm guns on Pointe du Hoc? Would the timing of the bombardment and the landing work perfectly? Now you can find out.</p>}
     dates{1944-06-06 / 1944-06-06}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5312,7 +5312,7 @@
     description{<p>Omaha Beach, Fox Green Sector, Normandy&mdash;Pinned on the beach under relentless fire from German Widerstandsnests (resistance points) hidden in the overlooking bluffs, US soldiers hunkered down behind the meager protection of the beach's loose stone shingle. But in one sector the Germans were in plain sight - WN 61 protected an 88mm gun emplaced at beach level and fixed to fire west along the length of the beach. In front of the dreaded gun, the infantry of F Company, 16th Regiment witnessed its deadly effectiveness against incoming invasion craft. With his officers killed, Sgt. Frank Strojny led survivors of his company and a lost boat team of E Company, 116th Regiment in a daring assault against the heavily fortified but thinly manned position. It was the first WN to fall.</p>}
     dates{1944-06-06 / 1944-06-06}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5323,7 +5323,7 @@
     description{<p>Omaha Beach, Normandy&mdash;Upon landing under heavy fire at the west end of Omaha Beach at 0630 hours, a boat team of Rangers of C Company, 2nd Battalion scaled cliffs to become the first US soldiers on the high ground. Assigned a mission to the west, Captain Ralph Goranson instead turned east to attack the German strong point delivering deadly fire onto the beach - a decision that ultimately saved hundreds of lives. Joined by a stray boat team from B Company, 116th Infantry, the rangers entered into a maze of German communication trenches manned primarily by interior troops of the 716th division. This action pulled German troops from Widerstandsnests 73 and 72 into running firefights all morning.</p>}
     dates{1944-06-06 / 1944-06-06}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5334,7 +5334,7 @@
     description{<p>Overlooking Omaha Beach, Normandy&mdash;After knocking out a key German Widerstandsnest on the east end of Omaha Beach, US forces from L Company, 16th Infantry led by Lt. Jimmie Monteith, gained a toe-hold on the high ground. As Monteith and his men advanced through the hedgerows to secure the beachhead's eastern flank, they ran into the only major German counterattack of the day. Veteran elements of 916 Regiment/352nd Division, supported by conscripts of the 716th Division, converged on L Company from all flanks with orders to fight their way through the Americans and retake the coastal position. Lt. Monteith's leadership under fire earned him the Congressional Medal of Honor, awarded posthumously. General Eisenhower himself was heard to say: "This man was good."</p>}
     dates{1944-06-06 / 1944-06-06}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5345,7 +5345,7 @@
     description{<p>La Breche, Sword Beach, France&mdash;The European invasion was coming, everyone knew it, but where? Little did the grenadiers of Hauptman Kuhtz's 10th Company, 736th Grenadier Regiment know that their position in Widerstandsnest 20, codenamed "Cod", was the center of the British 3rd Infantry Division's assault sector on Sword Beach. The men of A and B companies of the 2nd East Yorkshire Regiment landed along the French coastline at 0725 hours much to the surprise of the men of WN20. Despite their surprise the grenadiers of the 736th put up a determined resistance (knocking out several British tanks and slowing the advance inland) before being overwhelmed by the invasion forces.</p>}
     dates{1944-06-06 / 1944-06-06}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5356,7 +5356,7 @@
     description{<p>Authie, Normandy&mdash;After landing at Juno and dashing for its objective of Carpiquet Airfield, 3rd Canadian Division met the counterattack of 12th SS "Hitlerjugend" Panzer Division northwest of Caen. Aided by observation from a nearby abbey tower, the SS caught the advancing Alied Armor in the flank between the outskirt villages of Buron and Authie. North Nova Scotia Highland infantry of Captain Hank Fraser's C Company with machinegunners of the Ottawa Cameron Highlanders had made Authie but had outrun artillery support. Fraser sent his carriers rearward as the first wave of 18-year-old Panzergrenadiers came on to throw the Canadians back into the sea. The vicious close-quarters fight that ensued amid smoke and German shellfire inaugurated a bitter rivalry between the two divisions.</p>}
     dates{1944-06-07 / 1944-06-07}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5367,7 +5367,7 @@
     description{<p>Utah Beach Vicinity, Normandy&mdash;Fire from the 210mm guns of the Crisbecq Coastal Artillery Battery, commanded by Lw. Walter Ohmsen, constantly harassed and prohibited the unloading of supplies and reinforcements on Utah Beach. On June 7 the 1Bn, 22nd Infantry was tasked with neutralizing the guns. However, the assault faltered when Lt. Ohmsen called fire from the 150mm guns of the nearby Azeville Battery on his own position to drive off the attack. The 1Bn renewed the assault on D-Day plus 2. Led by C Company, organized into special assault groups, the 1Bn very nearly succeeded in eliminating the Crisbecq guns but once again the infantrymen were thwarted by artillery fire from Azeville and a timely counterattack by elements of the 919th Grenadier Regiment.</p>}
     dates{1944-06-08 / 1944-06-08}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5378,7 +5378,7 @@
     description{<p>Chateau Sainte-Genevieve, Brittany&mdash;Hours before OVERLORD, coded transmissions alerted resistance cells across France - the Forces Francaises de l'Interieur (FFI) - to assemble and hinder the expected movement of German forces toward Normandy. In Brittany, airdropped French commandos joined a major FFI bivouac near Saint-Marcel and began sabotaging rail lines to block Axis reinforcement eastward. British airdrops supplying the FFI camp eventually attracted German attention, and on 18 June local garrison forces massed to flush the partisans out. French SAS Lt. Nicholas Marienne, commanding a sector of the perimeter, found himself in the path of Axis Osttruppen advancing on a chateau they had mistaken for the bivouac's headquarters.</p>}
     dates{1944-06-18 / 1944-06-18}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5389,7 +5389,7 @@
     description{<p>Carpiquet, Normandy&mdash;In Operation Windsor, 3rd Canadian Division once again set out to take Carpiquet Airfield, still in the hands of their bitter foe, the 12th SS "Hitlerjugend". After a heavy rolling bombardment, the North Shore (New Brunswick) Regiment moved out across a mile of high-standing wheat toward the village adjoining the airfield. Zeroed in on the flat approaches, German shells tore through the Canadians, but die-hard remnants reached the ruined ville to wrest it from the small but well-prepared force of Hitler Youth.</p>}
     dates{1944-07-04 / 1944-07-04}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5400,7 +5400,7 @@
     description{<p>Outside St. Lo, Normandy&mdash;On 11 July, XIX Corps was ordered to attack southward towards St. Lo as part of a First Army offensive to push the German Seventh Army out of Normandy. The 29th Division was ordered to attack and seize key terrain east of St. Lo. As part of the division's attack plan, General Gerhardt ordered the 116th Infantry to conduct the main attack. Lead companies of 2nd Battalion (supported by the combat battalions of the 121st Engineers and 747th Tank) were trained in the division's new hedgerow tactics.</p>}
     dates{1944-07-11 / 1944-07-18}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5411,7 +5411,7 @@
     description{<p>La Madeleine, France&mdash;The afternoon of 15 July, the US 116th Infantry Regt. launched an attack along the Martinville Ridge east of St. Lo. As nightfall approached, the 116th was ordered to halt and consolidate its gains for the day. By the time Maj. Bingham's 2nd Bn. received the order, over half of it had advanced one half mile beyond the support of the 1st and 3rd battalions. Maj. Bingham's 2nd Bn. sat astride the St. Lo - Bayeux highway just east of the village of La Madeleine and was ordered to hold position. During that night, elements of the 9th Fallschirmjäger Regt. quickly cut off Bingham's men. Bingham and his battalion remained isolated for two days, suffering under intense artillery barrages and sporadic small arms fire. On 18 July a renewed assault by 3rd Bn., 116th Inf. managed to break through to the 2nd Bn. The combined 2nd and 3rd Battalions were to launch an immediate attack on St. Lo but, before they could do so, elements of the 9th Fallschirmjäger Regt. with artillery support launched its own assault against the Americans.</p>}
     dates{1944-07-17 / 1944-07-17}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5422,7 +5422,7 @@
     description{<p>Caen&mdash;The German defense of Caen was tenacious, demanding great effort from the British and Canadian forces. Operation Atlantic (part of the Operation Goodwood offensive), opened with the attack of the Canadian 8th Brigade into Giberville and Colombelles, held by conscripts of the Luftwaffe 16th Division supported by a battle group of the 21st Panzer Division. There were delays in the advance into Colombelles and it was proposed that a platoon from the Royal Regina Rifles assisted by members of Compagnie Scamaroni (a very notable FFI unit) should infiltrate and cross the River Orne at Vaucelles to secure a vital bridging site.</p>}
     dates{1944-07-18 / 1944-07-18}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5433,7 +5433,7 @@
     description{<p>Cheux, Normandy&mdash;The Allied failure to capture Caen on D-Day allowed the Germans to rush reinforcements to the area. In an effort to isolate and pressure the defenses around Caen, Field Marshal Montgomery devised and launched Operation Epsom, spear-headed by the British 43rd and the Scottish 15th Infantry Divisions. At dawn on June 26th men of the 2nd Bn (Scottish 15th Division - as yet not tested in battle) approached the objective - the village of Cheux - which was heavily shrouded in mist and defended by the men of the 12th SS Pionier Bn (rear-echelon troops of the 12th SS Panzer Division). The Highlanders advanced on Cheux following a walking barrage from the 15th Division's artillery. The barrage enabled the Highlanders to penetrate the main line of resistance. Once in the enemy rear it seemed that Cheux would be easily cleared. However, the Highlanders were not prepared for the unexpected stiff resistance. Let by Lt. Bruno Asmus and Lt. Lorenz, the SS HQ and SS Supply troops defended vigorously, forcing the Highlanders to clear Cheux house by house often in hand-to-hand combat.</p>}
     dates{1944-06-26 / 1944-06-26}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5444,7 +5444,7 @@
     description{<p>Hill 314, East of Mortain, France&mdash;The German High Command launched Operation Luttich on the night of 6/7 August aimed at the US 30th Infantry Division occupying the village of Mortain. The initial onslaught was partially successful in penetrating the American lines and the 2nd Bn, 120th Infantry Regiment was surrounded and cut off east of Mortain. The men of E Company commanded by Lt. Ralph Kerley occupied Hill 314 on the right flank of US position. Elements of the 2nd SS Panzer and 17th SS Panzer Grenadier Divisions repeatedly attacked the 2nd Bn positions day and night. Each assault was helped driven off by the accurate on call artillery fire from the 230th FA Bn directed by E Company's FO, Lt. Robert Weiss. On the night of 8 August elements of the 17th SS Panzer Grenadier Division renewed their assault on Hill 314 successfully penetrating E Company's position. Lt. Kerley rallied his troops and drove off the grenadiers with small arms fire and Lt. Weiss' relentless artillery missions.</p>}
     dates{1944-08-08 / 1944-08-08}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5455,7 +5455,7 @@
     description{<p>Hill 262, The Falaise Pocket&mdash;After the Allied breakout forced by Operation Cobra, the German army was caught between two pincer movements with most of the Seventh Army trapped in the rapidly closing "Falaise Pocket." The retreating army desperately sought to escape along its last remaining route, the Chambois-Vimoutiers road, which passed before Hill 262. The 1st Polish Armoured Division attached to the 1st Canadian Army was ordered to take the hill (which had previously been invested by the Germans with strong defensive positions) to somehow "close the door." On August 19th, the Polish forces created a devastating ambush on the escaping German forces in the valley below. In desperation, elements of the 2nd SS Panzer Division mounted a night assault on the 20th advancing in waves, with the firce support of Tiger tanks. The famous defense led by Polish Major Stefanowicz was inspired - all ammunition was to be used and he uttered the phrase: "Surrender is out of the question!" An attached Canadian artillery observation officer, Captain Sevigny, designed the pre-registered fire for the defense.</p>}
     dates{1944-08-20 / 1944-08-20}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5466,7 +5466,7 @@
     description{<p>Stalingrad, Russia, October 30, 1942</p><p>As fierce battles raged on for the “Barrikady” ordnance factories to the north and the “Krasny Oktyabr” sector to the south, German forces in between the two had advanced steadily eastwards until they were able to interdict an important ferry route across the Volga River. While plans for a Soviet counteroffensive on the following day by Colonel Sokolov’s newly-arrived 45th Rifle Division were being hammered out, German and Russian forces jockeyed for position amidst the rubble and ruins of the shattered city of Stalingrad.</p>}
     dates{1942-10-30 / 1942-10-30}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5477,7 +5477,7 @@
     description{<p>Near Belle Fontaine, France, July 11, 1944</p><p>Shortly after midnight, German guns laid down a brief artillery barrage onto positions held by the 1st Battalion of the US Army’s 115th Infantry Regiment, which had recently been brought up to the front line to relieve the battle-worn 116th after a 48-hour rest three miles behind the front lines.</p><p>As the bombardment eased, elements of the 3rd Fallschirmjaeger Division – including a handful of combat engineers armed with flamethrowers – assaulted the still-dazed Americans, who were themselves preparing for an early morning attack against these very same German troops.</p>}
     dates{1944-07-11 / 1944-07-11}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5496,109 +5496,131 @@
   theme{"WW2"}
   series{"Combat Commander"-"Europe","Combat Commander Europe"-"Expansion #2"}
   scenario{"CCE 0062 ~ Bessarabian Nights II"}{
-    description{<p>is a new version of Scenario 6 originally published in Combat Commander: Europe, set in a German rear area as Soviet forces press German forces back into the Carpathian Mountains</p>}{
+    description{<p>Bessarabia, April 1944</p><p>By mid April of 1944, the southern front in Russia had seen Soviet troops on the offensive for four consecutive months. Zhukov's plan to attack beyond the Dneister River as far as Chernovtsy was approved by Stavka, with Russian troops finally reachning the Carpathian Mountains and cutting off German forces in Poland from the Axis armies in Southern Russia that were now backing up into Rumania</p><p>As constant harassment by partisan bands threatened both supply and communications to the forward German echelons, more and more rear-area troops were needed to quess these local upstarts.</p>}{
     dates{1944-04-01 / 1944-04-30}{
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
+    side{"Axis","Partisan","Germany","Russia"}
+    party{"Germany"-"2","Partisan"-"2"}
   }
   scenario{"CCE 0063 ~ Praise the Lord and Pass the Ammunition"}{
-    description{<p>set in Rouen France with FFI partisans moving quickly and elusively to attack elements of the German 2nd SS Panzer Division looking for a place to rest</p>}{
+    description{<p>Rouen, France, 30 August 1944</p><p>During their retreat from the Falaise Pocket, elements of 2nd SS Panzer Division hunkered down for the night &mdash; sans vehicles &mdash; in the city of Rouen. In their search for overnight lodging, several mechanics came across two abandoned infantry guns poking out the front and back doors of a looted church. There were dozens of rounds crated up near by so the men set about the task of forming an ad hoc strongpoint. No sooner had the first ammunition box been pried open when the sound of small arms fire heralded the presence of armed FFI partisans somewhere close by.</p>}{
     dates{1944-08-30 / 1944-08-30}{
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
+    side{"Axis","Partisan","Germany","France"}
+    party{"Germany"-"2","Partisan"-"2"}
   }
   scenario{"CCE 0064 ~ Predator Becomes Prey,"}{
-    description{<p>set outside Leskovic, Albania, with ELAS partisans in a prepared ambush against elements of the German 1st Gebirgsjäger Division, whose commander suspecting a ruse changed his attack plans</p>}{
+    description{<p>Leskovic, Albania, 27 June 1943</p><p>The German 1st Gebirgsj&auml;ger (mountain) Division was ordered to redeploy from Serbia to Greece. Hearing of these plans, Greek ELAS partisans &mdash; the &ldquo;National Popular Liberation Army&rdquo; &mdash; forcefully evacuated the village of Leskovic then hunkered down in buildings and trees along the road in preperation for an ambush against the mountain troops as they traveled along the expected route. The veteran German officers, however, expected such a ruse; they set up a plan to outflank the small town and assault it from two sides.</p>}{
     dates{1943-06-27 / 1943-06-27}{
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
+    side{"Axis","Partisan","Germany","Greece"}
+    party{"Germany"-"2","Partisan"-"2"}
   }
   scenario{"CCE 0065 ~ Road Trip"}{
-    description{<p>set at Cressensac, southern France, with FFI partisan forces ambushing the German 4th SS Panzergrenadier Regimental HQ</p>}{
+    description{<p>Cressensac, France, 8 June 1944</p><p>In the south of France, the 2nd SS Panzer Division prepares to move north to counterattack the newly-established Allied beachheads. Partisan forces ambush the HQ section of 4th SS Panzergrenadier Regiment as it foolishly travels along a road ahead of its better-armed reconnaissance platoon. This was one of several skirmishes with French partisans that ultimately enraged the &ldquo;Das Reich&rdquo; SS Panzer Division into slaughtering a total of 808 civilians on June 9th and 10th, including the whole population of the martyred village of Oradour-sur-Glanne.</p>}{
     dates{1944-06-08 / 1944-06-08}{
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
+    side{"Axis","Partisan","Germany","France"}
+    party{"Germany"-"2","Partisan"-"2"}
   }
   scenario{"CCE 0066 ~ Those are not Birds"}{
-    description{<p>set in the Bryansk Forest in Byelorussia, with Soviet partisans of the Orlov Regiment preparing a trap for elements of the German 707th Security Division during Operation Vogelsang</p>}{
+    description{<p>Near Dyatkovo, Bryansk Forest, Byelorussia, 8 June 1942</p><p>Operation Vogelsang was the first of many operations conducted by German forces against the Soviet Partisans centered in the Bryansk Forest. A key developing tactic was to encircle a large area and probe inward, literally beating every bush, to attempt to gather and destroy the partisans. However, the partisans response was two-fold: first, rarely gather in mass and second, deploy a defensive tactic the Germans called the &ldquo;bell,&rdquo; making German progress slow and difficult. In one instance, the deployment of the &ldquo;bell&rdquo; forced the German unit to have to fight its way our &mdash; the trapper had been trapped.</p>}{
     dates{1942-06-08 / 1942-06-08}{
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
-    author{"Jensen, Chad"}
+    author{"Jensen, Chad","Foley, John A."}
+    side{"Axis","Partisan","Germany","Russia"}
+    party{"Germany"-"2","Partisan"-"2"}
   }
   scenario{"CCE 0067 ~ The Orient Express"}{
-    description{<p>set at the south end of the Gorgopotamos Bridge near Lamia, Greece, with ELAS partisans seeking to suppress the Italian Garrison while British Demolition commandos prepare to blow the bridge during Operation Harling</p>}{
+    description{<p>Gorgopotamos Bridge, Near Lamia, Central Greece, 25 November 1942</p><p>Operation Harling was designed to drop commandos of the British Special Operations Executive into the Greek highlands to meet up with Greek partisan factions, namely ELAS and EDES, select a key railroad bridge and destroy it. Out of three choices, the Gorgopotamos Bridge was the most suitable choice for the operation, which deployed seven teams with various roles from the three groups. At 2300 hours on the south side of the bridge, while the ELAS guerillas suppressed the Italian garrison and prevented reinforcements from arriving via rail, the British demolition team made it onto the bridge to prepare the explosives. The destruction of the bridge would have a serious impact on delivering supplies and ammunition to Rommel's forces in North Africa.</p>}{
     dates{1942-11-25 / 1942-11-25}{
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
-    author{"Jensen, Chad"}
+    author{"Jensen, Chad","Foley, John A."}
+    side{"Axis","Partisan","Italy","Greece","British"}
+    party{"Italy"-"2","Partisan"-"2"}
   }
   scenario{"CCE 0068 ~ Tito’s Trick"}{
-    description{<p>set at Jablanica, Hercegovina, at the railroad bridge crossing of the Neretva River, with Partisans attempting to seize the bridgehead and destroy the Chetnik forces blocking the Partisan escape from German forces (during the 4th Enemy Offensive)</p>}{
+    description{<p>Neretva River, Jablanica, Hercegovina, 28 February 1943</p><p>During the 4th Enemy Offensive (Fall Weiss), the culminating battle occurred at Jablanica, known as the Battle for the Wounded. The main Partisan forces were trapped in a constricted valley pocket of Jablanica on the western side of the Neretva River by German forces, with Chetnik forces covering the eastern side of the river focused at the single rail crossing opposite the town. Tito ordered the bridge to be destroyed in a clever ruse to feign the Partisan attempt to push northward. German units were redeployed, giving the Partisans enough time to repair the bridge and assault across to break through the Chetnik line. German command quickly caught on, put the bridge under intensive bombardment, but failed to stop the breakout, the rescue of many thousands of wounded Partisans and their escape into the high mountains over the next ten days.</p>}{
     dates{1943-02-28 / 1943-02-28}{
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
-    author{"Jensen, Chad"}
+    author{"Jensen, Chad","Foley, John A."}
+    side{"Axis","Partisan","Italy","Yugoslavia"}
+    party{"Italy"-"2","Partisan"-"2"}
   }
   scenario{"CCE 0069 ~ Compagnie Scamaroni II"}{
-    description{<p>is a new version of Scenario 58 originally published in Combat Commander: Normandy, set at night in the Vaucelles neighborhood of Caen just before the Orne River</p>}{
+    description{<p>Caen, France, 18 July 1944</p><p>Operation Atlantic (part of the Operation Goodwood offensive), opened with the attack of the Canadian 8th brigade into Giberville and Colombelles, held by conscripts of the Luftwaffe 16th Division supported by a battle group of the 21st Panzer Division. There were delays in the advance into Colombelles and it was proposed that a platoon from the Royal Regina Rifles assisted by members of Compagnie Scamaroni (a very notable FFI unit) should infiltrate and cross the River Orne at Vaucelles to secure a vital bridging site. As the infiltrators passed through to the Orne, a rearguard engaged and delayed the responding Luftwaffe troops.</p>}{
     dates{1944-07-18 / 1944-07-18}{
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
-    author{"Jensen, Chad"}
+    author{"Jensen, Chad","Foley, John A."}
+    side{"Axis","Partisan","Germany","France"}
+    party{"Germany"-"2","Partisan"-"2"}
   }
   scenario{"CCE 0070 ~ Appointment at Daliki"}{
-    description{<p>set in a remote village south of Lepel, Byelorussia, with Soviet partisans of an important Operative Center suddenly trapped by a well-executed German rear-area clearing operation</p>}{
+    description{<p>Village of Pospach, Byelorussia, 26 June 1943</p><p>A detached infantry battalion, with orders to surround and eliminate the Soviet partisan operation center at Daliki, marched and countermarched along the Lepel-Borisov road for a few days to throw off partisan discovery of the actual plan. At mid-day, the commander ordered individual companies to march suddenly along the unpaved roads to Daliki from multiple directions (employing the German tactic of the &ldquo;cauldron&rdquo; to encircle the partisan positions). As Coy A approached the small village of Pospach, it was ordered to split into platoons to surround the partisan outpost, including any leaders (the most desired German target). Desultory fire from the outpost signaled that the defenders had only just become aware of the approaching danger.</p>}{
     dates{1943-06-26 / 1943-06-26}{
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
-    author{"Jensen, Chad"}
+    author{"Jensen, Chad","Foley, John A."}
+    side{"Axis","Partisan","Germany","Russia"}
+    party{"Germany"-"2","Partisan"-"2"}
   }
   scenario{"CCE 0071 ~ Valley of the Heroes"}{
-    description{<p>set outside the village of Tjentište, Eastern Bosnia, at the Sutjeska River, where trapped Partisan units fought their way through a weak point in the German-Croatian lines, escaping once again although at great cost (during the 5th Enemy Offensive)</p>}{
+    description{<p>Sutjeska River, Tjentiste, Foca, Eastern Bosnia, 14 May 1943</p><p>During the 5th Enemy Offensive (Fall Schwarz) the culminating battle occurred near Foca, known as the Battle of the Sutjeska. This was a massive German operation, using some 127,000 troops and an advantageous starting position to surround the 18,000 troop Partisan force in the Durmitor mountain area in a wasteful monthlong battle. Once again, the German command had achieved an advantage by pressing the main Partisan force against a major river. Partisan command found a weaker point in the German line, mainly held by a German-trained Croatian division, forced a breakthrough and escaped (despite heavy losses) into the high mountains at a point now commemorated as the Valley of Heroes.</p>}{
     dates{1943-05-14 / 1943-05-14}{
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
-    author{"Jensen, Chad"}
+    author{"Jensen, Chad","Foley, John A."}
+    side{"Axis","Partisan","Croatia","Yugoslavia"}
+    party{"Croatia"-"2","Partisan"-"2"}
   }
   scenario{"CCE 0072 ~ Thunderstorm"}{
-    description{<p>set on the island of Korčula on the Croatian Adriatic coast, with Partisans of the Dalmatian Brigade attempting to buy enough time for their comrades to evacuate from surrounding German units of the 118th Jäger Division (during the 6th Enemy Offensive)</p>}{
+    description{<p>Central Road, Island of Korcula, Croatia, 23 December 1943</p><p>During the 6th Enemy Offensive (Operation Herbstgewitter), the second phase of the operation involved the attempt to remove Partisans occupying the Island of Korcula on the Dalmatian coast, which served as a useful ferry point for supplies and ammunition. Before the dawn on the 22nd, two detachments departed in heavy seas from the Peljesac peninsula via Siebelf&auml;hre landing boats, landed on the spare stretches of the northern side of the island and then moved swiftly to cut the central road traversing the island. On the 23rd, weak Partisan forces attempted to engage the holding force to wrest control of the road (and protect the rear). However, soon it was reported by an observer on the central heights of Smokovica that German forces were landing in the rear area at Karbuni (south side of the island), precipitating the decision to retreat and evacuate.</p>}{
     dates{1943-12-23 / 1943-12-23}{
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
-    author{"Jensen, Chad"}
+    author{"Jensen, Chad","Foley, John A."}
+    side{"Axis","Partisan","Germany","Yugoslavia"}
+    party{"Germany"-"2","Partisans"-"2"}
   }
   scenario{"CCE 0073 ~ No Quarter"}{
-    description{<p>set at the town cemetery outside Drvar, Western Bosnia, with Partisans of the Lika Division in a ferocious showdown with elements of the 500th SS Fallschirmjäger Battalion after a spectacular but failed attempt to seize Tito in his country HQ (during the 7th Enemy Offensive)</p>}{
+    description{<p>Town Cemetary, Drvar, Western Bosnia, 25 May 1944</p><p>During the 7th Enemy Offensive, a spectacular airborne attempt (Operation R&ouml;sselsprung) was made to capture and/or kill Tito and visiting dignitaries in his mountain headquarters at Drvar. Although the operation started with gret surprise at dawn, a group of Partisan officers in training delayed the German paratroops long enough so that Tito and his staff escaped over the mountains. By mid-day, strong Partisan forces began to move in and both sides entered into a pitched and vicious battle at the town cemetary located on some high ground outside of town. Heavy losses occurred, but still without serious result from the German perspective &mdash; all they took away was a bullet-riddled uniform belonging to the untouchable Tito.</p>}{
     dates{1944-05-25 / 1944-05-25}{
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5618,7 +5640,7 @@
     description{<p>set at the base of Mt Vulcan on Simpson Bay across from the town of Rabaul, with a Japanese barge landing against Australian defenses at night</p>}
     dates{1942-01-23 / 1942-01-23}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5628,7 +5650,7 @@
     description{"set at the village of Oivi, with Australians and Papuans of Maroubra Force facing the rapidly moving Yokohama Advance Party"}{
     dates{1942-07-26 / 1942-07-26}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5638,7 +5660,7 @@
     description{"set at Milne Bay, with an SNLF attack against Australian units"}{
     dates{1942-09-03 / 1942-09-03}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5648,7 +5670,7 @@
     description{"set at a heavily-contested crossing of Eora Creek high in the Stanleys"}{
     dates{1942-10-17 / 1942-10-17}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5658,7 +5680,7 @@
     description{"set along one of the high ridges above the treacherous Eora Creek, with intermingled combatants"}{
     dates{1942-10-28 / 1942-10-28}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5668,7 +5690,7 @@
     description{"set at Gorari after the fall of Kokoda to the Australians, with a desperate banzai action"}{
     dates{1942-11-11 / 1942-11-11}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5678,7 +5700,7 @@
     description{"set on the Soputa-Sanananda Road, with US forces entering the conflict in horrific swamp forest"}{
     dates{1942-12-10 / 1942-12-10}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5688,7 +5710,7 @@
     description{"set at Buna station, with Australian units using M3 tanks to eradicate the defenders"}{
     dates{1942-12-18 / 1942-12-18}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5698,7 +5720,7 @@
     description{"set at the Wau air strip (with active landing operations during the action), with Australian defenders facing a desperate attack"}{
     dates{1943-01-31 / 1943-01-31}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5708,7 +5730,7 @@
     description{"set outside the outpost at Wau, with patrols of both sides (including Japanese Patrol Dogs) attempting to use the same bridge at cross-purposes"}{
     dates{1943-01-30 / 1943-01-30}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5718,7 +5740,7 @@
     description{"set during the advance upon Salamua, with Australian units driving upon a Japanese base camp set in the kunai-covered heights of the interior"}{
     dates{1943-06-30 / 1943-06-30}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5728,7 +5750,7 @@
     description{"set at the mouth of the Song River near Finschhafen, with a Japanese barge landing at night against combined Australian and US defenders"}{
     dates{1943-10-17 / 1943-10-17}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5738,7 +5760,7 @@
     description{"set on the Driniumor River, featuring the heroic stand of an unknown US BAR operator facing a hastily prepared Japanese night charge"}{
     dates{1944-07-10 / 1944-07-10}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5748,7 +5770,7 @@
     description{"set on the Driniumor River, featuring a Troop of US Cavalry trying to stave off being surrounded by Japanese units that had surprised them by walking casually into their positions"}{
     dates{1944-07-21 / 1944-07-21}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5768,7 +5790,7 @@
     description{<p>As tanks of the 1st Moscow Motor Rifle Division clashed with the 18th Panzer Division's armored spearhead north of Lipki, infantry elements from both divisions were tasked with securing their reflective southern flanks.</p><p>One such encounter between these flanking forces occurred in a heavily-wooded hamlet south of town, where several Platoon-sized groups met while trying to secure an important crossroads.</p>}
     dates{1941-07-03 / 1941-07-03}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5779,7 +5801,7 @@
     description{<p>Bocage Country, Normandy, France&mdash;</p><p>A few weeks after the D-Day landings, General Bradley was keen to choose a suitable place for a swift, decisive breakout with a minimum of casualties in order to get his armored forces into more tank-friendly terrain. The key ground to the south of US First Army, however, was the town of St. Lo along the Vire River - which could only be had via a tough slugging match through moors, marshes, and a patchwork of tiny fields surrounded by dense hedgerows.</p><p>One such skirmish occurred amongst the latter terrain on the outskirts of Pont-Hebert, just a few miles from the vital St. Lo - Countances road.</p>}
     dates{1944-07-01 / 1944-07-31}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5790,7 +5812,7 @@
     description{<p>Outside Brest-Litovsk&mdash;A Soviet forward CP belonging to the retreating 133rd Infantry Regiment is to be abandoned by noon, but not before all communications equipment is smashed and documents burned - including detailed plans of much of the frontier fortifications in and around Brest-Litovsk several miles to the east.</p><p>A battered company of Russian militia must halt the German juggernaut long enough to affect a withdrawal to the relative safety of the Brest-Litovsk citadel.</p>}
     dates{1941-06-24 / 1941-06-24}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5801,7 +5823,7 @@
     description{<p>Humaine, Belgium&mdash;After days of fierce combat and heavy bombardment, the town of Humaine was surrounded by forces of the US 2nd Armored Division. Most of the German defenders surrendered after some hard fighting.</p><p>Remnants of the 9th Panzer Division occupying a chateau on the north end of town refused to give up, however, and it fell to CCR to root out these stubborn troops.</p>}
     dates{1944-12-27 / 1944-12-27}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5812,7 +5834,7 @@
     description{<p>Staritsa, Russia&mdash;When winter hit Eastern Europe with its full fury in late 1941, the German 26th Infantry was just one of many Axis Divisions halted more by the extreme weather than by the stubborn Russian defense.</p><p>In the final weeks of 1941, the 31st Soviet Army - part of the Kalinin Front under General Yushkevich - received a large influx of Siberian troops. Clad in quilted jackets and fur hats and inured to the cold, they led many small-unit actions up and down the frozen front. One such attack took place near Staritsa, Northwest of Moscow, as German troops of Infantry Regiment 18 were fighting to stay warm in their trenches.</p>}
     dates{1941-12-30 / 1941-12-30}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5823,7 +5845,7 @@
     description{<p>St. Mere-Eglise, France&mdash;In the evening of D-Day, the German 1058th Grenadier Regiment counterattacked St. Mere-Eglise and recaptured the edge of town. Elements of the US 505th Parachute Regiment were ordered to repulse this enemy force the following morning.</p><p>At dawn on June 7, an American Lieutenant by the name of Waverly Wray scouted ahead and came across several German soldiers around a radio, whom he promptly shot dead. Wray high-tailed it back to his company to begin the assault, unaware that he had just killed the eight officers in charge of the Grenadier Regiment's 1st Battalion.</p>}
     dates{1944-06-07 / 1944-06-07}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5834,7 +5856,7 @@
     description{<p>Bessarabia&mdash;By mid April of 1944, the southern front in Russia had seen Soviet troops on the offensive for four consecutive months. Zhukov's plan to attack beyond the Dneister River as far as Chernovtsy was approved by Stavka, with Russian troops finally reaching the Carpathian Mountains and cutting off German forces in Poland from the Axis armies in Southern Russia that were now backing up into Romania.</p><p>As constant harassment by partisan bands threatened both supply and communications to the forward German echelons, more and more rear-area troops were needed to quell these local upstarts.</p>}
     dates{1940-04-01 / 1944-04-30}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5845,7 +5867,7 @@
     description{<p>Velikiye-Luki, Russia&mdash;As the Kalinin Front - led by several Soviet Shock Armies - drove westward they were able to completely encircle the German 277th Infantry Regiment at Velikiye-Luki. Outside relief for this surrounded force was not to be had, however, so orders were given for its units to effect a breakout.</p><p>The Soviet 129th Rifle Regiment held the line to the southwest on the road to Nevel. This force appeared to be the weakest, so it was in this sector that many attempts to exfiltrate were made. One such night-time attempt involved Lieutenant Schrader's platoon of 32 men, who had been hiding in brush-covered slit trenches throughout the day.</p>}
     dates{1943-01-01 / 1943-01-31}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5856,7 +5878,7 @@
     description{<p>Outskirts of Hitdorf, Germany&mdash;After crossing the Rhine, leading elements of Company A, 1st Battalion, 504th Parachute Regiment found themselves met by elements of the 62nd Volksgrenadier Division on the road to Hitdorf.</p><p>Both sides reported contact and immediately called for reinforcements.</p>}
     dates{1945-04-06 / 1945-04-06}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5867,7 +5889,7 @@
     description{<p>Novorossiysk, Russia&mdash;To aid in the success of the Soviet amphibious operation launched against Kleist's Army Group A near Novorossiysk, a Black Sea Fleet commando detachment landed a few miles further down along the Black Sea coast.</p><p>In order to protect the beachhead's flank, the commandos hurriedly push into the town of Stanichka and holed up in a local university overlooking a manmade lake. Elements of the German 73rd Infantry Division quickly counterattacked in an attempt to roll up the flank and drive the invaders back into the sea.</p>}
     dates{1943-02-04 / 1943-02-04}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5878,7 +5900,7 @@
     description{<p>St. Jean de Daye, France&mdash;July 7 saw a brief battle in which German forces were forcibly evicted from their hilltop defenses near the Vire River. The small American force that won the day - elements of the 743rd Tank Battalion, including an immobilized M4 Sherman - was then tasked to hold the hills until reinforcements could arrive to relieve them. Sergeant White ordered his infantry to dig in atop the dominant hill as Sgt. Buehler prepped his shaken tank crew.</p><p>It is now just before dawn, July 8, and the dim morning glow is punctuated by a flare igniting over Hill 104. The expected German counterattack has arrived; the US reinforcements have not.</p>}
     dates{1944-07-08 / 1944-07-08}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5889,7 +5911,7 @@
     description{<p>Monte Castello, Italy&mdash;Brazil declared war on the European Axis in August of 1942. Organized like the US forces and equipped with the latest American weaponry, the Brazilian 1st Expeditionary Division finally arrived in Italy in the Summer of '44. After helping to crack the Gothic Line in the Fall, elements of General de Moraes' division crossed the Reno Valley and assaulted Monte Castillo on November 29, only to be bloodily repulsed.</p><p>Now, two weeks later, another attempt to take the heights overlooking Highway 64 is underway. A heavy fog shrouds the mountain as elements of the Syseno Battalion are given orders to advance - unfortunately, an untimely artillery bombardment on the next hill over alerts the defenders of the impending attack...</p>}
     dates{1944-12-12 / 1944-12-12}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5911,7 +5933,7 @@
     description{<p>Mindanao Island, Philippines&mdash;After capturing Libby Airfield with the aid of Filipino guerrillas, the US 24th Infantry Division found the assault toward Davao becoming exceedingly slow and ponderous. Exacerbating the issue was the preponderance of hemp fields in the area, now very much overgrown with disuse. Traversing these unkempt fields was slow going at best. Japanese forces of the 100th Division, however, found these numerous plantations extremely useful for hiding defensive strongpoints. Guerrillas continued to aid the Americans in their push toward Davao, and in one particularly nasty firefight on the 7th of May actually proved decisive in overcoming a Japanese bunker that was covering a major trail break through the area.</p>}
     dates{1945-05-07 / 1945-05-07}
     position{7.190708 / 125.455341}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5922,7 +5944,7 @@
     description{<p>Northern Burma&mdash;Over the couse of three weeks in June, Michael "Mad Mike" Calvert's 77th (Chindit) Bridage took Mogaung in support of the US advance doen the Hudawng Valley. The suffered 50% casualties. Fearing they would be ordered to join in the siege of Myitkyina, Calvert shut down his radios and began marching towards Stilwell's Army HQ in Kamaing. Along the way, scouts were surprised to discover a ragged - and apparently lost - column of Japanese troops advancing down a jungle path. Calvert ordered his weary survivors into ambush formations around a small village where their road and the enemy trail intersected.</p>}
     dates{1944-07-28 / 1944-07-28}
     position{25.31113196 / 96.86851501}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5933,7 +5955,7 @@
     description{<p>Ilu River, Guadalcanal&mdash;Japanese HQ dispatched the Ichiki Detachment from Truk to displace what was mistakenly thought of as a minor US presence on Guadalcanal. During what is known as the Battle of Tenaru River, by 0030, Colonel Ichiki had maneuvered his force into position and ordered some covering fire across the river. Since minor patrols with small enemy parties were a nightly occurrence, the fire did not raise significant alarm among the defenders. At 0200 Ichiki ordered 2nd company of the Japanese II/28th Regiment to charge across the sandbar of the Ilu River (known as Alligator Creek to the US Marines). The goal was to push past the defensive perimeter and on to Henderson Field. Facing them were the US Marines of G Company of the II/1st Regiment and two platoons of the 1st Special Weapons Battalion. The shrieking attackers came across the river without cease, but the defenders held their nerve and their ground.</p>}
     dates{1942-08-21 / 1942-08-21}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5944,7 +5966,7 @@
     description{<p>Empress Augusta Bay, Bougainville Island, Papua New Guinea&mdash;On this date the US 3rd Marine Division landed at Cape Torokina. Naval forces assisting the Marines included 4 cruisers and 8 destroyers. Empress Augusta Bay had been chosen because it was within range of allied land-based fighter bases and because the Japanese 17th Army was concentrated at other sites around the island. The stretch of beach near Cape Torokina was only "lightly" defended by little more than a company of well-camouflaged Japanese infantry - including a 75mm gun dug-in on the cape that wreaked havoc amongst the landing craft on their long approach to the beach in heavy seas.</p>}
     dates{1943-11-01 / 1943-11-01}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5955,7 +5977,7 @@
     description{<p>Butaritari, Gilbert Islands&mdash;The Gilbert Islands became one of the first stepping stones in the large scale movement by the US to take back Japanese-held territory. A Japanese seaplane base guarded by a citadel of defenses was the key target on Butaritari, a part of the Makin Atol. The 27th Infantry Division Task Force was divided into Regimental Combat Teams with a landing plan to surround the defenders. On D-Day, elements of the 1-165 RCT pushed east with little opposition through flat swampy terrain toward the West Tank Barrier to meet up with the 2-165 forces heading west. In the early afternoon, C Company faced the toughest opposition by the Japanese Construction Force.</p>}
     dates{1943-11-20 / 1943-11-20}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5966,7 +5988,7 @@
     description{<p>Peleliu, Palau&mdash;The Japanese unveiled a new defensive approach on Peleliu using well-entrenched positions, extensive caves, and natural barriers across the island. This was developed by Colonel Nakagawa, commander of the 2nd Infantry Regiment of the 14th Infantry Division. Prior to the invasion of this strategic island, the defenders withheld all fire to mask their positions from US naval bombardment. This tactic continued on D-Day itself, allowing the three regiments (1st, 5th and 7th) of the 1st Marine Division to reach the beaches under very light fire. But progress inland was slow and with a terrible cost in lives. By the 20th, the 1/1st Marines had reached the base of Hill 154, a barren wall of coral infested with hidden defenders and protected from the overlook knows as Suicide Ridge. Captain Everett Pope led C Company up that wall, fighting valiantly and managing to overtake the position. During the night, the Japanese assaulted the Marines on the hill repeatedly. In between charges, the Marines countered by tossing rocks (to sound like grenade landings) as well as some actual grenades from their dwindling supply. When the Marines finally ran out of ammunition, Captain Pope rallied the few remaining Marines around himself to all fight back the repeated charges with little more than their bare hands.</p>}
     dates{1944-09-20 / 1944-09-20}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5977,7 +5999,7 @@
     description{<p>Eora Creek, New Guinea&mdash;After nearly succeeding in pushing the Australians back upon Port Moresby, the Japanese had neither supply chain nor time enough to hold their gains along the Kokoda Trail and so reverted to the defensive. In a series of grim battles, the 25th Brigade (Australian 6th Infantry Division) began to retake ground, securing Templeton's Corner, and were relieved by the 16th Brigade. Elements of the 144th Infantry Regiment (Japanese South Seas Force) fell back upon excellent defensive terrain at the miserable village of Eora, where the Kokoda Trail passed through the gorge formed by the Eora Creek. Elements of the 16th Brigade advanced forward looking to find the strong points, pin them and bypass them. The bitter fighting lasted two days before the Japanese secretly retired from their positions and fell back to Oivi.</p>}
     dates{1942-10-22 / 1942-10-22}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5988,7 +6010,7 @@
     description{<p>Hill 382, Iwo Jima&mdash;Eight days after the initial landing on the island and four days after the American flag had been raised on Mount Suribachi, the 3rd Marine Division found itself dug in on the barren stone plateau north of the airfields. The Marines outnumbered the Japanese defenders by at least three to one, but the Japanese avoided the immense firepower of the American forces by going underground.</p><p>General Tadamishi Kuribayashi concentrated his remaining forces in the central and northern sections of the island. Their miles of interlocking caves, pillboxes and concrete blockhouses would prove to be one of the most impenetrable defenses the Marines would encounter in the Pacific.</p><p>Repulsed in their attack on the three hills overlooking Motoyama Airfield No. 2 the previous day, the 23rd Marine Regiment had regrouped for another assault on the morning of February 27th. The advance was immediately held up by determined resistance from numerous Japanese caves and bunkers. A second artillery barrage was called in at midday and small gains were made in the afternoon of 100-150 yards along the entire front.</p><p>By late afternoon, elements of the 3rd Battalion, 23rd Marines were engaged in fierce close combat near the crest of Hill 382, fighting for possession of the radar station at the hill's summit.</p>}
     dates{1945-02-27 / 1945-02-27}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -5999,7 +6021,7 @@
     description{<p>Edson's Ridge, Guadalcanal&mdash;In the second major attempt at dislodging the enemy position, the Japanese maneuvered deep in the jungle to the south of the American perimeter expecting that it would be less defended. General Kawaguchi employed a complicated plan using battalions from the 124th and 4th Infantry. The terrain rendered a multi-pronged plan almost impossible to execute, however, but with sheer willpower, some of his force managed a devastating attack. During what is known as the Battle of Edson's of "Bloody" Ridge, at 2230 7th company of the Japanese II/4th Regiment launched the first of many attacks along the eastern flanks of the ridge directly at B Company of the 1st Parachute Battalion. A successful attack could dislodge or overtake Lt. Colonel Edson's command post and put the defense of Henderson Field in grave jeopardy. Amazingly, Edson orchestrated one of the greatest nighttime defenses and was awarded the Medal of Honor.</p>}
     dates{1942-09-13 / 1942-09-13}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -6010,7 +6032,7 @@
     description{<p>Saddle Ridge, Guadalcanal&mdash;After the failure of the September attacks, Japanese HQ sent as many ground forces as could be spared to build up for another multipronged attack. During what is known as the Battle of Henderson Field, between 0300 and 0500 elements of the Japanese III/4th Regiment (part of Force Oka to the west of Henderson Field) attacked the US Marines of F Company of II/7th Regiment on the eastern slopes of a saddle-shaped ridge. The attack was massed all along Colonel Hanneken's front, but in particular the Japanese delivered deadly fire from the trees onto the heights of the ridge, eliminating many of the defenders, despite the heroism of Sergeant Mitchell Paige (who was firing weapons from both hands). Although the attackers eventually took the crest of the ridge, in a surprise move, Paige was part of an unlikely counterattack unit made of communications specialists, messmen, bandsmen, a cook and a few other riflemen. They retook the ridge decisively. Fot his singular efforts, he was awarded the Medal of Honor. This fight was part of one of the last major attempts by the Japanese to take the airfield, which ended in failure.</p>}
     dates{1942-10-26 / 1942-10-26}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -6021,7 +6043,7 @@
     description{<p>New Strip at Buna, New Guinea&mdash;Combined Australian and American forces surrounded the desperate Japanese defenders at Buna during December 1942. After an opening barrage starting at 0530, various companies of 2/9th Battalion (Australian 16th Brigade) crossed the start line promptly at 0700 to assault the brilliantly hidden defenses of the New Strip and Cape Endaiadere by III/229th Infantry Regiment of the Japanese Buna Garrison. While most of the assaulting companies had armor support C Company did not, and they quickly fell into a bitter hornet's nest as they attempted to advance along the edge of the New Strip to protect B Company's flank.</p>}
     dates{1942-12-18 / 1942-12-18}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -6032,7 +6054,7 @@
     description{<p>Kokoda Trail, Owen Stanley Mountains, New Guinea&mdash;The 2/16th Battalion (Australian 21st Brigade) had fallen back from Templeton's Crossing and finally reached the positions of the battered 2/14th Battalion, which in turn dropped back to the mountain village of Myola. Meanwhile, the Koiwai Battalion (Japanese 41st Infantry Regiment) began a flanking maneuver up the steepy sloped terrain in the afternoon and fell suddenly upon the Australians as they were huddled at their cooking fires. The twilight combat lasted until corrents of cold rain swept in.</p><p>Aftermanth: Overnight, the 2/16th secretly withdrew back toward Myola.</p>}
     dates{1942-09-04 / 1942-09-04}
     position{1 / 1}
-    range{250}
+    range{1}
     timescale{1}
     players{2 / 2}
     author{"Jensen, Chad"}
@@ -6733,6 +6755,778 @@
     party{"Sweden"-"2","Imperial"-"2"}
     author{"Hull, Ben"}
     description{<p>This battle is another famous one, and in many ways it had greater repercussions than Breitenfeld. It was certainly a turning point. It has also seen several treatments in games, not the least of which is GMT’s Lion of the North. However, we wanted to take a fresh look at the battle. Knut did some digging and was able to put together a very nice map from a variety of sources. I had the benefit of Richard Brzezinski’s excellent book on the battle, which allowed me to do a comprehensive review of the order of battle. For those who played Lion of the North or used the revision in Sweden Fights On: Musket & Mike Battle Series Volume II, you will notice some changes based on this research. Daniel Sodders also helped by reviewing and providing an alternative view to Brzezinski’s Imperial Order of Battle. All in all, we ended up with a new look at the battle, not a rehash, that we hope you will enjoy.</p>}
+  }
+}
+
+69136 {
+  title{"Bloody April ~ Air War over Arras, France"}
+  description{<p>Bloody April, 1917 is a standalone game using a similar format to Elusive Victory/Downtown, modified to cover the unique aspects of air combat during World War 1. The game covers the pivotal air combat over the Arras sector, France from March until the end of May 1917. Players take on the roles of Royal Flying Corps commander or German Imperial Air Service commander for their respective sides and will have a multitude of taskings available to accomplish and complete their objectives. Bloody April, 1917 will include both single mission scenarios and multi-mission/multi-day campaigns to allow players to play out large scale battles in a manageable timeframe.</p><p>Bloody April, 1917 recreates entire air raids in detail. Each player will have many unique tactical challenges to overcome. Both players will have numerous taskings available such as Bombing, Recon, Artillery Cooperation, Contact Patrols, Balloon Busting, Offensive Patrols, Line Patrols and Trench Strafing. Players will also have Anti-Aircraft systems available such as different caliber "Archie " AA guns and "Flaming Onions" incendiary weapons to hinder their opponent's movements. The map covers a significant portion of the Arras sector from Bethune and Lens in the North to Cambrai in the South. All the major aerodromes in this theatre of operations are displayed on map with a scale of 1Nm per hex and 2 minutes per game turn. Each detailed aircraft counter will represent anywhere from 1 to 5 aircraft.</p>}
+  publisher{"GMT Games"-"http://www.gmtgames.com/p-307-bloody-april-1917-air-war-over-arras-france.aspx"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:Bloody_April"}
+  genre{"Conflict Simulation"}
+  mechanic{"Dice","Hex","Counter"}
+  theme{"WW1","Dogfights"}
+  series{""-""}
+  scenario{"gmt1210 ~ "}{
+    dates{1917-03-01 / 1917-03-01}
+    position{1 / 1}
+    range{22}
+    timescale{24}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p></p>}
+  }
+}
+
+33924 {
+  title{"Nightfighter ~ Air Warfare in the Night Skies of World War II"}
+  description{<p>Nightfighter is a board game of air warfare in the night skies of WWII. Using a blind play system, an umpire controls the attacking forces while the defending player must find, fix, and destroy the incoming bombers.</p><p>Nightfighter recreates the tactics of night fighting, from the cat's eye intercepts of the London night blitz to the Mosquito intruder operations at the climax of the war.</p><p>More than forty scenarios describe the development of nightfighting aircraft and technology. Rules cover radar-guided interception, searchlights, airborne radar and electronic countermeasures. Specials weapons such as Schr„ge Musik are featured. Tactics such as Wild Boar and Tame Boar (Wilde Sau and Zahme Sau) receive their own scenarios.</p><p>Nightfighter features more than fifty fighter and bomber variants, from early Blenheim and Ju88 interceptors to advanced fighters such as the Mosquito and He219. Pacific operations see F4U-2s and P-61A Black Widow fighters engaging Japanese bomber threats. Rarities such as the Ta154, Me262B-1a and the Japanese J1N1 Gekko are included.</p><p>Fast-playing, with scenarios that can be completed in 30-45 minutes, Nightfighter provides a new view of the night hunters of the sky.</p>}
+  publisher{"GMT Games"-"http://www.gmtgames.com/p-233-nightfighter.aspx"}
+  engine{"Vassal"-"http://www.gmtgames.com/vassal/Nightfighter-v2.vmod.zip"}
+  genre{"Conflict Simulation"}
+  mechanic{"Dice","Hex","Counter"}
+  theme{"WW2","Air War"}
+  series{""-""}
+  scenario{"gmtxxxx01 ~ Cat's Eye"}{
+    dates{1940-09-01 / 1940-09-01}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Early nightfighting relied on single-seat day fighters cruising the skies in the hope that they might find the enemy. Pilots needed "cat's eyes" to pick out bombers in the dark. In practice the technique resulted in few kills and more defending aircraft were lost due to night-flying accidents than enemy aircraft were shot down.</p><p>This scenario depicts a typical "cat's eye" patrol during the German Blitz on Britain. A lone Hurricane fighter is flying over southern England on a moonlit night.</p>}
+  }
+  scenario{"gmtxxxx01a ~ London Blitz"}{
+    dates{1940-09-01 / 1940-09-01}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Extensive use of searchlights near London aided the "cat's eye" fighters.</p>}
+  }
+  scenario{"gmtxxxx02 ~ Dunaja"}{
+    dates{1940-10-01 / 1940-10-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Near the Dutch and North German coastlines the Germans developed a special &lsquo;darkened&rsquo; nightfighting zone (Dunkelnachtjagdgebiete, abbreviated to Dunaja) to try to shoot down incoming bombers. Officers manning Freya radar displays were able to direct fighters to the bombers. The first kills were achieved in the British penetration landes above the Zuider Zee. By the end of 1941 six of these close control zones &mdash; codenamed Hamster, Hering, Tiger, L&ouml;we, Languse and Wolf &mdash; stretched from the Schelde estuary in the south to the island of Sylt in the north.</p>}
+  }
+  scenario{"gmtxxxx02a ~ Lash-Up"}{
+    dates{1940-09-01 / 1940-09-01}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The British used a similar system to Dunaja during the Blitz, initially using gun-laying radars in a &ldquo;lashed up&rdquo; makeshift arrangement to guide nightfighters with AI radar to the bombers.</p>}
+  }
+  scenario{"gmtxxxx02b ~ Obsolescence"}{
+    dates{1940-10-01 / 1940-10-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Bomber Command was still equipped with many outdated bomber types that even the relatively slow Dornier nightfighters &mdash; build from converted medium bombers &mdash; could catch.</p>}
+  }
+  scenario{"gmtxxxx02c ~ The Second Raid on Pearl Harbor"}{
+    dates{1942-03-04 / 1942-03-05}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"US","Japan"}
+    party{"US"-"2","Japan"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The Japanese planned to follow up on their 7 December, 1941 attack on Pearl Harbor with &ldquo;K-Operation,&rdquo; a series of longe-range raids. H8K1 &lsquo;Emily&rsquo; flying boats were to be employed, refueled en route by submarine at French Frigate Shoals.</p><p>On the night of 4 March the Emilys flew to Oahu to find Pearl Harbor covered by cloud. Unable to find their targets they dropped their bombs harmlessly and made their escape.</p><p>In the meantime, the raid was picket up and tracked by early warning radar. Four P-40s were scrambled to intercept while guided from the ground (some sources say they were P-39s), but lack of experience at night interception told, and the fighters returned empty-handed.</p>}
+  }
+  scenario{"gmtxxxx02d ~ Rabaul"}{
+    dates{1943-05-01 / 1943-05-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"US","Japan"}
+    party{"US"-"2","Japan"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Lacking good platform for night defense, the Japanese Navy pressed field-modified J1N1 &ldquo;Irving&rdquo; reconnaissance fighters into service against B-17 raids. The first kills were achieved over Rabaul in 1943. Soon after this, the Navy began to place orders for a custom-built version of the new nightfighter.</p>}
+  }
+  scenario{"gmtxxxx03 ~ The Kammhuber Line"}{
+    dates{1941-02-01 / 1941-05-01}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Poland"}
+    party{"Germany"-"2","Poland"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Spring 1941. Beginning in late 1940, Germany created a belt of searchlights to detect bombers, which the British dubbed the &ldquo;Kammhuber Line&rdquo; after Josef Kammhuber, commander of the Luftwaffe's nightfighters.</p><p>Radar, including the new W&uuml;rzburg-Riese ground control system, was used to try to guide fighters to the approximate location of the bombers in the dark zone in front of the searchlight belt. Then when a bomber transited the searchlight zone (the helle Nachtjagdr&auml;ume, shortened to Henaja), the lights, each guided by a short-ranged W&uuml;rzburg-C-radar, would fix or &ldquo;cone&rdquo; it. The fighter could then chase the illuminated target and shoot it down.</p>}
+  }
+  scenario{"gmtxxxx03a ~ Low-Altitude Dash"}{
+    dates{1941-06-01 / 1940-08-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Summer 1941. The RAF pilots sometimes responded to the searchlight belts by diving before entering them. Accelerating under gravity, they would rapidly zip through the belts at low altitude.</p>}
+  }
+  scenario{"gmtxxxx03b ~ Home Islands"}{
+    dates{1945-03-01 / 1945-03-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"US","Japan"}
+    party{"US"-"2","Japan"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The night defense of Japan's Home Islands saw the assignment of the Ki-45 Toryu (&ldquo;Dragon Slayer&rdquo;) heavy fighter to night duties against B-29s, which often swept in low at altitudes of 4,000 to 5,000 feet. Japanese radar net was jammed to the point of uselessness, though some radar operators claimed they could see through the fog of noise jamming and chaff to discern the low-flying raiders.</p><p>The Ki-45 was the mount of aces such as Sadamitsu Kimura, who claimed 22 B-29s before he was shot down and killed.</p>}
+  }
+  scenario{"gmtxxxx04 ~ Himmelbett"}{
+    dates{1942-08-01 / 1942-08-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The arrival of the FuG 202 Lichtenstein BC air intercept radar radically improved German nightfighter effectiveness against incoming RAF bombers. As Lichtenstein was deployed the Henaja searchlights were withdrawn and the Kammhuber Line became a huge dark-fighting zone. Radar plots were displayed n a Seeburg plotting table allowing controllers to accurately guide nightfighters to intercept. This procedure was called Himmelbettverfahren and was to remain in service for most of the war.</p>}
+  }
+  scenario{"gmtxxxx04a ~ Fighting the Minelayers"}{
+    dates{1941-02-01 / 1941-05-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Spring 1941. At night, German bombers sowed the coast of Britain with mines. Fighters found it difficult to intercept at altitudes where their radar was almost useless.</p>}
+  }
+  scenario{"gmtxxxx04b ~ Henaja"}{
+    dates{1942-05-01 / 1942-05-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>As Lichtenstein was first introduced, the Henaja searchlight belt still sat behind the dark fighting zone. However, political pressure from the Gauleiters resulted in a Hitler directive to withdraw the searchlight belt to positions around the target towns and cities, where they could cooperate with flak. By July 1942 the withdrawal was complete. This scenario portrays that brief time before the searchlights were pulled back.</p>}
+  }
+  scenario{"gmtxxxx04c ~ Fast Bombers"}{
+    dates{1942-06-01 / 1942-06-30}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The Me110 was the mainstay of the nightfighter force, but the arrival of four-engined bombers (nicknamded Viermots) eroded its speed advantage. Often, the only way the Messerschmidt could keep up with the raiders was by diving on them from altitude.</p>}
+  }
+  scenario{"gmtxxxx04d ~ Beating the Minelayers"}{
+    dates{1942-06-05 / 1942-06-06}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Key to beating the German minelayers was the introduction of centimeter-wave AI radar, which could operate on lower altitudes without interference from the ground. As ever, the first kills were obtained by the RAF's Fighter Interception Unit, conducting combat trials of the new radars above the Thames estuary.</p>}
+  }
+  scenario{"gmtxxxx04e ~ High-Altitude Battles"}{
+    dates{1943-02-01 / 1943-05-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Spring 1943. Obsolescent Me110s had difficulties keeping pace with the RAF's bombers. News that the Americans were carrying out night training in fast B-17s prodded General Kammhuber into speeding up production of the stopgap Me110G-4. The G-4's nitrous oxide injection gave it improved performance at high altitude but at the cost of low-altitude climb rate and engine life.</p>}
+  }
+  scenario{"gmtxxxx04f ~ Mandrel and Tinsel"}{
+    dates{1943-01-01 / 1943-03-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Early 1943. The RAF's jamming offensive began in December 1942, when jammers with the codename &lsquo;Mandrel&rsquo; began to blanket the frequencies of Freya and other early warning radars. The defenders countered by changing the spread of frequencies their radars operated on and by April 1943 the effects of jamming were much reduces.</p><p>A more lasting success was that of &lsquo;Tinsel,&rsquo; in which a microphone placed next to the bomber's engine was used to jam the radio link between ground controllers and nightfighter pilots.</p>}
+  }
+  scenario{"gmtxxxx04g ~ 'Y' Guidance"}{
+    dates{1943-02-01 / 1943-05-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Spring 1943. The weakness of the Himmelbett system was that it could only control one nightfighter at a time. This was because there was only a single W&uuml;rzburg-Riese radar to track friendly aircraft. The &lsquo;Y&rsquo; system changed that. It was a form of radio direction finding that permitted the Luftwaffe to track aircraft by triangulating on their radio broadcasts. Now Himmelbett could control up to three aircraft simultaneously.</p>}
+  }
+  scenario{"gmtxxxx04h ~ Guadalcanal"}{
+    dates{1943-04-19 / 1943-04-19}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"US","Japan"}
+    party{"US"-"2","Japan"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The US Army Air Forces adapted the A-20 bomber to the nightfighter role and rushed a force of the newly-designated P-70s to support the bitter defense of Guadalcanal. The new aircraft simply couldn't catch high-flying &lsquo;Betty&rsquo; bombers, but managed to blood themselves when the Japanese were incautious enough to come lower.</p>}
+  }
+  scenario{"gmtxxxx04i ~ Corsica"}{
+    dates{1944-05-12 / 1944-05-13}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","US"}
+    party{"Germany"-"2","US"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>US nightfighter squadrons found poor hunting in the Mediterranean. However, a massive German strike on USAAF bases on Corsica saw Beaufighters of the 417th NFS scramble against fast-flying He177s. The Americans could barely match the bombers' pace, resulting in a solitary &ldquo;probable&rdquo; kill on a frustrating night.</p>}
+  }
+  scenario{"gmtxxxx04j ~ Black Widow"}{
+    dates{1944-12-01 / 1944-12-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"US","Japan"}
+    party{"US"-"2","Japan"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The arrival of the P-61 in the Pacific saw the USAAF play a vital part during the night defense of Morotai. Mountains created blind spots for radar, permitting raiders to slip through. While P-38s flew &ldquo;cat's eye&rdquo; missions above the searchlit targets, Black Widows covered the dark approaches, ready to be vectored by ground radar.</p>}
+  }
+  scenario{"gmtxxxx04k ~ Gekko"}{
+    dates{1945-03-01 / 1945-03-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"US","Japan"}
+    party{"US"-"2","Japan"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Japanese radar development lagged behind that of the other Axis powers. It wasn't until 1944 that they produced the 60cm FD-2 AI radar. Though supposedly fitted to some J1N1-Sa Gekko (&ldquo;Moonlight&rdquo;) airframes there is little evidence of the FD-2's operational employment. This variant assumes that at least some combat missions were flown in defense of the Home Islands.</p>}
+  }
+  scenario{"gmtxxxx05 ~ Wilde Sau"}{
+    dates{1943-08-01 / 1943-08-30}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>After Air Marshall Arthur Harris took the reins of Bomber Command in 1942, the RAF began to concentrate their bombers into denser formations. These &ldquo;streams&rdquo; of bombers could transit the target area in less than an hour, instead of over several hours.</p><p>The Himmelbett system could only engage a few targets at a time in each zone and was overwhelmed by the bomber stream. Following &ldquo;Operation Gomorrah&rdquo;, the devastating attack on Hamburg in 1943, Generalmajor Kammhuber was removed and replaced by Generalmajor &lsquo;Beppo&rsquo; Schmid, who cast around for new strategies to use against the RAF.</p><p>To cope with the concentrated bomber streams the German nightfighter force developed a tactic titled Wilde Sau (&ldquo;Wild Boar&rdquo;). This concentrated single-engine nightfighters over the target, where they could hunt down bombers identified by searchlights. A special Geschwader, JG300, was formed to implement Wilde Sau.</p><p>This ad hoc tactic met with some initial successes, but soon ran into problems. Coordination with flak was almost non-existent, causing many Wild Boar fighters to be shot down. The difficulties of navigating ill-equipped day fighters at night resulted in losses when aircraft ran out of fuel, forcing pilots to bail out. Finally, the tactic only permitted the defenders to se the raiders when they were over the target. Many bombers were caught only after they had dropped their bombs.</p>}
+  }
+  scenario{"gmtxxxx05a ~ Konaja"}{
+    dates{1941-06-01 / 1941-06-30}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>An attempt was made to coordinate flak, radar, fighters and searchlights together over the German cities. The resulting &ldquo;combined&rdquo; tactic was known as Konaja (Kombinierte Nachtjagd). Attempts to arrange for the flak to cease fire when a fighter entered the flak zone proved patchy.</p>}
+  }
+  scenario{"gmtxxxx05b ~ Operation Gomorrah"}{
+    dates{1943-07-27 / 1943-07-28}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The first night's raids on Hamburg saw the Luftwaffe's entire air defense system fall to pieces as a result of jamming from a new system named &ldquo;Window&rdquo;. Two days later, the recently formed JG300 was thrown into the fight and performed creditably on a night when Window was continuing to cause chaos.</p>}
+  }
+  scenario{"gmtxxxx05c ~ Mattscheibe"}{
+    dates{1943-08-01 / 1943-08-30}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>When cloud prevented searchlights aiding the Wild Boars, they were directed to illuminate to create a lit background against which bombers could be seen. The tactic was titled Mattscheibe, of &ldquo;Ground-glass Screen&rdquo; (an alternative codename was Leichentuch, or &ldquo;Shroud&rdquo;) and it was occasionally backed up by the Beleuchter, or flare-illumination Gruppen.</p>}
+  }
+  scenario{"gmtxxxx06 ~ Zahme Sau"}{
+    dates{1943-08-01 / 1943-08-30}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The RAF's adoption of concentrated bomber streams made it difficult for fighters controlled by Himmelbett to perform many intercepts in the time it took for the stream to pass.</p><p>So in addition to &ldquo;Wild Boar&rdquo;, the Germans developed a new tactic titled Zahme Sau (&ldquo;Tame Boar&rdquo;). The object was to infiltrate AI-equipped fighters unter &lsquo;Y&rsquo; guidance into the bomber stream as early as possible and then follow the stream. Once in the stream the nightfighters could freelance. The key to this tactic was identifying the path of the bomber stream. Nightfighters would orbit at a nearby radio beacon and then be fed into the stream, one at a time, by the controller.</p>}
+  }
+  scenario{"gmtxxxx06a ~ Ace of Aces"}{
+    dates{1943-08-01 / 1943-08-30}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Experten such as Helmut Lent or Heinrich Prinz zu Sayn-Wittgenstein found the freer fighting of Zahme Sau to their liking. Once infiltrated into the bomber stream kills came easily to experienced pilots. Scores of four or more bombers on a single sortie were not uncommon.</p>}
+  }
+  scenario{"gmtxxxx06b ~ Proximity to Target"}{
+    dates{1943-08-01 / 1943-08-30}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The bombers are approaching a burning city.</p>}
+  }
+  scenario{"gmtxxxx06c ~ Jet Stream"}{
+    dates{1943-08-01 / 1943-08-30}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>British bombers occasionally flew into the jet stream, an as-yet unknown meteorological phenomenon. The tail wind would give them a huge speed boost, but the major effect was to scatter the bombers across Germany.</p>}
+  }
+  scenario{"gmtxxxx06d ~ Boozer"}{
+    dates{1943-03-01 / 1943-03-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The British begin using the Boozer warning device.</p>}
+  }
+  scenario{"gmtxxxx06e ~ Monica"}{
+    dates{1943-03-01 / 1943-03-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The British began using the Monica tail-warning device.</p>}
+  }
+  scenario{"gmtxxxx06f ~ Window"}{
+    dates{1943-07-01 / 1943-07-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The British began using bundles of metallic strips, codenamed &ldquo;Window&rdquo;, to jam the German radar. As the ground control radars, flak/searchlight radars and early Lichtenstein AI radars all worked on similar frequencies, Window threw the entire air defense system into chaos.</p>}
+  }
+  scenario{"gmtxxxx06g ~ Airborne Cigar"}{
+    dates{1943-10-01 / 1943-10-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>&ldquo;Airborne Cigar&rdquo; and the later &ldquo;Jostle IV&rdquo; were British systems for jamming VHF communications with German nightfighters so that ground controllers could not pass on information. It was supplemented by &ldquo;Corona&rdquo;, where German-speaking RAF personnel (some of them Jewish refugees) fed false information to the nightfighters. The first time &ldquo;Corona&rdquo; was used it drove the Luftwaffe fighter controllers mad with rage.</p>}
+  }
+  scenario{"gmtxxxx06h ~ Naxos Vs. H2S"}{
+    dates{1944-01-01 / 1944-03-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Early 1944. The British H2S radar was an aid to bombing accuracy. The Germans countered with the Naxos passive homing system.</p>}
+  }
+  scenario{"gmtxxxx06i ~ Wild Boar"}{
+    dates{1944-01-01 / 1944-03-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Early 1944. On clear nights even single-seat fighters could be infiltrated into the bomber stream.</p>}
+  }
+  scenario{"gmtxxxx06j ~ Delousing"}{
+    dates{1944-01-01 / 1944-12-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Jamming of German AI radar could be inconsistent, especially when the radar set faced away from the jamming transmissions. Also the use of Window could be patchy. Crews increasingly became skilled at &lsquo;delousing&rsquo; their scopes of interference.</p>}
+  }
+  scenario{"gmtxxxx06k ~ Beleuchter"}{
+    dates{1944-01-01 / 1944-12-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>To direct its fighters the Luftwaffe began to organize Beleuchtergruppen, units of bombers that would track the path of the bomber stream and drop flares into it using sky marker aircraft. The flares would guide fighters to the stream from hundreds of miles away. They were not intended to illuminate bombers, but inevitably they would light up the occasional passing aircraft.</p>}
+  }
+  scenario{"gmtxxxx06l ~ Decoy"}{
+    dates{1944-01-01 / 1944-12-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Bomber crews began to report sightings of German nightfighters flying with their running lights on. This seems to have been a ruse to divert attention from other nightfighters stalking the bombers.</p>}
+  }
+  scenario{"gmtxxxx06m ~ Flensburg Vs. Monica"}{
+    dates{1944-02-01 / 1944-05-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Spring 1944. The Germans began to use Flensburg to home in on Monica tail warning radars. When this was discovered, the RAF withdrew Monica from use in September 1944.</p>}
+  }
+  scenario{"gmtxxxx06n ~ Contrails"}{
+    dates{1944-03-30 / 1944-03-30}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>It was rare that weather conditions created contrails, but during an RAF raid on Nuremburg the trails led nightfighters straight to the bombers. The Bomber Command aircraft were slaughtered.</p>}
+  }
+  scenario{"gmtxxxx06o ~ Lichtenstein SN-2"}{
+    dates{1944-05-01 / 1944-05-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>In the autumn of 1943 the SN-2 radar was rushed into service as a response to Window jamming. The new system, with its longer range and wide-angle coverage, radically improved the effectiveness of Zahme Sau tactics. By the spring of 1944, the SN-2c was widely available.</p>}
+  }
+  scenario{"gmtxxxx06p ~ Fast Ju88s"}{
+    dates{1944-05-01 / 1944-09-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>A new Ju88 became available, the G-1, which had a much faster top speed than earlier versions. It was to prove outstanding in action.</p>}
+  }
+  scenario{"gmtxxxx06q ~ Uhu"}{
+    dates{1944-06-01 / 1944-06-30}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Though never popular with the Luftwaffe leadership, the Heinkel 219 emerged as the best of a pack of new nightfighter designs. It proved to be the most efficient Luftwaffe nightfighter of the war, though there were very few airfields with runways long enough to handle it.</p>}
+  }
+  scenario{"gmtxxxx06r ~ Type M Window"}{
+    dates{1944-08-01 / 1944-08-30}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The SN-2 radar was initially unaffected by Window, so G&ouml;ring ordered a crash program to re-equip the nightfighter fleet. However, in July 1944 a Ju88 equipped with the radar fell into British hands. Within 10 days a new form of Window had been deployed to jam it and soon after a new bomber-carried jammer, &ldquo;Piperack&rdquo;, was blanketing the airwaves.</p>}
+  }
+  scenario{"gmtxxxx06s ~ Fuel Shortages"}{
+    dates{1945-01-01 / 1945-03-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Early 1945. Fuel shortages, exacerbated by Bomber Command's campaign against oil refining, reduced the number of fighters the Luftwaffe was able to fly.</p>}
+  }
+  scenario{"gmtxxxx07 ~ Serrate"}{
+    dates{1943-12-01 / 1943-12-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The Serrate device was designed to help the RAF hunt down German nightfighters by homing in on their Lichtenstein AI radars. The system lacked precision, but it could often get the RAF fighter close enough for it to pick up the enemy on its own AI radar.</p><p>In general, the Serrate-equipped fighters tended to operate away from the bomber stream, because of the dangers in misidentifying bombers and shooting down a friendly aircraft. However, with the enemy increasingly using Zahme Sau tactics to infiltrate the streams, the Mosquitos could be sucked in.</p>}
+  }
+  scenario{"gmtxxxx07a ~ 141 Squadron"}{
+    dates{1943-06-01 / 1943-12-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Serrate operations began in June 1943 with the Beaufighters of 141 Squadron, led by the ace Bob Braham. The Beaufighter had insufficient range to escort deep penetration raids and it was not until December that the squadron was able to re-equip with long-range Mosquitos.</p>}
+  }
+  scenario{"gmtxxxx07b ~ Identification Friend or Foe"}{
+    dates{1943-06-01 / 1943-12-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Because of the accidents that resulted from chasing friendly aircraft by mistake, the British tried to come up with electronic aids for identification. A variety of Identification Friend or Foe (IFF) devices were used, ranging from radio aids to infrared signals fitted to the rear of bombers.</p>}
+  }
+  scenario{"gmtxxxx08 ~ Steinbock"}{
+    dates{1944-01-01 / 1944-01-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>In late 1943 Reichsmarschall G&ouml;ring ordered retaliatory raids on Britain using the latest equipment. The codename for the operation was &ldquo;Steinbock&rdquo; (Ibex). Two Gruppen of the new He177 heavy bombers were employed. Their target was London, which was to suffer considerable damage, in spite of the effectiveness of the GCI-guided night defenses.</p>}
+  }
+  scenario{"gmtxxxx08a ~ The Arrival of GCI"}
+    dates{1941-01-01 / 1941-01-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The first GCI radars were deployed along the south coast of England in January 1941. Experienced fighter controllers were assigned to the radars to direct fighters to their targets. Almost immediately the GCI system began to claim successes.</p>}
+  }
+  scenario{"gmtxxxx08b ~ Winter Blitz"}
+    dates{1941-01-01 / 1941-01-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>British GCI gave non-radar-equipped &ldquo;cat's eye&rdquo; fighters a new lease of life. The highest scorer among the &ldquo;cat's eyes&rdquo; was the legendary Richard Stevens. Pilot Officer Stevens was a reckless fighter who was to claim nine of his King's enemies by the end of the Winter Blitz in May 1941 and five more before his death in December.</p>}
+  }
+  scenario{"gmtxxxx08c ~ The Smack System"}
+    dates{1942-06-01 / 1942-06-30}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>A shortage of searchlights in Britain caused an extensive redeployment in late 1941. England was divided into fighter &ldquo;boxes&rdquo;. The first 12 miles of the box was designated as the &ldquo;Indicator Zone&rdquo; where single searchlights, placed at intervals, pointed out bombers. The rear of the box was the &ldquo;Kill Zone&rdquo;, where searchlight density was sufficient to continuously illuminate targets. Code-named &ldquo;Smack&rdquo;, this system remained in operation for the rest of the war.</p><p>This scenario depicts the Smack system in action against the &ldquo;Baedeker Raids&rdquo;, made against popular tourist destinations in retaliation for Bomber Command's attack on L&uuml;beck.</p>}
+  }
+  scenario{"gmtxxxx08d ~ Angriffsf&uuml;hrer England"}
+    dates{1943-06-13 / 1943-06-14}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Bomber Command raids on Berlin goaded Hitler into demanding reprisals against Britain. G&ouml;ring appointed Dietrich Peltz, a young officer of proven ability, to the post of Angriffsf&uuml;hrer (Attack Leader) England. Peltz sought to reorganize Luftflotte 3, and one of his innovations was to create units of fighter-bombers &mdash; fast, single-seat Fw190s armed with bombs.</p><p>In April 1943 these new &ldquo;Jabos&rdquo; attacked, meeting little opposition. Even weighed down with bombs they could not be caught by the RAF's Beaufighters. However, the arrival of a new Mosquito variant, the NF.XII, gave the RAF the edge. The newly re-equipped No.85 Squadron was to score its first Jabo kills in May, and the unit's ace CO, Wing Commander John Cunningham, scored his first in mid-June.</p>}
+  }
+  scenario{"gmtxxxx08e ~ D&uuml;ppel"}
+    dates{1944-01-01 / 1944-01-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The first Steinbock raids used the German version of &ldquo;Window&rdquo;, codenamed &ldquo;D&uuml;ppel&rdquo;. These affected oder meter-wave GCI radars but had less success against newer microwave sets. Even so, the majority of nightfighters had to rely on searchlights to put them onto targets.</p>}
+  }
+  scenario{"gmtxxxx08f ~ Operation Diver"}
+    dates{1944-06-01 / 1944-06-30}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Almost coincidental with the invasion of France, the Germans began to launch V-1 flying bombs at England. These small cruise missiles, codenamed &ldquo;Diver&rdquo; by the Allies, were fast and difficult to catch. A number of the invasion-tasked Mosquito squadrons had to be diverted to anti-Diver patrols.</p>}
+  }
+  scenario{"gmtxxxx08g ~ Saipan"}
+    dates{1945-01-01 / 1945-01-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"US","Japan"}
+    party{"US"-"2","Japan"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The construction of USAAF airstrips for B-29 bombers on Saipan resulted in unwelcome attention from Japanese night raiders. In the summer of 1944, many attacks had been intercepted by P-61s operating under GCI conditions. However, toward the end of the year raids from Iwo Jima began to come in at low level, where the GCI radars were blind, and catch the defenders by surprise. A sizeable engineering effort eventually managed to get an AN/CPS-1 MEW set established atop Mount Tapoachu, and soon defending fighters could be directed to raiders coming in just above the ocean.</p>}
+  }
+  scenario{"gmtxxxx09 ~ Fast Carriers"}
+    dates{1944-06-27 / 1944-06-27}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"US","Japan"}
+    party{"US"-"2","Japan"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The F4U-2 Corsair became the first radar-equipped nightfighter to deploy at sea with the US Navy when four fighters of VF(N)-101 joined USS Enterprise in January 1944. The high point of their service came in June, during the Marianas operation, when L/Cdr Richard Harmer and his wingman shot down three &lsquo;Betty&rsquo; bombers in a single night.</p>}
+  }
+  scenario{"gmtxxxx09a ~ Hellcat"}
+    dates{1944-06-27 / 1944-06-27}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"US","Japan"}
+    party{"US"-"2","Japan"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The US Navy made the F6F Hellcat its nightfighter mainstay. It was a more forgiving aircraft than the Corsair and safer to operate at night. The F6F-3E was the earliest model equipped with radar, employing the AN/APS-4 which proved difficult for single-seat pilots to operate.</p>}
+  }
+  scenario{"gmtxxxx09b ~ Tigercat"}
+    dates{1944-06-27 / 1944-06-27}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"US","Japan"}
+    party{"US"-"2","Japan"-"2"}
+    special{"Fictional"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The twin-engine F7F Tigercat was a fine fighter, but its tricky handling characteristics and late arrival of the Midway-class carriers (the only ships large enough to handle it) meant that it arrived in the war too late to see any fighting. Only the Marines were to operate it during the war, from land bases rather than flight decks. This counterfactual scenario considers how the Navy version of the aircraft might have performed had the Midway carriers been available earlier.</p>}
+  }
+  scenario{"gmtxxxx10 ~ Mosquito"}
+    dates{1945-01-01 / 1945-01-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The appearance of the de Havilland Mosquito intruder in numbers, hunting down nightfighters on the edges of the bomber streams, had a profound effect on the Luftwaffe. Morale began to plummet as crews were lost. The German nightfighter force, short on fuel and stretched to the snapping point since the invasion of Europe, began to collapse.</p>}
+  }
+  scenario{"gmtxxxx10a ~ Fernnachtjagd"}
+    dates{1942-02-01 / 1942-02-28}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>General Kammhuber was a keen proponent of longe-range intruder (Fernnachtjagd) raids, which he believed disrupted Bomber Command's night flying. Starting with I/NJG 2 and II/NJG 2, he intended to build a Fernnachtjagd force of three Geschwadern.</p><p>However, the plan was stillborn. Hitler lacked faith in intruder operations and the Western Luftflotten were jealous of the expansion of the nightfighter division. The result was that the expansion of longe-range nightfighting was halted. The force was maintained at a strength of one Gruppe, which struggled as best it could with the few machines at its disposal.</p>}
+  }
+  scenario{"gmtxxxx10b ~ Mosquito Hunter"}
+    dates{1944-08-01 / 1944-08-30}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    special{"Fictional"}
+    description{<p>Stripped down He219s were to be deployed against the Mosquitos. However, just as they were delivered their mission was axed and given to single-engined fighters. This scenario examines what might have been.</p>}
+  }
+  scenario{"gmtxxxx10c ~ Moskito"}
+    dates{1944-12-01 / 1944-12-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The Luftwaffe hoped the fast Ta154 Moskito would be capable of catching its de Havilland namesake. However, the Ta154 proved a disappointment. The special glue required to build the wooden fighter had been lost in the bombing, while teething problems kept the Moskito grounded. A small number were delivered to NJG 3, though they were seldom airborne and suffered many accidents.</p>}
+  }
+  scenario{"gmtxxxx10d ~ Me262"}
+    dates{1945-02-01 / 1945-02-28}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Late in the war, a flight of jet nightfighters was formed at 10./NJG 11 under Oberleutnant Welter. These were based on the two-seat Me262 trainer airframe with a Neptun radar installed and some of the guns removed. As with the day variant, the pilots had difficulty flying slowly, with the result that they often overshot their targets after a brief firing pass.</p>}
+  }
+  scenario{"gmtxxxx06t ~ AI Mk IV Intruders"}
+    dates{1944-01-01 / 1944-01-31}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Early Bomber support work was conducted using the inadequate AI Mk V radar.</p>}
+  }
+  scenario{"gmtxxxx06u ~ AI Mk X Intruders"}
+    dates{1944-06-01 / 1944-06-30}
+    position{1 / 1}
+    range{22}
+    timescale{1}
+    players{1 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Intruder success came with the deployment of AI Mk X-equipped Mosquitos.</p>}
   }
 }
 
