@@ -6765,18 +6765,336 @@
   engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:Bloody_April"}
   genre{"Conflict Simulation"}
   mechanic{"Dice","Hex","Counter"}
-  theme{"WW1","Dogfights"}
-  series{""-""}
-  scenario{"gmt1210 ~ "}{
-    dates{1917-03-01 / 1917-03-01}
-    position{1 / 1}
-    range{22}
-    timescale{24}
+  theme{"WW1","Air War"}
+  scenario{"gmt1210_01 ~ Scenario 01"}{
+    dates{1917-03-04 / 1917-03-04}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
     players{2 / 2}
     side{"Germany","Great Britain"}
     party{"Germany"-"2","Great Britain"-"2"}
     author{"Simo, Terry"}
-    description{<p></p>}
+    description{<p>On March 4th, Naval 3 had what Raymond Collishaw described as one of its &ldquo;more memorable days.&rdquo; While the BE2 units performed photo reconnaissance and artillery cooperation Taskings, Naval 3 was busy with multiple patrols including two flights escorting FE2 aeroplanes to Cambrai where they were engaged by Halberstadt scouts. Naval 3 claimed three of the German scouts out of control for the loss of one pilot and another wounded. 40 Squadron claimed two enemy machines forced down during their escort of 43 Squadron. The Halberstadt scouts that Naval 3 ran into were from Jasta 1 which claimed two Pups. Jasta Boelcke's Ace Werner Voss claimed a BE2 and Jasta 11 claimed five kills. Jasta 5 claimed three kills. In total in this sector, the Germans claimed eleven kills suffering only two known losses.</p>}
+  }
+  scenario{"gmt1210_02 ~ Scenario 02"}{
+    dates{1917-03-06 / 1917-03-06}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>On 5 March, there was no flying due to bad weather, but on 6 March, in the words of the official communiqu&eacute;: &ldquo;Hostile aircraft were exceptionally active during the day and a great number of combats took place.&rdquo; Over 70 enemy aeroplanes were seen over the British First Army front and 23 crossed the lines. What was even more notable on 6 March was the fact that Manfred von Richthofen was show down by Capt. L E Claremont, the observer in a BE2 of 16 Squadron. Richthofen had just shot down another BE2 of the squadron when Claremont's accurate fire hit his Albatros in the petrol tank and the engine. Petrol poured into the cockpit and von Richthofen, fearful of fire, force landed in a small field.</p>}
+  }
+  scenario{"gmt1210_03 ~ Scenario 03"}{
+    dates{1917-03-09 / 1917-03-09}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>On March 9th, no British Corps aeroplanes were lost but the pilots of Jasta 11 cut a swath through 40 Squadron. Eight FE8s from 40 Sqn left their aerodrome at 9:20am, once across the lines they were intercepted by five aircraft from Jasta 11. The ensuing fight lasted an hour with the first FE to fall being flown by 2Lt R E Neve who was shot down by Ltn K Allmenr&ouml;der. Three more FEs were shot down in quick succession, Ltn K Sch&auml;fer shot down 2Lts W B Hills and G F Haseler to crash behind German lines and both were captured. Ltn K Wolff shot down 2Lt T Shepard and he was also taken POW. 2Lt H C Todd has his engine shot up and he force landed at Hesdigneul and Lt W Morrice, his engine also put out of action landed by La Bass&eacute;e Canal. A patrol of DH2s from 29 Sqn attempted to come to the aid of 40 Sqn but Lt A J Pearson was shot down in flames by Manfred von Richthofen for his 25th victory. 40 Sqn was done flying FE8s as the unit was soon to be equipped with Nieuport 17s.</p>}
+  }
+  scenario{"gmt1210_04 ~ Scenario 04"}{
+    dates{1917-03-11 / 1917-03-11}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>On March 10 no flying was possible due to bad weather, no doubt to the relief of the hard pressed aircrews of the RFC, but March 11 saw a return to operations and an increase in casualties. During the day eight aircraft were lost and a further 12 were either forced to land or returned badly damaged. 32 Squadron suffered badly while equipped with the obsolete pusher type aircraft. Of their six pilots sent on a line patrol, four were wounded in combat and forced to land and another was injured in a crash landing on return to L&eacute;alvillers.</p>}
+  }
+  scenario{"gmt1210_05 ~ Scenario 05"}{
+    dates{1917-03-16 / 1917-03-16}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>On March 16th, FE2b aircraft of 25 Squadron and the Sopwith 1&frac12; Strutters of 43 Squadron flew an offensive patrol east of Lens and were in combat for over twenty minutes with sixteen enemy scouts, claiming three down out of control, with no loss to themselves. None of the Jasta units within the area reported any losses that day but some may have been driven down. During this day the British single-seater scout squadrons saw no action.</p>}
+  }
+  scenario{"gmt1210_06 ~ Scenario 06"}{
+    dates{1917-03-17 / 1917-03-17}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>On 17 March British troops began to move forward to occupy areas abandones by the German forces that had retired to the prepared positions of the Hindenburg Line. The Corps squadrons of the RFC were keeping open communications with the British troops advancing into the areas vacated by the retreating Germans. Naval 3 was busy flying escort for FE2ds and supported the Fees by using all three flights from the squadron. They had numerous combats and claimed two enemy scouts down in flames and three out of control. Two FEs were lost in the fights.</p>}
+  }
+  scenario{"gmt1217_07 ~ Scenario 07"}{
+    dates{1917-03-19 / 1917-03-19}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>Activity was fairly light on this day as a patrol of Spads from 19 Sqn ran into Jasta 5. 27 Sqn lost three Martinsyde aircraft while on a long range bombing mission and 59 Sqn lost two RE8s on a recon across the lines running into Jasta B around the Bois de Bourlon (Bourlon Woods) with Werner Voss scoring his 20th victory. A BE2 aircraft was also lost on this day while the German units reported no losses.</p>}
+  }
+  scenario{"gmt1210_08 ~ Scenario 08"}{
+    dates{1917-03-24 / 1917-03-24}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>Foretelling of things to come the British lost over 10 aircraft on this day. A patrol of Spads from 19 Sqn ran into Jasta 11 around the Lens area with Manfred von Richthofen shooting down the Spad flown by Lt R P Baker for the Baron's 30th victory. 11 and 70 Sqns both had two aircraft each shot down while two more BE2s fell to the Jasta guns. Today however, the Jasta pilots did not get away unscathed as Jasta 5 lost one of the aces, Ltn Theiller.</p>}
+  }
+  scenario{"gmt1210_09 ~ Scenario 09"}{
+    dates{1917-03-25 / 1917-03-25}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>Weather towards the end of March continued to get progressively worse but some flying was accomplished on the 25th. It was another disastrous day for 70 Squadron, on a deep reconnaissance to the Hindenburg Line, they were attacked by Jasta 5 and lost all five Sopwith 1&frac12; Strutters. The effect on morale of the squadron must have been devastating considered they had just lost another four aircraft the previous day. A flight from 60 Sqn claimed three Albatros shot down while German records only list two. Billy Bishop, 60 Sqn, was awarded his first kill on this date.</p>}
+  }
+  scenario{"gmt1210_10 ~ Scenario 10"}{
+    dates{1917-04-02 / 1917-04-02}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>Bloody April started off with poor weather but the British were heavily tasked to provide photographs to higher headquarters for the coming offensive. The day provided a foretelling of things to come as 60 Sqn lost one fighter pilot while the Corps squadrons lost a BE2 and Sopwith 1&frac12; to Manfred von Richthofen for his thirty-second and thirty-third victories. Three FE2b/d aircraft were lost in combat but all was not for naught as the Germans lost two pilots from Jasta B: Ltns Koenig and Wortmann.</p>}
+  }
+  scenario{"gmt1210_11 ~ Scenario 11"}{
+    dates{1917-04-03 / 1917-04-03}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>If all the action on 2 April had occurred during the morning, then all the action of the 3rd was in the afternoon, due to the continuing bad weather. Heavy rain had set in during the afternoon of the 2nd, storms and clouds lasting until noon on the 3rd. As soon as the weather improved, RFC machines were brought out of the hangars and prepared for flight. The order of the day was reconnaissance and the FE2 Squadrons were out in force. Five FE2s were shot down along with two DH2s. A N17 and a BE2 were also lost for no German losses. Ltn Bernert of Jasta B was able to flame two British Observation Balloons near Bapaume.</p>}
+  }
+  scenario{"gmt1210_12 ~ Scenario 12"}{
+    dates{1917-04-05 / 1917-04-05}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>An improvement in the weather on 5 April saw an increase in fighting during the day. Offensive patrols flown by the British scout squadrons were successful in keeping the Jagdstaffeln east of the front lines and the Corps aeroplanes were able to work unmolested. The day also marked the first use of the new Bristol BF2a and the flight led by Major Leefe-Robinson, Victoria Cross winner, was a total failure with four of the six planes shot down by Jasta 11. 14 British planes were shot down in this sector during the day.</p>}
+  }
+  scenario{"gmt1210_13 ~ Scenario 13"}{
+    dates{1917-04-06 / 1917-04-06}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>Good Friday, April 6, was a day of continued success for the pilots of the Jagdstaffeln; they inflicted heavy losses on the Corps squadrons and the two-seater fighters of the RFC. Twenty aeroplanes were lost in action; 23 aircrew were killed and 14 were taken POW, of whom three were wounded, including one who died of his wounds. The Jagdstaffeln did not escape unscathed as two pilots from Jasta 5 were killed during a combat with FE2ds of 57 Squadron and Jasta 3 and 12 both had a pilot reported wounded in action.</p>}
+  }
+  scenario{"gmt1210_14 ~ Scenario 14"}{
+    dates{1917-04-07 / 1917-04-07}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>April 7 was a day of low cloud, wind and rain, a welcome respite for the aircrews. Nevertheless, the all important work of reconnaissance and artillery cooperation still had to be undertaken in the evening as the weather cleared. The destruction of enemy balloons was also seen as an important task in view of the imminent offensive just two days away.</p>}
+  }
+  scenario{"gmt1210_15 ~ Scenario 15"}{
+    dates{1917-04-08 / 1917-04-08}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>Easter Sunday, 8 April was generally fine, although there was some cloud and scattered snow showers. The fighter squadrons continued to fly offensive patrols into German territory to disrupt the Jagdstaffeln from interrupting the work of the BE2 squadrons. From 4 to 8 April, 75 British aeroplanes had been lost in action, with 19 personnel killed, 13 wounded and 73 missing.</p>}
+  }
+  scenario{"gmt1210_16 ~ Scenario 16"}{
+    dates{1917-04-11 / 1917-04-11}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>Slight improvement in the weather of the past days brought renewed activity in the air war, but high winds, low clouds and snow storms restricted afternoon sorties. On the ground, Monchy was captured. The 4th Australian Division attacked the Hindenburg Line at Bullecourt but was thrown back with enormous losses. A wide gamut of missions were flown with contact patrols attempting to ascertain troop positions in Monchy and trench strafing flown by 25 and 43 Sqns were sent on almost sacrificial missions to bomb enemy aerodromes, leaving their observers behind to increase their bombload but reducing them to be almost completely defenceless. Besides other losses, the BE2 Sqns suffered 12 losses during the day.</p>}
+  }
+  scenario{"gmt1210_17 ~ Scenario 17"}{
+    dates{1917-04-13 / 1917-04-13}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>Fine weather brought out the aviators on this Friday the 13th which was to prove unlucky for a good number of young British airmen. The ground fighting still raged around Vimy and near the Drocourt-Qu&eacute;ant switch line, so the various Army HQs still called for contact patrols and photographs. British infantry had captured Wancourt. 2-Seater squadrons still did not have dedicated escorts as a matter of practice and units without escorts such as 59 Sqn provided self-escort for their photo recon aircraft. Jasta 11 and Manfred von Richthofen made them pay dearly. 18 British planes went down during the day and one of the Germans best Balloon Busters scored during the evening, Ltn Gontermann of Jasta 5.</p>}
+  }
+  scenario{"gmt1210_18 ~ Scenario 18"}{
+    dates{1917-04-14 / 1917-04-14}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>Vimy Ridge was firmly in British hands and Field Marshall Haig now awaited General Nivelle's promised attack on the French front to the south but the French attack was delayed and the British were forced to keep up the pressure up north. German troops were coming up from the rear which is why the railhead at Henin-Lietard had been the focus on the previous day and would continue to be hit during the night. Nieuports paid dearly for their protection patrols with five N17s going down under fire from German scouts with another five BE2s shot down as well.</p>}
+  }
+  scenario{"gmt1210_19 ~ Scenario 19"}{
+    dates{1917-04-22 / 1917-04-22}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>After days of bad weather, the aviators of both sides awoke to fine but cloudy weather. With the ground fighting still going on, the flyers needed to be up for recon and artillery coorperation. Both sides went after each other's balloon lines and the German Balloon Buster, Ltn Gontermann was again in the air and took one out near Arras. 60 Sqn returned the favor and claimed numerous German balloons behind the lines. The British made a concerted effort to place patrols up in the morning to sweep the Germans away from an area 20 miles wide up to 6 miles deep into German territory. It was successful for the most part but the Germans usually dove away to the east and then re-engaged. British losses were lighter than previous days.</p>}
+  }
+  scenario{"gmt1210_20 ~ Scenario 20"}{
+    dates{1917-04-23 / 1917-04-23}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>Today was St George's Day, and with it came fine weather and death. With the French offensive crumbling Haig launched a new offensive with the main attack along a nine mile front from Croissilles to Gavrelle covering both sides of the Scarpe River. Contact patrols were the word of the day and the British were out in force to determine where the front lines had advanced. The Germans however, employed their Schusta aircraft in defensive sweeps to intercept the contact patrols. Another interesting Tasking flown during the day was a combined Recon/Bombing Tasking coordinated with three 2-Seater Sqns (70, 27 and 55) that had protection from 66 and 19 Sqn on the ingress and egress to the target areas. This was one of the first coordinated attacks, although causing little damage showed a sophisticationand coordination that is more associated with later air wars.</p>}
+  }
+  scenario{"gmt1210_21 ~ Scenario 21"}{
+    dates{1917-04-24 / 1917-04-24}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>A return of fine spring weather again brought forth increased activity with the resulting casualties, but they were not as heavy as the previous day. Several counter-attacks were mounted by the Germans at Gavrelle, these were broken up by well-directed and concentrated artillery fire. The most interesting event of the day was the feat of German pilot Otto Bernert of Jasta B, who had on the previous day been notified that he had been awarded the Pour le M&eacute;erite, and on this day his celebration of that award was continued in the air. Five victories in one day would have been a record, but five victories in one sortie by Otto Bernert, all scored between 0830 and 0850 in the morning was outstanding. No other German pilod had achieved that sort of success, nor had any Allied pilot in France. The fact that he wore spectacles made it all the more amazing. His victims included a Sopwith 1&frac12;, three BE2s and a DH4.</p>}
+  }
+  scenario{"gmt1210_22 ~ Scenario 22"}{
+    dates{1917-04-29 / 1917-04-29}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>After a period of bad weather, fine weather again and with it came more blood-letting on the two final days of April. Ground fighting was heavy near Oppy and British HQ sent out many contact patrols to find and determine the front line of troops. Twenty British aircraft were lost on this day with many claims on the Germans. Rittmeister Manfred von Richthofen shot down four planes on this day (Spad, FE2b, BE2 and a Sopwith Triplane) to run his score up to 52 kills. This was his last action of Bloody April as he went on much deserved leave for a month. With all the British losses this day, the most serious loss to the Royal Flying Corps was the downing of the CO of 19 Squadron, Major H D Harvey-Kelly DSO. Harvey-Kelly was the first RFC pilot to land in France after the war was declared as a pilot with 2 Squadron on 13 August 1914. He had received his DSO in February 1915 and had been in command of 19 Squadron since January 1916.</p>}
+  }
+  scenario{"gmt1210_23 ~ Scenario 23"}{
+    dates{1917-04-30 / 1917-04-30}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>It was another fine day for this the last day of Bloody April. British troops continued to fight along the front. For the RFC this last day was another period of losses to the German Jasta pilots and Archie. This day also heralded a change in German air policy. For the first time four German Jastas grouped together into a single fighting formation when Jastas 3, 4, 11 and 33 flew together. While it would be difficult for the four units actually to fly together in formation, they were able to concentrate and overwhelm British formations where they met them in combat. This grouping would be made more official in June 1917 upon formation of Jagdgeschwader Nr I (Jastas 4, 6, 10 and 11) under the leadership of Manfred von Richthofen. This combined unit was soon to be known as the &ldquo;Circus&rdquo; as they were moved around to hot spots along the front.</p>}
+  }
+  scenario{"gmt1210_24 ~ Scenario 24"}{
+    dates{1917-05-01 / 1917-05-01}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>On the first day of May 1917, there was a lull in the ground fighting while the ground forces were reorganized and the artillery prepared. The weather was good and the Corps aeroplanes were out in force above the lines, cooperating with the artillery batteries. The new German tactic of concentrating large numbers of fighters had the effect of localizing their efforts and made them easier to find and bring to combat. For the Allies, the good piece of news besides the fact that Bloody April had concluded was that Manfred von Richthofen was absent from the front on leave.</p>}
+  }
+  scenario{"gmt1210_25 ~ Scenario 25"}{
+    dates{1917-05-07 / 1917-05-07}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>On May 7th, the day was again fine and warm but there was a hint of thunder in the air. 56 Sqn was again heavily involved in the day's action. 40 Sqn was able to destroy a German balloon line with their Nieuport 17s in which every plane suffered damage from Archie. The weather became quite bad in the afternoon  but the Wing ordered evening patrols to be flown by 19, 29 and 56 Sqns along with 8(N). Many engagements occurred during these patrols but the most significant loss was Albert Ball, whose SE5 emerged from a thick cloud only two hundred feet above the ground. It was inverted and the propeller was stationary when it impacted the ground, killing him.</p>}
+  }
+  scenario{"gmt1210_26 ~ Scenario 26"}{
+    dates{1917-05-10 / 1917-05-10}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>On May 10th, the weather was again fine. Trenchard sent out some of the units which had been held back for a while on offensive patrols. Notable on this day was the number of solo patrols flown as both 8(N) and 60 Sqn sent out pilots on solitary ventures. 55 Sqn suffered heavy losses losing three planes that had been sent out on a bombing mission.</p>}
+  }
+  scenario{"gmt1210_27 ~ Scenario 27"}{
+    dates{1917-05-11 / 1917-05-11}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>On May 11th, the weather was again fine and quite warm. Offensive patrols were flown throughout the day with numerous skirmishes between the two combatants. During the evening hours, troops of the British Third Army attacked and captured enemy positions on both banks of the river Scarpe. FE2bs from 11 Sqn and Nieuports of 60 Sqn were tasked to strafe enemy positions before the advancing troops. The pilots of 60 Sqn ended up using all the ammunition and returned to Filescamp Farm where they re-armed and flew back again to the front to support the ground troops.</p>}
+  }
+  scenario{"gmt1210_28 ~ Scenario 28"}{
+    dates{1917-05-24 / 1917-05-24}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>The morning of May 24th was cloudy, but with large clear patches. Numerous offensive patrols were flown throughout the morning with skirmishes with the German Jasta units. A number of German 2-seaters were airborne and were engaged by British scouts. 56 Sqn provided an escort for a flight of DH4s from 55 Sqn on a bombing Tasking to a railway switching station. 56 Sqn successfully protected the DH4s and engaged numerous German scouts and 2-seaters on their way back across the lines.</p>}
+  }
+  scenario{"gmt1210_29 ~ Scenario 29"}{
+    dates{1917-05-25 / 1917-05-25}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>May 25th was mainly clear although there were clouds at varying levels. In the words of the RFC communiqu&eacute; for the day, &ldquo;Machines of 56, 66 and 19 Squadrons had considerable fighting. Many patrols were sent out and almost all the scout squadrons were in action.&rdquo;</p>}
+  }
+  scenario{"gmt1210_30 ~ Scenario 30"}{
+    dates{1917-05-28 / 1917-05-28}
+    position{50.290977/2.778854}
+    range{30}
+    timescale{1}
+    players{2 / 2}
+    side{"Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Simo, Terry"}
+    description{<p>As the month of May wound down, British operations began to wane in the Arras area as the Allied High Command had decided to transfer the main theatre of operations northwards, to the British front in Flanders. The disastrous failure of the French spring offensive on the Aisne, with its subsequent loss of morale and mutinies in the French armies, was to throw the bulk of the summer fighting onto the British armies.</p>}
   }
 }
 
@@ -6788,11 +7106,10 @@
   genre{"Conflict Simulation"}
   mechanic{"Dice","Hex","Counter"}
   theme{"WW2","Air War"}
-  series{""-""}
-  scenario{"gmtxxxx01 ~ Cat's Eye"}{
+  scenario{"gmt1109_01 ~ Cat's Eye"}{
     dates{1940-09-01 / 1940-09-01}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -6800,10 +7117,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Early nightfighting relied on single-seat day fighters cruising the skies in the hope that they might find the enemy. Pilots needed "cat's eyes" to pick out bombers in the dark. In practice the technique resulted in few kills and more defending aircraft were lost due to night-flying accidents than enemy aircraft were shot down.</p><p>This scenario depicts a typical "cat's eye" patrol during the German Blitz on Britain. A lone Hurricane fighter is flying over southern England on a moonlit night.</p>}
   }
-  scenario{"gmtxxxx01a ~ London Blitz"}{
+  scenario{"gmt1109_01a ~ London Blitz"}{
     dates{1940-09-01 / 1940-09-01}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -6811,10 +7128,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Extensive use of searchlights near London aided the "cat's eye" fighters.</p>}
   }
-  scenario{"gmtxxxx02 ~ Dunaja"}{
+  scenario{"gmt1109_02 ~ Dunaja"}{
     dates{1940-10-01 / 1940-10-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -6822,10 +7139,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Near the Dutch and North German coastlines the Germans developed a special &lsquo;darkened&rsquo; nightfighting zone (Dunkelnachtjagdgebiete, abbreviated to Dunaja) to try to shoot down incoming bombers. Officers manning Freya radar displays were able to direct fighters to the bombers. The first kills were achieved in the British penetration landes above the Zuider Zee. By the end of 1941 six of these close control zones &mdash; codenamed Hamster, Hering, Tiger, L&ouml;we, Languse and Wolf &mdash; stretched from the Schelde estuary in the south to the island of Sylt in the north.</p>}
   }
-  scenario{"gmtxxxx02a ~ Lash-Up"}{
+  scenario{"gmt1109_02a ~ Lash-Up"}{
     dates{1940-09-01 / 1940-09-01}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -6833,10 +7150,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The British used a similar system to Dunaja during the Blitz, initially using gun-laying radars in a &ldquo;lashed up&rdquo; makeshift arrangement to guide nightfighters with AI radar to the bombers.</p>}
   }
-  scenario{"gmtxxxx02b ~ Obsolescence"}{
+  scenario{"gmt1109_02b ~ Obsolescence"}{
     dates{1940-10-01 / 1940-10-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -6844,10 +7161,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Bomber Command was still equipped with many outdated bomber types that even the relatively slow Dornier nightfighters &mdash; build from converted medium bombers &mdash; could catch.</p>}
   }
-  scenario{"gmtxxxx02c ~ The Second Raid on Pearl Harbor"}{
+  scenario{"gmt1109_02c ~ The Second Raid on Pearl Harbor"}{
     dates{1942-03-04 / 1942-03-05}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"US","Japan"}
@@ -6855,10 +7172,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The Japanese planned to follow up on their 7 December, 1941 attack on Pearl Harbor with &ldquo;K-Operation,&rdquo; a series of longe-range raids. H8K1 &lsquo;Emily&rsquo; flying boats were to be employed, refueled en route by submarine at French Frigate Shoals.</p><p>On the night of 4 March the Emilys flew to Oahu to find Pearl Harbor covered by cloud. Unable to find their targets they dropped their bombs harmlessly and made their escape.</p><p>In the meantime, the raid was picket up and tracked by early warning radar. Four P-40s were scrambled to intercept while guided from the ground (some sources say they were P-39s), but lack of experience at night interception told, and the fighters returned empty-handed.</p>}
   }
-  scenario{"gmtxxxx02d ~ Rabaul"}{
+  scenario{"gmt1109_02d ~ Rabaul"}{
     dates{1943-05-01 / 1943-05-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"US","Japan"}
@@ -6866,10 +7183,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Lacking good platform for night defense, the Japanese Navy pressed field-modified J1N1 &ldquo;Irving&rdquo; reconnaissance fighters into service against B-17 raids. The first kills were achieved over Rabaul in 1943. Soon after this, the Navy began to place orders for a custom-built version of the new nightfighter.</p>}
   }
-  scenario{"gmtxxxx03 ~ The Kammhuber Line"}{
+  scenario{"gmt1109_03 ~ The Kammhuber Line"}{
     dates{1941-02-01 / 1941-05-01}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Poland"}
@@ -6877,10 +7194,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Spring 1941. Beginning in late 1940, Germany created a belt of searchlights to detect bombers, which the British dubbed the &ldquo;Kammhuber Line&rdquo; after Josef Kammhuber, commander of the Luftwaffe's nightfighters.</p><p>Radar, including the new W&uuml;rzburg-Riese ground control system, was used to try to guide fighters to the approximate location of the bombers in the dark zone in front of the searchlight belt. Then when a bomber transited the searchlight zone (the helle Nachtjagdr&auml;ume, shortened to Henaja), the lights, each guided by a short-ranged W&uuml;rzburg-C-radar, would fix or &ldquo;cone&rdquo; it. The fighter could then chase the illuminated target and shoot it down.</p>}
   }
-  scenario{"gmtxxxx03a ~ Low-Altitude Dash"}{
+  scenario{"gmt1109_03a ~ Low-Altitude Dash"}{
     dates{1941-06-01 / 1940-08-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -6888,10 +7205,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Summer 1941. The RAF pilots sometimes responded to the searchlight belts by diving before entering them. Accelerating under gravity, they would rapidly zip through the belts at low altitude.</p>}
   }
-  scenario{"gmtxxxx03b ~ Home Islands"}{
+  scenario{"gmt1109_03b ~ Home Islands"}{
     dates{1945-03-01 / 1945-03-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"US","Japan"}
@@ -6899,10 +7216,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The night defense of Japan's Home Islands saw the assignment of the Ki-45 Toryu (&ldquo;Dragon Slayer&rdquo;) heavy fighter to night duties against B-29s, which often swept in low at altitudes of 4,000 to 5,000 feet. Japanese radar net was jammed to the point of uselessness, though some radar operators claimed they could see through the fog of noise jamming and chaff to discern the low-flying raiders.</p><p>The Ki-45 was the mount of aces such as Sadamitsu Kimura, who claimed 22 B-29s before he was shot down and killed.</p>}
   }
-  scenario{"gmtxxxx04 ~ Himmelbett"}{
+  scenario{"gmt1109_04 ~ Himmelbett"}{
     dates{1942-08-01 / 1942-08-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -6910,10 +7227,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The arrival of the FuG 202 Lichtenstein BC air intercept radar radically improved German nightfighter effectiveness against incoming RAF bombers. As Lichtenstein was deployed the Henaja searchlights were withdrawn and the Kammhuber Line became a huge dark-fighting zone. Radar plots were displayed n a Seeburg plotting table allowing controllers to accurately guide nightfighters to intercept. This procedure was called Himmelbettverfahren and was to remain in service for most of the war.</p>}
   }
-  scenario{"gmtxxxx04a ~ Fighting the Minelayers"}{
+  scenario{"gmt1109_04a ~ Fighting the Minelayers"}{
     dates{1941-02-01 / 1941-05-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -6921,10 +7238,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Spring 1941. At night, German bombers sowed the coast of Britain with mines. Fighters found it difficult to intercept at altitudes where their radar was almost useless.</p>}
   }
-  scenario{"gmtxxxx04b ~ Henaja"}{
+  scenario{"gmt1109_04b ~ Henaja"}{
     dates{1942-05-01 / 1942-05-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -6932,10 +7249,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>As Lichtenstein was first introduced, the Henaja searchlight belt still sat behind the dark fighting zone. However, political pressure from the Gauleiters resulted in a Hitler directive to withdraw the searchlight belt to positions around the target towns and cities, where they could cooperate with flak. By July 1942 the withdrawal was complete. This scenario portrays that brief time before the searchlights were pulled back.</p>}
   }
-  scenario{"gmtxxxx04c ~ Fast Bombers"}{
+  scenario{"gmt1109_04c ~ Fast Bombers"}{
     dates{1942-06-01 / 1942-06-30}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -6943,10 +7260,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The Me110 was the mainstay of the nightfighter force, but the arrival of four-engined bombers (nicknamded Viermots) eroded its speed advantage. Often, the only way the Messerschmidt could keep up with the raiders was by diving on them from altitude.</p>}
   }
-  scenario{"gmtxxxx04d ~ Beating the Minelayers"}{
+  scenario{"gmt1109_04d ~ Beating the Minelayers"}{
     dates{1942-06-05 / 1942-06-06}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -6954,10 +7271,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Key to beating the German minelayers was the introduction of centimeter-wave AI radar, which could operate on lower altitudes without interference from the ground. As ever, the first kills were obtained by the RAF's Fighter Interception Unit, conducting combat trials of the new radars above the Thames estuary.</p>}
   }
-  scenario{"gmtxxxx04e ~ High-Altitude Battles"}{
+  scenario{"gmt1109_04e ~ High-Altitude Battles"}{
     dates{1943-02-01 / 1943-05-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -6965,10 +7282,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Spring 1943. Obsolescent Me110s had difficulties keeping pace with the RAF's bombers. News that the Americans were carrying out night training in fast B-17s prodded General Kammhuber into speeding up production of the stopgap Me110G-4. The G-4's nitrous oxide injection gave it improved performance at high altitude but at the cost of low-altitude climb rate and engine life.</p>}
   }
-  scenario{"gmtxxxx04f ~ Mandrel and Tinsel"}{
+  scenario{"gmt1109_04f ~ Mandrel and Tinsel"}{
     dates{1943-01-01 / 1943-03-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -6976,10 +7293,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Early 1943. The RAF's jamming offensive began in December 1942, when jammers with the codename &lsquo;Mandrel&rsquo; began to blanket the frequencies of Freya and other early warning radars. The defenders countered by changing the spread of frequencies their radars operated on and by April 1943 the effects of jamming were much reduces.</p><p>A more lasting success was that of &lsquo;Tinsel,&rsquo; in which a microphone placed next to the bomber's engine was used to jam the radio link between ground controllers and nightfighter pilots.</p>}
   }
-  scenario{"gmtxxxx04g ~ 'Y' Guidance"}{
+  scenario{"gmt1109_04g ~ 'Y' Guidance"}{
     dates{1943-02-01 / 1943-05-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -6987,10 +7304,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Spring 1943. The weakness of the Himmelbett system was that it could only control one nightfighter at a time. This was because there was only a single W&uuml;rzburg-Riese radar to track friendly aircraft. The &lsquo;Y&rsquo; system changed that. It was a form of radio direction finding that permitted the Luftwaffe to track aircraft by triangulating on their radio broadcasts. Now Himmelbett could control up to three aircraft simultaneously.</p>}
   }
-  scenario{"gmtxxxx04h ~ Guadalcanal"}{
+  scenario{"gmt1109_04h ~ Guadalcanal"}{
     dates{1943-04-19 / 1943-04-19}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"US","Japan"}
@@ -6998,10 +7315,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The US Army Air Forces adapted the A-20 bomber to the nightfighter role and rushed a force of the newly-designated P-70s to support the bitter defense of Guadalcanal. The new aircraft simply couldn't catch high-flying &lsquo;Betty&rsquo; bombers, but managed to blood themselves when the Japanese were incautious enough to come lower.</p>}
   }
-  scenario{"gmtxxxx04i ~ Corsica"}{
+  scenario{"gmt1109_04i ~ Corsica"}{
     dates{1944-05-12 / 1944-05-13}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","US"}
@@ -7009,10 +7326,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>US nightfighter squadrons found poor hunting in the Mediterranean. However, a massive German strike on USAAF bases on Corsica saw Beaufighters of the 417th NFS scramble against fast-flying He177s. The Americans could barely match the bombers' pace, resulting in a solitary &ldquo;probable&rdquo; kill on a frustrating night.</p>}
   }
-  scenario{"gmtxxxx04j ~ Black Widow"}{
+  scenario{"gmt1109_04j ~ Black Widow"}{
     dates{1944-12-01 / 1944-12-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"US","Japan"}
@@ -7020,10 +7337,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The arrival of the P-61 in the Pacific saw the USAAF play a vital part during the night defense of Morotai. Mountains created blind spots for radar, permitting raiders to slip through. While P-38s flew &ldquo;cat's eye&rdquo; missions above the searchlit targets, Black Widows covered the dark approaches, ready to be vectored by ground radar.</p>}
   }
-  scenario{"gmtxxxx04k ~ Gekko"}{
+  scenario{"gmt1109_04k ~ Gekko"}{
     dates{1945-03-01 / 1945-03-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"US","Japan"}
@@ -7031,10 +7348,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Japanese radar development lagged behind that of the other Axis powers. It wasn't until 1944 that they produced the 60cm FD-2 AI radar. Though supposedly fitted to some J1N1-Sa Gekko (&ldquo;Moonlight&rdquo;) airframes there is little evidence of the FD-2's operational employment. This variant assumes that at least some combat missions were flown in defense of the Home Islands.</p>}
   }
-  scenario{"gmtxxxx05 ~ Wilde Sau"}{
+  scenario{"gmt1109_05 ~ Wilde Sau"}{
     dates{1943-08-01 / 1943-08-30}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7042,10 +7359,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>After Air Marshall Arthur Harris took the reins of Bomber Command in 1942, the RAF began to concentrate their bombers into denser formations. These &ldquo;streams&rdquo; of bombers could transit the target area in less than an hour, instead of over several hours.</p><p>The Himmelbett system could only engage a few targets at a time in each zone and was overwhelmed by the bomber stream. Following &ldquo;Operation Gomorrah&rdquo;, the devastating attack on Hamburg in 1943, Generalmajor Kammhuber was removed and replaced by Generalmajor &lsquo;Beppo&rsquo; Schmid, who cast around for new strategies to use against the RAF.</p><p>To cope with the concentrated bomber streams the German nightfighter force developed a tactic titled Wilde Sau (&ldquo;Wild Boar&rdquo;). This concentrated single-engine nightfighters over the target, where they could hunt down bombers identified by searchlights. A special Geschwader, JG300, was formed to implement Wilde Sau.</p><p>This ad hoc tactic met with some initial successes, but soon ran into problems. Coordination with flak was almost non-existent, causing many Wild Boar fighters to be shot down. The difficulties of navigating ill-equipped day fighters at night resulted in losses when aircraft ran out of fuel, forcing pilots to bail out. Finally, the tactic only permitted the defenders to se the raiders when they were over the target. Many bombers were caught only after they had dropped their bombs.</p>}
   }
-  scenario{"gmtxxxx05a ~ Konaja"}{
+  scenario{"gmt1109_05a ~ Konaja"}{
     dates{1941-06-01 / 1941-06-30}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7053,10 +7370,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>An attempt was made to coordinate flak, radar, fighters and searchlights together over the German cities. The resulting &ldquo;combined&rdquo; tactic was known as Konaja (Kombinierte Nachtjagd). Attempts to arrange for the flak to cease fire when a fighter entered the flak zone proved patchy.</p>}
   }
-  scenario{"gmtxxxx05b ~ Operation Gomorrah"}{
+  scenario{"gmt1109_05b ~ Operation Gomorrah"}{
     dates{1943-07-27 / 1943-07-28}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7064,10 +7381,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The first night's raids on Hamburg saw the Luftwaffe's entire air defense system fall to pieces as a result of jamming from a new system named &ldquo;Window&rdquo;. Two days later, the recently formed JG300 was thrown into the fight and performed creditably on a night when Window was continuing to cause chaos.</p>}
   }
-  scenario{"gmtxxxx05c ~ Mattscheibe"}{
+  scenario{"gmt1109_05c ~ Mattscheibe"}{
     dates{1943-08-01 / 1943-08-30}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7075,10 +7392,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>When cloud prevented searchlights aiding the Wild Boars, they were directed to illuminate to create a lit background against which bombers could be seen. The tactic was titled Mattscheibe, of &ldquo;Ground-glass Screen&rdquo; (an alternative codename was Leichentuch, or &ldquo;Shroud&rdquo;) and it was occasionally backed up by the Beleuchter, or flare-illumination Gruppen.</p>}
   }
-  scenario{"gmtxxxx06 ~ Zahme Sau"}{
+  scenario{"gmt1109_06 ~ Zahme Sau"}{
     dates{1943-08-01 / 1943-08-30}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7086,10 +7403,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The RAF's adoption of concentrated bomber streams made it difficult for fighters controlled by Himmelbett to perform many intercepts in the time it took for the stream to pass.</p><p>So in addition to &ldquo;Wild Boar&rdquo;, the Germans developed a new tactic titled Zahme Sau (&ldquo;Tame Boar&rdquo;). The object was to infiltrate AI-equipped fighters unter &lsquo;Y&rsquo; guidance into the bomber stream as early as possible and then follow the stream. Once in the stream the nightfighters could freelance. The key to this tactic was identifying the path of the bomber stream. Nightfighters would orbit at a nearby radio beacon and then be fed into the stream, one at a time, by the controller.</p>}
   }
-  scenario{"gmtxxxx06a ~ Ace of Aces"}{
+  scenario{"gmt1109_06a ~ Ace of Aces"}{
     dates{1943-08-01 / 1943-08-30}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7097,10 +7414,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Experten such as Helmut Lent or Heinrich Prinz zu Sayn-Wittgenstein found the freer fighting of Zahme Sau to their liking. Once infiltrated into the bomber stream kills came easily to experienced pilots. Scores of four or more bombers on a single sortie were not uncommon.</p>}
   }
-  scenario{"gmtxxxx06b ~ Proximity to Target"}{
+  scenario{"gmt1109_06b ~ Proximity to Target"}{
     dates{1943-08-01 / 1943-08-30}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7108,10 +7425,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The bombers are approaching a burning city.</p>}
   }
-  scenario{"gmtxxxx06c ~ Jet Stream"}{
+  scenario{"gmt1109_06c ~ Jet Stream"}{
     dates{1943-08-01 / 1943-08-30}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7119,10 +7436,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>British bombers occasionally flew into the jet stream, an as-yet unknown meteorological phenomenon. The tail wind would give them a huge speed boost, but the major effect was to scatter the bombers across Germany.</p>}
   }
-  scenario{"gmtxxxx06d ~ Boozer"}{
+  scenario{"gmt1109_06d ~ Boozer"}{
     dates{1943-03-01 / 1943-03-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7130,10 +7447,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The British begin using the Boozer warning device.</p>}
   }
-  scenario{"gmtxxxx06e ~ Monica"}{
+  scenario{"gmt1109_06e ~ Monica"}{
     dates{1943-03-01 / 1943-03-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7141,10 +7458,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The British began using the Monica tail-warning device.</p>}
   }
-  scenario{"gmtxxxx06f ~ Window"}{
+  scenario{"gmt1109_06f ~ Window"}{
     dates{1943-07-01 / 1943-07-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7152,10 +7469,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The British began using bundles of metallic strips, codenamed &ldquo;Window&rdquo;, to jam the German radar. As the ground control radars, flak/searchlight radars and early Lichtenstein AI radars all worked on similar frequencies, Window threw the entire air defense system into chaos.</p>}
   }
-  scenario{"gmtxxxx06g ~ Airborne Cigar"}{
+  scenario{"gmt1109_06g ~ Airborne Cigar"}{
     dates{1943-10-01 / 1943-10-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7163,10 +7480,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>&ldquo;Airborne Cigar&rdquo; and the later &ldquo;Jostle IV&rdquo; were British systems for jamming VHF communications with German nightfighters so that ground controllers could not pass on information. It was supplemented by &ldquo;Corona&rdquo;, where German-speaking RAF personnel (some of them Jewish refugees) fed false information to the nightfighters. The first time &ldquo;Corona&rdquo; was used it drove the Luftwaffe fighter controllers mad with rage.</p>}
   }
-  scenario{"gmtxxxx06h ~ Naxos Vs. H2S"}{
+  scenario{"gmt1109_06h ~ Naxos Vs. H2S"}{
     dates{1944-01-01 / 1944-03-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7174,10 +7491,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Early 1944. The British H2S radar was an aid to bombing accuracy. The Germans countered with the Naxos passive homing system.</p>}
   }
-  scenario{"gmtxxxx06i ~ Wild Boar"}{
+  scenario{"gmt1109_06i ~ Wild Boar"}{
     dates{1944-01-01 / 1944-03-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7185,10 +7502,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Early 1944. On clear nights even single-seat fighters could be infiltrated into the bomber stream.</p>}
   }
-  scenario{"gmtxxxx06j ~ Delousing"}{
+  scenario{"gmt1109_06j ~ Delousing"}{
     dates{1944-01-01 / 1944-12-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7196,10 +7513,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Jamming of German AI radar could be inconsistent, especially when the radar set faced away from the jamming transmissions. Also the use of Window could be patchy. Crews increasingly became skilled at &lsquo;delousing&rsquo; their scopes of interference.</p>}
   }
-  scenario{"gmtxxxx06k ~ Beleuchter"}{
+  scenario{"gmt1109_06k ~ Beleuchter"}{
     dates{1944-01-01 / 1944-12-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7207,10 +7524,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>To direct its fighters the Luftwaffe began to organize Beleuchtergruppen, units of bombers that would track the path of the bomber stream and drop flares into it using sky marker aircraft. The flares would guide fighters to the stream from hundreds of miles away. They were not intended to illuminate bombers, but inevitably they would light up the occasional passing aircraft.</p>}
   }
-  scenario{"gmtxxxx06l ~ Decoy"}{
+  scenario{"gmt1109_06l ~ Decoy"}{
     dates{1944-01-01 / 1944-12-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7218,10 +7535,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Bomber crews began to report sightings of German nightfighters flying with their running lights on. This seems to have been a ruse to divert attention from other nightfighters stalking the bombers.</p>}
   }
-  scenario{"gmtxxxx06m ~ Flensburg Vs. Monica"}{
+  scenario{"gmt1109_06m ~ Flensburg Vs. Monica"}{
     dates{1944-02-01 / 1944-05-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7229,10 +7546,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Spring 1944. The Germans began to use Flensburg to home in on Monica tail warning radars. When this was discovered, the RAF withdrew Monica from use in September 1944.</p>}
   }
-  scenario{"gmtxxxx06n ~ Contrails"}{
+  scenario{"gmt1109_06n ~ Contrails"}{
     dates{1944-03-30 / 1944-03-30}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7240,10 +7557,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>It was rare that weather conditions created contrails, but during an RAF raid on Nuremburg the trails led nightfighters straight to the bombers. The Bomber Command aircraft were slaughtered.</p>}
   }
-  scenario{"gmtxxxx06o ~ Lichtenstein SN-2"}{
+  scenario{"gmt1109_06o ~ Lichtenstein SN-2"}{
     dates{1944-05-01 / 1944-05-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7251,10 +7568,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>In the autumn of 1943 the SN-2 radar was rushed into service as a response to Window jamming. The new system, with its longer range and wide-angle coverage, radically improved the effectiveness of Zahme Sau tactics. By the spring of 1944, the SN-2c was widely available.</p>}
   }
-  scenario{"gmtxxxx06p ~ Fast Ju88s"}{
-    dates{1944-05-01 / 1944-09-31}
+  scenario{"gmt1109_06p ~ Fast Ju88s"}{
+    dates{1944-05-01 / 1944-09-30}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7262,10 +7579,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>A new Ju88 became available, the G-1, which had a much faster top speed than earlier versions. It was to prove outstanding in action.</p>}
   }
-  scenario{"gmtxxxx06q ~ Uhu"}{
+  scenario{"gmt1109_06q ~ Uhu"}{
     dates{1944-06-01 / 1944-06-30}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7273,10 +7590,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Though never popular with the Luftwaffe leadership, the Heinkel 219 emerged as the best of a pack of new nightfighter designs. It proved to be the most efficient Luftwaffe nightfighter of the war, though there were very few airfields with runways long enough to handle it.</p>}
   }
-  scenario{"gmtxxxx06r ~ Type M Window"}{
+  scenario{"gmt1109_06r ~ Type M Window"}{
     dates{1944-08-01 / 1944-08-30}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7284,10 +7601,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The SN-2 radar was initially unaffected by Window, so G&ouml;ring ordered a crash program to re-equip the nightfighter fleet. However, in July 1944 a Ju88 equipped with the radar fell into British hands. Within 10 days a new form of Window had been deployed to jam it and soon after a new bomber-carried jammer, &ldquo;Piperack&rdquo;, was blanketing the airwaves.</p>}
   }
-  scenario{"gmtxxxx06s ~ Fuel Shortages"}{
+  scenario{"gmt1109_06s ~ Fuel Shortages"}{
     dates{1945-01-01 / 1945-03-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7295,10 +7612,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Early 1945. Fuel shortages, exacerbated by Bomber Command's campaign against oil refining, reduced the number of fighters the Luftwaffe was able to fly.</p>}
   }
-  scenario{"gmtxxxx07 ~ Serrate"}{
+  scenario{"gmt1109_07 ~ Serrate"}{
     dates{1943-12-01 / 1943-12-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7306,10 +7623,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The Serrate device was designed to help the RAF hunt down German nightfighters by homing in on their Lichtenstein AI radars. The system lacked precision, but it could often get the RAF fighter close enough for it to pick up the enemy on its own AI radar.</p><p>In general, the Serrate-equipped fighters tended to operate away from the bomber stream, because of the dangers in misidentifying bombers and shooting down a friendly aircraft. However, with the enemy increasingly using Zahme Sau tactics to infiltrate the streams, the Mosquitos could be sucked in.</p>}
   }
-  scenario{"gmtxxxx07a ~ 141 Squadron"}{
+  scenario{"gmt1109_07a ~ 141 Squadron"}{
     dates{1943-06-01 / 1943-12-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7317,10 +7634,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Serrate operations began in June 1943 with the Beaufighters of 141 Squadron, led by the ace Bob Braham. The Beaufighter had insufficient range to escort deep penetration raids and it was not until December that the squadron was able to re-equip with long-range Mosquitos.</p>}
   }
-  scenario{"gmtxxxx07b ~ Identification Friend or Foe"}{
+  scenario{"gmt1109_07b ~ Identification Friend or Foe"}{
     dates{1943-06-01 / 1943-12-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7328,10 +7645,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Because of the accidents that resulted from chasing friendly aircraft by mistake, the British tried to come up with electronic aids for identification. A variety of Identification Friend or Foe (IFF) devices were used, ranging from radio aids to infrared signals fitted to the rear of bombers.</p>}
   }
-  scenario{"gmtxxxx08 ~ Steinbock"}{
+  scenario{"gmt1109_08 ~ Steinbock"}{
     dates{1944-01-01 / 1944-01-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7339,10 +7656,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>In late 1943 Reichsmarschall G&ouml;ring ordered retaliatory raids on Britain using the latest equipment. The codename for the operation was &ldquo;Steinbock&rdquo; (Ibex). Two Gruppen of the new He177 heavy bombers were employed. Their target was London, which was to suffer considerable damage, in spite of the effectiveness of the GCI-guided night defenses.</p>}
   }
-  scenario{"gmtxxxx08a ~ The Arrival of GCI"}
+  scenario{"gmt1109_08a ~ The Arrival of GCI"}
     dates{1941-01-01 / 1941-01-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7350,10 +7667,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The first GCI radars were deployed along the south coast of England in January 1941. Experienced fighter controllers were assigned to the radars to direct fighters to their targets. Almost immediately the GCI system began to claim successes.</p>}
   }
-  scenario{"gmtxxxx08b ~ Winter Blitz"}
+  scenario{"gmt1109_08b ~ Winter Blitz"}
     dates{1941-01-01 / 1941-01-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7361,10 +7678,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>British GCI gave non-radar-equipped &ldquo;cat's eye&rdquo; fighters a new lease of life. The highest scorer among the &ldquo;cat's eyes&rdquo; was the legendary Richard Stevens. Pilot Officer Stevens was a reckless fighter who was to claim nine of his King's enemies by the end of the Winter Blitz in May 1941 and five more before his death in December.</p>}
   }
-  scenario{"gmtxxxx08c ~ The Smack System"}
+  scenario{"gmt1109_08c ~ The Smack System"}
     dates{1942-06-01 / 1942-06-30}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7372,10 +7689,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>A shortage of searchlights in Britain caused an extensive redeployment in late 1941. England was divided into fighter &ldquo;boxes&rdquo;. The first 12 miles of the box was designated as the &ldquo;Indicator Zone&rdquo; where single searchlights, placed at intervals, pointed out bombers. The rear of the box was the &ldquo;Kill Zone&rdquo;, where searchlight density was sufficient to continuously illuminate targets. Code-named &ldquo;Smack&rdquo;, this system remained in operation for the rest of the war.</p><p>This scenario depicts the Smack system in action against the &ldquo;Baedeker Raids&rdquo;, made against popular tourist destinations in retaliation for Bomber Command's attack on L&uuml;beck.</p>}
   }
-  scenario{"gmtxxxx08d ~ Angriffsf&uuml;hrer England"}
+  scenario{"gmt1109_08d ~ Angriffsf&uuml;hrer England"}
     dates{1943-06-13 / 1943-06-14}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7383,10 +7700,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Bomber Command raids on Berlin goaded Hitler into demanding reprisals against Britain. G&ouml;ring appointed Dietrich Peltz, a young officer of proven ability, to the post of Angriffsf&uuml;hrer (Attack Leader) England. Peltz sought to reorganize Luftflotte 3, and one of his innovations was to create units of fighter-bombers &mdash; fast, single-seat Fw190s armed with bombs.</p><p>In April 1943 these new &ldquo;Jabos&rdquo; attacked, meeting little opposition. Even weighed down with bombs they could not be caught by the RAF's Beaufighters. However, the arrival of a new Mosquito variant, the NF.XII, gave the RAF the edge. The newly re-equipped No.85 Squadron was to score its first Jabo kills in May, and the unit's ace CO, Wing Commander John Cunningham, scored his first in mid-June.</p>}
   }
-  scenario{"gmtxxxx08e ~ D&uuml;ppel"}
+  scenario{"gmt1109_08e ~ D&uuml;ppel"}
     dates{1944-01-01 / 1944-01-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7394,10 +7711,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The first Steinbock raids used the German version of &ldquo;Window&rdquo;, codenamed &ldquo;D&uuml;ppel&rdquo;. These affected oder meter-wave GCI radars but had less success against newer microwave sets. Even so, the majority of nightfighters had to rely on searchlights to put them onto targets.</p>}
   }
-  scenario{"gmtxxxx08f ~ Operation Diver"}
+  scenario{"gmt1109_08f ~ Operation Diver"}
     dates{1944-06-01 / 1944-06-30}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7405,10 +7722,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Almost coincidental with the invasion of France, the Germans began to launch V-1 flying bombs at England. These small cruise missiles, codenamed &ldquo;Diver&rdquo; by the Allies, were fast and difficult to catch. A number of the invasion-tasked Mosquito squadrons had to be diverted to anti-Diver patrols.</p>}
   }
-  scenario{"gmtxxxx08g ~ Saipan"}
+  scenario{"gmt1109_08g ~ Saipan"}
     dates{1945-01-01 / 1945-01-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"US","Japan"}
@@ -7416,10 +7733,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The construction of USAAF airstrips for B-29 bombers on Saipan resulted in unwelcome attention from Japanese night raiders. In the summer of 1944, many attacks had been intercepted by P-61s operating under GCI conditions. However, toward the end of the year raids from Iwo Jima began to come in at low level, where the GCI radars were blind, and catch the defenders by surprise. A sizeable engineering effort eventually managed to get an AN/CPS-1 MEW set established atop Mount Tapoachu, and soon defending fighters could be directed to raiders coming in just above the ocean.</p>}
   }
-  scenario{"gmtxxxx09 ~ Fast Carriers"}
+  scenario{"gmt1109_09 ~ Fast Carriers"}
     dates{1944-06-27 / 1944-06-27}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"US","Japan"}
@@ -7427,10 +7744,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The F4U-2 Corsair became the first radar-equipped nightfighter to deploy at sea with the US Navy when four fighters of VF(N)-101 joined USS Enterprise in January 1944. The high point of their service came in June, during the Marianas operation, when L/Cdr Richard Harmer and his wingman shot down three &lsquo;Betty&rsquo; bombers in a single night.</p>}
   }
-  scenario{"gmtxxxx09a ~ Hellcat"}
+  scenario{"gmt1109_09a ~ Hellcat"}
     dates{1944-06-27 / 1944-06-27}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"US","Japan"}
@@ -7438,10 +7755,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The US Navy made the F6F Hellcat its nightfighter mainstay. It was a more forgiving aircraft than the Corsair and safer to operate at night. The F6F-3E was the earliest model equipped with radar, employing the AN/APS-4 which proved difficult for single-seat pilots to operate.</p>}
   }
-  scenario{"gmtxxxx09b ~ Tigercat"}
+  scenario{"gmt1109_09b ~ Tigercat"}
     dates{1944-06-27 / 1944-06-27}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"US","Japan"}
@@ -7450,10 +7767,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The twin-engine F7F Tigercat was a fine fighter, but its tricky handling characteristics and late arrival of the Midway-class carriers (the only ships large enough to handle it) meant that it arrived in the war too late to see any fighting. Only the Marines were to operate it during the war, from land bases rather than flight decks. This counterfactual scenario considers how the Navy version of the aircraft might have performed had the Midway carriers been available earlier.</p>}
   }
-  scenario{"gmtxxxx10 ~ Mosquito"}
+  scenario{"gmt1109_10 ~ Mosquito"}
     dates{1945-01-01 / 1945-01-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7461,10 +7778,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The appearance of the de Havilland Mosquito intruder in numbers, hunting down nightfighters on the edges of the bomber streams, had a profound effect on the Luftwaffe. Morale began to plummet as crews were lost. The German nightfighter force, short on fuel and stretched to the snapping point since the invasion of Europe, began to collapse.</p>}
   }
-  scenario{"gmtxxxx10a ~ Fernnachtjagd"}
+  scenario{"gmt1109_10a ~ Fernnachtjagd"}
     dates{1942-02-01 / 1942-02-28}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7472,10 +7789,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>General Kammhuber was a keen proponent of longe-range intruder (Fernnachtjagd) raids, which he believed disrupted Bomber Command's night flying. Starting with I/NJG 2 and II/NJG 2, he intended to build a Fernnachtjagd force of three Geschwadern.</p><p>However, the plan was stillborn. Hitler lacked faith in intruder operations and the Western Luftflotten were jealous of the expansion of the nightfighter division. The result was that the expansion of longe-range nightfighting was halted. The force was maintained at a strength of one Gruppe, which struggled as best it could with the few machines at its disposal.</p>}
   }
-  scenario{"gmtxxxx10b ~ Mosquito Hunter"}
+  scenario{"gmt1109_10b ~ Mosquito Hunter"}
     dates{1944-08-01 / 1944-08-30}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7484,10 +7801,10 @@
     special{"Fictional"}
     description{<p>Stripped down He219s were to be deployed against the Mosquitos. However, just as they were delivered their mission was axed and given to single-engined fighters. This scenario examines what might have been.</p>}
   }
-  scenario{"gmtxxxx10c ~ Moskito"}
+  scenario{"gmt1109_10c ~ Moskito"}
     dates{1944-12-01 / 1944-12-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7495,10 +7812,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>The Luftwaffe hoped the fast Ta154 Moskito would be capable of catching its de Havilland namesake. However, the Ta154 proved a disappointment. The special glue required to build the wooden fighter had been lost in the bombing, while teething problems kept the Moskito grounded. A small number were delivered to NJG 3, though they were seldom airborne and suffered many accidents.</p>}
   }
-  scenario{"gmtxxxx10d ~ Me262"}
+  scenario{"gmt1109_10d ~ Me262"}
     dates{1945-02-01 / 1945-02-28}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7506,10 +7823,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Late in the war, a flight of jet nightfighters was formed at 10./NJG 11 under Oberleutnant Welter. These were based on the two-seat Me262 trainer airframe with a Neptun radar installed and some of the guns removed. As with the day variant, the pilots had difficulty flying slowly, with the result that they often overshot their targets after a brief firing pass.</p>}
   }
-  scenario{"gmtxxxx06t ~ AI Mk IV Intruders"}
+  scenario{"gmt1109_06t ~ AI Mk IV Intruders"}
     dates{1944-01-01 / 1944-01-31}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
@@ -7517,10 +7834,10 @@
     author{"Brimmicombe-Wood, Lee"}
     description{<p>Early Bomber support work was conducted using the inadequate AI Mk V radar.</p>}
   }
-  scenario{"gmtxxxx06u ~ AI Mk X Intruders"}
+  scenario{"gmt1109_06u ~ AI Mk X Intruders"}
     dates{1944-06-01 / 1944-06-30}
     position{1 / 1}
-    range{22}
+    range{15}
     timescale{1}
     players{1 / 2}
     side{"Germany","Great Britain"}
