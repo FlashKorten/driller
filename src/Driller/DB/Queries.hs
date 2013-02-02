@@ -60,7 +60,7 @@ categoriesMappedToGame :: [QueryCategory]
 categoriesMappedToGame = [GENRE, ENGINE, THEME, MECHANIC, PUBLISHER, SERIES]
 
 categoriesMappedToScenario :: [QueryCategory]
-categoriesMappedToScenario = [AUTHOR, SIDE, PARTY, LEADER]
+categoriesMappedToScenario = [AUTHOR, SIDE, PARTY, LEADER, SPECIAL]
 
 mappedCategories :: [QueryCategory]
 mappedCategories = categoriesMappedToGame ++ categoriesMappedToScenario
@@ -397,6 +397,7 @@ parameterList =
   , "party"
   , "series"
   , "leader"
+  , "special"
   , "engine"
   , "game"
   , "latitude"
@@ -428,6 +429,7 @@ joinList = fromList
   , ("side",      joinForMapToScenario "side")
   , ("party",     joinForMapToScenario "party")
   , ("leader",    joinForMapToScenario "leader")
+  , ("special",   joinForMapToScenario "special")
   , ("series",    joinForMapToGame "series")
   , ("publisher", joinForMapToGame "publisher")
   , ("theme",     joinForMapToGame "theme")
@@ -456,6 +458,7 @@ whereIncludeList = fromList
   , ("party",     whereIncludeForMap "party")
   , ("series",    whereIncludeForMap "series")
   , ("leader",    whereIncludeForMap "leader")
+  , ("special",   whereIncludeForMap "special")
   , ("engine",    whereIncludeForMap "engine")
   , ("game",      " AND s.id_game = ?")
   , ("latitude",  whereForLatitude)
@@ -478,6 +481,7 @@ whereExcludeList = fromList
   , ("side",      whereExcludeForMapToScenario "side")
   , ("party",     whereExcludeForMapToScenario "party")
   , ("leader",    whereExcludeForMapToScenario "leader")
+  , ("special",   whereExcludeForMapToScenario "special")
   , ("publisher", whereExcludeForMapToGame "publisher")
   , ("theme",     whereExcludeForMapToGame "theme")
   , ("genre",     whereExcludeForMapToGame "genre")
@@ -524,16 +528,17 @@ whereForUpToTimescale = " AND s.timescale <= ?"
 
 selectList :: ComponentMap
 selectList = fromList
-  [ ("author",        selectGroupEntriesForMapToGame "author")
-  , ("side",          selectGroupEntriesForMapToGame "side")
-  , ("party",         selectGroupEntriesForMapToGame "party")
-  , ("leader",        selectGroupEntriesForMapToGame "leader")
-  , ("series",        selectGroupEntriesForMapToScenario "series")
-  , ("publisher",     selectGroupEntriesForMapToScenario "publisher")
-  , ("theme",         selectGroupEntriesForMapToScenario "theme")
-  , ("genre",         selectGroupEntriesForMapToScenario "genre")
-  , ("mechanic",      selectGroupEntriesForMapToScenario "mechanic")
-  , ("engine",        selectGroupEntriesForMapToScenario "engine")
+  [ ("author",        selectGroupEntriesForMapToScenario "author")
+  , ("side",          selectGroupEntriesForMapToScenario "side")
+  , ("party",         selectGroupEntriesForMapToScenario "party")
+  , ("leader",        selectGroupEntriesForMapToScenario "leader")
+  , ("special",       selectGroupEntriesForMapToScenario "special")
+  , ("series",        selectGroupEntriesForMapToGame "series")
+  , ("publisher",     selectGroupEntriesForMapToGame "publisher")
+  , ("theme",         selectGroupEntriesForMapToGame "theme")
+  , ("genre",         selectGroupEntriesForMapToGame "genre")
+  , ("mechanic",      selectGroupEntriesForMapToGame "mechanic")
+  , ("engine",        selectGroupEntriesForMapToGame "engine")
   , ("latitude",      selectGroupEntriesForNumbers "latitude_trunc")
   , ("longitude",     selectGroupEntriesForNumbers "longitude_trunc")
   , ("fromYear",      selectGroupEntriesForNumbers "year_from")
@@ -546,8 +551,8 @@ selectList = fromList
   ]
 
 selectGroupEntriesForMapToGame, selectGroupEntriesForMapToScenario  :: Query -> Query
-selectGroupEntriesForMapToGame     = selectGroupEntriesForMap "id"      "id_scenario"
-selectGroupEntriesForMapToScenario = selectGroupEntriesForMap "id_game" "id_game"
+selectGroupEntriesForMapToScenario = selectGroupEntriesForMap "id"      "id_scenario"
+selectGroupEntriesForMapToGame     = selectGroupEntriesForMap "id_game" "id_game"
 
 selectGroupEntriesForMap :: Query -> Query -> Query -> Query
 selectGroupEntriesForMap mappedTo mapId q = mconcat

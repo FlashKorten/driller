@@ -80,6 +80,7 @@ module Driller.DB
     , fetchManySeriesForSelection
     , fetchManyEnginesForSelection
     , fetchManyLeadersForSelection
+    , fetchManySpecialsForSelection
     , fetchManyLatitudesForSelection
     , fetchManyLongitudesForSelection
     , fetchManyFromYearsForSelection
@@ -231,7 +232,11 @@ fetchForResult config key cat f ids
                                  else liftM (createEntries .  markExclusive) (fetchEntry config cat (negate value))
         _ -> f config 25 ids
 
+
+createEntries :: [a1] -> AnswerList a [a1]
 createEntries x = Entries x []
+
+createGroups :: a -> AnswerList a [a1]
 createGroups x = Groups x []
 
 fetchSimpleValuesForResult ::
@@ -259,6 +264,7 @@ prepareResult config ids = do
     authors    <- fetchForResult config "author"    AUTHOR    fetchManyAuthorsForSelection ids
     engines    <- fetchForResult config "engine"    ENGINE    fetchManyEnginesForSelection ids
     leaders    <- fetchForResult config "leader"    LEADER    fetchManyLeadersForSelection ids
+    specials   <- fetchForResult config "special"   SPECIAL   fetchManySpecialsForSelection ids
     latitudes  <- fetchSimpleValuesForResult config "latitude"  fetchManyLatitudesForSelection ids
     longitudes <- fetchSimpleValuesForResult config "longitude" fetchManyLongitudesForSelection ids
     fromYears  <- fetchSimpleValuesForResult config "fromYear"  fetchManyFromYearsForSelection ids
@@ -279,6 +285,7 @@ prepareResult config ids = do
                               , getAuthors    = authors
                               , getEngines    = engines
                               , getLeaders    = leaders
+                              , getSpecials   = specials
                               , getScenarios  = scenarios
                               , getLatitudes  = latitudes
                               , getLongitudes = longitudes
@@ -406,6 +413,9 @@ fetchManyEnginesForSelection = fetchManyFromMapForSelection ENGINE
 
 fetchManyLeadersForSelection :: Config -> Int -> [Int] -> IO LeaderList
 fetchManyLeadersForSelection = fetchManyFromMapForSelection LEADER
+
+fetchManySpecialsForSelection :: Config -> Int -> [Int] -> IO SpecialList
+fetchManySpecialsForSelection = fetchManyFromMapForSelection SPECIAL
 
 fetchManyLatitudesForSelection :: Config -> Int -> [Int] -> IO LatitudeList
 fetchManyLatitudesForSelection = fetchManyForSelection LATITUDE

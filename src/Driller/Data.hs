@@ -13,6 +13,7 @@ module Driller.Data
     , Engine
     , Leader
     , Author
+    , Special
     , Series
     , Answer
     , Parameter
@@ -48,6 +49,7 @@ module Driller.Data
     , PartyList
     , PublisherList
     , SeriesList
+    , SpecialList
     , LeaderList
     , FromYearList
     , UpToYearList
@@ -106,6 +108,7 @@ data Party     = Party     { getPartyId     :: Int, getPartyName     :: Text.Tex
 data Publisher = Publisher { getPublisherId :: Int, getPublisherName :: Text.Text }
 data Series    = Series    { getSeriesId    :: Int, getSeriesName    :: Text.Text }
 data Leader    = Leader    { getLeaderId    :: Int, getLeaderName    :: Text.Text }
+data Special   = Special   { getSpecialId   :: Int, getSpecialName   :: Text.Text }
 data Author    = Author    { getAuthorId    :: Int, getAuthorName    :: Text.Text }
   deriving Show
 
@@ -146,6 +149,7 @@ data Result = Result { getNoResults     :: Int
                      , getAuthors       :: AuthorList
                      , getEngines       :: EngineList
                      , getLeaders       :: LeaderList
+                     , getSpecials      :: SpecialList
                      , getLatitudes     :: LatitudeList
                      , getLongitudes    :: LongitudeList
                      , getFromYears     :: FromYearList
@@ -157,7 +161,7 @@ data Result = Result { getNoResults     :: Int
                      }
 
 emptyResult :: Result
-emptyResult =  Result 0 [] d d d d d d d d d d d d d d d d d d d
+emptyResult =  Result 0 [] d d d d d d d d d d d d d d d d d d d d
                 where d = Entries [] []
 
 -- | @Entries@ map to one specific group: text-types map to a @GroupLetter@ with the same first Letter,
@@ -188,6 +192,7 @@ type PartyList          = AnswerList [GroupLetter] [Party]
 type PublisherList      = AnswerList [GroupLetter] [Publisher]
 type SeriesList         = AnswerList [GroupLetter] [Series]
 type LeaderList         = AnswerList [GroupLetter] [Leader]
+type SpecialList        = AnswerList [GroupLetter] [Special]
 type FromYearList       = AnswerList [GroupNumber] [FromYear]
 type UpToYearList       = AnswerList [GroupNumber] [UpToYear]
 type FromRangeList      = AnswerList [GroupNumber] [FromRange]
@@ -205,7 +210,7 @@ type LongitudeList      = AnswerList [GroupNumber] [Longitude]
 data AnswerList a b = Groups a b | Entries b b
   deriving (Eq, Show)
 
-data QueryCategory = AUTHOR | LEADER | SIDE | PARTY
+data QueryCategory = AUTHOR | LEADER | SIDE | PARTY | SPECIAL
                    | GAME | GENRE | ENGINE | THEME | MECHANIC  | PUBLISHER | SERIES | SCENARIO
                    | LATITUDE | LONGITUDE | FROM_YEAR | UPTO_YEAR
                    | RANGE | FROM_RANGE | UPTO_RANGE
@@ -238,6 +243,7 @@ $(deriveJSON (drop 8)  ''Party)
 $(deriveJSON (drop 12) ''Publisher)
 $(deriveJSON (drop 9)  ''Series)
 $(deriveJSON (drop 9)  ''Leader)
+$(deriveJSON (drop 10)  ''Special)
 $(deriveJSON (drop 3)  ''Result)
 
 $(deriveJSON (drop 11)  ''FromYear)
@@ -286,6 +292,7 @@ instance FromRow Side        where fromRow = Side        <$> field <*> field
 instance FromRow Party       where fromRow = Party       <$> field <*> field
 instance FromRow Leader      where fromRow = Leader      <$> field <*> field
 instance FromRow Publisher   where fromRow = Publisher   <$> field <*> field
+instance FromRow Special     where fromRow = Special     <$> field <*> field
 instance FromRow Series      where fromRow = Series      <$> field <*> field
 instance FromRow Game        where fromRow = Game        <$> field <*> field <*> field
 instance FromRow Scenario    where fromRow = Scenario    <$> field <*> field <*> field <*> field <*> field
@@ -317,6 +324,7 @@ instance MarkExclusive Engine    where markExclusive a = a{ getEngineId    = neg
 instance MarkExclusive Theme     where markExclusive a = a{ getThemeId     = negate $ getThemeId a }
 instance MarkExclusive Mechanic  where markExclusive a = a{ getMechanicId  = negate $ getMechanicId a }
 instance MarkExclusive Side      where markExclusive a = a{ getSideId      = negate $ getSideId a }
+instance MarkExclusive Special   where markExclusive a = a{ getSpecialId   = negate $ getSpecialId a }
 instance MarkExclusive Party     where markExclusive a = a{ getPartyId     = negate $ getPartyId a }
 instance MarkExclusive Leader    where markExclusive a = a{ getLeaderId    = negate $ getLeaderId a }
 instance MarkExclusive Publisher where markExclusive a = a{ getPublisherId = negate $ getPublisherId a }
@@ -333,6 +341,7 @@ categoryToQuery ENGINE         = "engine"
 categoryToQuery THEME          = "theme"
 categoryToQuery MECHANIC       = "mechanic"
 categoryToQuery SIDE           = "side"
+categoryToQuery SPECIAL        = "special"
 categoryToQuery PARTY          = "party"
 categoryToQuery PUBLISHER      = "publisher"
 categoryToQuery SERIES         = "series"
