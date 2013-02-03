@@ -1,3 +1,58 @@
+4278 {
+  title{"Battle over Britain ~ Aug. 1940: The Luftwaffe Attacks"}
+  description{<p>Hitler's war machine has rolled like a juggernaut across the Continent, crushing all opposition. Only Britain still stands, isolated and defiant, readying itself for a mortal struggle between the Luftwaffe and the Royal Air Force. For the first time in history, air power will decide the fate of a nation</p><p>In TSR's new SPI brand Battle over Britain air game, the outcome of the battle is in your hands. You must plan the strategies and the decisive moves that will bring victory. The Strategic Game recreates the entire battle in five-day turns and confronts you with the same fateful choices faces by the actual commanders. In the Combat Game you experience the fury and tension of aerial combat in six raids that decided the outcome of the battle. In the Advanced Game, you must combine sound strategy and winning tactics. This is the definitive treatment of the battle, allowing you to relive the daily action of this decisive campaign.</p>}
+  publisher{"TSR"-"http://www.google.com"}
+  engine{"Email"-"http://www.google.com"}
+  genre{"Conflict Simulation"}
+  mechanic{"Hex","Counter"}
+  theme{"WW2","Battle of Britain","Air War"}
+  scenario{"tsrbob_00 ~ Prelude to Eagle Day"}{
+    dates{1940-08-12 / 1940-08-12}
+    position{1 / 1}
+    range{22}
+    timescale{24}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Butterfield, John H."}
+    special{"Introductory Scenario"}
+    description{<p>Military historians generally agree that the Battle of Britain proper got under way on 8 August 1940. On that day, and on 11 August, the Luftwaffe performed heavy raids against British ports and airfields as a sort of dress rehearsal for the planned Adler Tag (Eagle Day). During these operations, the Germans were startled by the quick response of the RAF to their raids and correctly concluded that the excellent British radar net was responsible. Therefore, on 12 August, intense raids were conducted against radar stations stretching from Land's End to the mouth of the Thames in preparation for the knockout blow to come.</p>}
+  }
+  scenario{"tsrbob_01 ~ Advanced Campaign"}{
+    dates{1940-08-08 / 1940-09-21}
+    position{1 / 1}
+    range{22}
+    timescale{24}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Butterfield, John H."}
+    description{<p>The campaign scenario of the Advanced Game is nine Game-Turns long, covering the same period as the Strategic Game. This scenario takes from 40 to 70 hours to complete.</p>}
+  }
+  scenario{"tsrbob_02 ~ The Critical Period"}{
+    dates{1940-08-18 / 1940-09-21}
+    position{1 / 1}
+    range{22}
+    timescale{24}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Butterfield, John H."}
+    description{<p>Five days after Adlertag, the Germans believed that the RAF would crumble with one more knockout blow against their southern airfields. In reality, the British fighter force was as strong as ever. German bombing had chewed up some of the southern airfields in the previous days, but Lord Dowding's flexible Fighter Command was ready for the next blow.</p><p>This scenario is seven Game-Turns long, beginning on Game-Turn 3 (Aug. 18-22). It takes from 25 to 55 hours to complete.</p>}
+  }
+  scenario{"tsrbob_03 ~ Their Finest Hour"}{
+    dates{1940-09-07 / 1940-09-21}
+    position{1 / 1}
+    range{22}
+    timescale{24}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+    author{"Butterfield, John H."}
+    description{<p>By early September, the Luftwaffe's inability to knock out the RAF was frustrating German high command. Unknown to the Germans, the RAF was hurting, not due to lack of airplanes, but the lack of experienced pilots. Instead of continuing raids against targets that directly affected RAF operations, Hitler ordered the Luftwaffe to direct its power against civilian targets such as London and other major cities. This decision was made partly in response to British bombing of Berlin, which infuriated the Fuhrer. It was a critical strategic error which proved to be the turning point of the battle.</p><p>This scenario is three Game-Turns long, beginning on Game-Turn 7 (Sept. 7-11). It takes from 15 to 25 hours to complete.</p>}
+  }
+}
+
 33030 {
   title{"The Drive on Metz ~ Patton in France"}
   description{<p>The Drive on Metz is a two-player game recreating General George S. Patton’s attempt to seize the key city of Metz and get across the Moselle River before the retreating Germans could form an effective defense. The American forces, comprised of three divisions of the 20th Corps, had just completed an epic pursuit across France after the Allied breakout from the Normandy beachhead. The exhausted Allied forces were at the end of their supply line and had barely enough resources left for one last push.</p><p>If they had been able to get across the Moselle River, they would have compromised the entire German Westwall defenses. This would have enabled Patton to make an attempt at crossing the Rhine before the end of 1944 and might have ended the war months earlier.</p><p>The defending German forces, four divisions of the 82nd Corps of the German 1st Army, were a combination of hastily collected and organized units, including fresh units from the German interior and remnants of units that Patton had been pursuing across France.</p><p>The battle, which began on 7 September 1944 and lasted for about a week, was a singular opportunity that could have gone either way. Historically, the Germans won, but just barely.</p>}
@@ -17,6 +72,261 @@
     party{"Germany"-"2","US"-"2"}
     author{"Dunnigan, James","Emrich, Alan"}
     description{<p>The Drive on Metz is a two-player game recreating General George S. Patton’s attempt to seize the key city of Metz and get across the Moselle River before the retreating Germans could form an effective defense. The American forces, comprised of three divisions of the 20th Corps, had just completed an epic pursuit across France after the Allied breakout from the Normandy beachhead. The exhausted Allied forces were at the end of their supply line and had barely enough resources left for one last push.</p><p>If they had been able to get across the Moselle River, they would have compromised the entire German Westwall defenses. This would have enabled Patton to make an attempt at crossing the Rhine before the end of 1944 and might have ended the war months earlier.</p><p>The defending German forces, four divisions of the 82nd Corps of the German 1st Army, were a combination of hastily collected and organized units, including fresh units from the German interior and remnants of units that Patton had been pursuing across France.</p><p>The battle, which began on 7 September 1944 and lasted for about a week, was a singular opportunity that could have gone either way. Historically, the Germans won, but just barely.</p>}
+  }
+}
+
+1499 {
+  title{"World in Flames ~ Global Conflict: 1939-1945"}
+  description{<p>World in Flames is Australian Design group's international award winning game that is the strategic game of World War II. Five full-colour maps portray all the theatres of war: Europe, Russia, Africa, the Middle East, India, Asia, the Pacific, the Atlantic and (most importantly) Australia.</p><p>1400 counters represent the armies and corps, the aircraft carriers, the naval task forces and the air groups that took part. Everything you need to re-fight the greatest conflict in history.</p><p>Two to six players make the strategic decisions that decide the fate of nations. What forces to produce, where to commit them, when and how? No two games of World in Flames play the same, no strategy is foolproof, any decision may have unforseen, long-term consequences.</p><p>World in Flames contains all the latest top quality components, 1400 counters, 5 maps, 2 combat charts, one Production Circle and the comprehensive rules and scenarios booklets, that have been extensively updated and revised based on 2 million playing hours of the world's greatest game.</p><p>If you want to change the world then World in Flames is for you.</p>}
+  publisher{"Australian Design Group"-"http://www.a-d-g.com.au//cgi/product_details?pr_id=1"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:World_in_Flames"}
+  genre{"Conflict Simulation"}
+  mechanic{"Dice","Hex","Counter"}
+  theme{"WW2"}
+  scenario{"adgwif_01 ~ Barbarossa - &ldquo;One Kick...&rdquo;"}{
+    dates{1941-05-01 / 1942-02-28}
+    position{1 / 1}
+    range{-1}
+    timescale{240}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","Russia"}
+    party{"Germany"-"2","Russia"-"2"}
+    author{"Pinder, Greg","Rowland, Harry"}
+    description{<p>Operation Barbarossa was the greatest land campaign in the history of the world. This game starts with Germany poised to launch its drive against the massive Soviet army.</p>}
+  }
+  scenario{"adgwif_02 ~ Guadalcanal - The tide turns"}{
+    dates{1942-05-01 / 1943-02-28}
+    position{1 / 1}
+    range{-1}
+    timescale{240}
+    players{2 / 2}
+    side{"Axis","Allies","Japan","Commonwealth","France","US"}
+    party{"Japan"-"2","US"-"2"}
+    author{"Pinder, Greg","Rowland, Harry"}
+    description{<p>This game starts with the Japanese, having conquered much of the Pacific so easily, pondering whether they should take it all. Meanwhile, the USA is gathering its forces for the long struggle on Guadalcanal, the inconclusive battle of the Coral Sea and the decisive carrier action at Midway.</p>}
+  }
+  scenario{"adgwif_03 ~ Fascist Tide - The War in Europe"}{
+    dates{1939-09-01 / 1945-06-30}
+    position{1 / 1}
+    range{-1}
+    timescale{240}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","Italy","Commonwealth","France","Russia","US"}
+    party{"Germany"-"2"}
+    author{"Pinder, Greg","Rowland, Harry"}
+    description{<p>This game covers the full war in Europe from Germany's invasion of Poland in September 1939 until the end of the Battle for Berlin in May 1945. The Axis powers will have the initiative for roughly the first 3 years of the war before the Allies gradually gain the upper hand.</p>}
+  }
+  scenario{"adgwif_04 ~ Day of Infamy - The War in the Pacific"}{
+    dates{1941-11-01 / 1945-08-31}
+    position{1 / 1}
+    range{-1}
+    timescale{240}
+    players{2 / 2}
+    side{"Axis","Allies","Japan","Commonwealth","China","France","Russia","US"}
+    party{"Japan"-"2"}
+    author{"Pinder, Greg","Rowland, Harry"}
+    description{<p>This game covers the full war in Asia and the Pacific from Nov/Dec 1941 until the dropping of the atomic bombs in August 1945. It starts with Japan ready to bring the USA and the other western Allies to war with a stunning strike on Pearl Harbor and rapid expansion into south east Asia.</p>}
+  }
+  scenario{"adgwif_05 ~ Missed the Bus - The end of the beginning"}{
+    dates{1940-07-01 / 1945-08-31}
+    position{1 / 1}
+    range{-1}
+    timescale{240}
+    players{2 / 2}
+    side{"Axis","Allies"}
+    author{"Pinder, Greg","Rowland, Harry"}
+    description{<p>Fall Gelb has been a stunning success. All of Europe lies at the feet of the Axis. But where to attack? And how can the Allies survive the onslaught, wrest the initiative, and start the long drive to victory?</p>}
+  }
+  scenario{"adgwif_06 ~ Lebensraum - Germany moves east"}{
+    dates{1941-05-01 / 1945-08-31}
+    position{1 / 1}
+    range{-1}
+    timescale{240}
+    players{2 / 2}
+    side{"Axis","Allies"}
+    author{"Pinder, Greg","Rowland, Harry"}
+    description{<p>France lies prostrate. The Commonwealth is bloodied but unbowed. Germany is ready to unleash Operation Barbarossa against the unsuspecting Soviets. This game starts with the second phase of Germany's offensive - the attack on the USSR.</p>}
+  }
+  scenario{"adgwif_07 ~ Waking giant - The USA enters the war"}{
+    dates{1941-11-01 / 1945-08-31}
+    position{1 / 1}
+    range{-1}
+    timescale{240}
+    players{2 / 2}
+    side{"Axis","Allies"}
+    author{"Pinder, Greg","Rowland, Harry"}
+    description{<p>This game starts with Germany's offensive in the USSR stalling as the winter arrives. Japan is ready to bring the USA and the other western Allies to war with a stunning strike on Pearl Harbor and rapid expansion into south-east Asia.</p>}
+  }
+  scenario{"adgwif_08 ~ Brute force - The Allies hit back"}{
+    dates{1942-05-01 / 1945-08-31}
+    position{1 / 1}
+    range{-1}
+    timescale{240}
+    players{2 / 2}
+    side{"Axis","Allies"}
+    author{"Pinder, Greg","Rowland, Harry"}
+    description{<p>This game starts with Germany's summer offensive towards Stalingrad and the Caucasus. The Japanese are considering their next move after their unexpectedly successful sweep through SE Asia and the Pacific. Meanwhile, the USA is prepared to land in North Africa and, in the Pacific, is gathering forces for the long struggle on Guadalcanal, the inconclusive battle of the Coral Sea and the more decisive event at Midway.</p>}
+  }
+  scenario{"adgwif_09 ~ Darkness before the dawn - The beginning of the end"}{
+    dates{1943-07-01 / 1945-08-31}
+    position{1 / 1}
+    range{-1}
+    timescale{240}
+    players{2 / 2}
+    side{"Axis","Allies"}
+    author{"Pinder, Greg","Rowland, Harry"}
+    description{<p>This game represents the final third of the war. The Axis powers control most of Europe but the Allies have rebuilt and are now the stronger side. The United States' entry into the war has contributed enormous industrial potential to the Allied side and the Allies have converted that into a material advantage. Now they are ready to employ it.</p><p>Before then, the Germans prepare for one last gamble - Kursk. If that fails, the Soviets will start their irresistible drive on Berlin. Meanwhile, the Western Allies have cleared North Africa and are ready to land in Sicily.</p><p>In the Pacific, the Japanese imperial dream is evaporating. Losses at Midway, Guadalcanal and Papua have put them firmly on the defensive and the USA is now prepared to leap across the Pacific to begin liberating the Japanese conquests.</p>}
+  }
+  scenario{"adgwif_10 ~ Decline and fall - The Allied ascendancy"}{
+    dates{1944-05-01 / 1945-08-31}
+    position{1 / 1}
+    range{-1}
+    timescale{240}
+    players{2 / 2}
+    side{"Axis","Allies"}
+    author{"Pinder, Greg","Rowland, Harry"}
+    description{<p>This game covers the last stages of the war. It is a good scenario to play if you don't normally get to this point in your games of if the Allied players just want a good time. It is not as much fun for the Axis players but it is not without its challenges.</p><p>At the start of this game, the Axis still controlled vast empires and enormous quantities of mat&eacute;riel. Within 16 months, their power was destroyed, their cities in ruins. The incompetence the Allied commanders displayed time and time again during the first half of the war was replaced by a series of stunning successes under the command of some excellent leaders. Could the Axis have countered that performance? Could the Allies have done even better?</p>}
+  }
+  scenario{"adgwif_11 ~ The Global War"}{
+    dates{1939-09-01 / 1945-08-31}
+    position{1 / 1}
+    range{-1}
+    timescale{240}
+    players{2 / 2}
+    side{"Axis","Allies"}
+    author{"Pinder, Greg","Rowland, Harry"}
+    description{<p>This game covers the full war from Germany's invasion of Poland in September 1939 until the atomic bombs of August 1945. It is the longest and most challenging of all the scenarios. The Axis powers will have the initiative for roughly the first 3 years of the war before the Allies gradually gain the upper hand.</p>}
+  }
+}
+
+11269 {
+  title{"Roads to Leningrad ~ Battles of Soltsy and Staraya Russa, 1941"}
+  description{<p>During the summer of 1941, the forces of German Army Group North appeared to be advancing irresistibly toward Leningrad, the second largest city in the Soviet Union, and the birthplace of the Communist revolution. But Leningrad was a long way from the German border, and the closer the Germans got to it, the more difficulties they encountered with terrain, their own lengthening supply lines, and stiffening Soviet resistance.</p><p>In mid-July, approximately 100 miles south of Leningrad at Soltsy, a surprisingly strong Soviet force of about six divisions struck the German armored spearhead and pushed it back. The 8th Panzer Division did not suffer the catastrophic losses claimed by the Soviet, but attack did cause the Germans in this sector to halt for three crucial weeks before resuming their drive on Leningrad.</p><p>In August the Soviets launched another counteroffensive, this time with ten divisions, against the German flank south of Staraya Russia. Just as the German offensive against Leningrad renewed, the Germans diverted critical motorized reserves to deal with the threat, winning a strategically barren victory far from their true objective. When the Germans did reach Leningrad, they lacked the strength to break into the city itself.</p><p>The battles of Soltsy and Staraya Russia may well have saved Leningrad.</p>}
+  publisher{"GMT Games"-"http://www.gmtgames.com/p-166-roads-to-leningrad.aspx"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:Roads_to_Leningrad:_Battles_of_Soltsy_and_Staraya_Russa,_1941","Cyberboard"-"http://www.gmtgames.com/p-166-roads-to-leningrad.aspx"}
+  genre{"Conflict Simulation"}
+  mechanic{"Dice","Hex","Counter"}
+  theme{"WW2","Eastern Front"}
+  scenario{"gmt0403_01 ~ The Battle of Soltsy"}{
+    dates{1941-07-10 / 1941-07-15}
+    position{58.123546 / 30.119019}
+    range{30}
+    timescale{12}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","Russia"}
+    party{"Germany"-"2","Russia"-"2"}
+    author{"Von Borries, Vance","Curtis, Tony","Reins, Ed"}
+    description{<p>On 10 July German Pz.Gp.4 renewed its offensive toward Leningrad with two Panzer corps, XLI (Reinhardt) direct at Leningrad through Luga and LVI (von Manstein) through Soltsy and Shimsk to cut off Leningrad from the south and east. For a while the offensive moved swiftly with the advanced elements of LVI Corps east of Soltsy by dusk on the 13th. At the same time, Soviet command observed how LVI Corps was strung out along the road to Shimsk. With Reinhardt’s corps diverted well to the north the day before, Soviet command was convinced their moment for a counter-offensive had come. They diverted reinforcements already on the way and reorganized them into northern and southern pincers to cut-off and surround Manstein’s corps.</p><p>On the 15th the Soviet hammer struck. While the German 3 Motorized Division was busy fending off heavy attacks on their positions at Gorodishche and rear echelons fought off raids across the Shelon River in the south, 8 Panzer found itself quickly surrounded and under attack by the 70th Order of Lenin Rifle Division and parts of 21st Tank Division. Now for the first time a Panzer division had to yield. It reorganized for all-round defense and during the 17th completed its breakout to the west after much heavy fighting.</p><p>Soviet forces under Front and Theater direction had organized and executed a successful offensive against some of Germany’s finest troops. A precious three weeks was gained for the defenders of Leningrad.</p>}
+  }
+  scenario{"gmt0403_02 ~ Counter-Blow at Soltsy"}{
+    dates{1941-07-15 / 1941-07-18}
+    position{58.123546 / 30.119019}
+    range{30}
+    timescale{12}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","Russia"}
+    party{"Germany"-"2","Russia"-"2"}
+    author{"Von Borries, Vance","Curtis, Tony","Reins, Ed"}
+    description{<p>Before dawn on 15 July the Soviets struck their main blow against 8 Panzer Division at Soltsy. Leading the attack was 70 Order of Lenin Rifle Division supported by tanks of 21 Tank Division and others. The 70th had earned its laurels fighting the Finns during the 1939/40 Winter War but tactics there were still not up to German standards. However at Soltsy, the 70th had the 8th Panzers surrounded.</p><p>Making the first move was 68 Rifle Regiment into the 8th Panzer’s rear. The panzertruppen counter-attacked but were driven back and now the whole division was surrounded. On the 16th it gradually pulled back to the line of the railroad tracks to the west and that night gave up the last district of Soltsy. On the 17th it fought in the Dubrovo area and by the 18th had completely withdrawn from the battlefield, its place on the line now being taken over by the SS Totenkopf Division.</p><p>The 3 Motorized Division too had come under heavy attack, mainly by 237 Rifle Division, recording seventeen attacks on one day. It was effectively pinned in place but a few detachments were spared to help cover the long unguarded German right flank along the Shelon River. There, Soviets successfully shot up critical German supply columns.</p><p>The Soviets credited themselves with the routing of 8 Panzer Division and the infliction of many casualties. German losses indeed were serious but not disastrous. But Germany could ill afford having a Panzer division remain out of action for long.</p>}
+  }
+  scenario{"gmt0403_03 ~ The Battle of Staraya Russa"}{
+    dates{1941-08-12 / 1941-08-23}
+    position{57.948193 / 30.993805}
+    range{75}
+    timescale{12}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","Russia"}
+    party{"Germany"-"2","Russia"-"2"}
+    author{"Von Borries, Vance","Curtis, Tony","Reins, Ed"}
+    description{<p>To relieve pressure on the increasingly hard-pressed armies defending Leningrad, in early August the Soviet High Command (STAVKA) prepared a surprise counter-offensive near Staraya Russa, south of Lake Ilmen. For this offensive STAVKA assigned the 34th Army (Lt. Gen. Kachanov) to augment the 11th Army (Lt. Gen. Morozov) then already in position. On 12 August the attack began, initially with eight divisions, eventually with ten, tearing into German Gen. Hansen’s X Corps’ southern flank. His three divisions, exhausted from their frontal attack on Staraya Russa, were outnumbered. Within two days Soviet mechanized units had penetrated 35 miles, severing all contact with German II Corps to the south.</p><p>While Berlin had originally ordered the formation of a purely defensive front south of Lake Ilmen, the developing crisis caused a re-examination. By 14 August, the crisis was causing concern in both Berlin and in Feldmarshal von Leeb’s Army Group North Headquarters. Leeb ordered the SS Totenkopf Division from reserve to a more forward position, to counter further Soviet westward moves, but this was not enough. By the next day Hitler demanded the transfer of a full panzer corps in reaction to the Soviet threat, and to Hansen’s continuing requests for help. Later on the 15th, Leeb thought he would be able to send reinforcements instead to the German breakthrough on the lower Luga, aimed at Leningrad, but by the end of the day, Leeb had revised his estimate: the Soviets had managed a breakthrough, and X Corps was in trouble. X Corps would receive heavy support from the Luftwaffe, and Manstein’s LVI Corps would be sent to restore the situation. This removal of German strength from the assault on Leningrad probably saved the city from German occupation.</p>}
+  }
+  scenario{"gmt0403_04 ~ Manstein Attacks"}{
+    dates{1941-08-19 / 1941-08-23}
+    position{57.948193 / 30.993805}
+    range{75}
+    timescale{12}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","Russia"}
+    party{"Germany"-"2","Russia"-"2"}
+    author{"Von Borries, Vance","Curtis, Tony","Reins, Ed"}
+    description{<p>In response to the Soviet offensive by 34th and 11th Armies, on August 19th Manstein launched his initial attack into the extended southern flank of 34th Army directly, out of road march (for the 3rd Motorized Division), and on only limited reconnaissance. His plan was to make contact on his left with the westernmost elements of Hansen’s X Corps’ fragmented divisions, now facing south, and strike at the Soviet rear with is main effort.</p><p>On the previous day, the 18th, Hansen had succeeded in holding his positions, but only because the Luftwaffe had given its full support to his beleaguered corps. Meanwhile, the SS Totenkopf Division and Hansen’s 30th Infantry Division had closed the dangerous gap at Gorki.</p><p>On the 19th Manstein’s counter-attack began, with the 3 Motorized Division on Manstein’s right, and Totenkopf on the left. In support was a mixed, brigade-sized Kampfgruppe under the command of General Lieb. Hansen’s X Corps formed the anvil for the hammer blow. The Soviets were taken completely by surprise. Three days later it was all over. Between them the two German corps had severely battered both the 11th and 34th Armies, taking more than 18,000 prisoners, capturing or destroying over 300 artillery pieces and anti-tank guns, 200 tanks, 36 anti-aircraft guns, and almost 700 other motor vehicles.</p><p>The Soviet offensive had not affected the eastern pincer of the German drive on Leningrad, which reached Lake Ladoga and isolated the city, as planned. It had, however, deprived the Germans of the reserve that they needed for the western pincer to advance from the lower Luga through the fortified areas in front of Leningrad, and on into the city. Manstein’s Corps was now 160–200 miles from where it was needed most. Even worse for the German chances to take Leningrad, when Manstein reached the Lovat River, his corps was ordered to join in yet another battle to the east against the elusive 11th, 34th, and now 27th Armies. This battle stretched on into the Valday Hills, a region of intensely difficult terrain, and even farther from Leningrad.</p>}
+  }
+}
+
+2298 {
+  title{"Kasserine ~ Rommel's Battle for Tunisia, 1943"}
+  description{<p>When the Allied forces landed on the coast of Algeria and Morocco on November 8, 1942 (Operation Torch), it seemed that the war in North Africa would only last a few weeks. The Axis defeat appeared inevitable. Instead, German and Italian reinforcements rushed to Tunisia, creating a new front that stopped the Allied advance. In addition, Rommel's veterans of Panzerarmee Afrika withdrew from Libya to join hands with troops already in Tunisia, thereby giving Axis forces an opportunity for strategic advantage.</p><p>Axis Command thought it had a realistic chance for victory with unified forces by separating and defeating each Allied army in detail, starting with the inexperienced US forces. On Valentine's Day 1943, the most dangerous of these Axis offensives began. Had it succeeded, the war in North Africa would have been lengthened, possibly delaying the Allied invasion of Europe. This offensive offered the Axis a chance for a major battlefield success to offset the disaster at Stalingrad. Kasserine proved to be the last realistic chance for the Axis to reverse their fortunes in North Africa.</p><p>Kasserine is an operational-level game of the WWII German and Italian offensive in central Tunisia that took place in February 1943. The game is intended for two players. One player controls the Axis forces of Germans and Italians, and his opponent controls the Allied forces of Americans, British, and French. The players maneuver their units across the map and conduct combat according to the rules of play.</p>}
+  publisher{"GMT Games"-"http://www.gmtgames.com/p-259-kasserine.aspx"}
+  engine{"Vassal"-"","Cyberboard"-""}
+  genre{"Conflict Simulation","Operational Level"}
+  mechanic{"Dice","Hex","Counter"}
+  theme{"WW2"}
+  scenario{"gmt0010_01 ~ Faid Pass"}{
+    dates{1943-01-30 / 1943-02-01}
+    position{35.274176 / 8.986816}
+    range{150}
+    timescale{6}
+    players{2 / 2}
+    special{"Introductory Scenario"}
+    side{"Axis","Allies","Germany","Italy","US","British","French"}
+    party{"Germany"-"2"}
+    author{"Von Borries, Vance","Curtis, Tony"}
+    description{<p>The French are the first victims of the rebuilt German 21st Panzer Division in this dress rehearsal of the Kasserine campaign. Can the US armored group rescue them in time?</p>}
+  }
+  scenario{"gmt0010_02 ~ The Campaign"}{
+    dates{1943-02-14 / 1943-02-23}
+    position{35.274176 / 8.986816}
+    range{150}
+    timescale{6}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","Italy","US","British","French"}
+    party{"Germany"-"2"}
+    author{"Von Borries, Vance","Curtis, Tony"}
+    description{<p>This full scenario begins with the tank battles at Siki bou Zid and Sbeitla, includes action at Kasserine Pass, and could move to the final battles in Thala and Djebl Hamra if the Axis player pursues the historical routes of advance. Of course, the Axis could be taking a different road to victory with the uncertain victory conditions. Can the Allied player stop the Axis?</p>}
+  }
+  scenario{"gmt0010_03 ~ The Axis Decide"}{
+    dates{1943-02-19 / 1943-02-23}
+    position{35.274176 / 8.986816}
+    range{150}
+    timescale{12}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","Italy","US","British","French"}
+    party{"Germany"-"2"}
+    author{"Von Borries, Vance","Curtis, Tony"}
+    description{<p>The preliminaries are over and Rommel makes ready for his final drive for victory, but which road will he follow?</p>}
+  }
+  scenario{"gmt0010_04 ~ Thala"}{
+    dates{1943-02-21 / 1943-02-23}
+    position{35.274176 / 8.986816}
+    range{150}
+    timescale{12}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","Italy","US","British","French"}
+    party{"Germany"-"2"}
+    author{"Von Borries, Vance","Curtis, Tony"}
+    description{<p>This was the last Axis throw of the dice against weakened but determined Allied resistance. Without victory here the Axis will eventually face retreat in Africa. Can the Axis player break through one more time for victory?</p>}
+  }
+  scenario{"gmt0010_05 ~ Red Bull at Fondouk Pass"}{
+    dates{1943-03-27 / 1943-03-29}
+    position{35.274176 / 8.986816}
+    range{150}
+    timescale{12}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","Italy","US","British","French"}
+    party{"Germany"-"2"}
+    author{"Von Borries, Vance","Curtis, Tony"}
+    description{<p>Kasserine is over and the Axis hope to prevent an Allied breakthrough to the coast. If the Allies achieve this, they would shorten the war in Africa by a month. Unfortunately, the US 34th Red Bull Division is not up to the task. Can you as the Allied player make the breakthrough despite the odds?</p>}
+  }
+  scenario{"gmt0010_06 ~ Second Battle of Fondouk"}{
+    dates{1943-04-08 / 1943-04-09}
+    position{35.274176 / 8.986816}
+    range{150}
+    timescale{12}
+    players{2 / 2}
+    side{"Axis","Allies","Germany","Italy","US","British","French"}
+    party{"Germany"-"2"}
+    author{"Von Borries, Vance","Curtis, Tony"}
+    description{<p>The US 34th Division failed in Scenario #5 but they try again and this time are heavily reinforced. Time pressure is a factor as little time is left to trap the Axis troops retreating from southern Tunisia.</p>}
   }
 }
 
@@ -3605,6 +3915,7 @@
     side{"Germany","Hungary","Bulgaria","Italy","Rumania","Axis","Russia"}
     party{"Axis"-"2","Russia"-"2"}
     author{"Dalgliesh, Tom","Besinque, Craig"}
+    special{"Introductory Scenario"}
     description{<p>Introductory Scenario</p>}
   }
 }
@@ -3977,9 +4288,9 @@
 
 3353 {
   title{"WW2: Barbarossa to Berlin"}
-  description{<p>WWII: Barbarossa to Berlin is a game that allows two players to simulate the course of WWII in Europe and North Africa from the German invasion of the Soviet Union on June 22, 1941 to the fall of the Reich in May, 1945. The game is based on the card system used in GMT’s Paths of Glory, but there are many differences that need to be fully understood.</p>}
-  publisher{"GMT Games"-"www.gmtgames.com"}
-  engine{"Vassal"-"www.vassalengine.org/mediawiki/images/c/c7/BtB_ver2-01.vmod","Cyberboard"-"www."}
+  description{<p>World War 2: Barbarossa to Berlin presents both the Allied and Axis players with a wide range of exciting game choices, while illustrating the key historical factors of the war: from the importance of mechanized forces in combat to the importance of oil to fuel them but without the complexity of other strategic WWII designs. And, unlike many of those games, World War 2: Barbarossa to Berlin lives up to its title: an Axis player who fails to win the war may still win the game. The winner is often decided on the last turn as the Allied player struggles to extinguish the last traces of the Nazi empire. Designed by Ted Raicer as a follow-up to his multi-award-winning World War One strategic game, Paths of Glory, World War 2: Barbarossa to Berlin modifies the Paths of Glory systems to capture the strategic and operational dynamics of WWII in Europe.</p><p>As in Paths of Glory, the heart of the game lies in the 110 Action Cards (55 each for the Axis and Allied players). Each card can be used for operational movement and combat, strategic movement, replacements, or for an Event. The movement and combat systems will be familiar to Paths of Glory players, but have been modified to recreate the blitzkrieg campaigns of 1941-45.</p><p>World War 2: Barbarossa to Berlin covers four years of epic struggle, from Moscow to Stalingrad, from Tobruk to Tunis, from Sicily to Rome, from D-Day to the Rhine, to the final battles for the Reich. It is June 22, 1941: will World War II end in German triumph in Operation Barbarossa or collapse in Berlin? As the world holds it breath, the decisions are all yours.</p>}
+  publisher{"GMT Games"-"http://www.gmtgames.com/p-23-ww2-barbarossa-to-berlin-2006-edition.aspx"}
+  engine{"Vassal"-"www.vassalengine.org/mediawiki/images/c/c7/BtB_ver2-01.vmod","Cyberboard"-"http://www.gmtgames.com/nnbb/GMT_BtB_V4.0.zip"}
   genre{"Conflict Simulation","Strategic Level"}
   mechanic{"Card-Driven","Point-to-Point Movement","Counter"}
   theme{"WW2"}
@@ -4037,10 +4348,10 @@
 }
 
 23685 {
-  title{"1805, Sea of Glory"}
+  title{"1805 ~ Sea of Glory"}
   description{<p>Spring, 1805 - Napoleon’s Grande Armée is encamped along the shores of the English Channel. Following the teachings of Alexander the Great, the French Emperor seeks to defeat a naval power from the land. He has but to place 100,000 troops on British soil and France’s hereditary enemy will finally fall. To do this, his combined fleet must control the Channel long enough for hundreds of shallow draft boats to ferry his troops to England. Standing in the Emperor’s way is the Royal Navy.</p><p>The year 1805, which is punctuated by the British naval victory at Trafalgar, represents England’s darkest time during the Napoleonic Wars. The threat of invasion looms large. Her great Wooden Walls offer the island nation its only defense against a far superior foe.</p><p>1805: Sea of Glory examines the naval war on an operational level during that pivotal year. Although Trafalgar shines through history as the beacon of victory, it is the successful blockade of enemy ports that kept French boots from stepping onto British soil. But 1805: Sea of Glory is more than a game about blockade duty. It is a game of breakout and pursuit, deception and false leads, husbanding meager resources, striking a blow where your enemy least suspects, and bringing about the decisive naval battle that defines victory or defeat.</p>}
-  publisher{"GMT Games"-"www.gmtgames.com"}
-  engine{"Cyberboard"-"www."}
+  publisher{"GMT Games"-"http://www.gmtgames.com/p-104-1805-sea-of-glory.aspx"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:1805:_Sea_of_Glory"}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Fog of War","Blocks"}
   theme{"Naval"}
@@ -4080,13 +4391,13 @@
 
 2748 {
   title{"Thirty Years War ~ Europe in Agony"}
-  description{<p></p> direct descendant of Paths of Glory, 30 Years War covers the confusing post-Reformation conflict in central Europe, as the Holy Roman Empire attempts to reassert domination over the protestant states. On the side of Catholicism we have the Holy Roman Empire (Austria and some of Northern Italy at this point) and Spain, opposed by a cast of thousands: the German Protestants, Sweden at the height of her power, France, England, Denmark, and others.</p><p>While there are some new mechanics, virtually the entire game is borrowed from elsewhere: Leader activations and movement are as in Hannibal, combat is straight out of Paths of Glory (minus the flanking), and Siege resolves much Hannibal. Your armies have to be paid, with Aid Points that are received just like Paths of Glory's RPs. An interesting twist is that the movement and support of armies results in the landscape getting Pillaged, so as the game goes on the board becomes less and less capable of supporting military operations.</p>}
-  publisher{"GMT Games"-"www.gmtgames.com"}
-  engine{"Vassal"-"www.vassalengine.org/mediawiki/images/8/80/30YW_v1_1.vmod"}
+  description{<p>In Thirty Years War, one player takes the role of the Catholic (Imperial) side, while his opponent is, for lack of a better word, the Protestant player (though the nature of each side’s alliances will constantly change, regardless of religious persuasions). Players manipulate historical leaders, combat units and events through the use of strategy cards in an effort to win control of territory, thereby swinging the Catholic Victory Point total in a direction that will bring them victory. Rules herein provide for a Campaign Game and three shorter scenarios corresponding to the three phases of the war (the early Bohemian phase, the Danish and Swedish interventions, and the final phase of Franco-Spanish intervention).</p>}
+  publisher{"GMT Games"-"http://www.gmtgames.com/p-28-thirty-years-war.aspx"}
+  engine{"Vassal"-"www.vassalengine.org/mediawiki/images/8/80/30YW_v1_1.vmod","ZunTzu"-"http://www.gmtgames.com/nnty/30yw_ZunTzu.zip"}
   genre{"Historical Simulation","Strategic Level"}
   mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
   theme{"Thirty Years' War"}
-  scenario{"Thirty Years War ~ Europe in Agony"}{
+  scenario{"gmt30yw_01 ~ Early War"}{
     dates{1618-01-01 / 1648-12-31}
     position{1 / 1}
     range{300}
@@ -4095,19 +4406,74 @@
     side{"Protestants","Catholics"}
     party{"Protestants"-"2","Catholics"-"2"}
     author{"Fox, David","Welker, Michael"}
-    description{<p></p> direct descendant of Paths of Glory, 30 Years War covers the confusing post-Reformation conflict in central Europe, as the Holy Roman Empire attempts to reassert domination over the protestant states. On the side of Catholicism we have the Holy Roman Empire (Austria and some of Northern Italy at this point) and Spain, opposed by a cast of thousands: the German Protestants, Sweden at the height of her power, France, England, Denmark, and others.</p><p>While there are some new mechanics, virtually the entire game is borrowed from elsewhere: Leader activations and movement are as in Hannibal, combat is straight out of Paths of Glory (minus the flanking), and Siege resolves much Hannibal. Your armies have to be paid, with Aid Points that are received just like Paths of Glory's RPs. An interesting twist is that the movement and support of armies results in the landscape getting Pillaged, so as the game goes on the board becomes less and less capable of supporting military operations.</p>}
+    description{<p>This scenario covers the opening years of the war, from the outbreak up to Swedish intervention in 1630. This will not be a kind scenario to the Protestant player, as he starts in a weak position surrounded by strong enemies with their best generals available. It does show why Emperor Ferdinand II thought that he had a chance to re-assert Catholic Imperial domination over Germany and roll back the Reformation. The scenario will also encourage historical Catholic play, as the Catholic player is not threatened by the shadow of Gustavus Adolphus, and he must be very aggressive.</p>}
+  }
+  scenario{"gmt30yw_02 ~ Intervention"}{
+    dates{1618-01-01 / 1648-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Protestants","Catholics"}
+    party{"Protestants"-"2","Catholics"-"2"}
+    author{"Fox, David","Welker, Michael"}
+    description{<p>This scenario shows the brief period after Swedish intervention when sudden, complete military defeat stared Emperor Ferdinand II in the face. Historically, Gustavus’ death at Lutzen and the subsequent assassination of Wallenstein left Ferdinand in a superficially strong position; I say superficial because this forced Cardinal Richelieu to commit France militarily to the conflict, and that spelled the end of Ferdinand’s ambitions.</p>}
+  }
+  scenario{"gmt30yw_03 ~ Apocalypse"}{
+    dates{1618-01-01 / 1648-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Protestants","Catholics"}
+    party{"Protestants"-"2","Catholics"-"2"}
+    author{"Fox, David","Welker, Michael"}
+    description{<p>After Gustavus’ death at Lutzen in 1632 and the major defeat of the Swedish army at Nordlingen in 1634, the Protestant cause again was on the wane. Yet, the German people were extremely weary of the war by this time, and both Protestant and Catholic German leaders were looking for some way to end the conflict. Sadly, it was not to be. With the Swedish army reduced to a desperate, mutinous remnant, and the spectre of a Habsburg Germany looming, Cardinal Richelieu in 1635 entered France into the war on the Protestant side. Thirteen more years of war hung in the future until French and resurgent Swedish armies pushed Emperor Ferdinand III into accepting defeat.</p>}
   }
 }
 
 1822 {
   title{"Wilderness Wars"}
-  description{<p>Description</p>}
-  publisher{"GMT Games"-"www.gmtgames.com"}
-  engine{"Cyberboard"-"www."}
+  description{<p>Wilderness War is a two-player game based on the French and Indian War—the climactic struggle between Britain and France for control of North America. One player is the British and the other is the French.</p>}
+  publisher{"GMT Games"-"http://www.gmtgames.com/p-27-wilderness-war.aspx"}
+  engine{"Cyberboard"-"http://www.gmtgames.com/nnww/WW_CB_v1.1.zip",""}
   genre{"Historical Simulation","Operational Level"}
   mechanic{"Point-to-Point Movement","Counter","Dice","Card-Driven"}
   theme{"French & Indian War"}
-  scenario{"Wilderness Wars"}{
+  scenario{"gmtwiwa_01 ~ Annus Mirabilis"}{
+    dates{1757-01-01 / 1759-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Great Britain","Indians","France"}
+    party{"Great Britain"-"2","France"-"2"}
+    author{"Ruhnke, Volko"}
+    description{<p>The British called 1759 the “Year of Miracles” (in Latin, Annus Mirabilis) because the victory bells in London that year seemed never to cease ringing. The British in 1759 captured French forts Carillon, St-Frédéric, and Niagara. In Germany, they and their Hanoverian allies defeated a French army at the Battle of Minden. Most importantly, General Wolfe took Québec while Admiral Hawke broke the French fleet at Quiberon Bay—these last events all but sealing the fate of Canada.</p>}
+  }
+  scenario{"gmtwiwa_02 ~ Early War Campaign"}{
+    dates{1755-01-01 / 1759-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Great Britain","Indians","France"}
+    party{"Great Britain"-"2","France"-"2"}
+    author{"Ruhnke, Volko"}
+    description{<p>This scenario uses the same victory conditions as Annus Mirabilis but begins with the landing at Alexandria of two British regiments from Ireland and the arrival of six French army battalions at Louisbourg and Québec.  These regular reinforcements signalled the onset in 1755 of direct conflict in America between British and French crown.</p><p>The formal, European war has not yet begun and fewer forces are available than in the 1757 scenarios. Montcalm has yet to arrive, for example, and Pennsylvania and Virginia have not yet constructed their border defenses.</p><p>Play begins with the first French Action Phase of Early Season 1755 and ends after Late Season 1759 (barring an earlier Sudden Death). It should take (at most) five hours to complete.</p>}
+  }
+  scenario{"gmtwiwa_03 ~ Late War Campaign"}{
+    dates{1757-01-01 / 1762-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Great Britain","Indians","France"}
+    party{"Great Britain"-"2","France"-"2"}
+    author{"Ruhnke, Volko"}
+    description{<p>Play begins with Early Season 1757 and ends after Late Season 1762, barring a Sudden Death. This scenario could take as long as five hours to complete if it goes all the way to 1762.</p><p>This scenario begins with the North American conflict in full gear (as in Annus Mirabilis), but allows play to extend beyond the date of Canada’s historical surrender (late 1760).  The presumption is that &mdash; without Britain’s spectacular victories in 1759 and 1760 &mdash; fighting could have continued until a European peace came within sight in late 1762.</p>}
+  }
+  scenario{"gmtwiwa_04 ~ The Full Campaign"}{
     dates{1755-01-01 / 1762-12-31}
     position{1 / 1}
     range{300}
@@ -4116,20 +4482,20 @@
     side{"Great Britain","Indians","France"}
     party{"Great Britain"-"2","France"-"2"}
     author{"Ruhnke, Volko"}
-    description{<p>Description</p>}
+    description{<p>This scenario covers the full period of general conflict in North America.</p><p>Play begins with Early Season 1755 and ends after Late Season 1762 (barring an earlier Sudden Death). If it goes the full distance, it may take as long as eight hours.</p>}
   }
 }
 
 17651 {
   title{"Under the Lily Banners"}
-  description{<p>Description</p>}
-  publisher{"GMT Games"-"www.gmtgames.com"}
-  engine{"Cyberboard"-"www."}
+  description{<p></p>}
+  publisher{"GMT Games"-"http://www.gmtgames.com/p-58-under-the-lily-banners.aspx"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:Under_the_Lily_Banners"}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"Thirty Years' War"}
-  scenario{"Under the Lily Banners"}{
-    dates{1643-01-01 / 1648-12-31}
+  scenario{"gmt_ulb_01 ~ Rocroi"}{
+    dates{1643-05-19 / 1643-05-19}
     position{1 / 1}
     range{300}
     timescale{6}
@@ -4137,20 +4503,65 @@
     side{"Bavaria","Spain","France"}
     party{"France"-"2","Spain"-"2"}
     author{"Hull, Ben"}
-    description{<p>Description</p>}
+    description{<p>Rocroi, arguably the most significant battle of the Thirty Years War, was the battle that broke the power of the Spanish tercios. The French faced a larger Spanish army but the energetic duc d’Enghien (later known as the Grand Condé) in his debut battle refused to quit when all seemed lost and snatched victory from the jaws of defeat.</p><p>Rocroi is a small, fortified town that commands the Ardennes plateau between the Meuse river valley and the headwaters of the Oise in the Champagne - Ardenne region of France. It is only two miles from the modern Belgian border and is some 55 miles north of Reims. It was originally called Croix-de-Rau, which became Rau Croix, then finally Rocroi. The town was fortified in the 16th Century and had been previously besieged by the Imperial Army in 1555.</p>}
+  }
+  scenario{"gmt_ulb_02 ~ Freiburg im Breisgau"}{
+    dates{1644-08-03 / 1644-08-05}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Bavaria","Spain","France"}
+    party{"France"-"2","Spain"-"2"}
+    author{"Hull, Ben"}
+    description{<p>Though 1643 started off with a bang for the French at Rocroi, the year did not end well. Enghien was bogged down at Thionville. Marshal Guebriant, commanding the French on the Rhine front was stalled awaiting reinforcements. Late in the year the needed reinforcements arrived and Guebriant moved into action, striking at Rottweil. The Marshal was killed, however, in the storming of the town. The French encamped at Tuttlingen to regroup and reorganize. General Jean de Werth led the Bavarians in what was intended as a raid, catching the French completely by surprise. Capitalizing on the situation, de Werth brought in everything they had and the French were shattered.</p><p>The Armée de Allemagne was then handed over to Turenne. The core of this army was the Weimarians, the German army built by Bernhard, Duke of Saxe-Weimar. Weimar had brought the force into French service in 1635 and led them masterfully until his death. The Weimarians had suffered heavy losses, especially in infantry, at Tuttlingen. The Weimarian officers were divided into two factions, one Pro-French and one Pro-German. The commander of the corps, von Rosen, was the head of the Pro-Germans. The Pro-Germans chaffed against French control and saw French service as a necessary evil to guarantee German independence from the Habsburgs. The Pro-French argued to “not look a gift horse in the mouth” and serve no differently than any other mercenaries.</p>}
+  }
+  scenario{"gmt_ulb_03 ~ Mergentheim"}{
+    dates{1645-05-05 / 1645-05-05}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Bavaria","Spain","France"}
+    party{"France"-"2","Spain"-"2"}
+    author{"Hull, Ben"}
+    description{<p>Mergentheim is known as Bad Mergentheim today and is in Baden-Württemberg on the Tauber River, southwest of Würzburg. In French contemporary sources the town is called Mariendal (aka Marienthal), which is the transliteration into French of the German “Mary’s Valley.” The origin of the name is obscure, however. The battle was actually fought over 12 kilometers to the southeast of Bad Mergentheim by the village of Herbsthausen, and hence in most German accounts the battle is called the battle of Herbsthausen.</p>}
+  }
+  scenario{"gmt_ulb_04 ~ Alerheim"}{
+    dates{1645-08-03 / 1645-08-03}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Bavaria","Spain","France"}
+    party{"France"-"2","Spain"-"2"}
+    author{"Hull, Ben"}
+    description{<p>Alerheim is a small town to the east of Nördlingen. Many sources refer to this battle as Second Nördlingen or Allerheim, but the modern spelling of the town’s name is Alerheim. The church from the battle still stands as does the derelict Schloß (castle).</p>}
+  }
+  scenario{"gmt_ulb_05 ~ Lens"}{
+    dates{1648-08-20 / 1648-08-20}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Bavaria","Spain","France"}
+    party{"France"-"2","Spain"-"2"}
+    author{"Hull, Ben"}
+    description{<p>Lens is a strategic road junction between Arras to the south and Lille to the North. The town was besieged and changed hands several times in the struggle between the French and Spanish in the Flanders-Picardie-Artois front. Today, Lens is in the Pas de Calais department. Occupied by the Germans in both World Wars, the old town was obliterated. The infamous Vimy Ridge is just to the south of the town and Loos to the north. It was the center of coal mining in the area and is known for the man-made mountains of excavated dirt, called spoil tips.</p>}
   }
 }
 
 23928 {
   title{"Glory III"}
-  description{<p>Description</p>}
-  publisher{"GMT Games"-"www.gmtgames.com"}
-  engine{"Cyberboard"-"www."}
+  description{<p>Glory III is the third game in GMT's popular American Civil War series, Glory. This series presents a brigade-level system that highlights ease and speed of play combined with solid historical insight. Glory III follows the success of Glory II: Across the Rappahannock, and presents a polished system with ease of play, with two combat-intensive one-map battles. And it is still a game that can be played, and played well, by solitaire gamers.</p><p>Glory III features GMT's unique chit activation mechanic, which provides a great deal of play tension, as the commanders never quite know what is going to happen next. However, new command and combat mechanics make the game even more fun. Both battles have special command problems and some new and interesting mechanics to allow the players to play within the framework of those conditions.</p>}
+  publisher{"GMT Games"-"http://www.gmtgames.com/p-112-glory-iii.aspx"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:Glory_III","Cyberboard"-"http://www.gmtgames.com/gpgloryiii/GloryIIICedarCreek.zip"}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"American Civil War"}
-  scenario{"Glory III"}{
-    dates{1862-01-01 / 1864-12-31}
+  series{"American Civil War"-"#3","Glory"-"III"}
+  scenario{"gmt_gl3_01 ~ Antientam"}{
+    dates{1862-09-17 / 1862-09-17}
     position{1 / 1}
     range{300}
     timescale{6}
@@ -4158,18 +4569,30 @@
     side{"Union","Confederate"}
     party{"Union"-"2","Confederate"-"2"}
     author{"Berg, Richard"}
-    description{<p>Description</p>}
+    description{<p>Antietam, one of the major battles of the war, makes great use of the Glory activation system, linking the Union/McClellan command problems directly to its use. But it still allows the player to make choices, choices different from those Little Mac made, perhaps changing the course of the battle.</p>}
+  }
+  scenario{"gmt_gl3_02 ~ Cedar Creek"}{
+    dates{1864-10-19 / 1864-10-19}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Union","Confederate"}
+    party{"Union"-"2","Confederate"-"2"}
+    author{"Berg, Richard"}
+    description{<p>Cedar Creek is a great momentum battle, with an initial, probably highly effective Confederate surprise attack followed by the return of General Phil Sheridan to the battlefield, the arrival of George Custer's repeater-armed cavalry, and, hopefully for the Union Player, enough of a counter-attack to snatch victory from Jubal Early's rapidly munching jaws. Has Jubal bitten off more than he can chew? Grab your wallet, roll the die and find out!</p>}
   }
 }
 
 20133 {
   title{"Fast Action Battle: The Bulge"}
   description{<p>Description</p>}
-  publisher{"GMT Games"-"www.gmtgames.com"}
-  engine{"Cyberboard"-"www."}
+  publisher{"GMT Games"-"http://www.gmtgames.com/p-118-the-bulge-fab-1.aspx"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:FAB:_The_Bulge","Cyberboard"-"http://www.gmtgames.com/fabbulge/FABBulge_v2a.zip"}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Area Movement","Counter","Fog of War","Blocks","Dice"}
   theme{"WW2","Battle of the Bulge"}
+  series{"Fast Action Battles"-"#1"}
   scenario{"Fast Action Battle: The Bulge"}{
     dates{1944-01-01 / 1944-12-31}
     position{1 / 1}
@@ -4735,35 +5158,85 @@
 
 21779 {
   title{"1914 ~ Twilight in the East"}
-  description{<p>Description</p>}
-  publisher{"GMT Games"-"www.gmtgames.com"}
-  engine{"Cyberboard"-"www."}
+  description{<p>Twilight in the East: The Eastern Front, 1914 models the battles that took place in Poland and Galicia during the first year of World War One. Beginning with the Russian invasions of Prussia and Galicia in August and ending after the Battle of Lodz in December, it recreates the ebb and flow of the huge forces sent marching across the Eastern Front in 1914.</p><p>The game features an innovative combat system which takes into account the magnitude of the forces involved in each individual combat and various factors such as amount and type of artillery present, flank attacks, and fieldworks, among other things. It also features a fluid Movement, Counter-Movement, Forced March movement system and Combat Effectiveness Level tracking system that requires formations to periodically rest and recuperate.</p><p>All the scenarios except the introductory scenario allow both sides to be simultaneously on the offensive and defensive on different parts of the battlefield. Additionally, armies that were on the offensive one game turn can quickly find themselves on the defensive a game turn later.</p>}
+  publisher{"GMT Games"-"http://www.gmtgames.com/p-35-1914-twilight-in-the-east.aspx"}
+  engine{"Cyberboard"-"http://www.gmtgames.com/t-GMTCyberboard.aspx","Vassal"-"http://www.gmtgames.com/t-GMTVASSAL.aspx"}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"WW1","East Front"}
-  scenario{"1914 ~ Twilight in the East"}{
-    dates{1914-01-01 / 1914-12-31}
+  scenario{"gmt1914_01 ~ The First Battle of the Masurian Lakes"}{
+    dates{1914-09-06 / 1914-09-20}
     position{1 / 1}
     range{300}
-    timescale{6}
+    timescale{60}
     players{2 / 2}
     side{"Germany","Russia","Austria-Hungary"}
     party{"Central Powers"-"2","Allies"-"2"}
     author{"Resch, Michael"}
-    description{<p>Description</p>}
+    description{<p>First Masurian pits the reinforced German Eighth Army, flush with its success at Tannenberg, against a waiting Russian First Army. The forces facing each other are roughly of equal size which makes for a perfect introductory scenario where players can learn the important concepts of play.</p>}
+  scenario{"gmt1914_02 ~ The Battle for Lubin"}{
+    dates{1914-08-23 / 1914-09-09}
+    position{1 / 1}
+    range{300}
+    timescale{60}
+    players{2 / 2}
+    side{"Germany","Russia","Austria-Hungary"}
+    party{"Central Powers"-"2","Allies"-"2"}
+    author{"Resch, Michael"}
+    description{<p>The scenario depicts the advance of the Austro-Hungarian First and Fourth Armies toward Lublin and Chelm. The Austro-Hungarian's initial attacks struck and defeated the under-strength Russian Fourth and Fifth Armies. This forced the Russians to send south the newly formed Ninth Army that was mobilizing in the Warsaw area. Stavka had planned to use the Ninth Army to advance toward Berlin over Posen. Reinforced by over 9 new infantry divisions the Russians were able to stop the Austro-Hungarian onslaught short of Lublin and turned defeat into victory.</p>}
+  scenario{"gmt1914_03 ~ The Great Battle for Galicia"}{
+    dates{1914-08-23 / 1914-09-20}
+    position{1 / 1}
+    range{300}
+    timescale{60}
+    players{2 / 2}
+    side{"Germany","Russia","Austria-Hungary"}
+    party{"Central Powers"-"2","Allies"-"2"}
+    author{"Resch, Michael"}
+    description{<p>On a front extending from the Romanian border to the Vistula River, four Austro-Hungarian armies clash with four Russian armies. Conrad von Hotzendorf, the defacto Austro-Hungarian commander, commits his forces to a spoiling attack which, although ultimately unsuccessful, detours Russian plans to invade Germany with a thrust towards Berlin. Russian pre-war plans were so poorly laid that the campaign, even though reinforced by an entire additional army, is a close run battle.</p>}
+  scenario{"gmt1914_04 ~ Battle for Galicia"}{
+    dates{1914-08-23 / 1914-09-20}
+    position{1 / 1}
+    range{300}
+    timescale{60}
+    players{2 / 2}
+    side{"Germany","Russia","Austria-Hungary"}
+    party{"Central Powers"-"2","Allies"-"2"}
+    author{"Resch, Michael"}
+    description{<p>On a front extending from the Romanian border to the Vistula River, four Austro-Hungarian armies clash with four Russian armies. Conrad von Hotzendorf, the defacto Austro-Hungarian commander, commits his forces to a spoiling attack which, although ultimately unsuccessful, detours Russian plans to invade Germany with a thrust towards Berlin. Russian pre-war plans were so poorly laid that the campaign, even though reinforced by an entire additional army, is a close run battle.</p>}
+  scenario{"gmt1914_05 ~ The Tannenberg Campaing"}{
+    dates{1914-08-16 / 1914-09-20}
+    position{1 / 1}
+    range{300}
+    timescale{60}
+    players{2 / 2}
+    side{"Germany","Russia","Austria-Hungary"}
+    party{"Central Powers"-"2","Allies"-"2"}
+    author{"Resch, Michael"}
+    description{<p>The Tannenberg Campaign culminated in the Battle of Tannenberg where Generals Hindenburg and Ludendorff became famous. Two Russian armies, later reinforced by a third, attempt to envelop a lone German army and in the end, historically, are shattered and driven from Prussia.</p>}
+  scenario{"gmt1914_06 ~ The Grand Campaign, the Eastern Front 1914"}{
+    dates{1914-08-16 / 1914-12-19}
+    position{1 / 1}
+    range{300}
+    timescale{60}
+    players{2 / 2}
+    side{"Germany","Russia","Austria-Hungary"}
+    party{"Central Powers"-"2","Allies"-"2"}
+    author{"Resch, Michael"}
+    description{<p>The Grand Campaign game combines the Tannenberg Campaign and Great Battle of Galicia and continues the war into October, November, and December. Players will see the magnitude of this campaign and learn of the incredible number of losses sustained, as their armies are smashed and recover to fight again.</p>}
   }
 }
 
 21551 {
   title{"SPQR"}
   description{<p>Description</p>}
-  publisher{"GMT Games"-"www.gmtgames.com"}
-  engine{"Vassal"-"www.vassalengine.org/mediawiki/images/d/d8/Spqr_2_5.vmod","Cyberboard"-"www."}
+  publisher{"GMT Games"-"http://www.gmtgames.com/p-44-spqr-deluxe-edition.aspx"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:S.P.Q.R._Deluxe","Cyberboard"-"www."}
   genre{"Conflict Simulation","Tactical Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"Ancient Rome","Roman Civil War","Gallic War","Punic Wars"}
-  scenario{"SPQR"}{
-    dates{280-01-01 BC / 109-12-31 BC}
+  scenario{"gmt_spqr01 ~ The Battle of Beneventum"}{
+    dates{275-01-01 BC / 275-12-31 BC}
     position{1 / 1}
     range{300}
     timescale{6}
@@ -4771,28 +5244,144 @@
     side{"Roman","Carthage","Persian","Germany"}
     party{"Rome"-"2","Enemies of Rome"-"2"}
     author{"Berg, Richard","Herman, Mark"}
-    description{<p>Description</p>}
+    leader{"Pyrrhus of Epirus","M. Curius Dentatus"}
+    description{<p>After an unsuccessful four year campaign in Sicily, Pyrrhus returned, again, to aid Tarentum. Pyrrhus’s reputation—which, even a hundred years later, was quite impressive—brought thousands of Samnites, Bruttians, Lucanians, Sabines, and other Italians back into his by-now depleted mercenary force. Led by his somewhat short-handed corps of war elephants, Pyrrhus, once again, marched on Rome. Consul M. Curius Dentatus (the last name coming from a particularly noticeable set of buck teeth) quickly gathered his consular army and moved south to intercept him. He camped about 130 miles southeast of Rome near the town of Beneventum (at that time named Maleventum; obviously as things got “better” the name changed) and waited for Pyrrhus.</p><p>Pyrrhus approached Beneventum with an army consisting of 20,000 foot, 3,000 cavalry and some 15 elephants. The cavalry were mostly his Thessalian units whereas, in addition to his Macedonian-style phalanxes, most of the 20,000 foot were sword-armed, Italian-colonial Greeks. The Roman army under the Consul Dentatus consisted of a fairly typical Consular army (17,000 foot and 1,200 cavalry), who’s contingent of alae sociorum was a bit reduced by sizeable defections of Sabines and other Italians to the Tarentine/Pyrrhic cause.</p><p>Pyrrhus’s patrols detected the Roman defensive positions and he decided on a surprise night attack. His approach march took longer than planned (Lex Murphus, no doubt), and the Romans, upon detecting the Epirote army, sprang to arms and repulsed the initial assault with Pyrrhus losing eight elephants.</p><p>Dentatus now decided to offer battle and fight Pyrrhus on the plain adjoining his camp. The initial Roman attack failed, due in part to Pyrrhus’s skillful use of his remaining elephants plus some stiff Epirote/mercenary resistance. However, a second Roman assault managed to stampede the elephants into their own positions. The shaken Macedonian phalanx retreated from the field in disorder, and the Romans had a victory—albeit just barely.</p><p>Dentatus’ victory convinced Pyrrhus to give up his dreams of western conquest and he departed for Greece. Casualties are unknown, but Pyrrhus returned to Greece with approximately 8,000 foot and 500 cavalry. He was killed in a minor engagement three years later, leaving the Southern Greeks on the Italian peninsula without strong leadership. In 272 BC Rome conquered Tarentum, and two years later she completed her subjugation of all Southern Italy with the capture of Rhegium.</p><p>Beneventum was the pivotal battle in the Roman Republic’s bid for Italian peninsular hegemony. It is the first of three battles (Cynoscephalae and Pydna are the other two) where the Roman Manipular Legion met—and defeated—a purely Alexander/Macedonian style army in a stand-up fight. It is also an interesting study in the Roman use of a fortified camp in support of its battle plan.</p>}
+  }
+  scenario{"gmt_spqr02 ~ The Battle of the Bagradas Plains"}{
+    dates{255-01-01 BC / 255-12-31 BC}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Roman","Carthage","Persian","Germany"}
+    party{"Rome"-"2","Enemies of Rome"-"2"}
+    author{"Berg, Richard","Herman, Mark"}
+    leader{"Xanthippus","M. Atilius Regilius"}
+    description{<p>In the beginning, the First Punic War went pretty much in favor of the Romans. The Carthaginians were a naval power, and her land armies &mdash; ill-trained and with a poor appreciation of operations and tactics &mdash; fared poorly against the disciplined Roman legions. Surprisingly, however, Rome, even though her navy was built virtually from scratch, managed to land an apparent knock-out blow against the Carthaginian fleet off Ecnomus (Sicily) in 256 B.C. Following that victory, the Romans decided to bring the war to Africa and landed Marcus Atilius Regulus and his consular army near Carthage. Unfortunately for Regulus, most of his cavalry had been sent elsewhere. Even so, he had great initial success against the few forces the Carthaginians sent against him, and he was all set to deliver what he felt sure would be the coup de grace.</p><p>The Carthaginians, however, finally had a bit of luck. They managed to secure the services of a Spartan “general”, Xanthippus, who, while no genius, was one of the few people in the area who had any working knowledge of land army operations and tactics. He restructured the Carthaginian army, drilled it to an acceptable level of training, and explained to them how they could use the flat expanses of Northern Africa to their advantage. He then set out to lure Regulus into a fight, and the consul, despite the alarming indications that the Carthaginians were up to something new, took the bait. In mid-winter, 255 B.C., on the plains near the Bagradas River, Regulus and Xanthippus finally faced off. To counter the Carthaginian front wall of almost 100 elephants, Regulus deployed his maniples in a formation that shortened his flanks but extended his depth to withstand (at least to his way of thinking) the charge of the elephants. Unfortunately, his flank was protected by a woefully inadequate cavalry contingent, and the Carthaginian 8–1 (!!) superiority in horse would prove telling .... as it usually did. The Carthaginian war elephants kept the Roman infantry lines busy, her cavalry routed that of the Romans, the African phalanxes charged home and, together with the cavalry, they totally shattered Regulus’ legions. There would be no quick end to the war.</p>}
+  }
+  scenario{"gmt_spqr03 ~ The Battle of Cannae"}{
+    dates{216-08-02 BC / 216-08-02 BC}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Roman","Carthage","Persian","Germany"}
+    party{"Rome"-"2","Enemies of Rome"-"2"}
+    author{"Berg, Richard","Herman, Mark"}
+    leader{"Hannibal Barca","G. Terentius Varro"}
+    description{<p>In 219 B.C., Hannibal Barca, commanding-general of the Carthaginians in Spain—and avowed enemy of Rome—led an army of some 35,000 men and 34 elephants across the Alps into Italy to challenge the growing mercantile power of the Republic of Rome. In 218 B.C., he defeated Sempronius’ legions when they rashly splashed across the icy Trebbia River to attack the Carthaginians. The Romans lost 20,000 men; in the ensuing winter, Hannibal lost all his elephants (save one) plus one of his eyes. He did, however, gain the allegiance of the vaunted, sword-swinging Celts. Advancing into central Italy the following spring, he ambushed Flaminius’ legions on the shores of Lake Trasimene, driving the entire army into the lake. A second Roman force had been lost. In both battles, the Romans, regardless of the situation, had used the same tactics they always used, relying on the weight of their infantry to break the center of the enemy (Carthaginian) line.</p><p>The Romans now adopted the strategy, propounded by consul, Q. Fabius Cunctator (the Delayer), of avoiding battle with Hannibal, hoping he’d get tired of stomping around the peninsula and simply go home. It didn’t work; at least not initially. Hannibal took the opportunity to lay waste to the countryside, forcing the Roman people to send another army against him. Therefore, in the summer of 216 B.C., the two newly-appointed consuls, Caius Terentius Varro and Lucius Aemilius Paullus, led their newly-raised consular armies to join with a similar force under previous consuls Servilius and Atilius. This huge army of (supposedly) eight double legions—some 75,000+ men, the largest, by far, yet seen in Roman history —found Hannibal seizing the grain depot at Cannae, just south of the Aufidus (today, the Ofanto) river. Paullus, the more experienced general, cautioned against facing the Carthaginians too soon. Unfortunately, it was Varro’s day to command (they alternated command each day, a remarkable system virtually guaranteed to produce disastrous results) and he was intent on avenging the two previous losses.</p><p>The battlefield at Cannae would, at first glance, seem ideal for the Romans’ purposes: the river and the hills would anchor their flanks and prevent the fabled Numidian cavalry from running amok. Unfortunately, the short frontage, between the river and the hills, forced the Romans to squeeze their far-too-many maniples into an unwieldy formation (and the Numidians ran amok anyway). The result was the greatest defeat ever suffered by a Roman army, and a battle so masterfully fought by Hannibal, a military genius in the same rank as Alexander or Caesar, that it is, even today, the subject of intense scrutiny and study.</p>}
+  }
+  scenario{"gmt_spqr04 ~ The Battle of Zama"}{
+    dates{202-01-01 BC / 202-12-31 BC}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Roman","Carthage","Persian","Germany"}
+    party{"Rome"-"2","Enemies of Rome"-"2"}
+    author{"Berg, Richard","Herman, Mark"}
+    leader{"Hannibal Barca","P. Cornelius Scipio"}
+    description{<p>Many historians consider Zama one of the most important battles in Western civilization. Perhaps that is reading too much into its obvious political conclusion: Rome’s Mediterranean expansion. With wonderful hindsight, however, it is fairly easy to see that Carthage was doomed as a political entity; her inefficient, city-state form of government was no match for the Roman concept of people and state. Rome’s ascendancy was simply a matter of time, and Zama helped to hasten that date.</p><p>From a military point of view, however, Zama is an immensely important battle. On one level it shows what a genius Hannibal truly was; his army at Zama was inferior to Scipio’s; yet, Hannibal came rather close to winning. On a loftier plane, Zama is the proving ground of the flexibility of the Roman legionary system—as implemented by the insightful mind of Scipio Africanus—and its superiority to the powerful, yet linearly rigid, Macedonian system. The latter would live on for another 50 or so years, suffering further repeated blows at Cynoscephalae (see below), Magnesia (Antiochus and the end of the Seleucids) and Pydna (Perseus and the end of Macedonia). The Roman legions would continue to hold sway for the next several centuries. Delbruck further adds to its importance by arguing that it was the first use of echelon tactics; i.e., the different lines of troops were not there to simply provide depth but to be used for differing tactical purposes—as well as acting as a reserve.</p><p>In 210 B.C., with Hannibal’s army still on the loose in southern Italy, the young Publius Cornelius Scipio was chosen to command the Roman forces in Spain. Scipio was something of a surprising choice, given his youth and lack of experience in public office—although not overly shocking given Scipio’s ideas on how to conduct the war against Carthage and the people’s demand for some sort of action. (Fabius Cunctator was still implementing the theory that Rome could bore Hannibal to death; exhausted by ennui, he would then go home. It pretty much worked.)</p><p>In a few short years, the son of a consul from the First Punic War had proven himself to be an exceptional field commander, with a victory over Hasdrubal at Baecula and a masterful, tactical showpiece win at Ilipa. In 205 B.C. he was elected consul where, in the Senate, he went face-to-face with the delaying strategy of Fabius. Scipio advocated taking the war directly to Carthage; the only way to get Hannibal out of Italy was to force him to return to Africa to defend his city-state. To this end—albeit with some senatorial reluctance—he was handed the command of Sicily and its two legions, mostly remnants and veterans of the Cannae fiasco. After raising some additional forces to flesh out his consular army, he set off for North Africa where, in a series of stunning maneuvers, he won several land and naval battles, forcing the Carthaginians to sue for peace.</p><p>In the meantime, with Mago’s army having been destroyed in Liguria, the Carthaginians demanded Hannibal return to Carthage, as Mago’s defeat had nullified whatever “Italian strategy” Hannibal had. Hannibal’s arrival seemed to strengthen the backbone of the Carthaginians, and they repudiated the peace treaty through a variety of actions that the Romans, as was their wont, assigned to the usual Punic Treachery. Hannibal’s army was in bad straits, however, especially in the all-important area of cavalry.  Even worse, after a series of political and military maneuvers involving claims to the Numidian throne, Scipio had acquired the services of Masinissa, the new Numidian king, along with the cream of his capable light cavalry. Although Hannibal was aware of these developments, he assumed that he could bring Scipio to battle before Masinissa arrived. And to strengthen his outnumbered cavalry wing (which included about 2000 Numidians led by one of Masinissa’s leftover rivals), he quickly trained a corps of 80 or so war elephants. Both generals were now set for battle; all they needed was a place.</p><p>The site of the Zama battlefield has never been firmly pinpointed. If you read Polybius/Livy closely, it seems to have taken place closer to the village of Naraggara. We have used the map from H.H. Scullard’s book, Scipio Africanus, Politician & Soldier, (it also appears in Liddel Hart’s book, with an added cross-battlefield trail) which is based on that contained in the Kromayer-Veith Atlas (a German work extremely difficult to obtain through the normal, local-library channels—or through any channels, for that matter). If interested, we suggest you consult Scullard for a discussion on all possible sites, of which Veith’s selection—and our choice—appears the most reasonable.</p><p>Zama is pretty much a set-piece battle. We have provided only one scenario, although the players may feel free to change deployments within the parameters of the original dispositions. There are some problems in terms of unit types and numbers, and where/how they deployed. We do know that Scipio had an augmented, two-legion consular army; see the notes on the Roman army under their deployment. Hannibal’s somewhat hastily assembled army is somewhat easier to pin down, although numbers and weapons system types are evasive.</p><p>It appears that Hannibal, aware of his inferiority in mounted troops, placed the onus of victory on his infantry. To that end, he hoped that one of two things would happen: either his elephants would drive off the Roman cavalry, or the Roman cavalry would recklessly pursue the undermanned Carthaginian horsemen off the battlefield, allowing Hannibal’s infantry to go head-to-head with the legions.</p><p>Well, the elephants proved a bust (Scipio pretty much saw to that), but Hannibal was on the money about the Roman cavalry chasing the Africans hither and yon. That left it up to the infantry, and, despite the eagerness of some of Hannibal’s newest recruits to be elsewhere, his veterans were pretty much holding their own against Scipio’s relentless legionnaires when Laelius returned with the cavalry, hit Hannibal’s lines from the rear, and sealed Carthage’s doom. Hannibal, himself, escaped, but the 2nd Punic War was over—and so was Carthage’s prominence.</p><p>Hannibal, still a fairly young man, sought employment in the Near East. He was on the field at Magnesia when the Romans decided to put a quick end to the machinations of the Seleucid ruler, Antiochus the Great, in 190 B.C. (So was Scipio, although the latter was ill and had little input). It is something of a measure of Antiochus’ lack of genius that, having one of history’s greatest tacticians at his side, he failed to put him to any significant use. Rome eventually decided that Hannibal was a major pain regardless of where he was, so they declared him an outlaw and finally tracked him down in Bythnia (northern Turkey), where he had been helping King Prusias in his contre-temps with Pergamum. With his house surrounded, Hannibal, bitter and tired, committed suicide.</p>}
+  }
+  scenario{"gmt_spqr05 ~ The Battle of Cynoscephalae"}{
+    dates{197-01-01 BC / 197-12-31 BC}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Roman","Carthage","Persian","Germany"}
+    party{"Rome"-"2","Enemies of Rome"-"2"}
+    author{"Berg, Richard","Herman, Mark"}
+    leader{"King Phillip V of Macedon","T. Quinctius Flaminius"}
+    description{<p>By the end of the 3rd century, B.C., Macedon, and her king, Phillip V was still the dominant force in the eastern Mediterranean. Her army, a direct descendent of Alexander’s, was still much feared, as was the Macedonian style of warfare, which still emphasized combined arms but placed far more reliance on the power of the phalanx than Alexander ever did—or would have. While Rome was going the way of increased flexibility and maneuver, the Macedonian phalanx was becoming, if possible, more rigid than ever.</p><p>During the 2nd Punic War, Phillip sided with Carthage. Although this arrangement produced no pitched battles between Rome and Macedon, it became known, historically, as the First Macedonian War. After some indecisive skirmishing, an uneasy peace was negotiated that enabled Rome to concentrate its energies on defeating Carthage. Legend has it that Phillip supplied Hannibal with several thousand men at Zama, but there appears to be no support for this story.</p><p>In 200 BC, with Rome now the dominant power in Italy and the Western Mediterranean, Rhodes and Pergamum petitioned her for aid against continuing Macedonian aggression in the Dardanelles and Egypt. This petition focused Roman attention on the Aegean and its unresolved business with Phillip. Rome demanded complete Macedonian withdrawal from Greece. Phillip agreed in part but wanted to maintain control over Demetrius in Thessaly, Chalcis in Euboea, and Corinth in Achaea, which the king had called the “fetters of Greece”. A Greek delegation sent to Rome gave the Senate a lesson in Greek geography and the negotiations ended in an impasse. However, as a result, the Senate voted Consul Lucius Quinctius Flamininus two Roman Legions plus 6,000 allied foot and 300 allied cavalry to prosecute the Second Macedonian War to conclusion.</p><p>Upon arrival in Greece, Consul Flamininus conducted a series of negotiations that allied most of Greece with Rome for its coming showdown with Phillip. This gave the Roman army, reinforced by almost 10,000 men from the Aetolian League, a grand total of 23,000 foot and 1,100 cavalry to face Phillip’s 23,500 foot and 2,000 cavalry. From somewhere—probably a gift from Masinissa—Flamininus also managed to attract the services of 20 elephants, which were to play a surprisingly decisive role in the coming battle. Aficionados of Alexander the Great will notice the diminution of the Macedonian cavalry wing, despite its numerical superiority to that of the Romans, both in numbers and effectiveness. This was due, in part, to the hilly and rocky Greek terrain, most of which negated the capabilities of cavalry; Cynoscephalae would be a major example. It also reflected a reduced appreciation of Alexandrian tactics. And, given the equality of strength in both armies, the approaching battle would be won by the respective tactical systems and not weight of numbers.</p><p>Both armies lurched forward in an attempt to seek each other out. Phillip and Flamininus knew they could not keep their respective coalitions in the field indefinitely, so each wanted to fight quickly. Near Pharae, in Thessaly, reconnaissance forces from both sides came into contact, although no battle occurred because the respective commanders felt the terrain was too constricted by walls and enclosed farms. The Macedonians then headed for a supply region to replenish their stocks of food. The Romans moved parallel to the Macedonians to cut them off from the needed grain, with the two forces being separated by a long ridge called Cynoscephalae (so named for its resemblance to a “dog’s head”). On the third day of marching a torrential storm arose drenching the forces and causing a heavy fog. The Macedonians tried to march on but could not make any headway in the storm. They withdrew to camp, leaving a strong outpost on the ridge. The Roman army stayed in camp but sent out a reconnaissance party to locate the Macedonians. With a heavy fog obscuring visibility, the two patrols bumped into each other on the rain-soaked ridge. With the Macedonians holding the heights, both sides sent back for reinforcements. The battle of Cynoscephalae was on.</p><p>Flamininus reluctantly sent reinforcements, forcing the Macedonians off the ridge. Phillip felt compelled to reinforce his exposed unit and prevent its destruction. These fresh Macedonian forces reclaimed the ridge from the Romans as the fog began to lift. Perceiving an opportunity to destroy part of the Roman army, Phillip now reluctantly committed his entire army. Flamininus followed suit, and a full-scale, pitched battle began.</p><p>Phillip took personal command of his right wing, and as soon as it formed on the ridge he doubled the depth of the phalanx and attacked the Roman left. This maneuver was, momentarily, successful; however, it separated the Macedonian army into two sections, with the Macedonian left wing under Nicanor still deploying from march column. Flamininus, seizing the moment, sent his right wing, lead by his elephants, slamming into the Macedonian left. An unknown Roman tribune, most likely from the Triarii, noticing that the Macedonian army was now split in two, exposing the flanks of the phalanxes, seized the initiative—and the day (carpe diem, for those of you who collect Latin idioms)—by leading 20 Roman maniples (the entire principes and triarii lines from one Roman legion) into the rear of the Macedonian right wing. This Roman maneuver—a text-book example of flexibility versus rigidity—shattered the Macedonian army and Phillip’s hopes of Greek hegemony, leading to a swiftly negotiated conclusion to the Second Macedonian War.</p><p>Even more important, Cynoscephalae was the first major confrontation between the Roman legions and a full-blown Alexandrian/Macedonian army led by phalanxes. (Both Hannibal and Pyrrhus adapted the Macedonian system rather than used it.) While Phillip’s phalanxes could not be budged in a head-to-head confrontation (the legions that attacked them frontally suffered heavy losses; see the notes on the Phalanx in the terminology section), they could, if outflanked, be easily defeated. Both the difficulty of the terrain at Cynoscephalae and the ability of the legion to maneuver freely, and in sections, enabled this to happen. The day of the phalanx was rapidly drawing to a conclusion, a curtain that would finally be drawn some 30 years later, at Pydna.</p>}
   }
 }
 
 17394 {
   title{"The Burning Blue"}
   description{<p>Description</p>}
-  publisher{"GMT Games"-"www.gmtgames.com"}
-  engine{"Cyberboard"-"www."}
+  publisher{"GMT Games"-"http://www.gmtgames.com/p-221-the-burning-blue.aspx"}
+  engine{"Vassal"-"http://www.vassalengine.org/wiki/Module:The_Burning_Blue"}
   genre{"Conflict Simulation","Strategic Level"}
-  mechanic{"Card-Driven","Hex","Counter"}
-  theme{"WW2","Battle of Britain"}
-  scenario{"The Burning Blue"}{
-    dates{1940-01-01 / 1940-12-31}
+  mechanic{"Hex","Counter"}
+  theme{"WW2","Air War","Battle of Britain"}
+  scenario{"gmttbb01 ~ Opening Bat"}{
+    dates{1940-07-10 / 1940-08-11}
     position{1 / 1}
     range{300}
-    timescale{6}
+    timescale{1}
     players{2 / 2}
     side{"Great Britain","Germany","Axis","Allies"}
     party{"Axis"-"2","Allies"-"2"}
     author{"Brimmicombe-Wood, Lee"}
-    description{<p>Description</p>}
+    description{<p>What General Weygand called the Battle of France is over. I expect that the Battle of Britain is about to begin.&mdash;Winston Churchill, 18 June 1940</p><p>Reichsmarschall Hermann Göring’s Luftwaffe was having a good war. It had pounded the Poles, Belgians and Dutch, then subdued the French and their RAF allies in support of a lightning Army advance across Europe. Though it had taken more casualties than expected, it was on a roll.</p><p>A plan for the invasion of Britain, codenamed Seelöwe (Sea Lion) was being drawn up, but Göring believed that his bomber and fighter pilots could defeat ‘The Tommies’ on their own. Morale was high and Generaloberst Hans Jeschonnek, the service’s Chief of Staff, predicted that the Luftwaffe would conquer England in a matter of weeks.</p><p>Göring directed the Luftwaffe to prepare for the main offensive. It would begin by trying to draw up and destroy the RAF. It would also besiege Britain by launching attacks on ports and convoy shipping in the English Channel, cutting its overseas supply line. This ‘Channel Battle’ or Kanalkampf was designed to probe the air defence for weaknesses.</p><p>Compared to the later stages of the battle, the initial raids were small. Dive-bombers in Gruppe strength were dispatched to attack convoys hugging the English coast. The narrows at the Straits of Dover allowed the least warning of an attack. Soon, the area around Dover became known as ‘Hellfire Corner’ and journalists—many American—would gather on the chalk cliffs to watch the daily dogfights.</p><p>Both sides skirmished and took the measure of each other. Meanwhile the Luftwaffe prepared for its big offensive on the British mainland, code named ‘Eagle Day’.</p>}
+  }
+  scenario{"gmttbb02 ~ Leg Before Wicket"}{
+    dates{1940-08-12 / 1940-08-18}
+    position{1 / 1}
+    range{300}
+    timescale{1}
+    players{2 / 2}
+    side{"Great Britain","Germany","Axis","Allies"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>FROM REICHSMARSCHALL GÖRING TO ALL UNITS OF LUFTFLOTTE 2, 3 AND 5. OPERATION EAGLE. WITHIN A SHORT PERIOD YOU WILL WIPE THE BRITISH AIR FORCE FROM THE SKY. HEIL HITLER.</p><p>The Luftwaffe attack on mainland Britain began with a series of raids on coastal targets, hitting RDF stations, ports and Fighter Command’s forward airfields. The intention was to roll the attacks inland, pummelling the fighter defences.</p><p>The Germans came in strength, even throwing their Ju87 Stukas and Me110 heavy fighters into the battle. The RAF responded cautiously and fighter controllers were careful not to hurl their entire strength at the raiders. However, every raid was contested, with major fights flaring across southern England on 13 August, the opening ‘Eagle Day’ (Adler Tag). Over the following week the bombing edged further inland. 15 August became known as ‘The Greatest Day’, as the Luftwaffe flew more sorties than any other day in the battle, and 18 August was ‘The Hardest Day’, with more aircraft lost on both sides than on any other day.</p><p>After 18 August the weather closed in, preventing further large-scale raiding for almost a week. Reichsmarschall Göring’s Luftwaffe had failed to smash its enemy and had taken terrible losses amongst the bombers, though overclaiming in air combat and a naïve faith in the effectiveness of bombing made the Fat Man and his generals believe they were doing better than they were. Even so it was clear that changes were needed, and in a conference with his commanders Göring made a number of sweeping changes. The Ju87 had proven too vulnerable for this kind of fighting and the Me110 was outclassed by single-engined fighters. As a result the Stukas were withdrawn from the fight while Me109 support was ordered for the heavy fighters. Göring blasted the fighter arm for being insufficiently aggressive and promoted ambitious junior officers to command the Jagdgeschwadern, such as Adolf Galland and Werner Mölders.</p><p>One other change had occurred a few days previously. After some desultory attacks on 12 August Göring gave up on bombing radar stations, believing them too hard to destroy. He didn’t appear to grasp the importance of RDF to the RAF defence. Only in hindsight did this look like an error.</p>}
+  }
+  scenario{"gmttbb03 ~ Bodyline"}{
+    dates{1940-08-19 / 1940-09-06}
+    position{1 / 1}
+    range{300}
+    timescale{1}
+    players{2 / 2}
+    side{"Great Britain","Germany","Axis","Allies"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>As Göring’s time grew short, he grew more amiable and asked what were our requirements. Mölders asked for a series of Me109s with more powerful engines. The request was granted. ‘And you?’ Göring turned to me. I didn’t hesitate long. ‘I should like an outfit of Spitfires...’&mdash; Adolf Galland, commander Jagdgeschwader 26</p><p>Following the great battles of 18 August there was a pause, as bad weather restricted the Germans to pinprick nuisance raids, often by single aircraft. Then, on 24 August, the weather brightened and it brought the Luftwaffe back in force. Göring had shifted the focus of the attacks to the southeast of England, reinforcing Luftflotte 2 with fighters from Luftflotte 3. Fighter Command targets—airfields and key sector stations—were battered again and again.</p><p>Generalfeldmarschall Kesselring, commanding Luftflotte 2, employed a bewildering variety of tactics, including the ‘rolling attack’, following one wave with another shortly thereafter. Often a wave would split up and strike out for different targets, confusing the defence.</p><p>As bombers pounded the airfields, operational efficiency declined. Runways were potholed, maintenance hangars blown up, living quarters demolished and vital telephones cut. But Fighter Command was never knocked out. Holes could be filled and maintenance completed at fighter dispersal. Airmen and women lived in tents under summer skies and telephone lines were spliced back together. The closest the Luftwaffe came to success was at Biggin Hill, where the operations room was briefly knocked out. It was the high water mark of the attacks on the RAF but achieved at great cost to the Germans.</p><p>The RAF had been stretched, but not to breaking point. New squadrons, such as those of the Poles, Czechs and Canadians, entered operational service. Prime Minister Winston Churchill believed the air battle was now under control. The RAF was turning the corner.</p><p>Then, without warning, the Luftwaffe changed strategy. The Battle of the Airfields was over. The Battle of London was about to begin.</p>}
+  }
+  scenario{"gmttbb04 ~ Knocking 'em for Six"}{
+    dates{1940-09-07 / 1940-09-30}
+    position{1 / 1}
+    range{300}
+    timescale{1}
+    players{2 / 2}
+    side{"Great Britain","Germany","Axis","Allies"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>‘Send every pump you’ve got. The whole bloody world’s on fire.’&mdash;Station Officer Plimlett, London Fire Brigade</p><p>On 7 September two vast German air armadas struck out for England. They avoided the airfields and headed straight for London’s docks, raining blast bombs and incendiaries down on the city’s vital supply line. The city burned.</p><p>The change in strategy was the culmination of debates within the Luftwaffe. Britain hadn’t surrendered after weeks of attacks on the RAF. Generalfeldmarschall Kesselring of Luftflotte 2 asserted that a major effort against the nation’s capital would finish the job, but his counterpart at Luftflotte 3, Generalfeldmarschall Sperrle, demanded that Fighter Command’s airfields first be finished off. ‘Smiling Albert’ Kesselring won the debate, arguing that attacks on London would in any case force the RAF fighters up, where they could be shot down.</p><p>The RAF fighters certainly came up in numbers. Even 12 Group’s ‘Big Wing’ Balbos were able to form in time to meet the London raids. The climax came on 15 September when massive raids on London took losses so large the claims resembled cricket scores. This marked the end of the attempt to defeat Britain with massed daylight raids. The night-time ‘Blitz’ effort, which the RAF could do little to stop, began to increase.</p>}
+  }
+  scenario{"gmttbb05 ~ Owzat!"}{
+    dates{1940-10-01 / 1940-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{1}
+    players{2 / 2}
+    side{"Great Britain","Germany","Axis","Allies"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>Wir stellen den britischen Löwen/Zum letzten entscheidenden Schlag/Wir halten Gericht/Ein Weltreich zerbricht/Das wird unser stolzester Tag!&mdash;From the propaganda song Bomben Auf Engeland</p><p>While the night Blitz of Britain continued unabated, the day fighting dwindled. From October to the end of the year the Luftwaffe day attacks mainly employed fighter-bombers—the Jabos. Laden Me109s and Me110s would zip in at high altitude and lob bombs at targets. Sometimes two or three such raids would stream over England, one after the other. These were harassing attacks, designed to keep the RAF off-balance and on the defensive. The Luftwaffe fighter pilots hated the new form of warfare and complained it was hurting morale.</p><p>In addition to the Jabos, the Ju87 Stuka dive-bombers returned to attack shipping in the Channel and Thames Estuary. And then the Italians arrived in their gaily-coloured aeroplanes, ill-trained and ill-equipped for this air battle. Their hapless intervention resulted, on 11 November, in a beating.</p><p>31 October was declared the end of the battle, though the Luftwaffe continued to raid into 1941. In November the architect of the RAF victory, Air Chief Marshal Dowding, and his right-hand man, Air Vice-Marshal Keith Park of 11 Group, were removed from their jobs to be replaced by commanders who would take the offensive against the enemy. The next great air battle would be fought over continental Europe.</p>}
+  }
+  scenario{"gmttbbqsa ~ Quick Start A: First Test"}{
+    dates{1940-07-10 / 1940-07-10}
+    position{1 / 1}
+    range{300}
+    timescale{1}
+    players{2 / 2}
+    side{"Great Britain","Germany","Axis","Allies"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    special{"Introductory Scenario"}
+    description{<p>The Battle of Britain opened on 10 July 1940. The morning rain had given way to patches of clear sky and cloud. The Luftwaffe had spotted convoy ‘Bread’ attempting to pass through the Straits of Dover. This was the sort of target of opportunity that Göring had ordered his commanders to attack and so Oberst Johannes Fink, Kommodore of KG2, rapidly organised a striking force of Dorniers.</p><p>Shortly before 1:30 PM a force of 70+ aircraft were detected forming up south of Calais. A flight from 32 Squadron was ordered to orbit the convoy while aircraft from four more squadrons were scrambled. When the forces met the Luftwaffe would have the advantage of numbers but the RAF, with their early warning, would have the benefit of height.</p>}
+  }
+  scenario{"gmttbbqsb ~ Quick Start B: Googly"}{
+    dates{1940-08-13 / 1940-08-13}
+    position{1 / 1}
+    range{300}
+    timescale{1}
+    players{2 / 2}
+    side{"Great Britain","Germany","Axis","Allies"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Brimmicombe-Wood, Lee"}
+    description{<p>The morning of ‘Adler Tag’ had been something of a balls-up for the Luftwaffe. Morning raids had been cancelled due to weather, but some units had failed to receive the recall and took losses. In the afternoon, with skies looking clearer, the ‘big lick’ was on again. This would be one of the handful of times that the Luftwaffe would coordinate simultaneous attacks from Luftflotte 2 and 3 to stretch the RAF defence.</p>}
   }
 }
 
@@ -6672,6 +7261,7 @@
     side{"US","British","Canada","Native American"}
     party{"Germany"-"2","US"-"2"}
     author{"Beckett, Beau","Stahl, Jeph"}
+    special{"Introductory Scenario"}
     description{<p>The War of 1812 has been called America’s second war of independence, a forgotten conflict, the war that nobody won. It was a complex and fascinating chapter in North American history which shaped the destiny of two nations. Beginning in 2012, its bicentennial will commemorate 200 years of peace between Canada and the United States.</p>}
   }
   scenario{"ag1812-03 ~ 1813 Campaign"}{
