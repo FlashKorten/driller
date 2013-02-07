@@ -916,7 +916,7 @@
     special{"Overlord"}
   }
   scenario{"Memoir '44 60/4659 ~ Hedgerow Hell"}{
-    description{<p>After a month of heavy fighting, the Germans finally lost Hill 192 the previous night (See "Attack on Hill 192"). For the first time since June they no longer dominate the road to Saint-Lo. Should US High Command be able to deploy the 5th Corps into a large-scale armored offensive, the city will finally be within reach. But the German elite Parachute units have taken advantage of darkness to pull back onto Hill 101 in the vicinity of the Bayeux Highway near la Boulaye, as well as onto Hill 147 on Martinville's Ridge northeast of Saint-Lo. Reinforced by elements of the Panzer Lehr, they have set up a line of defense in te endless cover of fields, woods and streams. Their airpower grounded by poor weather and their tanks mired in unforgiving "bocage" country, the Allies must place the burden of the attack on the shoulders of their infantry yet again. What awaits the weary US troops will forever be known as "Hedgerow Hell"...</p>}
+    description{<p>After a month of heavy fighting, the Germans finally lost Hill 192 the previous night (See "Attack on Hill 192"). For the first time since June they no longer dominate the road to Saint-L&ocirc;. Should US High Command be able to deploy the 5th Corps into a large-scale armored offensive, the city will finally be within reach. But the German elite Parachute units have taken advantage of darkness to pull back onto Hill 101 in the vicinity of the Bayeux Highway near la Boulaye, as well as onto Hill 147 on Martinville's Ridge northeast of Saint-L&ocirc;. Reinforced by elements of the Panzer Lehr, they have set up a line of defense in te endless cover of fields, woods and streams. Their airpower grounded by poor weather and their tanks mired in unforgiving "bocage" country, the Allies must place the burden of the attack on the shoulders of their infantry yet again. What awaits the weary US troops will forever be known as "Hedgerow Hell"...</p>}
     dates{1944-07-12 / 1944-07-12}
     position{1 / 1}
     range{250}
@@ -1564,7 +1564,7 @@
     party{"Germany"-"2","US"-"2"}
   }
   scenario{"m44cb2 35/6726 ~ Operation Cobra - The Hedgerow Breach"}{
-    description{<p>After the capture of Saint-Lo, 1st US Army, under the command of General Bradley, found itself in position to launch a major offensive to break through the German lines; they had suffered so much attrition they had reached their breaking point. On July 25th, after a massive carpet bombing, three infantry divisions of VII US Army Corps (Gal Collins) advanced through the disrupted lines of the Panzer Lehr Division &mdash; Operation Cobra had just begun. In spite of the disruption and despite taking heavy losses, the surviving German troops fought desperately, making the US advance slow and painful. By evening, the hoped-for breakthrough hadn't materialized. On July 26, General Collins ordered the 2nd &ldquo;Hell on Wheels&rdquo; US Armored Division to go into action. Leaving infantry behind, the tanks quickly reached Canisy. Finally, on the 27th, US troops reached Pont-Brocard and le Mesnil-Herman. The breakthrough had succeeded; now the breakout toward Coutances and Avranches could begin.</p>}
+    description{<p>After the capture of Saint-L&ocirc;, 1st US Army, under the command of General Bradley, found itself in position to launch a major offensive to break through the German lines; they had suffered so much attrition they had reached their breaking point. On July 25th, after a massive carpet bombing, three infantry divisions of VII US Army Corps (Gal Collins) advanced through the disrupted lines of the Panzer Lehr Division &mdash; Operation Cobra had just begun. In spite of the disruption and despite taking heavy losses, the surviving German troops fought desperately, making the US advance slow and painful. By evening, the hoped-for breakthrough hadn't materialized. On July 26, General Collins ordered the 2nd &ldquo;Hell on Wheels&rdquo; US Armored Division to go into action. Leaving infantry behind, the tanks quickly reached Canisy. Finally, on the 27th, US troops reached Pont-Brocard and le Mesnil-Herman. The breakthrough had succeeded; now the breakout toward Coutances and Avranches could begin.</p>}
     dates{1944-06-25 / 1944-06-27}
     position{1 / 1}
     range{250}
@@ -1747,7 +1747,7 @@
     side{"Axis","Allies","Germany","Great Britain"}
     party{"Germany"-"2","Great Britain"-"2"}
   }
-  scenario{"m44cb1 5/4152 ~ Saint-Lo - Panzer Lehr Counter Attacks"}{
+  scenario{"m44cb1 5/4152 ~ Saint-L&ocirc; - Panzer Lehr Counter Attacks"}{
     description{<p>On July 11th, the very day XIX Corps was scheduled to extend its attack eastward of the Vire River, the corps' right flank came under the threat of a massive armored counter-attack. The Germans, hell bent on knocking the First Army off balance, were launching Panzer Lehr into action west of the Vire.</p><p>The timing of this blow, the largest German effort during the Battle of the Hedgerows, was fortunate for the First Army. Had it come a day or two earlier (as scheduled), Panzer Lehr would have hit XIX Corps' flank when it was defended by the relatively thin screen of the 113th Cavalry Group.</p><p>By the time the Germans attacked, the 9th Division (VII Corps) had taken over the sector, with Combat Command A of the 3rd Armored Division close at hand. Although Panzer Lehr achieved some initial success in its efforts to break through the Allied lines held. Helped by American armor and superior air power, the 9th Division quickly halted and neutralized the attack.</p>}
     dates{1944-07-11 / 1944-07-11}
     position{1 / 1}
@@ -1758,8 +1758,8 @@
     side{"Axis","Allies","Germany","US"}
     party{"Germany"-"2","US"-"2"}
   }
-  scenario{"m44cb1 6/4172 ~ Saint-Lo - Martinville Ridge"}{
-    description{<p>On July 15, the 116th Regiment started a flanking maneuver around Martinville in an effort to outflank the town's defenders. The lead elements made good progress but Allied Command didn't have a clear picture of the situation on the ground and ordered the units to halt and consolidate their positions.</p><p>The order didn't reach the 2nd Battalion in a timely fashion and by the time its commander got the order, the Battalion was already far ahead and overlooking the town of La Madeleine. Rather than call the unit back, General Gerhardt decided to keep the battalion there and try to reinforce it. On July 16 he ordered Major Bingham to hold his ground so he could move forces up to reinforce and hopefully push the Germans off the ridge at Martinville. German command, unaware of the situation developing on the right, put a concentrated effort into gaining control of the Bayeux Road and the recently lost Hill 122 that overlooked it. The German XI Parachute Corps made a strong attack to seize the hill but was eventually repelled, largely because of American air cover. German command's failure to recognize and capitalize on the opportunity to smash the isolated battalions of the 116th helped put to an early end the fight for Saint-Lo.</p>}
+  scenario{"m44cb1 6/4172 ~ Saint-L&ocirc; - Martinville Ridge"}{
+    description{<p>On July 15, the 116th Regiment started a flanking maneuver around Martinville in an effort to outflank the town's defenders. The lead elements made good progress but Allied Command didn't have a clear picture of the situation on the ground and ordered the units to halt and consolidate their positions.</p><p>The order didn't reach the 2nd Battalion in a timely fashion and by the time its commander got the order, the Battalion was already far ahead and overlooking the town of La Madeleine. Rather than call the unit back, General Gerhardt decided to keep the battalion there and try to reinforce it. On July 16 he ordered Major Bingham to hold his ground so he could move forces up to reinforce and hopefully push the Germans off the ridge at Martinville. German command, unaware of the situation developing on the right, put a concentrated effort into gaining control of the Bayeux Road and the recently lost Hill 122 that overlooked it. The German XI Parachute Corps made a strong attack to seize the hill but was eventually repelled, largely because of American air cover. German command's failure to recognize and capitalize on the opportunity to smash the isolated battalions of the 116th helped put to an early end the fight for Saint-L&ocirc;.</p>}
     dates{1944-07-16 / 1944-07-17}
     position{1 / 1}
     range{250}
@@ -7047,7 +7047,7 @@
     players{2 / 2}
     side{"Axis","Allies","Japan","Australia"}
     party{"Japan"-"2","Australia"-"2"}
-    author{"Jensen, Chad","Butterfield, John"}
+    author{"Jensen, Chad","Butterfield, John H."}
   }
 
   scenario{"CCP M10 ~ Bulolo River Bridge"}{
@@ -7059,7 +7059,7 @@
     players{2 / 2}
     side{"Axis","Allies","Japan","Australia"}
     party{"Japan"-"2","Australia"-"2"}
-    author{"Jensen, Chad","Butterfield, John"}
+    author{"Jensen, Chad","Butterfield, John H."}
   }
 
   scenario{"CCP M11 ~ Shattered Bobdubi"}{
