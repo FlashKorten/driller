@@ -1186,6 +1186,415 @@
     author{"Borg, Richard"}
     side{"Axis","Allies","Germany","France"}
   }
+  scenario{"m44cb2 1/3736 ~ Battle of Guadalcanal: Tenaru"}{
+    description{<p>During the night of August 20-21, Marine scouts on the east bank of Alligator Creek detected the movement of a large body of Japanese troops. Col. Kiyonao Ichiki ordered his infantry troops forward, using &ldquo;human wave&rdquo; tactics, but the 2nd Battalion, 1st Marines of Colonel Edwin A. Pollock would not be dislodged. Using canister fire, Pollock's guns decimated the Japanese wave. Ichiki then sent part of his force upstream to outflank the Marines, but after a fierce fight this attempt also failed.</p>}
+    dates{1942-08-20 / 1942-08-21}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","US","Japan"}
+  }
+  scenario{"m44cb2 2/3737 ~ Battle of Guadalcanal: Bloody Ridge"}{
+    description{<p>Bloody Ridge consisted of a series of grassy ridges south of Henderson Field where Colonel &ldquo;Red Mike&rdquo; Edson had positioned his troops. The Japanese attack began with a bombardment, followed by a powerful thrust that pushed back the Marine companies near the Lunga River. The next day an attempt to drive the Japanese forces back on this flank failed. A strong effort by Major General Kawaguchi's infantry on the second night drove the Marines back again.</p><p>The Japanese onslaught was finally stopped by the close range artillery fire and the firepower of the Marines in their final defensive positions. Kawaguchi forces were defeated just short of their objective of Henderson Field.</p>}
+    dates{1942-09-12 / 1942-09-14}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","US","Japan"}
+  }
+  scenario{"m44cb2 3/3738 ~ Battle of Guadalcanal: Clearing Matanikau River"}{
+    description{<p>At the start of the new year, General Patch ordered the 2nd and 8th Marines to drive westward and clear the Japanese resistance from the hills overlooking the coast near Point Cruz. On January 13th, Marines assaulted the Japanese positions and after hard fighting gained the heights overlooking the Matanikau River.</p>}
+    dates{1943-01-13 / 1943-01-13}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","US","Japan"}
+  }
+  scenario{"m44cb2 4/3585 ~ Operation Flintlock - Marshall Islands: Roi"}{
+    description{<p>The assault on Roi-Namur started with the USS Tennessee shelling the blockhouse on the eastern side of the islands, near the sand spit connecting Roi to Namur. Tanks of the 1st Armored Amphibian Tractor Battalion landed first on Roi near Wendy Point, concentrating their fire on the blockhouse. Marine infantry soon followed. Enemy resistance was light, but dense smoke and uncontrolled advances caused some confusion with companies of Marines rushing past Japanese positions and then having to fight their way back to their assigned sectors. Once reorganized, the Marines launched a second assault and quickly secured the airport and northern two-thirds of Roi Island.</p>}
+    dates{1944-02-01 / 1944-02-01}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","US","Japan"}
+  }
+  scenario{"m44cb2 5/3588 ~ Operation Flintlock - Marshall Islands: Namur"}{
+    description{<p>The assault craft and control officers were still trying to sort things out for the landing of Namur when the signal was given to attack. Col. Hart, seeing the Roi assault was already under way, realized that his entire operation would soon be in danger and let his disorganized assault waves go forward.</p><p>As a result, tanks and infantry landed at about the same time, but in the wrong sectors; the companies became intermingled yet the Marines pushed forward. Hoping to reduce a Japanese bunker to rubble, a Marines demolition team threw a satchel charge of high explosives into it, discovering too late that it served as a torpedo warhead magazine. The resulting explosion killed twenty Marines, wounded dozens more and covered the entire island in dust. With nightfall coming, the order was given to dig in. The next morning, at first light the tanks regrouped and rolled forward, fighting off and defeating a final Japanese attack.</p>}
+    dates{1944-02-01 / 1944-02-01}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","US","Japan"}
+  }
+  scenario{"m44cb2 6/3589 ~ Operation Flintlock - Marshall Islands: Roi-Namur Landings"}{
+    description{<p>Kwajalein Atoll, Marshall Islands &mdash; Eager to set up forward air bases capable of supporting operations across the mid-Pacific and into Japan, the U.S. desperately needed to take the Marianas Islands. But this archipelago of volcanic mountains was so heavily defended that a land-based bombers campaign was a pre-requisite to any invasion. The nearest islands capable of supporting such an effort were the Marshall Islands; capturing them would provide the base needed to launch an offensive on the Marianas.</p><p>Employing the hard-learned lessons of Tarawa, the U.S. launched a successful twin assault on the main islands of Kwajalein in the south and Roi-Namur in the north. The defenders on Roi-Namur, primarily members of the Imperial Japanese Air Service had little ground combat experience and were ill-equipped. They put up a stiff resistance but were decimated: Of an original garrison of 3,500, only 51 survived the battle and were captured.</p>}
+    dates{1944-02-01 / 1944-02-01}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","US","Japan"}
+  }
+  scenario{"m44cb2 7/3590 ~ Operation Flintlock - Marshall Islands: Kwajalein"}{
+    description{<p>The landing beaches were on the southwestern end of Kwajalein island. All Japanese strong points had been shelled and obliterated before landing, so by the end of the day, on February 1, the Marines were well inland. On February 2nd and 3rd, they launched a coordinated assault up the island. The tanks, facing a series of trenches, skirted those along the beach before running into another strong point and Japanese troops firing from shattered buildings. Offering stiff resistance, Japanese Special Naval Landing Forces and members of the Japanese 2nd Mobile Battalion launched a number of counter attacks and infiltration attempts; but these were all kept in check, and ultimately the Northern tip of Kwajalein fell, like the rest of the island.</p>}
+    dates{1944-02-02 / 1944-02-03}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","US","Japan"}
+  }
+  scenario{"m44cb2 8/3591 ~ Operation Flintlock - Marshall Islands: Engebi Landings"}{
+    description{<p>Eniwetok Atoll lies 330 miles northwest of Kwajalein and is the most western island in the Marshalls. The Japanese occupied the 3 principal islands there: Engebi, Parry and Eniwetok. The quick capture of Kwajalein allowed the US command to advance the date for the capture of Eniwetok Atoll from May 10 to Feb 17.</p><p>The barrier islands were attacked one at a time and subjected to heavy bombardment in preparation for the landings. The next morning, the Reserve Group and the men that had not been put ashore earlier in the campaign landed on Engebi. After the first waves of landing crafts reached the beach, the transports moved closer to shore to facilitate the unloading of supplies for the troops. The early waves of heavy bombardment had killed many of the defenders and the assault was met with only light resistance. The tanks of Fox company raced to the airfield, while Marine tanks with infantry support easily cleared the dug-in Japanese tanks. The two strong points, Weasel and Skunk, on both ends of the island would prove tougher to capture, but soon fell too.</p>}
+    dates{1944-02-18 / 1944-02-18}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","US","Japan"}
+  }
+  scenario{"m44cb2 9/4154 ~ Operation Flintlock - Marshall Islands: Capture of Parry"}{
+    description{<p>Parry Island, the third largest island in the northwestern Ralik Group, was the last major objective scheduled to be taken by Operation Catchpole. Brigadier General Watson had initially planned the assault on Parry for February 21, but the capture of other islands had bogged down, preventing 22nd Marines from being pulled out of the action and re-embarked to Parry in time. Z-hour was therefore reset to 09.00hrs on the 22nd.</p><p>Marine engineers and tanks landed with the Marines, near the Northwest corner where mines had been laid. Companies from the 2/22 moved north and straight across the island but the 1/22 had landed too far South; as the Marine tanks came ashore, Japanese tanks attacked them. The Shermans riposted, destroying the enemy's armor and resumed their attack South, following a short artillery barrage. By early evening, Parry Island was secured.</p>}
+    dates{1944-02-22 / 1944-02-23}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","US","Japan"}
+  }
+  scenario{"m44cb2 10/1512 ~ Marianas and Palau Islands - Operation Stalemate II: Landings at Peleliu"}{
+    description{<p>By the summer of 1944, victories in the Southwest and Central Pacific put Americas bombers within striking distance of the Japanese mainland. General MacArthur turned his attention to recapturing the Philippines. But first he had to capture the Palau islands, including Peleliu, to secure his right flank. The 1st Marine Division was chosen to make the assault. At 05.30 15 September 1944, naval support ships began the pre-landing bombardment of Peleliu's landing sites. Next, armored amphibious tanks went in, to suppress the beach defenses, preceding the infantry of the 1st, 5th and 7th Marines. But Colonel Nakagawa's soldiers and artillery resistance were far fiercer than expected on all the landing sites. On the far left the 1st Marines were pinned down by Japanese strong points firing all along the coral shoreline. In the center, 5th Marines met scattered resistance, managing to move inland toward the airfield. But the lack of progress on their left soon forced them to stop. On the far right, 7th Marines, facing heavy fire, veered off left, causing confusion in the center landing beaches. Around 16.30, a Japanese counter attack of tanks and infantry across the airfield was repulsed, as was a second attack later in the day.</p><p>What had been planned as a quick 4 day battle would soon turn into a 2 months long nightmare...</p>}
+    dates{1944-09-15 / 1944-09-15}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","US","Japan"}
+  }
+  scenario{"m44cb2 11/1508 ~ Marianas and Palau Islands - Operation Stalemate II: Umurbrogol Pocket"}{
+    description{<p>After their losses in the Solomons, Gilberts, Marshalls and Marianas, the Imperial Army developed a new island defense strategy; abandoning their early beach-based perimeter defense tactics, their new strategy aimed only to disrupt the landings, using a &ldquo;honeycomb&rdquo; system of fortified positions inland to draw the Americans into a bloody war of attrition. Colonel Nakagawa thus concentrated his defenses inland. Using the rough terrain to his advantage, he constructed a system of heavy fortified bunkers, caves, and underground positions. The majority of Nakagawa's defenses were based at Peleliu's highest point, Umurbrogol mountain, a collection of hills and steep ridges. Umurbrogol contained some 500 limestone caves, connected by tunnels. Many of these were former mine shafts turned into defense positions. Engineers added sliding steel armor doors with multiple openings to serve both artillery and machine guns. In late October, the 81st Infantry Division took over the attack of the Umurbrogol pocket. The Marines had been at the Umurbrogol for weeks now, sustaining tremenduously high casualties. Its initial assaults against the Five Brothers, Horseshoe, the Five Sisters and China Wall, were met with a hail of fire, forcing the marines to retreat. Flame-throwing tanks, artillery and Corsairs all had to be called in repeatedly for support and to blast the mountain and burn the defenders into submission. After nearly six weeks of brutal combat, the pocket was finally reduced; but Japanese resistance would continue for months to come. A Japanese lieutenant with his twenty-six 2nd Infantry soldiers and eight 45th Guard Force sailors held out in the caves of Peleliu until April 22, 1947, and surrendered after a Japanese Admiral convinced them the war was over. This was the last official surrender of World War II.</p>}
+    dates{1944-11-25 / 1944-11-25}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","US","Japan"}
+  }
+  scenario{"m44cb2 12/1484 ~ Home Islands - Operation Detachment: Iwo Jima Landings"}{
+    description{<p>Its role as an early warning station radioing reports of incoming U.S. bombers back to mainland Japan, and its three airfields, made Iwo Jima a crucial component of the Japanese inner defense perimeter. Following their losses in the Marianas, they spent a year fortifying the island with an extensive network of tunnels and caves, drawing from their experience in the battle of Peleliu. Fully aware of the risks his men were facing, Major General Harry Schmidt requested a ten day shelling of the island before the land invasion, but was given only three. Unfortunately the weather did not cooperate, leaving the Japanese fortifications largely intact when dawn came on February 19, 1945. At 08:59, one minute ahead of schedule, the first elements of the 3rd, 4th, and 5th Marine divisions landed on the beach. Initially surprised at the lack of incoming fire, they began surmising the Japanese might have been all miraculously decimated by the pre-landing bombardments. Progressing with difficulty over a soil often covered with volcanic ash, the Marines uneasily began progressing inland. The first wave reached a line of Japanese bunkers, when all of a sudden, fire lit up from machine guns hidden in many cleverly concealed Japanese bunkers and firing positions, to devastating results. To make things worse, the bunkers turned out to be connected by an elaborate tunnel system the Japanese had built in expectation of the incoming invasion; bunkers that had previously been cleared with flamethrowers and grenades were suddenly reoccupied by Japanese troops that sprung on the Marines back.</p>}
+    dates{1945-02-19 / 1945-02-19}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","US","Japan"}
+  }
+  scenario{"m44cb2 13/1521 ~ Marianas and Palau Islands - Operation Iceberg: Counter-Offensive on Okinawa"}{
+    description{<p>The Japanese began their counter-offensive on the night of May 3rd, 1945. The 24th Division, supported by the Japanese 27th Tank Regiment, decided to push forward in six separate thrusts. Their main objective was to break through the US Army lines and seize the Tanabaru escarpment.</p><p>On the Japanese far right, the Engineer Regiment struggled to make some progress and was soon wiped out. In the center, saturated fire from US artillery made progress hell for the 24th Division. The 22nd Infantry nonetheless managed to penetrate deep in the middle but was soon forced to retire as other units failed to match their progress. On their left, the Japanese tanks were taking heavy losses, though some elements of the 32nd Infantry made it to the Escarpment. The counter-offensive waned and was soon abandoned; in the end, it had only served to further weaken the Japanese forces on Okinawa.</p>}
+    dates{1945-05-04 / 1945-05-06}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","US","Japan"}
+  }
+  scenario{"m44cb2 14/1520 ~ Marianas and Palau Islands - Operation Iceberg: Medeera Pocket"}{
+    description{<p>By the 3rd month of the battle on Okinawa, the remnants of the Japanese army had withdrawn to the south end of the island. Although the front had narrowed for the assaulting Marine Divisions, there were still irreducible pockets of Japanese resistance that held up. The US 96nd Infantry Division was pulled from the line to deal with the Japanese 24th Division which continued to put up fierce resistance in a large pocket near Medeera and Makabe, in the center of the peninsula. Supported by artillery and the 2nd Battalion of the 5th Marines, they launched an attack on June 20th. Three days of hellish hand-to-hand combat ensued in the hills and caves the Japanese mastered so well.</p>}
+    dates{1945-06-20 / 1945-06-20}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","US","Japan"}
+  }
+  scenario{"m44cb2 15/6053 ~ Bicycle Blitzkrieg - Mare Shinko Sakusen: Ban Sadao"}{
+    description{<p>Malaya's supposed first line of defense, the formidable British battleships Prince of Wales and Repulse, were languishing at Singapore. Untroubled by them, the Japanese 5th Division landed at Singora and Patani in Thailand, and simultaneously elements of 18th Division landed at Kota Bharu in northern Malaya. The rest of 18th Division and the Imperial Guards Division were to follow in a second wave. Pearl Harbor, the Philippines, Guam, Hong Kong, and Wake Island were also attacked on the same day. Japan had irrevocably endtered the war.</p><p>After an essentially unopposed landing at Singora, and pressing south-west along the road towards Ban Sadao on the frontier with Malaya, the leading detachment of 5th Division under the tough old fighter Lieutenant Colonel Shizuo Saeki clashed with a British mechanized force under Major Andrews. Shaken by the speed and ferocity of the Japanese advance, the British rapidly withdrew south of the border. In the wreckage of a British armored car, the Japanese were delighted to find a map of the defenses around Changlun and Jitra, the next towns in their path of advance.</p>}
+    dates{1941-12-08 / 1941-12-08}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","Commonwealth","Japan"}
+  }
+  scenario{"m44cb2 16/6042 ~ Bicycle Blitzkrieg - Mare Shinko Sakusen: Kota Bharu"}{
+    description{<p>The Battle of Malaya began on the morning of December 8th with an amphibious assault on the strategically important RAF base at Kora Bharu. The air field was protected by the multiple arms of the Kelantan River, and defended by the 8th Brigade of the 9th Indian Division, including the 56th Infantry Regiment plus engineers and other support formations, was detailed to take this key objective in the Japanese quest for Malaya. The initial naval bombardment cleared some holes in the wire, but the Japanese assault wave soon found itself pinned down on the waterline, unable to even raise their heads. Digging-in against the strafing RAF, and the withering machine-gun and artillery fire of the staunch Indians, the position of the Japanese on the beach seemed hopeless. The Japanese troops, veterans of battles in China, dug-in until nothing remained visible and then used their helmets as spades to burrow slowly towards the pillboxes on the beach. Still taking casualties from mines, artillery, and the air, the attacking force somehow overcame one position after another, driving the 8th brigade back to their defenses in front of the air field. After two failed counter-attacks and heavy casualties on both sides, the Japanese charged across the river on the evening of December 8th and took the airfield. The 8th brigade evacuated the air field and withdrew inland. The Japanese finally had a firm foothold in Malaya and a vital airfield.</p>}
+    dates{1941-12-08 / 1941-12-08}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","Commonwealth","Japan"}
+  }
+  scenario{"m44cb2 17/6068 ~ Bicycle Blitzkrieg - Mare Shinko Sakusen: Gurun"}{
+    description{<p>The severily depleted and desperately tired men of the 11th Indian Division of III Indian Corps under Major-General David Murray-Lyon were retreating in disorder from Jitra. They stopped in the gap between the heavily forested Kedah Peak and the jungle covered foothills of the central Malayan ranges. Murray-Lyon felt that the rice paddies were vulnerable to Japanese air attacks so he deployed his forces in dense rubber tree plantations around Gurun. The problem was, this afforded the Japanese covered lines of approach. As the 11th Indian Division set up their defenses, a Japanese battalion under Major Kobayashi was hot on their heels. The Japanese had tank support, their &lsquo;Churchill supplies&rsquo;, and were supported by aircraft from Alor Star airfield which had been captured intact. There was no time for the British to properly fortify the Gurun position before Japanese infiltrators penetrated the outpost positions. In an effort to rally the troops and boost moral, Brigadeer Lay was seen wearing his old red hat, pipe in mouth, and waving his walking stick with a cheery grin. As he lead them toward the front lines, he shouted, &ldquo;Come along, you fellows, we've got to push them back! They say there're hundreds of the blighters, but that's just all the more to kill!&rdquo; Despite such bravado, it soon became apparent to Murray-Lyon that the only course of action to save the division was to order another withdrawal to the south, behind the Muda River. Murray-Lyon was dismissed soon after the Gurun battle and temporarily replaced by Brigadeer A.C.M. Paris.</p>}
+    dates{1941-12-14 / 1941-12-14}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","Commonwealth","Japan"}
+  }
+  scenario{"m44cb2 18/6046 ~ Bicycle Blitzkrieg - Mare Shinko Sakusen: Kampar"}{
+    description{<p>The battered and desperately understrengh remnants of the 11th Indian Infantry Division withdrew from Gurun to take up positions in the Kampar area under their new Commander, General Archibald Paris. They dug-in between the jungle around the Sungai Kampar River and the central Malayan mountains, surrounding the town of Kampar. Due to heavy losses the Leicester and Surrey regiments had amalgamated to form the British Battalion and had dug-in around the trunk road just south of Dipang. The Jats and 1/8th Punjabi regiments had similarly amalgamated to become the Jat/Punjab Battalion and formed the reserve force deployed near Kampar. The Japanese Ando regiment cut its way through jungles to the west in a flanking maneuver, while the Okabe regiment made an assault straight down the road and a battalion of the Japanese 11th regiment made a flanking run east through the mountains. The Japanese captured part of Thompson ridge along the road, but were beaten back after a brave counter-attack by the Sikh and Gujar sepoys led by Captain John Graham who died in the attack. During four memorable days of fighting, the Japanese suffered their first real defeat and it was to scratch units supported by powerful British artillery deployed in the mountains. The British Battalion performed so well in this battle that the Japanese suspected they were facing Australians! However, a Japanese landing on the coast farther south rendered the Kampar position untenable and General Paris ordered yet another withdrawal.</p>}
+    dates{1941-12-30 / 1942-01-02}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","Commonwealth","Japan"}
+  }
+  scenario{"m44cb2 19/6049 ~ Operation Flintlock - Marshall Islands: Gemencheh Bridge"}{
+    description{<p>The 8th Australian Division's commander, Major-General Gordon Bennett, was given command of all forces in the west of Malaya (Westforce). Bennett brought 8th Australian Division with him to relieve the broken 11th Indian Division, and believed that ambushes would be the best way forward in trying to halt the Japanese advance. An ambush was accordingly laid by Captain D.J. Duffy's &lsquo;B&rsquo; Company on the Trunk Road near Gemas where the road crossed a wooden bridge over the Sungei Gemencheh river.</p><p>As many as a thousand Japanese soldiers of the 9th Infantry Brigade's Mukaide Detachment crossed the bridge on bicycles before Duffy triggered the demolition charges on the bridge and ordered his men to open fire at close range. The ambush was devastating but without artillery support, the forward &lsquo;B&rsquo; company was forced to withdraw and had to fight their way back to friendly lines. In the resulting two day battle, the Japanese lost over 1,000 men and most of their tanks compared with minimal losses to the Australians. The ambush was a tactical success, but unfortunately the Japanese advance down the Malay Peninsula was only temporarily slowed.</p>}
+    dates{1942-01-14 / 1942-01-14}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","Commonwealth","Japan"}
+  }
+  scenario{"m44cb2 20/6051 ~ Bicycle Blitzkrieg - Mare Shinko Sakusen: Slim River"}{
+    description{<p>Successive outflanking maneuvers down the west coast of Malaya by the Japanese, forced General Percival to create a new defense line to the south in Johore state. Percival urged Lieutenant-General Lewis &ldquo;Piggy&rdquo; Heath, commander of III Indian Corps, to delay the Japanese advance as long as possible with the 11th Indian Division north of Kuala Lumpur while the positions in Johore were being strengthened. 12th Indian Brigade was deployed north of Slim River where the road and rail ran together, while the 28th Indian Brigade was deployed on the northern bank of the Slim River guarding the road and rail bridges.</p><p>The III Indian Corps faced Colonel Ando's pursuing 42nd Regiment supported by tanks and engineers, with a battalion either side of the road feeling for the flanks of the British position. Despite intense shell fire, Japanese tanks under the command of Second Lieutenant Sadanobu Watanabe rushed the British defenses along the road. At each bridge, Watanabe leaped from his tank under fire and cut demolition wires with his saber, allowing the following tanks and infantry to cross. The British defenders resisted fiercely but after 19 hours of continuous fighting and large numbers of casualties, they were forced to retreat.</p>}
+    dates{1941-01-07 / 1941-01-07}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","Commonwealth","Japan"}
+  }
+  scenario{"m44cb2 21/6043 ~ Bicycle Blitzkrieg - Mare Shinko Sakusen: Breaking the Jitra Line"}{
+    description{<p>Lieutenant-General Arthur Percival, British General Officer Commanding Malaya, tried to slow down the Japanese advance by ordering bridges to be blown up along the Trunk Road. The Japanese devised a method to overcome this British strategy. Infantry would cross to the far bank to cover repair work by the Japanese sappers. Then artillery would be brought up to the obstacle to provide still more cover. The sappers gained a reputation for brave and speedy work under violent shellfire, and once the bridge had been made good Japanese tanks would make a dash across to the far side and impetuously charge the British defenders, hopefully capturing the next bridge before it could be blown. Having no tanks in Malaya, and precious few anti-tank guns, the British were hard-pressed to deal with such relentless armored assault. The Saeki Detachment were driving towards Jitra and attempting to cross the Sungai Bata using such tactics. The Okabe Regiment were deployed to the Japanese left in a bid to outflank the defense. Fighting patrols of 11th Regiment probed the jungles and swamps to the Japanese right. Once the tanks had crossed the river British resolve melted away and the Jitra Line, which had taken six months to construct and was meant to hold on for three months, was broken in just 15 hours. One reason for the defeat was that the barbed wire defenses were deliberately incomplete, Percival fearing spies might map British positions more easily if wire was present. The Japanese captured vast quantities of weapons, munitions, and supplies which they jokingly termed &lsquo;Churchill supplies&rsquo;. The British retired in disorder towards Gurun. 30 miles along the Trunk Road to the south.</p>}
+    dates{1941-12-10 / 1941-12-12}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","Commonwealth","Japan"}
+  }
+  scenario{"m44cb2 22/6084 ~ Bicycle Blitzkrieg - Mare Shinko Sakusen: Bakri"}{
+    description{<p>While the Japanese 5th Division was engaged in a fierce battle around Gemas to the east, the Konoe Imperial Guards Division under Lieutenant-General Nishimura attacked down the west coast of Malaya. Facing them were elements of the 8th Australian Division and the 45th Indian Brigade under General Gordon Bennett. The Japanese advance was swift again, with the 5/18th Garwhal Rifles being ambushed on their way to fortify Parit Jawa. At the same time, the Ogaki Detachment cut east through the dense jungle in an attempt to encircle the strong British position at Bakri. Adding to the defenders' headache, Japanese force in small boats landed just south of Batu Pahat and the 2nd Cambridgeshires were sent to deal with this new threat.</p><p>The Japanese sent tanks down the road towards Bakri, but they were unsupported by infantry and were demolished by Sergeant Thornton's and Sergeant Parson's anti-tank guns. Undeterred, the tankers continued their assault on foot, reaching the bridge at Parit Sulong. Troop citations were awarded to the Ogaki Battalion and the Gotanda Medium Tank Company for bravery and sacrifice.</p>}
+    dates{1942-01-16 / 1942-01-20}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","Commonwealth","Japan"}
+  }
+  scenario{"m44cb2 23/6089 ~ Bicycle Blitzkrieg - Mare Shinko Sakusen: Singapore"}{
+    description{<p>With his troops' morale crumbling, and believing he faced 5 Japanese divisions and 300 tanks, Lieutenant-General Arthur Percival made the decision to withdraw to Singapore. General Bennett paid a final visit to his friend the Sulton of Johore and made plans to save his skin in the event of a surrender. &ldquo;The whole operation seems incredible,&rdquo; he wrote after the war, &ldquo;550 miles in 55 days, forced back by a small Japanese army of only 2 divisions riding stolen bicycles...&rdquo; The British withdrew to the 220 square miles of Singapore Island and blew the Causeway behind them. Still the British outnumbered the Japanese but Percival blundered, not for the first time, by deploying his entire garrison all around the 70 mile coast, hardly keeping a central reserve to facilitate counter-attacks.</p><p>The assault across Johore Strait finally came with the Japanese 18th Division on the British right, 5th Division in the center, and the Konoe Imperial Guards Division creating a diversion on the left. The British defenses were incomplete and stretched too thin, and the Japanese right hook soon penetrated all the way to Bukit Timah and the heights overlooking the Singapore. General Yamashita, Japanese 25th Army commander, arranged a meeting with Percival and with his best poker face demanded surrender. Unknown to Percival, Yamashita was desperately short of men and ammunition. Percival agreed terms and the fortress of Singapore fell to the Japanese.</p>}
+    dates{1942-02-09 / 1942-02-15}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","Commonwealth","Japan"}
+  }
+  scenario{"m44cb2 24/7003 ~ Fall of Poland - Unternehmen Fall Weiss: Tuchola Forest"}{
+    description{<p>The German 2nd Army and 19th Panzer Corps pushed into Poland as part of Unternehmen Fall Weiss. What seemed like good defensive terrain to the Poles had actually been part of the German Army's training area during World War I so many of the German officers and generals were familiar with it. Despite some minor victories, like the cavalry charge at Krojanty, the German advance swept aside the Polish resistance.</p><p>At the start of the battle many of the Polish forces, comprised mainly of the 9th and 27th Infantry Divisions, were not in position. The general confusion, combined with poor communication, meant that the Polish army had to abandon plans for a counter attack. Helped by significant armor support and the guidance of General Heinz Guderian, the Germans almost completely destroyed two divisions and the Czerk Operational Group in the course of five days.</p>}
+    dates{1939-09-01 / 1939-09-05}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","Germany","Poland"}
+  }
+  scenario{"m44cb2 25/6998 ~ Fall of Poland - Unternehmen Fall Weiss: Hel"}{
+    description{<p>The Hel Peninsula, including a Polish military port, was one of the longest-defended pockets of resistance in Operation Fall Weiss. Approximately 3,000 Polish defenders held out for almost a month against German ground, air, and naval forces. During the battle a coastal battery damaged the battleship Schleswig-Holstein and the Hel anti-aircraft guns proved extremely efficient, shooting down around 50 aircraft. After being stopped by the Polish defenses, the Germans brought in massed artillery and slowly fought their way across the peninsula against stiff resistance and counter attacks.</p><p>Despite their heroic resistance, Counter-Admiral J&oacute;zef Unrug finally gave the order to surrender when it became obvious that no relief would be forthcoming and they had run out of food and supplies.</p>}
+    dates{1939-09-09 / 1939-10-02}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","Germany","Poland"}
+  }
+  scenario{"m44cb2 26/6997 ~ Fall of Poland - Unternehmen Fall Weiss: Bzura River"}{
+    description{<p>Starting on 9 September, the Battle of Bzura was the largest battle of Unternehmen Fall Weiss. It was also one of the last battles that involved a significant cavalry contingent. After losing contact with Polish high command, General Tadeusz Kutrzeba, commander of Army Pomorze and Army Poznan, optet for a risky counterattack to prevent his forces from being surrounded. Noticing that the German 8th Army was spread over a 30 kilometer line, General Kutrzeba ordered an offensive that inflicted heavy losses on the German forces who were thrown back about 20 kilometers. The Polish cavalry brigades proved their worth by attacking the vulnerable flanks and harassing the rear. After recapturing several towns through a string of victories, the Polish forces had to set up defensive positions as German generals finally took the offensive seriously and diverted additional forces to the battle.</p><p>German numerical and tactical superiority, combined with air supremacy, forced the defenders into a shrinking pocket. Only a handful of Polish units managed to break out of the encirclement and both Polish armies were eventually destroyed as fighting forces.</p>}
+    dates{1939-09-09 / 1939-09-22}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","Germany","Poland"}
+  }
+  scenario{"m44cb2 27/6999 ~ Fall of Poland - Unternehmen Fall Weiss: Kepa Oksywska"}{
+    description{<p>The Polish army occupied the Oksywie Heights outside the city of Gdynia in northern Poland and when the German forces managed to cut off the nearby Hel Peninsula, the region was besieged. The Polish commanders wanted to avoid destroying the city in dangerous urban combat so their prepared defenses were on the surrounding hills. With Germans advancing from the west and also coming from East Prussia through the &ldquo;Polish Corridor,&rdquo; the Poles quickly became embroiled in a two-front battle. With their prepared defenses, though, the Polish forces were able to halt the German blitzkrieg and the fighting began to resemble that of World War I.</p><p>About 9,000 defenders and their equipment were amassed in an area no larger than 4km&squared; and the Polish forces were able to inflict significant casualties on the Germans. Between 10 and 19 September there were about 110 skirmishes fought in the Oksywie Heights but constant German bombardment, lack of supplies, no hope of reinforcements, and a nearly 100&percent; casualty rate eventually forced Polish commanders to surrender.</p>}
+    dates{1939-09-10 / 1939-09-19}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","Germany","Poland"}
+  }
+  scenario{"m44cb2 28/7002 ~ Fall of Poland - Unternehmen Fall Weiss: Tomasz&oacute;w Lubelski"}{
+    description{<p>Near the town of Tomasz&oacute;w Lubelski, in the far south east of Poland, the Polish Army twice tried to break through the German encirclement and move further south to the Romanian Bridgehead area. The first attempt, by Army Lublin, was the largest tank battle of the campaign, but ultimately resulted in failure and the capitulation of that army. The second attempt, comprised of the surviving elements of several retreating armies, also tried to break through the German lines in the south. This attack ultimately resulted in failure, and although the Polish Cavalry under General Wladyslaw Anders was able to escape the trap, the rest of the Polish forces in the pocket were forced to surrender.</p>}
+    dates{1939-09-17 / 1939-09-26}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","Germany","Poland"}
+  }
+  scenario{"m44cb2 29/1545 ~ Fall of Poland - Unternehmen Fall Weiss: Battle of Warsaw"}{
+    description{<p>On September 1, 1939 the invasion of Poland &mdash; codenamed Fall Weiss or &ldquo;Case White&rdquo; by the German high command &mdash; marked the first military campaign of the war. In a week, the German forces were able to overwhelm the thin Polish defenses and the 4th Panzer Division had driven east to Warsaw's doorstep.</p><p>The initial attack on the city began in the southern suburbs and despite the almost relentless German bombing the Poles fought ferociously as they defended their capital city. The German tanks who had almost effortlessly charged across the flat Polish terrain, now found it more difficult to maneuver in the city streets and Polish artillery made them suffer.</p><p>Knowing that time was on their side and additional troops would soon arrive, the German's put the city under siege. Within days, the Poles were no longer able to mount effective artillery attacks and the German infantry was ordered forward. With overwhelming artillery and air support the city soon fell.</p>}
+    dates{1939-09-08 / 1939-09-25}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","Germany","Poland"}
+  }
+  scenario{"m44cb2 30/7006 ~ Fall of Poland - Unternehmen Fall Weiss: Szack"}{
+    description{<p>By 17 September, 1939, most of the Polish reserves and heavy equipment from the forces defending the eastern border of Poland had been sent west to help against the German invasion. When the Soviet forces poured over the border there was little left to stop them. Over the course of several days the Poles engaged in a fighting retreat to the south, finding themselves between the advancing Wehrmacht and Red Army.</p><p>General Orlik-R&uuml;ckemann ordered his men to lauch a brief counteroffensive against the Red Army near the town of Szack. On 28 September, the Poles managed to provoke the Soviets into attacking a defensive position and with carefully coordinated fire, the Poles destroyed a tank unit and swept into the town of Szack, routing the Soviet 52nd Rifle Division. It was a short-lived victory as Soviet reserves flooded into the area, forcing the Poles to continue their retreat to the south.</p>}
+    dates{1939-09-28 / 1939-09-28}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","Russia","Poland"}
+  }
+  scenario{"m44cb2 31/7000 ~ Fall of Poland - Unternehmen Fall Weiss: Battle of Kock"}{
+    description{<p>By October 2, 1939, the battle for Poland was all but over. German command assumed that the Polish defenders were so demoralized that it would only take one German battalion to capture Operational Group Polesie, the only Polish military unit still fighting. General Kleeberg, however, had gathered up the remnants of several different units and they were hardened survivors of previous battles. Although most of the units had lost their heavy equipment, they fought off several days of frontal assaults by motorized German Infantry. Polish armor and air forces were non-existent but the soldiers fought with pride and determination, effectively utilizing the surrounding terrain and their highly mobile cavalry units.</p><p>Despite several effective counter-attacks and a few tactical victories, General Kleeberg was eventually forced to capitulate on October 6 because of a lack of food and ammunition.</p>}
+    dates{1939-10-02 / 1939-10-06}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Axis","Allies","Germany","Poland"}
+  }
+  scenario{"m44cb2 32/6687 ~ Operation Boston - Drop in the Night: 82nd"}{
+    description{<p>During the night of June 5-6, 1944, paratroopers of the three parachute regiments of the 82nd &ldquo;All American&rdquo; US Airborne Division were dropped over the Cotentin peninsula. Their objective: to secure their drop zone, capture Saint-M&egrave;re-Eglise and the bridges on the Merderet river and destroy the bridges on the Douve. Dropped in pitch black, the paras found themselves scattered all over the Normand bocage and countless swamps dotting the region, often far from their intended drop zones. Thankfully, the Germans camp was in disarray too, its troops disoriented by an enemy that seemed to pop out everywhere at once, and was thus only able to muster isolated counter-attacks.</p><p>By the morning of June 6, US reinforcements arrived, with Force &ldquo;B&rdquo; gliders landing near Les Forges. Operation Boston was a success.</p>}
+    dates{1944-06-06 / 1944-06-06}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    special{"Breakthrough"}
+    side{"Axis","Allies","Germany","US"}
+  }
+  scenario{"m44cb2 33/6696 ~ Operation Albany - Drop in the Night: 101st"}{
+    description{<p>During the night of June 5-6, 1944, the 101st US Airborne Division &ldquo;Screaming Eagles&rdquo; was one of two divisions dropped on the Cotentin peninsula. Its objectives were to secure the beach exits, capture the lock at la Barquette, destroy the bridges on the Douve river and the German artillery camp &ldquo;WXYZ&rdquo;. Just like their comrades of the 82nd Airborne Division, the US paratroopers were dropped under cover of a pitch black night, right in the middle of the Norman bocage. As soon as they landed, they found themselves taking heavy fire from the Georgians Ost-battalion at Turqueville and the German paratroopers of the 6. Fallschirmj&auml;ger Regiment at Sainte-Marie-du-Mont. But when dawn rose on D-Day, they had accomplished all their objectives.</p>}
+    dates{1944-06-06 / 1944-06-06}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    special{"Breakthrough"}
+    side{"Axis","Allies","Germany","US"}
+  }
+  scenario{"m44cb2 34/6836 ~ Cut of the Cotentin"}{
+    description{<p>Unable to advance toward Saint-Sauveur-le-Vicompte, the 90th US Infantry Division was soon replaced by two other divisions: the 82nd US Airborne Division and the 9th US Infantry Division. From June 14 on, the American advance westward found itselt reinvigorated. The Douve river was crossed on June 16 by US paratroopers at Saint-Sauveur-le-Vicompte and by US infantrymen at N&eacute;ou, in spite of fierce German artillery fire. On the morning of June 17, vanguards of the 9th US Infantry Division reached the west coast at Portbail and Barneville. The Cotentin peninsula was now cut off by troops of the VIIth US Army Corps, and the German garrison at Cherbourg definitively isolated.</p>}
+    dates{1944-06-14 / 1944-06-17}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    special{"Breakthrough"}
+    side{"Axis","Allies","Germany","US"}
+  }
+  scenario{"m44cb2 35/6726 ~ Operation Cobra - The Hedgerow Breach"}{
+    description{<p>After the capture of Saint-Lo, 1st US Army, under the command of General Bradley, found itself in position to launch a major offensive to break through the German lines; they had suffered so much attrition they had reached their breaking point. On July 25th, after a massive carpet bombing, three infantry divisions of VII US Army Corps (Gal Collins) advanced through the disrupted lines of the Panzer Lehr Division &mdash; Operation Cobra had just begun. In spite of the disruption and despite taking heavy losses, the surviving German troops fought desperately, making the US advance slow and painful. By evening, the hoped-for breakthrough hadn't materialized. On July 26, General Collins ordered the 2nd &ldquo;Hell on Wheels&rdquo; US Armored Division to go into action. Leaving infantry behind, the tanks quickly reached Canisy. Finally, on the 27th, US troops reached Pont-Brocard and le Mesnil-Herman. The breakthrough had succeeded; now the breakout toward Coutances and Avranches could begin.</p>}
+    dates{1944-06-25 / 1944-06-27}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    special{"Breakthrough"}
+    side{"Axis","Allies","Germany","US"}
+  }
+  scenario{"m44cb2 36/6911 ~ Operation Cobra - The Avranches Breakthrough"}{
+    description{<p>On the morning of July 28, 1944, following the initial breakthrough made by the 1st US Army, German troops of 84. Armee Korps found themselves virtually surrounded in the Roncey pocket. The following night, elite German units of Waffen-SS and paratroopers made several attempts to break through the thin American lines in the east. Only a few managed to escape, the others being destroyed or taken prisoners. The pocket now reduced, US troops were ready to charge towards Avranches and capture the bridges on the S&eacute;e and S&eacute;lune rivers. Once those were seized, the 3rd US Army, under the command of Patton, was activated and ready to resume its advance towards central France and Brittany.</p>}
+    dates{1944-07-28 / 1944-07-31}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    special{"Breakthrough"}
+    side{"Axis","Allies","Germany","US"}
+  }
+  scenario{"m44cb2 37/6702 ~ Operation Tomga - The Coup de Main"}{
+    description{<p>During the night of June 5-6, 1944, units of the 6th (British) Airborne Division were dropped east of Caen, between the Orne and Dives rivers. Their objective was to capture the bridges on the Orne river and on the canal (later made famous as &ldquo;Pegasus Bridge&rdquo;). This was brilliantly accomplished by a &ldquo;coup de main&rdquo; party of Major Howard, who led his gliders and men next to the objective. On his side, Major Otway's battalion was tasked with the neutralization of the German artillery battery at Merville, which was threatening the landing beaches.</p><p>Further south, other units were instructed to blow the bridges on the Dives river at Robehomme, Bures and Troarn to prevent the arrival of German reinforcements. The rest of the Division had to secure the area and flush it out of enemy troops, to build a solid defensive flank east of the bridgehead. Despite inaccurate air drops and many landings in swamps, most of the objectives were achieved by the early hours of June 6, when Lord Lovat's commandos reached Pegasus Bridge, decisively reinforcing the airborne bridgehead.</p>}
+    dates{1944-06-06 / 1944-06-06}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    special{"Breakthrough"}
+    side{"Axis","Allies","Germany","Great Britain"}
+  }
+  scenario{"m44cb2 38/6822 ~ Operation Epsom - The Scottish Corridor"}{
+    description{<p>After the set back of Operation Perch at Villers-Bocage, Montgomery launched a new offensive with VIII British Corps in order to outflank Caen on the right. On June 26, Operation Epsom began with an infantry attack; the 15th Scottish Division was ordered to reach the Odon river and open the way for the 11th Armoured Division. On the German front lines. the 26. SS Panzergrenadier Regiment and the 12. SS Panzerpionier Battalion were progressively annihilated despite fanatical resistance by the Waffen-SS and several attempted armored counter-attacks. Losses were heavy on both sides. On the 27th, the British captured the Tourmaville bridge, allowing the tanks of 11th Armoured Division to cross the Odon and advance towards Hill 112. But the timely arrival on the battlefield of II. SS Panzer Korps, composed of two SS Panzerdivisions, stopped the British offensive; the front was now locked on Hill 112 for several weeks.</p>}
+    dates{1944-06-26 / 1944-06-29}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    special{"Breakthrough"}
+    side{"Axis","Allies","Germany","Great Britain"}
+  }
+  scenario{"m44cb2 39/6769 ~ Operation Goodwood - The Charging Bull"}{
+    description{<p>After the capture of Caen on July 10, Montgomery aimed to deliver a major blow to his enemies with the help of the 2nd British Army. This Operation, code-named Goodwood, would launch three armored divisions of VIII Army Corps east of Caen. Their objective: to engage and destroy the German Panzer divisions, neutralize any threat of attack and give Montgomery and his men some breathing room by enlarging the British bridgehead east of the Orne river. In the meantime the II Canadian Corps was to seize the suburbs of Vaucelles and Mondeville, south of the Orne. On July 18, after a relentless carpet bombing that annihilated the Germans' first line (units of the 16. Luftwaffe Feld Division), the tanks of the 11th Artmored Division rolled into the plain, south-east of Caen. They ran into the Germans' second line of defense composed of 88mm guns and infantry entrenched in the villages, and lost many tanks. The next day, the Guards Armored Division managed to break the Germans' second line of defense at Cagny and Bourgu&eacute;bus before getting bogged down and progressing no further; the offensive was halted. Even though Montgomery had managed to seize the land south of Caen, the breakthrough he was hoping for had failed.</p>}
+    dates{1944-07-18 / 1944-07-20}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    special{"Breakthrough"}
+    side{"Axis","Allies","Germany","Great Britain"}
+  }
+  scenario{"m44cb2 40/4625 ~ Operation Bluecoat - Coldstream Hill"}{
+    description{<p>Taking advantage of the departure of two Panzer Divisions hastily sent west to counter the 1st US Army's Operation Cobra, Montgomery sent the 2nd British Army to the assault of the Virois bocage in Operation Bluecoat. Their first objectives were two heights to the east of Saint-Martin-des-Besaces: Hill 226 and Hill 309. On July 30, the German front lines, held by the 276 and 326 Infantry Divisions who were entrenched behind minefields, were bombarded and then eviscerated by the assault of the 15th &ldquo;Scottish Division&rdquo; and the 43rd &ldquo;Wessex Division&rdquo; along with support from the &ldquo;Crocodile&rdquo; flame thrower tanks of the 141st RAC.</p><p>Following the breach made by the British infantry, the tanks of the Guard Armoured Brigade rumbled toward their objectives. But a surprise setback soon came with the appearance on the battlefield of the &ldquo;Jagdpanthers&rdquo; of the 654.s Pzjg Abt, soon followed by the &Ldquo;Tiger II&rdquo; tanks of the 503.s Pz Abt and a Kampfgruppe of the 21. Panzer Division. During the day of July 31, the &ldquo;Guards&rdquo; lost many Churchill tanks from the repeated blows of the German heavy armor, but managed to hold their ground on the positions conquered earlier. Operation Bluecoat was now ready to more to its second phase &mdash; the capture of Mont-Pincon.</p>}
+    dates{1944-07-30 / 1944-07-31}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    special{"Breakthrough"}
+    side{"Axis","Allies","Germany","Great Britain"}
+  }
 }
 
 22605 {
@@ -4671,7 +5080,7 @@
 
 11825 {
   title{"Empire of the Sun"}
-  description{<p>Description</p>}
+  description{<p>Empire of the Sun is a game about the Pacific War during World War II. One player takes the side of the Japanese and the other the Western Allies. The Japanese try to out perform their historical counterpart and force the Allies into a negotiated end to the war, while the Allies try to destroy Japan’s military and place its industry within range of Allied B29s and Naval forces. If the Allies cannot keep pace with their historical counterpart, the only recourse is the invasion of the Japanese Home Islands themselves.</p>}
   publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
   genre{"Conflict Simulation","Operational Level"}
@@ -4691,15 +5100,15 @@
 }
 
 13709 {
-  title{"Clash of Giants II"}
-  description{<p>Description</p>}
+  title{"Clash of Giants II ~ The Campaigns of Galicia and First Ypres 1914"}
+  description{<p></p>}
   publisher{"GMT Games"-"www.gmtgames.com"}
   engine{"Cyberboard"-"www."}
   genre{"Conflict Simulation","Operational Level"}
   mechanic{"Hex","Counter","Dice"}
   theme{"WW1"}
-  scenario{"Clash of Giants II"}{
-    dates{1914-01-01 / 1914-12-31}
+  scenario{"gmt_cog2_01 ~ The Galicia Campaign"}{
+    dates{1914-08-17 / 1914-08-17}
     position{1 / 1}
     range{300}
     timescale{6}
@@ -4707,7 +5116,18 @@
     side{"Central Powers","Allies"}
     party{"Central Powers"-"2","Allies"-"2"}
     author{"Raicer, Ted"}
-    description{<p>Description</p>}
+    description{<p>The Austro-Hungarian army began WWI with the wrong mobilization plan, which resulted in its 2nd Army arriving late to the Galician front. But despite this, the Austrian commander (Conrad) ordered his three remaining armies to engage General Ivanov’s four Russian armies along a 200-mile front.</p><p>The Austrian offensive began on 19 August, and on 23 August Count Dankl’s 1st Army struck the Russian 4th Army at Krasnik. In three days of confused fighting the 1st pushed the Russians back six miles, capturing 30 guns and 6,000 prisoners. That same day the Austrian 4th Army attacked General Pavel Plehve’s 5th Army at Komarow, some 40 miles south of Kholm, forcing it to retreat.</p><p>But on Conrad’s right, disaster loomed, as the outnumbered Austrian 3rd Army took the offensive against forces outnumbering it nearly two to one. By 28 August, Russian counterattacks had forced the 3rd Army to pull back behind the Gnila Lipa River. The following day, a combined assault by the Russian 3rd and 8th Armies routed the Austrians. Instead of pulling back, Conrad ordered his own 4th Army to attack into the rear of the advancing Russian 3rd, exposing his own rear to the rallied Russian 5th Army.</p><p>The Russians attacked on 6 September, engaging the 4th Army in an inconclusive fight at Rava Russka before turning west to threaten the line of supply of the Austrian 1st Army. Dankl, already under pressure from a reorganized 4th Army, wanted to retreat but Conrad refused.</p><p>Only on 11 September, with his armies starting to disintegrate under continuous Russian pressure, did Conrad authorize a retreat. Unable to reform along the San, the Austrians continued to fall back, finally coming to a halt behind the Dunajec River and the crest of the Carpathian Mountains. All of Galacia, except the besieged fortress of Przemysl, had been lost. Russian casualties totaled 250,000, but Austrian losses were a staggering 400,000, including 100,000 taken prisoner. The Austrian army never fully recovered.</p><p>Could you do better? It is now 17 August, 1914. The Clash of Giants is about to begin...</p>}
+  }
+  scenario{"gmt_cog2_02 ~ The First Ypres Campaign, 1914"}{
+    dates{1914-10-08 / 1914-10-08}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Central Powers","Allies"}
+    party{"Central Powers"-"2","Allies"-"2"}
+    author{"Raicer, Ted"}
+    description{<p>After the German failure at the Marne, both the Allies and the Germans attempted to outflank one another in the so-called “Race to the Sea.” The Germans were handicapped by the need to maintain troops to keep watch on King Albert’s Belgian Army, holed up behind the forts of Antwerp. Only on 9 October, did Albert abandon the city, most of the Belgian Army escaping west to take up a new defense line along the Yser River. The British 7th Division and 3rd Cavalry Division, that landed at the Belgian port of Zeebrugge on 6-7 October with orders to relieve Antwerp, were forced to retreat alongside Albert’s army.</p><p>The continued outflanking attempts by both sides had by now nearly reached the Channel. An attempt by the Germans to launch a massive cavalry raid around the Allied northern flank in the direction of Abbeville fizzled, as the cavalry ran into a French infantry corps near Lens.</p><p>Falkenhayn, the German commander, now planned to play his trump card, four newly raised reserve corps of hurriedly trained but enthusiastic volunteers, reinforced by the three divisions released by the capture of Antwerp. The German 4th and 6th Armies would attack in Flanders between Lille and the Channel. This German offensive ran into the BEF’s 2nd Corps, which was pushing east, between La Basee and Armentieres. Neither side could then make any headway, and the fighting soon ended.</p><p>By 19 October, the BEF held 25 miles of the front from the Belgian town of Ypres, south to Bethune, on the right of the French 10th Army. On their left was the still forming French 8th Army and the Belgian army along the Yser to the sea. The Allies intended to launch a general offensive with these forces, not knowing their plans were right into the teeth of Falkenhayn’s own offensive, and the Germans had the greater numbers. The Belgians halted the Germans in the north by opening the flood gates at Nieuport. Farther south, the German and Allied armies met in confused fighting between 19 and 22 October.</p><p>On 31 October, the German 4th Army struck the British (supported by the French 9th Corps) between Gheluvelt and Messines Ridge. The attack was made by seven of Falkenhayn’s new volunteer divisions. British rifle fire cut the massed attackers to pieces. The Germans called it the “Kindermord bei Ypren,” the Children’s Massacre at Ypres.</p><p>On 1 November, the Germans captured the Messines Ridge from General Edmund Allenby’s Cavalry Corps. The British position at Ypres was becoming an increasingly constricted salient, with the Germans once more holding the high ground. Such German successes were both costly and limited, but they were enough to convince Falkenhayn to try again, attacking on 10-11 November. The attack was aimed directly at Ypres, and the Prussian Guard smashed their way into the British rear. But the attackers hesitated, the British rushed reinforcements to the scene, and the Germans were driven back. Though minor fighting would continue for another week, both sides were exhausted. The troops dug in.</p><p>The British lost 60,000 men at First Ypres, The Germans had lost well over 100,000 men in Flanders. Both sides had also expended a huge amount of munitions, which would have to be replenished before serious fighting could resume. The attempts to end the war by Christmas were at an end.</p><p>Can you do better? It is now October 8, 1914. The Clash of Giants is about to begin...</p>}
   }
 }
 
@@ -4739,7 +5159,19 @@
   genre{"Historical Simulation","Strategic Level"}
   mechanic{"Point-to-Point Movement","Counter","Card-Driven","Dice"}
   theme{"Seven Years' War"}
-  scenario{"Clash of Monarchs"}{
+  scenario{"gmt_com01 ~ 1756 - Introductory Scenario"}{
+    dates{1756-01-01 / 1763-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    special{"Introductory Scenario"}
+    side{"Prussia","Great Britain","Austria","France","Russia","Saxony","Sweden","Holy Roman Empire"}
+    party{"Prussia"-"2","Great Britain"-"2","Austria"-"2","France"-"2","Russia"-"2","Saxony"-"2","Sweden"-"2","Holy Roman Empire"-"2"}
+    author{"Kalinowski, Bob"}
+    description{<p></p>}
+  }
+  scenario{"gmt_com02 ~ 1757 - No Year More Rich"}{
     dates{1756-01-01 / 1763-12-31}
     position{1 / 1}
     range{300}
@@ -4748,7 +5180,106 @@
     side{"Prussia","Great Britain","Austria","France","Russia","Saxony","Sweden","Holy Roman Empire"}
     party{"Prussia"-"2","Great Britain"-"2","Austria"-"2","France"-"2","Russia"-"2","Saxony"-"2","Sweden"-"2","Holy Roman Empire"-"2"}
     author{"Kalinowski, Bob"}
-    description{<p>Description</p>}
+    description{<p></p>}
+  }
+  scenario{"gmt_com03 ~ 1756-1757 - Frederick's Offensives"}{
+    dates{1756-01-01 / 1763-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Prussia","Great Britain","Austria","France","Russia","Saxony","Sweden","Holy Roman Empire"}
+    party{"Prussia"-"2","Great Britain"-"2","Austria"-"2","France"-"2","Russia"-"2","Saxony"-"2","Sweden"-"2","Holy Roman Empire"-"2"}
+    author{"Kalinowski, Bob"}
+    description{<p></p>}
+  }
+  scenario{"gmt_com04 ~ 1756-1758 - The Early War"}{
+    dates{1756-01-01 / 1763-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Prussia","Great Britain","Austria","France","Russia","Saxony","Sweden","Holy Roman Empire"}
+    party{"Prussia"-"2","Great Britain"-"2","Austria"-"2","France"-"2","Russia"-"2","Saxony"-"2","Sweden"-"2","Holy Roman Empire"-"2"}
+    author{"Kalinowski, Bob"}
+    description{<p></p>}
+  }
+  scenario{"gmt_com05 ~ 1757-1758 - The End of Optimism"}{
+    dates{1756-01-01 / 1763-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Prussia","Great Britain","Austria","France","Russia","Saxony","Sweden","Holy Roman Empire"}
+    party{"Prussia"-"2","Great Britain"-"2","Austria"-"2","France"-"2","Russia"-"2","Saxony"-"2","Sweden"-"2","Holy Roman Empire"-"2"}
+    author{"Kalinowski, Bob"}
+    description{<p></p>}
+  }
+  scenario{"gmt_com06 ~ 1757-1759 - The Pendulum's Swing"}{
+    dates{1756-01-01 / 1763-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Prussia","Great Britain","Austria","France","Russia","Saxony","Sweden","Holy Roman Empire"}
+    party{"Prussia"-"2","Great Britain"-"2","Austria"-"2","France"-"2","Russia"-"2","Saxony"-"2","Sweden"-"2","Holy Roman Empire"-"2"}
+    author{"Kalinowski, Bob"}
+    description{<p></p>}
+  }
+  scenario{"gmt_com07 ~ 1759-1762 - Prussia Contra Europe"}{
+    dates{1756-01-01 / 1763-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Prussia","Great Britain","Austria","France","Russia","Saxony","Sweden","Holy Roman Empire"}
+    party{"Prussia"-"2","Great Britain"-"2","Austria"-"2","France"-"2","Russia"-"2","Saxony"-"2","Sweden"-"2","Holy Roman Empire"-"2"}
+    author{"Kalinowski, Bob"}
+    description{<p></p>}
+  }
+  scenario{"gmt_com08 ~ Full Campaign Scenario"}{
+    dates{1756-01-01 / 1763-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Prussia","Great Britain","Austria","France","Russia","Saxony","Sweden","Holy Roman Empire"}
+    party{"Prussia"-"2","Great Britain"-"2","Austria"-"2","France"-"2","Russia"-"2","Saxony"-"2","Sweden"-"2","Holy Roman Empire"-"2"}
+    author{"Kalinowski, Bob"}
+    description{<p></p>}
+  }
+  scenario{"gmt_com09 ~ Alliance Campaign Scenario"}{
+    dates{1756-01-01 / 1763-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Prussia","Great Britain","Austria","France","Russia","Saxony","Sweden","Holy Roman Empire"}
+    party{"Prussia"-"2","Great Britain"-"2","Austria"-"2","France"-"2","Russia"-"2","Saxony"-"2","Sweden"-"2","Holy Roman Empire"-"2"}
+    author{"Kalinowski, Bob"}
+    description{<p></p>}
+  }
+  scenario{"gmt_com10 ~ 1761-1762 - The Eleventh Hour"}{
+    dates{1761-01-01 / 1762-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Prussia","Great Britain","Austria","France","Russia","Saxony","Sweden","Holy Roman Empire"}
+    party{"Prussia"-"2","Great Britain"-"2","Austria"-"2","France"-"2","Russia"-"2","Saxony"-"2","Sweden"-"2","Holy Roman Empire"-"2"}
+    author{"Kalinowski, Bob"}
+    description{<p></p>}
+  }
+  scenario{"gmt_com11 ~ 1767-1768 - The Fourth Silesian War"}{
+    dates{1767-01-01 / 1768-12-31}
+    position{1 / 1}
+    range{300}
+    timescale{6}
+    players{2 / 2}
+    side{"Prussia","Great Britain","Austria","France","Russia","Saxony","Sweden","Holy Roman Empire"}
+    party{"Prussia"-"2","Great Britain"-"2","Austria"-"2","France"-"2","Russia"-"2","Saxony"-"2","Sweden"-"2","Holy Roman Empire"-"2"}
+    author{"Kalinowski, Bob"}
+    description{<p></p>}
   }
 }
 
@@ -6226,143 +6757,171 @@
   theme{"WW2"}
   series{"Combat Commander"-"Pacific","Combat Commander Pacific"-"Battlepack #4"}
   scenario{"CCP M01 ~ Rabaul Rousers"}{
-    description{<p>set at the base of Mt Vulcan on Simpson Bay across from the town of Rabaul, with a Japanese barge landing against Australian defenses at night</p>}
+    description{<p>Rabaul, New Britain, 23 January 1942</p><p>The Australian men of Lt. W. G. Grant's platoon of Coy. A, 2/22 Bn. were the forward elements defending the beachhead on the northern slopes of Mt. Vulcan. Grant's view across Simpson Bay showed the city of Rabaul and its well sheltered harbor. At 0200 Hours of January 23, the Japanese of 9th Company, Kuwada Unit disgorged from their assault barges into the face of Lt. Grant's prepared defenses. Frontal attacks on the dug-in Aussies proved fruitless and the invading Japanese were forced to try and flank the defenders by advancing through the gully infested slopes of Mt. Vulcan.</p>}
     dates{1942-01-23 / 1942-01-23}
     position{1 / 1}
     range{1}
     timescale{1}
     players{2 / 2}
-    author{"Jensen, Chad"}
+    side{"Axis","Allies","Japan","Australia"}
+    party{"Japan"-"2","Australia"-"2"}
+    author{"Jensen, Chad","Collars, Bryan"}
   }
 
   scenario{"CCP M02 ~ The Gloomy Forest"}{
-    description{"set at the village of Oivi, with Australians and Papuans of Maroubra Force facing the rapidly moving Yokohama Advance Party"}{
+    description{<p>Oivi, Papua, 26 July 1942</p><p>The initial formation of Maroubra Force (39th, 53rd and Papuan Infantry Battalions) faced the vanguard of the Japanese presence building up on New Guinea in June 1942. The force worked rapidly in an attempt to block the easy spread of the Japanese forces. Using planes to assist rapid movement, the Australian command inserted platoons of the 39th Infantry Battalion at key trail points, but the Japanese buildup began to overrun any reasonable chance at defense. By the 26th of July, a critical assault at Oivi was met, with Japanese victory to jeopardize Kokoda (and the vital air strip). Templeton led the deployment of two 39th platoons to reinforce a PIB platoon at Oivi. Late in the day, just as the Japanese assault moved forward in earnest, Templeton went off into the gloomy forest to examine the rear defenses and never returned (captured and killed).</p>}{
     dates{1942-07-26 / 1942-07-26}
     position{1 / 1}
     range{1}
     timescale{1}
     players{2 / 2}
-    author{"Jensen, Chad"}
+    side{"Axis","Allies","Japan",}
+    party{"Japan"-"2","Allies"-"2"}
+    author{"Jensen, Chad","Foley, John A."}
   }
 
   scenario{"CCP M03 ~ Rebuked at Rabi"}{
-    description{"set at Milne Bay, with an SNLF attack against Australian units"}{
+    description{<p>Elevala Creek, Milne Bay, Papua, 3 September 1942</p><p>The Japanese attempt to seize the allied airfields in the vicinity of Rabi (Operation Re) encountered unexpected stiff resistance from the defending Australians of Milne Force. After initial gains the 5th Kure Special Landing Force was driven back towards its initial landing areas. The 5th Kure SNLF was not going easily as it conducted numerous delaying actions on the retreat. One such encounter occurred at Elevala Creek just east of the K.B. Mission where elements of the Australian 2/9th Bn. under Lts. Fogg and Heron ran headlong into Japanese units defending the creek. After fierce fighting the delaying force was flanked and the advance resumed. In the coming weeks the Australians succeeded in driving the 5th Jure SNLF back into the sea, dealing the Japanese their first outright land defeat of the Pacific war.</p>}{
     dates{1942-09-03 / 1942-09-03}
     position{1 / 1}
     range{1}
     timescale{1}
     players{2 / 2}
-    author{"Jensen, Chad"}
+    side{"Axis","Allies","Japan","Australia"}
+    party{"Japan"-"2","Australia"-"2"}
+    author{"Jensen, Chad","Collars, Bryan"}
   }
 
   scenario{"CCP M04 ~ Templeton’s Crossing"}{
-    description{"set at a heavily-contested crossing of Eora Creek high in the Stanleys"}{
+    description{<p>Templeton's Crossing, Papua, 17 October 1942</p><p>The Japanese advance along the Kokoda trail had reached its high water mark. The Japanese high command decided to focus first on Guadalcanal, and the forces on New Guinea were in retreat, having extended their supply lines. The Australian 25th Brigade was forcing its way up from Port Moresby, but faced the problem of outrunning its own logistical trail. Around mid-October the Australians had reached just south of Templeton's Crossing, and the Japanese began a determined delaying action. Efforts to outflank the Japanese positions, such as that made by 3rd Battalion on the 17th of October faced not only a desperate and determined enemy, but also the treacherous terrain.</p>}{
     dates{1942-10-17 / 1942-10-17}
     position{1 / 1}
     range{1}
     timescale{1}
     players{2 / 2}
-    author{"Jensen, Chad"}
+    side{"Axis","Allies","Japan","Australia"}
+    party{"Japan"-"2","Australia"-"2"}
+    author{"Jensen, Chad","Maly, Andrew"}
   }
 
   scenario{"CCP M05 ~ Blind Man’s Bluff"}{
-    description{"set along one of the high ridges above the treacherous Eora Creek, with intermingled combatants"}{
+    description{<p>Eora Creek, Papua, 28 October 1942</p><p>The Australians had taken the crossings over Eora Creek, but the Kokoda Trail remained blocked by a Japanese strongpoint to the north. B Company 2/1 Battalion was pinned down to the south and subjected to fire from Japanese heavy weapons. 2/3 Battalion had used a Japanese track to work its way around to the west of the Japanese position. Patrols clashed, but the vegetation was so dense, both sides were playing a game of blind man's bluff. By late afternoon, preparations were completed, and the Australians launched a deliberate assault on the Japanese position.</p>}{
     dates{1942-10-28 / 1942-10-28}
     position{1 / 1}
     range{1}
     timescale{1}
     players{2 / 2}
-    author{"Jensen, Chad"}
+    side{"Axis","Allies","Japan","Australia"}
+    party{"Japan"-"2","Australia"-"2"}
+    author{"Jensen, Chad","Maly, Andrew"}
   }
 
   scenario{"CCP M06 ~ Breakout"}{
-    description{"set at Gorari after the fall of Kokoda to the Australians, with a desperate banzai action"}{
+    description{<p>Gorari, Papua, 11 November 1942</p><p>The Australians had taken Kokoda and were driving toward the north coast of New Guinea. The Japanese forward defense was centered on Gorari. The Australians managed to find a parallel around the Japanese defense and managed to break it into isolated pockets. Realizing their predicament, the isolated Japanese forces broke out any way they could. As the Australians were set to attack one isolated pocket, a breakout effort struck the gap between B and D companies of 2/31 Battalion.</p>}{
     dates{1942-11-11 / 1942-11-11}
     position{1 / 1}
     range{1}
     timescale{1}
     players{2 / 2}
-    author{"Jensen, Chad"}
+    side{"Axis","Allies","Japan","Australia"}
+    party{"Japan"-"2","Australia"-"2"}
+    author{"Jensen, Chad","Maly, Andrew"}
   }
 
   scenario{"CCP M07 ~ The Butcher’s Bill"}{
-    description{"set on the Soputa-Sanananda Road, with US forces entering the conflict in horrific swamp forest"}{
+    description{<p>Sanananda Front, Papua, 10 December 1942</p><p>The Japanese defenses west of the Girua River were anchored on numerous hidden strong points along the Soputa-Sanananda Road. One such strongpoint was flanked and cut off by the men of Coy I, 3rd Bn, 126th IR under te command of Capt. John Shirley on 30 November. Shirley was soon to be killed by Japanese sniper fire and command fell to Capt. Meredith Huggins. Huggins and the men of Coy I withstood repeated Japanese attacks from all directions for over twenty days with the timely help of resupply and reinforcements led by supply officer Lt. Pete Dal Ponte. Coy I was finally relieved by the Australians of the 39th Infantry Battalion on 22 December.</p>}{
     dates{1942-12-10 / 1942-12-10}
     position{1 / 1}
     range{1}
     timescale{1}
     players{2 / 2}
-    author{"Jensen, Chad"}
+    side{"Axis","Allies","Japan","US"}
+    party{"Japan"-"2","US"-"2"}
+    author{"Jensen, Chad","Collars, Bryan"}
   }
 
   scenario{"CCP M08 ~ Closing Outer Camp"}{
-    description{"set at Buna station, with Australian units using M3 tanks to eradicate the defenders"}{
+    description{<p>Outer Camp at Buna, Papua, 18 December 1942</p><p>The Japanese defenses at Buna were extensive and compartmentalized, requiring coordinated Allied operations at various points. Elements of the well-supported 2/9th asaulted the defenders in the area identified by the Japanese as &ldquo;Outer Camp&rdquo;. The operation used air attacks in close ground support as well as a number of Allied M3 tanks, which shocked the Japanese defenders.</p>}{
     dates{1942-12-18 / 1942-12-18}
     position{1 / 1}
     range{1}
     timescale{1}
     players{2 / 2}
-    author{"Jensen, Chad"}
+    side{"Axis","Allies","Japan","Australia"}
+    party{"Japan"-"2","Australia"-"2"}
+    author{"Jensen, Chad","Foley, John A."}
   }
 
   scenario{"CCP M09 ~ Wau Me Worry"}{
-    description{"set at the Wau air strip (with active landing operations during the action), with Australian defenders facing a desperate attack"}{
+    description{<p>Wau Airfield, New Guinea, 31 January 1943</p><p>After an ardous trek cutting through the jungle, and harassed along the way by Australian KANGA Force, the exhausted Japanese troops of the 102nd Regiment, Okabu Detachment struggled onto the high ground overlooking their objective &mdash; the airfield at the village of Wau, vital to Allied supply in the region. Attempting to descend on the airfield through the dense jungle, the Japanese forces lost contact with each other, emerging from the cover piecemeal to launch their attacks. Elements of the Australian 2/7 battalion defend the airfield even as Allied reinforcements and supplies land under enemy fire, debarking to immediately join the fight. Though their engineers managed to reach the airstrip, the Japanese could not hold and were forced to fall back.</p><p>&ldquo;We are short of food &mdash; let us quickly capture Wau and get food from the enemy!&rdquo; &mdash; Commander of the Okabu Detachment.</p>}{
     dates{1943-01-31 / 1943-01-31}
     position{1 / 1}
     range{1}
     timescale{1}
     players{2 / 2}
-    author{"Jensen, Chad"}
+    side{"Axis","Allies","Japan","Australia"}
+    party{"Japan"-"2","Australia"-"2"}
+    author{"Jensen, Chad","Butterfield, John"}
   }
 
   scenario{"CCP M10 ~ Bulolo River Bridge"}{
-    description{"set outside the outpost at Wau, with patrols of both sides (including Japanese Patrol Dogs) attempting to use the same bridge at cross-purposes"}{
+    description{<p>Near the Outpost of Wau, New Guinea, 30 January 1943</p><p>A company of the ANZAC 2/5 battalion ordered to intercept elements of the Japanese 51st Division advancing on Wau finds itself bypassed and cut off. The unit attempts to sneak back to friendly lines through the advancing Japanese forces but must cross the Bulolo River near a bridge being used by the Japanese moving in the same direction.</p>}{
     dates{1943-01-30 / 1943-01-30}
     position{1 / 1}
     range{1}
     timescale{1}
     players{2 / 2}
-    author{"Jensen, Chad"}
+    side{"Axis","Allies","Japan","Australia"}
+    party{"Japan"-"2","Australia"-"2"}
+    author{"Jensen, Chad","Butterfield, John"}
   }
 
   scenario{"CCP M11 ~ Shattered Bobdubi"}{
-    description{"set during the advance upon Salamua, with Australian units driving upon a Japanese base camp set in the kunai-covered heights of the interior"}{
+    description{<p>Bobdubi Ridge, New Guinea, 30 June 1943</p><p>Following the Allied victory at Buna, Australian infantry pushed northwest toward the next enemy coastal base in a war of small-unit actions across the jungle tracks and kunai-grass heights of the interior. As a pincer with a US landing near Salamaua, the hastily trained 58th/59th Battalion saw first action against the ridgeline positions of the Japanese 115th Regiment. Lr. F.J. Roche (a resident of Rabaul) &mdash; fearing booby traps on the main track to his platoon's objective of Orodubi village &mdash; instead approached through kunai. The platoon soon drew close-range fire and after a 20-minute exchange of shots and grenades fell back with just 10 men unscathed.</p>}{
     dates{1943-06-30 / 1943-06-30}
     position{1 / 1}
     range{1}
     timescale{1}
     players{2 / 2}
-    author{"Jensen, Chad"}
+    side{"Axis","Allies","Japan","Australia"}
+    party{"Japan"-"2","Australia"-"2"}
+    author{"Jensen, Chad","Ruhnke, Volko"}
   }
 
   scenario{"CCP M12 ~ Scarlet Beach"}{
-    description{"set at the mouth of the Song River near Finschhafen, with a Japanese barge landing at night against combined Australian and US defenders"}{
+    description{<p>Song River, New Guinea, 17 October 1943</p><p>As the Allies progressed up the New Guinea coast, General Adachi's XVIII Army desperately counterattacked. To support a 20th Division thrust into the Allied perimeter around Finschhafen, Adachi dispatched barges loaded with remnants of 1st Lt. Sugino's 10th Company and picket engineers for a nighttime assault into the enemy rear. Unfortunately for Sugino, poor Japanese security had alerted beach defenses &mdash; Australian 2/28th Battalion, US engineers, and assorted Allied AA and AT batteries &mdash; to the plan. After losses to PT boats and shore gunnery, only two barges made it to the beach.</p>}{
     dates{1943-10-17 / 1943-10-17}
     position{1 / 1}
     range{1}
     timescale{1}
     players{2 / 2}
-    author{"Jensen, Chad"}
+    side{"Axis","Allies","Japan","Australia"}
+    party{"Japan"-"2","Australia"-"2"}
+    author{"Jensen, Chad","Ruhnke, Volko"}
   }
 
   scenario{"CCP M13 ~ Bad Dreams"}{
-    description{"set on the Driniumor River, featuring the heroic stand of an unknown US BAR operator facing a hastily prepared Japanese night charge"}{
+    description{<p>Driniumor River, New Guinea, 10 July 1944</p><p>The desperate Japanese offensive along the Driniumor River by forces of the 20th Infantry Division faced widely strung out US regiments (the 127th, the 128th and the 112th Cavalry), with both parties probing each other. At the culmination point, multiple attacks across the river were targeted for the night of July 10th. One such attack was launched by I battalion of the 78th regiment facing light forces of the 128th regiment at the boundary between Coy G and E, including a famous but anonymous BAR operator.</p>}{
     dates{1944-07-10 / 1944-07-10}
     position{1 / 1}
     range{1}
     timescale{1}
     players{2 / 2}
-    author{"Jensen, Chad"}
+    side{"Axis","Allies","Japan","US"}
+    party{"Japan"-"2","US"-"2"}
+    author{"Jensen, Chad","Herman, Mark","Foley, John A."}
   }
 
   scenario{"CCP M14 ~ Encirclement of Troop C"}{
-    description{"set on the Driniumor River, featuring a Troop of US Cavalry trying to stave off being surrounded by Japanese units that had surprised them by walking casually into their positions"}{
+    description{<p>Driven River, New Guinea, 21 July 1944</p><p>After the westward breakthroughs across the river (earlier in July), the 20th Infantry Division was ordered to entrap and destroy American units. The Miyake Force (composed of the 78th, 79th and 80th Infantry Regiments, each fielding no more than a company's worth of effectives) faced the 112th Cavalry near Afua along the southern end of the American positions. The leading elements of the 79th, unsure of the locations of the attack line, walked casually right into the enemy positions. With a sudden gun shot of Trooper recognition, the afternoon assault began. Even while the attackers were nearly destroyed themselves, the remnants of Troop C were completely encircled.</p>}{
     dates{1944-07-21 / 1944-07-21}
     position{1 / 1}
     range{1}
     timescale{1}
     players{2 / 2}
-    author{"Jensen, Chad"}
+    side{"Axis","Allies","Japan","US"}
+    party{"Japan"-"2","US"-"2"}
+    author{"Jensen, Chad","Herman, Mark","Foley, John A."}
   }
 }
 
