@@ -141,6 +141,7 @@ my $sth_select_game_id = $dbh -> prepare(
   . "FROM dr_game "
   . "WHERE id = ?;");
 
+&clean_up_tables($dbh);
 foreach my $key (sort(keys %game)){
   # Insert the game:
 
@@ -149,25 +150,11 @@ foreach my $key (sort(keys %game)){
   } else {
     $game{$key}{'subtitle'} = "";
   }
-  $sth_select_game_id -> execute($key);
-  $result = $sth_select_game_id->fetchrow_hashref();
-  if (defined $result) {
-    print "---------------------------------\n";
-    print "Updating existing entry for: $key\n";
-    print "---------------------------------\n";
-    $sth_update_game -> execute( $game{$key}{'title'}
-                               , $game{$key}{'subtitle'}
-                               , substr($game{$key}{'title'}, 0, 1)
-                               , $game{$key}{'description'}
-                               , $key);
-    &clean_up_dependent_tables($dbh, $id_game);
-  } else {
-    $sth_insert_game -> execute( $key,
-                               , $game{$key}{'title'}
-                               , $game{$key}{'subtitle'}
-                               , substr($game{$key}{'title'}, 0, 1)
-                               , $game{$key}{'description'});
-  }
+  $sth_insert_game -> execute( $key,
+                             , $game{$key}{'title'}
+                             , $game{$key}{'subtitle'}
+                             , substr($game{$key}{'title'}, 0, 1)
+                             , $game{$key}{'description'});
 
   &insert_simple_field_for_game($key);
 
@@ -339,27 +326,29 @@ sub insert_simple_field_for_scenario {
   &insert_field_with_attribute_in_map($scenario_id, "party",   $game{$game_id}{'scenario'}{$scenario_name}{"party"},   "num_players", "scenario");
 }
 
-sub clean_up_dependent_tables {
-  my ($handle, $id) = @_;
-  &clean_up_table($handle, $id, "dr_map_genre",     "game");
-  &clean_up_table($handle, $id, "dr_map_theme",     "game");
-  &clean_up_table($handle, $id, "dr_map_mechanic",  "game");
-  &clean_up_table($handle, $id, "dr_map_publisher", "game");
-  &clean_up_table($handle, $id, "dr_map_engine",    "game");
-  &clean_up_table($handle, $id, "dr_map_series",    "game");
-  &clean_up_table($handle, $id, "dr_map_author",    "scenario");
-  &clean_up_table($handle, $id, "dr_map_side",      "scenario");
-  &clean_up_table($handle, $id, "dr_map_leader",    "scenario");
-  &clean_up_table($handle, $id, "dr_map_special",   "scenario");
-  &clean_up_table($handle, $id, "dr_map_party",     "scenario");
-  &clean_up_table($handle, $id, "dr_scenario",      "game");
-  &clean_up_table($handle, $id, "dr_scenario_data", "scenario");
+sub clean_up_tables {
+  my $handle = shift();
+  &clean_up_table($handle, "dr_map_genre");
+  &clean_up_table($handle, "dr_map_theme");
+  &clean_up_table($handle, "dr_map_mechanic");
+  &clean_up_table($handle, "dr_map_publisher");
+  &clean_up_table($handle, "dr_map_engine");
+  &clean_up_table($handle, "dr_map_series");
+  &clean_up_table($handle, "dr_map_author");
+  &clean_up_table($handle, "dr_map_side");
+  &clean_up_table($handle, "dr_map_leader");
+  &clean_up_table($handle, "dr_map_special");
+  &clean_up_table($handle, "dr_map_party");
+  &clean_up_table($handle, "dr_map_historical_victor");
+  &clean_up_table($handle, "dr_scenario_data");
+  &clean_up_table($handle, "dr_scenario");
+  &clean_up_table($handle, "dr_game");
 }
 
 sub clean_up_table {
-  my ($handle, $id, $tablename, $mapped_to) = @_;
-  my $sth = $handle -> prepare("DELETE FROM " . $tablename . " WHERE id_" . $mapped_to . " = ?;");
-  $sth -> execute($id);
+  my ($handle, $tablename) = @_;
+  my $sth = $handle -> prepare("DELETE FROM " . $tablename . ";");
+  $sth -> execute();
   $sth -> finish();
 }
 
