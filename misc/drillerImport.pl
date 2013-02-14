@@ -328,6 +328,7 @@ sub insert_simple_field_for_scenario {
 
 sub clean_up_tables {
   my $handle = shift();
+  &reset_scenario_sequence($handle);
   &clean_up_table($handle, "dr_map_genre");
   &clean_up_table($handle, "dr_map_theme");
   &clean_up_table($handle, "dr_map_mechanic");
@@ -348,6 +349,13 @@ sub clean_up_tables {
 sub clean_up_table {
   my ($handle, $tablename) = @_;
   my $sth = $handle -> prepare("DELETE FROM " . $tablename . ";");
+  $sth -> execute();
+  $sth -> finish();
+}
+
+sub reset_scenario_sequence {
+  my $handle = shift();
+  my $sth = $handle -> prepare("ALTER SEQUENCE dr_scenario_id_seq RESTART;");
   $sth -> execute();
   $sth -> finish();
 }
