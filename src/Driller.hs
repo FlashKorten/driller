@@ -122,6 +122,7 @@ entryRoutes config = do
     getRouteWithParameter    "/upToRange/:id"      $ DB.fetchUpToRangeEntry config
     getRouteWithParameter    "/upToTimescale/:id"  $ DB.fetchUpToTimescaleEntry config
     getRouteWithParameter    "/upToYear/:id"       $ DB.fetchUpToYearEntry config
+    getRouteWithParameter    "/scenarioInfo/:id"   $ DB.fetchScenarioInfo config
 
 getRouteWithoutParameter :: ToJSON a => RoutePattern -> IO a -> ScottyM ()
 getRouteWithoutParameter url getter = get url $ liftIO getter >>= json

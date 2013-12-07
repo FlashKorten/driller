@@ -16,7 +16,7 @@ executable driller
   -- other-modules:
   hs-Source-Dirs:
     src
-  build-depends:     base ==4.5.*
+  build-depends:     base ==4.6.*
                    , text ==0.11.*
                    , transformers == 0.3.*
                    , bytestring >= 0.9 && < 0.11

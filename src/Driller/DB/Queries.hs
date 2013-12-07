@@ -2,6 +2,7 @@
 module Driller.DB.Queries
     ( JoinMap
     , scenarioListQuery
+    , scenarioInfoQuery
     , groupQuery
     , initJoinMap
     , initGroupMap
@@ -644,3 +645,7 @@ orderGroupEntriesForGameQ = mconcat
   [ " GROUP BY game.title, game.subtitle, game.id"
   , " ORDER BY game.title, game.subtitle"
   ]
+
+scenarioInfoQuery :: Query
+scenarioInfoQuery =
+  "SELECT d.title, d.subtitle, d.description, d.latitude, d.longitude, s.range, s.timescale, s.players_min, s.players_max FROM dr_scenario_data AS d JOIN dr_scenario AS s ON d.id_scenario = s.id WHERE s.id = ?"

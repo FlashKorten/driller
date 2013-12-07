@@ -69,6 +69,7 @@ module Driller.Data
     , categoryToQuery
     , Config(..)
     , initConfig
+    , ScenarioInfo
     ) where
 
 import Driller.Error ( ParameterError )
@@ -132,6 +133,19 @@ data Scenario = Scenario { getScenarioId       :: Int
                          , getScenarioFromYear :: Int
                          , getScenarioUpToYear :: Int
                          }
+
+data ScenarioInfo = ScenarioInfo { getScInfoTitle       :: Text.Text
+                                 , getScInfoSubtitle    :: Text.Text
+                                 , getScInfoDescription :: Text.Text
+                                 -- , getScInfoStart       :: Text.Text
+                                 -- , getScInfoEnd         :: Text.Text
+                                 , getScInfoLatitude    :: Double
+                                 , getScInfoLongitude   :: Double
+                                 , getScInfoRange       :: Int
+                                 , getScInfoTimescale   :: Int
+                                 , getScInfoPlayersMin  :: Int
+                                 , getScInfoPlayersMax  :: Int
+                                 }
 
 -- | @Result@ collects all individual informations to be sent as a response to
 -- | a drilldown request.
@@ -259,6 +273,7 @@ $(deriveJSON (drop 7)  ''Game)
 $(deriveJSON (drop 14) ''GroupLetter)
 $(deriveJSON (drop 14) ''GroupNumber)
 $(deriveJSON id ''AnswerList)
+$(deriveJSON (drop 9) ''ScenarioInfo)
 
 -- | A class to promote simple @Int@ values to instances of types represented by numbers.
 class FromInt a where
@@ -299,6 +314,7 @@ instance FromRow Scenario    where fromRow = Scenario    <$> field <*> field <*>
 instance FromRow GroupLetter where fromRow = GroupLetter <$> field <*> field
 instance FromRow GroupNumber where fromRow = GroupNumber <$> field <*> field
 instance FromRow Int         where fromRow = field
+instance FromRow ScenarioInfo where fromRow = ScenarioInfo <$> field <*> field <*> field <*> field <*> field <*> field <*> field <*> field <*> field -- <*> field <*> field
 
 instance ToRow Int           where toRow n = [toField n]
 instance ToRow Text.Text     where toRow n = [toField n]

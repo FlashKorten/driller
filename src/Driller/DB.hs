@@ -125,11 +125,12 @@ module Driller.DB
     , fetchThemeGroups
     , fetchTimescaleGroups
     , fetchUpToYearGroups
+    , fetchScenarioInfo
     ) where
 
 import Driller.Data
 import qualified Driller.Error as Error
-import Driller.DB.Queries ( initJoinMap, initQueryMap, initGroupMap, scenarioListQuery, groupQuery )
+import Driller.DB.Queries ( initJoinMap, initQueryMap, initGroupMap, scenarioListQuery, groupQuery, scenarioInfoQuery )
 import Control.Monad ( liftM )
 import Data.Hashable ()
 import Data.HashMap.Strict ( (!) )
@@ -302,8 +303,8 @@ fetchManyFromMapForSelection category config limit ids = do
     matches <- query c (qm ! (category, ENTRY, POLYB)) params
     count <- query c (qm ! (category, COUNT, POLY)) (Only (In ids))
     if head count < limit
-      then liftM (\x -> Entries x matches) $ query c (qm ! (category, ENTRY, POLYA)) params
-      else liftM (\x -> Groups x matches) $ query c (qm ! (category, GROUP, POLY)) params
+      then liftM (`Entries` matches) $ query c (qm ! (category, ENTRY, POLYA)) params
+      else liftM (`Groups` matches) $ query c (qm ! (category, GROUP, POLY)) params
     where c  = getDBConnection config
           qm = getQueryMap config
           params = (In ids, length ids)
@@ -638,3 +639,6 @@ fetchDrilledGroupEntries c cat ps = query (getDBConnection c) (groupQuery c cat 
 
 fetchScenarioIds :: Config -> [Parameter] -> IO [Int]
 fetchScenarioIds c ps = query (getDBConnection c) (scenarioListQuery c ps) (map snd ps)
+
+fetchScenarioInfo :: Config -> Int -> IO [ScenarioInfo]
+fetchScenarioInfo c = query (getDBConnection c) scenarioInfoQuery
