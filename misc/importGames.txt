@@ -3670,10 +3670,10 @@
     timescale{1}
     players{2 / 2}
     author{"Borg, Richard"}
-    side{"Epirote","Rome"}
-    party{"Epirote"-"2","Rome"-"2"}
+    side{"Epirus","Rome"}
+    party{"Epirus"-"2","Rome"-"2"}
     leader{"Pyrrhus","Consular Valerius Laevinus"}
-    victor{"Epirote"}
+    victor{"Epirus"}
   }
   scenario{"CnCA 0117 ~ Asculum"}{
     description{<p>Pyrrhus of Epirus nearly doubled the size of his army after the victory at Heraclea wih Greeks, Samnites and Lucanians flocking to his standard. After absorbing the new recruits, Pyrrhus set off towards Rome. His advance was stopped at Asculum by the two Roman Consuls Decius and Sulpicius, and their army of four legions and allies. Both sides had around 40,000 men, but Pyrrhus had the advantage in cavarly and, of course, his elephants. After a day of skirmishing in rough terrain, the two armies lined up at daybreak on level ground. What followed was a straight-forward Legion versus Phalanx battle. During the battle Pyrrhus failed to envelope the Roman flanks. After a hard fight in the center, the Romans were driven back once again by his elephants. Pyrrhus, at the forefront of the fighting, was wounded, preventing him from exploiting his victory. Over 6,000 Romans had been slain, but Pyrrhus had lost 3,500 of his men, mostly irreplaceable veterans and many of his officers. Pyrrhus reportedly exclaimed after the battle &ldquo;One more such victory and I shall be lost!&rdquo; giving rise to the term &ldquo;Pyrrhic Victory.&rdquo; The path to Rome was still guarded by other armies, and the Romans refused to negotiate a peace treaty. Discouraged, Pyrrhus accepted an offer from Syracuse to lead the Sicilian Greeks in their war with Carthage in 278 BC.</p>}
@@ -3683,10 +3683,10 @@
     timescale{1}
     players{2 / 2}
     author{"Borg, Richard"}
-    side{"Epirote","Rome"}
-    party{"Epirote"-"2","Rome"-"2"}
+    side{"Epirus","Rome"}
+    party{"Epirus"-"2","Rome"-"2"}
     leader{"Pyrrhus","Consul Decius","Consul Suplicius"}
-    victor{"Epirote"}
+    victor{"Epirus"}
   }
   scenario{"CnCA 0118 ~ Beneventum"}{
     description{<p>After the battle of Asculum, Pyrrhus left Italy for a three-year campaign in Sicily. Although he defeated the Carthaginians in every battle, he could not drive them off the island. Pyrrhus decided to return to Italy. Years of attrition and a naval defeat on his way back to Italy had greatly weakened his army. However, upon his return, his reputation brought thousands of new recruits out to join him. With 20,000 infantry, 3,000 cavalry and 20 elephants, Pyrrhus once again marched on Rome. Consul Manius Curius Dentatus gathered his army of about 20,000 foot and 2,000 horse and set up camp near Beneventum to await the Epiote army. Pyrrhus decided on a surprise night attack, but some of his detachments got lost. It was morning before he could organize his scattered forces near the Roman camp. Dentatus led his forces out and drove back Pyrrhus' vanguard. As the Roman attack continued it was in turn driven back by Pyrrhus' skillful use of his elephants. However, a second Roman assault stampeded the elephants into the Macedonian phalanx. Dentatus struck while the phalanx was disordered and broke it, winning the battle. Pyrrhus withdrew from the field with what was left of his army and returned to Epirus, never to return to Italy. Beneventum was the final pivotal battle in the Roman Republic's bid for control of the entire Italian peninsula, and the first great victory of the legion over the phalanx.</p>}
@@ -3696,8 +3696,8 @@
     timescale{1}
     players{2 / 2}
     author{"Borg, Richard"}
-    side{"Epirote","Rome"}
-    party{"Epirote"-"2","Rome"-"2"}
+    side{"Epirus","Rome"}
+    party{"Epirus"-"2","Rome"-"2"}
     leader{"Pyrrhus","Consul Manius Curius Dentatus"}
     victor{"Rome"}
   }
@@ -4539,7 +4539,7 @@
     victor{"Persia"}
   }
   scenario{"CnCA 0418 ~ Naissus"}{
-    description{<p>The Goths, a Germanic people, were migrating southward and crossed the Roman frontier in the province of Pannonia. The emperor Gallienus, fresh from his victory over another Germanic tribe, the Alemanni, managed to check the Goth's advance early in the year, but he could not expel the Goths, and they sacked several wealthy towns, that summer. Then Gallienus was murdered while on campaign against a pretender. The new emperor, Claudius II, led a second expedition against the Goths in the autumn of 268 AD with a more mobile army. His cavalry was commanded by the general Aurelian, who would later become the emperor.</p><p>As both armies deployed for battle, the advance guard of the Goths was cut to pieces by the Roman light cavalry, which withdrew to the flanks as the Goths, who had the advantage in numbers, charged the Roman center. The Roman infantry held against the charge, with the help of Aurelian's cavalry leadership. The Romans then advanced and drove what was left of the enemy's center back to their wagon laager. After being repulsed several times, the Romans set up a siege. Eventually, the Goths surrendered and thousands were taken prisoner. The defeat at Naissus broke the war power of the Goths and secured Rome's Danubian frontier for decades to come.</p>}
+    description{<p>The Goths, a Germanic people, were migrating southward and crossed the Roman frontier in the province of Pannonia. The emperor Gallienus, fresh from his victory over another Germanic tribe, the Alamanni, managed to check the Goth's advance early in the year, but he could not expel the Goths, and they sacked several wealthy towns, that summer. Then Gallienus was murdered while on campaign against a pretender. The new emperor, Claudius II, led a second expedition against the Goths in the autumn of 268 AD with a more mobile army. His cavalry was commanded by the general Aurelian, who would later become the emperor.</p><p>As both armies deployed for battle, the advance guard of the Goths was cut to pieces by the Roman light cavalry, which withdrew to the flanks as the Goths, who had the advantage in numbers, charged the Roman center. The Roman infantry held against the charge, with the help of Aurelian's cavalry leadership. The Romans then advanced and drove what was left of the enemy's center back to their wagon laager. After being repulsed several times, the Romans set up a siege. Eventually, the Goths surrendered and thousands were taken prisoner. The defeat at Naissus broke the war power of the Goths and secured Rome's Danubian frontier for decades to come.</p>}
     dates{0268-01-01 / 0268-12-31}
     position{1 / 1}
     range{250}
@@ -4552,46 +4552,46 @@
     victor{"Rome"}
   }
   scenario{"CnCA 0419 ~ Placentia"}{
-    description{<p>Aurelian became emperor in 270, and is remembered as one of the &ldquo;soldier-emperors&rdquo; who restored the empire after its near collapse. During his five-year reign, Aurelian re-united the empire after two-thirds of the provinces had broken away from central control. But first, Aurelian had to repulse a number of barbarian invasions. The most serious threat was posed by the Alemanni, a Germanic tribe that had made frequent incursions into Roman territory. In 271 AD, after Aurelian had moved several of the western legions east to fight the Vandals and Goths, the Alemanni broke through the frontier forces and invaded Italia. The Alemanni horde first sacked the city of Placentia in northern Italia. Emperor Aurelian, who was in Pannonia (near present day Hungary) with an army to control the Vandals, had to move quickly back to Italia. The Alemanni learned of Aurelian's approach and set an ambush for the Roman Emperor. They achieved complete surprise and defeated the Romans. The Alemanni continued their advance toward the capital, which produced great fear and panic in Rome.</p>}
+    description{<p>Aurelian became emperor in 270, and is remembered as one of the &ldquo;soldier-emperors&rdquo; who restored the empire after its near collapse. During his five-year reign, Aurelian re-united the empire after two-thirds of the provinces had broken away from central control. But first, Aurelian had to repulse a number of barbarian invasions. The most serious threat was posed by the Alamanni, a Germanic tribe that had made frequent incursions into Roman territory. In 271 AD, after Aurelian had moved several of the western legions east to fight the Vandals and Goths, the Alamanni broke through the frontier forces and invaded Italia. The Alamanni horde first sacked the city of Placentia in northern Italia. Emperor Aurelian, who was in Pannonia (near present day Hungary) with an army to control the Vandals, had to move quickly back to Italia. The Alamanni learned of Aurelian's approach and set an ambush for the Roman Emperor. They achieved complete surprise and defeated the Romans. The Alamanni continued their advance toward the capital, which produced great fear and panic in Rome.</p>}
     dates{0271-01-01 / 0271-12-31}
     position{1 / 1}
     range{250}
     timescale{1}
     players{2 / 2}
     author{"Borg, Richard"}
-    side{"Alemanni","Rome"}
-    party{"Alemanni"-"2","Rome"-"2"}
+    side{"Alamanni","Rome"}
+    party{"Alamanni"-"2","Rome"-"2"}
     leader{"Unknown","Emperor Aurelian"}
-    victor{"Alemanni"}
+    victor{"Alamanni"}
   }
   scenario{"CnCA 0420 ~ Fano"}{
-    description{<p>After his serious defeat at the Battle of Placentia at the hands of the Alemanni, Emperor Aurelian rallied and re-grouped his troops and started in pursuit. The Alemanni were moving towards Rome, producing great fear in the city. Rome had grown beyond the old city walls and much of the city was completely exposed to enemy attack. Aurelian finally caught up to the rear of the Germanic horde and forced a fight near Fano. The Alemanni turned to fight just before crossing the Metaurus River which was their undoing. Pinned against the river, the Alemanni were unable to maneuver or give any ground. When the main Alemanni line broke, many of the tribal warriors were drowned as they attempted to retreat. The shattered remnants of the Alemanni now headed north, away from Rome, with Aurelian in hot pursuit.</p>}
+    description{<p>After his serious defeat at the Battle of Placentia at the hands of the Alamanni, Emperor Aurelian rallied and re-grouped his troops and started in pursuit. The Alamanni were moving towards Rome, producing great fear in the city. Rome had grown beyond the old city walls and much of the city was completely exposed to enemy attack. Aurelian finally caught up to the rear of the Germanic horde and forced a fight near Fano. The Alamanni turned to fight just before crossing the Metaurus River which was their undoing. Pinned against the river, the Alamanni were unable to maneuver or give any ground. When the main Alamanni line broke, many of the tribal warriors were drowned as they attempted to retreat. The shattered remnants of the Alamanni now headed north, away from Rome, with Aurelian in hot pursuit.</p>}
     dates{0271-01-01 / 0271-12-31}
     position{1 / 1}
     range{250}
     timescale{1}
     players{2 / 2}
     author{"Borg, Richard"}
-    side{"Alemanni","Rome"}
-    party{"Alemanni"-"2","Rome"-"2"}
+    side{"Alamanni","Rome"}
+    party{"Alamanni"-"2","Rome"-"2"}
     leader{"Unknown","Emperor Aurelian"}
     victor{"Rome"}
   }
   scenario{"CnCA 0421 ~ Pavia"}{
-    description{<p>After the victory at Fano, Emperor Aurelian sent his troops in pursuit of the defeated Alemanni horde, which was racing back to its homeland. Aurelian had the mountain passes blocked and then proceeded to destroy almost the entire Alemanni army. Little is known about the tactical makeup of the battle, other than that the Alemanni were trying to get away and were almost completely wiped out. The victory ended the invasion and the Roman people granted Aurelian the title Germanicus Maximus. But the near success of the Alemanni made Aurelian realize that Rome needed better defenses. This new, much larger set of walls encompassed all of the seven hills and became known as the &ldquo;Aurelian Walls,&rdquo; some of which can still be seen today.</p>}
+    description{<p>After the victory at Fano, Emperor Aurelian sent his troops in pursuit of the defeated Alamanni horde, which was racing back to its homeland. Aurelian had the mountain passes blocked and then proceeded to destroy almost the entire Alamanni army. Little is known about the tactical makeup of the battle, other than that the Alamanni were trying to get away and were almost completely wiped out. The victory ended the invasion and the Roman people granted Aurelian the title Germanicus Maximus. But the near success of the Alamanni made Aurelian realize that Rome needed better defenses. This new, much larger set of walls encompassed all of the seven hills and became known as the &ldquo;Aurelian Walls,&rdquo; some of which can still be seen today.</p>}
     dates{0271-01-01 / 0271-12-31}
     position{1 / 1}
     range{250}
     timescale{1}
     players{2 / 2}
     author{"Borg, Richard"}
-    side{"Alemanni","Rome"}
-    party{"Alemanni"-"2","Rome"-"2"}
+    side{"Alamanni","Rome"}
+    party{"Alamanni"-"2","Rome"-"2"}
     leader{"Unknown","Emperor Aurelian"}
     victor{"Rome"}
   }
   scenario{"CnCA 0422 ~ Immae"}{
-    description{<p>The Palmyrene Empire (260-273) consisted of the (former) eastern Roman provinces of Syria, Palestine, and large parts of Asia Minor. This breakaway kingdom was ruled by the famous Queen Zenobia and had won many victories over the Sassanids, while repelling the Romans at the same time. Queen Zenobia believed that she and her general Zabadas could take Egypt while the Romans were busy with the Germanic tribes of the north. In 272, Emperor Aurelian, fresh from his dramatic victory over the Alemanni, marched east to end the threat from Zenobia and restore the eastern provinces. After overrunning Syria, Aurelian met the main Palmyrene army at Immae, a short distance east of the city of Antioch.</p><p>The Battle of Immae began with a Palmyrene cataphract cavalry charge led by Zabadas. After a short struggle, the lighter Roman cavalry formation fell back into a marshy area. Here, as planned, the Roman infantry was waiting the now tired, disorganized cataphract cavalry, who routed and fled. Zenobia and her infantry made a stand on a series of hills until the Romans advanced and cut them apart. The queen and her general retreated to Antioch. After some additional campaigning, Aurelian captured and sacked Palmyra, bringing an end to Zenobia's empire and restoring the rule of Rome in the East.</p>}
+    description{<p>The Palmyrene Empire (260-273) consisted of the (former) eastern Roman provinces of Syria, Palestine, and large parts of Asia Minor. This breakaway kingdom was ruled by the famous Queen Zenobia and had won many victories over the Sassanids, while repelling the Romans at the same time. Queen Zenobia believed that she and her general Zabadas could take Egypt while the Romans were busy with the Germanic tribes of the north. In 272, Emperor Aurelian, fresh from his dramatic victory over the Alamanni, marched east to end the threat from Zenobia and restore the eastern provinces. After overrunning Syria, Aurelian met the main Palmyrene army at Immae, a short distance east of the city of Antioch.</p><p>The Battle of Immae began with a Palmyrene cataphract cavalry charge led by Zabadas. After a short struggle, the lighter Roman cavalry formation fell back into a marshy area. Here, as planned, the Roman infantry was waiting the now tired, disorganized cataphract cavalry, who routed and fled. Zenobia and her infantry made a stand on a series of hills until the Romans advanced and cut them apart. The queen and her general retreated to Antioch. After some additional campaigning, Aurelian captured and sacked Palmyra, bringing an end to Zenobia's empire and restoring the rule of Rome in the East.</p>}
     dates{0272-01-01 / 0272-12-31}
     position{1 / 1}
     range{250}
@@ -4773,8 +4773,8 @@
     timescale{1}
     players{2 / 2}
     author{"Borg, Richard"}
-    side{"Epirote","Rome"}
-    party{"Epirote"-"2","Rome"-"2"}
+    side{"Epirus","Rome"}
+    party{"Epirus"-"2","Rome"-"2"}
     leader{"Pyrrhus","Consul Decius","Consul Sulpicius"}
     special{"Epic"}
     victor{"Rome"}
@@ -5526,6 +5526,58 @@
     party{"Carthage"-"2","Rome"-"2"}
     leader{"Hasdrubal Marca","Mago Barca","Publius Scipio"}
     victor{"Carthage"}
+  }
+  scenario{"CnCA C3i2301 ~ Leuctra"}{
+    description{<p>Sparta's victory in the Peleponnesian War (431&mdash;404) over Athens cemented the reputation of her hoplites as the premier infantry force in the world. However, Spartan arrogance following this victory led to the outbreak of hostilities with her former ally, Thebes. In 371 King Cleombrotus of Sparta marched against Thebes. When he reached Leuctra he found the Theban army barred his way. The Spartans deployed in a long line with their allies on the left. Greek commanders traditionally placed their best troops on the right and this wing usually led the attack. The brilliant Theban commander, Epaminodas, devised an innovative plan to mass his best men on the left in a 50-man deep phalanx. He intended to meet Spartan shock with super shock. Both sides sent their cavalry out and the Spantan horse were quickly defeated. Seeing his cavalry fail, Cleombrotus ordered his infantry to advance. In the meantime, Epaminondas' massed left advanced against the Spartan right while the rest of his army was ordered to hold back, in an oblique order.</p><p>The Spartans were attempting to change formation to deal with the situation when the Sacred Band charged and hit them in mid-maneuver. Cleombrotus was killed and the massive weight of the Theban phalanx broke the Spartan line. Never before had Sparta experienced such a defeat and Leuctra shattered the myth of Spartan military invincibility.</p>}
+    dates{371-01-01 BC / 371-12-31 BC}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Thebes","Sparta"}
+    party{"Thebes"-"2","Sparta"-"2"}
+    leader{"Cleombrotus","Epaminodas"}
+    victor{"Thebes"}
+    special{"Epic"}
+  }
+  scenario{"CnCA C3i2302 ~ Asculum"}{
+    description{<p>Pyrrhus of Epirus nearly doubled the size of his army after his victory at Heraclea with allied Greeks, Samnites and Lucanians flocking to his standard. After absorbing the new recruits, Pyrrhus set off towards Rome. His advance was stopped at Asculum by the two Roman Consuls Decius and Sulpicius, with four legions and allies. Both sides had around 40,000 men, but Pyrrhus had the advantage in cavalry and, of course, his elephants. After a day of skirmishing in rough terrain, the two armies lined up at daybreak on level ground. What followed was a straightforward Legion versus Phalanx battle. During the battle Pyrrhus failed to envelope the flanks. After a hard fight in the center, the Romans were driven back once again by his elephants. Pyrrhus was at the forefront of the fighting and was wounded, preventing him from exploiting his victory as the Romans fell back to their camp. At this point in history it would seem that the legion was no match for a well-led Macedonian phalanx style force. Over 6,000 Romans had been slain, but Pyrrhus had lost 3,500 of his men, mostly irreplaceable veterans and many of his officers. Pyrrhus reportedly exclaimed after the battle &ldquo;One more such victory and I shall be lost!&rdquo; giving rise to the term, a &ldquo;Pyrrhic Victory.&rdquo; The path to Rome was still guarded by other armies and the Romans refused to negotiate a peace treaty as long as the Epirote army remained in Italy. Discouraged, Pyrrhus accepted an offer from Syracuse to lead the Sicilian Greeks in their war with Carthage in 278 BC.</p>}
+    dates{279-01-01 BC / 279-12-31 BC}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard"}
+    side{"Epirus","Rome"}
+    party{"Epirus"-"2","Rome"-"2"}
+    leader{"Pyrrhus","Consul Decius","Consul Sulpicius"}
+    victor{"Pyrrhus"}
+    special{"Epic"}
+  }
+  scenario{"CnCA C3i2601 ~ Paraitacene"}{
+    description{<p>By 318 BC the Successors had formed two competing alliances: the &lquo;Royalists&rquo; who claimed to fight to maintain the empire for Alexander's infant sons, and a rival coalition that sought to claim their own independant kingdoms. The opposing Successor Armies in Asia &mdash; one commanded by Antigonus, the other by Eumenes &mdash; met in battle at Paraitacene in 317 BC. Antigonus was by now the most powerful of the Diadochi, controlling most of Anatolia and the eastern satrapies. Eumenes had the backing of Alexander's heirs and a large war chest, though the fact that he was a Greek and not a Macedonian was a major handicap. Antigonus fielded 28,000 infantry and 11,000 horse. Eumenes' force of 35,000 foot and 6,000 horse included the veteran Silver Shields who had fought with distinction in all of Alexander's campaigns. The battle opened with Antigonus' light horse attacking Eumenes right. This attack was wrecked by Eumenes' heavy cavalry. Meanwhile in the center, the Silver Shields drove back Antigonus' phalanx. Antigonus' army was on the ropes when he puled off a stroke that evened the score. He charged through a gap and was successful in routing Eumenes' left flank. Both sides at this point were exhausted and returned to their camps. Antigonus claimed victory but realistically the battle was a draw and a final resolution would be at Gabiene, a year later.</p>}
+    dates{317-01-01 BC / 317-12-31 BC}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard","Duke, Kevin"}
+    leader{"Eumenes","Antigonus"}
+    special{"Epic"}
+  }
+  scenario{"CnCA C3i2602 ~ Argentoratum"}{
+    description{<p>Julian, the young cousin of the Emperor Constantinus, has been named to recover the situation in the West after a short civil war opened the frontier to raids and invasions by Franks and Alamanni tribes. Scarcely 23, with no military training, Julian might seem a poor choice, but he proved to be surprisingly effective. After a first campaign rebuilding fortresses and tribal relationships, he focused on the Alamanni, who were not willing to leave lands they now considered to be their own. Julian set up a clever pincer movement to trap and destroy them, but appears to have been betrayed (at Constantinus' orders) by the field marshal who was supposed to close the trap (and who had the larger force.) Julian now faced the &ldquo;trapped&rdquo; Alamanni with a much smaller army than anticipated, but Julian's generals convinced him that the Alamanni concentration was an opportunity for them to use their skills to destroy the tribes.</p><p>As with most ancient battles, troop numbers are hard to define, but we do know that the Romans had vastly superior cavalry, both in numbers and in quality. Chnodomar, the Alamanni leader, knew this also and chose a position with one flank completely blocked by woods and concentrated his cavalry force on the other. He also mingled light troops with his cavalry, mostly hidden in tall grass or grain fields, aiming to surprise the heavily armored Roman cavalry and strike at their mounts from below.</p><p>The Alamanni force was a mixture of some very good warrior bands, noble household troops, and less effective tribal levies. The Roman army included some of the finest troops remaining in the empire, along with some of the tribal limitanei units that Julian had managed to recruit.</p><p>The Alamanni had a custom of expecting their leaders to dismount and fight on foot in the front ranks, which is why they have limited value in the scenario. They do have more leaders, however.</p><p>Julian looked for a quick knock-out punch with his cavalry, but Chnodomar's trap worked well and much of the Roman cavalry retreated in disorder, unnerving the infantry in the center. Seeing this, the Alamanni charged along the whole length of their line, finally breaking through the Roman center with a &ldquo;hogshead&rdquo; formation that was barely contained by 2nd line troops. On the left, Severus finished off an &lquo;ambush&rquo; placed for him in the woods and now flanked the enemy in the center, while the rallied Roman cavalry pressed in on the right. As the Roman wings overlapped, the Germans were compressed too tightly to battle effectively, and the army dissolved into rout. Due to Roman fatigue and the lateness of the day, losses in the pursuit were minimal, but Chnodomar was captured and died in captivity.</p><p>Julian would eventually become sole emperor, but died in an eastern skirmish after only two years. In that time, his efforts to revive the old pagan traditions earned him the name, &ldquo;Julian the Apostate.&rdquo; But that is another story.</p>}
+    dates{357-01-01 / 357-12-31}
+    position{1 / 1}
+    range{250}
+    timescale{1}
+    players{2 / 2}
+    author{"Borg, Richard","Duke, Kevin"}
+    side{"Alamanni","Rome"}
+    party{"Alamanni"-"2","Rome"-"2"}
+    leader{"Severus","Julian","Serapioi","Westralp","Chnodomar"}
+    special{"Epic"}
   }
 }
 
@@ -7296,6 +7348,17 @@
     author{"Janiec, Chris"}
     description{<p>With Tirpitz under repair and most of Luftflotte 5’s bombers called away to oppose the landings in North Africa, the British determined to sail the unloaded ships from Arkhangelsk before ice closed the White Sea. 29 ships sailed in QP-15 on 17 November, one missing departure with mechanical problems and one running aground. Eight U-boats lay in wait and Hipper was ready to intercept, but remained in port when air reconnaissance failed to locate the convoy. Three days at sea the convoy was scattered by a gale, and the German subs succeeded in sinking only two freighters before the rest reached safety. Two Soviet destroyers of the local escort were less fortunate; Baku’s hull cracked and part of her superstructure was torn away before she struggled into Murmansk, while Sokrushitelniy broke in two and foundered in the storm.</p>}
   }
+  scenario{"pq1713 ~ PQ-9/10: Before the Storm"}{
+    dates{1942-02-01 / 1942-02-28}
+    position{1 / 1}
+    range{300}
+    timescale{12}
+    players{2 / 2}
+    side{"Axis","Allies","Germany"}
+    party{"Axis"-"2","Allies"-"2"}
+    author{"Janiec, Chris"}
+    description{<p>This convoy was never attacked historically, primarily because the Germans were initially unaware it had sailed and never succeeded in locating it. But even if they had, Gruppe Nord would have been unable to intervene because Tirpitz lacked sufficient fuel, and there were no light forces available to provide anti-submarine escort. The scenario postulates that two destroyers of the 8th Flotilla (Z23 and Z25) remained at Kirkenes instead of leaving Norway on January 29th, and two torpedo boats of the 2nd Flotilla accompanied Tirpitz to Trondheim and remained there. In reality, all four ships steamed to France to participate in the Channel Dash (Operation Cerberus). It also includes the possibility of a random event simulating early delivery of additional fuel to Norway.</p>}
+  }
 }
 
 23418 {
@@ -8912,6 +8975,50 @@
     author{"Jensen, Chad"}
     side{"Axis","Allies","Germany","US"}
     party{"Germany"-"2","US"-"2"}
+  }
+  scenario{"CCE 0103 ~ Varsity Blues"}{
+    description{<p>Diersfordt, Germany&mdash;As Field Marshal Montgomery prepares his 21st Army for the crossing of the Rhine, Operation Varsity &mdash; the largest airborne assault of the war &mdash; is launched by the US 17th Airborne and the British 6th Airborne Divisions. The parachute assault's aim is to eliminate the German defenders on the heights above the river and ease the crossing of Montgomery's armored columns to the east bank.</p><p>The 1st Bn. 507th PIR drops on target and is on the way to its day-1 objective &mdash; Diersfordt Castle &mdash; when it encounters stiff resistance from elements of the 84th Infantry Division in the Diersfordt Forest.</p>}
+    dates{1945-03-24 / 1945-03-24}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    author{"Collars, Bryan"}
+    side{"Axis","Allies","Germany","US"}
+    party{"Germany"-"2","US"-"2"}
+  }
+  scenario{"CCE 0110 ~ Arctic Assault"}{
+    description{<p>Gratangen Valley, Narvik Front, Norway&mdash;Major Stautner of the 2nd Battalion, 139th Gebirgsj&auml;ger Regiment saw an opportunity to attack the isolated Norwegian 1st Battalion, 12th Infantry in the Gratangen valley. The attack was launched early on the morning of April 24th in a swirling blizzard. The men of Lt. Bauer's 2nd Company were ordered to support the main attack of the 13th Company by occupying a roadblock position on Route 50 near the Moen and Nylund farms. The attack met stiff resistance from the Norwegians. In an effort to check the German advance Captain Mjoen's 3rd Company was ordered to counter attack to retake several lost positions. The fighting near the Moen farm was conducted at close quarters and noted for its viciousness.</p>}
+    dates{1940-04-24 / 1940-04-24}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    author{"Collars, Bryan"}
+    side{"Axis","Allies","Germany","Norwegian"}
+    party{"Germany"-"2","Norway"-"2"}
+  }
+  scenario{"CCE 0115 ~ Summit Conference"}{
+    description{<p>Dongolaas Ravine, Eritrea&mdash;In mid-January 1941, British forces launched the Eritrea Campaign. The 4th and 5th Indian Divisions started their offensive from Sudan. They broke the Italian defensive lines in two weeks but finally the drive stopped in front of the town of Keren, last gate to the Red Sea. The road to Keren was blocked by the retreating Italians who blew overhanging crags to fill the Dongolaas Ravine with boulders and rocks. The ridge was overlooked by the Dologo Fort and the excellent defensive positions held by the 11th Reggimento Granatieri di Savoia. This position needed to be taken to allow armor units to continue the advance. Assaults began on 4 February and during the subsequent month the Indian troops were unable to gain the upper hand. Finally, on 16 March, after an intensive artillery bombardment, elements of the 5th Indian Division captured the Dologo Fort and secured the Dongolaas Ravine and opened the way to Keren.</p>}
+    dates{1941-03-16 / 1941-03-16}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    author{"Toupy, Pascal"}
+    side{"Axis","Allies","Italy","India"}
+    party{"Italy"-"2","India"-"2"}
+  }
+  scenario{"CCE 0116 ~ These Are No Altar Boys"}{
+    description{<p>After Operation Goodwood's failure, French Canadian infantry units were ordered to take and hold Saint Martin de Fontenay, a village south of Caen. Once taken British armor could push southward and link up with American forces. Two previous assaults by the Regiment de Maisonneuve were repulsed by the men of the 9th SS Panzer Division. The Germans fortified the medieval church in Saint Martin and converted it into their HQ. This commanding position provided excellent observation of this sector of the battlefield. A third assault was planned for 1 August by the men of D Company. Regiment Les Fusiliers Mont-Royal, commanded by Major Dextraze. The attack kicked off at false dawn and met stiff resistance. Major Dextraze personally took command of the Fusiliers and led the assault home, successfully evicting the SS troopss. The Falaise road was opened!</p>}
+    dates{1944-08-01 / 1944-08-01}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    author{"Toupy, Pascal"}
+    side{"Axis","Allies","Germany","Canana"}
+    party{"Germany"-"2","Canana"-"2"}
   }
 }
 
@@ -10844,11 +10951,11 @@
 }
 10788 {
   title{"Hellenes ~ Battles of the Peleponnesian War"}
-  description{<p>Combat Commander: Resistance! (or CC:R) expands upon Combat Commander: Europe and Combat Commander: Mediterranean by adding partisans and their war behind the front lines. This fourth volume of the Combat Commander wargame series features special rules and components for fighting with Partisan forces against the Axis nations of Europe.</p>}
+  description{<p>The Peloponnesian War was one of the most terrible conflicts in human history. Waged between 431 and 404 B.C., the Peloponnesian War shook the Greek world to its very core and ultimately reshaped the Greek world. It fatally weakened victor and vanquished alike. Thirty-three years after Sparta's hard-won victory, the city-state and former Spartan ally, Thebes, would be the dominant power in Greece. Less than seventy years after the conclusion of the Peloponnesian War, King Philip II of Macedonia gained dominance over the Greeks. Now you have a chance to change history. Can you bring the mighty Athenian Empire to its knees? Or will you crush the Spartan League?</p><p>Hellenes - Campaigns of the Peloponnesian War is an action-packed two-player block game of this titanic struggle. Blocks provide a strong fog-of-war element. Blocks are positioned upright in play with only the block's owner being able to see the block's unit information. This adds surprise and bluff to the game.</p><p>One of the most fascinating elements of the Peloponnesian War is the asymmetry between the combatants: the city-state of Athens with the most powerful navy in the world (the navy which defeated the Persians at Salamis in 480 B.C.), and Sparta with their elite hoplite corps. Athens is the dominant naval power; Sparta is the dominant land power. To be victorious in Hellenes, each player must use his or her wits to out-maneuver their opponent.</p>}
   publisher{"GMT Games"-"http://www.gmtgames.com/p-142-hellenes.aspx"}
   engine{"Vassal"-"http://www.gmtgames.com/vassal/Hellenes_v.1.zip","Cyberboard"-"http://www.gmtgames.com/Hellenes/Hellenes%20CB.zip"}
   genre{"Conflict Simulation"}
-  mechanic{"Card-Driven","Hex","Area"}
+  mechanic{"Card-Driven","Blocks","Area"}
   theme{"Ancient Greece"}
   scenario{"gmt0911_01 ~ The 431 Campaign"}{
     description{<p>Continual Athenian imperialism finally provoked a Spartan-Corinthian ultimatum i 431 BC. Athenian leader Pericles argued that war was less damaging than submitting to Spartan demands, and championed a passive war of attrition, relying on Athens' Long Walls and naval supremacy to thwart and eventually discourage its enemies</p><p>This strategy was quickly undermined by a devastating plague that swept away much of Athens and Pericles himself. Ten years of inconclusive war was finally ended by the Peace of Nicias.</p>}
@@ -10893,5 +11000,58 @@
     author{"Besinque, Craig"}
     side{"Athens","Sparta"}
     party{"Athens"-"2","Sparta"-"2"}
+  }
+}
+42328 {
+  title{"Pax Baltica ~ Great Northern War 1700-1721"}
+  description{<p>Three Kings conspire to once and for all break the Swedish dominance in the Baltic. Charles the XII of Sweden decides to attack and soon the Alliance against him begins to crack. A 21 year long bitter war has just begun which eventually ends an empire and sees another one rising...</p><p>Pax Baltica is a Grand Strategy Game covering the entire Great Northern War and recreates the intriguing conflict that is often considered a side-show of the War of Spanish succession. Yet the conflict probably have had greater impact on Europe’s political, cultural and social developments than the latter.</p><p>Pax Baltica is probably the first board game ever covering the entire Great Northern War. The game includes five different scenarios with varying playing-time of two to eight hours depending on scenario. The units in the game are high quality colored wooden blocks which give great flexibility for game play and limited intelligence. The four-color map is divided into provinces which you have to conquer in order to take control over a country and to eventually defeat the enemy. This dynamic conflict covers large parts of northern and eastern Europe. From Bremen in the West, to Smolensk in the East. From Trondheim in the North, to Bender in the South. Playable nations are Sweden, Russia, Turkey, Denmark and Saxony.</p><p>As leader of one of the great nations involved – Take command and lead your empire to victory!</p>}
+  publisher{"GMT Games"-"http://www.gmtgames.com/p-289-pax-baltica.aspx"}
+  engine{"Vassal"-"http://www.vassalengine.org/mediawiki/images/1/15/PaxBaltica.vmod"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card-Driven","Area","Block"}
+  theme{"Great Northern War"}
+  scenario{"gmt1217_01 ~ Next Stop Moscow"}{
+    description{<p>Karl XII has reached the peak of his power. The Russian army has been defeated and Denmark is out of the war. August II has lost the Polish crown to the Swedish puppet Stanislaw Leszczynski and Karl occupies the Saxon fatherland. However, Pyotr I has begun to reform his army and is ready to take up the fight again.</p><p>The scenario ends after Sweden historically had lost the Battle of Poltava, the turning point in the struggle for Baltic supremacy.</p>}
+    dates{1707-07-01 / 1710-12-31}
+    position{1 / 1}
+    range{1}
+    timescale{2160}
+    players{2 / 2}
+    author{"Ekstr&ouml;m, Stefan","Bj&ouml;rkman, G&ouml;ran"}
+    side{"Sweden","Russia"}
+    party{"Sweden"-"2","Russia"-"2"}
+  }
+  scenario{"gmt1217_02 ~ On the Road to Glory"}{
+    description{<p>Saxony, Denmark and Russia have declared war on Sweden. The scenario starts just after Sweden, the Netherlands, and Britain have knocked Denmark out of the war. Now Sweden stands alone against Saxony and Russia.</p><p>The scenario ends after the historical Battle of Poltava, the beginning of the end for Sweden as major power as well as the first major victory for the Russian army.</p>}
+    dates{1700-09-01 / 1710-12-31}
+    position{1 / 1}
+    range{1}
+    timescale{2160}
+    players{2 / 2}
+    author{"Ekstr&ouml;m, Stefan","Bj&ouml;rkman, G&ouml;ran"}
+    side{"Sweden","Alliance"}
+    party{"Sweden"-"2","Alliance"-"2"}
+  }
+  scenario{"gmt1217_03 ~ The End is Near"}{
+    description{<p>The scenario starts after the Battle of Poltava, the first glorious victory for the Russian army. Karl XII manages to escape to the Ottoman Empire with a few thousand men and remains there in exile until 1713. Meanwhile Denmark, Hannover and Prussia declare war on Sweden, and the Russians conquer Finland and the Baltic provinces.</p><p>The historical end to the scenario introduces Russia as a major power on the European scene, and Karl XII's sister inherits the throne to a broken and bankrupt Sweden.</p>}
+    dates{1710-01-01 / 1721-12-31}
+    position{1 / 1}
+    range{1}
+    timescale{2160}
+    players{2 / 2}
+    author{"Ekstr&ouml;m, Stefan","Bj&ouml;rkman, G&ouml;ran"}
+    side{"Sweden","Alliance"}
+    party{"Sweden"-"2","Alliance"-"2"}
+  }
+  scenario{"gmt1217_04 ~ The Grand Campaign"}{
+    description{<p>Saxony, Denmark and Russia have declared war on Sweden. The scenario starts just after Sweden, Holland, L&uuml;neburg, and England have knocked Denmark out of the war. Now Sweden stands alone against Saxony and Russia.</p><p>The historical end to this scenario introduces Russia as a major power on the European scene, and a broken, bankrupt Sweden has lost the Baltic provinces, Viborg, Bremen-Verden and Vorpommern.</p>}
+    dates{1700-10-01 / 1721-12-31}
+    position{1 / 1}
+    range{1}
+    timescale{2160}
+    players{2 / 2}
+    author{"Ekstr&ouml;m, Stefan","Bj&ouml;rkman, G&ouml;ran"}
+    side{"Sweden","Alliance"}
+    party{"Sweden"-"2","Alliance"-"2"}
   }
 }
