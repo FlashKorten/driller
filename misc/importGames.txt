@@ -11055,3 +11055,145 @@
     party{"Sweden"-"2","Alliance"-"2"}
   }
 }
+129341 {
+  title{"Combat Commander ~ Normandy"}
+  description{<p>Combat Commander: Battle Pack &#35;5 – Fall of the West is the fifth themed collection of scenarios for use with the Combat Commander series of games. The theme of this Battle Pack shifts to actions in France, Belgium and Norway from late April to June 1940, looking at critical moments in this brief span where the forces of both sides tested each other sorely. To reflect this, the scenario special rules are designed to make the Allied Minor hand exhibit flexibility (which was demonstrated whenever higher echelon interference was reduced). CC–Fall of the West features twelve new scenarios printed on cardstock as well as ten new maps.</p><p>Special experimental AFV Rules are featured in four of the scenarios where tanks are facing infantry in settings that reveal how the doctrines, armaments and countermeasures were still early in development. While unfettered races by companies of tanks across the countryside remain a landmark image of the blitzkrieg, we found many instances of a more tentative level of engagement, suitable for our attempt at capturing an unusual element in the CC scope – TANKS!</p><p>The new maps depict specific locations in France, Belgium and Norway, which have been located and specifically verified (from the sky, maps and in texts). The player will discover the actual names of roads and other terrain features as a reminder of the reality of the events.</p>}
+  publisher{"GMT Games"-"http://www.gmtgames.com/p-418-combat-commander-bp-5-fall-of-the-west.aspx"}
+  engine{"Vassal"-"http://www.vassalengine.org/mediawiki/images/c/c6/7._Battle_Pack_5_-_Fall_Of_The_West.vmdx"}
+  genre{"Conflict Simulation"}
+  mechanic{"Card-Driven","Hex","Counter"}
+  theme{"WW2"}
+  series{"Combat Commander"-"Europe","Combat Commander Europe"-"Battlepack &#35;5"}
+  scenario{"CCE 0074 ~ Sturmgruppe Granit"}{
+    description{<p>Fort Eben Emael, Maastricht Vicinity, Belgium&mdash;Positioned directly in the path of Army Group B's invasion route for Fall Gelb, Fort Eben was considered one of the strongest fortresses in the world. The fort's elimination was crucial to the success of the German operational plan. In a daring coup de main assault 77 German paratroopers, designated Sturmgruppe Granit, landed in gliders on top of the fort, subduing the defenders and neutralizing the fort's large guns within 30 minutes. The assault, coupled with the successful capture of nearby bridges over the Albert Canal, cleared the way for Army Group B's advance into Belgium. The Fall of the West had begun.</p>}
+    dates{1940-05-10 / 1940-05-10}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    author{"Collars, Bryan"}
+    side{"Axis","Allies","Germany","Belgium"}
+    party{"Germany"-"2","Belgium"-"2"}
+  }
+  scenario{"CCE 0075 ~ Sturmgruppe Beton"}{
+    description{<p>Vroenhoven, Belgium&mdash;A dangerous salient in the Belgian frontier defenses was centered on the city of Maastricht. Due to treaties and pre-war politics the Belgian Army was unable to effectively garrison the approaches to Belgian territory over the Albert Canal. The capture of the bridges over the canal at the towns of Vroenhoven, Veldwelezt, and Kannes was critical to the success of Army Group B's invasion of the West. In a daring coup the main assault glider-borne paratroopers in the pre-dawn hours of 10 May captured the bridges at Vroenhoven and Veldwelezt. The bridge at Kannes was blown by defending Belgian forces prior to its capture. The Belgian High Command responded with repeated assaults, both ground based and by air, to recapture or destroy the captured bridges. The beleaguered German paratroopers resolutely defended in place awaiting relief by the main body of the German invasion.</p>}
+    dates{1940-05-10 / 1940-05-10}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    author{"Collars, Bryan"}
+    side{"Axis","Allies","Germany","Belgium"}
+    party{"Germany"-"2","Belgium"-"2"}
+  }
+  scenario{"CCE 0076 ~ A Most Gallant Dirty Little Imp"}{
+    description{<p>Dyle River Line, La Tombe Vicinity, Belgium&mdash;Second Lieutenant Richard Annand was the recipient of the first Victoria Cross awarded during the Second World War. At 11 a.m. on 15 May the Germans of the 31st Infantry Division launched a violent attack and pushed forward a bridging party into the Dyle River. Second Lieutenant Annand attacked this party, but when ammunition ran out he went forward himself over open ground, with total disregard for enemy mortar and machine-gun fire. Reaching the top of the bridge, he drove out the party below, inflicting over twenty casualties with hand grenades. Having been wounded he rejoined his platoon, had his wound dressed, and then carried on in command.</p>}
+    dates{1940-05-15 / 1940-05-15}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    author{"Collars, Bryan"}
+    side{"Axis","Allies","Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+  }
+  scenario{"CCE 0077 ~ The Crucible of Fire"}{
+    description{<p>Petegem, Belgium, 21 May 1940&mdash;Despite Army Group A's rapid advance toward the English Channel, the BEF and Belgian Army had effectively conducted tactical withdrawals utilizing terrain and space to slow the advance of Army Group B's 31st Infantry Division. One such defensive line was the Escaut River line. Fedor von Bock, the Army Group's commander, chose the junction of the British and Belgian Armies as the ideal spot to break the Escaut River line. This key point near the Belgian city of Audenarde was defended by the British 44th Infantry Division. The Germans launched their assault on 20 May where the deepest penetration of the British lines was at the village of Petegem. There a vicious back and forth battle occurred between the units of the 44th's 132nd Bde and the German 31st Infantry Division.</p>}
+    dates{1940-05-21 / 1940-05-21}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    author{"Collars, Bryan"}
+    side{"Axis","Allies","Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+  }
+  scenario{"CCE 0078 ~ By These Deeds They Shall Be Known"}{
+    description{<p>Cassel, France, 27 May 1940&mdash;The rapid advance of Rundsted's Army Group A had by 20 May isolated the French and British forces that had rushed into Belgium in the opening stages of the campaign. Pressure from both Army Groups A and B had steadily forced the Allies to withdraw into a pocket that quickly centered on the Port of Dunkirk. To ensure that the port remained open it was necessary for the BEF to conduct numerous and desperate rearguard actions to slow the advancing Germans. One such place was the village of Cassel where the 2nd Battalion, Gloucestshire Regiment faced off against the advancing elements of the 6th Panzer Division. On 27 May, Capt. E. H. Lynn Allen's C Coy. clashed with the advancing German Infantry of the 114 Panzergrenadier Regiment.</p>}
+    dates{1940-05-27 / 1940-05-27}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    author{"Collars, Bryan"}
+    side{"Axis","Allies","Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+  }
+  scenario{"CCE 0079 ~ Battering Ram At Kvam"}{
+    description{<p>Kvam, Norway, 26 April 1940&mdash;In an effort to shore up the crumbling defenses in southern Norway the British reassigned the 15th Infantry Division to lead the defense in the Gudbrandsdal Valley on 23 April. The 15th consisted of regular troops originally destined for the BEF in France but transferred to Norway in great secrecy. The German advance up the Gudbrandsdal Valley was led by Colonel Landle's 345th Infantry Regiment of the 196th Infantry Division. The First Battalion King's Own Yorkshire Light Infantry established a blocking position at Kvam on 24 April and the Germans assualted on the following day. The initial German assaults were repulsed with heavy British losses but not without the loss of several German AFVs as well. On 26 April the 345th renewed their assault with infantry only and were able to penetrate between defending companies, forcing a British withdrawal in the evening.</p>}
+    dates{1940-04-26 / 1940-04-26}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    author{"Collars, Bryan"}
+    side{"Axis","Allies","Germany","Great Britain"}
+    party{"Germany"-"2","Great Britain"-"2"}
+  }
+  scenario{"CCE 0080 ~ Bitter Isthmus"}{
+    description{<p>Montherme, France, 14 May 1940&mdash;German forces pressed across the Meuse in the face of a French company led by the aggressive Lieutenant Barbaste (KIA), during the afternoon and evening of the 13th. The second line of defense across the narrow portion of the peninsula astride the Roma Woods was formed by reinforcing troops and others escaping the initial encirclement during the night. A concerted German attack started at 0600 on the 14th, leading to a French counterattack and a constant shifting of roles throughout the day.</p>}
+    dates{1940-05-14 / 1940-05-14}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    author{"Foley, John A."}
+    side{"Axis","Allies","Germany","France"}
+    party{"Germany"-"2","France"-"2"}
+  }
+  scenario{"CCE 0081 ~ The Bottleneck"}{
+    description{<p>The Road to Chehery, South of Sedan, France, 14 May 1940&mdash;Part of a self-sacrificial counterattack to stem the German advance past Sedan was launched by Allied air strike and the 7e BCC supported by the 55e Infantry Division during the morning of the 14th. One prong of the attack was directed through a valley with the Bar River on the left and a woody hill on the right leading through a bottleneck. After an advance of several hundred meters, the leading tank elements were ambushed, frustrating the quick attempt to get through to the town of Chehery and a better chance to hold off the German advance.</p>}
+    dates{1940-05-14 / 1940-05-14}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    author{"Foley, John A."}
+    side{"Axis","Allies","Germany","France"}
+    party{"Germany"-"2","France"-"2"}
+  }
+  scenario{"CCE 0082 ~ Hidden Guns Lash Out"}{
+    description{<p>Farm of Sart-Ernage, Near Gembloux, France, 14 June 1940&mdash;French light armored forces rushed to the Gembloux gap, a wide rural plain crossed by important rail lines, to stem the advance of the German 3rd and 4th Panzer Divisions. Behind the rail line, ideal defensive terrain near the farm of the village Sart-Ernage was found along a sunken road and elements of the 1/2e RTM deployed there during the night of the 13th. A line of enemy tanks was spotted approaching the rail embarkment early in the morning of the 14th to face sudden intense fire from the hidden positions.</p>}
+    dates{1940-06-14 / 1940-06-14}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    author{"Foley, John A."}
+    side{"Axis","Allies","Germany","France"}
+    party{"Germany"-"2","France"-"2"}
+  }
+  scenario{"CCE 0083 ~ Thrust In The Dust"}{
+    description{<p>Ernage, Near Gembloux, France, 14 June 1940&mdash;After the initial attack in and around Gembloux on the 14th was blunted, the German forces redoubled their efforts on the 15th, from the air and with armor. French artillery fire was noted as particularly intense and accurate against the armored attackers. More than half of the assaulting German tank regiment was destroyed and the German forces had to standoff in order to reorganize.</p>}
+    dates{1940-06-15 / 1940-06-15}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    author{"Foley, John A."}
+    side{"Axis","Allies","Germany","France"}
+    party{"Germany"-"2","France"-"2"}
+  }
+  scenario{"CCE 0084 ~ Seize The Canal"}{
+    description{<p>Chateau-Porcien, West of Rethel, France, 9 June 1940&mdash;French forces retreated south of the Aisne river to build another defensive line with strength around Rethel. The German assault west of Rethel on the 9th led to heavy street fighting in Chateau-Porcien. Against each attack, the French counterattack was vigorous, denying the possibility of a bridgehead across both the river and the canal.</p>}
+    dates{1940-06-09 / 1940-06-09}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    author{"Foley, John A."}
+    side{"Axis","Allies","Germany","France"}
+    party{"Germany"-"2","France"-"2"}
+  }
+  scenario{"CCE 0085 ~ The Striking Hammer"}{
+    description{<p>Perthes, South of Rethel, France, 10 June 1940&mdash;A final French armored counterattack near Rethel on the 10th was led by two formations of the formidable Renault B1 bis, so highly regarded that each was individually named. General De Lattre declared that &ldquo;they were the striking hammer.&rdquo; During the assault on Perthes by Group Maitre, each B1 bis individually withstood heavy fire while punishing the German machine gun nests one by one. The force took the town and held it until ordered to withdraw overnight.</p>}
+    dates{1940-06-10 / 1940-06-10}
+    position{1 / 1}
+    range{1}
+    timescale{1}
+    players{2 / 2}
+    author{"Foley, John A."}
+    side{"Axis","Allies","Germany","France"}
+    party{"Germany"-"2","France"-"2"}
+  }
+}
